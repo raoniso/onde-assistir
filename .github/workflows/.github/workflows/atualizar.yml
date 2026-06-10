@@ -1,0 +1,39 @@
+# Salve este arquivo no repositório como: .github/workflows/atualizar.yml
+# Ele roda o atualizador a cada 6 horas (e também manualmente pelo botão
+# "Run workflow" na aba Actions) e publica os dados novos no site.
+
+name: Atualizar jogos
+
+on:
+  schedule:
+    - cron: "0 2,8,14,20 * * *"   # 23h, 5h, 11h, 17h no horário de Brasília
+  workflow_dispatch:               # permite rodar manualmente pelo celular
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install requests beautifulsoup4
+
+      - name: Buscar e cruzar fontes
+        run: python atualizar_dados.py
+
+      - name: Publicar dados novos
+        run: |
+          git config user.name "onde-assistir-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add eventos.json index.html
+          git diff --cached --quiet && echo "Sem mudanças." || {
+            git commit -m "Atualiza jogos — $(date -u -d '-3 hours' +'%d/%m %H:%M') BRT"
+            git push
+          }
