@@ -45,7 +45,7 @@
   "country": "Mundial",
   "league": "Amistosos Seleções",
   "detail": "Friendly International",
-  "match": "77' Portugal 2 Nigéria 1",
+  "match": "79' Portugal 2 Nigéria 1",
   "ch": [
    {
     "n": "SporTV",
@@ -66,7 +66,7 @@
   "country": "Mundial",
   "league": "Amistosos Seleções",
   "detail": "Friendly International",
-  "match": "24' Inglaterra 1 Costa Rica 0",
+  "match": "26' x 1 Costa",
   "ch": [
    {
     "n": "ESPN",
@@ -75,13 +75,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Amistoso",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-10",
@@ -91,7 +87,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Ceará Avai",
+  "match": "Ceará x Avai",
   "ch": [
    {
     "n": "XSports",
@@ -124,7 +120,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Goiás Novorizontino",
+  "match": "Goiás x Novorizontino",
   "ch": [
    {
     "n": "Disney+",
@@ -200,7 +196,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Sport Recife Athletic Club",
+  "match": "Sport Recife x Athletic Club",
   "ch": [
    {
     "n": "Disney+",
@@ -259,7 +255,7 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "México África do Sul",
+  "match": "México x África do Sul",
   "ch": [
    {
     "n": "Globo",
@@ -274,7 +270,7 @@
     "y": "tv"
    },
    {
-    "n": "Cazé Tv",
+    "n": "CazéTV",
     "y": "free"
    },
    {
@@ -313,10 +309,10 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "Coreia do Sul República Tcheca",
+  "match": "Coreia do Sul x República Tcheca",
   "ch": [
    {
-    "n": "Cazé Tv",
+    "n": "CazéTV",
     "y": "free"
    },
    {
