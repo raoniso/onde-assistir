@@ -163,6 +163,8 @@
   .badge.tv{color:var(--tv)} .badge.tv i{background:var(--tv)}
   .badge.stream{color:var(--stream)} .badge.stream i{background:var(--stream)}
   .badge.free{color:var(--free)} .badge.free i{background:var(--free)}
+  .badge.tbd{color:var(--faint); border-style:dashed}
+  .badge.tbd::after{content:''}
   .legend{display:flex; gap:14px; margin-top:6px; font-size:11px; color:var(--faint)}
   .legend span{display:inline-flex; align-items:center; gap:5px}
   .legend i{width:7px; height:7px; border-radius:50%}
@@ -205,6 +207,17 @@
           <button data-v="M">Masculino</button>
           <button data-v="F">Feminino</button>
         </div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="cat">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Categoria</div>
+      <div class="sec-body">
+        <div class="chips">
+          <button class="chip" id="chip-cat-sub" onclick="toggleCat('sub',this)">Sub / base</button>
+          <button class="chip" id="chip-cat-lower" onclick="toggleCat('lower',this)">Divisões inferiores</button>
+        </div>
+        <div style="font-size:11px;color:var(--faint);margin-top:8px">Desmarcados, jogos de base (Sub-17, Sub-20…) e divisões de acesso (Série B/C, 2ª divisões) ficam ocultos.</div>
       </div>
     </div>
 
@@ -549,7 +562,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '10/06 19:50'; /* preenchido pelo script Python */
+const GENERATED_AT = '10/06 20:40'; /* preenchido pelo script Python */
 
 /* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
@@ -645,7 +658,7 @@ function linkFor(nome){
   return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
 }
 
-const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), wc:new Set(), q:'' };
+const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), wc:new Set(), catSub:false, catLower:false, q:'' };
 
 /* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
    cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
@@ -706,6 +719,8 @@ function clearFilter(key){
 }
 function clearAll(){
   state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear(); state.wc.clear();
+  state.catSub = false; state.catLower = false;
+  el('chip-cat-sub').classList.remove('on'); el('chip-cat-lower').classList.remove('on');
   state.gender=''; state.q=''; el('search').value='';
   document.querySelectorAll('#seg-gender button').forEach(b=>b.classList.toggle('on', b.dataset.v===''));
   buildAllChips(); updateCounts(); render();
@@ -748,6 +763,16 @@ const WC_TEAMS = [
   ['Uruguai',    /uruguai/i],
   ['Inglaterra', /inglaterra/i],
 ];
+/* Categoria: base e divisões inferiores ocultas por padrão */
+const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes/i;
+const RE_LOWER = /s[ée]rie [bcd]\b|2ª divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
+function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league); }
+function isLower(e){ return e.sport === 'Futebol' && RE_LOWER.test(e.league + ' ' + (e.detail||'')); }
+function toggleCat(k, btn){
+  if(k==='sub') state.catSub = !state.catSub; else state.catLower = !state.catLower;
+  btn.classList.toggle('on'); render();
+}
+
 function wcMatch(e){
   if(!state.wc.size) return true;
   for(const [lbl,re] of WC_TEAMS)
@@ -820,6 +845,8 @@ function render(){
     && leagueMatch(e)
     && teamMatch(e)
     && wcMatch(e)
+    && (state.catSub || !isSub(e))
+    && (state.catLower || !isLower(e))
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
   ).sort((a,b)=>a.t.localeCompare(b.t));
 
@@ -855,7 +882,9 @@ function render(){
         </div>
         <div class="league">${e.league} <em>(${e.detail})</em>${e.v>=2?' <span class="verified" title="Confirmado em 2 fontes">✓✓</span>':''}</div>
         <div class="badges">
-          ${e.ch.map(c=>`<a class="badge ${c.y}" href="${linkFor(c.n)}" target="_blank" rel="noopener"><i></i>${c.n}</a>`).join('')}
+          ${e.ch.map(c=> /confirmar/i.test(c.n)
+            ? `<span class="badge tbd">${c.n}</span>`
+            : `<a class="badge ${c.y}" href="${linkFor(c.n)}" target="_blank" rel="noopener"><i></i>${c.n}</a>`).join('')}
         </div>
       </div>
     </div>`;
