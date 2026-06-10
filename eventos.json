@@ -1,21 +1,38 @@
 [
  {
   "date": "2026-06-10",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Friendly International",
+  "match": "FIM DE JOGO Paquistão 2 Afghanistan 0",
+  "ch": [
+   {
+    "n": "Youtube",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-10",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
   "league": "Espanhol 2ª Divisão",
-  "detail": "Playoff — semifinal",
-  "match": "Málaga x Las Palmas",
+  "detail": "Semifinal",
+  "match": "FIM DE JOGO Malaga 1 Las Palmas 1 ESPN 4",
   "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Laliga 2",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -27,11 +44,15 @@
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Amistoso internacional",
-  "match": "Portugal x Nigéria",
+  "detail": "Friendly International",
+  "match": "77' Portugal 2 Nigéria 1",
   "ch": [
    {
     "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Amistosos",
     "y": "tv"
    }
   ],
@@ -44,8 +65,8 @@
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Amistoso internacional",
-  "match": "Inglaterra x Costa Rica",
+  "detail": "Friendly International",
+  "match": "24' Inglaterra 1 Costa Rica 0",
   "ch": [
    {
     "n": "ESPN",
@@ -54,6 +75,10 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Amistoso",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -66,7 +91,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Ceará x Avaí",
+  "match": "Ceará Avai",
   "ch": [
    {
     "n": "XSports",
@@ -83,6 +108,10 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão Série B",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -95,11 +124,15 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Goiás x Novorizontino",
+  "match": "Goiás Novorizontino",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão Série B",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -111,11 +144,70 @@
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Sub-17 — amistoso",
-  "match": "Brasil Sub-17 x EUA Sub-17",
+  "detail": "Friendly International",
+  "match": "Brasil Sub-17 Estados Unidos sub-17",
   "ch": [
    {
     "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Amistoso Sub-17",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-10",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Ceará",
+  "detail": "—",
+  "match": "Hoje Começa em — Avai",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-10",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Goiás",
+  "detail": "—",
+  "match": "Hoje Começa em — Novorizontino",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-10",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Sport Recife Athletic Club",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão Série B",
     "y": "tv"
    }
   ],
@@ -126,17 +218,17 @@
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 12",
-  "match": "Sport Recife x Athletic Club",
+  "country": "Mundial",
+  "league": "Sport Recife",
+  "detail": "—",
+  "match": "Hoje Começa em — Athletic Club",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-10",
@@ -145,8 +237,8 @@
   "g": "M",
   "country": "EUA/Canadá",
   "league": "NBA",
-  "detail": "Finais — Jogo 4 (NY lidera 2-1)",
-  "match": "New York Knicks x San Antonio Spurs",
+  "detail": "NBA Finals - Game 4",
+  "match": "San Antonio Spurs x New York Knicks",
   "ch": [
    {
     "n": "Prime Video",
@@ -161,38 +253,13 @@
  },
  {
   "date": "2026-06-11",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Cerimônia de abertura — Estádio Azteca",
-  "match": "Show de abertura (J Balvin, Maná, Tyla)",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-11",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Grupo A — 1ª rodada (abertura)",
-  "match": "México x África do Sul",
+  "detail": "Rodada 1",
+  "match": "México África do Sul",
   "ch": [
    {
     "n": "Globo",
@@ -207,20 +274,54 @@
     "y": "tv"
    },
    {
+    "n": "Cazé Tv",
+    "y": "free"
+   },
+   {
     "n": "N Sports",
+    "y": "free"
+   },
+   {
+    "n": "Copa Do Mundo Fifa 2026",
     "y": "tv"
-   },
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-11",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "México",
+  "detail": "—",
+  "match": "Amanhã Começa em — África do Sul",
+  "ch": [
    {
-    "n": "CazéTV",
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-11",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Rodada 1",
+  "match": "Coreia do Sul República Tcheca",
+  "ch": [
+   {
+    "n": "Cazé Tv",
     "y": "free"
    },
    {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
+    "n": "Copa Do Mundo Fifa 2026",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -231,13 +332,63 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Grupo A — 1ª rodada",
-  "match": "Coreia do Sul x República Tcheca",
+  "league": "Coreia do Sul",
+  "detail": "—",
+  "match": "Amanhã Começa em — República Tcheca",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-12",
+  "t": "08:30",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "FP1",
+  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-12",
+  "t": "12:00",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "FP2",
+  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -249,12 +400,29 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Grupo B — 1ª rodada (Toronto)",
-  "match": "Canadá x Bósnia e Herzegovina",
+  "detail": "Tabela oficial",
+  "match": "Canadá x Bosnia-Herzegovina",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-12",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Atlético Goianiense x CRB",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -266,12 +434,570 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Grupo D — 1ª rodada (Los Angeles)",
+  "detail": "Tabela oficial",
   "match": "Estados Unidos x Paraguai",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-13",
+  "t": "07:30",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "FP3",
+  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-13",
+  "t": "11:00",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "Qual",
+  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-13",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Catar x Suíça",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-13",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Brasil x Marrocos",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-13",
+  "t": "21:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "NBA Finals - Game 5",
+  "match": "New York Knicks x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "01:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Austrália x Türkiye",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "10:00",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "Race",
+  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Juventude x Ponte Preta",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "São Bernardo x Sport",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Alemanha x Curaçao",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Athletic x Goiás",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Cuiabá x Vila Nova",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Botafogo-SP x Operário PR",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Novorizontino x Náutico",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Costa do Marfim x Equador",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Suécia x Tunísia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Terra Wortmann Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "VANDA Pharmaceuticals Berlin Tennis Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Lexus Nottingham Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Figueira Da Foz Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Espanha x Cabo Verde",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Bélgica x Egito",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Arábia Saudita x Uruguai",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Criciúma x Ceará",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Londrina x Avaí",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Irã x Nova Zelândia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "França x Senegal",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Fortaleza x América Mineiro",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "21:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "NBA Finals - Game 6 If Necessary",
+  "match": "San Antonio Spurs x New York Knicks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-16",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Argentina x Argélia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
