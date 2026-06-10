@@ -1,0 +1,321 @@
+[
+ {
+  "d": 0,
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Amistoso internacional",
+  "match": "Hungria x Cazaquistão",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 0,
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Amistoso internacional",
+  "match": "Azerbaijão x San Marino",
+  "ch": [
+   {
+    "n": "SporTV 2",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 0,
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Espanhol 2ª Divisão",
+  "detail": "Playoff — semifinal",
+  "match": "Almería x Castellón",
+  "ch": [
+   {
+    "n": "ESPN 2",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 0,
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Náutico x Fortaleza",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 0,
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Ponte Preta x Cuiabá",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 0,
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Sub-17 — amistoso",
+  "match": "Brasil Sub-17 x EUA Sub-17",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 0,
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Amistoso internacional",
+  "match": "Argentina x Islândia",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 1,
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Espanhol 2ª Divisão",
+  "detail": "Playoff — semifinal",
+  "match": "Málaga x Las Palmas",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 1,
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Amistoso internacional",
+  "match": "Portugal x Nigéria",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 1,
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Amistoso internacional",
+  "match": "Inglaterra x Costa Rica",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 1,
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Ceará x Avaí",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 1,
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Goiás x Novorizontino",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 1,
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 12",
+  "match": "Sport Recife x Athletic Club",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "d": 2,
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Cerimônia de abertura — Estádio Azteca",
+  "match": "Show de abertura (Shakira, J Balvin, Maná)",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "d": 2,
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo A — 1ª rodada (abertura)",
+  "match": "México x África do Sul",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ }
+]
