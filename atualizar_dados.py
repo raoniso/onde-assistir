@@ -98,6 +98,24 @@ def evento(date, t, sport, league, match, ch, detail="—", g=None, country=None
             "league": normalizar_liga(league), "detail": detail,
             "match": match, "ch": ch, "v": v}
 
+TRAD = {"Brazil":"Brasil","Germany":"Alemanha","France":"França","Spain":"Espanha",
+ "Netherlands":"Holanda","Belgium":"Bélgica","Uruguay":"Uruguai","England":"Inglaterra",
+ "Argentina":"Argentina","Portugal":"Portugal","Mexico":"México","South Africa":"África do Sul",
+ "South Korea":"Coreia do Sul","Czechia":"República Tcheca","Czech Republic":"República Tcheca",
+ "United States":"Estados Unidos","USA":"Estados Unidos","Canada":"Canadá",
+ "Bosnia and Herzegovina":"Bósnia e Herzegovina","Scotland":"Escócia","Morocco":"Marrocos",
+ "Switzerland":"Suíça","Qatar":"Catar","Japan":"Japão","Croatia":"Croácia","Italy":"Itália",
+ "Norway":"Noruega","Sweden":"Suécia","Poland":"Polônia","Austria":"Áustria","Turkey":"Turquia",
+ "Australia":"Austrália","Ecuador":"Equador","Colombia":"Colômbia","Paraguay":"Paraguai",
+ "Ivory Coast":"Costa do Marfim","Côte d'Ivoire":"Costa do Marfim","Egypt":"Egito",
+ "Senegal":"Senegal","Ghana":"Gana","Tunisia":"Tunísia","Algeria":"Argélia","Panama":"Panamá",
+ "Costa Rica":"Costa Rica","Haiti":"Haiti","Jordan":"Jordânia","Uzbekistan":"Uzbequistão",
+ "Iran":"Irã","Saudi Arabia":"Arábia Saudita","New Zealand":"Nova Zelândia","Cape Verde":"Cabo Verde",
+ "Curacao":"Curaçao","Curaçao":"Curaçao","Ukraine":"Ucrânia","Denmark":"Dinamarca",
+ "Ireland":"Irlanda","Northern Ireland":"Irlanda do Norte","Wales":"País de Gales",
+ "North Macedonia":"Macedônia do Norte","Slovakia":"Eslováquia","Romania":"Romênia","Kosovo":"Kosovo"}
+def trad(n): return TRAD.get(n, n)
+
 RE_HORA = re.compile(r"\b(\d{1,2}[:h]\d{2})\b")
 
 # =================================================================
@@ -250,6 +268,62 @@ def fonte_extras():
             if e.get("date", "") >= HOJE.isoformat()
             and "EXEMPLO" not in e.get("detail", "").upper()]
 
+# =================================================================
+# TABELAS OFICIAIS (7 dias) — ESPN soccer por liga. Garante que o JOGO
+# apareça mesmo sem canal confirmado ("Transmissão a confirmar").
+# Quando futebolnatv confirmar os canais (~48h antes), o jogo da fonte
+# com canais prevalece e a tabela só preenche o que faltar.
+# =================================================================
+LIGAS_FIXTURES = [
+    ("soccer/fifa.world",             "Copa do Mundo FIFA",   "Mundial"),
+    ("soccer/bra.1",                  "Brasileirão Série A",  "Brasil"),
+    ("soccer/bra.2",                  "Brasileirão Série B",  "Brasil"),
+    ("soccer/conmebol.libertadores",  "Copa Libertadores",    "América do Sul"),
+    ("soccer/conmebol.sudamericana",  "Copa Sul-Americana",   "América do Sul"),
+    ("soccer/eng.1",                  "Premier League",       "Inglaterra"),
+    ("soccer/esp.1",                  "La Liga",              "Espanha"),
+    ("soccer/ger.1",                  "Bundesliga",           "Alemanha"),
+    ("soccer/ita.1",                  "Campeonato Italiano",  "Itália"),
+    ("soccer/fra.1",                  "Campeonato Francês",   "Europa (demais)"),
+]
+def fonte_fixtures():
+    evs = []
+    for slug, liga, pais in LIGAS_FIXTURES:
+        for data in JANELA:
+            try:
+                j = espn_json(slug, data)
+            except Exception:
+                continue
+            for ev in j.get("events", []):
+                try:
+                    dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+                except Exception:
+                    continue
+                if dt.date() not in JANELA: continue
+                comp = ev.get("competitions", [{}])[0]
+                cs = comp.get("competitors", [])
+                if len(cs) < 2: continue
+                home = next((c for c in cs if c.get("homeAway") == "home"), cs[0])
+                away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
+                hn = trad(home.get("team", {}).get("displayName", "?"))
+                an = trad(away.get("team", {}).get("displayName", "?"))
+                notas = comp.get("notes", [])
+                detalhe = (notas[0].get("headline", "") if notas else "") or "Tabela oficial"
+                evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
+                                  f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
+                                  detail=detalhe, country=pais, v=1))
+    return dedup(evs)
+
+def complementar_fixtures(base, fixtures):
+    """Tabela só preenche jogos que NENHUMA fonte com canais trouxe."""
+    for fx in fixtures:
+        existe = any(b["date"] == fx["date"] and b["sport"] == "Futebol" and
+                     difflib.SequenceMatcher(None, norm(b["match"]), norm(fx["match"])).ratio() > 0.55
+                     for b in base)
+        if not existe:
+            base.append(fx)
+    return base
+
 # ----------------------------------------------------------------- merge
 def dedup(evs):
     saida, vistos = [], set()
@@ -291,6 +365,9 @@ def main():
     fut_a = roda("futebolnatv", fonte_futebolnatv, log)
     fut_b = roda("mantosdofutebol", fonte_mantos, log)
     eventos += mesclar_futebol(fut_a, fut_b) if fut_a else fut_b
+
+    fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
+    eventos = complementar_fixtures(eventos, fixtures)
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN F1", fonte_f1, log)
