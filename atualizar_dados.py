@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-10-c (parsing por slug + filtro de pseudo-canais)
+# build: 2026-06-10-d (sanitização final de canais)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -392,8 +392,11 @@ def main():
 
     eventos = dedup(eventos)
     eventos = [e for e in eventos if e["date"] >= HOJE.isoformat()]
+    # Sanitização final: nenhum pseudo-canal passa, venha de qual fonte vier
+    PSEUDO = re.compile(r"copa|fifa|rodada|grupo|s[ée]rie|amistos|libertadores|\b20\d\d\b", re.I)
     for e in eventos:
-        if not e["ch"]: e["ch"] = [{"n": "A confirmar", "y": "tv"}]
+        e["ch"] = [c for c in e["ch"] if not PSEUDO.search(sem_acento(c["n"]))]
+        if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
     eventos.sort(key=lambda e: (e["date"], e["t"]))
 
     Path("eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1), encoding="utf-8")
