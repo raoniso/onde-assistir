@@ -48,6 +48,8 @@
     font:600 13px 'Inter',sans-serif; cursor:pointer; transition:.15s;
   }
   .daytab.on{background:var(--green); border-color:var(--green); color:#06140C}
+  .daytab.pick{position:relative; overflow:hidden}
+  .daytab.pick input{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer}
   .daytab small{display:block; font-weight:500; font-size:10px; opacity:.75}
 
   /* ---------- Filtros ---------- */
@@ -249,55 +251,21 @@
 const DB = [
  {
   "date": "2026-06-10",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "FIM DE JOGO Paquistão 2 Afghanistan 0",
-  "ch": [
-   {
-    "n": "Youtube",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-10",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Blumenau x Jaraguá",
-  "ch": [
-   {
-    "n": "Catarinense 2° Divisão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-10",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
   "league": "Espanhol 2ª Divisão",
-  "detail": "Semifinal",
-  "match": "72' Malaga 1 Las Palmas 1 ESPN 4",
+  "detail": "Playoff — semifinal",
+  "match": "Málaga x Las Palmas",
   "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Laliga 2",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -309,15 +277,11 @@ const DB = [
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "42' Portugal 1 Nigéria 1",
+  "detail": "Amistoso internacional",
+  "match": "Portugal x Nigéria",
   "ch": [
    {
     "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Amistosos",
     "y": "tv"
    }
   ],
@@ -330,8 +294,8 @@ const DB = [
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "ADIADO Inglaterra Costa Rica",
+  "detail": "Amistoso internacional",
+  "match": "Inglaterra x Costa Rica",
   "ch": [
    {
     "n": "ESPN",
@@ -340,30 +304,9 @@ const DB = [
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Amistoso",
-    "y": "tv"
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-10",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Apodi x Lages",
-  "ch": [
-   {
-    "n": "Lnf Silver",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-10",
@@ -373,7 +316,7 @@ const DB = [
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Ceará Avai",
+  "match": "Ceará x Avaí",
   "ch": [
    {
     "n": "XSports",
@@ -390,10 +333,6 @@ const DB = [
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -406,15 +345,11 @@ const DB = [
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Goiás Novorizontino",
+  "match": "Goiás x Novorizontino",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -426,87 +361,15 @@ const DB = [
   "g": "M",
   "country": "Mundial",
   "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "Brasil Sub-17 Estados Unidos sub-17",
+  "detail": "Sub-17 — amistoso",
+  "match": "Brasil Sub-17 x EUA Sub-17",
   "ch": [
    {
     "n": "SporTV",
     "y": "tv"
-   },
-   {
-    "n": "Amistoso Sub-17",
-    "y": "tv"
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-10",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Ceará",
-  "detail": "—",
-  "match": "Hoje Começa em — Avai",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-10",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Goiás",
-  "detail": "—",
-  "match": "Hoje Começa em — Novorizontino",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-10",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "São Miguel x Chopinzinho",
-  "ch": [
-   {
-    "n": "Lnf Silver",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-10",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Fluminense-SC x Metropolitano",
-  "ch": [
-   {
-    "n": "Catarinense 2° Divisão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-10",
@@ -516,35 +379,14 @@ const DB = [
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 12",
-  "match": "Sport Recife Athletic Club",
+  "match": "Sport Recife x Athletic Club",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-10",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Sport Recife",
-  "detail": "—",
-  "match": "Hoje Começa em — Athletic Club",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-10",
@@ -553,8 +395,8 @@ const DB = [
   "g": "M",
   "country": "EUA",
   "league": "NBA",
-  "detail": "NBA Finals - Game 4",
-  "match": "San Antonio Spurs x New York Knicks",
+  "detail": "Finais — Jogo 4 (NY lidera 2-1)",
+  "match": "New York Knicks x San Antonio Spurs",
   "ch": [
    {
     "n": "Prime Video",
@@ -568,21 +410,29 @@ const DB = [
   "v": 2
  },
  {
-  "date": "2026-06-10",
-  "t": "22:10",
+  "date": "2026-06-11",
+  "t": "14:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Juventude AG x Vasco da Gama",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Cerimônia de abertura — Estádio Azteca",
+  "match": "Show de abertura (J Balvin, Maná, Tyla)",
   "ch": [
    {
-    "n": "Lnf Silver",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-11",
@@ -591,8 +441,8 @@ const DB = [
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "México África do Sul",
+  "detail": "Grupo A — 1ª rodada (abertura)",
+  "match": "México x África do Sul",
   "ch": [
    {
     "n": "Globo",
@@ -607,155 +457,23 @@ const DB = [
     "y": "tv"
    },
    {
-    "n": "Cazé Tv",
-    "y": "free"
-   },
-   {
     "n": "N Sports",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
     "y": "free"
    },
    {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-11",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "México",
-  "detail": "—",
-  "match": "Amanhã Começa em — África do Sul",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Canadá x Bósnia e Herzegovina",
-  "ch": [
-   {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Palmeiras x Santos",
-  "ch": [
-   {
-    "n": "Brasileirão Sub-20",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "São Caetano x Dracena",
-  "ch": [
-   {
-    "n": "Lnf Silver",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Concórdia x Sport Recife",
-  "ch": [
-   {
-    "n": "Lnf Silver",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Atlético-GO x CRB",
-  "ch": [
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Balsas x América de Natal",
-  "ch": [
-   {
-    "n": "Lnf Silver",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-11",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Outros",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Estados Unidos x Paraguai",
-  "ch": [
-   {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-11",
@@ -764,111 +482,53 @@ const DB = [
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "Coreia do Sul República Tcheca",
+  "detail": "Grupo A — 1ª rodada",
+  "match": "Coreia do Sul x República Tcheca",
   "ch": [
    {
-    "n": "Cazé Tv",
+    "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
    }
   ],
   "v": 2
  },
  {
-  "date": "2026-06-11",
-  "t": "23:00",
+  "date": "2026-06-12",
+  "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Outros",
-  "league": "Coreia do Sul",
-  "detail": "—",
-  "match": "Amanhã Começa em — República Tcheca",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo B — 1ª rodada (Toronto)",
+  "match": "Canadá x Bósnia e Herzegovina",
   "ch": [
    {
-    "n": "A confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
   "v": 1
  },
  {
   "date": "2026-06-12",
-  "t": "08:30",
-  "sport": "Fórmula 1",
+  "t": "22:00",
+  "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Fórmula 1",
-  "detail": "FP1",
-  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo D — 1ª rodada (Los Angeles)",
+  "match": "Estados Unidos x Paraguai",
   "ch": [
    {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "F1 Tv Pro",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-12",
-  "t": "12:00",
-  "sport": "Fórmula 1",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Fórmula 1",
-  "detail": "FP2",
-  "match": "MSC Cruises Barcelona-Catalunya Grand Prix",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "F1 Tv Pro",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2099-01-01",
-  "t": "00:00",
-  "sport": "Surf",
-  "g": "M",
-  "country": "Mundial",
-  "league": "WSL Championship Tour",
-  "detail": "EXEMPLO — copie este formato, troque a data e os dados, e apague esta linha",
-  "match": "Etapa X — dia de baterias",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "WSL+",
-    "y": "stream"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
   "v": 1
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '10/06 17:31'; /* preenchido pelo script Python */
+const GENERATED_AT = '10/06 17:45'; /* preenchido pelo script Python */
 
 /* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
@@ -913,14 +573,34 @@ function linkFor(nome){
 const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), q:'' };
 
 /* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
-   cuja data bate exatamente com a dele — dado antigo nunca vira "hoje". */
-const DAYS = [0,1,2].map(i=>{
-  const dt = new Date(); dt.setDate(dt.getDate()+i);
-  const iso = dt.toLocaleDateString('en-CA'); /* YYYY-MM-DD local */
-  const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
-  const label = i===0 ? 'Hoje' : i===1 ? 'Amanhã' : w.charAt(0).toUpperCase()+w.slice(1);
-  return { label, sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}), iso };
-});
+   cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
+   Baseline de 7 dias + seletor livre de data (📅). */
+let customIso = null;
+function makeDays(){
+  const arr = [0,1,2,3,4,5,6].map(i=>{
+    const dt = new Date(); dt.setDate(dt.getDate()+i);
+    const iso = dt.toLocaleDateString('en-CA'); /* YYYY-MM-DD local */
+    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
+    const label = i===0 ? 'Hoje' : i===1 ? 'Amanhã' : w.charAt(0).toUpperCase()+w.slice(1);
+    return { label, sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}), iso };
+  });
+  if(customIso && !arr.some(d=>d.iso===customIso)){
+    const dt = new Date(customIso+'T12:00:00');
+    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
+    arr.push({ label: w.charAt(0).toUpperCase()+w.slice(1),
+               sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}),
+               iso: customIso });
+  }
+  return arr;
+}
+let DAYS = makeDays();
+function pickDate(v){
+  if(!v) return;
+  customIso = v;
+  DAYS = makeDays();
+  state.day = DAYS.findIndex(d=>d.iso===v);
+  buildDayTabs(); buildLeagueChips(); render();
+}
 
 /* ---------- helpers ---------- */
 const uniq = arr => [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'pt'));
@@ -929,7 +609,7 @@ const el = id => document.getElementById(id);
 function buildDayTabs(){
   el('daytabs').innerHTML = DAYS.map((d,i)=>
     `<button class="daytab ${i===state.day?'on':''}" onclick="setDay(${i})">${d.label}<small>${d.sub}</small></button>`
-  ).join('');
+  ).join('') + `<label class="daytab pick">📅<small>data</small><input type="date" min="${DAYS[0].iso}" value="${customIso||''}" onchange="pickDate(this.value)"></label>`;
 }
 function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); }
 
@@ -1012,7 +692,11 @@ function render(){
   el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (typeof GENERATED_AT==='string' && GENERATED_AT ? ` · dados de ${GENERATED_AT}` : '');
 
   if(!list.length){
-    el('results').innerHTML = `<div class="empty"><b>Nenhum evento com esses filtros.</b>Ajuste os filtros acima ou toque em “Limpar tudo”.</div>`;
+    const ultimaData = DB.reduce((m,e)=> e.date>m ? e.date : m, '');
+    const semConfirmacao = DAYS[state.day].iso > ultimaData;
+    el('results').innerHTML = semConfirmacao
+      ? `<div class="empty"><b>Programação ainda não confirmada para este dia.</b>As emissoras confirmam canais de futebol ~48h antes; NBA, F1 e tênis entram com até 7 dias. Volte mais perto da data — a atualização é automática.</div>`
+      : `<div class="empty"><b>Nenhum evento com esses filtros.</b>Ajuste os filtros acima ou toque em “Limpar tudo”.</div>`;
     return;
   }
   let html='', lastBlock='';
