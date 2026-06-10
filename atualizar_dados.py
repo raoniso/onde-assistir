@@ -64,6 +64,7 @@ def canal(nome):
         b = b.replace(a, dep)
     return {"n": b, "y": tipo}
 
+# Saídas alinhadas com os chips fixos do app
 PAIS_POR_LIGA = [
     (r"brasileir|copa do brasil|paulista|carioca|mineiro|gaucho|copinha", "Brasil"),
     (r"libertadores|sul.?americana|recopa|argentin|chilen|uruguai|colombian", "América do Sul"),
@@ -71,16 +72,15 @@ PAIS_POR_LIGA = [
     (r"la liga|espanhol|copa do rei", "Espanha"),
     (r"italian|coppa", "Itália"),
     (r"alem|bundesliga|dfb", "Alemanha"),
-    (r"franc|ligue 1", "França"),
-    (r"champions|europa league|conference|uefa|euro|nations", "Europa"),
-    (r"mls|nwsl|nba|wnba|\beua\b", "EUA"),
-    (r"amistos|mundial|copa do mundo|fifa|sele", "Mundial"),
+    (r"mls|nwsl|nba|wnba|nfl|mlb|\beua\b|canad", "EUA/Canadá"),
+    (r"franc|ligue 1|portug|holand|eredivisie|champions|europa league|conference|uefa|euro|nations", "Europa (demais)"),
+    (r"amistos|mundial|copa do mundo|fifa|sele|atp|wta|wsl", "Mundial"),
 ]
 def pais_da_liga(liga):
     alvo = sem_acento(liga).lower()
     for padrao, pais in PAIS_POR_LIGA:
         if re.search(padrao, alvo): return pais
-    return "Outros"
+    return "Mundial"
 
 def normalizar_liga(liga):
     if re.search(r"copa do mundo|world cup", sem_acento(liga).lower()):
@@ -194,7 +194,7 @@ def fonte_nba():
             detalhe = notas[0].get("headline", "Temporada NBA") if notas else "Temporada NBA"
             evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
                               f"{times[1]} x {times[0]}", CANAIS_MODALIDADE["nba"],
-                              detail=detalhe, country="EUA", v=2))
+                              detail=detalhe, country="EUA/Canadá", v=2))
     return dedup(evs)
 
 def fonte_f1():
@@ -246,7 +246,9 @@ def fonte_extras():
     p = Path("extras.json")
     if not p.exists(): return []
     dados = json.loads(p.read_text(encoding="utf-8"))
-    return [e for e in dados if e.get("date", "") >= HOJE.isoformat()]
+    return [e for e in dados
+            if e.get("date", "") >= HOJE.isoformat()
+            and "EXEMPLO" not in e.get("detail", "").upper()]
 
 # ----------------------------------------------------------------- merge
 def dedup(evs):
@@ -270,8 +272,8 @@ def mesclar_futebol(base, extra):
             achou["v"] = 2
             if achou["league"] in ("Futebol", "—") and ev["league"] not in ("Futebol", "—"):
                 achou["league"], achou["country"] = ev["league"], ev["country"]
-        else:
-            base.append(ev)
+        # IMPORTANTE: fonte B é apenas CRUZAMENTO. Evento que só existe nela
+        # é descartado — evita "ligas" fantasmas geradas por erro de parsing.
     return base
 
 # ----------------------------------------------------------------- main
