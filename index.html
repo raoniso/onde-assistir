@@ -224,6 +224,14 @@
       </div>
     </div>
 
+    <div class="section" data-sec="team">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('team')">Limpar times</button>
+        <div class="chips" id="chips-team"></div>
+      </div>
+    </div>
+
     <div class="searchrow">
       <input id="search" type="search" placeholder="Buscar time, liga ou canal…" autocomplete="off">
     </div>
@@ -532,7 +540,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '10/06 19:05'; /* preenchido pelo script Python */
+const GENERATED_AT = '10/06 19:30'; /* preenchido pelo script Python */
 
 /* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
@@ -628,7 +636,7 @@ function linkFor(nome){
   return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
 }
 
-const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), q:'' };
+const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), q:'' };
 
 /* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
    cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
@@ -688,13 +696,13 @@ function clearFilter(key){
   buildAllChips(); updateCounts(); render();
 }
 function clearAll(){
-  state.sport.clear(); state.country.clear(); state.league.clear();
+  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear();
   state.gender=''; state.q=''; el('search').value='';
   document.querySelectorAll('#seg-gender button').forEach(b=>b.classList.toggle('on', b.dataset.v===''));
   buildAllChips(); updateCounts(); render();
 }
 function updateCounts(){
-  for(const k of ['sport','country','league']){
+  for(const k of ['sport','country','league','team']){
     const c = el('cnt-'+k);
     c.textContent = state[k].size; c.classList.toggle('show', state[k].size>0);
   }
@@ -718,6 +726,31 @@ const LEAGUES = [
   ['NBA',                   /\bnba\b/i],
   ['WSL (Surf)',            /\bwsl\b|championship tour/i],
 ];
+/* Times: lista FIXA. Casa por padrão contra os nomes no card. */
+const TEAMS = [
+  ['Palmeiras',        /palmeiras/i],
+  ['Flamengo',         /flamengo/i],
+  ['São Paulo',        /s[ãa]o paulo/i],
+  ['Corinthians',      /corinthians/i],
+  ['Santos',           /\bsantos\b/i],
+  ['Botafogo',         /botafogo/i],
+  ['Fluminense',       /fluminense/i],
+  ['Real Madrid',      /real madrid/i],
+  ['Barcelona',        /barcelona/i],
+  ['Bayern',           /bayern/i],
+  ['Manchester City',  /manchester city|man\.? city/i],
+  ['Liverpool',        /liverpool/i],
+  ['Chelsea',          /chelsea/i],
+  ['Arsenal',          /arsenal/i],
+  ['PSG',              /\bpsg\b|paris saint.?germain/i],
+  ['Atlético Madrid',  /atl[ée]tico (de )?madrid/i],
+];
+function teamMatch(e){
+  if(!state.team.size) return true;
+  for(const [lbl,re] of TEAMS)
+    if(state.team.has(lbl) && re.test(e.match)) return true;
+  return false;
+}
 function leagueMatch(e){
   if(!state.league.size) return true;
   for(const [lbl,re] of LEAGUES)
@@ -726,6 +759,7 @@ function leagueMatch(e){
 }
 function buildLeagueChips(){
   buildChips('league','chips-league', LEAGUES.map(l=>l[0]));
+  buildChips('team','chips-team', TEAMS.map(t=>t[0]));
 }
 function buildAllChips(){
   const extras = uniq(DB.map(e=>e.sport)).filter(s=>!SPORTS.includes(s));
@@ -754,6 +788,7 @@ function render(){
     && (!state.gender       || e.g===state.gender)
     && (!state.country.size || state.country.has(e.country))
     && leagueMatch(e)
+    && teamMatch(e)
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
   ).sort((a,b)=>a.t.localeCompare(b.t));
 
