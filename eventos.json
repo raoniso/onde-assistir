@@ -1,137 +1,6 @@
 [
  {
-  "d": 0,
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Amistoso internacional",
-  "match": "Hungria x Cazaquistão",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "d": 0,
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Amistoso internacional",
-  "match": "Azerbaijão x San Marino",
-  "ch": [
-   {
-    "n": "SporTV 2",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "d": 0,
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Espanhol 2ª Divisão",
-  "detail": "Playoff — semifinal",
-  "match": "Almería x Castellón",
-  "ch": [
-   {
-    "n": "ESPN 2",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "d": 0,
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 12",
-  "match": "Náutico x Fortaleza",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "d": 0,
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 12",
-  "match": "Ponte Preta x Cuiabá",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "d": 0,
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Sub-17 — amistoso",
-  "match": "Brasil Sub-17 x EUA Sub-17",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "d": 0,
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Amistoso internacional",
-  "match": "Argentina x Islândia",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "d": 1,
+  "date": "2026-06-10",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -152,7 +21,7 @@
   "v": 2
  },
  {
-  "d": 1,
+  "date": "2026-06-10",
   "t": "16:45",
   "sport": "Futebol",
   "g": "M",
@@ -169,7 +38,7 @@
   "v": 2
  },
  {
-  "d": 1,
+  "date": "2026-06-10",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
@@ -187,10 +56,10 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
-  "d": 1,
+  "date": "2026-06-10",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
@@ -219,7 +88,7 @@
   "v": 2
  },
  {
-  "d": 1,
+  "date": "2026-06-10",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
@@ -233,10 +102,27 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
-  "d": 1,
+  "date": "2026-06-10",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Sub-17 — amistoso",
+  "match": "Brasil Sub-17 x EUA Sub-17",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-10",
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
@@ -250,17 +136,38 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
-  "d": 2,
+  "date": "2026-06-10",
+  "t": "21:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA",
+  "league": "NBA",
+  "detail": "Finais — Jogo 4 (NY lidera 2-1)",
+  "match": "New York Knicks x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-11",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Cerimônia de abertura — Estádio Azteca",
-  "match": "Show de abertura (Shakira, J Balvin, Maná)",
+  "match": "Show de abertura (J Balvin, Maná, Tyla)",
   "ch": [
    {
     "n": "Globo",
@@ -278,7 +185,7 @@
   "v": 2
  },
  {
-  "d": 2,
+  "date": "2026-06-11",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -317,5 +224,56 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-06-11",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo A — 1ª rodada",
+  "match": "Coreia do Sul x República Tcheca",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-12",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo B — 1ª rodada (Toronto)",
+  "match": "Canadá x Bósnia e Herzegovina",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-12",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Grupo D — 1ª rodada (Los Angeles)",
+  "match": "Estados Unidos x Paraguai",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
  }
 ]
