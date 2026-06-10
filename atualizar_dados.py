@@ -34,7 +34,7 @@ from bs4 import BeautifulSoup
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 BRT = timezone(timedelta(hours=-3))
 HOJE = datetime.now(BRT).date()
-JANELA = [HOJE + timedelta(days=i) for i in range(3)]  # hoje, amanhã, depois
+JANELA = [HOJE + timedelta(days=i) for i in range(7)]  # baseline semanal
 
 # ----------------------------------------------------------------- helpers
 def sem_acento(s):
