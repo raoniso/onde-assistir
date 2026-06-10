@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# build: 2026-06-10-b (gatilho de execução)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
