@@ -45,14 +45,10 @@
   "country": "Mundial",
   "league": "Amistosos Seleções",
   "detail": "Friendly International",
-  "match": "79' Portugal 2 Nigéria 1",
+  "match": "80' Portugal 2 Nigéria 1",
   "ch": [
    {
     "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Amistosos",
     "y": "tv"
    }
   ],
@@ -66,7 +62,7 @@
   "country": "Mundial",
   "league": "Amistosos Seleções",
   "detail": "Friendly International",
-  "match": "26' x 1 Costa",
+  "match": "27' x 1 Costa",
   "ch": [
    {
     "n": "ESPN",
@@ -104,10 +100,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -125,10 +117,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -145,10 +133,6 @@
   "ch": [
    {
     "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Amistoso Sub-17",
     "y": "tv"
    }
   ],
@@ -201,10 +185,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão Série B",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -276,10 +256,6 @@
    {
     "n": "N Sports",
     "y": "free"
-   },
-   {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -314,10 +290,6 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Copa Do Mundo Fifa 2026",
-    "y": "tv"
    }
   ],
   "v": 2
