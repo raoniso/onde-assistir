@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-10-b (gatilho de execução)
+# build: 2026-06-10-c (parsing por slug + filtro de pseudo-canais)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -59,7 +59,7 @@ def canal(nome):
     tipo = "free" if chave in CANAIS_FREE else "stream" if chave in CANAIS_STREAM else "tv"
     b = nome.title()
     for a, dep in [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
-                   ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Xsports","XSports"),
+                   ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Cazé Tv","CazéTV"),("Xsports","XSports"),
                    ("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),("Wsl","WSL"),
                    ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports")]:
         b = b.replace(a, dep)
@@ -153,9 +153,24 @@ def fonte_futebolnatv():
                 par = " ".join(ctk[i:i+2])
                 if sem_acento(par).upper() in COMPOSTOS: canais.append(par); i += 2
                 else: canais.append(ctk[i]); i += 1
+            canais = [c for c in canais
+                      if not re.search(r"copa|fifa|rodada|grupo|s[ée]rie|\b20\d\d\b",
+                                       sem_acento(c), re.I)]
 
-            m2 = re.fullmatch(r"(.+?) \1 (.+?) \2", resto)
-            partida = f"{m2.group(1)} x {m2.group(3)}" if m2 else resto
+            # nº de palavras de cada time vem do slug da URL: "time-a-x-time-b-HASH"
+            partida = None
+            slug = (a.get("href") or "").rsplit("/", 1)[-1].replace(".html", "")
+            m_slug = re.match(r"(.+?)-x-(.+?)-[0-9a-f]{6,}$", slug)
+            palavras = resto.split()
+            if m_slug:
+                n1 = len(m_slug.group(1).split("-")); n2 = len(m_slug.group(2).split("-"))
+                if len(palavras) == n1 + n2:                # texto sem duplicação
+                    partida = " ".join(palavras[:n1]) + " x " + " ".join(palavras[n1:])
+                elif len(palavras) == 2 * (n1 + n2):        # texto duplicado (alt da imagem)
+                    partida = " ".join(palavras[:n1]) + " x " + " ".join(palavras[2*n1:2*n1+n2])
+            if not partida:                                 # último recurso: dedup por regex
+                m2 = re.fullmatch(r"(.+?) \1 (.+?) \2", resto)
+                partida = f"{m2.group(1)} x {m2.group(3)}" if m2 else resto
             if not partida or (data, hora, norm(partida)) in vistos: continue
             vistos.add((data, hora, norm(partida)))
             evs.append(evento(data, hora, "Futebol", liga, partida,
