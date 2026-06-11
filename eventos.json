@@ -243,14 +243,14 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "Estados Unidos Paraguai SBT GLOBO SPORTV GE TV (GLOBO PLAY)",
+  "match": "Estados Unidos Paraguai GLOBO SBT SPORTV CAZÉ TV GE TV (GLOBO PLAY)",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-12",
@@ -264,6 +264,23 @@
   "ch": [
    {
     "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-12",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Estados Unidos x Paraguai",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
