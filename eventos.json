@@ -30,7 +30,7 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-11",
@@ -81,7 +81,7 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-11",
@@ -640,7 +640,7 @@
   "country": "Mundial",
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
-  "match": "Figueira Da Foz Open",
+  "match": "Figueira Da Foz Ladies Open",
   "ch": [
    {
     "n": "ESPN",
