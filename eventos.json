@@ -57,7 +57,7 @@
   "country": "Brasil",
   "league": "Paulista Sub-20",
   "detail": "Rodada 3",
-  "match": "5' Santos Sub-20 0 Jabaquara U20 0 YOUTUBE (PAULISTÃO)",
+  "match": "FIM DE JOGO Santos Sub-20 1 Jabaquara U20 0 YOUTUBE (PAULISTÃO)",
   "ch": [
    {
     "n": "A confirmar",
@@ -74,7 +74,7 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "Canadá x Bósnia e Herzegovina",
+  "match": "FIM DE JOGO Canadá 1 Bósnia e Herzegovina 1",
   "ch": [
    {
     "n": "CazéTV",
@@ -82,23 +82,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "Canadá",
-  "detail": "—",
-  "match": "Hoje Começa em — Bósnia e Herzegovina",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-12",
