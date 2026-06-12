@@ -428,6 +428,27 @@
  },
  {
   "date": "2026-06-14",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "VANDA Pharmaceuticals Berlin Tennis Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
   "t": "10:00",
   "sport": "Fórmula 1",
   "g": "M",
@@ -613,27 +634,6 @@
   "league": "Circuito ATP",
   "detail": "Dia de jogos",
   "match": "Terra Wortmann Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "VANDA Pharmaceuticals Berlin Tennis Open",
   "ch": [
    {
     "n": "ESPN",
