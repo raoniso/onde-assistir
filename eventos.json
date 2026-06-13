@@ -538,6 +538,27 @@
  },
  {
   "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Espanhol 2ª Divisão",
+  "detail": "Final",
+  "match": "Malaga x ESPN",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   },
+   {
+    "n": "Laliga 2",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
