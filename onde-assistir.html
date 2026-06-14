@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0A0D13">
+<title>Onde Assistir — Guia de Transmissões</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0D13; --surface:#121724; --chip:#1A2130; --chip-on:#10301F;
+    --border:#222B3C; --border-on:#2FD380;
+    --text:#E8EDF6; --muted:#8C96A8; --faint:#5A6478;
+    --green:#2FD380; --orange:#F7A823; --live:#FF4D5E;
+    --tv:#7AA7FF; --stream:#C792EA; --free:#2FD380;
+    --radius:14px;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{margin:0; padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-size:15px; line-height:1.45;
+    padding-bottom:48px;
+  }
+  .wrap{max-width:560px; margin:0 auto; padding:0 14px}
+
+  /* ---------- Top bar ---------- */
+  header{
+    position:sticky; top:0; z-index:30;
+    background:rgba(10,13,19,.92); backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+    padding-top:env(safe-area-inset-top);
+  }
+  .brand{display:flex; align-items:baseline; gap:8px; padding:14px 0 4px}
+  .brand h1{
+    font-family:'Barlow Condensed',sans-serif; font-weight:800;
+    font-size:26px; letter-spacing:.5px; margin:0; text-transform:uppercase;
+  }
+  .brand h1 .dot{color:var(--green)}
+  .brand span{font-size:12px; color:var(--muted)}
+  .daytabs{display:flex; gap:6px; padding:8px 0 12px; overflow-x:auto; scrollbar-width:none}
+  .daytabs::-webkit-scrollbar{display:none}
+  .daytab{
+    flex:0 0 auto; border:1px solid var(--border); background:var(--chip);
+    color:var(--muted); border-radius:999px; padding:7px 16px;
+    font:600 13px 'Inter',sans-serif; cursor:pointer; transition:.15s;
+  }
+  .daytab.on{background:var(--green); border-color:var(--green); color:#06140C}
+  .daytab.pick{position:relative; overflow:hidden}
+  .daytab.pick input{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer}
+  .daytab small{display:block; font-weight:500; font-size:10px; opacity:.75}
+
+  /* ---------- Filtros ---------- */
+  .panel{margin-top:14px}
+  .section{border-bottom:1px dashed var(--border); padding:10px 0}
+  .sec-head{
+    display:flex; align-items:center; gap:8px; cursor:pointer; user-select:none;
+    font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15px;
+    letter-spacing:2px; text-transform:uppercase; color:var(--muted);
+  }
+  .sec-head .tri{color:var(--green); font-size:11px; transition:transform .2s}
+  .section.closed .tri{transform:rotate(-90deg)}
+  .sec-head .count{
+    margin-left:auto; font-family:'Inter'; font-size:11px; font-weight:600;
+    letter-spacing:0; color:#06140C; background:var(--green);
+    border-radius:999px; padding:1px 8px; display:none;
+  }
+  .sec-head .count.show{display:inline-block}
+  .sec-body{padding-top:10px}
+  .section.closed .sec-body{display:none}
+  .chips{display:flex; flex-wrap:wrap; gap:8px}
+  .chip{
+    border:1px solid var(--border); background:var(--chip); color:var(--text);
+    border-radius:999px; padding:8px 15px; font:500 13.5px 'Inter',sans-serif;
+    cursor:pointer; transition:.12s;
+  }
+  .chip:active{transform:scale(.96)}
+  .chip.on{background:var(--chip-on); border-color:var(--border-on); color:var(--green); font-weight:600}
+  .clear-link{
+    background:none; border:none; color:var(--green); font:500 12.5px 'Inter';
+    text-decoration:underline; cursor:pointer; padding:0; margin-bottom:8px;
+  }
+  .seg{display:flex; border:1px solid var(--border); border-radius:999px; overflow:hidden; width:max-content}
+  .seg button{
+    background:var(--chip); border:none; color:var(--muted);
+    font:600 13px 'Inter'; padding:8px 18px; cursor:pointer;
+  }
+  .seg button.on{background:var(--green); color:#06140C}
+  .searchrow{display:flex; gap:10px; margin:14px 0 4px}
+  .searchrow input{
+    flex:1; background:var(--chip); border:1px solid var(--border);
+    border-radius:12px; color:var(--text); font:400 14px 'Inter';
+    padding:11px 14px; outline:none;
+  }
+  .searchrow input:focus{border-color:var(--green)}
+  .searchrow input::placeholder{color:var(--faint)}
+  .actions{display:flex; align-items:center; gap:12px; margin:12px 0 4px}
+  .btn-update{
+    background:var(--green); color:#06140C; border:none; border-radius:999px;
+    font:700 14px 'Inter'; padding:11px 26px; cursor:pointer;
+  }
+  .btn-ghost{
+    background:none; border:1px solid var(--border); color:var(--muted);
+    border-radius:999px; font:600 13px 'Inter'; padding:10px 18px; cursor:pointer;
+  }
+
+  /* ---------- Resultados ---------- */
+  .meta{color:var(--muted); font-size:13px; margin:18px 0 6px}
+  .meta b{color:var(--text)}
+  .timeblock{
+    font-family:'Barlow Condensed'; font-weight:700; font-size:14px;
+    letter-spacing:3px; text-transform:uppercase; color:var(--faint);
+    margin:20px 0 8px; display:flex; align-items:center; gap:10px;
+  }
+  .timeblock::after{content:''; flex:1; height:1px; background:var(--border)}
+  .card{
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius); padding:14px; margin-bottom:10px;
+    display:grid; grid-template-columns:74px 1fr; gap:12px;
+    animation:rise .25s ease both;
+  }
+  @keyframes rise{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+  @media (prefers-reduced-motion:reduce){ .card{animation:none} }
+  .when{display:flex; flex-direction:column; align-items:flex-start; gap:4px}
+  .time{
+    font-family:'Barlow Condensed'; font-weight:800; font-size:34px;
+    line-height:.9; color:var(--orange); letter-spacing:.5px;
+  }
+  .live-pill{
+    display:inline-flex; align-items:center; gap:5px;
+    font:700 10px 'Inter'; letter-spacing:1px; color:var(--live);
+  }
+  .live-pill i{
+    width:7px; height:7px; border-radius:50%; background:var(--live);
+    animation:pulse 1.2s infinite;
+  }
+  @keyframes pulse{50%{opacity:.25}}
+  .gender-tag{font:600 10px 'Inter'; letter-spacing:1px; color:var(--faint)}
+  .score{font-family:'Barlow Condensed'; font-weight:800; font-size:26px; line-height:1; color:var(--text)}
+  .score span{color:var(--faint); font-size:18px}
+  .score-status{font:700 10px 'Inter'; letter-spacing:1px; color:var(--live)}
+  .score-status.fim{color:var(--faint)}
+  .ev-top{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .sport-tag{
+    font:700 10.5px 'Inter'; letter-spacing:1.5px; text-transform:uppercase;
+    background:var(--chip); border-radius:6px; padding:3px 8px; color:var(--muted);
+  }
+  .matchup{font-weight:700; font-size:15.5px}
+  .league{color:var(--muted); font-size:13px; margin-top:2px}
+  .league em{color:var(--faint); font-style:italic; font-size:12px}
+  .badges{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
+  .badge{
+    font:600 12px 'Inter'; border-radius:999px; padding:5px 12px;
+    border:1px solid var(--border); display:inline-flex; align-items:center; gap:6px;
+    text-decoration:none; cursor:pointer; transition:.12s;
+  }
+  .badge:active{transform:scale(.95)}
+  .badge::after{content:'↗'; font-size:10px; opacity:.5}
+  .verified{color:var(--green); font-size:11px; font-weight:700}
+  .badge i{width:6px; height:6px; border-radius:50%}
+  .badge.tv{color:var(--tv)} .badge.tv i{background:var(--tv)}
+  .badge.stream{color:var(--stream)} .badge.stream i{background:var(--stream)}
+  .badge.free{color:var(--free)} .badge.free i{background:var(--free)}
+  .badge.tbd{color:var(--faint); border-style:dashed}
+  .badge.tbd::after{content:''}
+  .legend{display:flex; gap:14px; margin-top:6px; font-size:11px; color:var(--faint)}
+  .legend span{display:inline-flex; align-items:center; gap:5px}
+  .legend i{width:7px; height:7px; border-radius:50%}
+  .empty{
+    text-align:center; color:var(--muted); padding:40px 20px;
+    border:1px dashed var(--border); border-radius:var(--radius); margin-top:16px;
+  }
+  .empty b{color:var(--text); display:block; margin-bottom:6px}
+  button:focus-visible,.chip:focus-visible,input:focus-visible{outline:2px solid var(--green); outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <h1>Onde<span class="dot">.</span>Assistir</h1>
+      <span>guia de transmissões</span>
+    </div>
+    <div class="daytabs" id="daytabs"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="panel">
+
+    <div class="section" data-sec="sport">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Esportes <span class="count" id="cnt-sport"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('sport')">Limpar</button>
+        <div class="chips" id="chips-sport"></div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="gender">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Gênero</div>
+      <div class="sec-body">
+        <div class="seg" id="seg-gender">
+          <button data-v="" class="on">Todos</button>
+          <button data-v="M">Masculino</button>
+          <button data-v="F">Feminino</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="cat">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Categoria</div>
+      <div class="sec-body">
+        <div class="chips">
+          <button class="chip" id="chip-cat-sub" onclick="toggleCat('sub',this)">Sub / base</button>
+          <button class="chip" id="chip-cat-lower" onclick="toggleCat('lower',this)">Divisões inferiores</button>
+        </div>
+        <div style="font-size:11px;color:var(--faint);margin-top:8px">Desmarcados, jogos de base (Sub-17, Sub-20…) e divisões de acesso (Série B/C, 2ª divisões) ficam ocultos.</div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="country">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> País / Região <span class="count" id="cnt-country"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('country')">Todos os países</button>
+        <div class="chips" id="chips-country"></div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="league">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Campeonatos / Ligas <span class="count" id="cnt-league"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('league')">Limpar campeonatos</button>
+        <div class="chips" id="chips-league"></div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO TEMPORÁRIA: remover este bloco inteiro após a Copa (19/07) -->
+    <div class="section" data-sec="wc">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Seleções — Copa 🏆 <span class="count" id="cnt-wc"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('wc')">Limpar seleções</button>
+        <div class="chips" id="chips-wc"></div>
+      </div>
+    </div>
+
+    <div class="section" data-sec="team">
+      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
+      <div class="sec-body">
+        <button class="clear-link" onclick="clearFilter('team')">Limpar times</button>
+        <div class="chips" id="chips-team"></div>
+      </div>
+    </div>
+
+    <div class="searchrow">
+      <input id="search" type="search" placeholder="Buscar time, liga ou canal…" autocomplete="off">
+    </div>
+
+    <div class="actions">
+      <button class="btn-update" onclick="render()">Atualizar</button>
+      <button class="btn-ghost" onclick="clearAll()">Limpar tudo</button>
+    </div>
+
+    <div class="legend">
+      <span><i style="background:var(--tv)"></i> TV</span>
+      <span><i style="background:var(--stream)"></i> Streaming</span>
+      <span><i style="background:var(--free)"></i> Grátis / aberto</span>
+    </div>
+  </div>
+
+  <div class="meta" id="meta"></div>
+  <div id="results"></div>
+</main>
+
+<script>
+/* =========================================================
+   DADOS — atualizados pelo script Python (atualizar_dados.py),
+   que substitui tudo entre os marcadores DB-START e DB-END.
+   Se houver um eventos.json hospedado junto, ele tem prioridade.
+   type do canal: 'tv' | 'stream' | 'free'
+   ========================================================= */
+/*DB-START*/
+const DB = [
+  // ----- dia 0 (hoje) -----
+  {d:0,t:'11:00',sport:'Tênis',g:'M',country:'França',league:'Roland Garros',detail:'Quartas de final',match:'Alcaraz x Sinner',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:0,t:'13:00',sport:'Futebol',g:'F',country:'Brasil',league:'Brasileirão Feminino A1',detail:'Rodada 12',match:'Corinthians x Ferroviária',ch:[{n:'SporTV',y:'tv'},{n:'CazéTV',y:'free'}]},
+  {d:0,t:'15:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — treino livre',match:'F1 — Montreal',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
+  {d:0,t:'16:00',sport:'Futebol',g:'M',country:'Espanha',league:'La Liga 2',detail:'Playoff — semi (volta)',match:'Málaga x Las Palmas',ch:[{n:'ESPN 4',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:0,t:'16:45',sport:'Futebol',g:'M',country:'Mundial',league:'Amistosos Internacionais',detail:'Amistoso',match:'Portugal x Nigéria',ch:[{n:'SporTV',y:'tv'}]},
+  {d:0,t:'18:30',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série B',detail:'Rodada 11',match:'Santos x Goiás',ch:[{n:'Premiere',y:'stream'},{n:'Disney+',y:'stream'}]},
+  {d:0,t:'19:30',sport:'Vôlei',g:'F',country:'Mundial',league:'Liga das Nações (VNL)',detail:'Fase classificatória',match:'Brasil x Itália',ch:[{n:'SporTV 2',y:'tv'},{n:'VBTV',y:'stream'}]},
+  {d:0,t:'20:00',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série A',detail:'Rodada 13',match:'Flamengo x Palmeiras',ch:[{n:'Globo',y:'free'},{n:'Premiere',y:'stream'}]},
+  {d:0,t:'21:30',sport:'Basquete',g:'M',country:'EUA',league:'NBA',detail:'Finais — Jogo 3',match:'Celtics x Thunder',ch:[{n:'ESPN',y:'tv'},{n:'Prime Video',y:'stream'},{n:'NBA League Pass',y:'stream'}]},
+  {d:0,t:'23:00',sport:'UFC',g:'M',country:'EUA',league:'UFC Fight Night',detail:'Card principal',match:'UFC Vegas — luta principal',ch:[{n:'UFC Fight Pass',y:'stream'},{n:'Max',y:'stream'}]},
+
+  // ----- dia 1 (amanhã) -----
+  {d:1,t:'09:00',sport:'Tênis',g:'F',country:'França',league:'Roland Garros',detail:'Semifinal',match:'Swiatek x Gauff',ch:[{n:'ESPN 2',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:1,t:'13:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — classificação',match:'F1 — Montreal (quali)',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
+  {d:1,t:'14:00',sport:'Futebol',g:'M',country:'Inglaterra',league:'Premier League',detail:'Rodada 1 — pré-temporada',match:'Arsenal x Chelsea',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:1,t:'16:00',sport:'Futebol',g:'F',country:'EUA',league:'NWSL',detail:'Temporada regular',match:'Kansas City Current x Orlando Pride',ch:[{n:'CazéTV',y:'free'},{n:'Paramount+',y:'stream'}]},
+  {d:1,t:'16:00',sport:'Futebol',g:'M',country:'Itália',league:'Serie A',detail:'Rodada 38',match:'Inter x Milan',ch:[{n:'ESPN 4',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:1,t:'18:00',sport:'Beisebol',g:'M',country:'EUA',league:'MLB',detail:'Temporada regular',match:'Yankees x Red Sox',ch:[{n:'ESPN 3',y:'tv'},{n:'MLB.TV',y:'stream'}]},
+  {d:1,t:'19:00',sport:'Futebol',g:'M',country:'América do Sul',league:'Copa Libertadores',detail:'Oitavas — ida',match:'Botafogo x River Plate',ch:[{n:'Paramount+',y:'stream'},{n:'ESPN',y:'tv'}]},
+  {d:1,t:'21:00',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série A',detail:'Rodada 13',match:'Corinthians x Grêmio',ch:[{n:'Premiere',y:'stream'},{n:'Record',y:'free'}]},
+  {d:1,t:'22:00',sport:'Basquete',g:'F',country:'EUA',league:'WNBA',detail:'Temporada regular',match:'Indiana Fever x NY Liberty',ch:[{n:'Prime Video',y:'stream'}]},
+
+  // ----- dia 2 -----
+  {d:2,t:'10:00',sport:'Tênis',g:'M',country:'França',league:'Roland Garros',detail:'Final',match:'Final masculina',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
+  {d:2,t:'15:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — corrida',match:'F1 — Montreal (corrida)',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
+  {d:2,t:'16:00',sport:'Futebol',g:'M',country:'Alemanha',league:'Bundesliga',detail:'Rodada 34',match:'Bayern x Dortmund',ch:[{n:'CazéTV',y:'free'},{n:'OneFootball',y:'stream'}]},
+  {d:2,t:'16:00',sport:'Futebol',g:'M',country:'Europa',league:'Champions League',detail:'Final',match:'Final da Champions',ch:[{n:'SBT',y:'free'},{n:'TNT',y:'tv'},{n:'Max',y:'stream'}]},
+  {d:2,t:'18:30',sport:'Futebol',g:'F',country:'Brasil',league:'Brasileirão Feminino A1',detail:'Rodada 13',match:'Palmeiras x São Paulo',ch:[{n:'SporTV',y:'tv'}]},
+  {d:2,t:'20:00',sport:'Vôlei',g:'M',country:'Mundial',league:'Liga das Nações (VNL)',detail:'Fase classificatória',match:'Brasil x Polônia',ch:[{n:'SporTV 2',y:'tv'},{n:'VBTV',y:'stream'}]},
+  {d:2,t:'21:15',sport:'NFL',g:'M',country:'EUA',league:'NFL',detail:'Pré-temporada',match:'Chiefs x Eagles',ch:[{n:'ESPN',y:'tv'},{n:'NFL Game Pass',y:'stream'}]},
+];
+/*DB-END*/
+const GENERATED_AT = null; /* preenchido pelo script Python */
+
+/* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
+   ao lado, carrega os dados de lá — senão usa o DB embutido. */
+async function tryLoadJson(){
+  try{
+    const r = await fetch('eventos.json', {cache:'no-store'});
+    if(r.ok){
+      const data = await r.json();
+      if(Array.isArray(data) && data.length){
+        DB.length = 0; DB.push(...data);
+        buildAllChips(); render();
+      }
+    }
+  }catch(e){ /* offline ou arquivo local — segue com dados embutidos */ }
+}
+/* ---------- placares ao vivo ----------
+   Buscados pelo PRÓPRIO navegador na API pública da ESPN a cada 60s
+   (independe da pipeline de 4h). Se a API falhar, o app segue sem placar. */
+const SCORE_FEEDS = [
+  'soccer/fifa.world','soccer/fifa.friendly','soccer/bra.1','soccer/bra.2',
+  'soccer/conmebol.libertadores','soccer/conmebol.sudamericana',
+  'soccer/eng.1','soccer/esp.1','soccer/esp.2','soccer/ger.1','soccer/ita.1','soccer/fra.1',
+  'basketball/nba'
+];
+let SCORES = [];
+const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
+/* A ESPN devolve seleções em inglês; nossos dados estão em PT.
+   Traduzimos PT->EN antes de comparar para o placar casar. */
+const PT_EN = {
+  'alemanha':'germany','franca':'france','espanha':'spain','holanda':'netherlands',
+  'belgica':'belgium','uruguai':'uruguay','inglaterra':'england','brasil':'brazil',
+  'mexico':'mexico','africa do sul':'south africa','coreia do sul':'south korea',
+  'republica tcheca':'czechia','estados unidos':'united states','canada':'canada',
+  'bosnia e herzegovina':'bosnia and herzegovina','bosnia-herzegovina':'bosnia and herzegovina',
+  'escocia':'scotland','marrocos':'morocco','suica':'switzerland','catar':'qatar',
+  'japao':'japan','croacia':'croatia','italia':'italy','noruega':'norway','suecia':'sweden',
+  'polonia':'poland','austria':'austria','turquia':'turkey','turkiye':'turkey',
+  'australia':'australia','equador':'ecuador','colombia':'colombia','paraguai':'paraguay',
+  'costa do marfim':'ivory coast','egito':'egypt','senegal':'senegal','gana':'ghana',
+  'tunisia':'tunisia','argelia':'algeria','panama':'panama','costa rica':'costa rica',
+  'haiti':'haiti','jordania':'jordan','uzbequistao':'uzbekistan','ira':'iran',
+  'arabia saudita':'saudi arabia','nova zelandia':'new zealand','cabo verde':'cape verde',
+  'curacao':'curacao','ucrania':'ukraine','dinamarca':'denmark','irlanda':'ireland',
+  'pais de gales':'wales','eslovaquia':'slovakia','romenia':'romania','argentina':'argentina',
+  'portugal':'portugal','nigeria':'nigeria','bolivia':'bolivia','peru':'peru','chile':'chile'
+};
+function bridge(s){ const n = nrm(s); return PT_EN[n] || n; }
+function simil(a,b){
+  // traduz PT->EN dos dois lados (no-op se já estiver em EN)
+  a = bridge(a); b = bridge(b);
+  if(!a||!b) return 0;
+  if(a===b) return 1;
+  if(a.includes(b)||b.includes(a)) return .9;
+  // sobreposição de palavras (robusto p/ nomes compostos)
+  const pa=a.split(' '), pb=b.split(' ');
+  const comum = pa.filter(w=>w.length>2 && pb.includes(w)).length;
+  if(comum>=1 && comum >= Math.min(pa.length,pb.length)) return .85;
+  return 0;
+}
+async function fetchScores(){
+  if(document.visibilityState!=='visible') return;
+  const novo = [];
+  await Promise.allSettled(SCORE_FEEDS.map(async f=>{
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard`);
+    const j = await r.json();
+    for(const ev of (j.events||[])){
+      const st = ev.status?.type?.state;
+      if(st!=='in' && st!=='post') continue;
+      const c = ev.competitions?.[0]; if(!c) continue;
+      const home = (c.competitors||[]).find(x=>x.homeAway==='home') || c.competitors?.[0];
+      const away = (c.competitors||[]).find(x=>x.homeAway==='away') || c.competitors?.[1];
+      if(!home||!away) continue;
+      const det = ev.status?.type?.shortDetail || ev.status?.type?.detail || '';
+      novo.push({ hn: home.team?.displayName||home.team?.name||'',
+                  an: away.team?.displayName||away.team?.name||'',
+                  hs: home.score, as: away.score, state: st,
+                  clock: ev.status?.displayClock||'', det });
+    }
+  }));
+  SCORES = novo;
+  render();
+}
+function scoreFor(e){
+  const partes = (e.match||'').split(/\s+x\s+/i);
+  if(partes.length!==2) return null;
+  for(const s of SCORES){
+    const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
+    const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
+    if(!direto && !inverso) continue;
+    const aoVivo = (s.clock && s.clock!=='0\'') ? s.clock : (s.det || 'Ao vivo');
+    return { a: direto ? s.hs : s.as, b: direto ? s.as : s.hs,
+             label: s.state==='post' ? 'Encerrado' : aoVivo,
+             fim: s.state==='post' };
+  }
+  return null;
+}
+
+/* ---------- links dos canais ----------
+   Links https "universais": no celular, abrem o app instalado
+   (Globoplay, Disney+, Max...) ou o site se o app não existir. */
+const CH_LINKS = [
+  [/sportv|premiere|globoplay|^globo/i, 'https://globoplay.globo.com'],
+  [/espn|disney/i,                      'https://www.disneyplus.com'],
+  [/tnt|^max$|hbo/i,                    'https://play.max.com'],
+  [/caz[eé]/i,                          'https://www.youtube.com/@CazeTV/streams'],
+  [/ge ?tv/i,                           'https://www.youtube.com/@getv'],
+  [/paramount/i,                        'https://www.paramountplus.com/br/'],
+  [/prime|amazon/i,                     'https://www.primevideo.com'],
+  [/onefootball/i,                      'https://onefootball.com/pt-br/'],
+  [/record|playplus/i,                  'https://www.playplus.com'],
+  [/sbt/i,                              'https://sbt.com.br'],
+  [/youtube|goat/i,                     'https://www.youtube.com'],
+  [/dazn|nfl/i,                         'https://www.dazn.com'],
+  [/nba/i,                              'https://www.nba.com/watch'],
+  [/f1/i,                               'https://f1tv.formula1.com'],
+  [/ufc/i,                              'https://ufcfightpass.com'],
+  [/apple/i,                            'https://tv.apple.com'],
+];
+function linkFor(nome){
+  for(const [re,url] of CH_LINKS) if(re.test(nome)) return url;
+  return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
+}
+
+const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), wc:new Set(), catSub:false, catLower:false, q:'' };
+
+/* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
+   cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
+   Baseline de 7 dias + seletor livre de data (📅). */
+let customIso = null;
+function makeDays(){
+  const arr = [0,1,2,3,4,5,6].map(i=>{
+    const dt = new Date(); dt.setDate(dt.getDate()+i);
+    const iso = dt.toLocaleDateString('en-CA'); /* YYYY-MM-DD local */
+    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
+    const label = i===0 ? 'Hoje' : i===1 ? 'Amanhã' : w.charAt(0).toUpperCase()+w.slice(1);
+    return { label, sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}), iso };
+  });
+  if(customIso && !arr.some(d=>d.iso===customIso)){
+    const dt = new Date(customIso+'T12:00:00');
+    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
+    arr.push({ label: w.charAt(0).toUpperCase()+w.slice(1),
+               sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}),
+               iso: customIso });
+  }
+  return arr;
+}
+let DAYS = makeDays();
+function pickDate(v){
+  if(!v) return;
+  customIso = v;
+  DAYS = makeDays();
+  state.day = DAYS.findIndex(d=>d.iso===v);
+  buildDayTabs(); buildLeagueChips(); render();
+}
+
+/* ---------- helpers ---------- */
+const uniq = arr => [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'pt'));
+const el = id => document.getElementById(id);
+
+function buildDayTabs(){
+  el('daytabs').innerHTML = DAYS.map((d,i)=>
+    `<button class="daytab ${i===state.day?'on':''}" onclick="setDay(${i})">${d.label}<small>${d.sub}</small></button>`
+  ).join('') + `<label class="daytab pick">📅<small>data</small><input type="date" min="${DAYS[0].iso}" value="${customIso||''}" onchange="pickDate(this.value)"></label>`;
+}
+function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); }
+
+function buildChips(key, containerId, values){
+  el(containerId).innerHTML = values.map(v=>
+    `<button class="chip ${state[key].has(v)?'on':''}" onclick="toggle('${key}',this)" data-v="${v}">${v}</button>`
+  ).join('');
+}
+function toggle(key, btn){
+  const v = btn.dataset.v;
+  state[key].has(v) ? state[key].delete(v) : state[key].add(v);
+  btn.classList.toggle('on');
+  if(key!=='league') buildLeagueChips();
+  updateCounts(); render();
+}
+function clearFilter(key){
+  state[key].clear();
+  buildAllChips(); updateCounts(); render();
+}
+function clearAll(){
+  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear(); state.wc.clear();
+  state.catSub = false; state.catLower = false;
+  el('chip-cat-sub').classList.remove('on'); el('chip-cat-lower').classList.remove('on');
+  state.gender=''; state.q=''; el('search').value='';
+  document.querySelectorAll('#seg-gender button').forEach(b=>b.classList.toggle('on', b.dataset.v===''));
+  buildAllChips(); updateCounts(); render();
+}
+function updateCounts(){
+  for(const k of ['sport','country','league','team','wc']){
+    const c = el('cnt-'+k);
+    c.textContent = state[k].size; c.classList.toggle('show', state[k].size>0);
+  }
+}
+function toggleSec(head){ head.parentElement.classList.toggle('closed'); }
+
+/* Esportes sempre visíveis no filtro (ordem fixa) */
+const SPORTS = ['Futebol','Basquete','Fórmula 1','Tênis','Surf','Ciclismo','Corrida de rua'];
+
+/* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
+   (regex), então ruído das fontes nunca vira chip novo.
+   REMOVER a linha da Copa após 19/07. */
+const LEAGUES = [
+  ['Copa do Mundo FIFA',    /copa do mundo/i],
+  ['Brasileirão Série A',   /brasileir\w*\s*s[ée]rie a/i],
+  ['Libertadores',          /libertadores/i],
+  ['Sul-Americana',         /sul.?americana/i],
+  ['Premier League',        /premier league/i],
+  ['La Liga',               /la liga|^espanhol(?!.*2)/i],
+  ['Alemão (Bundesliga)',   /bundesliga|alem[ãa]o/i],
+  ['NBA',                   /\bnba\b/i],
+  ['WSL (Surf)',            /\bwsl\b|championship tour/i],
+];
+/* Seleções da Copa — TEMPORÁRIO: remover após 19/07 (junto com a seção no HTML) */
+const WC_TEAMS = [
+  ['Brasil',     /\bbrasil\b/i],
+  ['Argentina',  /argentina/i],
+  ['Alemanha',   /alemanha/i],
+  ['França',     /fran[çc]a/i],
+  ['Portugal',   /portugal/i],
+  ['Espanha',    /espanha/i],
+  ['Holanda',    /holanda/i],
+  ['Bélgica',    /b[ée]lgica/i],
+  ['Uruguai',    /uruguai/i],
+  ['Inglaterra', /inglaterra/i],
+];
+/* Categoria: base e divisões inferiores ocultas por padrão */
+const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes/i;
+const RE_LOWER = /s[ée]rie [bcd]\b|2ª divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
+function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league); }
+function isLower(e){ return e.sport === 'Futebol' && RE_LOWER.test(e.league + ' ' + (e.detail||'')); }
+function toggleCat(k, btn){
+  if(k==='sub') state.catSub = !state.catSub; else state.catLower = !state.catLower;
+  btn.classList.toggle('on'); render();
+}
+
+function wcMatch(e){
+  if(!state.wc.size) return true;
+  for(const [lbl,re] of WC_TEAMS)
+    if(state.wc.has(lbl) && re.test(e.match)) return true;
+  return false;
+}
+
+/* Times: lista FIXA. Casa por padrão contra os nomes no card. */
+const TEAMS = [
+  ['Palmeiras',        /palmeiras/i],
+  ['Flamengo',         /flamengo/i],
+  ['São Paulo',        /s[ãa]o paulo/i],
+  ['Corinthians',      /corinthians/i],
+  ['Santos',           /\bsantos\b/i],
+  ['Botafogo',         /botafogo/i],
+  ['Fluminense',       /fluminense/i],
+  ['Real Madrid',      /real madrid/i],
+  ['Barcelona',        /barcelona/i],
+  ['Bayern',           /bayern/i],
+  ['Manchester City',  /manchester city|man\.? city/i],
+  ['Liverpool',        /liverpool/i],
+  ['Chelsea',          /chelsea/i],
+  ['Arsenal',          /arsenal/i],
+  ['PSG',              /\bpsg\b|paris saint.?germain/i],
+  ['Atlético Madrid',  /atl[ée]tico (de )?madrid/i],
+];
+function teamMatch(e){
+  if(!state.team.size) return true;
+  for(const [lbl,re] of TEAMS)
+    if(state.team.has(lbl) && re.test(e.match)) return true;
+  return false;
+}
+function leagueMatch(e){
+  if(!state.league.size) return true;
+  for(const [lbl,re] of LEAGUES)
+    if(state.league.has(lbl) && re.test(e.league)) return true;
+  return false;
+}
+function buildLeagueChips(){
+  buildChips('league','chips-league', LEAGUES.map(l=>l[0]));
+  buildChips('team','chips-team', TEAMS.map(t=>t[0]));
+  buildChips('wc','chips-wc', WC_TEAMS.map(t=>t[0]));
+}
+function buildAllChips(){
+  const extras = uniq(DB.map(e=>e.sport)).filter(s=>!SPORTS.includes(s));
+  buildChips('sport','chips-sport',[...SPORTS, ...extras]);
+  const COUNTRIES = ['Brasil','América do Sul','EUA/Canadá','Inglaterra','Espanha','Alemanha','Itália','Europa (demais)','Mundial'];
+  buildChips('country','chips-country',COUNTRIES);
+  buildLeagueChips();
+}
+
+/* ---------- render ---------- */
+function isLive(ev){
+  if(ev.date!==DAYS[0].iso || state.day!==0) return false;
+  const now = new Date();
+  const [h,m] = ev.t.split(':').map(Number);
+  const start = h*60+m, cur = now.getHours()*60+now.getMinutes();
+  return cur>=start && cur<=start+135; /* ~2h15 de duração */
+}
+function block(t){
+  const h = +t.split(':')[0];
+  return h<12 ? 'Manhã' : h<18 ? 'Tarde' : 'Noite';
+}
+function render(){
+  const q = state.q.trim().toLowerCase();
+  /* dedup defensivo: colapsa cards do mesmo jogo (mesma data+hora, nomes
+     sobrepostos), preferindo o que tem canais reais e título mais limpo */
+  function chave(e){ return e.date+'|'+e.t; }
+  const limpos = [];
+  for(const e of DB){
+    const dup = limpos.find(x=> chave(x)===chave(e) && (()=>{
+      const a=(x.match||'').toLowerCase(), b=(e.match||'').toLowerCase();
+      const ta=a.split(/\s+x\s+/), tb=b.split(/\s+x\s+/);
+      if(ta.length!==2||tb.length!==2) return a.includes(b)||b.includes(a);
+      const norm=s=>s.replace(/[^a-zà-ú ]/gi,'').trim();
+      return (a.includes(norm(tb[0]))&&a.includes(norm(tb[1]))) ||
+             (b.includes(norm(ta[0]))&&b.includes(norm(ta[1])));
+    })());
+    if(dup){
+      const score = ev => (ev.ch.some(c=>!/confirmar/i.test(c.n))?2:0) - (ev.match.length>40?1:0);
+      if(score(e) > score(dup)) limpos[limpos.indexOf(dup)] = e;
+    } else limpos.push(e);
+  }
+  let list = limpos.filter(e=> e.date===DAYS[state.day].iso
+    && (!state.sport.size   || state.sport.has(e.sport))
+    && (!state.gender       || e.g===state.gender)
+    && (!state.country.size || state.country.has(e.country))
+    && leagueMatch(e)
+    && teamMatch(e)
+    && wcMatch(e)
+    && (state.catSub || !isSub(e))
+    && (state.catLower || !isLower(e))
+    && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
+  ).sort((a,b)=>a.t.localeCompare(b.t));
+
+  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (typeof GENERATED_AT==='string' && GENERATED_AT ? ` · dados de ${GENERATED_AT}` : '');
+
+  if(!list.length){
+    const ultimaData = DB.reduce((m,e)=> e.date>m ? e.date : m, '');
+    const semConfirmacao = DAYS[state.day].iso > ultimaData;
+    el('results').innerHTML = semConfirmacao
+      ? `<div class="empty"><b>Programação ainda não confirmada para este dia.</b>As emissoras confirmam canais de futebol ~48h antes; NBA, F1 e tênis entram com até 7 dias. Volte mais perto da data — a atualização é automática.</div>`
+      : `<div class="empty"><b>Nenhum evento com esses filtros.</b>Ajuste os filtros acima ou toque em “Limpar tudo”.</div>`;
+    return;
+  }
+  let html='', lastBlock='';
+  for(const e of list){
+    const b = block(e.t);
+    if(b!==lastBlock){ html += `<div class="timeblock">${b}</div>`; lastBlock=b; }
+    const live = isLive(e);
+    html += `
+    <div class="card">
+      <div class="when">
+        <div class="time">${e.t}</div>
+        ${(()=>{ const sc = scoreFor(e);
+          if(sc) return `<div class="score">${sc.a}<span> x </span>${sc.b}</div><span class="score-status ${sc.fim?'fim':''}">${sc.label}</span>`;
+          return live ? '<span class="live-pill"><i></i>AO VIVO</span>' : '';
+        })()}
+        <span class="gender-tag">${e.g==='F'?'FEMININO':'MASCULINO'}</span>
+      </div>
+      <div>
+        <div class="ev-top">
+          <span class="sport-tag">${e.sport}</span>
+          <span class="matchup">${e.match}</span>
+        </div>
+        <div class="league">${e.league} <em>(${e.detail})</em>${e.v>=2?' <span class="verified" title="Confirmado em 2 fontes">✓✓</span>':''}</div>
+        <div class="badges">
+          ${e.ch.map(c=> /confirmar/i.test(c.n)
+            ? `<span class="badge tbd">${c.n}</span>`
+            : `<a class="badge ${c.y}" href="${linkFor(c.n)}" target="_blank" rel="noopener"><i></i>${c.n}</a>`).join('')}
+        </div>
+      </div>
+    </div>`;
+  }
+  el('results').innerHTML = html;
+}
+
+/* ---------- init ---------- */
+el('seg-gender').addEventListener('click', ev=>{
+  const b = ev.target.closest('button'); if(!b) return;
+  state.gender = b.dataset.v;
+  document.querySelectorAll('#seg-gender button').forEach(x=>x.classList.toggle('on', x===b));
+  render();
+});
+el('search').addEventListener('input', ev=>{ state.q = ev.target.value; render(); });
+
+buildDayTabs(); buildAllChips(); updateCounts(); render();
+tryLoadJson();
+fetchScores();
+setInterval(fetchScores, 60000); /* placares + status AO VIVO a cada minuto */
+</script>
+</body>
+</html>
