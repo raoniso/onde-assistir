@@ -185,7 +185,7 @@
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -200,6 +200,47 @@
    {
     "n": "Disney+",
     "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Holanda x Japão",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -320,7 +361,40 @@
     "y": "free"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Espanha x Cabo Verde",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-06-15",
@@ -475,7 +549,7 @@
     "y": "free"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-15",
@@ -490,6 +564,39 @@
    {
     "n": "A confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Irã x Nova Zelândia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -564,6 +671,72 @@
    {
     "n": "N Sports",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Iraq x Noruega",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Argentina x Áustria",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -693,6 +866,88 @@
   "league": "Copa do Mundo FIFA",
   "detail": "Tabela oficial",
   "match": "Portugal x Congo DR",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Portugal x Uzbequistão",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-17",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Inglaterra x Croácia",
   "ch": [
    {
     "n": "Globo",
@@ -911,6 +1166,39 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-18",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "México x Coreia do Sul",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
