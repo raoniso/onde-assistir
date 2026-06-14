@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-14-g (fallback oficial da Copa)
+# build: 2026-06-14-h (casamento time-a-time)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -385,11 +385,27 @@ def fonte_copa_fallback():
                           detail="Fase de grupos", country="Mundial", g="M", v=1))
     return evs
 
+def mesmo_jogo(m1, m2):
+    """Compara TIME A TIME, não a string inteira (evita falsos positivos como
+    'Holanda x Japão' ~ 'Alemanha x Curaçao' por letras coincidentes)."""
+    p1 = re.split(r"\s+x\s+", m1, flags=re.I)
+    p2 = re.split(r"\s+x\s+", m2, flags=re.I)
+    if len(p1) != 2 or len(p2) != 2:
+        return difflib.SequenceMatcher(None, norm(m1), norm(m2)).ratio() > 0.7
+    def casa(a, b):
+        a, b = norm(a), norm(b)
+        if not a or not b: return False
+        if a == b or a in b or b in a: return True
+        return difflib.SequenceMatcher(None, a, b).ratio() > 0.8
+    # mesmo jogo se ambos os times casam (direto ou invertido)
+    return (casa(p1[0], p2[0]) and casa(p1[1], p2[1])) or \
+           (casa(p1[0], p2[1]) and casa(p1[1], p2[0]))
+
 def complementar_fixtures(base, fixtures):
-    """Tabela só preenche jogos que NENHUMA fonte com canais trouxe."""
+    """Tabela/fallback só preenche jogos que NENHUMA fonte já trouxe."""
     for fx in fixtures:
         existe = any(b["date"] == fx["date"] and b["sport"] == "Futebol" and
-                     difflib.SequenceMatcher(None, norm(b["match"]), norm(fx["match"])).ratio() > 0.55
+                     mesmo_jogo(b["match"], fx["match"])
                      for b in base)
         if not existe:
             base.append(fx)
@@ -408,8 +424,7 @@ def mesclar_futebol(base, extra):
     for ev in extra:
         achou = None
         for b in base:
-            if b["date"] == ev["date"] and b["t"] == ev["t"] and \
-               difflib.SequenceMatcher(None, norm(b["match"]), norm(ev["match"])).ratio() > 0.55:
+            if b["date"] == ev["date"] and b["t"] == ev["t"] and mesmo_jogo(b["match"], ev["match"]):
                 achou = b; break
         if achou:
             nomes = {norm(c["n"]) for c in achou["ch"]}
