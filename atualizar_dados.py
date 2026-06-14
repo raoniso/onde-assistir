@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-14-e (limpa título + canais fixos da Copa)
+# build: 2026-06-14-f (limpa também cronômetro)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -49,8 +49,9 @@ LIXO_TITULO = re.compile(
     r"\b(fim de jogo|ao vivo|globo ?play|globoplay|globo|sbt|sportv|sporttv|"
     r"ge ?tv|caz[eé] ?tv|caz[eé]|n ?sports|nsports|xsports|premiere|disney\+?|"
     r"espn ?\d?|band ?sports|band|record|youtube|tv aberta|streaming|"
-    r"\d+\s*x\s*\d+)\b", re.I)
+    r"\d+\s*x\s*\d+|\d{1,3}\+?\d?['’]|intervalo|prorroga\w*|p[êe]naltis)\b", re.I)
 def limpa_titulo(s):
+    s = re.sub(r"^\s*\d{1,3}\+?\d?['’]\s*", "", s)  # cronômetro no início (40')
     s = re.sub(r"\(.*?\)", " ", s)          # remove parênteses
     s = LIXO_TITULO.sub(" ", s)               # remove canais/placar/lixo
     s = re.sub(r"\s+", " ", s).strip(" -–—")
