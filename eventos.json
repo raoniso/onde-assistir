@@ -85,20 +85,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Juventude x Ponte Preta",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 10",
+  "match": "FIM DE JOGO Brusque 0 Santa Cruz 1 SPORTYNET YOUTUBE (SPORTYNET)",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "A confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -108,7 +104,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 13",
-  "match": "São Bernardo x Sport Recife",
+  "match": "FIM DE JOGO São Bernardo 0 Sport Recife 0",
   "ch": [
    {
     "n": "Premiere FC",
@@ -123,13 +119,17 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Brusque x Cruz SPORTYNET",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 13",
+  "match": "FIM DE JOGO Juventude 3 Ponte Preta 0",
   "ch": [
    {
-    "n": "A confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -142,7 +142,7 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "Alemanha x Curaçao",
+  "match": "16' Alemanha 1 Curaçao 0",
   "ch": [
    {
     "n": "CazéTV",
@@ -150,23 +150,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Alemanha",
-  "detail": "—",
-  "match": "Hoje Começa em — Curaçao",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -194,6 +177,74 @@
   "league": "Brasileirão Série D",
   "detail": "Rodada 10",
   "match": "Sousa America-RN YOUTUBE (METRÓPOLES)",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 13",
+  "match": "Athletic Club x Goiás",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 10",
+  "match": "Paysandu x De Limeira BAND",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série D",
+  "detail": "Rodada 10",
+  "match": "Uberlandia ABECAT Ouvidorense YOUTUBE (METRÓPOLES)",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série D",
+  "detail": "Rodada 10",
+  "match": "Nacional AM Monte Roraima YOUTUBE (METRÓPOLES)",
   "ch": [
    {
     "n": "A confirmar",
@@ -242,74 +293,6 @@
  },
  {
   "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Nacional AM Monte Roraima YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Uberlandia ABECAT Ouvidorense YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Paysandu x De Limeira BAND",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Athletic Club x Goiás",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -320,40 +303,6 @@
   "ch": [
    {
     "n": "Sportynet+",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Cuiabá x Vila Nova",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Rio Branco ES Porto BA YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
     "y": "tv"
    }
   ],
@@ -381,6 +330,40 @@
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série D",
+  "detail": "Rodada 10",
+  "match": "Rio Branco ES Porto BA YOUTUBE (METRÓPOLES)",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 13",
+  "match": "Cuiabá x Vila Nova",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Europa (demais)",
   "league": "Holanda",
   "detail": "—",
@@ -401,12 +384,8 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 13",
-  "match": "Botafogo SP Operário-PR",
+  "match": "Novorizontino Náutico REDETV! SPORTYNET ESPN 4",
   "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
    {
     "n": "Disney+",
     "y": "stream"
@@ -422,8 +401,12 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 13",
-  "match": "Novorizontino Náutico REDETV! SPORTYNET ESPN 4",
+  "match": "Botafogo SP Operário-PR",
   "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
    {
     "n": "Disney+",
     "y": "stream"
