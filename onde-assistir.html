@@ -379,8 +379,11 @@ function simil(a,b){
 async function fetchScores(){
   if(document.visibilityState!=='visible') return;
   const novo = [];
+  const d = (DAYS[state.day]?.iso || new Date().toLocaleDateString('en-CA')).replace(/-/g,'');
   await Promise.allSettled(SCORE_FEEDS.map(async f=>{
-    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard`);
+    // busca com a data do dia exibido; feeds de copa nem sempre vêm no default
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
+    if(!r.ok) return;
     const j = await r.json();
     for(const ev of (j.events||[])){
       const st = ev.status?.type?.state;
@@ -392,12 +395,17 @@ async function fetchScores(){
       const det = ev.status?.type?.shortDetail || ev.status?.type?.detail || '';
       novo.push({ hn: home.team?.displayName||home.team?.name||'',
                   an: away.team?.displayName||away.team?.name||'',
-                  hs: home.score, as: away.score, state: st,
+                  hs: readScore(home.score), as: readScore(away.score), state: st,
                   clock: ev.status?.displayClock||'', det });
     }
   }));
   SCORES = novo;
   render();
+}
+function readScore(s){
+  if(s==null) return '';
+  if(typeof s==='object') return s.displayValue ?? s.value ?? '';
+  return String(s);
 }
 function scoreFor(e){
   const partes = (e.match||'').split(/\s+x\s+/i);
@@ -481,7 +489,7 @@ function buildDayTabs(){
     `<button class="daytab ${i===state.day?'on':''}" onclick="setDay(${i})">${d.label}<small>${d.sub}</small></button>`
   ).join('') + `<label class="daytab pick">📅<small>data</small><input type="date" min="${DAYS[0].iso}" value="${customIso||''}" onchange="pickDate(this.value)"></label>`;
 }
-function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); }
+function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); fetchScores(); }
 
 function buildChips(key, containerId, values){
   el(containerId).innerHTML = values.map(v=>
