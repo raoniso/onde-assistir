@@ -6,29 +6,28 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "FIM DE JOGO Austrália 2 Turquia 0 GLOBO SPORTV GE TV (GLOBO PLAY)",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-14",
-  "t": "01:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
   "detail": "Tabela oficial",
   "match": "Austrália x Türkiye",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -85,12 +84,12 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "FIM DE JOGO Brusque 0 Santa Cruz 1 SPORTYNET YOUTUBE (SPORTYNET)",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Juventude x Ponte Preta",
   "ch": [
    {
-    "n": "A confirmar",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
@@ -103,36 +102,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "FIM DE JOGO São Bernardo 0 Sport Recife 0",
+  "detail": "Tabela oficial",
+  "match": "São Bernardo x Sport",
   "ch": [
    {
-    "n": "Premiere FC",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "FIM DE JOGO Juventude 3 Ponte Preta 0",
-  "ch": [
-   {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -141,49 +119,39 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "16' Alemanha 1 Curaçao 0",
+  "detail": "Tabela oficial",
+  "match": "Alemanha x Curaçao",
   "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
    {
     "n": "CazéTV",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "ABC Maguary PE YOUTUBE (METRÓPOLES)",
-  "ch": [
+   },
    {
-    "n": "A confirmar",
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-06-14",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Sousa America-RN YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-06-14",
@@ -193,151 +161,11 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 13",
-  "match": "Athletic Club x Goiás",
+  "match": "40' Athletic x Goiás",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Paysandu x De Limeira BAND",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Uberlandia ABECAT Ouvidorense YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Nacional AM Monte Roraima YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Retrô x YOUTUBE",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Espanhol 2ª Divisão",
-  "detail": "Final",
-  "match": "Malaga x ESPN",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Laliga 2",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Itabaiana x Ituano",
-  "ch": [
-   {
-    "n": "Sportynet+",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "Holanda Japão GLOBO SBT SPORTV GE TV (GLOBO PLAY)",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-14",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série D",
-  "detail": "Rodada 10",
-  "match": "Rio Branco ES Porto BA YOUTUBE (METRÓPOLES)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -361,20 +189,20 @@
  },
  {
   "date": "2026-06-14",
-  "t": "17:00",
+  "t": "19:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Holanda",
-  "detail": "—",
-  "match": "Hoje Começa em — Japão",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Botafogo-SP x Operário PR",
   "ch": [
    {
-    "n": "A confirmar",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -383,70 +211,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Novorizontino Náutico REDETV! SPORTYNET ESPN 4",
+  "detail": "Tabela oficial",
+  "match": "Novorizontino x Náutico",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Botafogo SP Operário-PR",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Floresta Figueirense SPORTYNET YOUTUBE (BENJA)",
-  "ch": [
-   {
-    "n": "A confirmar",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-06-14",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Volta Redonda x YOUTUBE",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -475,23 +248,6 @@
  },
  {
   "date": "2026-06-14",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Costa do Marfim",
-  "detail": "—",
-  "match": "Hoje Começa em — Equador",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-14",
   "t": "23:00",
   "sport": "Futebol",
   "g": "M",
@@ -516,23 +272,6 @@
   "v": 2
  },
  {
-  "date": "2026-06-14",
-  "t": "23:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Suécia",
-  "detail": "—",
-  "match": "Hoje Começa em — Tunisia",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-06-15",
   "t": "13:00",
   "sport": "Futebol",
@@ -551,57 +290,6 @@
  },
  {
   "date": "2026-06-15",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Espanha",
-  "detail": "—",
-  "match": "Amanhã Começa em — Cape Verde Islands",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "Bélgica Egito GLOBO SPORTV CAZÉ TV GE TV (GLOBO PLAY)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Bélgica",
-  "detail": "—",
-  "match": "Amanhã Começa em — Egito",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -611,7 +299,31 @@
   "match": "Bélgica x Egito",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -648,23 +360,6 @@
  },
  {
   "date": "2026-06-15",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Arábia Saudita",
-  "detail": "—",
-  "match": "Amanhã Começa em — Uruguai",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -679,23 +374,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-06-15",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 10",
-  "match": "Ypiranga-RS Botafogo PB SPORTYNET YOUTUBE (BENJA)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-06-15",
@@ -773,7 +451,7 @@
   "country": "Mundial",
   "league": "Irã",
   "detail": "—",
-  "match": "Amanhã x em —",
+  "match": "Amanhã x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -793,7 +471,31 @@
   "match": "França x Senegal",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -827,8 +529,24 @@
   "match": "Argentina x Argélia",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -844,8 +562,24 @@
   "match": "Áustria x Jordânia",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -861,7 +595,31 @@
   "match": "Portugal x Congo DR",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -878,8 +636,24 @@
   "match": "Gana x Panamá",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -895,8 +669,24 @@
   "match": "Uzbequistão x Colômbia",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -912,8 +702,24 @@
   "match": "República Tcheca x África do Sul",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -929,7 +735,31 @@
   "match": "Suíça x Bosnia-Herzegovina",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -946,8 +776,24 @@
   "match": "Canadá x Catar",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -980,7 +826,31 @@
   "match": "Estados Unidos x Austrália",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -997,8 +867,24 @@
   "match": "Escócia x Marrocos",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1014,8 +900,24 @@
   "match": "Brasil x Haiti",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1031,8 +933,24 @@
   "match": "Türkiye x Paraguai",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1065,7 +983,31 @@
   "match": "Holanda x Suécia",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -1082,7 +1024,31 @@
   "match": "Alemanha x Costa do Marfim",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -1133,8 +1099,24 @@
   "match": "Equador x Curaçao",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
