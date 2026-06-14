@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-10-d (sanitização final de canais)
+# build: 2026-06-14-e (limpa título + canais fixos da Copa)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -43,6 +43,18 @@ def sem_acento(s):
 
 def norm(s):
     return re.sub(r"[^a-z0-9 ]", "", sem_acento(s).lower()).strip()
+
+# Palavras que NUNCA fazem parte do nome de um jogo (canais e ruído da fonte)
+LIXO_TITULO = re.compile(
+    r"\b(fim de jogo|ao vivo|globo ?play|globoplay|globo|sbt|sportv|sporttv|"
+    r"ge ?tv|caz[eé] ?tv|caz[eé]|n ?sports|nsports|xsports|premiere|disney\+?|"
+    r"espn ?\d?|band ?sports|band|record|youtube|tv aberta|streaming|"
+    r"\d+\s*x\s*\d+)\b", re.I)
+def limpa_titulo(s):
+    s = re.sub(r"\(.*?\)", " ", s)          # remove parênteses
+    s = LIXO_TITULO.sub(" ", s)               # remove canais/placar/lixo
+    s = re.sub(r"\s+", " ", s).strip(" -–—")
+    return s.strip()
 
 CANAIS_FREE = {"GLOBO","SBT","BAND","RECORD","REDETV","TV BRASIL","CAZE TV","CAZETV",
                "XSPORTS","YOUTUBE","CANAL GOAT","GOAT","METROPOLES","TV CULTURA",
@@ -171,6 +183,9 @@ def fonte_futebolnatv():
             if not partida:                                 # último recurso: dedup por regex
                 m2 = re.fullmatch(r"(.+?) \1 (.+?) \2", resto)
                 partida = f"{m2.group(1)} x {m2.group(3)}" if m2 else resto
+            partida = limpa_titulo(partida)
+            # validação: precisa sobrar "Time x Time" plausível, senão descarta
+            if not re.search(r".+\s+x\s+.+", partida, re.I): continue
             if not partida or (data, hora, norm(partida)) in vistos: continue
             vistos.add((data, hora, norm(partida)))
             evs.append(evento(data, hora, "Futebol", liga, partida,
@@ -367,6 +382,25 @@ def mesclar_futebol(base, extra):
     return base
 
 # ----------------------------------------------------------------- main
+CANAIS_COPA_BASE = [
+    {"n": "Globo", "y": "free"}, {"n": "SporTV", "y": "tv"},
+    {"n": "CazéTV", "y": "free"}, {"n": "GE TV", "y": "free"},
+    {"n": "Globoplay", "y": "stream"},
+]
+CANAIS_COPA_SBT = CANAIS_COPA_BASE + [{"n": "SBT", "y": "free"}, {"n": "N Sports", "y": "tv"}]
+
+def aplica_canais_copa(eventos):
+    """Copa tem direitos fixos e públicos durante todo o torneio: garante os
+    canais certos em todo jogo do Mundial, sobrepondo 'a confirmar'."""
+    for e in eventos:
+        if e.get("league") != "Copa do Mundo FIFA": continue
+        tem_canal = any("confirmar" not in c["n"].lower() for c in e["ch"])
+        if not tem_canal:
+            # heurística: jogos "nobres" (tarde/noite) costumam ter SBT também
+            hora = int(e["t"].split(":")[0])
+            e["ch"] = (CANAIS_COPA_SBT if 14 <= hora <= 18 else CANAIS_COPA_BASE).copy()
+    return eventos
+
 def main():
     eventos = []
 
@@ -390,6 +424,7 @@ def main():
     eventos += roda("ESPN Tênis", fonte_tenis, log)
     eventos += roda("extras.json", fonte_extras, log)
 
+    eventos = aplica_canais_copa(eventos)
     eventos = dedup(eventos)
     eventos = [e for e in eventos if e["date"] >= HOJE.isoformat()]
     # Sanitização final: nenhum pseudo-canal passa, venha de qual fonte vier
