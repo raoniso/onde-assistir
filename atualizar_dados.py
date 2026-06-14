@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-14-f (limpa também cronômetro)
+# build: 2026-06-14-g (fallback oficial da Copa)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -346,6 +346,45 @@ def fonte_fixtures():
                                   detail=detalhe, country=pais, v=1))
     return dedup(evs)
 
+
+# ---------------------------------------------------------------------------
+# FALLBACK OFICIAL DA COPA — datas/horários FIFA (Brasília). Garante que todo
+# jogo do Mundial apareça mesmo se a ESPN bloquear o robô (data centers às vezes
+# recebem 403). Canais são preenchidos por aplica_canais_copa(). Atualizar
+# conforme a FIFA confirma os classificados das repescagens.
+# ---------------------------------------------------------------------------
+COPA_FALLBACK = [
+ ("2026-06-11","16:00","México x África do Sul"),
+ ("2026-06-11","23:00","Coreia do Sul x Rep. Tcheca"),
+ ("2026-06-12","16:00","Canadá x Bósnia e Herzegovina"),
+ ("2026-06-12","22:00","Estados Unidos x Paraguai"),
+ ("2026-06-13","01:00","Austrália x Türkiye"),
+ ("2026-06-13","16:00","Catar x Suíça"),
+ ("2026-06-13","19:00","Brasil x Marrocos"),
+ ("2026-06-13","22:00","Haiti x Escócia"),
+ ("2026-06-14","14:00","Alemanha x Curaçao"),
+ ("2026-06-14","17:00","Holanda x Japão"),
+ ("2026-06-14","20:00","Costa do Marfim x Equador"),
+ ("2026-06-14","23:00","Suécia x Tunísia"),
+ ("2026-06-15","16:00","Bélgica x Egito"),
+ ("2026-06-15","19:00","Espanha x Cabo Verde"),
+ ("2026-06-15","22:00","Irã x Nova Zelândia"),
+ ("2026-06-16","13:00","Argélia x Jordânia"),
+ ("2026-06-16","16:00","França x Senegal"),
+ ("2026-06-16","19:00","Argentina x Áustria"),
+ ("2026-06-16","22:00","Uruguai x Arábia Saudita"),
+ ("2026-06-17","16:00","Portugal x Uzbequistão"),
+ ("2026-06-17","19:00","Inglaterra x Croácia"),
+]
+def fonte_copa_fallback():
+    evs = []
+    for date, hora, match in COPA_FALLBACK:
+        if date not in [d.isoformat() for d in JANELA]: continue
+        evs.append(evento(date, hora, "Futebol", "Copa do Mundo FIFA", match,
+                          [{"n":"Transmissão a confirmar","y":"tv"}],
+                          detail="Fase de grupos", country="Mundial", g="M", v=1))
+    return evs
+
 def complementar_fixtures(base, fixtures):
     """Tabela só preenche jogos que NENHUMA fonte com canais trouxe."""
     for fx in fixtures:
@@ -419,6 +458,10 @@ def main():
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
+
+    # Fallback da Copa: garante todos os jogos do Mundial, mesmo se a ESPN cair
+    copa_fb = roda("Fallback oficial da Copa", fonte_copa_fallback, log)
+    eventos = complementar_fixtures(eventos, copa_fb)
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN F1", fonte_f1, log)
