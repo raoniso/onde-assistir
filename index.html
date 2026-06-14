@@ -589,12 +589,38 @@ const SCORE_FEEDS = [
 ];
 let SCORES = [];
 const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
+/* A ESPN devolve seleções em inglês; nossos dados estão em PT.
+   Traduzimos PT->EN antes de comparar para o placar casar. */
+const PT_EN = {
+  'alemanha':'germany','franca':'france','espanha':'spain','holanda':'netherlands',
+  'belgica':'belgium','uruguai':'uruguay','inglaterra':'england','brasil':'brazil',
+  'mexico':'mexico','africa do sul':'south africa','coreia do sul':'south korea',
+  'republica tcheca':'czechia','estados unidos':'united states','canada':'canada',
+  'bosnia e herzegovina':'bosnia and herzegovina','bosnia-herzegovina':'bosnia and herzegovina',
+  'escocia':'scotland','marrocos':'morocco','suica':'switzerland','catar':'qatar',
+  'japao':'japan','croacia':'croatia','italia':'italy','noruega':'norway','suecia':'sweden',
+  'polonia':'poland','austria':'austria','turquia':'turkey','turkiye':'turkey',
+  'australia':'australia','equador':'ecuador','colombia':'colombia','paraguai':'paraguay',
+  'costa do marfim':'ivory coast','egito':'egypt','senegal':'senegal','gana':'ghana',
+  'tunisia':'tunisia','argelia':'algeria','panama':'panama','costa rica':'costa rica',
+  'haiti':'haiti','jordania':'jordan','uzbequistao':'uzbekistan','ira':'iran',
+  'arabia saudita':'saudi arabia','nova zelandia':'new zealand','cabo verde':'cape verde',
+  'curacao':'curacao','ucrania':'ukraine','dinamarca':'denmark','irlanda':'ireland',
+  'pais de gales':'wales','eslovaquia':'slovakia','romenia':'romania','argentina':'argentina',
+  'portugal':'portugal','nigeria':'nigeria','bolivia':'bolivia','peru':'peru','chile':'chile'
+};
+function bridge(s){ const n = nrm(s); return PT_EN[n] || n; }
 function simil(a,b){
-  a=nrm(a); b=nrm(b);
+  // traduz PT->EN dos dois lados (no-op se já estiver em EN)
+  a = bridge(a); b = bridge(b);
   if(!a||!b) return 0;
   if(a===b) return 1;
   if(a.includes(b)||b.includes(a)) return .9;
-  return a.split(' ')[0]===b.split(' ')[0] ? .8 : 0;
+  // sobreposição de palavras (robusto p/ nomes compostos)
+  const pa=a.split(' '), pb=b.split(' ');
+  const comum = pa.filter(w=>w.length>2 && pb.includes(w)).length;
+  if(comum>=1 && comum >= Math.min(pa.length,pb.length)) return .85;
+  return 0;
 }
 async function fetchScores(){
   if(document.visibilityState!=='visible') return;
@@ -609,10 +635,11 @@ async function fetchScores(){
       const home = (c.competitors||[]).find(x=>x.homeAway==='home') || c.competitors?.[0];
       const away = (c.competitors||[]).find(x=>x.homeAway==='away') || c.competitors?.[1];
       if(!home||!away) continue;
+      const det = ev.status?.type?.shortDetail || ev.status?.type?.detail || '';
       novo.push({ hn: home.team?.displayName||home.team?.name||'',
                   an: away.team?.displayName||away.team?.name||'',
                   hs: home.score, as: away.score, state: st,
-                  clock: ev.status?.displayClock||'' });
+                  clock: ev.status?.displayClock||'', det });
     }
   }));
   SCORES = novo;
@@ -625,8 +652,9 @@ function scoreFor(e){
     const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
     const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
     if(!direto && !inverso) continue;
+    const aoVivo = (s.clock && s.clock!=='0\'') ? s.clock : (s.det || 'Ao vivo');
     return { a: direto ? s.hs : s.as, b: direto ? s.as : s.hs,
-             label: s.state==='post' ? 'Encerrado' : (s.clock || 'Ao vivo'),
+             label: s.state==='post' ? 'Encerrado' : aoVivo,
              fim: s.state==='post' };
   }
   return null;
