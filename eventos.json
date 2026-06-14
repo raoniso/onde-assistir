@@ -160,12 +160,29 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
+  "detail": "Tabela oficial",
   "match": "Athletic x Goiás",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série D",
+  "detail": "Rodada 10",
+  "match": "INT Rio Branco x BA 0",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -178,14 +195,31 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 13",
-  "match": "Cuiabá x Vila Nova",
+  "match": "INT x 0 Vila",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-06-14",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Cuiabá x Vila Nova",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-06-14",
@@ -462,6 +496,39 @@
  },
  {
   "date": "2026-06-16",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Argélia x Jordânia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -527,6 +594,39 @@
   "league": "Copa do Mundo FIFA",
   "detail": "Tabela oficial",
   "match": "Argentina x Argélia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-16",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Uruguai x Arábia Saudita",
   "ch": [
    {
     "n": "Globo",
