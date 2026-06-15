@@ -6,6 +6,23 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
+  "detail": "Rodada 1",
+  "match": "FIM x JOGO Espanha 0",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-15",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
   "detail": "Tabela oficial",
   "match": "Espanha x Cabo Verde",
   "ch": [
@@ -81,7 +98,7 @@
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Rodada 1",
-  "match": "Arábia Saudita x Uruguai",
+  "match": "Arábia x Uruguai",
   "ch": [
    {
     "n": "Globo",
