@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-16-j (tabela da Copa como autoridade)
+# build: 2026-06-16-k (horários corrigidos)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -371,7 +371,7 @@ COPA_FALLBACK = [
  ("2026-06-15","16:00","Bélgica x Egito"),
  ("2026-06-15","19:00","Arábia Saudita x Uruguai"),
  ("2026-06-15","22:00","Irã x Nova Zelândia"),
- ("2026-06-16","14:00","Argentina x Argélia"),
+ ("2026-06-16","22:00","Argentina x Argélia"),
  ("2026-06-16","16:00","França x Senegal"),
  ("2026-06-16","19:00","Iraque x Noruega"),
  ("2026-06-17","01:00","Áustria x Jordânia"),
