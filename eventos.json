@@ -1,193 +1,5 @@
 [
  {
-  "date": "2026-06-15",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "FIM x JOGO Espanha 0",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Tabela oficial",
-  "match": "Espanha x Cabo Verde",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Tabela oficial",
-  "match": "Bélgica x Egito",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "N Sports",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-15",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "Arábia x Uruguai",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-15",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Criciúma x Ceará",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-15",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 13",
-  "match": "Londrina x Avai",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-15",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Rodada 1",
-  "match": "Irã x Nova Zelândia",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-15",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Irã",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-06-16",
   "t": "13:00",
   "sport": "Futebol",
@@ -401,7 +213,7 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 1",
   "match": "Áustria x Jordânia",
   "ch": [
    {
@@ -415,17 +227,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-17",
@@ -557,31 +361,15 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 1",
   "match": "Gana x Panamá",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-17",
@@ -590,11 +378,11 @@
   "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 1",
   "match": "Uzbequistão x Colômbia",
   "ch": [
    {
-    "n": "Globo",
+    "n": "SBT",
     "y": "free"
    },
    {
@@ -604,17 +392,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-06-18",
@@ -1338,6 +1118,138 @@
   "league": "Copa do Mundo FIFA",
   "detail": "Tabela oficial",
   "match": "Nova Zelândia x Egito",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Argentina x Áustria",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "França x Iraq",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Ponte Preta x Novorizontino",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Tabela oficial",
+  "match": "Noruega x Senegal",
   "ch": [
    {
     "n": "Globo",
