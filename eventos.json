@@ -51,8 +51,24 @@
   "match": "Iraque x Noruega",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
