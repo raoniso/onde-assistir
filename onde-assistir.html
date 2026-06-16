@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <title>Onde Assistir — Guia de Transmissões</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -322,7 +325,7 @@ const GENERATED_AT = null; /* preenchido pelo script Python */
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
 async function tryLoadJson(){
   try{
-    const r = await fetch('eventos.json', {cache:'no-store'});
+    const r = await fetch(`eventos.json?t=${Date.now()}`, {cache:'no-store'});
     if(r.ok){
       const data = await r.json();
       if(Array.isArray(data) && data.length){
