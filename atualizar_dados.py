@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-14-h (casamento time-a-time)
+# build: 2026-06-16-j (tabela da Copa como autoridade)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -354,6 +354,7 @@ def fonte_fixtures():
 # conforme a FIFA confirma os classificados das repescagens.
 # ---------------------------------------------------------------------------
 COPA_FALLBACK = [
+ # ---- 1ª RODADA (datas/horários oficiais FIFA, Brasília) ----
  ("2026-06-11","16:00","México x África do Sul"),
  ("2026-06-11","23:00","Coreia do Sul x Rep. Tcheca"),
  ("2026-06-12","16:00","Canadá x Bósnia e Herzegovina"),
@@ -366,15 +367,18 @@ COPA_FALLBACK = [
  ("2026-06-14","17:00","Holanda x Japão"),
  ("2026-06-14","20:00","Costa do Marfim x Equador"),
  ("2026-06-14","23:00","Suécia x Tunísia"),
+ ("2026-06-15","13:00","Espanha x Cabo Verde"),
  ("2026-06-15","16:00","Bélgica x Egito"),
- ("2026-06-15","19:00","Espanha x Cabo Verde"),
+ ("2026-06-15","19:00","Arábia Saudita x Uruguai"),
  ("2026-06-15","22:00","Irã x Nova Zelândia"),
- ("2026-06-16","13:00","Argélia x Jordânia"),
+ ("2026-06-16","14:00","Argentina x Argélia"),
  ("2026-06-16","16:00","França x Senegal"),
- ("2026-06-16","19:00","Argentina x Áustria"),
- ("2026-06-16","22:00","Uruguai x Arábia Saudita"),
- ("2026-06-17","16:00","Portugal x Uzbequistão"),
- ("2026-06-17","19:00","Inglaterra x Croácia"),
+ ("2026-06-16","19:00","Iraque x Noruega"),
+ ("2026-06-17","01:00","Áustria x Jordânia"),
+ ("2026-06-17","14:00","Portugal x RD Congo"),
+ ("2026-06-17","17:00","Inglaterra x Croácia"),
+ ("2026-06-17","20:00","Gana x Panamá"),
+ ("2026-06-17","23:00","Uzbequistão x Colômbia"),
 ]
 def fonte_copa_fallback():
     evs = []
@@ -412,6 +416,21 @@ def complementar_fixtures(base, fixtures):
     return base
 
 # ----------------------------------------------------------------- merge
+def dedup_por_jogo(evs):
+    """Remove o MESMO jogo aparecendo 2x no dia (fontes com horário/grafia
+    divergentes). Mantém o de maior prioridade: tem canais reais > tem placar(v) > scraping."""
+    def prioridade(e):
+        tem_canal = any("confirmar" not in c["n"].lower() for c in e["ch"])
+        return (2 if tem_canal else 0) + e.get("v", 1)
+    saida = []
+    for e in sorted(evs, key=prioridade, reverse=True):
+        dup = next((s for s in saida
+                    if s["date"] == e["date"] and s["sport"] == e["sport"]
+                    and mesmo_jogo(s["match"], e["match"])), None)
+        if dup is None:
+            saida.append(e)
+    return saida
+
 def dedup(evs):
     saida, vistos = [], set()
     for e in evs:
@@ -474,9 +493,20 @@ def main():
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
 
-    # Fallback da Copa: garante todos os jogos do Mundial, mesmo se a ESPN cair
-    copa_fb = roda("Fallback oficial da Copa", fonte_copa_fallback, log)
-    eventos = complementar_fixtures(eventos, copa_fb)
+    # COPA = AUTORIDADE: a tabela oficial manda. Guardamos os canais que as
+    # fontes trouxeram, removemos os jogos de Copa das fontes (podem ter confronto
+    # errado por tabela desatualizada) e inserimos a tabela oficial, reaplicando
+    # os canais por casamento de times.
+    canais_fonte = [e for e in eventos if e.get("league") == "Copa do Mundo FIFA"]
+    eventos = [e for e in eventos if e.get("league") != "Copa do Mundo FIFA"]
+    copa_fb = roda("Tabela oficial da Copa (autoridade)", fonte_copa_fallback, log)
+    for jogo in copa_fb:
+        for cf in canais_fonte:
+            if cf["date"] == jogo["date"] and mesmo_jogo(cf["match"], jogo["match"]):
+                reais = [c for c in cf["ch"] if "confirmar" not in c["n"].lower()]
+                if reais: jogo["ch"] = reais
+                break
+    eventos += copa_fb
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN F1", fonte_f1, log)
@@ -484,6 +514,7 @@ def main():
     eventos += roda("extras.json", fonte_extras, log)
 
     eventos = aplica_canais_copa(eventos)
+    eventos = dedup_por_jogo(eventos)
     eventos = dedup(eventos)
     eventos = [e for e in eventos if e["date"] >= HOJE.isoformat()]
     # Sanitização final: nenhum pseudo-canal passa, venha de qual fonte vier
