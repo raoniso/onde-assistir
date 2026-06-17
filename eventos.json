@@ -119,6 +119,23 @@
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "New York City II x Carolina Core",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-17",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Fase de grupos",
@@ -127,6 +144,10 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Prime Video",
+    "y": "stream"
    }
   ],
   "v": 1
