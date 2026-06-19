@@ -3,6 +3,27 @@
   "date": "2026-06-20",
   "t": "01:00",
   "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Lexus Eastbourne Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-20",
+  "t": "01:00",
+  "sport": "Tênis",
   "g": "F",
   "country": "Mundial",
   "league": "Circuito WTA",
@@ -108,27 +129,6 @@
   "ch": [
    {
     "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-21",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Lexus Eastbourne Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
     "y": "stream"
    }
   ],
