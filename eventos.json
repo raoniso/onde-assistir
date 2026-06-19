@@ -1,5 +1,171 @@
 [
  {
+  "date": "2026-06-19",
+  "t": "01:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Türkiye x Paraguai",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-19",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Estados Unidos x Austrália",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-19",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Uruguai 2ª divisão - 2ª Fase",
+  "detail": "Rodada 7",
+  "match": "Miramar x Sportivo Huracan",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Uru – Uruguaio 2° Divisão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-19",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Escócia x Marrocos",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-19",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "USL League One - Grupo",
+  "detail": "Stage",
+  "match": "Westchester SC x Portland Hearts of Pine",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-19",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Brasil x Haiti",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-06-20",
   "t": "01:00",
   "sport": "Tênis",
@@ -60,6 +226,47 @@
  },
  {
   "date": "2026-06-20",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Curaçao x Japão",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-20",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -74,6 +281,47 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-06-20",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Alemanha x Holanda",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-06-20",
@@ -119,6 +367,39 @@
  },
  {
   "date": "2026-06-20",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Equador x Tunísia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-20",
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
@@ -129,6 +410,39 @@
   "ch": [
    {
     "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-20",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Costa do Marfim x Suécia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
     "y": "stream"
    }
   ],
@@ -146,6 +460,80 @@
   "ch": [
    {
     "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Cabo Verde x Egito",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Espanha x Bélgica",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
    }
   ],
@@ -203,6 +591,195 @@
   "v": 1
  },
  {
+  "date": "2026-06-21",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Uruguai x Nova Zelândia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Arábia Saudita x Irã",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Argentina x Áustria",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Argélia x Jordânia",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "França x Iraque",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-06-22",
   "t": "20:00",
   "sport": "Futebol",
@@ -215,6 +792,39 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA",
+  "detail": "Fase de grupos",
+  "match": "Noruega x Senegal",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
