@@ -102,12 +102,32 @@
   "match": "Holanda x Suécia",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
    },
    {
-    "n": "Prime Video",
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -144,20 +164,28 @@
     "y": "free"
    },
    {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
     "n": "SporTV",
     "y": "tv"
    },
    {
-    "n": "N Sports",
+    "n": "CazéTV",
     "y": "free"
    },
    {
-    "n": "CazéTV",
+    "n": "GE TV",
     "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -232,8 +260,24 @@
   "match": "Equador x Curaçao",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -259,6 +303,14 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -308,8 +360,24 @@
   "match": "Espanha x Arábia Saudita",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -359,8 +427,32 @@
   "match": "Bélgica x Irã",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -496,6 +588,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -538,6 +638,14 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -835,6 +943,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1000,6 +1116,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1033,6 +1157,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1214,6 +1346,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1247,6 +1387,14 @@
    {
     "n": "Globoplay",
     "y": "stream"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
    }
   ],
   "v": 1
