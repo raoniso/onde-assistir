@@ -1,145 +1,5 @@
 [
  {
-  "date": "2026-06-19",
-  "t": "01:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Fase de grupos",
-  "match": "Türkiye x Paraguai",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-19",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Fase de grupos",
-  "match": "Estados Unidos x Austrália",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "N Sports",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-19",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Fase de grupos",
-  "match": "Escócia x Marrocos",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-19",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Fase de grupos",
-  "match": "Brasil x Haiti",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-06-20",
   "t": "01:00",
   "sport": "Tênis",
@@ -429,12 +289,29 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Avaí x Cuiabá",
+  "detail": "Rodada 14",
+  "match": "Avai x Cuiabá",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-21",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "New England II x Chicago FC United",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -471,6 +348,40 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Espanha",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 11",
+  "match": "Brusque x Floresta",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-06-21",
@@ -537,12 +448,63 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 14",
   "match": "São Bernardo x Juventude",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Premiere FC",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-21",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 11",
+  "match": "Ferroviária x Inter De Limeira",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-21",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 11",
+  "match": "Barra x Amazonas",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-21",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 14",
+  "match": "Goiás x SPORTYNET",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -599,6 +561,23 @@
  },
  {
   "date": "2026-06-21",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "New York City II x Chattanooga",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
   "t": "22:00",
   "sport": "Futebol",
   "g": "M",
@@ -625,6 +604,23 @@
    },
    {
     "n": "Globoplay",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-21",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Tacoma Defiance x Real Monarchs",
+  "ch": [
+   {
+    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -829,6 +825,48 @@
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Cuiabá x Londrina",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-26",
+  "t": "08:30",
+  "sport": "Fórmula 1",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fórmula 1",
+  "detail": "FP1",
+  "match": "Lenovo Austrian Grand Prix",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "F1 Tv Pro",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-06-26",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Novorizontino x Vila Nova",
   "ch": [
    {
     "n": "Transmissão a confirmar",
