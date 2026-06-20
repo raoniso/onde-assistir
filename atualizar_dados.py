@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-19-l (2ª rodada estendida)
+# build: 2026-06-20-m (2ª rodada VERIFICADA)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -379,27 +379,32 @@ COPA_FALLBACK = [
  ("2026-06-17","17:00","Inglaterra x Croácia"),
  ("2026-06-17","20:00","Gana x Panamá"),
  ("2026-06-17","23:00","Uzbequistão x Colômbia"),
- # ===== 2ª RODADA =====
- ("2026-06-18","13:00","África do Sul x Rep. Tcheca"),
+ # ===== 2ª RODADA (verificada: Trivela/soccerway) =====
+ ("2026-06-18","13:00","Rep. Tcheca x África do Sul"),
  ("2026-06-18","16:00","Suíça x Bósnia e Herzegovina"),
  ("2026-06-18","19:00","Canadá x Catar"),
  ("2026-06-18","22:00","México x Coreia do Sul"),
  ("2026-06-19","01:00","Türkiye x Paraguai"),
  ("2026-06-19","16:00","Estados Unidos x Austrália"),
  ("2026-06-19","19:00","Escócia x Marrocos"),
- ("2026-06-19","22:00","Brasil x Haiti"),
- ("2026-06-20","14:00","Curaçao x Japão"),
- ("2026-06-20","17:00","Alemanha x Holanda"),
- ("2026-06-20","20:00","Equador x Tunísia"),
- ("2026-06-20","23:00","Costa do Marfim x Suécia"),
- ("2026-06-21","13:00","Cabo Verde x Egito"),
- ("2026-06-21","16:00","Espanha x Bélgica"),
- ("2026-06-21","19:00","Uruguai x Nova Zelândia"),
- ("2026-06-21","22:00","Arábia Saudita x Irã"),
+ ("2026-06-19","21:30","Brasil x Haiti"),
+ ("2026-06-20","00:00","Türkiye x Paraguai"),
+ ("2026-06-20","14:00","Holanda x Suécia"),
+ ("2026-06-20","17:00","Alemanha x Costa do Marfim"),
+ ("2026-06-20","21:00","Equador x Curaçao"),
+ ("2026-06-21","01:00","Tunísia x Japão"),
+ ("2026-06-21","13:00","Espanha x Arábia Saudita"),
+ ("2026-06-21","16:00","Bélgica x Irã"),
+ ("2026-06-21","19:00","Uruguai x Cabo Verde"),
+ ("2026-06-21","22:00","Nova Zelândia x Egito"),
  ("2026-06-22","14:00","Argentina x Áustria"),
- ("2026-06-22","17:00","Argélia x Jordânia"),
  ("2026-06-22","18:00","França x Iraque"),
  ("2026-06-22","21:00","Noruega x Senegal"),
+ ("2026-06-23","00:00","Jordânia x Argélia"),
+ ("2026-06-23","14:00","Portugal x Uzbequistão"),
+ ("2026-06-23","17:00","Inglaterra x Gana"),
+ ("2026-06-23","20:00","Panamá x Croácia"),
+ ("2026-06-23","23:00","Colômbia x RD Congo"),
 ]
 def fonte_copa_fallback():
     evs = []
