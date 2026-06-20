@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-20-n (fase de grupos COMPLETA verificada FIFA/Trivela)
+# build: 2026-06-20-q (canais Copa autoridade; placar via app)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -391,6 +391,8 @@ COPA_FALLBACK = [
  ("2026-06-27","20:30","Colômbia x Portugal"),("2026-06-27","20:30","RD Congo x Uzbequistão"),
  ("2026-06-27","23:00","Argélia x Áustria"),("2026-06-27","23:00","Jordânia x Argentina"),
 ]
+
+
 def fonte_copa_fallback():
     evs = []
     for date, hora, match in COPA_FALLBACK:
@@ -474,16 +476,19 @@ CANAIS_COPA_BASE = [
 ]
 CANAIS_COPA_SBT = CANAIS_COPA_BASE + [{"n": "SBT", "y": "free"}, {"n": "N Sports", "y": "tv"}]
 
+# Canais que NÃO existem para a Copa no Brasil (vazam do scraping) — removidos sempre
+CANAIS_INVALIDOS_COPA = {"prime video","amazon prime video","disney+","espn","espn 2",
+                         "espn 3","espn 4","paramount+","premiere","dazn","onefootball","sportynet"}
+
 def aplica_canais_copa(eventos):
-    """Copa tem direitos fixos e públicos durante todo o torneio: garante os
-    canais certos em todo jogo do Mundial, sobrepondo 'a confirmar'."""
+    """Copa tem direitos FIXOS e públicos no Brasil (Globo, SporTV, CazéTV, GE TV,
+    Globoplay; + SBT e N Sports em parte dos jogos). Esses canais SOBRESCREVEM o que
+    o scraping trouxe — fontes erram e colocam Prime/ESPN, que não passam a Copa aqui."""
     for e in eventos:
         if e.get("league") != "Copa do Mundo FIFA": continue
-        tem_canal = any("confirmar" not in c["n"].lower() for c in e["ch"])
-        if not tem_canal:
-            # heurística: jogos "nobres" (tarde/noite) costumam ter SBT também
-            hora = int(e["t"].split(":")[0])
-            e["ch"] = (CANAIS_COPA_SBT if 14 <= hora <= 18 else CANAIS_COPA_BASE).copy()
+        hora = int(e["t"].split(":")[0])
+        # base oficial para todo jogo; SBT+N Sports nos horários de maior audiência
+        e["ch"] = (CANAIS_COPA_SBT if 14 <= hora <= 20 else CANAIS_COPA_BASE).copy()
     return eventos
 
 def main():
