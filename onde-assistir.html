@@ -379,14 +379,21 @@ function simil(a,b){
   if(comum>=1 && comum >= Math.min(pa.length,pb.length)) return .85;
   return 0;
 }
+let SCORE_DEBUG = {feeds:0, jogos:0, erros:[]};
 async function fetchScores(){
   if(document.visibilityState!=='visible') return;
   const novo = [];
   const d = (DAYS[state.day]?.iso || new Date().toLocaleDateString('en-CA')).replace(/-/g,'');
+  SCORE_DEBUG = {feeds:0, jogos:0, erros:[]};
   await Promise.allSettled(SCORE_FEEDS.map(async f=>{
-    // busca com a data do dia exibido; feeds de copa nem sempre vêm no default
-    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
-    if(!r.ok) return;
+    let r;
+    try {
+      // tenta com data; se falhar, tenta sem (alguns feeds não aceitam ?dates)
+      r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
+      if(!r.ok) r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard`);
+    } catch(e){ SCORE_DEBUG.erros.push(f.split('/').pop()+':'+e.message); return; }
+    if(!r.ok){ SCORE_DEBUG.erros.push(f.split('/').pop()+':HTTP'+r.status); return; }
+    SCORE_DEBUG.feeds++;
     const j = await r.json();
     for(const ev of (j.events||[])){
       const st = ev.status?.type?.state;
@@ -396,6 +403,7 @@ async function fetchScores(){
       const away = (c.competitors||[]).find(x=>x.homeAway==='away') || c.competitors?.[1];
       if(!home||!away) continue;
       const det = ev.status?.type?.shortDetail || ev.status?.type?.detail || '';
+      SCORE_DEBUG.jogos++;
       novo.push({ hn: home.team?.displayName||home.team?.name||'',
                   an: away.team?.displayName||away.team?.name||'',
                   hs: readScore(home.score), as: readScore(away.score), state: st,
@@ -661,7 +669,7 @@ function render(){
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
   ).sort((a,b)=>a.t.localeCompare(b.t));
 
-  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (typeof GENERATED_AT==='string' && GENERATED_AT ? ` · dados de ${GENERATED_AT}` : '');
+  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (SCORE_DEBUG.feeds>0 ? ` · ${SCORE_DEBUG.jogos} placar(es) live` : '') + (typeof GENERATED_AT==='string' && GENERATED_AT ? ` · dados de ${GENERATED_AT}` : '');
 
   if(!list.length){
     const ultimaData = DB.reduce((m,e)=> e.date>m ? e.date : m, '');
