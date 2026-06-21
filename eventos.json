@@ -87,23 +87,6 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 11",
-  "match": "Brusque x Floresta",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-21",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Mundial",
   "league": "Copa do Mundo FIFA",
   "detail": "Fase de grupos",
@@ -165,7 +148,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 14",
-  "match": "São Bernardo x Juventude",
+  "match": "São x Juventude",
   "ch": [
    {
     "n": "Premiere FC",
@@ -182,7 +165,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 11",
-  "match": "Ferroviária x Inter De Limeira",
+  "match": "Barra x Amazonas",
   "ch": [
    {
     "n": "Sportynet",
@@ -199,7 +182,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 11",
-  "match": "Barra x Amazonas",
+  "match": "Ferroviária x Inter De Limeira",
   "ch": [
    {
     "n": "Sportynet",
