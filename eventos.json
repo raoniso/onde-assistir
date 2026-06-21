@@ -386,6 +386,27 @@
  },
  {
   "date": "2026-06-22",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Wimbledon",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-22",
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
