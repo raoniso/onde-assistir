@@ -247,6 +247,23 @@
   "v": 1
  },
  {
+  "date": "2026-06-25",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Turquia",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-06-26",
   "t": "08:30",
   "sport": "Fórmula 1",
