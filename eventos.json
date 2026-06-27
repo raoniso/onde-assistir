@@ -96,23 +96,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 12",
-  "match": "Inter De Limeira x Maringá",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-27",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Operário PR x América Mineiro",
