@@ -113,23 +113,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 12",
-  "match": "Floresta x Barra",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-06-27",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Criciúma x São Bernardo",
