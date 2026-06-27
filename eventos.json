@@ -92,23 +92,6 @@
  },
  {
   "date": "2026-06-27",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Rodada 4",
-  "match": "Palmeiras Sub-20 Guarani x Sub-20",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-06-27",
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
