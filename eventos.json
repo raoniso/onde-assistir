@@ -26,13 +26,30 @@
  },
  {
   "date": "2026-06-28",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Paulista Sub-20",
+  "detail": "Rodada 4",
+  "match": "São x Paulo U20 2",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-06-28",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 15",
-  "match": "Athletic Club x Avai",
+  "match": "Athletic x Avai",
   "ch": [
    {
     "n": "Disney+",
@@ -48,15 +65,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 15",
-  "match": "Atlético GO x Ponte Preta",
+  "detail": "Tabela oficial",
+  "match": "Atlético Goianiense x Ponte Preta",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-28",
@@ -65,19 +82,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 15",
+  "detail": "Tabela oficial",
   "match": "Juventude x Ceará",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-06-28",
