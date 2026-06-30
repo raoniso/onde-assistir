@@ -209,5 +209,102 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-07-06",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Nordea Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-06",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Grand Est Open 88",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-06",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Cerity Partners Hall of Fame Open presented by the Margaret Fund",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-06",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Botafogo-SP x Avaí",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-06",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Vila Nova x São Bernardo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  }
 ]
