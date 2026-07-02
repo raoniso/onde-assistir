@@ -424,56 +424,77 @@ COPA_FALLBACK = [
 DIAG = {"fontes": {}, "amostras": {}}
 
 def fonte_uol_copa():
+    """Estrutura real do UOL (capturada via diagnóstico):
+         Hoje, 16h00
+         Globo SBT Nsports
+         ge TV Sportv
+         CazéTV
+         Espanha
+         Áustria
+       => horário -> linhas de canais -> Time A -> Time B"""
     url = "https://www.uol.com.br/esporte/futebol/campeonatos/copa-do-mundo/"
     r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
-    texto = soup.get_text("\n")
-    # diagnóstico: blocos de CONTEXTO (6 linhas antes + 2 depois) ao redor
-    # das primeiras ocorrências de canais — para desenhar o parser com dado real
-    CANAIS_RX = r"(globo|sportv|caz[eé]|sbt|ge tv|globoplay|n ?sports|fifa\+)"
-    linhas_diag = [l.strip() for l in texto.split("\n")]
+    linhas = [l.strip() for l in soup.get_text("\n").split("\n") if l.strip()]
+
+    # diagnóstico de contexto (mantido para detectar mudanças de layout)
+    CANAIS_RX = r"(globo|sportv|caz[eé]|sbt|ge ?tv|globoplay|n ?sports|fifa\+)"
     blocos, achados = [], 0
-    for i, l in enumerate(linhas_diag):
-        if re.search(CANAIS_RX, l, re.I) and l.strip():
-            blocos.append(" || ".join(x for x in linhas_diag[max(0,i-6):i+3] if x)[:400])
-            achados += 1
-            if achados >= 4: break
+    for i, l in enumerate(linhas):
+        if re.search(CANAIS_RX, l, re.I):
+            blocos.append(" || ".join(linhas[max(0,i-6):i+3])[:400]); achados += 1
+            if achados >= 3: break
     DIAG["amostras"]["uol"] = blocos
 
+    def linha_de_canais(l):
+        toks = sem_acento(l).lower().replace("ge tv","getv").split()
+        conhecidos = {"globo","sbt","nsports","getv","sportv","cazetv","globoplay","fifa+"}
+        return bool(toks) and all(t in conhecidos for t in toks)
+
+    def extrai_canais(l):
+        s = re.sub(r"ge ?tv", "GETV", l, flags=re.I)
+        out = []
+        for t in s.split():
+            k = sem_acento(t).lower()
+            nome = {"getv":"GE TV","nsports":"N Sports","cazetv":"CazéTV","sbt":"SBT",
+                    "globo":"Globo","sportv":"SporTV","globoplay":"Globoplay"}.get(k)
+            if nome: out.append({"n":nome,"y":"free" if nome in ("Globo","SBT","CazéTV","GE TV") else ("stream" if nome=="Globoplay" else "tv")})
+        return out
+
+    RX_HORA = re.compile(r"^(Hoje|Amanh[ãa]|\d{2}/\d{2})[ ,]*(\d{1,2})h(\d{2})", re.I)
     evs = []
-    # padrão flexível: "Time A x Time B" ... canais na MESMA linha ou nas 2 seguintes
-    linhas = [l.strip() for l in texto.split("\n") if l.strip()]
-    for i, l in enumerate(linhas):
-        m = re.search(r"([A-ZÀ-Ú][\w À-ú.\-]{2,30})\s+x\s+([A-ZÀ-Ú][\w À-ú.\-]{2,30})", l)
-        if not m: continue
-        janela = " ".join(linhas[i:i+3])
-        canais = re.findall(CANAIS_RX, janela, re.I)
-        if not canais: continue
-        hora_m = re.search(r"(\d{1,2})[h:](\d{2})", janela)
-        hora = f"{int(hora_m.group(1)):02d}:{hora_m.group(2)}" if hora_m else None
-        vistos, cs = set(), []
-        for c in canais:
-            k = sem_acento(c).lower()
-            if k in vistos: continue
-            vistos.add(k); cs.append(canal(c))
-        evs.append({"match": f"{m.group(1).strip()} x {m.group(2).strip()}",
-                    "t": hora, "ch": cs})
+    i = 0
+    while i < len(linhas):
+        m = RX_HORA.match(linhas[i])
+        if not m:
+            i += 1; continue
+        quando, hh, mm = m.groups()
+        j, canais = i + 1, []
+        while j < len(linhas) and linha_de_canais(linhas[j]):
+            canais += extrai_canais(linhas[j]); j += 1
+        # os 2 próximos itens não-canais são os times
+        if canais and j + 1 < len(linhas):
+            t1, t2 = linhas[j], linhas[j+1]
+            if 2 < len(t1) < 35 and 2 < len(t2) < 35 and not RX_HORA.match(t1):
+                # dedup canais
+                vistos, cs = set(), []
+                for c in canais:
+                    if c["n"] in vistos: continue
+                    vistos.add(c["n"]); cs.append(c)
+                evs.append({"match": f"{t1} x {t2}", "t": f"{int(hh):02d}:{mm}", "ch": cs})
+        i = j + 2 if canais else i + 1
     return evs
 
+
 def enriquecer_canais_uol(eventos, uol):
-    """Aplica canais do UOL aos jogos da Copa por casamento de times."""
+    """UOL lista os transmissores POR JOGO — é autoridade de canais da Copa.
+    Onde casar, os canais do UOL substituem tudo."""
     aplicados = 0
     for e in eventos:
         if e.get("league") != "Copa do Mundo FIFA": continue
         for u in uol:
-            if mesmo_jogo(e["match"], u["match"]):
-                nomes = {norm(c["n"]) for c in e["ch"]}
-                extras = [c for c in u["ch"] if norm(c["n"]) not in nomes
-                          and sem_acento(c["n"]).lower().strip() in CANAIS_VALIDOS_COPA]
-                if extras or any("confirmar" in c["n"].lower() for c in e["ch"]):
-                    reais = [c for c in e["ch"] if "confirmar" not in c["n"].lower()]
-                    e["ch"] = reais + extras if (reais or extras) else e["ch"]
-                    aplicados += 1
+            if mesmo_jogo(e["match"], u["match"]) and u["ch"]:
+                e["ch"] = u["ch"]; aplicados += 1
                 break
     DIAG["fontes"]["uol_aplicados"] = aplicados
     return eventos
