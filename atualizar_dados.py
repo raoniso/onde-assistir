@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-07-02-s (fonte UOL + diagnóstico observável)
+# build: 2026-07-02-t (rerun pós-fix do workflow)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
