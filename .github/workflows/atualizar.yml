@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "onde-assistir-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add eventos.json index.html
+          git add eventos.json index.html diagnostico.json
           git diff --cached --quiet && echo "Sem mudanças." || {
             git commit -m "Atualiza jogos — $(date -u -d '-3 hours' +'%d/%m %H:%M') BRT"
             git push
