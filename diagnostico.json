@@ -1,0 +1,35 @@
+{
+ "fontes": {
+  "log": [
+   "Coleta 02/07 14:42 BRT — janela 2026-07-02 a 2026-07-08",
+   "  ✓ futebolnatv: 7 evento(s)",
+   "  ✓ mantosdofutebol: 11 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 25 evento(s)",
+   "  ✓ Tabela oficial da Copa (autoridade): 10 evento(s)",
+   "  ✓ ESPN NBA: 0 evento(s)",
+   "  ✓ ESPN F1: 5 evento(s)",
+   "  ✓ ESPN Tênis: 3 evento(s)",
+   "  ✓ extras.json: 0 evento(s)",
+   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "TOTAL: 29 eventos → eventos.json",
+   "index.html atualizado.",
+   "onde-assistir.html atualizado."
+  ]
+ },
+ "amostras": {
+  "uol": [
+   "Globo SBT Nsports",
+   "ge TV Sportv",
+   "CazéTV",
+   "CazéTV",
+   "CazéTV",
+   "Globo",
+   "Sportv",
+   "CazéTV",
+   "Globo SBT Nsports",
+   "ge TV Sportv",
+   "CazéTV",
+   "CazéTV"
+  ]
+ }
+}
