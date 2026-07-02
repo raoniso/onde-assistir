@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-06-20-q (canais Copa autoridade; placar via app)
+# build: 2026-07-02-r (mata-mata SportRadar + canais por jogo)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -390,6 +390,28 @@ COPA_FALLBACK = [
  ("2026-06-27","18:00","Panamá x Inglaterra"),("2026-06-27","18:00","Croácia x Gana"),
  ("2026-06-27","20:30","Colômbia x Portugal"),("2026-06-27","20:30","RD Congo x Uzbequistão"),
  ("2026-06-27","23:00","Argélia x Áustria"),("2026-06-27","23:00","Jordânia x Argentina"),
+ # ===== OITAVAS DE FINAL (verificado SportRadar) =====
+ ("2026-06-28","16:00","África do Sul x Canadá"),
+ ("2026-06-29","14:00","Brasil x Japão"),
+ ("2026-06-29","17:30","Alemanha x Paraguai"),
+ ("2026-06-29","22:00","Holanda x Marrocos"),
+ ("2026-06-30","14:00","Costa do Marfim x Noruega"),
+ ("2026-06-30","18:00","França x Suécia"),
+ ("2026-06-30","23:00","México x Equador"),
+ ("2026-07-01","13:00","Inglaterra x RD Congo"),
+ ("2026-07-01","17:00","Bélgica x Senegal"),
+ ("2026-07-01","21:00","Estados Unidos x Bósnia e Herzegovina"),
+ ("2026-07-02","16:00","Espanha x Áustria"),
+ ("2026-07-02","20:00","Portugal x Croácia"),
+ ("2026-07-03","00:00","Suíça x Argélia"),
+ ("2026-07-03","15:00","Austrália x Egito"),
+ ("2026-07-03","19:00","Argentina x Cabo Verde"),
+ ("2026-07-03","22:30","Colômbia x Gana"),
+ # ===== QUARTAS DE FINAL (verificado SportRadar) =====
+ ("2026-07-04","14:00","Canadá x Marrocos"),
+ ("2026-07-04","18:00","Paraguai x França"),
+ ("2026-07-05","17:00","Brasil x Noruega"),
+ ("2026-07-05","21:00","México x Inglaterra"),
 ]
 
 
@@ -397,9 +419,13 @@ def fonte_copa_fallback():
     evs = []
     for date, hora, match in COPA_FALLBACK:
         if date not in [d.isoformat() for d in JANELA]: continue
+        fase = ("Fase de grupos" if date <= "2026-06-27" else
+                "Oitavas de final" if date <= "2026-07-03" else
+                "Quartas de final" if date <= "2026-07-05" else
+                "Semifinal" if date <= "2026-07-11" else "Final")
         evs.append(evento(date, hora, "Futebol", "Copa do Mundo FIFA", match,
                           [{"n":"Transmissão a confirmar","y":"tv"}],
-                          detail="Fase de grupos", country="Mundial", g="M", v=1))
+                          detail=fase, country="Mundial", g="M", v=1))
     return evs
 
 def mesmo_jogo(m1, m2):
@@ -476,19 +502,25 @@ CANAIS_COPA_BASE = [
 ]
 CANAIS_COPA_SBT = CANAIS_COPA_BASE + [{"n": "SBT", "y": "free"}, {"n": "N Sports", "y": "tv"}]
 
-# Canais que NÃO existem para a Copa no Brasil (vazam do scraping) — removidos sempre
-CANAIS_INVALIDOS_COPA = {"prime video","amazon prime video","disney+","espn","espn 2",
-                         "espn 3","espn 4","paramount+","premiere","dazn","onefootball","sportynet"}
+# Detentores REAIS de direitos da Copa no Brasil (whitelist). O canal de cada
+# jogo específico vem do SCRAPING (por jogo); esta lista só remove ruído
+# (Prime/ESPN/Disney etc., que NÃO transmitem a Copa aqui).
+CANAIS_VALIDOS_COPA = {"globo","sportv","sportv 2","sportv 3","cazetv","caze tv",
+                       "ge tv","getv","globoplay","sbt","n sports","nsports","fifa+"}
 
 def aplica_canais_copa(eventos):
-    """Copa tem direitos FIXOS e públicos no Brasil (Globo, SporTV, CazéTV, GE TV,
-    Globoplay; + SBT e N Sports em parte dos jogos). Esses canais SOBRESCREVEM o que
-    o scraping trouxe — fontes erram e colocam Prime/ESPN, que não passam a Copa aqui."""
+    """Canais POR JOGO: mantém o que o scraping trouxe (filtrado à whitelist de
+    detentores reais). Sem canal confirmado -> CazéTV (transmite todos os 104
+    jogos por contrato público) + selo 'a confirmar' para os demais."""
     for e in eventos:
         if e.get("league") != "Copa do Mundo FIFA": continue
-        hora = int(e["t"].split(":")[0])
-        # base oficial para todo jogo; SBT+N Sports nos horários de maior audiência
-        e["ch"] = (CANAIS_COPA_SBT if 14 <= hora <= 20 else CANAIS_COPA_BASE).copy()
+        validos = [c for c in e["ch"]
+                   if sem_acento(c["n"]).lower().strip() in CANAIS_VALIDOS_COPA]
+        if validos:
+            e["ch"] = validos
+        else:
+            e["ch"] = [{"n": "CazéTV", "y": "free"},
+                       {"n": "Demais canais a confirmar", "y": "tv"}]
     return eventos
 
 def main():
