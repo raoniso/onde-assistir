@@ -1,8 +1,8 @@
 {
  "fontes": {
-  "uol_aplicados": 2,
+  "uol_aplicados": 1,
   "log": [
-   "Coleta 02/07 14:48 BRT — janela 2026-07-02 a 2026-07-08",
+   "Coleta 02/07 18:00 BRT — janela 2026-07-02 a 2026-07-08",
    "  ✓ futebolnatv: 7 evento(s)",
    "  ✓ mantosdofutebol: 11 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 25 evento(s)",
@@ -11,7 +11,7 @@
    "  ✓ ESPN F1: 5 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 2 evento(s)",
+   "  ✓ UOL (canais por jogo): 1 evento(s)",
    "TOTAL: 29 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
@@ -19,9 +19,9 @@
  },
  "amostras": {
   "uol": [
-   "01/07 || Estados Unidos || 2 || 0 || Bósnia - Herzegovina || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "Estados Unidos || 2 || 0 || Bósnia - Herzegovina || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha",
-   "2 || 0 || Bósnia - Herzegovina || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha || Áustria"
+   "02/07 || Espanha || 3 || 0 || Áustria || Hoje, 20h00 || CazéTV || Portugal || Croácia",
+   "Áustria || Hoje, 20h00 || CazéTV || Portugal || Croácia || sex, 03/07, 00h00 || CazéTV || Suíça || Argélia",
+   "Croácia || sex, 03/07, 00h00 || CazéTV || Suíça || Argélia || sex, 03/07, 15h00 || Globo || Sportv || CazéTV"
   ]
  }
 }
