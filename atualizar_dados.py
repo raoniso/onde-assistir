@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-07-02-t (rerun pós-fix do workflow)
+# build: 2026-07-02-s (fonte UOL + diagnóstico observável)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -428,11 +428,17 @@ def fonte_uol_copa():
     r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
     texto = soup.get_text("\n")
-    # guarda amostra p/ diagnóstico (primeiras linhas que citam canais)
+    # diagnóstico: blocos de CONTEXTO (6 linhas antes + 2 depois) ao redor
+    # das primeiras ocorrências de canais — para desenhar o parser com dado real
     CANAIS_RX = r"(globo|sportv|caz[eé]|sbt|ge tv|globoplay|n ?sports|fifa\+)"
-    amostra = [l.strip() for l in texto.split("\n")
-               if re.search(CANAIS_RX, l, re.I) and len(l.strip()) < 200][:15]
-    DIAG["amostras"]["uol"] = amostra
+    linhas_diag = [l.strip() for l in texto.split("\n")]
+    blocos, achados = [], 0
+    for i, l in enumerate(linhas_diag):
+        if re.search(CANAIS_RX, l, re.I) and l.strip():
+            blocos.append(" || ".join(x for x in linhas_diag[max(0,i-6):i+3] if x)[:400])
+            achados += 1
+            if achados >= 4: break
+    DIAG["amostras"]["uol"] = blocos
 
     evs = []
     # padrão flexível: "Time A x Time B" ... canais na MESMA linha ou nas 2 seguintes
