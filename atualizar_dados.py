@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-07-02-r (mata-mata SportRadar + canais por jogo)
+# build: 2026-07-02-s (fonte UOL + diagnóstico observável)
 """
 ONDE.ASSISTIR — Pipeline de dados v3 (multi-esporte, multi-fonte, autônomo)
 ===========================================================================
@@ -415,6 +415,63 @@ COPA_FALLBACK = [
 ]
 
 
+
+# =================================================================
+# UOL — página da Copa com jogos e ONDE VAI PASSAR por jogo.
+# Parser defensivo: procura blocos "Time x Time" com canais próximos.
+# Grava amostra bruta no diagnóstico para calibragem com dados reais.
+# =================================================================
+DIAG = {"fontes": {}, "amostras": {}}
+
+def fonte_uol_copa():
+    url = "https://www.uol.com.br/esporte/futebol/campeonatos/copa-do-mundo/"
+    r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+    texto = soup.get_text("\n")
+    # guarda amostra p/ diagnóstico (primeiras linhas que citam canais)
+    CANAIS_RX = r"(globo|sportv|caz[eé]|sbt|ge tv|globoplay|n ?sports|fifa\+)"
+    amostra = [l.strip() for l in texto.split("\n")
+               if re.search(CANAIS_RX, l, re.I) and len(l.strip()) < 200][:15]
+    DIAG["amostras"]["uol"] = amostra
+
+    evs = []
+    # padrão flexível: "Time A x Time B" ... canais na MESMA linha ou nas 2 seguintes
+    linhas = [l.strip() for l in texto.split("\n") if l.strip()]
+    for i, l in enumerate(linhas):
+        m = re.search(r"([A-ZÀ-Ú][\w À-ú.\-]{2,30})\s+x\s+([A-ZÀ-Ú][\w À-ú.\-]{2,30})", l)
+        if not m: continue
+        janela = " ".join(linhas[i:i+3])
+        canais = re.findall(CANAIS_RX, janela, re.I)
+        if not canais: continue
+        hora_m = re.search(r"(\d{1,2})[h:](\d{2})", janela)
+        hora = f"{int(hora_m.group(1)):02d}:{hora_m.group(2)}" if hora_m else None
+        vistos, cs = set(), []
+        for c in canais:
+            k = sem_acento(c).lower()
+            if k in vistos: continue
+            vistos.add(k); cs.append(canal(c))
+        evs.append({"match": f"{m.group(1).strip()} x {m.group(2).strip()}",
+                    "t": hora, "ch": cs})
+    return evs
+
+def enriquecer_canais_uol(eventos, uol):
+    """Aplica canais do UOL aos jogos da Copa por casamento de times."""
+    aplicados = 0
+    for e in eventos:
+        if e.get("league") != "Copa do Mundo FIFA": continue
+        for u in uol:
+            if mesmo_jogo(e["match"], u["match"]):
+                nomes = {norm(c["n"]) for c in e["ch"]}
+                extras = [c for c in u["ch"] if norm(c["n"]) not in nomes
+                          and sem_acento(c["n"]).lower().strip() in CANAIS_VALIDOS_COPA]
+                if extras or any("confirmar" in c["n"].lower() for c in e["ch"]):
+                    reais = [c for c in e["ch"] if "confirmar" not in c["n"].lower()]
+                    e["ch"] = reais + extras if (reais or extras) else e["ch"]
+                    aplicados += 1
+                break
+    DIAG["fontes"]["uol_aplicados"] = aplicados
+    return eventos
+
 def fonte_copa_fallback():
     evs = []
     for date, hora, match in COPA_FALLBACK:
@@ -561,7 +618,9 @@ def main():
     eventos += roda("ESPN Tênis", fonte_tenis, log)
     eventos += roda("extras.json", fonte_extras, log)
 
+    uol = roda("UOL (canais por jogo)", fonte_uol_copa, log)
     eventos = aplica_canais_copa(eventos)
+    if uol: eventos = enriquecer_canais_uol(eventos, uol)
     eventos = dedup_por_jogo(eventos)
     eventos = dedup(eventos)
     eventos = [e for e in eventos if e["date"] >= HOJE.isoformat()]
@@ -585,6 +644,8 @@ def main():
             html = re.sub(r"const GENERATED_AT = .*?;", f"const GENERATED_AT = '{agora}';", html)
             p.write_text(html, encoding="utf-8")
             log.append(f"{nome} atualizado.")
+    DIAG["fontes"]["log"] = log
+    Path("diagnostico.json").write_text(json.dumps(DIAG, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n".join(log))
 
 if __name__ == "__main__":
