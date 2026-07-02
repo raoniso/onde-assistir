@@ -10,12 +10,28 @@
   "match": "Espanha x Áustria",
   "ch": [
    {
-    "n": "CazéTV",
+    "n": "Globo",
     "y": "free"
    },
    {
-    "n": "Demais canais a confirmar",
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
     "y": "tv"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
   "v": 1
