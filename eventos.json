@@ -56,16 +56,12 @@
   "match": "Austrália x Egito",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Demais canais a confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
