@@ -1,26 +1,27 @@
 {
  "fontes": {
+  "uol_aplicados": 3,
   "log": [
-   "Coleta 02/07 23:37 BRT — janela 2026-07-02 a 2026-07-08",
-   "  ✓ futebolnatv: 5 evento(s)",
-   "  ✓ mantosdofutebol: 55 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 25 evento(s)",
-   "  ✓ Tabela oficial da Copa (autoridade): 10 evento(s)",
+   "Coleta 03/07 03:58 BRT — janela 2026-07-03 a 2026-07-09",
+   "  ✓ futebolnatv: 14 evento(s)",
+   "  ✓ mantosdofutebol: 51 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 21 evento(s)",
+   "  ✓ Tabela oficial da Copa (autoridade): 8 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 5 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 29 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 3 evento(s)",
+   "TOTAL: 31 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "02/07 || Portugal || 2 || 1 || Croácia || sex, 03/07, 00h00 || CazéTV || Suíça || Argélia",
-   "Croácia || sex, 03/07, 00h00 || CazéTV || Suíça || Argélia || sex, 03/07, 15h00 || Globo || Sportv || CazéTV",
-   "sex, 03/07, 00h00 || CazéTV || Suíça || Argélia || sex, 03/07, 15h00 || Globo || Sportv || CazéTV || Austrália"
+   "03/07 || Suíça || 2 || 0 || Argélia || Hoje, 15h00 || Globo || Sportv || CazéTV",
+   "Suíça || 2 || 0 || Argélia || Hoje, 15h00 || Globo || Sportv || CazéTV || Austrália",
+   "2 || 0 || Argélia || Hoje, 15h00 || Globo || Sportv || CazéTV || Austrália || Egito"
   ]
  }
 }
