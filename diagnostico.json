@@ -1,27 +1,24 @@
 {
  "fontes": {
-  "uol_aplicados": 2,
   "log": [
-   "Coleta 03/07 18:01 BRT — janela 2026-07-03 a 2026-07-09",
-   "  ✓ futebolnatv: 13 evento(s)",
-   "  ✓ mantosdofutebol: 54 evento(s)",
+   "Coleta 03/07 23:33 BRT — janela 2026-07-03 a 2026-07-09",
+   "  ✓ futebolnatv: 10 evento(s)",
+   "  ✓ mantosdofutebol: 120 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 21 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 8 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 5 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 2 evento(s)",
-   "TOTAL: 31 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "TOTAL: 29 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "2 || 4 || ) || 1 || Egito || Hoje, 19h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "4 || ) || 1 || Egito || Hoje, 19h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Argentina",
-   ") || 1 || Egito || Hoje, 19h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Argentina || Cabo Verde"
+   "Argentina || 3 || 2 || Cabo Verde || Ao vivo || Intervalo || CazéTV || Colômbia || 1"
   ]
  }
 }
