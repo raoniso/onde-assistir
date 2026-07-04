@@ -1,22 +1,27 @@
 {
  "fontes": {
+  "uol_aplicados": 2,
   "log": [
-   "Coleta 04/07 07:05 BRT — janela 2026-07-04 a 2026-07-10",
+   "Coleta 04/07 10:16 BRT — janela 2026-07-04 a 2026-07-10",
    "  ✓ futebolnatv: 14 evento(s)",
-   "  ✓ mantosdofutebol: 66 evento(s)",
+   "  ✓ mantosdofutebol: 65 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 21 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 4 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 3 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "  ✓ UOL (canais por jogo): 2 evento(s)",
    "TOTAL: 29 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
-  "uol": []
+  "uol": [
+   "Quartas de Final || Semifinal || Disputa de 3° Lugar || Final || Ver chaveamento || Hoje, 14h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "Semifinal || Disputa de 3° Lugar || Final || Ver chaveamento || Hoje, 14h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Canadá",
+   "Disputa de 3° Lugar || Final || Ver chaveamento || Hoje, 14h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Canadá || Marrocos"
+  ]
  }
 }

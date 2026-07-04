@@ -35,6 +35,26 @@
   "match": "Canadá x Marrocos",
   "ch": [
    {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SBT",
+    "y": "free"
+   },
+   {
+    "n": "N Sports",
+    "y": "tv"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
     "n": "CazéTV",
     "y": "free"
    }
