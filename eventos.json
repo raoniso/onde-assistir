@@ -1,114 +1,5 @@
 [
  {
-  "date": "2026-07-03",
-  "t": "00:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Oitavas de final",
-  "match": "Suíça x Argélia",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Demais canais a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-03",
-  "t": "08:30",
-  "sport": "Fórmula 1",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Fórmula 1",
-  "detail": "FP1",
-  "match": "Pirelli British Grand Prix",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "F1 Tv Pro",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-03",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Oitavas de final",
-  "match": "Austrália x Egito",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Demais canais a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-03",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Oitavas de final",
-  "match": "Argentina x Cabo Verde",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Demais canais a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-03",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA",
-  "detail": "Oitavas de final",
-  "match": "Colômbia x Gana",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Demais canais a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-07-04",
   "t": "08:00",
   "sport": "Fórmula 1",
@@ -397,17 +288,55 @@
  },
  {
   "date": "2026-07-05",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Connecticut FC x Carolina Core",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-05",
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 16",
   "match": "Náutico x Juventude",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-05",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Huntsville City x Chicago FC United",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -429,6 +358,23 @@
    {
     "n": "Demais canais a confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-05",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Los Angeles II x Real Monarchs",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -556,6 +502,40 @@
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Ponte Preta x Criciúma",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-10",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Juventude x Vila Nova",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-10",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Sport x Botafogo-SP",
   "ch": [
    {
     "n": "Transmissão a confirmar",

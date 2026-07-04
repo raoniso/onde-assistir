@@ -1,13 +1,13 @@
 {
  "fontes": {
   "log": [
-   "Coleta 03/07 23:33 BRT — janela 2026-07-03 a 2026-07-09",
-   "  ✓ futebolnatv: 10 evento(s)",
-   "  ✓ mantosdofutebol: 120 evento(s)",
+   "Coleta 04/07 03:44 BRT — janela 2026-07-04 a 2026-07-10",
+   "  ✓ futebolnatv: 14 evento(s)",
+   "  ✓ mantosdofutebol: 66 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 21 evento(s)",
-   "  ✓ Tabela oficial da Copa (autoridade): 8 evento(s)",
+   "  ✓ Tabela oficial da Copa (autoridade): 4 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
-   "  ✓ ESPN F1: 5 evento(s)",
+   "  ✓ ESPN F1: 3 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
@@ -17,8 +17,6 @@
   ]
  },
  "amostras": {
-  "uol": [
-   "Argentina || 3 || 2 || Cabo Verde || Ao vivo || Intervalo || CazéTV || Colômbia || 1"
-  ]
+  "uol": []
  }
 }
