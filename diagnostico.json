@@ -1,26 +1,27 @@
 {
  "fontes": {
+  "uol_aplicados": 2,
   "log": [
-   "Coleta 04/07 23:44 BRT — janela 2026-07-04 a 2026-07-10",
-   "  ✓ futebolnatv: 5 evento(s)",
-   "  ✓ mantosdofutebol: 49 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 21 evento(s)",
-   "  ✓ Tabela oficial da Copa (autoridade): 4 evento(s)",
+   "Coleta 05/07 04:22 BRT — janela 2026-07-05 a 2026-07-11",
+   "  ✓ futebolnatv: 10 evento(s)",
+   "  ✓ mantosdofutebol: 25 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 17 evento(s)",
+   "  ✓ Tabela oficial da Copa (autoridade): 2 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
-   "  ✓ ESPN F1: 3 evento(s)",
+   "  ✓ ESPN F1: 1 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 23 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 2 evento(s)",
+   "TOTAL: 17 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "04/07 || Paraguai || 0 || 1 || França || dom, 05/07, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "Paraguai || 0 || 1 || França || dom, 05/07, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil",
-   "0 || 1 || França || dom, 05/07, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil || Noruega"
+   "04/07 || Paraguai || 0 || 1 || França || Hoje, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "Paraguai || 0 || 1 || França || Hoje, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil",
+   "0 || 1 || França || Hoje, 17h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil || Noruega"
   ]
  }
 }
