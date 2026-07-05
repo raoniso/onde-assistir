@@ -68,24 +68,20 @@
  },
  {
   "date": "2026-07-05",
-  "t": "14:00",
+  "t": "13:00",
   "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "2",
-  "match": "Danubio x Juventud",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "INT Boston Legacy x FC 2",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
+    "n": "A confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-05",
