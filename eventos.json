@@ -68,6 +68,27 @@
  },
  {
   "date": "2026-07-05",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Torneo Intermedio",
+  "detail": "2",
+  "match": "Danubio x Juventud",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-05",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
@@ -137,6 +158,10 @@
    {
     "n": "Premiere",
     "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
    }
   ],
   "v": 2
