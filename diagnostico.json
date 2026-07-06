@@ -1,26 +1,27 @@
 {
  "fontes": {
+  "uol_aplicados": 0,
   "log": [
-   "Coleta 05/07 23:49 BRT — janela 2026-07-05 a 2026-07-11",
-   "  ✓ futebolnatv: 6 evento(s)",
-   "  ✓ mantosdofutebol: 23 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 17 evento(s)",
-   "  ✓ Tabela oficial da Copa (autoridade): 2 evento(s)",
+   "Coleta 06/07 05:16 BRT — janela 2026-07-06 a 2026-07-12",
+   "  ✓ futebolnatv: 7 evento(s)",
+   "  ✓ mantosdofutebol: 14 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 19 evento(s)",
+   "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
-   "  ✓ ESPN F1: 1 evento(s)",
-   "  ✓ ESPN Tênis: 3 evento(s)",
+   "  ✓ ESPN F1: 0 evento(s)",
+   "  ✓ ESPN Tênis: 1 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 15 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 2 evento(s)",
+   "TOTAL: 13 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "Brasil || 1 || 2 || Noruega || Ao vivo || 2º T || CazéTV || México || 2",
-   "CazéTV || México || 2 || 3 || Inglaterra || seg, 06/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "México || 2 || 3 || Inglaterra || seg, 06/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal"
+   "05/07 || México || 2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "México || 2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal",
+   "2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal || Espanha"
   ]
  }
 }
