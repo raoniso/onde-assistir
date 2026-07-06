@@ -2,8 +2,8 @@
  "fontes": {
   "uol_aplicados": 0,
   "log": [
-   "Coleta 06/07 15:08 BRT — janela 2026-07-06 a 2026-07-12",
-   "  ✓ futebolnatv: 7 evento(s)",
+   "Coleta 06/07 18:25 BRT — janela 2026-07-06 a 2026-07-12",
+   "  ✓ futebolnatv: 6 evento(s)",
    "  ✓ mantosdofutebol: 14 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 19 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
@@ -11,7 +11,7 @@
    "  ✓ ESPN F1: 0 evento(s)",
    "  ✓ ESPN Tênis: 1 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 2 evento(s)",
+   "  ✓ UOL (canais por jogo): 1 evento(s)",
    "TOTAL: 13 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
@@ -19,9 +19,9 @@
  },
  "amostras": {
   "uol": [
-   "05/07 || México || 2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "México || 2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal",
-   "2 || 3 || Inglaterra || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal || Espanha"
+   "06/07 || Portugal || 0 || 1 || Espanha || Hoje, 21h00 || CazéTV || Estados Unidos || Bélgica",
+   "Espanha || Hoje, 21h00 || CazéTV || Estados Unidos || Bélgica || ter, 07/07, 13h00 || Globo SBT NSports || ge TV Sportv || CazéTV",
+   "Hoje, 21h00 || CazéTV || Estados Unidos || Bélgica || ter, 07/07, 13h00 || Globo SBT NSports || ge TV Sportv || CazéTV || Argentina"
   ]
  }
 }
