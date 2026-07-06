@@ -1,27 +1,26 @@
 {
  "fontes": {
-  "uol_aplicados": 1,
   "log": [
-   "Coleta 05/07 17:55 BRT — janela 2026-07-05 a 2026-07-11",
-   "  ✓ futebolnatv: 10 evento(s)",
-   "  ✓ mantosdofutebol: 22 evento(s)",
+   "Coleta 05/07 23:49 BRT — janela 2026-07-05 a 2026-07-11",
+   "  ✓ futebolnatv: 6 evento(s)",
+   "  ✓ mantosdofutebol: 23 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 17 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 2 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 1 evento(s)",
    "  ✓ ESPN Tênis: 3 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 1 evento(s)",
-   "TOTAL: 17 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "TOTAL: 15 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "Paraguai || 0 || 1 || França || Ao vivo || Intervalo || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "0 || 1 || França || Ao vivo || Intervalo || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil",
-   "1 || França || Ao vivo || Intervalo || Globo SBT Nsports || ge TV Sportv || CazéTV || Brasil || 0"
+   "Brasil || 1 || 2 || Noruega || Ao vivo || 2º T || CazéTV || México || 2",
+   "CazéTV || México || 2 || 3 || Inglaterra || seg, 06/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "México || 2 || 3 || Inglaterra || seg, 06/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Portugal"
   ]
  }
 }
