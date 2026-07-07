@@ -1,60 +1,5 @@
 [
  {
-  "date": "2026-07-06",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Nordea Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-06",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Botafogo-SP x Avaí",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-06",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Vila Nova x São Bernardo",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-07-07",
   "t": "20:00",
   "sport": "Futebol",
@@ -73,20 +18,49 @@
  },
  {
   "date": "2026-07-08",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Lausanne x Flamengo",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-08",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 17",
   "match": "Ponte Preta x Criciúma",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-10",
@@ -199,6 +173,187 @@
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "CRB x Goiás",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "EFG Swiss Open Gstaad",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Plava Laguna Croatia Open Umag",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Unicredit Iasi Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "ATV Bancomat Tennis Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Athens Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Enka Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Generali Open Ladies Kitzbühel",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "América Mineiro x Londrina",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-13",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Ceará x Athletic",
   "ch": [
    {
     "n": "Transmissão a confirmar",
