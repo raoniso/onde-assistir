@@ -6,6 +6,23 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
+  "detail": "Rodada 16",
+  "match": "FIM DE x Club 0",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-07",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Athletic x Operário PR",
   "ch": [
