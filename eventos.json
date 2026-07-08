@@ -1,31 +1,6 @@
 [
  {
   "date": "2026-07-08",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Flamengo x Lausanne",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-08",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
