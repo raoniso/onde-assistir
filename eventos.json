@@ -6,19 +6,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 17",
+  "detail": "Tabela oficial",
   "match": "Ponte Preta x Criciúma",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-10",
