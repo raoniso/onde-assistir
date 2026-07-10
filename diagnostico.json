@@ -1,8 +1,7 @@
 {
  "fontes": {
-  "uol_aplicados": 0,
   "log": [
-   "Coleta 10/07 14:44 BRT — janela 2026-07-10 a 2026-07-16",
+   "Coleta 10/07 18:03 BRT — janela 2026-07-10 a 2026-07-16",
    "  ✓ futebolnatv: 13 evento(s)",
    "  ✓ mantosdofutebol: 65 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 17 evento(s)",
@@ -11,17 +10,16 @@
    "  ✓ ESPN F1: 0 evento(s)",
    "  ✓ ESPN Tênis: 7 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 1 evento(s)",
-   "TOTAL: 28 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "TOTAL: 29 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "09/07 || França || 2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "França || 2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha",
-   "2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha || Bélgica"
+   "10/07 || Espanha || 2 || 1 || Bélgica || sáb, 11/07, 18h00 || CazéTV || Noruega || Inglaterra",
+   "Bélgica || sáb, 11/07, 18h00 || CazéTV || Noruega || Inglaterra || sáb, 11/07, 22h00 || CazéTV || Argentina || Suíça"
   ]
  }
 }

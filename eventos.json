@@ -18,6 +18,23 @@
  },
  {
   "date": "2026-07-10",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Juventude",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-10",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
@@ -59,6 +76,27 @@
   "league": "Circuito ATP",
   "detail": "Dia de jogos",
   "match": "EFG Swiss Open Gstaad",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-11",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Plava Laguna Croatia Open Umag",
   "ch": [
    {
     "n": "ESPN",
@@ -333,27 +371,6 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-13",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Plava Laguna Croatia Open Umag",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
