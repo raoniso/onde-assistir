@@ -34,6 +34,65 @@
   "v": 1
  },
  {
+  "date": "2026-07-10",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Orlando Pride x Kansas City",
+  "ch": [
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-11",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "EFG Swiss Open Gstaad",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-11",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Vanda Pharmaceuticals Athens Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-07-11",
   "t": "10:00",
   "sport": "Futebol",
@@ -86,6 +145,27 @@
  },
  {
   "date": "2026-07-11",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Uruguai 2ª divisão - 2ª Fase",
+  "detail": "Rodada 10",
+  "match": "River Plate URU x Plaza Colonia",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Uruguaio 2° Divisão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-11",
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
@@ -115,6 +195,10 @@
   "detail": "Amistoso",
   "match": "Benfica x Flamengo",
   "ch": [
+   {
+    "n": "Band",
+    "y": "free"
+   },
    {
     "n": "SporTV",
     "y": "tv"
@@ -261,27 +345,6 @@
   "country": "Mundial",
   "league": "Circuito ATP",
   "detail": "Dia de jogos",
-  "match": "EFG Swiss Open Gstaad",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-13",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
   "match": "Plava Laguna Croatia Open Umag",
   "ch": [
    {
@@ -325,27 +388,6 @@
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
   "match": "ATV Bancomat Tennis Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-13",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Vanda Pharmaceuticals Athens Open",
   "ch": [
    {
     "n": "ESPN",
