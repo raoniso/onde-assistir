@@ -1,26 +1,27 @@
 {
  "fontes": {
+  "uol_aplicados": 0,
   "log": [
-   "Coleta 09/07 23:39 BRT — janela 2026-07-09 a 2026-07-15",
-   "  ✓ futebolnatv: 2 evento(s)",
+   "Coleta 10/07 04:31 BRT — janela 2026-07-10 a 2026-07-16",
+   "  ✓ futebolnatv: 11 evento(s)",
    "  ✓ mantosdofutebol: 28 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 15 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 17 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 0 evento(s)",
    "  ✓ ESPN Tênis: 7 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 16 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 1 evento(s)",
+   "TOTAL: 26 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "09/07 || França || 2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "França || 2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha",
-   "2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha || Bélgica"
+   "09/07 || França || 2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "França || 2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha",
+   "2 || 0 || Marrocos || Hoje, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha || Bélgica"
   ]
  }
 }
