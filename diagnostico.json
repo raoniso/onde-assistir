@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 09/07 18:19 BRT — janela 2026-07-09 a 2026-07-15",
+   "Coleta 09/07 23:39 BRT — janela 2026-07-09 a 2026-07-15",
    "  ✓ futebolnatv: 2 evento(s)",
-   "  ✓ mantosdofutebol: 31 evento(s)",
+   "  ✓ mantosdofutebol: 28 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 15 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
@@ -18,9 +18,9 @@
  },
  "amostras": {
   "uol": [
-   "Semifinal || Disputa de 3° Lugar || Final || Ver chaveamento || Ao vivo || 2º T || Globo SBT Nsports || ge TV Sportv || CazéTV",
-   "Disputa de 3° Lugar || Final || Ver chaveamento || Ao vivo || 2º T || Globo SBT Nsports || ge TV Sportv || CazéTV || França",
-   "Final || Ver chaveamento || Ao vivo || 2º T || Globo SBT Nsports || ge TV Sportv || CazéTV || França || 0"
+   "09/07 || França || 2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "França || 2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha",
+   "2 || 0 || Marrocos || sex, 10/07, 16h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || Espanha || Bélgica"
   ]
  }
 }
