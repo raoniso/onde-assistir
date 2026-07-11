@@ -6,28 +6,11 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 17",
+  "detail": "Tabela oficial",
   "match": "Juventude x Vila Nova",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-10",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Juventude",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
@@ -46,23 +29,6 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-10",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "EUA/Canadá",
-  "league": "NWSL Feminina - Grupo",
-  "detail": "Stage",
-  "match": "Orlando Pride x Kansas City",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
    }
   ],
   "v": 1
@@ -179,7 +145,7 @@
     "y": "free"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-11",
@@ -194,13 +160,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Uruguaio 2° Divisão",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-11",
@@ -215,13 +177,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-11",
@@ -250,7 +208,7 @@
     "y": "free"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-11",
@@ -265,13 +223,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-11",
