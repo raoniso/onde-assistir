@@ -89,40 +89,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 14",
-  "match": "Inter De Limeira x Amazonas",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 14",
-  "match": "Barra x Santa Cruz",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Operário PR x Novorizontino",
@@ -142,14 +108,18 @@
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Torneo Intermedio",
   "detail": "5",
-  "match": "Liverpool Montevideo x Cerro",
+  "match": "Liverpool x Cerro",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-12",
@@ -180,8 +150,12 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 14",
-  "match": "Anápolis x Maringá",
+  "match": "Paysandu x Guarani",
   "ch": [
+   {
+    "n": "Band",
+    "y": "free"
+   },
    {
     "n": "Sportynet",
     "y": "free"
@@ -197,12 +171,8 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 14",
-  "match": "Paysandu x Guarani",
+  "match": "Anápolis x Maringá",
   "ch": [
-   {
-    "n": "Band",
-    "y": "free"
-   },
    {
     "n": "Sportynet",
     "y": "free"
