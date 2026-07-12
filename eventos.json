@@ -63,44 +63,6 @@
   "v": 1
  },
  {
-  "date": "2026-07-11",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "5",
-  "match": "Wanderers x Progreso",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-11",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Colorado Rapids II x North Texas",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-07-12",
   "t": "01:00",
   "sport": "Tênis",

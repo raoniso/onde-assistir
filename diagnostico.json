@@ -1,26 +1,24 @@
 {
  "fontes": {
-  "uol_aplicados": 0,
   "log": [
-   "Coleta 11/07 17:42 BRT — janela 2026-07-11 a 2026-07-17",
-   "  ✓ futebolnatv: 14 evento(s)",
-   "  ✓ mantosdofutebol: 65 evento(s)",
+   "Coleta 11/07 23:25 BRT — janela 2026-07-11 a 2026-07-17",
+   "  ✓ futebolnatv: 10 evento(s)",
+   "  ✓ mantosdofutebol: 94 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 22 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 2 evento(s)",
    "  ✓ ESPN Tênis: 7 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
-   "  ✓ UOL (canais por jogo): 2 evento(s)",
-   "TOTAL: 36 eventos → eventos.json",
+   "  ✓ UOL (canais por jogo): 0 evento(s)",
+   "TOTAL: 34 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "10/07 || Espanha || 2 || 1 || Bélgica || Hoje, 18h00 || CazéTV || Noruega || Inglaterra",
-   "Bélgica || Hoje, 18h00 || CazéTV || Noruega || Inglaterra || Hoje, 22h00 || CazéTV || Argentina || Suíça"
+   "Noruega || 1 || 2 || Inglaterra || Ao vivo || 2º T || CazéTV || Argentina || 1"
   ]
  }
 }
