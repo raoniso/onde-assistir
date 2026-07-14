@@ -4,27 +4,6 @@
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "5",
-  "match": "Cerro Largo x Defensor Sporting",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-13",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
@@ -39,58 +18,20 @@
  },
  {
   "date": "2026-07-13",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 14",
-  "match": "Itabaiana x Brusque",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-13",
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 17",
-  "match": "Ceará x Athletic Club",
+  "detail": "Tabela oficial",
+  "match": "Ceará x Athletic",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-07-13",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 14",
-  "match": "Figueirense x Volta Redonda",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-16",
