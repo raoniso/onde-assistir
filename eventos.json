@@ -110,6 +110,23 @@
  },
  {
   "date": "2026-07-16",
+  "t": "21:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Argentina",
+  "detail": "Round of 32",
+  "match": "Sarmiento Junin x Boca Juniors",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-16",
   "t": "23:30",
   "sport": "Futebol",
   "g": "M",
