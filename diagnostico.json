@@ -1,8 +1,8 @@
 {
  "fontes": {
   "log": [
-   "Coleta 15/07 14:13 BRT — janela 2026-07-15 a 2026-07-21",
-   "  ✓ futebolnatv: 7 evento(s)",
+   "Coleta 15/07 17:56 BRT — janela 2026-07-15 a 2026-07-21",
+   "  ✓ futebolnatv: 6 evento(s)",
    "  ✓ mantosdofutebol: 44 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 24 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
@@ -17,6 +17,10 @@
   ]
  },
  "amostras": {
-  "uol": []
+  "uol": [
+   "França || 0 || 2 || Espanha || Ao vivo || 2º T || Globo SBT NSports || ge TV Sportv || CazéTV",
+   "0 || 2 || Espanha || Ao vivo || 2º T || Globo SBT NSports || ge TV Sportv || CazéTV || Inglaterra",
+   "2 || Espanha || Ao vivo || 2º T || Globo SBT NSports || ge TV Sportv || CazéTV || Inglaterra || 1"
+  ]
  }
 }
