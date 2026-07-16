@@ -10,7 +10,7 @@
   "match": "Vitória x Vasco",
   "ch": [
    {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
@@ -50,6 +50,10 @@
    {
     "n": "XSports",
     "y": "free"
+   },
+   {
+    "n": "ESPN",
+    "y": "tv"
    },
    {
     "n": "Sportynet",
@@ -330,8 +334,8 @@
   "match": "Fluminense x RB Bragantino",
   "ch": [
    {
-    "n": "Premiere",
-    "y": "stream"
+    "n": "SporTV",
+    "y": "tv"
    },
    {
     "n": "Premiere FC",
@@ -376,12 +380,12 @@
     "y": "free"
    },
    {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Sportynet",
+    "y": "free"
    },
    {
     "n": "Disney+",
