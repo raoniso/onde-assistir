@@ -1,22 +1,26 @@
 {
  "fontes": {
   "log": [
-   "Coleta 15/07 23:12 BRT — janela 2026-07-15 a 2026-07-21",
-   "  ✓ futebolnatv: 6 evento(s)",
-   "  ✓ mantosdofutebol: 41 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 24 evento(s)",
+   "Coleta 16/07 03:13 BRT — janela 2026-07-16 a 2026-07-22",
+   "  ✓ futebolnatv: 14 evento(s)",
+   "  ✓ mantosdofutebol: 35 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 34 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
    "  ✓ ESPN F1: 5 evento(s)",
    "  ✓ ESPN Tênis: 5 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 33 eventos → eventos.json",
+   "TOTAL: 49 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
-  "uol": []
+  "uol": [
+   "Quartas de Final || Semifinal || Disputa de 3° Lugar || Final || Ver chaveamento || sáb, 18/07, 18h00 || Globo SBT Nsports || ge TV Sportv || CazéTV",
+   "Semifinal || Disputa de 3° Lugar || Final || Ver chaveamento || sáb, 18/07, 18h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || França",
+   "Disputa de 3° Lugar || Final || Ver chaveamento || sáb, 18/07, 18h00 || Globo SBT Nsports || ge TV Sportv || CazéTV || França || Inglaterra"
+  ]
  }
 }
