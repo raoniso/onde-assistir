@@ -1,81 +1,5 @@
 [
  {
-  "date": "2026-07-16",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Botafogo x Santos",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-16",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Vitória x Vasco da Gama",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-16",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "CRB x Náutico",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-16",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "Seattle Sounders x Portland Timbers",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-07-17",
   "t": "08:30",
   "sport": "Fórmula 1",
@@ -105,23 +29,6 @@
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "1",
-  "match": "FC Cajamarca x Juan Pablo II College",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-17",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Torneo Intermedio",
   "detail": "6",
@@ -129,6 +36,27 @@
   "ch": [
    {
     "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-17",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "1",
+  "match": "FC Cajamarca x Juan Pablo II College",
+  "ch": [
+   {
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
@@ -166,7 +94,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-17",
@@ -215,9 +143,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-17",
@@ -253,9 +185,13 @@
    {
     "n": "Premiere FC",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-17",
@@ -301,7 +237,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-17",
@@ -333,9 +269,13 @@
    {
     "n": "Fanatiz",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Peruano",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-18",
@@ -358,6 +298,99 @@
    {
     "n": "F1 Tv Pro",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-18",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Celtic x Middlesbrough",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-18",
+  "t": "12:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Torneo Intermedio",
+  "detail": "6",
+  "match": "Progreso x Deportivo Maldonado",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-18",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "1",
+  "match": "UCV Moquegua x Comerciantes Unidos",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-18",
+  "t": "15:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "1",
+  "match": "ADT x Universitario",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-18",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Torneo Intermedio",
+  "detail": "6",
+  "match": "Penãrol x Boston River",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -420,12 +453,50 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Atlético Goianiense x Athletic",
+  "detail": "Rodada 18",
+  "match": "Atlético GO x Athletic Club",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-18",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Crown Legacy x Chicago FC United",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-18",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "1",
+  "match": "Cusco x Alianza Atletico",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -841,6 +912,142 @@
   "league": "Copa Sul-Americana",
   "detail": "1st Leg",
   "match": "Sporting Cristal x Red Bull Bragantino",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "1st Leg",
+  "match": "Bolívar x Grêmio",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Botafogo x Vitória",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Corinthians x Remo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Athletic x São Bernardo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Cuiabá x Atlético Goianiense",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Botafogo-SP x Juventude",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "1st Leg",
+  "match": "Boca Juniors x O'Higgins",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-23",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "1st Leg",
+  "match": "Independiente Santa Fe x Caracas FC",
   "ch": [
    {
     "n": "Transmissão a confirmar",
