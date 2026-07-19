@@ -47,27 +47,6 @@
  },
  {
   "date": "2026-07-19",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "6",
-  "match": "Cerro x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-19",
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
