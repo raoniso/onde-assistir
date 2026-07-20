@@ -1,7 +1,7 @@
 [
  {
   "date": "2026-07-20",
-  "t": "09:00",
+  "t": "16:15",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
@@ -12,44 +12,6 @@
    {
     "n": "Sportynet",
     "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-20",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "6",
-  "match": "Atletico Torque x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-20",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "6",
-  "match": "Defensor Sporting x Liverpool Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uru – Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
   "v": 2
