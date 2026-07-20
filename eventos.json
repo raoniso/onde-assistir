@@ -46,35 +46,18 @@
   "v": 2
  },
  {
-  "date": "2026-07-19",
-  "t": "21:00",
+  "date": "2026-07-20",
+  "t": "09:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "1",
-  "match": "Alianza Lima x Sport Huancayo",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Sporting CP x Strasbourg",
   "ch": [
    {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-19",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Real Monarchs x Tacoma Defiance",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
+    "n": "Sportynet",
+    "y": "free"
    }
   ],
   "v": 1
