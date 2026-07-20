@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 20/07 14:57 BRT — janela 2026-07-20 a 2026-07-26",
+   "Coleta 20/07 18:08 BRT — janela 2026-07-20 a 2026-07-26",
    "  ✓ futebolnatv: 2 evento(s)",
-   "  ✓ mantosdofutebol: 23 evento(s)",
+   "  ✓ mantosdofutebol: 60 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 39 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
@@ -17,8 +17,6 @@
   ]
  },
  "amostras": {
-  "uol": [
-   "Atravessou Saara descalça rumo à Europa: quem é a mãe de Nico Williams || 20/07/2026 13h39 || Futebol || Saiba como garantir ingresso para a Copa do Mundo feminina no Brasil || 20/07/2026 12h30 || Alicia Klein || A Copa em que a Globo abriu mão da identidade e foi goleada pela CazéTV || 20/07/2026 12h11 || Ricky Hiraoka"
-  ]
+  "uol": []
  }
 }
