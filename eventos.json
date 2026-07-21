@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-07-20",
-  "t": "16:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Sporting x Strasbourg",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-07-21",
   "t": "19:00",
   "sport": "Futebol",
@@ -33,13 +16,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-21",
