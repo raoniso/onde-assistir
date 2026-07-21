@@ -1,6 +1,27 @@
 [
  {
   "date": "2026-07-21",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "2ª Rodada de Pré-eliminatória",
+  "match": "Sturm Graz x Heart OF Midlothian",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-21",
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
