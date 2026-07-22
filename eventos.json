@@ -40,23 +40,15 @@
   "g": "M",
   "country": "América do Sul",
   "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "Club Nacional x Tigre",
+  "detail": "1st Leg",
+  "match": "Nacional x Tigre",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-21",
@@ -116,27 +108,15 @@
   "g": "M",
   "country": "América do Sul",
   "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "UCV x Santos",
+  "detail": "1st Leg",
+  "match": "UCV FC x Santos",
   "ch": [
    {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-21",
