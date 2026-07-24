@@ -49,27 +49,6 @@
   "date": "2026-07-24",
   "t": "19:00",
   "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 13",
-  "match": "América MG x Santos",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-24",
-  "t": "19:00",
-  "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Torneo Intermedio",
@@ -114,10 +93,6 @@
   "detail": "Rodada 13",
   "match": "Internacional x Fluminense",
   "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
    {
     "n": "N Sports",
     "y": "free"
