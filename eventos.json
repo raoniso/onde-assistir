@@ -26,44 +26,6 @@
  },
  {
   "date": "2026-07-24",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 13",
-  "match": "Flamengo x Grêmio",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-24",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "6",
-  "match": "Atletico Torque x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-24",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -75,76 +37,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-24",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 13",
-  "match": "Internacional x Fluminense",
-  "ch": [
-   {
-    "n": "N Sports",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-24",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "New York RB II x Crown Legacy",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-07-24",
-  "t": "21:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "1",
-  "match": "Huracan x Banfield",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-07-24",
@@ -168,25 +63,67 @@
   "v": 2
  },
  {
-  "date": "2026-07-24",
-  "t": "22:30",
-  "sport": "Futebol",
+  "date": "2026-07-25",
+  "t": "01:00",
+  "sport": "Tênis",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "2",
-  "match": "Universitario x Cusco",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Mifel Tennis Open by Telcel Oppo",
   "ch": [
    {
-    "n": "Fanatiz",
-    "y": "stream"
+    "n": "ESPN",
+    "y": "tv"
    },
    {
-    "n": "Campeonato Peruano",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-07-25",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Mubadala Citi DC Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-25",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Odlum Brown VanOpen",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-07-25",
@@ -842,27 +779,6 @@
  },
  {
   "date": "2026-07-26",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Odlum Brown VanOpen",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-26",
   "t": "10:00",
   "sport": "Fórmula 1",
   "g": "M",
@@ -1069,48 +985,6 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-27",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Mifel Tennis Open by Telcel Oppo",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-27",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Mubadala Citi DC Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
