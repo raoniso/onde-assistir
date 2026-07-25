@@ -1,17 +1,17 @@
 {
  "fontes": {
   "log": [
-   "Coleta 24/07 23:20 BRT — janela 2026-07-24 a 2026-07-30",
-   "  ✓ futebolnatv: 31 evento(s)",
-   "  ✓ mantosdofutebol: 160 evento(s)",
+   "Coleta 25/07 03:13 BRT — janela 2026-07-25 a 2026-07-31",
+   "  ✓ futebolnatv: 41 evento(s)",
+   "  ✓ mantosdofutebol: 101 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 38 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
-   "  ✗ ESPN NBA indisponível (SSLError: HTTPSConnectionPool(host='site.api.espn.com', port=443): Max retries exceeded with url: /apis/site/v2/sports/basketball/nba/scoreboard?dates=20260729 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)'))))",
-   "  ✓ ESPN F1: 5 evento(s)",
+   "  ✓ ESPN NBA: 0 evento(s)",
+   "  ✓ ESPN F1: 3 evento(s)",
    "  ✓ ESPN Tênis: 4 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 75 eventos → eventos.json",
+   "TOTAL: 80 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
