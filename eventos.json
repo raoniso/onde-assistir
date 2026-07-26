@@ -89,45 +89,20 @@
  },
  {
   "date": "2026-07-25",
-  "t": "17:00",
+  "t": "17:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 15",
-  "match": "Santa x Figueirense",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "2",
+  "match": "Juan x Cienciano",
   "ch": [
    {
-    "n": "Band",
-    "y": "free"
-   },
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Torneo Intermedio",
-  "detail": "6",
-  "match": "Defensor Sporting x Liverpool Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
+    "n": "Fanatiz",
     "y": "stream"
-   },
-   {
-    "n": "Uru – Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-25",
@@ -136,19 +111,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Rodada 20",
-  "match": "Athletico PR x Internacional",
+  "detail": "Tabela oficial",
+  "match": "Athletico-PR x Internacional",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-25",
@@ -169,89 +140,13 @@
  },
  {
   "date": "2026-07-25",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 15",
-  "match": "Volta Redonda x Anápolis",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Rodada 8",
-  "match": "Corinthians Sub-20 Itapirense x 97 FM)",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-25",
-  "t": "19:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "1",
-  "match": "River Plate x Barracas Central",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-25",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 17",
-  "match": "New York Red Bulls x Charlotte",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-25",
-  "t": "20:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "Columbus Crew x FC Cincinnati",
+  "match": "New x Charlotte",
   "ch": [
    {
     "n": "Apple",
@@ -272,57 +167,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 17",
-  "match": "Philadelphia Union x Seattle Sounders",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "New York City FC x Chicago Fire",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "Montreal Impact x Inter Miami",
+  "match": "FIM DE x England 4 Atlanta",
   "ch": [
    {
     "n": "Apple",
@@ -343,7 +188,7 @@
   "country": "EUA/Canadá",
   "league": "MLS Next Pro - Grupo",
   "detail": "Stage",
-  "match": "Carolina Core x Chicago FC United",
+  "match": "FIM DE x Core 1 Chicago",
   "ch": [
    {
     "n": "Onefootball",
@@ -377,95 +222,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 17",
-  "match": "Houston Dynamo x Austin",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "St. Louis City x Colorado Rapids",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-25",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "Minnesota United FC x Whitecaps",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-25",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "2",
-  "match": "FBC Melgar x Sporting Cristal",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-25",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 17",
-  "match": "San Diego x FC Dallas",
+  "match": "Houston x Austin",
   "ch": [
    {
     "n": "Apple",
@@ -515,7 +272,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 17",
-  "match": "Los Angeles FC x Sporting Kansas City",
+  "match": "San Jose Earthquakes x Los Angeles Galaxy",
   "ch": [
    {
     "n": "Apple",
@@ -536,7 +293,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 17",
-  "match": "San Jose Earthquakes x Los Angeles Galaxy",
+  "match": "Los Angeles FC x Sporting Kansas City",
   "ch": [
    {
     "n": "Apple",
