@@ -110,6 +110,23 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 15",
+  "match": "Brusque x Ituano",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-26",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 20",
   "match": "Criciúma x Náutico",
@@ -121,23 +138,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 15",
-  "match": "Brusque x Ituano",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
    }
   ],
   "v": 2
@@ -391,6 +391,27 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-07-26",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Washington Spirit x Denver Summit",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Nwsl",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-07-26",
