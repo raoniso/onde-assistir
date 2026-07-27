@@ -1,6 +1,27 @@
 [
  {
   "date": "2026-07-27",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Brasileirão Feminino",
+  "detail": "Rodada 13",
+  "match": "Bahia x Botafogo",
+  "ch": [
+   {
+    "n": "N Sports",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão Feminino",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-27",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -112,6 +133,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-07-28",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "2ª Rodada de Pré-eliminatória",
+  "match": "Heart OF Midlothian x Sturm Graz",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-07-28",
