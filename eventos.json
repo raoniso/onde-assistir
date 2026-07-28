@@ -1,17 +1,21 @@
 [
  {
   "date": "2026-07-28",
-  "t": "15:45",
+  "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
   "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "Heart OF Midlothian x Sturm Graz",
+  "match": "FIM DE x Rovers 2",
   "ch": [
    {
-    "n": "XSports",
-    "y": "free"
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
