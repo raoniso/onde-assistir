@@ -1,73 +1,5 @@
 [
  {
-  "date": "2026-07-27",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 20",
-  "match": "FIM DE x GO 3",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-27",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Atlético Goianiense x Operário PR",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-27",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "CRB x Vila Nova",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-27",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Sport x Cuiabá",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-07-28",
   "t": "06:45",
   "sport": "Futebol",
@@ -181,7 +113,7 @@
   "country": "Mundial",
   "league": "Santos",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "Ucv",
@@ -241,6 +173,95 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-29",
+  "t": "06:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Tottenham x Sydney",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "07:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Cerezo Osaka x Borussia Dortmund",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "2",
+  "match": "Barracas Central x Aldosivi",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-29",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Real Betis x Lyon",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-29",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "2ª Rodada de Pré-eliminatória",
+  "match": "Gornik Zabrze x Fenerbahce",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -320,11 +341,36 @@
   "g": "M",
   "country": "América do Sul",
   "league": "Copa Sul-Americana",
-  "detail": "2nd Leg - Tied on aggregate",
-  "match": "Vasco da Gama x Independiente Medellín",
+  "detail": "Mata-Mata",
+  "match": "Vasco x Independiente Medellin",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Vasco",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
     "y": "tv"
    }
   ],
@@ -337,15 +383,19 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 21",
   "match": "Internacional x Flamengo",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-07-29",
@@ -371,15 +421,69 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Fluminense x Bahia",
+  "detail": "Rodada 21",
+  "match": "Vitória x Palmeiras",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Mata-Mata",
+  "match": "RB Bragantino x Sporting Cristal",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Mata-Mata",
+  "match": "Cienciano x Lanus",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-07-29",
@@ -389,41 +493,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Tabela oficial",
-  "match": "Vitória x Palmeiras",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "2nd Leg - Lanús lead 2-0 on aggregate",
-  "match": "Cienciano del Cusco x Lanús",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "2nd Leg - Tied on aggregate",
-  "match": "Red Bull Bragantino x Sporting Cristal",
+  "match": "Fluminense x Bahia",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -526,6 +596,27 @@
   "league": "Circuito ATP",
   "detail": "Dia de jogos",
   "match": "National Bank Open presented by Rogers",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-03",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "T-Mobile Polish Open",
   "ch": [
    {
     "n": "ESPN",
