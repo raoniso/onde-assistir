@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-07-28",
-  "t": "06:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Chelsea x Western Sydney Wanderers",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-28",
   "t": "15:45",
   "sport": "Futebol",
   "g": "M",
@@ -207,6 +190,27 @@
    {
     "n": "XSports",
     "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-07-29",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "2ª Rodada de Pré-eliminatória",
+  "match": "Kairat Almaty x Omonia Nicosia",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
    }
   ],
   "v": 2
