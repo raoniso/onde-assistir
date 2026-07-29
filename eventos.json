@@ -1,95 +1,6 @@
 [
  {
   "date": "2026-07-29",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "PRO x 1 Omonia",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "2",
-  "match": "Barracas Central x Aldosivi",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Real Betis x Lyon",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "Gornik Zabrze x Fenerbahce",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "Estrela Vermelha x Larne",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-29",
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
@@ -164,7 +75,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Conference League",
   "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "Rapid Vienna x FC Santa Coloma",
+  "match": "FIM DE x Vienna 6 FC",
   "ch": [
    {
     "n": "Onefootball",
