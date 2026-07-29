@@ -262,25 +262,17 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 21",
-  "match": "Vitória x Palmeiras",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Mata-Mata",
+  "match": "Cienciano x Lanus",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "Premiere FC",
+    "n": "Paramount+",
     "y": "stream"
    },
    {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Conmebol Sul-Americana",
     "y": "tv"
    }
   ],
@@ -312,17 +304,25 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "Cienciano x Lanus",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 21",
+  "match": "Vitória x Palmeiras",
   "ch": [
    {
-    "n": "Paramount+",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
-    "n": "Conmebol Sul-Americana",
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
