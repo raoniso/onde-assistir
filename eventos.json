@@ -7,18 +7,14 @@
   "country": "Europa (demais)",
   "league": "Champions League",
   "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "Kairat Almaty x Omonia Nicosia",
+  "match": "PRO x 1 Omonia",
   "ch": [
    {
     "n": "XSports",
     "y": "free"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-29",
