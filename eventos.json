@@ -7,18 +7,14 @@
   "country": "Europa (demais)",
   "league": "UEFA Europa League",
   "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "FC Midtjylland x Besiktas",
+  "match": "FC x Besiktas",
   "ch": [
    {
     "n": "XSports",
     "y": "free"
-   },
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-30",
