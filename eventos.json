@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-07-30",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League",
-  "detail": "2ª Rodada de Pré-eliminatória",
-  "match": "FC x Besiktas",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-07-30",
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
