@@ -91,36 +91,11 @@
   "g": "M",
   "country": "América do Sul",
   "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "Vasco x Independiente Medellin",
+  "detail": "2nd Leg - Vasco da Gama win 3-2 on aggregate",
+  "match": "Vasco da Gama x Independiente Medellín",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-29",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Vasco",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
@@ -133,19 +108,15 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Rodada 21",
+  "detail": "Tabela oficial",
   "match": "Internacional x Flamengo",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-29",
@@ -169,71 +140,17 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "Cienciano x Lanus",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-29",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Mata-Mata",
-  "match": "RB Bragantino x Sporting Cristal",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-07-29",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Rodada 21",
-  "match": "Vitória x Palmeiras",
+  "detail": "Tabela oficial",
+  "match": "Fluminense x Bahia",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-07-29",
@@ -243,7 +160,41 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Tabela oficial",
-  "match": "Fluminense x Bahia",
+  "match": "Vitória x Palmeiras",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-29",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "2nd Leg - Cienciano del Cusco lead 3-2 on aggregate",
+  "match": "Cienciano del Cusco x Lanús",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-07-29",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "2nd Leg - Tied on aggregate",
+  "match": "Red Bull Bragantino x Sporting Cristal",
   "ch": [
    {
     "n": "Transmissão a confirmar",
