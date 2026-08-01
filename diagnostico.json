@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 01/08 06:54 BRT — janela 2026-08-01 a 2026-08-07",
+   "Coleta 01/08 10:10 BRT — janela 2026-08-01 a 2026-08-07",
    "  ✓ futebolnatv: 35 evento(s)",
-   "  ✗ mantosdofutebol indisponível (HTTPError: 521 Server Error: <none> for url: https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/)",
+   "  ✓ mantosdofutebol: 100 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 2 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 0 evento(s)",
