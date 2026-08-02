@@ -28,6 +28,27 @@
   "country": "Brasil",
   "league": "Brasileirão Feminino",
   "detail": "Rodada 14",
+  "match": "Santos x Juventude",
+  "ch": [
+   {
+    "n": "N Sports",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão Feminino",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-02",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Brasileirão Feminino",
+  "detail": "Rodada 14",
   "match": "Palmeiras x Internacional",
   "ch": [
    {
@@ -136,7 +157,7 @@
     "y": "tv"
    },
    {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
