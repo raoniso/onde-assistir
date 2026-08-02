@@ -7,7 +7,7 @@
   "country": "Mundial",
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
-  "match": "T-Mobile Polish Open",
+  "match": "Warsaw T-Mobile Polish Open",
   "ch": [
    {
     "n": "ESPN",
@@ -150,6 +150,27 @@
   "date": "2026-08-02",
   "t": "17:00",
   "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Washington Spirit x San Diego fave",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Nwsl",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-02",
+  "t": "17:00",
+  "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Argentino - Clausura",
@@ -187,6 +208,27 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-02",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Brasileirão Feminino",
+  "detail": "Rodada 14",
+  "match": "Ferroviária x Bahia",
+  "ch": [
+   {
+    "n": "N Sports",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão Feminino",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-02",
