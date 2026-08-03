@@ -1,27 +1,6 @@
 [
  {
   "date": "2026-08-03",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "3",
-  "match": "Sarmiento Junin x Independ. Rivadavia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-03",
   "t": "18:30",
   "sport": "Futebol",
   "g": "F",
