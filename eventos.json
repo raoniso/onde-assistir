@@ -1,26 +1,5 @@
 [
  {
-  "date": "2026-08-02",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Warsaw T-Mobile Polish Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-08-03",
   "t": "16:45",
   "sport": "Futebol",
@@ -124,6 +103,186 @@
    },
    {
     "n": "Campeonato Argentino",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "20:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Columbus Crew x Atlas",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "20:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "FC Cincinnati x Pachuca",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-04",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Plaza Amador x Firpo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Do Brasil",
+  "detail": "Oitavas de Final",
+  "match": "Remo x Santos",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Minnesota United FC x FC Juarez",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Tigres UANL x Real Salt Lake",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Antigua GFC x Real Esteli",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-04",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Diriangen x LD Alajuelense",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
     "y": "tv"
    }
   ],
@@ -257,6 +416,176 @@
   "league": "Brasileirão Série A",
   "detail": "Tabela oficial",
   "match": "Botafogo x Fluminense",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Cruzeiro x Mirassol",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Athletic x Criciúma",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Bahia x Vasco da Gama",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Palmeiras x Internacional",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Náutico x Atlético Goianiense",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Novorizontino x Juventude",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Cuiabá x Fortaleza",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Red Bull Bragantino x Corinthians",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Santos x Athletico-PR",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-09",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Flamengo x Vitória",
   "ch": [
    {
     "n": "Transmissão a confirmar",
