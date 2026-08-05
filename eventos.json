@@ -1,48 +1,6 @@
 [
  {
   "date": "2026-08-05",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "Fenerbahce x Sturm Graz",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-05",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Fenerbahce",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-05",
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
@@ -134,6 +92,31 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Nashville SC x Leon",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-05",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Brasil",
   "league": "Copa Do Brasil",
   "detail": "Oitavas de Final",
@@ -189,24 +172,20 @@
  },
  {
   "date": "2026-08-05",
-  "t": "21:30",
+  "t": "23:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
+  "league": "CONCACAF Central American Cup - Grupo",
   "detail": "Stage",
-  "match": "Nashville SC x Leon",
+  "match": "Alianza x CS Herediano",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    },
    {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
+    "n": "Concacaf Central American Cup",
     "y": "tv"
    }
   ],
@@ -239,27 +218,6 @@
  },
  {
   "date": "2026-08-05",
-  "t": "23:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Alianza x CS Herediano",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-05",
   "t": "23:30",
   "sport": "Futebol",
   "g": "M",
@@ -274,6 +232,31 @@
    },
    {
     "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-06",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League",
+  "detail": "3ª Rodada de Pré-eliminatória",
+  "match": "Benfica x Heart OF Midlothian",
+  "ch": [
+   {
+    "n": "Canal",
+    "y": "tv"
+   },
+   {
+    "n": "Do",
+    "y": "tv"
+   },
+   {
+    "n": "Benja",
     "y": "tv"
    }
   ],
