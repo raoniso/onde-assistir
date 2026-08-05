@@ -1,119 +1,6 @@
 [
  {
   "date": "2026-08-04",
-  "t": "20:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "Columbus Crew x Atlas",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
-  "t": "20:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "FC Cincinnati x Pachuca",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-04",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Plaza Amador x Firpo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Do Brasil",
-  "detail": "Oitavas de Final",
-  "match": "Remo x Santos",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "Minnesota United FC x FC Juarez",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
   "t": "23:00",
   "sport": "Futebol",
   "g": "M",
@@ -174,6 +61,27 @@
    },
    {
     "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-05",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "3ª Rodada de Pré-eliminatória",
+  "match": "Fenerbahce x Sturm Graz",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
