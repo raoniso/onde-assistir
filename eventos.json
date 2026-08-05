@@ -12,9 +12,13 @@
    {
     "n": "XSports",
     "y": "free"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -33,9 +37,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Argentino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -52,7 +60,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -71,9 +79,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -88,9 +100,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Hon – Concacaf Central American Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -123,7 +139,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -142,9 +158,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -163,9 +183,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -184,9 +208,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
@@ -201,9 +229,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-05",
