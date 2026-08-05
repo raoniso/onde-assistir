@@ -14,11 +14,32 @@
     "y": "free"
    },
    {
+    "n": "Canal Goat",
+    "y": "free"
+   },
+   {
     "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-05",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Fenerbahce",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-05",
