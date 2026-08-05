@@ -1,72 +1,5 @@
 [
  {
-  "date": "2026-08-04",
-  "t": "23:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "Tigres UANL x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
-  "t": "23:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Antigua GFC x Real Esteli",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-04",
-  "t": "23:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Diriangen x LD Alajuelense",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-08-05",
   "t": "15:00",
   "sport": "Futebol",
@@ -79,13 +12,9 @@
    {
     "n": "XSports",
     "y": "free"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -104,13 +33,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -127,7 +52,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -146,13 +71,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -167,13 +88,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Hon – Concacaf Central American Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -206,7 +123,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -225,13 +142,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -250,13 +163,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -275,13 +184,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -296,13 +201,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-05",
@@ -324,5 +225,210 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-06",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "4",
+  "match": "Alianza Atletico x Cienciano",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-06",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Do Brasil",
+  "detail": "Oitavas de Final",
+  "match": "Corinthians x Internacional",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "New York City FC x Santos Laguna",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Cruz Azul x Philadelphia Union",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Chicago Fire x Necaxa",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Austin x Club Tijuana",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Verdes x Municipal",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Club America x San Diego",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-06",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Portland Timbers x Puebla",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  }
 ]
