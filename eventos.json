@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-08-07",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "INT x 1 Aston",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-07",
   "t": "17:15",
   "sport": "Futebol",
   "g": "M",
