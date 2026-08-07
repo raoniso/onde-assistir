@@ -7,28 +7,11 @@
   "country": "Mundial",
   "league": "Amistosos",
   "detail": "Amistoso",
-  "match": "Bayern x Aston Villa",
+  "match": "INT x 1 Aston",
   "ch": [
    {
     "n": "Sportynet",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-07",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Bayern",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -119,6 +102,23 @@
  },
  {
   "date": "2026-08-07",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Ceará",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-07",
   "t": "21:30",
   "sport": "Futebol",
   "g": "F",
@@ -137,6 +137,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-07",
+  "t": "21:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "4",
+  "match": "Independ. Rivadavia x Estudiantes de Rio Cuarto",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-07",
@@ -196,6 +213,27 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "1",
+  "match": "Central Espanol x Progreso",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-08",
@@ -294,6 +332,23 @@
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "4",
+  "match": "Tigre x River Plate",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Brasil",
   "league": "Copa Paulista - Fase de Grupos",
   "detail": "Rodada 4",
@@ -339,6 +394,23 @@
   "ch": [
    {
     "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "19:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "4",
+  "match": "Boca Juniors x Velez Sarsfield",
+  "ch": [
+   {
+    "n": "Disney+",
     "y": "stream"
    }
   ],
