@@ -1,40 +1,6 @@
 [
  {
   "date": "2026-08-08",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Chelsea x Milan SPORTYNET",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-08",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Chelsea",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-08",
   "t": "10:30",
   "sport": "Futebol",
   "g": "M",
@@ -206,6 +172,23 @@
   "league": "Brasileirão Feminino",
   "detail": "Rodada 15",
   "match": "Ferroviária x TV BRASIL",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Grêmio",
+  "detail": "—",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
