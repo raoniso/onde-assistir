@@ -4,119 +4,10 @@
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 1",
-  "match": "PSV Eindhoven x Fortuna Sittard",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-08",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Mundial",
   "league": "Amistosos",
   "detail": "Amistoso",
   "match": "Udinese x Nottingham Forest",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 1",
-  "match": "AZ Alkmaar x ADO Den Haag",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 22",
-  "match": "Grêmio x São Paulo",
-  "ch": [
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 21",
-  "match": "Vila Nova x Sport Recife",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Barcelona x Nottingham Forest",
   "ch": [
    {
     "n": "Disney+",
@@ -144,23 +35,6 @@
  },
  {
   "date": "2026-08-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Grêmio",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-08",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
@@ -172,23 +46,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-08",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Paulista - Fase de Grupos",
-  "detail": "Rodada 4",
-  "match": "Primavera SP x (ULISSES",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
