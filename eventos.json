@@ -1,37 +1,24 @@
 [
  {
   "date": "2026-08-07",
-  "t": "17:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "4",
-  "match": "Comerciantes x Cusco",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-07",
-  "t": "20:30",
+  "t": "19:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 21",
-  "match": "Ceará x Ponte Preta",
+  "match": "FIM DE x 1 São",
   "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-07",
@@ -41,7 +28,7 @@
   "country": "Mundial",
   "league": "Leagues Cup - Grupo",
   "detail": "Stage",
-  "match": "Columbus Crew x Pachuca",
+  "match": "Columbus x Pachuca",
   "ch": [
    {
     "n": "Apple",
@@ -57,86 +44,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-08-07",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "Charlotte x Atlas",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-07",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Ceará",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-07",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 15",
-  "match": "Botafogo x Fluminense",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-07",
-  "t": "21:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "4",
-  "match": "Independ. Rivadavia x Estudiantes de Rio Cuarto",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-08-07",
@@ -171,11 +78,11 @@
   "country": "Mundial",
   "league": "Amistosos",
   "detail": "Amistoso",
-  "match": "Chelsea x AC Milan",
+  "match": "Chelsea x Milan SPORTYNET",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -196,6 +103,23 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "10:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Bayer Leverkusen x Sevilla",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-08",
@@ -220,20 +144,58 @@
  },
  {
   "date": "2026-08-08",
-  "t": "16:00",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 22",
-  "match": "Grêmio x São Paulo",
+  "country": "Europa (demais)",
+  "league": "Campeonato Holandês",
+  "detail": "Rodada 1",
+  "match": "PSV Eindhoven x Fortuna Sittard",
   "ch": [
    {
-    "n": "Premiere",
+    "n": "Disney+",
     "y": "stream"
    },
    {
-    "n": "Brasileirão",
+    "n": "Eredivisie",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-08",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Udinese x Nottingham Forest",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Holandês",
+  "detail": "Rodada 1",
+  "match": "AZ Alkmaar x ADO Den Haag",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Eredivisie",
     "y": "tv"
    }
   ],
@@ -272,18 +234,18 @@
   "date": "2026-08-08",
   "t": "16:00",
   "sport": "Futebol",
-  "g": "F",
+  "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 15",
-  "match": "Ferroviária x Palmeiras",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 22",
+  "match": "Grêmio x São Paulo",
   "ch": [
    {
-    "n": "Tv Brasil",
-    "y": "free"
+    "n": "Premiere",
+    "y": "stream"
    },
    {
-    "n": "Brasileirão Feminino",
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
@@ -294,31 +256,44 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 1",
-  "match": "AZ Alkmaar x ADO Den Haag",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Barcelona x Nottingham Forest",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   },
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Brasileirão Feminino",
+  "detail": "Rodada 15",
+  "match": "Ferroviária x TV BRASIL",
+  "ch": [
    {
-    "n": "Eredivisie",
+    "n": "A confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-08",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "4",
-  "match": "Tigre x River Plate",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Udinese x Barcelona",
   "ch": [
    {
     "n": "Disney+",
@@ -384,13 +359,13 @@
  },
  {
   "date": "2026-08-08",
-  "t": "19:15",
+  "t": "18:30",
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "4",
-  "match": "Boca Juniors x Velez Sarsfield",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "1",
+  "match": "Atletico Torque x Penãrol",
   "ch": [
    {
     "n": "Disney+",
@@ -398,23 +373,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-08-08",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 16",
-  "match": "Inter De Limeira x Volta Redonda",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-08-08",
@@ -541,6 +499,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-08",
+  "t": "21:45",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Houston Dash x Kansas City",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-08",
