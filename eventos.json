@@ -1,21 +1,17 @@
 [
  {
   "date": "2026-08-09",
-  "t": "08:30",
+  "t": "09:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 3",
-  "match": "Dinamo x Makhachkala",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Johor x Chelsea",
   "ch": [
    {
-    "n": "XSports",
+    "n": "Sportynet",
     "y": "free"
-   },
-   {
-    "n": "Bandsports",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -33,99 +29,6 @@
    {
     "n": "ESPN",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-09",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Arsenal",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-09",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "1",
-  "match": "Danubio x Cerro",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-09",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 22",
-  "match": "Cruzeiro x Mirassol",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-09",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 21",
-  "match": "Athletic Club x Criciúma",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-09",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 3",
-  "match": "Zenit Saint x Rodina Moskva",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
    }
   ],
   "v": 1
@@ -216,6 +119,27 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 21",
+  "match": "Novorizontino x Juventude",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-09",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 22",
   "match": "Palmeiras x Internacional",
@@ -235,27 +159,6 @@
    {
     "n": "Brasileirão",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-09",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 21",
-  "match": "Novorizontino x Juventude",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 2
