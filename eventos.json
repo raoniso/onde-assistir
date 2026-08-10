@@ -113,9 +113,13 @@
    {
     "n": "XSports",
     "y": "free"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-11",
