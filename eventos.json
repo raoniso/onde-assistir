@@ -1,82 +1,6 @@
 [
  {
   "date": "2026-08-12",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Arsenal x como",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Deportivo La Coruna x Real Madrid",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Supercopa da UEFA",
-  "detail": "Final",
-  "match": "PSG x Aston Villa",
-  "ch": [
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "PSG",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-12",
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
@@ -108,6 +32,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-12",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Palmeiras",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-12",
