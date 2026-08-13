@@ -1,76 +1,13 @@
 [
  {
   "date": "2026-08-13",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League",
-  "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "Hammarby FF x Rakow Czestochowa",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-13",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League",
-  "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "FC Vaduz x Inter Turku",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-13",
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "UEFA Europa League",
   "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "CSKA Sofia x Maccabi Tel Aviv",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-13",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League",
-  "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "FC ST. Gallen x Sheriff Tiraspol",
+  "match": "FIM DE x Sofia 1 Maccabi",
   "ch": [
    {
     "n": "Ppv",
@@ -91,7 +28,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Conference League",
   "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "Austria Vienna x Beitar Jerusalem",
+  "match": "PRO x 1 Beitar",
   "ch": [
    {
     "n": "Ppv",
@@ -103,48 +40,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-08-13",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League",
-  "detail": "3ª Rodada de Pré-eliminatória",
-  "match": "Shelbourne x Ajax",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-13",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Oitavas de Final",
-  "match": "Vasco x Olimpia",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-08-13",
@@ -162,6 +57,27 @@
    },
    {
     "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-13",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Oitavas de Final",
+  "match": "Vasco x Olimpia",
+  "ch": [
+   {
+    "n": "Paramount+",
     "y": "stream"
    },
    {
@@ -226,18 +142,22 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Oitavas de Final",
-  "match": "Rosario Central x Corinthians",
+  "country": "Mundial",
+  "league": "Leagues Cup - Grupo",
+  "detail": "Stage",
+  "match": "Club America x Austin",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Apple",
     "y": "tv"
    },
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -268,22 +188,18 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup - Grupo",
-  "detail": "Stage",
-  "match": "Club America x Austin",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Oitavas de Final",
+  "match": "Rosario Central x Corinthians",
   "ch": [
    {
-    "n": "Apple",
+    "n": "ESPN",
     "y": "tv"
    },
    {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -321,7 +237,7 @@
   "country": "Mundial",
   "league": "CONCACAF Central American Cup - Grupo",
   "detail": "Stage",
-  "match": "Antigua GFC x CD Marathon",
+  "match": "Firpo x Diriangen",
   "ch": [
    {
     "n": "Disney+",
@@ -342,7 +258,7 @@
   "country": "Mundial",
   "league": "CONCACAF Central American Cup - Grupo",
   "detail": "Stage",
-  "match": "Firpo x Diriangen",
+  "match": "Antigua GFC x CD Marathon",
   "ch": [
    {
     "n": "Disney+",
