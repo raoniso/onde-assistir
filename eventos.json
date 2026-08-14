@@ -1,14 +1,18 @@
 [
  {
   "date": "2026-08-14",
-  "t": "14:00",
+  "t": "13:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
+  "league": "2ª Divisão Alemã",
   "detail": "Rodada 2",
-  "match": "FC urzburger Kickers x SV Wehen",
+  "match": "FIM DE x Kiel 2 FC",
   "ch": [
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   },
    {
     "n": "Ppv",
     "y": "tv"
@@ -22,41 +26,41 @@
  },
  {
   "date": "2026-08-14",
-  "t": "14:30",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 3",
-  "match": "Lask Linz x Ried",
+  "league": "Campeonato Saudita",
+  "detail": "Rodada 1",
+  "match": "FIM DE x 4 Al",
   "ch": [
    {
-    "n": "Ppv",
+    "n": "Bandsports",
     "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
  },
  {
   "date": "2026-08-14",
-  "t": "17:00",
+  "t": "17:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "5",
-  "match": "Atletico Grau x Comerciantes Unidos",
+  "country": "Brasil",
+  "league": "Paulista Sub-20",
+  "detail": "Rodada 12",
+  "match": "Itapirense x Santos Sub-20 0",
   "ch": [
    {
-    "n": "Fanatiz",
-    "y": "stream"
+    "n": "A confirmar",
+    "y": "tv"
+   },
+   {
+    "n": "Paulistão Sub-20",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-14",
@@ -84,13 +88,13 @@
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "5",
-  "match": "Cusco x Juan Pablo II College",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro - Grupo",
+  "detail": "Stage",
+  "match": "Toronto II x Chattanooga",
   "ch": [
    {
-    "n": "Fanatiz",
+    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -101,13 +105,13 @@
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Toronto II x Chattanooga",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "5",
+  "match": "Cusco x Juan Pablo II College",
   "ch": [
    {
-    "n": "Onefootball",
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
