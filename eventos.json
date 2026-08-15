@@ -16,9 +16,13 @@
    {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -37,9 +41,13 @@
    {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -58,9 +66,13 @@
    {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -102,7 +114,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -144,20 +156,24 @@
  },
  {
   "date": "2026-08-15",
-  "t": "13:00",
+  "t": "12:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "2",
-  "match": "Juventud x Atletico Torque",
+  "country": "Mundial",
+  "league": "Campeonato Russo",
+  "detail": "Rodada 4",
+  "match": "FC Rostov x Rubin",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -168,6 +184,27 @@
   "league": "Campeonato Turco",
   "detail": "Rodada 1",
   "match": "Kasimpasa x Trabzonspor",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Turco",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-15",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "2",
+  "match": "Juventud x Atletico Torque",
   "ch": [
    {
     "n": "Disney+",
@@ -193,9 +230,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Championship",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -210,9 +251,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Eredivisie",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -244,9 +289,13 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -282,9 +331,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Eredivisie",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -301,7 +354,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -318,7 +371,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -333,9 +386,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -350,9 +407,13 @@
    {
     "n": "Premiere FC",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -367,9 +428,13 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -386,7 +451,7 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -401,9 +466,13 @@
    {
     "n": "A confirmar",
     "y": "tv"
+   },
+   {
+    "n": "Brasileirão Feminino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -418,9 +487,13 @@
    {
     "n": "Premiere",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -445,7 +518,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -462,7 +535,7 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -477,9 +550,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -506,7 +583,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 19",
-  "match": "Atlanta United FC x New York Red Bulls",
+  "match": "Charlotte x Columbus Crew",
   "ch": [
    {
     "n": "Apple",
@@ -515,9 +592,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -527,7 +608,32 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 19",
-  "match": "Charlotte x Columbus Crew",
+  "match": "Orlando City SC x FC Cincinnati",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-15",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 19",
+  "match": "Atlanta United FC x New York Red Bulls",
   "ch": [
    {
     "n": "Apple",
@@ -584,27 +690,6 @@
  },
  {
   "date": "2026-08-15",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 19",
-  "match": "Orlando City SC x FC Cincinnati",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-15",
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
@@ -620,9 +705,13 @@
    {
     "n": "Premiere FC",
     "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -641,9 +730,38 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Argentino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-08-15",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 19",
+  "match": "Nashville SC x Inter Miami",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -668,27 +786,6 @@
  },
  {
   "date": "2026-08-15",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 19",
-  "match": "Nashville SC x Inter Miami",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-15",
   "t": "21:45",
   "sport": "Futebol",
   "g": "F",
@@ -698,11 +795,19 @@
   "match": "Portland Thorns x Orlando Pride",
   "ch": [
    {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "Nwsl",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -759,9 +864,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-15",
@@ -780,9 +889,13 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-08-16",
@@ -982,6 +1095,23 @@
   "t": "12:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Newcastle x Strasbourg",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-16",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 1",
@@ -994,23 +1124,6 @@
    {
     "n": "Laliga",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "FC Schalke 04 x Real Madrid",
-  "ch": [
-   {
-    "n": "Dazn",
-    "y": "stream"
    }
   ],
   "v": 2
@@ -1085,32 +1198,15 @@
   "match": "Baltika x Spartak Moscow",
   "ch": [
    {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
     "n": "Bandsports",
     "y": "tv"
    },
    {
     "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 1",
-  "match": "Espanyol x Levante",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
     "y": "tv"
    }
   ],
@@ -1349,27 +1445,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 23",
-  "match": "Vitória x Botafogo",
-  "ch": [
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 17",
   "match": "Barra x Itabaiana",
@@ -1398,6 +1473,27 @@
    {
     "n": "Disney+",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-16",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 23",
+  "match": "Vitória x Botafogo",
+  "ch": [
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -1501,6 +1597,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-16",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "North Carolina Courage x Houston Dash",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-16",
