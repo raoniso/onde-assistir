@@ -1,118 +1,17 @@
 [
  {
   "date": "2026-08-15",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Newcastle x Bayer Leverkusen",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-15",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 2",
-  "match": "Alverca x Estrela",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-15",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 2",
-  "match": "Verl x MSV Duisburg",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-15",
   "t": "12:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Campeonato Russo",
   "detail": "Rodada 4",
-  "match": "FC Rostov x Rubin",
+  "match": "FC x Rubin",
   "ch": [
    {
     "n": "XSports",
     "y": "free"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-15",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 1",
-  "match": "Kasimpasa x Trabzonspor",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Turco",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-15",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "2",
-  "match": "Juventud x Atletico Torque",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -282,27 +181,6 @@
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "2",
-  "match": "Racing Montevideo x Club Nacional",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-15",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 23",
@@ -335,6 +213,27 @@
    },
    {
     "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-15",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "2",
+  "match": "Racing Montevideo x Club Nacional",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
@@ -487,7 +386,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 19",
-  "match": "Charlotte x Columbus Crew",
+  "match": "Orlando City SC x FC Cincinnati",
   "ch": [
    {
     "n": "Apple",
@@ -512,7 +411,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 19",
-  "match": "Orlando City SC x FC Cincinnati",
+  "match": "Charlotte x Columbus Crew",
   "ch": [
    {
     "n": "Apple",
