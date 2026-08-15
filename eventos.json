@@ -43,72 +43,13 @@
  },
  {
   "date": "2026-08-14",
-  "t": "17:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Rodada 12",
-  "match": "Itapirense x Santos Sub-20 0",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   },
-   {
-    "n": "Paulistão Sub-20",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-14",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "2",
-  "match": "Boston River x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-14",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Toronto II x Chattanooga",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-14",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Campeonato Peruano - Clausura",
   "detail": "5",
-  "match": "Cusco x Juan Pablo II College",
+  "match": "FIM x JOGO Cusco 2 Juan",
   "ch": [
    {
     "n": "Fanatiz",
@@ -125,7 +66,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 22",
-  "match": "Sport Recife x Londrina",
+  "match": "Sport x Londrina",
   "ch": [
    {
     "n": "Disney+",
@@ -133,23 +74,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-08-14",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 16",
-  "match": "Atlético Mineiro x Grêmio",
-  "ch": [
-   {
-    "n": "Tv Brasil",
-    "y": "free"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-08-15",
@@ -246,23 +170,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-08-15",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos",
-  "detail": "Amistoso",
-  "match": "Borussia M x Aston Villa",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-08-15",
