@@ -1,8 +1,8 @@
 {
  "fontes": {
   "log": [
-   "Coleta 16/08 05:23 BRT — janela 2026-08-16 a 2026-08-22",
-   "  ✓ futebolnatv: 39 evento(s)",
+   "Coleta 16/08 09:31 BRT — janela 2026-08-16 a 2026-08-22",
+   "  ✓ futebolnatv: 35 evento(s)",
    "  ✓ mantosdofutebol: 124 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 0 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
@@ -11,7 +11,7 @@
    "  ✓ ESPN Tênis: 0 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 39 eventos → eventos.json",
+   "TOTAL: 35 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]

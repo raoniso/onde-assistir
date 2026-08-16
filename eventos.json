@@ -1,98 +1,6 @@
 [
  {
   "date": "2026-08-16",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 2",
-  "match": "Arminia Bielefeld x Energie Cottbus",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 2",
-  "match": "Hannover 96 x VfL Wolfsburg",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 4",
-  "match": "Zenit Saint x Dinamo Moscow",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-16",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 2",
-  "match": "Hansa Rostock x Waldhof Mannheim",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-16",
   "t": "09:30",
   "sport": "Futebol",
   "g": "M",
@@ -478,11 +386,19 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 23",
-  "match": "Vitória x Botafogo",
+  "match": "Mirassol x Flamengo",
   "ch": [
    {
-    "n": "Premiere FC",
+    "n": "Record",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
     "y": "stream"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
    },
    {
     "n": "Brasileirão",
@@ -558,19 +474,11 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 23",
-  "match": "Mirassol x Flamengo",
+  "match": "Vitória x Botafogo",
   "ch": [
    {
-    "n": "Record",
-    "y": "free"
-   },
-   {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
    },
    {
     "n": "Brasileirão",
