@@ -417,6 +417,23 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 17",
+  "match": "Floresta x Anápolis",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 23",
   "match": "Vasco x Santos",
@@ -438,44 +455,6 @@
  },
  {
   "date": "2026-08-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 17",
-  "match": "Floresta x Anápolis",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 2",
-  "match": "SC Braga x GIL Vicente",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Liga Portugal",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -490,6 +469,27 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-16",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 23",
+  "match": "Vitória x Botafogo",
+  "ch": [
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-16",
@@ -546,27 +546,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-16",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 23",
-  "match": "Vitória x Botafogo",
-  "ch": [
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
   "v": 2
