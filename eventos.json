@@ -1,34 +1,13 @@
 [
  {
   "date": "2026-08-17",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "5",
-  "match": "Estudiantes de Rio Cuarto x Atletico Tucuman",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-17",
   "t": "16:15",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Português",
   "detail": "Rodada 2",
-  "match": "Casa Pia x Benfica",
+  "match": "Casa x Benfica",
   "ch": [
    {
     "n": "ESPN",
