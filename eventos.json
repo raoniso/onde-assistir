@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-08-18",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Atlanta United II x Chicago FC United",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-18",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
