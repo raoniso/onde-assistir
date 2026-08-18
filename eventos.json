@@ -7,36 +7,7 @@
   "country": "Europa (demais)",
   "league": "Champions League",
   "detail": "Mata-mata",
-  "match": "Fenerbahce x Lyon",
-  "ch": [
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "Dinamo Zagreb x Viking",
+  "match": "Dinamo x Viking",
   "ch": [
    {
     "n": "HBO Max",
