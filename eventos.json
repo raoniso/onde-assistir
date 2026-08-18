@@ -216,5 +216,488 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "00:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Real Esteli x CS Herediano",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "00:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Xelaju x Diriangen",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistosos",
+  "detail": "Amistoso",
+  "match": "Barcelona x Al Ahly",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Barcelona",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "Mata-mata",
+  "match": "Celtic x Lask Linz",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Oitavas de Final",
+  "match": "Coquimbo Unido x Platense",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Oitavas de Final",
+  "match": "Cerro Porteno x Palmeiras",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 23",
+  "match": "Avai x Sport Recife",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Orlando City SC x Chicago Fire",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Philadelphia Union x Inter Miami",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 23",
+  "match": "Vila Nova x Ponte Preta",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "DC United x New England",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Toronto FC x Charlotte",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Columbus Crew x Montreal Impact",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Sporting Kansas City x St. Louis City",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-19",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Oitavas de Final",
+  "match": "Flamengo x Cruzeiro",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Oitavas de Final",
+  "match": "Santa Fe x River Plate",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "CD Marathon x Alianza",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "22:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Seattle Sounders x Austin",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "22:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Real Salt Lake x FC Dallas",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Whitecaps x Houston Dynamo",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Portland Timbers x San Diego",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 20",
+  "match": "Los Angeles Galaxy x San Jose Earthquakes",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  }
 ]
