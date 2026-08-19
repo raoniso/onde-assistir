@@ -7,119 +7,14 @@
   "country": "Europa (demais)",
   "league": "Champions League",
   "detail": "Mata-mata",
-  "match": "Dinamo x Viking",
+  "match": "FIM DE x Sofia 0 AEK",
   "ch": [
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Oitavas de Final",
-  "match": "Independ. Rivadavia x Fluminense",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Oitavas de Final",
-  "match": "Deportivo Recoleta x Boca Juniors",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "21:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Argentina",
-  "detail": "Oitavas de Final",
-  "match": "Banfield x Midland",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 23",
-  "match": "Náutico x Ceará",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-18",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Oitavas de Final",
-  "match": "Deportes Tolima x Independiente del Valle",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-18",
@@ -129,7 +24,7 @@
   "country": "América do Sul",
   "league": "Copa Sul-Americana",
   "detail": "Oitavas de Final",
-  "match": "São Paulo x Bolívar",
+  "match": "São x Bolívar",
   "ch": [
    {
     "n": "SBT",
@@ -248,6 +143,31 @@
   "league": "Champions League",
   "detail": "Mata-mata",
   "match": "Celtic x Lask Linz",
+  "ch": [
+   {
+    "n": "Space",
+    "y": "tv"
+   },
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-19",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "Mata-mata",
+  "match": "Slovan Bratislava x Celje",
   "ch": [
    {
     "n": "HBO Max",
