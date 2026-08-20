@@ -1,13 +1,55 @@
 [
  {
   "date": "2026-08-20",
-  "t": "15:30",
+  "t": "12:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "UEFA Conference League",
-  "detail": "Playoff round",
-  "match": "Atalanta x Hapoel Tel Aviv",
+  "league": "UEFA Europa League",
+  "detail": "Mata-mata",
+  "match": "Kairat Almaty x Anderlecht",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-20",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League",
+  "detail": "Mata-mata",
+  "match": "Mjallby AIF x Red Bull Salzburg",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-20",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League",
+  "detail": "Mata-mata",
+  "match": "Egnatia Rrogozhine x Lillestrom",
   "ch": [
    {
     "n": "Ppv",
@@ -28,7 +70,49 @@
   "country": "Europa (demais)",
   "league": "UEFA Conference League",
   "detail": "Playoff round",
+  "match": "Motherwell x Freiburg",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-20",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
   "match": "FC Lugano x Maccabi Tel Aviv",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-20",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Atalanta x Hapoel Tel Aviv",
   "ch": [
    {
     "n": "Ppv",
@@ -61,6 +145,27 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Getafe x FK Partizan",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-08-20",
