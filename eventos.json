@@ -7,7 +7,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Europa League",
   "detail": "Mata-mata",
-  "match": "Kairat Almaty x Anderlecht",
+  "match": "Kairat x Anderlecht",
   "ch": [
    {
     "n": "XSports",
@@ -19,27 +19,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-08-20",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League",
-  "detail": "Mata-mata",
-  "match": "Mjallby AIF x Red Bull Salzburg",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-08-20",
