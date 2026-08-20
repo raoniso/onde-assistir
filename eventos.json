@@ -1,206 +1,5 @@
 [
  {
-  "date": "2026-08-19",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Oitavas de Final",
-  "match": "FIM DE x 2 RB",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-19",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Toronto x Charlotte",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-19",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "CD Marathon x Alianza",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-19",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Seattle Sounders x Austin",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-19",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Real Salt Lake x FC Dallas",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-19",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Portland Timbers x San Diego",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-19",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Whitecaps x Houston Dynamo",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-19",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 20",
-  "match": "Los Angeles Galaxy x San Jose Earthquakes",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-20",
-  "t": "00:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "FAS x Municipal",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-08-20",
   "t": "15:30",
   "sport": "Futebol",
@@ -359,7 +158,7 @@
   "country": "Mundial",
   "league": "Corinthians",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -384,5 +183,195 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "00:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "Firpo x LD Alajuelense",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "6",
+  "match": "FC Cajamarca x Atletico Grau",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Paulista Sub-20",
+  "detail": "Rodada 13",
+  "match": "Santos Sub-20 America-SP x U20",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Turco",
+  "detail": "Rodada 2",
+  "match": "Erzurum BB x Galatasaray",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Campeonato Inglês",
+  "detail": "Rodada 1",
+  "match": "Arsenal x Coventry",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-21",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "3",
+  "match": "Albion FC x Boston River",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-21",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 2",
+  "match": "Real Betis x Real Sociedad",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "6",
+  "match": "Alianza Atletico x Sporting Cristal",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "3",
+  "match": "Liverpool Montevideo x Cerro",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "San Diego fave x Utah Royals",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   },
+   {
+    "n": "Nwsl",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  }
 ]
