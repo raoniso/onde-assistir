@@ -223,27 +223,6 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Central Espanol x Juventud",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 1",
@@ -259,6 +238,27 @@
    },
    {
     "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-22",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "3",
+  "match": "Central Espanol x Juventud",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
@@ -525,61 +525,11 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 18",
-  "match": "Botafogo PB x Guarani",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Canal",
-    "y": "tv"
-   },
-   {
-    "n": "Do",
-    "y": "tv"
-   },
-   {
-    "n": "Benja",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 18",
   "match": "Volta Redonda x Floresta",
   "ch": [
    {
     "n": "Sportynet",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 17",
-  "match": "Flamengo x Atlético Mineiro",
-  "ch": [
-   {
-    "n": "Tv Brasil",
-    "y": "free"
-   },
-   {
-    "n": "Mg – Brasileirão Feminino",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -613,14 +563,14 @@
   "country": "Brasil",
   "league": "Brasileirão Feminino",
   "detail": "Rodada 17",
-  "match": "Cruzeiro x Palmeiras",
+  "match": "Flamengo x Atlético Mineiro",
   "ch": [
    {
-    "n": "SporTV",
-    "y": "tv"
+    "n": "Tv Brasil",
+    "y": "free"
    },
    {
-    "n": "Brasileirão Feminino",
+    "n": "Mg – Brasileirão Feminino",
     "y": "tv"
    }
   ],
@@ -628,20 +578,20 @@
  },
  {
   "date": "2026-08-22",
-  "t": "18:00",
+  "t": "18:30",
   "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Rodada 17",
-  "match": "Grêmio x Botafogo",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "6",
+  "match": "Independiente x Independ. Rivadavia",
   "ch": [
    {
-    "n": "N Sports",
-    "y": "free"
+    "n": "Disney+",
+    "y": "stream"
    },
    {
-    "n": "Brasileirão Feminino",
+    "n": "Campeonato Argentino",
     "y": "tv"
    }
   ],
@@ -698,27 +648,6 @@
    {
     "n": "Sportynet",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 24",
-  "match": "Cruzeiro x Flamengo",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -803,10 +732,31 @@
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 24",
+  "match": "Cruzeiro x Flamengo",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-22",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "New York Red Bulls x Chicago Fire",
+  "match": "Montreal Impact x Los Angeles Galaxy",
   "ch": [
    {
     "n": "Apple",
@@ -827,7 +777,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "Montreal Impact x Los Angeles Galaxy",
+  "match": "New York Red Bulls x Chicago Fire",
   "ch": [
    {
     "n": "Apple",
