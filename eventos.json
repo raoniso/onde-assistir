@@ -52,6 +52,23 @@
  },
  {
   "date": "2026-08-21",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "3",
+  "match": "Albion FC x Boston River",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-21",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -91,27 +108,6 @@
    },
    {
     "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-21",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Albion FC x Boston River",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
