@@ -667,7 +667,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "Austin x Philadelphia Union",
+  "match": "St. Louis City x Houston Dynamo",
   "ch": [
    {
     "n": "Apple",
@@ -686,13 +686,13 @@
  },
  {
   "date": "2026-08-22",
-  "t": "21:30",
+  "t": "22:00",
   "sport": "Futebol",
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "St. Louis City x Houston Dynamo",
+  "match": "Austin x Philadelphia Union",
   "ch": [
    {
     "n": "Apple",
@@ -701,13 +701,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-22",
