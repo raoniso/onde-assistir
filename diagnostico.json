@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 21/08 21:59 BRT — janela 2026-08-21 a 2026-08-27",
-   "  ✓ futebolnatv: 39 evento(s)",
-   "  ✓ mantosdofutebol: 271 evento(s)",
+   "Coleta 22/08 01:28 BRT — janela 2026-08-22 a 2026-08-28",
+   "  ✓ futebolnatv: 67 evento(s)",
+   "  ✓ mantosdofutebol: 173 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 0 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✗ ESPN NBA indisponível (JSONDecodeError: Expecting value: line 1 column 1 (char 0))",
@@ -11,7 +11,7 @@
    "  ✓ ESPN Tênis: 0 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 38 eventos → eventos.json",
+   "TOTAL: 66 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
