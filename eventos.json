@@ -1,211 +1,13 @@
 [
  {
   "date": "2026-08-22",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 2",
-  "match": "Athletic x Sevilla",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Brentford x Tottenham",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "14:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 5",
-  "match": "CSKA Moscow x Lokomotiv Moscow",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 2",
-  "match": "Valencia x Celta Vigo",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 4",
-  "match": "Sturm Graz x Austria Lustenau",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Cerro Largo x Defensor Sporting",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "15:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "6",
-  "match": "UTC x Comerciantes Unidos",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 2",
-  "match": "Fenerbahce x Konyaspor",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 2",
-  "match": "Espanyol x Real Madrid",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Espanyol",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 18",
-  "match": "Volta Redonda x Floresta",
+  "match": "Volta x Floresta",
   "ch": [
    {
     "n": "Sportynet",
@@ -337,31 +139,10 @@
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 24",
-  "match": "Cruzeiro x Flamengo",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "FC Cincinnati x Seattle Sounders",
+  "match": "Charlotte x DC United",
   "ch": [
    {
     "n": "Apple",
@@ -411,7 +192,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 21",
-  "match": "Charlotte x DC United",
+  "match": "FC Cincinnati x Seattle Sounders",
   "ch": [
    {
     "n": "Apple",
@@ -433,18 +214,35 @@
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "Montreal Impact x Los Angeles Galaxy",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 24",
+  "match": "Cruzeiro x Flamengo",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
+    "n": "Prime Video",
+    "y": "stream"
    },
    {
-    "n": "Tv",
+    "n": "Brasileirão",
     "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-22",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "North Carolina Courage x Boston Legacy",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
    }
   ],
   "v": 1
@@ -474,15 +272,19 @@
   "date": "2026-08-22",
   "t": "20:30",
   "sport": "Futebol",
-  "g": "F",
+  "g": "M",
   "country": "EUA/Canadá",
-  "league": "NWSL Feminina - Grupo",
-  "detail": "Stage",
-  "match": "North Carolina Courage x Boston Legacy",
+  "league": "MLS",
+  "detail": "Rodada 21",
+  "match": "Montreal Impact x Los Angeles Galaxy",
   "ch": [
    {
-    "n": "XSports",
-    "y": "free"
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
    }
   ],
   "v": 1
