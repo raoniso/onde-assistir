@@ -1,38 +1,13 @@
 [
  {
   "date": "2026-08-22",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Hull City x Manchester United",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 1",
-  "match": "Everton x Crystal Palace",
+  "match": "Everton x Palace",
   "ch": [
    {
     "n": "Disney+",
@@ -592,6 +567,23 @@
    {
     "n": "Tv",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-22",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "North Carolina Courage x Boston Legacy",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
    }
   ],
   "v": 1
