@@ -1,41 +1,20 @@
 [
  {
   "date": "2026-08-22",
-  "t": "17:00",
+  "t": "17:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 18",
-  "match": "Volta x Floresta",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "6",
+  "match": "Juan x ADT",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 24",
-  "match": "Ceará x Londrina",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-22",
@@ -45,246 +24,11 @@
   "country": "Brasil",
   "league": "Brasileirão Feminino",
   "detail": "Rodada 17",
-  "match": "Flamengo x Atlético Mineiro",
+  "match": "FIM DE x 4 Atlético",
   "ch": [
    {
     "n": "Tv Brasil",
     "y": "free"
-   },
-   {
-    "n": "Mg – Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "6",
-  "match": "Independiente x Independ. Rivadavia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 24",
-  "match": "Cuiabá x Goiás",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Deportivo Maldonado x Penãrol",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 18",
-  "match": "Confiança x Anápolis",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "Charlotte x DC United",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "Orlando City SC x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "FC Cincinnati x Seattle Sounders",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 24",
-  "match": "Cruzeiro x Flamengo",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "EUA/Canadá",
-  "league": "NWSL Feminina - Grupo",
-  "detail": "Stage",
-  "match": "North Carolina Courage x Boston Legacy",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "New York Red Bulls x Chicago Fire",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "Montreal Impact x Los Angeles Galaxy",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -297,7 +41,7 @@
   "country": "Mundial",
   "league": "Campeonato Peruano - Clausura",
   "detail": "6",
-  "match": "Deportivo Garcilaso x Cusco",
+  "match": "INT Deportivo x Cusco",
   "ch": [
    {
     "n": "Fanatiz",
@@ -305,56 +49,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-08-22",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "Nashville SC x Columbus Crew",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-22",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 21",
-  "match": "St. Louis City x Houston Dynamo",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-08-22",
