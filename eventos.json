@@ -441,6 +441,35 @@
   "t": "18:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 24",
+  "match": "Criciúma x Fortaleza",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-23",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "3",
@@ -470,35 +499,6 @@
    {
     "n": "Sportynet",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 24",
-  "match": "Criciúma x Fortaleza",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 2
