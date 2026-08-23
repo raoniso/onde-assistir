@@ -1,169 +1,6 @@
 [
  {
   "date": "2026-08-23",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 2ª Divisão",
-  "detail": "Rodada 2",
-  "match": "West x Burnley",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Championship",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Manchester City x Bournemouth",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Brighton x Aston Villa",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Danubio x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 3",
-  "match": "Guimaraes x Nacional",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Liga Portugal",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "11:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 3",
-  "match": "Cambuur x Feyenoord",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "12:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Newcastle x Liverpool",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
@@ -230,13 +67,13 @@
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "6",
-  "match": "Sport Boys x Cienciano",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "3",
+  "match": "Atletico Torque x Wanderers",
   "ch": [
    {
-    "n": "Fanatiz",
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -247,13 +84,13 @@
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "3",
-  "match": "Atletico Torque x Wanderers",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "6",
+  "match": "Sport Boys x Cienciano",
   "ch": [
    {
-    "n": "Disney+",
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
@@ -282,13 +119,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 18",
-  "match": "Maringá x Barra",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 24",
+  "match": "Ponte Preta x Avai",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -328,13 +165,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 24",
-  "match": "Ponte Preta x Avai",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 18",
+  "match": "Maringá x Barra",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Sportynet",
+    "y": "free"
    }
   ],
   "v": 2
@@ -449,6 +286,23 @@
   "t": "18:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C",
+  "detail": "Rodada 18",
+  "match": "Maranhão x Itabaiana",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-23",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "3",
@@ -461,23 +315,6 @@
    {
     "n": "Campeonato Uruguaio",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-23",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Rodada 18",
-  "match": "Maranhão x Itabaiana",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
    }
   ],
   "v": 2
