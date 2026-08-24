@@ -1,63 +1,17 @@
 [
  {
   "date": "2026-08-24",
-  "t": "16:00",
+  "t": "13:40",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 1",
-  "match": "Fulham x Chelsea",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-24",
-  "t": "16:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
+  "country": "Mundial",
+  "league": "Campeonato Saudita",
   "detail": "Rodada 3",
-  "match": "GIL Vicente x Casa Pia",
+  "match": "FIM x JOGO Neom 0",
   "ch": [
    {
-    "n": "Disney+",
+    "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "Liga Portugal",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-24",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 2",
-  "match": "Malaga x La Coruna SPORTYNET",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
