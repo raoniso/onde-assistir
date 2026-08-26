@@ -1,219 +1,79 @@
 [
  {
   "date": "2026-08-26",
-  "t": "15:00",
+  "t": "21:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Saudita",
-  "detail": "Rodada 3",
-  "match": "Al Diriyah x Al Kholood",
+  "league": "Leagues Cup",
+  "detail": "Quartas de Final",
+  "match": "Toluca x Austin",
   "ch": [
    {
-    "n": "Bandsports",
+    "n": "Apple",
     "y": "tv"
    },
    {
-    "n": "Canal Goat",
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Leagues Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-26",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Do Brasil",
+  "detail": "Quartas de Final",
+  "match": "Palmeiras x Santos",
+  "ch": [
+   {
+    "n": "Globo",
     "y": "free"
    },
    {
-    "n": "Kholood – Liga Saudita",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 64",
-  "match": "Tottenham x Charlton",
-  "ch": [
-   {
-    "n": "ESPN",
+    "n": "SporTV",
     "y": "tv"
    },
    {
-    "n": "Disney+",
+    "n": "Premiere FC",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 64",
-  "match": "Newcastle x West Brom",
-  "ch": [
+   },
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-26",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 64",
-  "match": "Bradford x Burnley",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 1",
-  "match": "Real Madrid x Real Sociedad",
-  "ch": [
-   {
-    "n": "CazéTV",
+    "n": "GE TV",
     "y": "free"
    },
    {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "Lyon x Fenerbahce",
-  "ch": [
-   {
-    "n": "HBO Max",
+    "n": "Prime Video",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
   "v": 2
  },
  {
   "date": "2026-08-26",
-  "t": "16:00",
+  "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "AEK Athens FC x Levski Sofia",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "Viking x Dinamo Zagreb",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "Celje x Slovan Bratislava",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 64",
-  "match": "Preston x Everton",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "CD Marathon x Real Esteli",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "19:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Argentina",
-  "detail": "Oitavas de Final",
-  "match": "Aldosivi x Independ. Rivadavia",
-  "ch": [
+   },
    {
-    "n": "XSports",
-    "y": "free"
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -245,13 +105,13 @@
  },
  {
   "date": "2026-08-26",
-  "t": "21:30",
+  "t": "23:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "CONCACAF Central American Cup - Grupo",
   "detail": "Stage",
-  "match": "CD Marathon x Real Esteli",
+  "match": "Xelaju x Firpo",
   "ch": [
    {
     "n": "Disney+",
@@ -259,89 +119,6 @@
    },
    {
     "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Do Brasil",
-  "detail": "Quartas de Final",
-  "match": "Palmeiras x Santos",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Do Brasil",
-  "detail": "Quartas de Final",
-  "match": "Vasco x Vitória",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup",
-  "detail": "Quartas de Final",
-  "match": "Toluca x Austin",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
     "y": "tv"
    }
   ],
@@ -356,27 +133,6 @@
   "league": "CONCACAF Central American Cup - Grupo",
   "detail": "Stage",
   "match": "LD Alajuelense x Plaza Amador",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-26",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Xelaju x Firpo",
   "ch": [
    {
     "n": "Disney+",
@@ -422,6 +178,27 @@
   "country": "Europa (demais)",
   "league": "UEFA Conference League",
   "detail": "Playoff round",
+  "match": "SC Freiburg x Motherwell",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
   "match": "Monaco x Gornik Zabrze",
   "ch": [
    {
@@ -434,6 +211,170 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Inter Club d'Escaldes x Drita",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Hradec Kralove x Panathinaikos",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Riga x KI Klaksvik",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Pafos x Tirana",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Ajax x Sion",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-27",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League",
+  "detail": "Mata-mata",
+  "match": "FC Thun x Lech Poznan",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League",
+  "detail": "Mata-mata",
+  "match": "Aarhus x Benfica",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 1",
+  "match": "Celta Vigo x Osasuna",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-08-27",
