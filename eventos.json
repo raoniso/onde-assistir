@@ -1,68 +1,5 @@
 [
  {
-  "date": "2026-08-25",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Mata-mata",
-  "match": "FIM DE x FA 5 Hapoel",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-25",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup - Grupo",
-  "detail": "Stage",
-  "match": "Municipal x CD Motagua",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Central American Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-25",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Leagues Cup",
-  "detail": "Quartas de Final",
-  "match": "Leon x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-08-26",
   "t": "15:00",
   "sport": "Futebol",
@@ -476,5 +413,157 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-08-27",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League",
+  "detail": "Playoff round",
+  "match": "Monaco x Gornik Zabrze",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 64",
+  "match": "Chelsea x Luton",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-27",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 1",
+  "match": "Barcelona x Athletic Club",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 64",
+  "match": "Fulham x AFC Wimbledon",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Barcelona",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-08-27",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Argentina",
+  "detail": "Oitavas de Final",
+  "match": "Estudiantes x Barracas Central",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-27",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Do Brasil",
+  "detail": "Quartas de Final",
+  "match": "Internacional x Grêmio",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-27",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup - Grupo",
+  "detail": "Stage",
+  "match": "CD Olimpia x Deportivo Saprissa",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  }
 ]
