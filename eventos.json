@@ -7,7 +7,7 @@
   "country": "Alemanha",
   "league": "2ª Divisão Alemã",
   "detail": "Rodada 3",
-  "match": "Karlsruher SC x VfL Wolfsburg",
+  "match": "FIM DE x Cottbus 3 SpVgg",
   "ch": [
    {
     "n": "Ppv",
@@ -16,102 +16,6 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "FC Heidenheim x Dynamo Dresden",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "Energie Cottbus x SpVgg Greuther Furth",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 2",
-  "match": "Liverpool x Nottingham Forest",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 2ª Divisão",
-  "detail": "Rodada 3",
-  "match": "Middlesbrough x West Brom",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -121,256 +25,10 @@
   "t": "09:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 6",
-  "match": "Fakel Voronezh x Zenit Saint",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Alemanha",
   "league": "3ª Divisão Alemã",
   "detail": "Rodada 3",
-  "match": "MSV Duisburg x FC urzburger Kickers",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-29",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 1",
-  "match": "SV Elversberg x Bayer Leverkusen",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 1",
-  "match": "Union Berlin x Eintracht Frankfurt",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 1",
-  "match": "RB Leipzig x Borussia M",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 1",
-  "match": "FC Koln x 1899 Hoffenheim",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-29",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 2",
-  "match": "Bournemouth x Everton",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 2",
-  "match": "Coventry x Hull City",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 2ª Divisão",
-  "detail": "Rodada 3",
-  "match": "Cardiff x Sheffield Utd",
-  "ch": [
-   {
-    "n": "N Sports",
-    "y": "free"
-   },
-   {
-    "n": "Championship",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "4",
-  "match": "Progreso x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "Hoffenheim II x Jahn Regensburg",
+  "match": "FIM DE x Duisburg 3 FC",
   "ch": [
    {
     "n": "Ppv",
@@ -388,22 +46,14 @@
   "t": "13:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
   "detail": "Rodada 2",
-  "match": "Tottenham x Newcastle",
+  "match": "Monza x Udinese",
   "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -430,14 +80,22 @@
   "t": "13:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
+  "country": "Inglaterra",
+  "league": "Campeonato Inglês",
   "detail": "Rodada 2",
-  "match": "Monza x Udinese",
+  "match": "Tottenham x Newcastle",
   "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Premier League",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -489,27 +147,6 @@
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "4",
-  "match": "Boston River x Cerro",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-29",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Mundial",
   "league": "Campeonato Russo",
   "detail": "Rodada 6",
@@ -521,6 +158,27 @@
    },
    {
     "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-29",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "4",
+  "match": "Boston River x Cerro",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
@@ -614,7 +272,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 19",
-  "match": "Barra x Redonda SPORTYNET",
+  "match": "Itabaiana x PB SPORTYNET",
   "ch": [
    {
     "n": "A confirmar",
@@ -631,7 +289,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série C",
   "detail": "Rodada 19",
-  "match": "Itabaiana x PB SPORTYNET",
+  "match": "Barra x Redonda SPORTYNET",
   "ch": [
    {
     "n": "A confirmar",
@@ -813,17 +471,21 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "7",
-  "match": "Alianza Lima x Deportivo Garcilaso",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 22",
+  "match": "Nashville SC x FC Cincinnati",
   "ch": [
    {
-    "n": "Fanatiz",
-    "y": "stream"
+    "n": "Apple",
+    "y": "tv"
    },
    {
-    "n": "Campeonato Peruano",
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
     "y": "tv"
    }
   ],
@@ -859,21 +521,17 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 22",
-  "match": "Nashville SC x FC Cincinnati",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "7",
+  "match": "Alianza Lima x Deportivo Garcilaso",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
+    "n": "Fanatiz",
+    "y": "stream"
    },
    {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
+    "n": "Campeonato Peruano",
     "y": "tv"
    }
   ],
