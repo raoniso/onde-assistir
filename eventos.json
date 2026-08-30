@@ -1,157 +1,18 @@
 [
  {
   "date": "2026-08-30",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 25",
-  "match": "Athletico x Fluminense",
-  "ch": [
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 6",
-  "match": "Spartak x Orenburg",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 5",
-  "match": "INT TSV x Ried",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
   "t": "12:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 2",
-  "match": "Manchester x Ipswich",
+  "country": "Alemanha",
+  "league": "Campeonato Alemão",
+  "detail": "Rodada 1",
+  "match": "FIM DE x Augsburg 3 FC",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 6",
-  "match": "Rubin x Makhachkala",
-  "ch": [
-   {
-    "n": "XSports",
+    "n": "Canal Goat",
     "y": "free"
    },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Columbus Crew II x Chicago FC United",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 5",
-  "match": "Red Bull Salzburg x Austria Vienna",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "FC Viktoria Koln x Preussen Munster",
-  "ch": [
    {
     "n": "Ppv",
     "y": "tv"
@@ -171,7 +32,7 @@
   "country": "Mundial",
   "league": "Campeonato Peruano - Clausura",
   "detail": "7",
-  "match": "ADT x Sport Huancayo",
+  "match": "INT x 0 Sport",
   "ch": [
    {
     "n": "Fanatiz",
@@ -179,111 +40,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "4",
-  "match": "Penãrol x Club Nacional",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 3",
-  "match": "Samsunspor x Fenerbahce",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 2",
-  "match": "Lazio x Genoa",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 2",
-  "match": "Cagliari x Inter",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 25",
-  "match": "Flamengo x Botafogo",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-08-30",
