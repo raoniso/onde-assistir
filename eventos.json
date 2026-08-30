@@ -1,195 +1,20 @@
 [
  {
   "date": "2026-08-30",
-  "t": "07:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 4",
-  "match": "Utrecht x PSV Eindhoven",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "FC Magdeburg x Holstein Kiel",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "FC St. Pauli x FC Kaiserslautern",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 3",
-  "match": "FC Saarbrücken x Hansa Rostock",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 4",
-  "match": "Feyenoord x ADO Den Haag",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 2",
-  "match": "Chelsea x Brighton",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 1",
-  "match": "SC Freiburg x Werder Bremen",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 25",
-  "match": "Athletico PR x Fluminense",
+  "match": "Athletico x Fluminense",
   "ch": [
    {
     "n": "Premiere",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-08-30",
@@ -199,7 +24,7 @@
   "country": "Mundial",
   "league": "Campeonato Russo",
   "detail": "Rodada 6",
-  "match": "Spartak Moscow x Orenburg",
+  "match": "Spartak x Orenburg",
   "ch": [
    {
     "n": "Bandsports",
@@ -220,28 +45,7 @@
   "country": "Mundial",
   "league": "Campeonato Austríaco",
   "detail": "Rodada 5",
-  "match": "TSV Hartberg x Ried",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-08-30",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 5",
-  "match": "Rapid Vienna x Sturm Graz",
+  "match": "INT TSV x Ried",
   "ch": [
    {
     "n": "Ppv",
@@ -262,7 +66,7 @@
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 2",
-  "match": "Manchester United x Ipswich",
+  "match": "Manchester x Ipswich",
   "ch": [
    {
     "n": "ESPN",
@@ -542,6 +346,27 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 25",
+  "match": "Mirassol x Palmeiras",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-08-30",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 25",
   "match": "Vila Nova x Ceará",
@@ -561,27 +386,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-30",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 25",
-  "match": "Mirassol x Palmeiras",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
   "v": 2
