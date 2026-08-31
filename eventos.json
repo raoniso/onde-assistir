@@ -1,27 +1,6 @@
 [
  {
   "date": "2026-08-31",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 2",
-  "match": "Lecce x Roma",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-08-31",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
