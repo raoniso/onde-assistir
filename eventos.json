@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-09-01",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "7",
-  "match": "Atletico Grau x FBC Melgar",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-01",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
