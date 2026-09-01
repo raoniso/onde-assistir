@@ -1,27 +1,6 @@
 [
  {
   "date": "2026-09-01",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 4",
-  "match": "Wolfsberger AC x Lask Linz",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-01",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
