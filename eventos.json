@@ -107,7 +107,7 @@
   "match": "Flamengo x Mirassol",
   "ch": [
    {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
@@ -136,37 +136,12 @@
     "y": "tv"
    },
    {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
-    "n": "Prime Video",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-02",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Do Brasil",
-  "detail": "Quartas de Final",
-  "match": "Vitória x Vasco",
-  "ch": [
-   {
-    "n": "Globo",
+    "n": "GE TV",
     "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
    },
    {
     "n": "Prime Video",
