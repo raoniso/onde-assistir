@@ -1,22 +1,5 @@
 [
  {
-  "date": "2026-09-01",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 25",
-  "match": "Londrina x Juventude",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-09-02",
   "t": "13:30",
   "sport": "Futebol",
