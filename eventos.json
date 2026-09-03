@@ -236,6 +236,23 @@
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "8",
+  "match": "Belgrano Cordoba x Huracan",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-04",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "5",
   "match": "Atletico Torque x Cerro Largo",
