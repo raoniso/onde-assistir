@@ -1,27 +1,6 @@
 [
  {
   "date": "2026-09-03",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Saudita",
-  "detail": "Rodada 5",
-  "match": "Neom x Al Khaleej Saihat",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-03",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
