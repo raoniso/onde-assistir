@@ -7,32 +7,7 @@
   "country": "Alemanha",
   "league": "2ª Divisão Alemã",
   "detail": "Rodada 4",
-  "match": "Arminia Bielefeld x FC St. Pauli",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-04",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 4",
-  "match": "FC Ingolstadt 04 x Alemannia Aachen",
+  "match": "FIM DE x Bielefeld 2 FC",
   "ch": [
    {
     "n": "Ppv",
@@ -53,7 +28,7 @@
   "country": "Mundial",
   "league": "Campeonato Turco",
   "detail": "Rodada 4",
-  "match": "Istanbul Basaksehir x Galatasaray",
+  "match": "Istanbul x Galatasaray",
   "ch": [
    {
     "n": "Disney+",
@@ -68,75 +43,12 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Saudita",
-  "detail": "Rodada 5",
-  "match": "Al Shabab x ONEFOOTBALL",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   },
-   {
-    "n": "Hilal – Liga Saudita",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-04",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
   "league": "Campeonato Peruano - Clausura",
   "detail": "8",
-  "match": "FC Cajamarca x Cienciano",
+  "match": "FC x Cienciano",
   "ch": [
    {
     "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-04",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Rodada 14",
-  "match": "São Bento Sub-20 Corinthians x Sub-20",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-04",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 2",
-  "match": "VfB Stuttgart x FC Koln",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -211,9 +123,9 @@
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "8",
-  "match": "Belgrano Cordoba x Huracan",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "5",
+  "match": "Atletico Torque x Cerro Largo",
   "ch": [
    {
     "n": "Disney+",
@@ -228,9 +140,9 @@
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "Atletico Torque x Cerro Largo",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "8",
+  "match": "Belgrano Cordoba x Huracan",
   "ch": [
    {
     "n": "Disney+",
