@@ -1,132 +1,22 @@
 [
  {
   "date": "2026-09-06",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 3",
-  "match": "Estac x Strasbourg",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-06",
-  "t": "12:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 3",
-  "match": "Angers x Rennes",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "12:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 3",
-  "match": "Arsenal x Chelsea",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "Central Espanol x Defensor Sporting",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 3",
-  "match": "Bologna x Sassuolo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-06",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 5",
-  "match": "Guimaraes x Casa Pia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-06",
-  "t": "14:30",
+  "t": "10:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 4",
-  "match": "Fortuna Koln x Fortuna Dusseldorf",
+  "league": "Campeonato Alemão",
+  "detail": "Rodada 2",
+  "match": "FIM DE x SV 0 FSV",
   "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   },
    {
     "n": "Ppv",
     "y": "tv"
@@ -140,13 +30,13 @@
  },
  {
   "date": "2026-09-06",
-  "t": "14:45",
+  "t": "14:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "8",
-  "match": "Rosario Central x Newells Old Boys",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "Rodada 5",
+  "match": "INT x 0 Casa",
   "ch": [
    {
     "n": "Disney+",
