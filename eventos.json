@@ -22,384 +22,20 @@
  },
  {
   "date": "2026-09-05",
-  "t": "18:00",
+  "t": "18:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série B",
+  "league": "Brasileirão Série A",
   "detail": "Rodada 26",
-  "match": "INT x 2 Atlético",
+  "match": "FIM DE x Paulo 2",
   "ch": [
    {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
+    "n": "Premiere FC",
     "y": "stream"
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "INT Deportivo x Wanderers",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "8",
-  "match": "Cusco x UCV Moquegua",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Mexicano - Apertura",
-  "detail": "7",
-  "match": "Atletico San Luis x Guadalajara Chivas",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Orlando City SC x San Diego",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "FC Cincinnati x DC United",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Columbus Crew x Colorado Rapids",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Toronto FC x Chicago Fire",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Charlotte x Houston Dynamo",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Philadelphia Union x Montreal Impact",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "21:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "8",
-  "match": "Velez Sarsfield x Estudiantes",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Austin x San Jose Earthquakes",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Seattle Sounders x New York Red Bulls",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "FC Dallas x Sporting Kansas City",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "8",
-  "match": "Universitario x Comerciantes Unidos",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Peruano",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-05",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Los Angeles Galaxy x New England",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-05",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 23",
-  "match": "Whitecaps x St. Louis City",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-09-06",
@@ -435,13 +71,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -460,13 +92,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -489,13 +117,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -510,13 +134,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -535,55 +155,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "Cerro x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 3",
-  "match": "Estac Troyes x Strasbourg",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -628,6 +202,40 @@
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "5",
+  "match": "Cerro x Racing Montevideo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-06",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Rodada 3",
+  "match": "Estac Troyes x Strasbourg",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-06",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Mundial",
   "league": "Everton",
   "detail": "—",
@@ -653,13 +261,9 @@
    {
     "n": "Premiere FC",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -691,13 +295,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -716,34 +316,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-09-06",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "Central Espanol x Defensor Sporting",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -754,6 +329,23 @@
   "league": "Campeonato Italiano",
   "detail": "Rodada 3",
   "match": "Bologna x Sassuolo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-06",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "5",
+  "match": "Central Espanol x Defensor Sporting",
   "ch": [
    {
     "n": "Disney+",
@@ -876,13 +468,9 @@
    {
     "n": "GE TV",
     "y": "free"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -897,13 +485,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -960,13 +544,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -983,7 +563,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -1002,13 +582,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -1040,13 +616,9 @@
    {
     "n": "XSports",
     "y": "free"
-   },
-   {
-    "n": "Nwsl",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-06",
@@ -1069,12 +641,8 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Leagues Cup",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  }
 ]
