@@ -1,65 +1,6 @@
 [
  {
   "date": "2026-09-07",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "5",
-  "match": "Albion FC x Progreso",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 3",
-  "match": "Udinese x Lazio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "16:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 5",
-  "match": "Estoril x Arouca",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Liga Portugal",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
   "t": "17:00",
   "sport": "Futebol",
   "g": "F",
