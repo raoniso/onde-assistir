@@ -1,61 +1,6 @@
 [
  {
   "date": "2026-09-07",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 7",
-  "match": "Rubin x Akhmat Grozny",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 3",
-  "match": "Cagliari x Lecce",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 4",
-  "match": "Goztepe x Gazisehir Gaziantep",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-07",
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
@@ -130,23 +75,6 @@
    {
     "n": "Brasileirão Feminina",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "1",
-  "match": "Paysandu x Brusque",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
    }
   ],
   "v": 2
@@ -239,6 +167,10 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2
