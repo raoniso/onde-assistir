@@ -1,101 +1,13 @@
 [
  {
   "date": "2026-09-08",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "Club Brugge KV x Aston Villa",
-  "ch": [
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "AEK Athens FC x Lask Linz",
-  "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
   "t": "15:45",
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
   "league": "Copa da liga Inglesa",
   "detail": "Round of 32",
-  "match": "Bournemouth x Lincoln",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 32",
-  "match": "Crystal Palace x Middlesbrough",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 32",
-  "match": "Sunderland x Hull City",
+  "match": "Crystal x Middlesbrough",
   "ch": [
    {
     "n": "Disney+",
@@ -112,28 +24,7 @@
   "country": "Europa (demais)",
   "league": "Champions League - League Stage",
   "detail": "1",
-  "match": "Lille x Real Betis",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "Real Madrid x Inter",
+  "match": "Real x Inter",
   "ch": [
    {
     "n": "SBT",
@@ -153,48 +44,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "FC Porto x Manchester City",
-  "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "Borussia Dortmund x (TNT",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-09-08",
