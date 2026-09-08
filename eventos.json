@@ -1,51 +1,5 @@
 [
  {
-  "date": "2026-09-07",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Quartas de Final",
-  "match": "Corinthians x Cruzeiro",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Brasileirão Feminina",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-07",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 26",
-  "match": "Vitória x Grêmio",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-09-08",
   "t": "13:45",
   "sport": "Futebol",
@@ -118,6 +72,61 @@
  },
  {
   "date": "2026-09-08",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 32",
+  "match": "Crystal Palace x Middlesbrough",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-08",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 32",
+  "match": "Sunderland x Hull City",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League - League Stage",
+  "detail": "1",
+  "match": "Lille x Real Betis",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   },
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-08",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -159,27 +168,6 @@
     "n": "Space",
     "y": "tv"
    },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-08",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "Lille x Real Betis",
-  "ch": [
    {
     "n": "HBO Max",
     "y": "stream"
