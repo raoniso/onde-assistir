@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 08/09 23:52 BRT — janela 2026-09-08 a 2026-09-14",
-   "  ✓ futebolnatv: 27 evento(s)",
-   "  ✓ mantosdofutebol: 100 evento(s)",
+   "Coleta 09/09 05:34 BRT — janela 2026-09-09 a 2026-09-15",
+   "  ✓ futebolnatv: 40 evento(s)",
+   "  ✓ mantosdofutebol: 55 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 0 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✗ ESPN NBA indisponível (JSONDecodeError: Expecting value: line 1 column 1 (char 0))",
@@ -11,14 +11,14 @@
    "  ✓ ESPN Tênis: 0 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 27 eventos → eventos.json",
+   "TOTAL: 40 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
  },
  "amostras": {
   "uol": [
-   "França || 4 || 6 || Inglaterra || Últimas notícias || Futebol || Globo demite diretor que 'perdeu a Copa' para CazéTV || 03/09/2026 22h45 || Futebol"
+   "Inglaterra || Últimas notícias || Futebol || Morata sobre ausência na Espanha na Copa: 'Mais fácil se eu não estivesse' || 08/09/2026 23h20 || Futebol || Globo demite diretor que 'perdeu a Copa' para CazéTV || 03/09/2026 22h45 || Futebol"
   ]
  }
 }
