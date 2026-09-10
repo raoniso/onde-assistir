@@ -1,45 +1,20 @@
 [
  {
   "date": "2026-09-10",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "PSV Eindhoven x Shakhtar Donetsk",
-  "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-10",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "1",
-  "match": "como x RB Leipzig",
+  "country": "Inglaterra",
+  "league": "Inglês 3ª Divisão",
+  "detail": "Rodada 6",
+  "match": "Stevenage x Luton",
   "ch": [
    {
-    "n": "HBO Max",
+    "n": "Disney+",
     "y": "stream"
    },
    {
-    "n": "Uefa Champions League",
+    "n": "Efl League One",
     "y": "tv"
    }
   ],
@@ -71,17 +46,17 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 3ª Divisão",
-  "detail": "Rodada 6",
-  "match": "Stevenage x Luton",
+  "country": "Europa (demais)",
+  "league": "Champions League - League Stage",
+  "detail": "1",
+  "match": "como x RB Leipzig",
   "ch": [
    {
-    "n": "Disney+",
+    "n": "HBO Max",
     "y": "stream"
    },
    {
-    "n": "Efl League One",
+    "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
@@ -173,27 +148,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Quartas de Final",
-  "match": "Cienciano Atletico x Torque",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-10",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
   "league": "Copa Libertadores",
   "detail": "Quartas de Final",
   "match": "Independiente del Valle x Flamengo",
@@ -205,6 +159,27 @@
    {
     "n": "Disney+",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-10",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "Quartas de Final",
+  "match": "Cienciano Atletico x Torque",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   },
+   {
+    "n": "Conmebol Sul-Americana",
+    "y": "tv"
    }
   ],
   "v": 2
