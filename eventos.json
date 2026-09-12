@@ -1,70 +1,33 @@
 [
  {
   "date": "2026-09-12",
-  "t": "08:00",
+  "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 5",
-  "match": "FC Magdeburg x FC Kaiserslautern",
+  "country": "Inglaterra",
+  "league": "Inglês 2ª Divisão",
+  "detail": "Rodada 7",
+  "match": "INT x 0 Stoke",
   "ch": [
    {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
+    "n": "N Sports",
+    "y": "free"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-12",
-  "t": "08:00",
+  "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 5",
-  "match": "Eintracht Braunschweig x Dynamo Dresden",
+  "country": "Inglaterra",
+  "league": "Campeonato Inglês",
+  "detail": "Rodada 4",
+  "match": "INT Crystal x Ipswich",
   "ch": [
    {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 5",
-  "match": "Fortuna Dusseldorf x MSV Duisburg",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -72,147 +35,13 @@
  },
  {
   "date": "2026-09-12",
-  "t": "10:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 8",
-  "match": "Zenit Saint x Lokomotiv Moscow",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 3",
-  "match": "SC Freiburg x Borussia M",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 3",
-  "match": "1899 Hoffenheim x VfB Stuttgart",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 4",
-  "match": "Bournemouth x Brentford",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 2ª Divisão",
-  "detail": "Rodada 7",
-  "match": "Watford x Stoke City",
-  "ch": [
-   {
-    "n": "N Sports",
-    "y": "free"
-   },
-   {
-    "n": "Championship",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 4",
-  "match": "Crystal Palace x Ipswich",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 4",
-  "match": "Chelsea x Hull City",
+  "match": "INT x 1 Hull",
   "ch": [
    {
     "n": "ESPN",
@@ -220,73 +49,6 @@
    },
    {
     "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 4",
-  "match": "Liverpool x Fulham",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-12",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 6",
-  "match": "Nacional x Alverca",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-12",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 5",
-  "match": "Alemannia Aachen x Jahn Regensburg",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -635,7 +397,7 @@
   "match": "Palmeiras x São Paulo",
   "ch": [
    {
-    "n": "Premiere",
+    "n": "Premiere FC",
     "y": "stream"
    },
    {
@@ -644,6 +406,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-09-12",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Palmeiras",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-09-12",
@@ -1615,6 +1394,27 @@
    },
    {
     "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-13",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Portland Thorns x Chicago Red Stars",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Nwsl",
     "y": "tv"
    }
   ],
