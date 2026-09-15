@@ -1,68 +1,5 @@
 [
  {
-  "date": "2026-09-14",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "9",
-  "match": "INT Deportivo x Lanus",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-14",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 27",
-  "match": "Bahia x Remo",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-14",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 28",
-  "match": "Avai x Nova",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-09-15",
   "t": "14:00",
   "sport": "Futebol",
@@ -247,7 +184,7 @@
   "country": "Mundial",
   "league": "Elche",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -431,6 +368,288 @@
    },
    {
     "n": "Brasileirão Feminino",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Deportivo La Coruna x Sevilla",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Atletico Madrid x Osasuna",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "3ª Divisão Alemã",
+  "detail": "Rodada 6",
+  "match": "Preussen Munster x FC Saarbrücken",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Russo",
+  "detail": "Rodada 9",
+  "match": "Baltika x Zenit Saint",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 32",
+  "match": "Everton x Wolves",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 32",
+  "match": "Manchester United x Brighton",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Barcelona x Racing Santander",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Levante x Athletic Club",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Barcelona",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Quartas de Final",
+  "match": "LDU x de Quito Palmeiras",
+  "ch": [
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Argentina",
+  "detail": "Quartas de Final",
+  "match": "Independ. Rivadavia x Atletico Tucuman",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 21",
+  "match": "Botafogo x Grêmio",
+  "ch": [
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Quartas de Final",
+  "match": "Corinthians x Estudiantes",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Quartas de Final",
+  "match": "CS Cartagines x Deportivo Saprissa",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
     "y": "tv"
    }
   ],
