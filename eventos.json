@@ -1,141 +1,20 @@
 [
  {
-  "date": "2026-09-15",
-  "t": "20:00",
+  "date": "2026-09-16",
+  "t": "13:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Caribbean Cup - Fase de Grupos",
-  "detail": "Rodada 5",
-  "match": "Delfines Del Este x Defence Force",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Omonia Nicosia x Celta Vigo",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Caribbean Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-15",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Caribbean Cup - Fase de Grupos",
-  "detail": "Rodada 5",
-  "match": "Violette AC x Club Sando",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Caribbean Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-15",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 28",
-  "match": "CRB x Recife",
-  "ch": [
-   {
-    "n": "Canal Goat",
+    "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-15",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CRB",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-09-15",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Brasileirão Feminino",
-  "detail": "Semifinal",
-  "match": "Bahia x Corinthians",
-  "ch": [
-   {
-    "n": "Tv Brasil",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "N Sports",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão Feminino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-15",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Quartas de Final",
-  "match": "São Paulo x Boca Juniors",
-  "ch": [
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Conmebol Sul-Americana",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-09-16",
@@ -145,12 +24,8 @@
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 6",
-  "match": "Deportivo La Coruna x Sevilla",
+  "match": "Atletico Madrid x Osasuna",
   "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
    {
     "n": "CazéTV",
     "y": "free"
@@ -170,8 +45,12 @@
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 6",
-  "match": "Atletico Madrid x Osasuna",
+  "match": "Deportivo La Coruna x Sevilla",
   "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
    {
     "n": "CazéTV",
     "y": "free"
@@ -247,6 +126,48 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Sunderland x AZ Alkmaar",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "AC Milan x Benfica",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Inglaterra",
   "league": "Copa da liga Inglesa",
   "detail": "Round of 32",
@@ -262,6 +183,74 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Anderlecht x Lyon",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Hapoel Beer Sheva x Dinamo Zagreb",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Olympiakos Piraeus x Jagiellonia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Bayer Leverkusen x Celje",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-09-16",
@@ -309,7 +298,7 @@
   "country": "Mundial",
   "league": "Barcelona",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -407,6 +396,317 @@
   "league": "CONCACAF Central American Cup",
   "detail": "Quartas de Final",
   "match": "CS Cartagines x Deportivo Saprissa",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "00:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Quartas de Final",
+  "match": "Alianza x CD Motagua",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-17",
+  "t": "10:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Russo",
+  "detail": "Rodada 9",
+  "match": "Orenburg x Krasnodar",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Levski Sofia x Red Bull Salzburg",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-17",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Real Betis x Getafe",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Russo",
+  "detail": "Rodada 9",
+  "match": "Makhachkala x CSKA Moscow",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Bandsports",
+    "y": "tv"
+   },
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Copa da liga Inglesa",
+  "detail": "Round of 32",
+  "match": "Manchester City x Norwich",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Juventus x NEC Nijmegen",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Real Sociedad x Bournemouth",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Besiktas x Marseille",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "1",
+  "match": "Crystal Palace x Lech Poznan",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-17",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 6",
+  "match": "Malaga x Villarreal",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Caribbean Cup - Fase de Grupos",
+  "detail": "Rodada 5",
+  "match": "Mount Pleasant Academy x Cavalier",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Caribbean Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Caribbean Cup - Fase de Grupos",
+  "detail": "Rodada 5",
+  "match": "Cibao x Portmore United",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Caribbean Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Quartas de Final",
+  "match": "Flamengo x Independiente del Valle",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-17",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Quartas de Final",
+  "match": "LD Alajuelense x CD Marathon",
   "ch": [
    {
     "n": "Disney+",
