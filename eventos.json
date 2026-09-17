@@ -1,23 +1,6 @@
 [
  {
   "date": "2026-09-17",
-  "t": "00:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Central American Cup",
-  "detail": "Quartas de Final",
-  "match": "Alianza x CD Motagua",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-17",
   "t": "10:15",
   "sport": "Futebol",
   "g": "M",
