@@ -7,7 +7,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Europa League - League Stage",
   "detail": "1",
-  "match": "Levski Sofia x Red Bull Salzburg",
+  "match": "FIM DE x Sofia 0 Red",
   "ch": [
    {
     "n": "CazéTV",
@@ -15,178 +15,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-09-17",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 6",
-  "match": "Real Betis x Getafe",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 9",
-  "match": "Makhachkala x CSKA Moscow",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Round of 32",
-  "match": "Manchester City x Norwich",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "1",
-  "match": "Juventus x NEC Nijmegen",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "1",
-  "match": "Real Sociedad x Bournemouth",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "1",
-  "match": "Besiktas x Marseille",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "1",
-  "match": "Crystal Palace x Lech Poznan",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-17",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 6",
-  "match": "Malaga x Villarreal",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-09-17",
@@ -196,7 +24,7 @@
   "country": "Mundial",
   "league": "Caribbean Cup - Fase de Grupos",
   "detail": "Rodada 5",
-  "match": "Mount Pleasant Academy x Cavalier",
+  "match": "Cibao x Portmore United",
   "ch": [
    {
     "n": "Disney+",
@@ -217,7 +45,7 @@
   "country": "Mundial",
   "league": "Caribbean Cup - Fase de Grupos",
   "detail": "Rodada 5",
-  "match": "Cibao x Portmore United",
+  "match": "Mount Pleasant Academy x Cavalier",
   "ch": [
    {
     "n": "Disney+",
