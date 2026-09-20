@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 20/09 00:10 BRT — janela 2026-09-20 a 2026-09-26",
+   "Coleta 20/09 06:00 BRT — janela 2026-09-20 a 2026-09-26",
    "  ✓ futebolnatv: 42 evento(s)",
-   "  ✓ mantosdofutebol: 84 evento(s)",
+   "  ✓ mantosdofutebol: 78 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 0 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✗ ESPN NBA indisponível (JSONDecodeError: Expecting value: line 1 column 1 (char 0))",
