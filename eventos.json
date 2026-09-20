@@ -22,168 +22,16 @@
  },
  {
   "date": "2026-09-20",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 29",
-  "match": "Ponte x CRB",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "12:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 5",
-  "match": "Fulham x Manchester United",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "7",
-  "match": "Danubio x Wanderers",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 5",
-  "match": "Juventus x Atalanta",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "14:00",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 6",
-  "match": "Amed x Besiktas",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "10",
+  "match": "Sport x UTC",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Chicago FC United x Chattanooga",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "FC Cincinnati II x Crown Legacy",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "Columbus Crew II x Carolina Core",
-  "ch": [
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS Next Pro - Grupo",
-  "detail": "Stage",
-  "match": "New York RB II x Huntsville City",
-  "ch": [
-   {
-    "n": "Onefootball",
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
@@ -405,23 +253,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "3",
-  "match": "Paysandu x Inter De Limeira",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 29",
   "match": "Londrina x Fortaleza",
@@ -441,6 +272,23 @@
    {
     "n": "Disney+",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-20",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "3",
+  "match": "Paysandu x Inter De Limeira",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
    }
   ],
   "v": 2
