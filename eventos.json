@@ -1,122 +1,13 @@
 [
  {
   "date": "2026-09-20",
-  "t": "07:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 7",
-  "match": "Feyenoord x Utrecht",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "07:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 5",
-  "match": "Fiorentina x Napoli",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
   "t": "08:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
   "league": "2ª Divisão Alemã",
   "detail": "Rodada 6",
-  "match": "Arminia Bielefeld x FC Heidenheim",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 6",
-  "match": "Energie Cottbus x FC St. Pauli",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 7",
-  "match": "AZ Alkmaar x Telstar",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 7",
-  "match": "TSV Hartberg x Lask Linz",
+  "match": "FIM DE x Cottbus 1 FC",
   "ch": [
    {
     "n": "Ppv",
@@ -128,127 +19,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 5",
-  "match": "Leeds x Crystal Palace",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 5",
-  "match": "Bournemouth x Liverpool",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 5",
-  "match": "Frosinone x como",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "7",
-  "match": "Albion FC x Juventud",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 4",
-  "match": "Bayer Leverkusen x RB Leipzig",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-09-20",
@@ -256,79 +26,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 28",
-  "match": "Grêmio x Palmeiras",
-  "ch": [
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 6",
-  "match": "Fenerbahce x Eyupspor",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 29",
+  "match": "Ponte x CRB",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 7",
-  "match": "Waldhof Mannheim x Preussen Munster",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-20",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 7",
-  "match": "Red Bull Salzburg x Sturm Graz",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-20",
@@ -360,27 +67,6 @@
   "t": "13:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 5",
-  "match": "Juventus x Atalanta",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "7",
@@ -393,6 +79,27 @@
    {
     "n": "Campeonato Uruguaio",
     "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-20",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Rodada 5",
+  "match": "Juventus x Atalanta",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -509,13 +216,21 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "3",
-  "match": "Santa Cruz x Floresta",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 28",
+  "match": "Corinthians x Fluminense",
   "ch": [
    {
-    "n": "Sportynet",
+    "n": "Globo",
     "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -555,21 +270,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 28",
-  "match": "Corinthians x Fluminense",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 29",
+  "match": "Goiás x Avai",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "Premiere",
+    "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
    }
   ],
   "v": 2
@@ -580,13 +287,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 29",
-  "match": "Goiás x Avai",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "3",
+  "match": "Santa Cruz x Floresta",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Sportynet",
+    "y": "free"
    }
   ],
   "v": 2
@@ -698,6 +405,23 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "3",
+  "match": "Paysandu x Inter De Limeira",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-20",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "Rodada 29",
   "match": "Londrina x Fortaleza",
@@ -717,23 +441,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-20",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "3",
-  "match": "Paysandu x Inter De Limeira",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
    }
   ],
   "v": 2
