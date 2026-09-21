@@ -1,17 +1,17 @@
 [
  {
   "date": "2026-09-21",
-  "t": "19:30",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "7",
-  "match": "Central Espanol x Atletico Torque",
+  "country": "Brasil",
+  "league": "Paulista Sub-20",
+  "detail": "Round of 32",
+  "match": "EC São x U20 0",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
