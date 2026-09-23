@@ -1,41 +1,20 @@
 [
  {
   "date": "2026-09-23",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "Azerbaijão x Tajiquistão",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-23",
-  "t": "13:45",
+  "t": "16:00",
   "sport": "Futebol",
   "g": "F",
   "country": "Europa (demais)",
   "league": "Champions League Feminina - League Stage",
   "detail": "1",
-  "match": "OH Leuven x Roma",
+  "match": "FIM DE x 1 Austria",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-23",
@@ -45,28 +24,7 @@
   "country": "Europa (demais)",
   "league": "Champions League Feminina - League Stage",
   "detail": "1",
-  "match": "Chelsea x Austria ien",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-23",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "Champions League Feminina - League Stage",
-  "detail": "1",
-  "match": "Barcelona x Paris FC",
+  "match": "FIM DE x 5 Paris",
   "ch": [
    {
     "n": "ESPN",
@@ -74,27 +32,6 @@
    },
    {
     "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-23",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "9",
-  "match": "ADT x Cienciano",
-  "ch": [
-   {
-    "n": "Fanatiz",
     "y": "stream"
    }
   ],
