@@ -12,9 +12,13 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-24",
@@ -29,9 +33,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-24",
@@ -46,9 +54,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-24",
@@ -67,9 +79,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-24",
