@@ -1,40 +1,6 @@
 [
  {
   "date": "2026-09-26",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League B",
-  "detail": "1",
-  "match": "Eslovênia x Escócia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-26",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "8",
-  "match": "Progreso x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-26",
   "t": "13:00",
   "sport": "Futebol",
   "g": "M",
@@ -46,9 +12,13 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -63,9 +33,13 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -80,9 +54,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -97,9 +75,13 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -128,16 +110,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "4",
-  "match": "Floresta x Cruz SPORTYNET",
+  "league": "Copa Paulista",
+  "detail": "Semifinal",
+  "match": "Gremio Prudente x Joao",
   "ch": [
    {
     "n": "A confirmar",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -145,9 +127,9 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Copa Paulista",
-  "detail": "Semifinal",
-  "match": "Gremio Prudente x Joao",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "4",
+  "match": "Floresta x Cruz SPORTYNET",
   "ch": [
    {
     "n": "A confirmar",
@@ -169,9 +151,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -186,9 +172,13 @@
    {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "Nwsl",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -205,7 +195,32 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-09-26",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 27",
+  "match": "Charlotte x Chicago Fire",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -230,13 +245,13 @@
  },
  {
   "date": "2026-09-26",
-  "t": "20:30",
+  "t": "21:30",
   "sport": "Futebol",
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 27",
-  "match": "Charlotte x Chicago Fire",
+  "match": "Austin x San Diego",
   "ch": [
    {
     "n": "Apple",
@@ -245,19 +260,23 @@
    {
     "n": "Tv",
     "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
-  "t": "20:30",
+  "t": "21:30",
   "sport": "Futebol",
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 27",
-  "match": "New York Red Bulls x St. Louis City",
+  "match": "Houston Dynamo x Sporting Kansas City",
   "ch": [
    {
     "n": "Apple",
@@ -289,45 +308,41 @@
  },
  {
   "date": "2026-09-26",
-  "t": "21:30",
+  "t": "21:45",
   "sport": "Futebol",
-  "g": "M",
+  "g": "F",
   "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 27",
-  "match": "Houston Dynamo x Sporting Kansas City",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Portland Thorns x Houston Dash",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
+    "n": "XSports",
+    "y": "free"
    },
    {
-    "n": "Tv",
+    "n": "Nwsl",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
-  "t": "21:30",
+  "t": "22:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 27",
-  "match": "Austin x San Diego",
+  "country": "Mundial",
+  "league": "Amistosos Seleções",
+  "detail": "Friendly International",
+  "match": "México x Colômbia",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
+    "n": "SporTV",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -349,6 +364,31 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-09-26",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 27",
+  "match": "San Jose Earthquakes x Portland Timbers",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-09-26",
@@ -380,27 +420,6 @@
   "league": "MLS",
   "detail": "Rodada 27",
   "match": "Whitecaps x DC United",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-26",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 27",
-  "match": "San Jose Earthquakes x Portland Timbers",
   "ch": [
    {
     "n": "Apple",
