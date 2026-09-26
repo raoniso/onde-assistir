@@ -1,90 +1,6 @@
 [
  {
   "date": "2026-09-26",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League C",
-  "detail": "1",
-  "match": "Islândia x Estônia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-26",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League C",
-  "detail": "1",
-  "match": "Bulgária x Luxemburgo",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-26",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "8",
-  "match": "Cerro Largo x Club Nacional",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-26",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League A",
-  "detail": "1",
-  "match": "Inglaterra x Espanha",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-26",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -163,6 +79,23 @@
   "date": "2026-09-26",
   "t": "19:30",
   "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "4",
+  "match": "Inter De Limeira x Paysandu",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-09-26",
+  "t": "19:30",
+  "sport": "Futebol",
   "g": "F",
   "country": "EUA/Canadá",
   "league": "NWSL Feminina - Grupo",
@@ -176,23 +109,6 @@
    {
     "n": "Nwsl",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-09-26",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "4",
-  "match": "Inter De Limeira x Paysandu",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
    }
   ],
   "v": 2
@@ -273,6 +189,23 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "8",
+  "match": "Atletico Torque x Deportivo Maldonado",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-09-26",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 27",
@@ -285,23 +218,6 @@
    {
     "n": "Tv",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-26",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "8",
-  "match": "Atletico Torque x Deportivo Maldonado",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
