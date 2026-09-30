@@ -1,40 +1,6 @@
 [
  {
   "date": "2026-09-30",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "Champions League Feminina - League Stage",
-  "detail": "2",
-  "match": "Paris FC x Arsenal",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-30",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "Champions League Feminina - League Stage",
-  "detail": "2",
-  "match": "Hacken x Juventus",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-09-30",
   "t": "16:00",
   "sport": "Futebol",
   "g": "F",
@@ -46,9 +12,13 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Champions League Feminina",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-09-30",
@@ -103,7 +73,7 @@
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-01",
@@ -118,9 +88,13 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-01",
@@ -135,9 +109,13 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-01",
@@ -154,7 +132,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-01",
@@ -183,7 +161,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-01",
