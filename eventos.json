@@ -12,13 +12,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-30",
@@ -33,13 +29,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-30",
@@ -54,13 +46,9 @@
    {
     "n": "ESPN",
     "y": "tv"
-   },
-   {
-    "n": "Uefa Champions League Feminina",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-09-30",
@@ -115,7 +103,7 @@
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-01",
@@ -130,13 +118,9 @@
    {
     "n": "SporTV",
     "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-01",
@@ -151,13 +135,9 @@
    {
     "n": "ESPN",
     "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-01",
@@ -174,7 +154,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-01",
@@ -203,7 +183,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-01",
