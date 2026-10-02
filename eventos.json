@@ -1,6 +1,27 @@
 [
  {
   "date": "2026-10-02",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Suzhou Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-02",
   "t": "01:30",
   "sport": "Fórmula 1",
   "g": "M",
@@ -62,27 +83,6 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-02",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League B",
-  "detail": "3",
-  "match": "Ucrânia x do Norte",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    },
    {
     "n": "Uefa Nations League",
@@ -675,27 +675,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-05",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Suzhou Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-05",
