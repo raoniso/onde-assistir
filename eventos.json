@@ -47,94 +47,6 @@
  },
  {
   "date": "2026-10-02",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League A",
-  "detail": "3",
-  "match": "Bélgica x Turquia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-02",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League A",
-  "detail": "3",
-  "match": "França x Itália",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-02",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League C",
-  "detail": "3",
-  "match": "Ilhas Faroé x Eslováquia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-02",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League B",
-  "detail": "3",
-  "match": "Bósnia e Herzegovina x Suécia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-02",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -158,7 +70,7 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 21",
-  "match": "São Paulo x Santos",
+  "match": "São x Santos",
   "ch": [
    {
     "n": "SporTV",
