@@ -50,52 +50,35 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 31",
-  "match": "Avai x Ceará",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-03",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistosos Seleções",
-  "detail": "Friendly International",
-  "match": "India x Brasil",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-03",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "9",
-  "match": "Liverpool Montevideo x Progreso",
+  "match": "Liverpool x Progreso",
   "ch": [
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-03",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Avaí x Ceará",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -117,9 +100,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -134,6 +121,27 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-03",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Espanha",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -201,9 +209,30 @@
    {
     "n": "N Sports",
     "y": "free"
+   },
+   {
+    "n": "Brasileirão Feminino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-03",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 31",
+  "match": "Cuiabá x Ponte Preta",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -224,40 +253,6 @@
  },
  {
   "date": "2026-10-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 31",
-  "match": "Cuiabá x Ponte Preta",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C - Second Stage",
-  "detail": "5",
-  "match": "Santa Cruz x Maringá",
-  "ch": [
-   {
-    "n": "Sportynet",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-03",
   "t": "18:00",
   "sport": "Futebol",
   "g": "M",
@@ -269,9 +264,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -292,7 +291,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -326,7 +325,36 @@
     "y": "free"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-03",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série C - Second Stage",
+  "detail": "5",
+  "match": "Inter De Limeira x Brusque",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Canal",
+    "y": "tv"
+   },
+   {
+    "n": "Do",
+    "y": "tv"
+   },
+   {
+    "n": "Benja",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -364,7 +392,7 @@
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-03",
@@ -379,9 +407,13 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -425,6 +457,27 @@
    {
     "n": "F1 Tv Pro",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-04",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League - League D",
+  "detail": "4",
+  "match": "Azerbaijão x Lituânia",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -547,6 +600,10 @@
    {
     "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    },
    {
     "n": "Uefa Nations League",
