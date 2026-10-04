@@ -47,40 +47,6 @@
  },
  {
   "date": "2026-10-04",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League D",
-  "detail": "4",
-  "match": "Azerbaijão x Lituânia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-04",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "9",
-  "match": "Danubio x Cerro Largo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-04",
   "t": "13:00",
   "sport": "Futebol",
   "g": "M",
@@ -92,9 +58,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -113,9 +83,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -130,9 +104,13 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -164,9 +142,13 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -185,9 +167,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Uefa Nations League",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -202,9 +188,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -236,9 +226,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-04",
@@ -281,6 +275,27 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-05",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Rolex Shanghai Masters",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-05",
@@ -676,27 +691,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-07",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Rolex Shanghai Masters",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-07",
