@@ -1,69 +1,6 @@
 [
  {
   "date": "2026-10-06",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League A",
-  "detail": "4",
-  "match": "Croácia x Espanha",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-06",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League - League A",
-  "detail": "4",
-  "match": "Inglaterra x República Tcheca",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Uefa Nations League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-06",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglaterra",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-06",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -141,6 +78,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-06",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Goiás",
+  "detail": "—",
+  "match": "Hoje x em",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-06",
