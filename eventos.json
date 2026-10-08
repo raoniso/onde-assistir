@@ -538,6 +538,23 @@
   "v": 2
  },
  {
+  "date": "2026-10-09",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "Deportivo Garcilaso x Sport Huancayo",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-10-10",
   "t": "06:00",
   "sport": "Fórmula 1",
@@ -1727,7 +1744,7 @@
   "country": "Mundial",
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
-  "match": "Wuhan Open",
+  "match": "Dongfeng Voyah Wuhan Open",
   "ch": [
    {
     "n": "ESPN",
