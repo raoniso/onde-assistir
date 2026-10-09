@@ -68,122 +68,25 @@
  },
  {
   "date": "2026-10-09",
-  "t": "13:30",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 7",
-  "match": "FC Heidenheim x FC Kaiserslautern",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 7",
-  "match": "Eintracht Braunschweig x Holstein Kiel",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
+  "country": "Mundial",
+  "league": "Campeonato Saudita",
   "detail": "Rodada 8",
-  "match": "Moreirense x GIL Vicente",
+  "match": "FIM DE x 3 Al",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 8",
-  "match": "PSV Eindhoven x Heerenveen",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "XSports",
+    "y": "free"
    },
    {
-    "n": "Eredivisie",
+    "n": "SporTV",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Oitavas de Final",
-  "match": "Santo André Sub-20 Juventus x Sub-20",
-  "ch": [
+   },
    {
-    "n": "A confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulista Sub-20",
-  "detail": "Oitavas de Final",
-  "match": "Flamengo SP Sub-20 RB x Bragantino Sub-20",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
+    "n": "Canal Goat",
+    "y": "free"
    }
   ],
   "v": 1
@@ -194,32 +97,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 5",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
   "match": "Borussia Dortmund x Werder Bremen",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-09",
@@ -228,19 +115,15 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Rodada 6",
+  "detail": "Tabela oficial",
   "match": "Lens x Lyon",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-09",
@@ -248,20 +131,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 8",
-  "match": "Malaga x Espanyol",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Málaga x Espanyol",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-09",
@@ -271,7 +150,7 @@
   "country": "América do Sul",
   "league": "Campeonato Uruguaio - Clausura",
   "detail": "10",
-  "match": "Atletico Torque x Danubio",
+  "match": "Atletico x Danubio",
   "ch": [
    {
     "n": "Disney+",
