@@ -1,6 +1,27 @@
 [
  {
   "date": "2026-10-09",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Dongfeng Voyah Wuhan Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-09",
   "t": "05:30",
   "sport": "Fórmula 1",
   "g": "M",
@@ -1729,6 +1750,27 @@
  {
   "date": "2026-10-10",
   "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "Universitario x Melgar",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Peruano",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-10",
+  "t": "21:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -2511,27 +2553,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-12",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Dongfeng Voyah Wuhan Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-12",
