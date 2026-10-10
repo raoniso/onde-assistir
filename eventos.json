@@ -1,224 +1,5 @@
 [
  {
-  "date": "2026-10-09",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Dongfeng Voyah Wuhan Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "05:30",
-  "sport": "Fórmula 1",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Fórmula 1",
-  "detail": "FP1",
-  "match": "Singapore Airlines Singapore Grand Prix",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "F1 Tv Pro",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "09:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA China Game",
-  "match": "Houston Rockets x Dallas Mavericks",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Saudita",
-  "detail": "Rodada 8",
-  "match": "FIM DE x 3 Al",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "Borussia Dortmund x Werder Bremen",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Lens x Lyon",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Málaga x Espanyol",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "10",
-  "match": "Atletico x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-09",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "10",
-  "match": "Deportivo Maldonado x Liverpool Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Uru – Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "Memphis Grizzlies x Chicago Bulls",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-09",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "11",
-  "match": "Deportivo Garcilaso x Sport Huancayo",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-10-10",
   "t": "06:00",
   "sport": "Fórmula 1",
@@ -260,13 +41,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -285,13 +62,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -310,13 +83,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -371,7 +140,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -411,13 +180,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -440,13 +205,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -469,13 +230,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -528,13 +285,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -549,13 +302,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -574,34 +323,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "10",
-  "match": "Defensor Sporting x Cerro",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -633,6 +357,23 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "10",
+  "match": "Defensor Sporting x Cerro",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
   "detail": "Tabela oficial",
@@ -653,7 +394,7 @@
   "country": "Mundial",
   "league": "Alavés",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -776,13 +517,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -797,13 +534,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Turco",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -839,13 +572,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -864,13 +593,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -885,13 +610,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -906,13 +627,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -969,13 +686,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -989,6 +702,23 @@
   "ch": [
    {
     "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "12",
+  "match": "Barracas Central x Huracan",
+  "ch": [
+   {
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -1013,7 +743,7 @@
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1028,13 +758,9 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1049,27 +775,6 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "12",
-  "match": "Barracas Central x Huracan",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -1138,13 +843,26 @@
    {
     "n": "CazéTV",
     "y": "free"
-   },
-   {
-    "n": "Laliga",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "Rodada 8",
+  "match": "Academico Viseu x Estoril",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1167,23 +885,6 @@
    {
     "n": "GE TV",
     "y": "free"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 8",
-  "match": "Academico Viseu x Estoril",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -1219,7 +920,7 @@
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1252,7 +953,7 @@
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1270,35 +971,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-10",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 30",
-  "match": "Vasco x Remo",
-  "ch": [
-   {
-    "n": "Record",
-    "y": "free"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-10",
@@ -1352,6 +1024,31 @@
  },
  {
   "date": "2026-10-10",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 30",
+  "match": "Vasco x Remo",
+  "ch": [
+   {
+    "n": "Record",
+    "y": "free"
+   },
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
   "t": "18:30",
   "sport": "Futebol",
   "g": "M",
@@ -1363,13 +1060,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1451,13 +1144,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1476,13 +1165,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1501,63 +1186,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 28",
-  "match": "Philadelphia Union x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 28",
-  "match": "Charlotte x FC Dallas",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1568,6 +1199,27 @@
   "league": "MLS",
   "detail": "Rodada 28",
   "match": "New England x Seattle Sounders",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 28",
+  "match": "Philadelphia Union x Real Salt Lake",
   "ch": [
    {
     "n": "Apple",
@@ -1603,49 +1255,24 @@
  },
  {
   "date": "2026-10-10",
-  "t": "21:00",
+  "t": "20:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 30",
-  "match": "São Paulo x Vitória",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 28",
+  "match": "Charlotte x FC Dallas",
   "ch": [
    {
-    "n": "SporTV",
+    "n": "Apple",
     "y": "tv"
    },
    {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Tv",
     "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "11",
-  "match": "Universitario x Melgar",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Peruano",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1691,28 +1318,41 @@
  },
  {
   "date": "2026-10-10",
-  "t": "21:30",
+  "t": "21:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 28",
-  "match": "Minnesota United FC x Houston Dynamo",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 30",
+  "match": "São Paulo x Vitória",
   "ch": [
    {
-    "n": "Apple",
+    "n": "SporTV",
     "y": "tv"
    },
    {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
+    "n": "Premiere FC",
+    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "Universitario x Melgar",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1752,6 +1392,27 @@
    {
     "n": "Disney+",
     "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-10",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 28",
+  "match": "Minnesota United FC x Houston Dynamo",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1811,38 +1472,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-10",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 28",
-  "match": "Los Angeles FC x Whitecaps",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-10",
@@ -1864,6 +1496,27 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-10",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 28",
+  "match": "Los Angeles FC x Whitecaps",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-11",
@@ -1893,15 +1546,90 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Como x AS Roma",
+  "detail": "Rodada 6",
+  "match": "como x Roma",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "08:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2ª Divisão Alemã",
+  "detail": "Rodada 7",
+  "match": "Hertha Berlin x SpVgg Greuther Furth",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "08:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2ª Divisão Alemã",
+  "detail": "Rodada 7",
+  "match": "VfL BOCHUM x Arminia Bielefeld",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 8",
+  "match": "Elche x Celta Vigo",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -1930,17 +1658,21 @@
  },
  {
   "date": "2026-10-11",
-  "t": "09:00",
+  "t": "09:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Elche x Celta Vigo",
+  "country": "Mundial",
+  "league": "Campeonato Austríaco",
+  "detail": "Rodada 8",
+  "match": "TSV Hartberg x Austria Lustenau",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Ppv",
     "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1950,17 +1682,38 @@
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Crystal Palace x Nottingham Forest",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Rodada 6",
+  "match": "Nice x Strasbourg",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Ligue 1",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Rodada 6",
+  "match": "Lecce x Bologna",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -1968,16 +1721,45 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
+  "league": "Campeonato Inglês",
+  "detail": "Rodada 6",
   "match": "Hull City x Everton",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Premier League",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Campeonato Inglês",
+  "detail": "Rodada 6",
+  "match": "Crystal Palace x Nottingham Forest",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -1998,34 +1780,17 @@
  },
  {
   "date": "2026-10-11",
-  "t": "10:00",
+  "t": "10:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Lecce x Bologna",
+  "country": "Alemanha",
+  "league": "Campeonato Alemão",
+  "detail": "Rodada 5",
+  "match": "FC Koln x Borussia M",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-11",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Nice x Strasbourg",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
   "v": 1
@@ -2049,6 +1814,27 @@
  },
  {
   "date": "2026-10-11",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "10",
+  "match": "Juventud x Racing Montevideo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
   "t": "11:15",
   "sport": "Futebol",
   "g": "M",
@@ -2063,6 +1849,90 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "Rodada 8",
+  "match": "Rio Ave x Nacional",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Liga Portugal",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "3ª Divisão Alemã",
+  "detail": "Rodada 8",
+  "match": "Alemannia Aachen x FC Viktoria Koln",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Austríaco",
+  "detail": "Rodada 8",
+  "match": "Lask Linz x Rapid Vienna",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "12:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Rodada 6",
+  "match": "Rennes x Auxerre",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Ligue 1",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2087,12 +1957,37 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
+  "league": "Campeonato Inglês",
+  "detail": "Rodada 6",
   "match": "Liverpool x Manchester City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "12:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Liverpool",
+  "detail": "—",
+  "match": "Amanhã x em",
+  "ch": [
+   {
+    "n": "A confirmar",
     "y": "tv"
    }
   ],
@@ -2122,6 +2017,44 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
+  "detail": "Rodada 6",
+  "match": "Sassuolo x Milan SPORTYNET",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Turco",
+  "detail": "Rodada 7",
+  "match": "Besiktas x Kocaelispor",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Turco",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
   "detail": "Tabela oficial",
   "match": "Sassuolo x AC Milan",
   "ch": [
@@ -2138,13 +2071,101 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 8",
   "match": "Real Betis x Osasuna",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
     "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Russo",
+  "detail": "Rodada 10",
+  "match": "Rubin x Dinamo Moscow",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Bandsports",
+    "y": "tv"
+   },
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "3ª Divisão Alemã",
+  "detail": "Rodada 8",
+  "match": "Fortuna Dusseldorf x Verl",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Saudita",
+  "detail": "Rodada 8",
+  "match": "Al Shabab x Al Taawon",
+  "ch": [
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   },
+   {
+    "n": "Taawoun – Liga Saudita",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "UTC x Sporting Cristal",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -2156,15 +2177,19 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 6",
   "match": "Cagliari x Juventus",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2173,15 +2198,61 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Troyes x Marseille",
+  "detail": "Rodada 6",
+  "match": "Estac Troyes x Marseille",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Ligue 1",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 34",
+  "match": "Juventude x São Bernardo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 8",
+  "match": "Racing Santander x Valencia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2192,40 +2263,6 @@
   "league": "Brasileirão Série A",
   "detail": "Tabela oficial",
   "match": "Atlético-MG x Santos",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-11",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Juventude x São Bernardo",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-11",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Racing Santander x Valencia",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -2258,15 +2295,27 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 30",
   "match": "Flamengo x Fluminense",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2275,15 +2324,27 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 30",
   "match": "Grêmio x Internacional",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "Premiere FC",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2292,15 +2353,27 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 30",
   "match": "Palmeiras x Corinthians",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-11",
@@ -2309,12 +2382,58 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 33",
   "match": "Náutico x Vila Nova",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "17:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "Sport Boys x Alianza Atletico",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS Next Pro",
+  "detail": "Final",
+  "match": "New York RB II x Huntsville City",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -2326,12 +2445,58 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Cuiabá x Avaí",
+  "detail": "Rodada 33",
+  "match": "Cuiabá x Avai",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "10",
+  "match": "Central Espanol x Club Nacional",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 33",
+  "match": "Operário-PR Goiás x REDETV!",
+  "ch": [
+   {
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -2408,6 +2573,65 @@
    {
     "n": "NBA League Pass",
     "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-11",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 28",
+  "match": "St. Louis City x Los Angeles Galaxy",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "11",
+  "match": "Cusco x Alianza Lima",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino - Clausura",
+  "detail": "12",
+  "match": "Talleres Cordoba x Independiente",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Argentino",
+    "y": "tv"
    }
   ],
   "v": 2
@@ -3145,5 +3369,376 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "Eintracht Frankfurt x FC Cologne",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Frosinone x Sassuolo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "15:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Le Mans x Toulouse",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Deportivo x Levante",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Ponte Preta x Atlético Goianiense",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Miami Heat x Orlando Magic",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Boston Celtics x Philadelphia 76ers",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Toronto Raptors x Detroit Pistons",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Milwaukee Bucks x Indiana Pacers",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Mirassol x Internacional",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Sport x Fortaleza",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Atlanta Hawks x Dallas Mavericks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Sacramento Kings x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Charlotte Hornets x Memphis Grizzlies",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Washington Wizards x New Orleans Pelicans",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Minnesota Timberwolves x Chicago Bulls",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "23:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Portland Trail Blazers x Golden State Warriors",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "23:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Utah Jazz x Phoenix Suns",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "23:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Denver Nuggets x Los Angeles Lakers",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  }
 ]
