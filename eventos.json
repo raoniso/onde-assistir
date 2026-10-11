@@ -498,10 +498,10 @@
   "t": "13:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 6",
-  "match": "Sassuolo x Milan SPORTYNET",
+  "country": "Mundial",
+  "league": "Campeonato Turco",
+  "detail": "Rodada 7",
+  "match": "Besiktas x Kocaelispor",
   "ch": [
    {
     "n": "Disney+",
@@ -515,10 +515,10 @@
   "t": "13:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 7",
-  "match": "Besiktas x Kocaelispor",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Rodada 6",
+  "match": "Sassuolo x Milan SPORTYNET",
   "ch": [
    {
     "n": "Disney+",
@@ -755,31 +755,6 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 30",
-  "match": "Flamengo x Fluminense",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-11",
-  "t": "17:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 30",
   "match": "Grêmio x Internacional",
   "ch": [
    {
@@ -793,6 +768,31 @@
    {
     "n": "Premiere FC",
     "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-11",
+  "t": "17:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 30",
+  "match": "Flamengo x Fluminense",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
    }
   ],
   "v": 1
@@ -1146,27 +1146,6 @@
    },
    {
     "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "12",
-  "match": "Lanus x Velez Sarsfield",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
     "y": "tv"
    }
   ],
