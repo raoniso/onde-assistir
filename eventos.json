@@ -6,15 +6,15 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Rodada 6",
+  "detail": "Tabela oficial",
   "match": "Atalanta x Venezia",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-12",
@@ -582,23 +582,6 @@
   "country": "América do Sul",
   "league": "Copa Libertadores",
   "detail": "Semifinal",
-  "match": "Fluminense x Palmeiras",
-  "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Semifinal",
   "match": "Estudiantes x Flamengo",
   "ch": [
    {
@@ -620,7 +603,7 @@
   "country": "Mundial",
   "league": "Amistoso Feminino",
   "detail": "Friendly International Women",
-  "match": "Jamaica x Mexico",
+  "match": "Mexico x Jamaica",
   "ch": [
    {
     "n": "SporTV",
@@ -800,27 +783,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Panamá x Nova Zelândia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-13",
