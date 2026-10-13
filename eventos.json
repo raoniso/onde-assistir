@@ -22,151 +22,13 @@
  },
  {
   "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Viking x Bayern",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Inglês 2ª Divisão",
-  "detail": "Rodada 10",
-  "match": "Stoke City x Middlesbrough",
-  "ch": [
-   {
-    "n": "N Sports",
-    "y": "free"
-   },
-   {
-    "n": "Championship",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "RB Leipzig x PSV Eindhoven",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Atletico Madrid x Manchester United",
-  "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Villarreal x Napoli",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Galatasaray x Barcelona",
-  "ch": [
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "16:00",
+  "t": "17:00",
   "sport": "Futebol",
   "g": "F",
   "country": "Mundial",
   "league": "Amistoso Feminino",
   "detail": "Friendly International Women",
-  "match": "Haiti x Austrália",
+  "match": "Mexico x Jamaica",
   "ch": [
    {
     "n": "SporTV",
@@ -202,48 +64,6 @@
  },
  {
   "date": "2026-10-13",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Mexico x Jamaica",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Venezuela x Colômbia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -258,31 +78,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Estados Unidos x Espanha",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-13",
@@ -322,27 +117,6 @@
    {
     "n": "NBA League Pass",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Brasil x Argentina",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
    }
   ],
   "v": 2
@@ -940,6 +714,14 @@
   "detail": "Semifinal",
   "match": "Fluminense x Palmeiras",
   "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
    {
     "n": "Paramount+",
     "y": "stream"
