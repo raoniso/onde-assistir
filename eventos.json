@@ -1,66 +1,16 @@
 [
  {
   "date": "2026-10-14",
-  "t": "13:45",
+  "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League - League Stage",
   "detail": "2",
-  "match": "Feyenoord x como",
+  "match": "FIM DE x Donetsk 3 AEK",
   "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
    {
     "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 9",
-  "match": "Preussen Munster x Fortuna Dusseldorf",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-14",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 9",
-  "match": "FC Viktoria Koln x SG Sonnenhof Grossaspach",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -74,127 +24,14 @@
   "country": "Europa (demais)",
   "league": "Champions League - League Stage",
   "detail": "2",
-  "match": "Roma x Real Madrid",
-  "ch": [
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Slovan Bratislava x VfB Stuttgart",
+  "match": "FIM DE x 1 Borussia",
   "ch": [
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Real Betis x FC Porto",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "Aston Villa x Fenerbahce",
-  "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Roma",
-  "detail": "—",
-  "match": "Hoje x em",
-  "ch": [
-   {
-    "n": "A confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-14",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "11",
-  "match": "Sarmiento Junin x River Plate",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-14",
@@ -288,7 +125,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 29",
-  "match": "DC United x New York Red Bulls",
+  "match": "FC Cincinnati x New England",
   "ch": [
    {
     "n": "Apple",
@@ -309,7 +146,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 29",
-  "match": "FC Cincinnati x New England",
+  "match": "DC United x New York Red Bulls",
   "ch": [
    {
     "n": "Apple",
