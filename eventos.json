@@ -1,207 +1,5 @@
 [
  {
-  "date": "2026-10-13",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "FIM DE x 1 Saudi",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Mexico x Jamaica",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "Friendly International Women",
-  "match": "Chile x Bolivia",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Athletic x Londrina",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "20:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "Cleveland Cavaliers x Orlando Magic",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "20:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "New York Knicks x Toronto Raptors",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "Indiana Pacers x Oklahoma City Thunder",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "1st Leg",
-  "match": "Boca Juniors x Vasco da Gama",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-13",
-  "t": "23:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "Golden State Warriors x Los Angeles Lakers",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-13",
-  "t": "23:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "Temporada NBA",
-  "match": "Portland Trail Blazers x Sacramento Kings",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
   "date": "2026-10-14",
   "t": "13:45",
   "sport": "Futebol",
@@ -218,13 +16,9 @@
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -285,13 +79,9 @@
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -306,13 +96,9 @@
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -327,13 +113,9 @@
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -352,13 +134,9 @@
    {
     "n": "HBO Max",
     "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -368,7 +146,7 @@
   "country": "Mundial",
   "league": "Roma",
   "detail": "—",
-  "match": "Amanhã x em",
+  "match": "Hoje x em",
   "ch": [
    {
     "n": "A confirmar",
@@ -390,13 +168,9 @@
    {
     "n": "Disney+",
     "y": "stream"
-   },
-   {
-    "n": "Campeonato Argentino",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -414,31 +188,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-14",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 29",
-  "match": "Columbus Crew x Charlotte",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-14",
@@ -490,6 +239,27 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 29",
+  "match": "Columbus Crew x Charlotte",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-14",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 29",
   "match": "DC United x New York Red Bulls",
   "ch": [
    {
@@ -523,27 +293,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-14",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Caribbean Cup",
-  "detail": "Semifinal",
-  "match": "Club Sando x Mount Pleasant Academy",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Caribbean Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-14",
@@ -631,6 +380,23 @@
  },
  {
   "date": "2026-10-14",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Caribbean Cup",
+  "detail": "Semifinal",
+  "match": "Club Sando x Mount Pleasant Academy",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-14",
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
@@ -646,13 +412,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -671,13 +433,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -696,38 +454,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Semifinal",
-  "match": "Fluminense x Palmeiras",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -752,6 +481,31 @@
  },
  {
   "date": "2026-10-14",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Semifinal",
+  "match": "Fluminense x Palmeiras",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Paramount+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-14",
   "t": "22:30",
   "sport": "Futebol",
   "g": "M",
@@ -767,38 +521,9 @@
    {
     "n": "Tv",
     "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-14",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 29",
-  "match": "San Diego x Houston Dynamo",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-14",
@@ -864,6 +589,316 @@
   "v": 1
  },
  {
+  "date": "2026-10-14",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 29",
+  "match": "San Diego x Houston Dynamo",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "AZ Alkmaar x Hapoel Beer Sheva",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Lech Poznan x Bayer Leverkusen",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Red Bull Salzburg x AC Milan",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Sparta Praha x Lillestrom",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Union St. Gilloise x Real Sociedad",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Celje x Omonia Nicosia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Torreense x Sunderland",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "CSKA Sofia x Monaco",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Lyon x Crystal Palace",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Al-Ahli Jeddah",
+  "detail": "—",
+  "match": "Amanhã Começa em x — Al-Nassr",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Bournemouth x Sturm Graz",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "1899 Hoffenheim x Besiktas",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Benfica x Celtic",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "NEC Nijmegen x Levski Sofia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Celta Vigo x Juventus",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Dinamo Zagreb x Anderlecht",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Ferencvarosi TC x Plzen",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-10-15",
   "t": "20:30",
   "sport": "Basquete",
@@ -912,12 +947,16 @@
   "g": "M",
   "country": "América do Sul",
   "league": "Copa Libertadores",
-  "detail": "1st Leg",
-  "match": "Estudiantes de La Plata x Flamengo",
+  "detail": "Semifinal",
+  "match": "Estudiantes x Flamengo",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -2417,5 +2456,102 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Boston Celtics x Detroit Pistons",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-20",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "Londrina x Cuiabá",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Philadelphia 76ers x New York Knicks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-20",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Copa Sul-Americana",
+  "detail": "2nd Leg - Vasco da Gama lead 1-0 on aggregate",
+  "match": "Vasco da Gama x Boca Juniors",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "22:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Oklahoma City Thunder x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  }
 ]
