@@ -1,55 +1,464 @@
 [
  {
   "date": "2026-10-15",
-  "t": "16:00",
+  "t": "13:45",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
+  "league": "UEFA Europa League - League Stage",
   "detail": "2",
-  "match": "FIM DE x 1 Borussia",
+  "match": "Lech Poznan x Bayer Leverkusen",
   "ch": [
    {
-    "n": "HBO Max",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-15",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "2",
-  "match": "FIM DE x Donetsk 3 AEK",
-  "ch": [
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-15",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Semifinal",
-  "match": "FIM DE x 3 Atletico",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    },
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Red Bull Salzburg x AC Milan",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Union St. Gilloise x Real Sociedad",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Torreense x Sunderland",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "Panathinaikos x Borac Banja Luka",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "CSKA Sofia x Monaco",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "KuPS x Trabzonspor",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Lyon x Crystal Palace",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "AZ Alkmaar x Hapoel Beer Sheva",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Sparta Praha x Lillestrom",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Celje x Omonia Nicosia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "13:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "Universitatea Craiova x Getafe",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Al-Ahli Jeddah",
+  "detail": "—",
+  "match": "Hoje Começa em x — Al-Nassr",
+  "ch": [
+   {
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Bournemouth x Sturm Graz",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "1899 Hoffenheim x Besiktas",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Celta Vigo x Juventus",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Dinamo Zagreb x Anderlecht",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "Brighton x Kauno Zalgiris",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "FC Copenhagen x SC Braga",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Conference League - League Stage",
+  "detail": "1",
+  "match": "Atalanta x Pafos",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Marseille x Olympiakos Piraeus",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Benfica x Celtic",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "NEC Nijmegen x Levski Sofia",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-15",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Europa League - League Stage",
+  "detail": "2",
+  "match": "Ferencvarosi TC x Plzen",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
   "v": 1
@@ -77,41 +486,24 @@
  },
  {
   "date": "2026-10-15",
-  "t": "20:30",
+  "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 29",
-  "match": "FIM DE x Impact 0 Atlanta",
+  "country": "América do Sul",
+  "league": "Copa Libertadores",
+  "detail": "Semifinal",
+  "match": "Estudiantes x Flamengo",
   "ch": [
    {
-    "n": "Apple",
+    "n": "ESPN",
     "y": "tv"
    },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-15",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Caribbean Cup",
-  "detail": "Semifinal",
-  "match": "FIM DE x Sando 1 Mount",
-  "ch": [
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-15",
@@ -135,243 +527,64 @@
   "v": 2
  },
  {
-  "date": "2026-10-15",
-  "t": "21:30",
+  "date": "2026-10-16",
+  "t": "08:35",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 29",
-  "match": "FIM DE x SC 4 Sporting",
+  "country": "Mundial",
+  "league": "Campeonato Chinês",
+  "detail": "Rodada 28",
+  "match": "Henan Jianye x (CANAL",
   "ch": [
    {
-    "n": "Apple",
+    "n": "A confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2ª Divisão Alemã",
+  "detail": "Rodada 8",
+  "match": "Energie Cottbus x FC Nurnberg",
+  "ch": [
+   {
+    "n": "Ppv",
     "y": "tv"
    },
    {
-    "n": "Tv",
+    "n": "Onefootball",
+    "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
-  "date": "2026-10-15",
-  "t": "21:30",
+  "date": "2026-10-16",
+  "t": "14:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "1st Leg",
-  "match": "Estudiantes de La Plata x Flamengo",
+  "country": "Mundial",
+  "league": "Campeonato Austríaco",
+  "detail": "Rodada 9",
+  "match": "Rapid Vienna x TSV Hartberg",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Ppv",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Lyon x Crystal Palace",
-  "ch": [
+   },
    {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "AZ Alkmaar x Hapoel Beer Sheva",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Lech Poznan x Bayer Leverkusen",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Red Bull Salzburg x AC Milan",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Sparta Praha x Lillestrom",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Union St. Gilloise x Real Sociedad",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Celje x Omonia Nicosia",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Torreense x Sunderland",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "Panathinaikos x Borac Banja Luka",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "Universitatea Craiova x Getafe",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "CSKA Sofia x Monaco",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "13:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "KuPS x Trabzonspor",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -382,13 +595,59 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Al-Ahli Jeddah",
-  "detail": "—",
-  "match": "Hoje Começa em x — Al-Nassr",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "12",
+  "match": "Sport Huancayo x Cusco",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Paulista Sub-20",
+  "detail": "Oitavas de Final",
+  "match": "RB Bragantino Sub-20 Flamengo x SP Sub-20",
   "ch": [
    {
     "n": "A confirmar",
     "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Campeonato Alemão",
+  "detail": "Rodada 6",
+  "match": "Eintracht Frankfurt x FC Koln",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   },
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -417,15 +676,15 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 7",
   "match": "Frosinone x Sassuolo",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-16",
@@ -434,202 +693,19 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
+  "detail": "Rodada 7",
   "match": "Le Mans x Toulouse",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Ligue 1",
     "y": "tv"
    }
   ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Bournemouth x Sturm Graz",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Marseille x Olympiakos Piraeus",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "1899 Hoffenheim x Besiktas",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Benfica x Celtic",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "NEC Nijmegen x Levski Sofia",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Celta Vigo x Juventus",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Dinamo Zagreb x Anderlecht",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Europa League - League Stage",
-  "detail": "2",
-  "match": "Ferencvarosi TC x Plzen",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "Brighton x Kauno Zalgiris",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "FC Copenhagen x SC Braga",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "1",
-  "match": "Atalanta x Pafos",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-16",
@@ -637,16 +713,45 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Deportivo x Levante",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 9",
+  "match": "Deportivo La Coruna x Levante",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-16",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "11",
+  "match": "Cerro x Cerro Largo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-16",
@@ -664,6 +769,31 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 31",
+  "match": "Mirassol x Internacional",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-16",
@@ -751,37 +881,20 @@
  },
  {
   "date": "2026-10-16",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Mirassol x Internacional",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-16",
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Sport x Fortaleza",
+  "detail": "Rodada 34",
+  "match": "Sport Recife x Fortaleza",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-16",
@@ -887,27 +1000,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-16",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Libertadores",
-  "detail": "Semifinal",
-  "match": "Estudiantes x Flamengo",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-16",
