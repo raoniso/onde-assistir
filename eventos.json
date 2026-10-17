@@ -150,31 +150,6 @@
  {
   "date": "2026-10-16",
   "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 31",
-  "match": "Mirassol x Internacional",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-16",
-  "t": "20:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -258,20 +233,37 @@
  },
  {
   "date": "2026-10-16",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Mirassol x Internacional",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-16",
   "t": "20:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
-  "detail": "Rodada 34",
-  "match": "Sport Recife x Fortaleza",
+  "detail": "Tabela oficial",
+  "match": "Sport x Fortaleza",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-16",
