@@ -6,36 +6,15 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Rodada 7",
+  "detail": "Tabela oficial",
   "match": "Udinese x Lecce",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 11",
-  "match": "Zenit Saint x Akhmat Grozny",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Campeonato Russo",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -45,7 +24,7 @@
   "country": "Alemanha",
   "league": "2ª Divisão Alemã",
   "detail": "Rodada 8",
-  "match": "Dynamo Dresden x FC Magdeburg",
+  "match": "FIM DE x SC 4 SV",
   "ch": [
    {
     "n": "Ppv",
@@ -54,38 +33,9 @@
    {
     "n": "Onefootball",
     "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 8",
-  "match": "Arminia Bielefeld x VfL Osnabruck",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -93,84 +43,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 9",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
   "match": "Osasuna x Racing Santander",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 9",
-  "match": "Cambuur x AZ Alkmaar",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Eredivisie",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 9",
-  "match": "Red Bull Salzburg x SCR Altach",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-18",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 9",
-  "match": "Wolfsberger AC x Tirol",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -180,21 +59,17 @@
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 7",
-  "match": "Angers x Marseille",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "AFC Bournemouth x Sunderland",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -202,24 +77,16 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 7",
-  "match": "Leeds x Manchester United",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Brighton & Hove Albion x Crystal Palace",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -227,55 +94,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 7",
-  "match": "Brighton x Palace",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Leeds United x Manchester United",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 7",
-  "match": "Bournemouth x Sunderland",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "11",
-  "match": "Albion FC x Atletico Torque",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -299,36 +124,37 @@
  },
  {
   "date": "2026-10-18",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Angers x Marseille",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-18",
   "t": "10:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 6",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
   "match": "Bayer Leverkusen x SC Freiburg",
   "ch": [
    {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -338,7 +164,7 @@
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 9",
-  "match": "Celta Vigo x Alavés",
+  "match": "Celta x Alavés",
   "ch": [
    {
     "n": "CazéTV",
@@ -353,59 +179,13 @@
  },
  {
   "date": "2026-10-18",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 10",
-  "match": "MSV Duisburg x FC Viktoria Koln",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-18",
   "t": "12:15",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
   "detail": "Rodada 7",
-  "match": "Lorient x Monaco",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "12:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 7",
-  "match": "LE Havre x Auxerre",
+  "match": "LE x Auxerre",
   "ch": [
    {
     "n": "CazéTV",
@@ -438,6 +218,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-18",
+  "t": "12:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Lorient x AS Monaco",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-18",
@@ -542,12 +339,12 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 8",
-  "match": "Istanbul Basaksehir x Gazisehir Gaziantep",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "12",
+  "match": "Sporting Cristal x Comerciantes Unidos",
   "ch": [
    {
-    "n": "Disney+",
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
@@ -559,12 +356,12 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "12",
-  "match": "Sporting Cristal x Comerciantes Unidos",
+  "league": "Campeonato Turco",
+  "detail": "Rodada 8",
+  "match": "Istanbul Basaksehir x Gazisehir Gaziantep",
   "ch": [
    {
-    "n": "Fanatiz",
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -689,27 +486,6 @@
   "t": "15:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 7",
-  "match": "Juventus x Lazio",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-18",
-  "t": "15:45",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
   "detail": "Rodada 7",
@@ -728,14 +504,18 @@
  },
  {
   "date": "2026-10-18",
-  "t": "16:00",
+  "t": "15:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 34",
-  "match": "Avai x Athletic Club",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Rodada 7",
+  "match": "Juventus x Lazio",
   "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
    {
     "n": "Disney+",
     "y": "stream"
@@ -748,17 +528,21 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 9",
-  "match": "Real Madrid x Sevilla",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 31",
+  "match": "Fluminense x Santos",
   "ch": [
    {
-    "n": "CazéTV",
+    "n": "Globo",
     "y": "free"
    },
    {
-    "n": "Laliga",
+    "n": "Premiere",
+    "y": "stream"
+   },
+   {
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
@@ -799,20 +583,33 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 31",
-  "match": "Fluminense x Santos",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 34",
+  "match": "Avai x Athletic Club",
   "ch": [
    {
-    "n": "Globo",
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-18",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 9",
+  "match": "Real Madrid x Sevilla",
+  "ch": [
+   {
+    "n": "CazéTV",
     "y": "free"
    },
    {
-    "n": "Premiere",
-    "y": "stream"
-   },
-   {
-    "n": "Brasileirão",
+    "n": "Laliga",
     "y": "tv"
    }
   ],
