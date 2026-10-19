@@ -1,48 +1,6 @@
 [
  {
   "date": "2026-10-19",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Río Ladies Open by MundoTênis Tours",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-19",
-  "t": "12:05",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Saudita",
-  "detail": "Rodada 10",
-  "match": "FIM DE x 2 Al-Ahli Jeddah",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-19",
   "t": "13:30",
   "sport": "Futebol",
   "g": "M",
@@ -63,9 +21,9 @@
   "t": "15:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Parma x Torino",
   "ch": [
    {
@@ -80,301 +38,374 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 9",
-  "match": "Getafe x Rayo Vallecano",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Tottenham x Coventry City",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
+    "n": "Premier League",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 7",
-  "match": "Tottenham x Coventry",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Getafe x Rayo Vallecano",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
+    "n": "Laliga",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-19",
+  "t": "16:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Braga x Gil Vicente",
+  "ch": [
+   {
+    "n": "Liga Portugal",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-19",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Cruzeiro x Bolívar",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-19",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Deportivo Cali x Nacional",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "13",
-  "match": "Sarmiento Junin x Barracas Central",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Sarmiento x Barracas Central",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
    {
     "n": "Campeonato Argentino",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 34",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Goiás x Náutico",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 31",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Corinthians x Vitória",
   "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere FC",
-    "y": "stream"
-   },
    {
     "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "11",
-  "match": "Club Nacional x Deportivo Maldonado",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Nacional x Deportivo Maldonado",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
    {
     "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-19",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "LDU x Olímpia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-19",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Libertad x Universidad de Chile",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-19",
   "t": "21:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino - Clausura",
-  "detail": "13",
-  "match": "Deportivo Riestra x Union Santa Fe",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Deportivo Riestra x Union Santa Fé",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
    {
     "n": "Campeonato Argentino",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "12:10",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Al-Taawon x Al",
+  "ch": [
+   {
+    "n": "Qadsiah – Liga Saudita",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-20",
   "t": "13:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "Fenerbahce x Slavia Praha",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Sabah x Borussia Dortmund",
   "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
    {
     "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
   "t": "13:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "Sabah FA x Borussia Dortmund",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Fenerbahçe x Slavia Praga",
   "ch": [
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
    {
     "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
-  "t": "16:00",
+  "t": "13:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "Liverpool x Villarreal",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Como 1907 x Manchester United",
   "ch": [
-   {
-    "n": "Space",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
    {
     "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
-  "t": "16:00",
+  "t": "13:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "PSG x Barcelona",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Lille x Galatasaray",
   "ch": [
-   {
-    "n": "SBT",
-    "y": "free"
-   },
-   {
-    "n": "TNT",
-    "y": "tv"
-   },
-   {
-    "n": "HBO Max",
-    "y": "stream"
-   },
    {
     "n": "Uefa Champions League",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
-  "t": "16:00",
+  "t": "14:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "VfB Stuttgart x Atletico Madrid",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Al Ahly x Al Qanah",
   "ch": [
    {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
+    "n": "Campeonato Egípcio",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
-  "t": "16:00",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League - League Stage",
-  "detail": "3",
-  "match": "Roma x Slovan Bratislava",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Al-Nassr x Neom",
   "ch": [
    {
-    "n": "HBO Max",
-    "y": "stream"
-   },
-   {
-    "n": "Uefa Champions League",
+    "n": "Liga Saudita",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "América-PE x Íbis",
+  "ch": [
+   {
+    "n": "Campeonato Pernambucano 1° Turno",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Gana x Brasil",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Levante x Athletic Bilbao",
+  "ch": [
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-20",
@@ -399,20 +430,394 @@
  },
  {
   "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Manchester City x AEK Atenas",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "PSG x Barcelona",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Liverpool x Villarreal",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Napoli x Bodo/Glimt",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Stuttgart x Atlético de Madrid",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Porto x PSV",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Roma x Slovan Bratislava",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Gillingham x Port Vale",
+  "ch": [
+   {
+    "n": "Efl League Two",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Bayern de Munique x Arsenal",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Inter de Milão x Shakhtar Donetsk",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Real Madrid x RB Leipzig",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Real Betis x Feyenoord",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Aston Villa x Viking",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Sporting x LASK Linz",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Club Brugge x RC Lens",
+  "ch": [
+   {
+    "n": "Uefa Champions League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Reading x Leyton Orient",
+  "ch": [
+   {
+    "n": "Efl League One",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Independiente Santa Fé x Corinthians",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Colo-Colo x Caracas",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "QF-volta",
+  "detail": "—",
+  "match": "Red Bull Bragantino x Ferroviária",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "QF-volta",
+  "detail": "—",
+  "match": "Atlético-MG x Internacional",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Montevideo City Torque x Atlético",
+  "ch": [
+   {
+    "n": "Mg – Conmebol Sul-Americana",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "QF-volta",
+  "detail": "—",
+  "match": "São Paulo x Bahia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 34",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Londrina x Cuiabá",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-20",
@@ -437,24 +842,122 @@
  },
  {
   "date": "2026-10-20",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Violette x Portmore",
+  "ch": [
+   {
+    "n": "Concacaf Caribbean Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "FC Cincinnati x DC United",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Palmeiras x Independiente del Valle",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Belgrano x Universitario",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa Sul-Americana",
-  "detail": "Semifinal",
-  "match": "Vasco x Boca Juniors",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Vasco da Gama x Boca Juniors",
   "ch": [
-   {
-    "n": "Paramount+",
-    "y": "stream"
-   },
    {
     "n": "Conmebol Sul-Americana",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Palmeiras x Fluminense",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Luis Angel Firpo x Deportivo Saprissa",
+  "ch": [
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-20",
@@ -462,20 +965,33 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Mexicano - Apertura",
-  "detail": "13",
-  "match": "Atletico San Luis x Club Queretaro",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Atlético San Luis x Querétaro",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
    {
     "n": "Liga Mx",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-20",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Atlas x Club América",
+  "ch": [
+   {
+    "n": "Liga Mx",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-20",
@@ -497,6 +1013,44 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-20",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Play-In – ida",
+  "detail": "—",
+  "match": "Marathon x Alianza FC",
+  "ch": [
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-21",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Río Ladies Open by MundoTênis Tours",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-21",

@@ -1,9 +1,9 @@
 {
  "fontes": {
   "log": [
-   "Coleta 19/10 15:16 BRT — janela 2026-10-19 a 2026-10-25",
-   "  ✓ futebolnatv: 17 evento(s)",
-   "  ✓ mantosdofutebol: 63 evento(s)",
+   "Coleta 19/10 20:16 BRT — janela 2026-10-19 a 2026-10-25",
+   "  ✗ futebolnatv indisponível (HTTPError: 403 Client Error: Forbidden for url: https://www.futebolnatv.com.br/jogos-hoje)",
+   "  ✓ mantosdofutebol: 57 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 74 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
    "  ✓ ESPN NBA: 43 evento(s)",
@@ -11,7 +11,7 @@
    "  ✓ ESPN Tênis: 1 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 132 eventos → eventos.json",
+   "TOTAL: 170 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
