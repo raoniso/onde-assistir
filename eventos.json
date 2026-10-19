@@ -431,27 +431,6 @@
  {
   "date": "2026-10-20",
   "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Caribbean Cup",
-  "detail": "Semifinal",
-  "match": "Violette AC x Portmore United",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Concacaf Caribbean Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-20",
-  "t": "20:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
