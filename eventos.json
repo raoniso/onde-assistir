@@ -302,6 +302,27 @@
   "v": 2
  },
  {
+  "date": "2026-10-20",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Final",
+  "match": "CD Marathon x Alianza",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
   "date": "2026-10-21",
   "t": "01:00",
   "sport": "Tênis",
@@ -774,6 +795,27 @@
  {
   "date": "2026-10-21",
   "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Final",
+  "match": "Firpo x Deportivo Saprissa",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-21",
+  "t": "21:30",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -871,6 +913,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-21",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Central American Cup",
+  "detail": "Semifinal",
+  "match": "CS Cartagines x CD Olimpia",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-22",
