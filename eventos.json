@@ -758,27 +758,6 @@
  {
   "date": "2026-10-23",
   "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "12",
-  "match": "Defensor Sporting x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-23",
-  "t": "20:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -880,6 +859,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-23",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "12",
+  "match": "Juventud x Penãrol",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-23",
@@ -2379,6 +2375,27 @@
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
   "match": "Queretaro Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-26",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Curitiba Open",
   "ch": [
    {
     "n": "ESPN",
