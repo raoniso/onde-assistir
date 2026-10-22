@@ -1,27 +1,6 @@
 [
  {
   "date": "2026-10-22",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Conference League - League Stage",
-  "detail": "2",
-  "match": "Kairat Almaty x Panathinaikos",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-22",
   "t": "13:45",
   "sport": "Futebol",
   "g": "M",
