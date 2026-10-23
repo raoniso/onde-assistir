@@ -627,6 +627,27 @@
  },
  {
   "date": "2026-10-24",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Circuito ATP",
+  "detail": "Dia de jogos",
+  "match": "Erste Bank Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-24",
   "t": "08:00",
   "sport": "Futebol",
   "g": "M",
@@ -2445,27 +2466,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-26",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Erste Bank Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-26",
