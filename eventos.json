@@ -505,6 +505,23 @@
  },
  {
   "date": "2026-10-23",
+  "t": "22:30",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "EUA/Canadá",
+  "league": "NWSL Feminina - Grupo",
+  "detail": "Stage",
+  "match": "Utah Royals x OL Reign",
+  "ch": [
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-23",
   "t": "23:00",
   "sport": "Basquete",
   "g": "M",
@@ -700,31 +717,6 @@
   "country": "Alemanha",
   "league": "Campeonato Alemão",
   "detail": "Rodada 7",
-  "match": "FSV Mainz 05 x Werder Bremen",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-24",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 7",
   "match": "FC Augsburg x Union Berlin",
   "ch": [
    {
@@ -780,6 +772,23 @@
   "league": "Bundesliga",
   "detail": "Tabela oficial",
   "match": "FC Cologne x Schalke 04",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-24",
+  "t": "10:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "Mainz x Werder Bremen",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -873,27 +882,6 @@
   "t": "11:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 11",
-  "match": "Stuttgart II x Alemannia Aachen",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Português",
   "detail": "Rodada 9",
@@ -908,17 +896,21 @@
  },
  {
   "date": "2026-10-24",
-  "t": "12:15",
+  "t": "11:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 8",
-  "match": "Toulouse x Estac Troyes",
+  "country": "Alemanha",
+  "league": "3ª Divisão Alemã",
+  "detail": "Rodada 11",
+  "match": "Stuttgart II x Alemannia Aachen",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -949,6 +941,27 @@
   "t": "13:30",
   "sport": "Futebol",
   "g": "M",
+  "country": "Espanha",
+  "league": "Campeonato Espanhol",
+  "detail": "Rodada 10",
+  "match": "Valencia x Villarreal",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 8",
@@ -964,27 +977,6 @@
    },
    {
     "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-24",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 10",
-  "match": "Valencia x Villarreal",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Laliga",
     "y": "tv"
    }
   ],
@@ -1134,27 +1126,6 @@
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "12",
-  "match": "Defensor Sporting x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-24",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 10",
@@ -1166,6 +1137,27 @@
    },
    {
     "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "12",
+  "match": "Defensor Sporting x Racing Montevideo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
     "y": "tv"
    }
   ],
@@ -1279,39 +1271,6 @@
  },
  {
   "date": "2026-10-24",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série C",
-  "detail": "Final",
-  "match": "Ferroviária x Maringá",
-  "ch": [
-   {
-    "n": "Band",
-    "y": "free"
-   },
-   {
-    "n": "Sportynet",
-    "y": "free"
-   },
-   {
-    "n": "Canal",
-    "y": "tv"
-   },
-   {
-    "n": "Do",
-    "y": "tv"
-   },
-   {
-    "n": "Benja",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-24",
   "t": "17:15",
   "sport": "Futebol",
   "g": "M",
@@ -1326,6 +1285,27 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-24",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 35",
+  "match": "Ponte Preta x Fortaleza",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -1358,27 +1338,6 @@
   "detail": "Rodada 35",
   "match": "CRB x Londrina",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-24",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 35",
-  "match": "Ponte Preta x Fortaleza",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
@@ -1427,6 +1386,27 @@
  {
   "date": "2026-10-24",
   "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "12",
+  "match": "Deportivo Maldonado x Danubio",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "19:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -1465,23 +1445,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-24",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "12",
-  "match": "Deportivo Maldonado x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-24",
@@ -1663,11 +1626,11 @@
   "country": "Mundial",
   "league": "Campeonato Mexicano - Apertura",
   "detail": "14",
-  "match": "Monterrey x Guadalajara Chivas",
+  "match": "Monterrey x Chivas SPORTYNET",
   "ch": [
    {
-    "n": "Sportynet",
-    "y": "free"
+    "n": "A confirmar",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -1864,6 +1827,27 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-25",
+  "t": "01:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "Toray Pan Pacific Open Tennis",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-25",
@@ -2458,27 +2442,6 @@
   "league": "Circuito WTA",
   "detail": "Dia de jogos",
   "match": "Guangzhou Open",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-26",
-  "t": "01:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "Toray Pan Pacific Open Tennis",
   "ch": [
    {
     "n": "ESPN",
