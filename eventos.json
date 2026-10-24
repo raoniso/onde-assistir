@@ -22,42 +22,17 @@
  },
  {
   "date": "2026-10-24",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 9",
-  "match": "FC Heidenheim x Energie Cottbus",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
   "t": "08:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 8",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
   "match": "Aston Villa x Manchester City",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -68,34 +43,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 10",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
   "match": "Rayo Vallecano x Elche",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 11",
-  "match": "Hansa Rostock x Fortuna Dusseldorf",
-  "ch": [
-   {
-    "n": "Ppv",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -130,31 +84,6 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 7",
-  "match": "RB Leipzig x SV Elversberg",
-  "ch": [
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -218,6 +147,23 @@
   "country": "Alemanha",
   "league": "Bundesliga",
   "detail": "Tabela oficial",
+  "match": "RB Leipzig x SV Elversberg",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-24",
+  "t": "10:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
   "match": "SC Paderborn 07 x Hamburg SV",
   "ch": [
    {
@@ -233,17 +179,13 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 8",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
   "match": "Arsenal x Everton",
   "ch": [
    {
-    "n": "ESPN",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -273,7 +215,7 @@
   "country": "Espanha",
   "league": "Campeonato Espanhol",
   "detail": "Rodada 10",
-  "match": "Racing Santander x Espanyol",
+  "match": "INT Racing x Espanyol",
   "ch": [
    {
     "n": "CazéTV",
@@ -284,38 +226,17 @@
  },
  {
   "date": "2026-10-24",
-  "t": "11:30",
+  "t": "11:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 9",
-  "match": "Estrela x Casa Pia",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Racing Santander x Espanyol",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 11",
-  "match": "Stuttgart II x Alemannia Aachen",
-  "ch": [
-   {
-    "n": "Ppv",
+    "n": "Transmissão a confirmar",
     "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
    }
   ],
   "v": 1
@@ -339,7 +260,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -354,30 +275,13 @@
    {
     "n": "CazéTV",
     "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 7",
-  "match": "Borussia Dortmund x SPORTYNET",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
    },
    {
-    "n": "Onefootball",
-    "y": "stream"
+    "n": "Laliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -395,6 +299,31 @@
    },
    {
     "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Campeonato Alemão",
+  "detail": "Rodada 7",
+  "match": "Borussia Dortmund x SPORTYNET",
+  "ch": [
+   {
+    "n": "Ppv",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
     "y": "stream"
    }
   ],
@@ -497,9 +426,13 @@
    {
     "n": "Onefootball",
     "y": "stream"
+   },
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -548,9 +481,13 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -565,9 +502,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -594,14 +535,18 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 32",
-  "match": "Vitória x PR",
+  "match": "Mirassol x Paulo",
   "ch": [
    {
-    "n": "GE TV",
-    "y": "free"
+    "n": "A confirmar",
+    "y": "tv"
+   },
+   {
+    "n": "Brasileirão",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -611,11 +556,11 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "Rodada 32",
-  "match": "Mirassol x Paulo",
+  "match": "Vitória x PR",
   "ch": [
    {
-    "n": "A confirmar",
-    "y": "tv"
+    "n": "GE TV",
+    "y": "free"
    }
   ],
   "v": 1
@@ -710,21 +655,38 @@
   "t": "18:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 31",
-  "match": "New York Red Bulls x Inter Miami",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Rodada 32",
+  "match": "Palmeiras x RB Bragantino",
   "ch": [
    {
-    "n": "Apple",
-    "y": "tv"
+    "n": "Premiere FC",
+    "y": "stream"
    },
    {
-    "n": "Tv",
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 35",
+  "match": "CRB x Londrina",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -745,38 +707,25 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
   "t": "18:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Rodada 32",
-  "match": "Palmeiras x RB Bragantino",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 31",
+  "match": "New York Red Bulls x Inter Miami",
   "ch": [
    {
-    "n": "Premiere FC",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 35",
-  "match": "CRB x Londrina",
-  "ch": [
+    "n": "Apple",
+    "y": "tv"
+   },
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Tv",
+    "y": "tv"
    }
   ],
   "v": 1
@@ -801,6 +750,27 @@
  {
   "date": "2026-10-24",
   "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio - Clausura",
+  "detail": "12",
+  "match": "Deportivo Maldonado x Danubio",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   },
+   {
+    "n": "Campeonato Uruguaio",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "19:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -821,23 +791,6 @@
  },
  {
   "date": "2026-10-24",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "12",
-  "match": "Deportivo Maldonado x Danubio",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
   "t": "19:15",
   "sport": "Futebol",
   "g": "M",
@@ -849,9 +802,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Argentino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -869,6 +826,56 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-10-24",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 31",
+  "match": "DC United x FC Cincinnati",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 31",
+  "match": "Atlanta United FC x Chicago Fire",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
  },
  {
   "date": "2026-10-24",
@@ -920,49 +927,7 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 31",
-  "match": "DC United x FC Cincinnati",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 31",
   "match": "Philadelphia Union x New England",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 31",
-  "match": "Atlanta United FC x Chicago Fire",
   "ch": [
    {
     "n": "Apple",
@@ -1143,6 +1108,56 @@
   "country": "EUA/Canadá",
   "league": "MLS",
   "detail": "Rodada 31",
+  "match": "San Diego x Seattle Sounders",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 31",
+  "match": "Portland Timbers x Charlotte",
+  "ch": [
+   {
+    "n": "Apple",
+    "y": "tv"
+   },
+   {
+    "n": "Tv",
+    "y": "tv"
+   },
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-24",
+  "t": "23:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Rodada 31",
   "match": "Colorado Rapids x Whitecaps",
   "ch": [
    {
@@ -1165,48 +1180,6 @@
   "league": "MLS",
   "detail": "Rodada 31",
   "match": "Real Salt Lake x St. Louis City",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 31",
-  "match": "San Diego x Seattle Sounders",
-  "ch": [
-   {
-    "n": "Apple",
-    "y": "tv"
-   },
-   {
-    "n": "Tv",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-24",
-  "t": "23:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "Rodada 31",
-  "match": "Portland Timbers x Charlotte",
   "ch": [
    {
     "n": "Apple",
@@ -1625,6 +1598,10 @@
     "y": "tv"
    },
    {
+    "n": "Canal Goat",
+    "y": "free"
+   },
+   {
     "n": "Ppv",
     "y": "tv"
    },
@@ -1946,6 +1923,10 @@
    },
    {
     "n": "Sportynet",
+    "y": "free"
+   },
+   {
+    "n": "Canal Goat",
     "y": "free"
    },
    {
