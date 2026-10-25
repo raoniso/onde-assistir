@@ -64,66 +64,20 @@
  },
  {
   "date": "2026-10-25",
-  "t": "07:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Russo",
-  "detail": "Rodada 12",
-  "match": "FC Rostov x Lokomotiv Moscow",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   },
-   {
-    "n": "Campeonato Russo",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
   "t": "08:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Rodada 8",
-  "match": "Inter x Fiorentina",
+  "detail": "Tabela oficial",
+  "match": "Internazionale x Fiorentina",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Escocês",
-  "detail": "Rodada 10",
-  "match": "Hibernian x Celtic",
-  "ch": [
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Campeonato Escocês",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-25",
@@ -133,57 +87,7 @@
   "country": "Alemanha",
   "league": "2ª Divisão Alemã",
   "detail": "Rodada 9",
-  "match": "Holstein Kiel x Dynamo Dresden",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2ª Divisão Alemã",
-  "detail": "Rodada 9",
-  "match": "VfL Osnabruck x SpVgg Greuther Furth",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "2.Bundesliga",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "3ª Divisão Alemã",
-  "detail": "Rodada 11",
-  "match": "Havelse x FC Saarbrücken",
+  "match": "FIM DE x Osnabruck 3 SpVgg",
   "ch": [
    {
     "n": "Ppv",
@@ -195,27 +99,6 @@
    }
   ],
   "v": 1
- },
- {
-  "date": "2026-10-25",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio - Clausura",
-  "detail": "12",
-  "match": "Wanderers x Progreso",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Campeonato Uruguaio",
-    "y": "tv"
-   }
-  ],
-  "v": 2
  },
  {
   "date": "2026-10-25",
@@ -236,51 +119,13 @@
  },
  {
   "date": "2026-10-25",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
-  "detail": "Rodada 10",
-  "match": "NEC Nijmegen x Groningen",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-25",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Austríaco",
-  "detail": "Rodada 10",
-  "match": "Sturm Graz x Ried",
-  "ch": [
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-25",
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Inglaterra",
   "league": "Campeonato Inglês",
   "detail": "Rodada 8",
-  "match": "Manchester United x Bournemouth",
+  "match": "Manchester x Bournemouth",
   "ch": [
    {
     "n": "CazéTV",
@@ -296,90 +141,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Rodada 8",
-  "match": "Monaco x Lille",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Rodada 8",
-  "match": "Genoa x Venezia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 8",
-  "match": "Liverpool x Brighton",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-25",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Campeonato Inglês",
-  "detail": "Rodada 8",
-  "match": "Crystal Palace x (",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-25",
@@ -420,6 +181,23 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Liverpool x Brighton & Hove Albion",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-25",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
   "detail": "Tabela oficial",
@@ -434,36 +212,37 @@
  },
  {
   "date": "2026-10-25",
-  "t": "11:30",
+  "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "Campeonato Alemão",
-  "detail": "Rodada 7",
-  "match": "1899 Hoffenheim x Bayer Leverkusen",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Genoa x Venezia",
   "ch": [
    {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Canal Goat",
-    "y": "free"
-   },
-   {
-    "n": "Ppv",
-    "y": "tv"
-   },
-   {
-    "n": "Onefootball",
-    "y": "stream"
-   },
-   {
-    "n": "Bundesliga",
+    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-10-25",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "AS Monaco x Lille",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-25",
@@ -477,23 +256,6 @@
   "ch": [
    {
     "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-25",
-  "t": "12:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "Campeonato Espanhol",
-  "detail": "Rodada 10",
-  "match": "Celta Vigo x SPORTYNET",
-  "ch": [
-   {
-    "n": "A confirmar",
     "y": "tv"
    }
   ],
@@ -542,23 +304,6 @@
   "t": "12:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Português",
-  "detail": "Rodada 9",
-  "match": "Estoril x Moreirense",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-25",
-  "t": "12:30",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Alemanha",
   "league": "3ª Divisão Alemã",
   "detail": "Rodada 11",
@@ -570,6 +315,23 @@
    },
    {
     "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-25",
+  "t": "12:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "Rodada 9",
+  "match": "Estoril x Moreirense",
+  "ch": [
+   {
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -595,6 +357,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-25",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "13",
+  "match": "Comerciantes Unidos x Cienciano",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-25",
@@ -629,23 +408,6 @@
   "ch": [
    {
     "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-25",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "13",
-  "match": "Comerciantes Unidos x Cienciano",
-  "ch": [
-   {
-    "n": "Fanatiz",
     "y": "stream"
    }
   ],
