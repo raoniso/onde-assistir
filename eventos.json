@@ -22,23 +22,6 @@
  },
  {
   "date": "2026-10-26",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Turco",
-  "detail": "Rodada 9",
-  "match": "Besiktas x Istanbul Basaksehir",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-26",
   "t": "15:30",
   "sport": "Futebol",
   "g": "M",
@@ -54,9 +37,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Turco",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-26",
@@ -92,9 +79,13 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Ligue 1",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-26",
@@ -126,9 +117,13 @@
    {
     "n": "CazéTV",
     "y": "free"
+   },
+   {
+    "n": "Laliga",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-26",
@@ -143,9 +138,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Campeonato Argentino",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-26",
@@ -243,6 +242,23 @@
  {
   "date": "2026-10-26",
   "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Rodada 35",
+  "match": "Juventude x Náutico",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-26",
+  "t": "20:30",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -281,23 +297,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-26",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Rodada 35",
-  "match": "Juventude x Náutico",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-26",
@@ -1112,6 +1111,23 @@
  {
   "date": "2026-10-29",
   "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Vasco da Gama x Flamengo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-29",
+  "t": "21:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -1129,23 +1145,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-10-29",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Vasco da Gama x Flamengo",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-10-29",
