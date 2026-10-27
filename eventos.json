@@ -1,6 +1,27 @@
 [
  {
   "date": "2026-10-27",
+  "t": "09:40",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Saudita",
+  "detail": "Rodada 8",
+  "match": "FIM x JOGO Abha 0",
+  "ch": [
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-27",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
@@ -35,7 +56,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-27",
@@ -52,7 +73,7 @@
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-27",
@@ -76,23 +97,6 @@
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "14",
-  "match": "Juan Pablo II College x Sport Huancayo",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Inglaterra",
   "league": "Copa da liga Inglesa",
   "detail": "Oitavas de Final",
@@ -104,6 +108,23 @@
    },
    {
     "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-27",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "14",
+  "match": "Juan Pablo II College x Sport Huancayo",
+  "ch": [
+   {
+    "n": "Fanatiz",
     "y": "stream"
    }
   ],
@@ -202,9 +223,13 @@
    {
     "n": "Disney+",
     "y": "stream"
+   },
+   {
+    "n": "Concacaf Central American Cup",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-10-28",
@@ -455,6 +480,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-28",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Escocês",
+  "detail": "Rodada 11",
+  "match": "Heart OF Midlothian x Rangers",
+  "ch": [
+   {
+    "n": "Canal Goat",
+    "y": "free"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-28",
@@ -1311,6 +1353,23 @@
  },
  {
   "date": "2026-10-30",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Nice x Stade Rennais",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-30",
   "t": "15:30",
   "sport": "Fórmula 1",
   "g": "M",
@@ -1890,23 +1949,6 @@
  },
  {
   "date": "2026-10-31",
-  "t": "13:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Nice x Stade Rennais",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-31",
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
@@ -2062,40 +2104,6 @@
   "league": "Campeonato Italiano",
   "detail": "Tabela oficial",
   "match": "AC Milan x Internazionale",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-31",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Lorient x Brest",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-31",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Lyon x Angers",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -2426,6 +2434,23 @@
   "league": "La Liga",
   "detail": "Tabela oficial",
   "match": "Racing Santander x Real Madrid",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-01",
+  "t": "13:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Lyon x Angers",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -2857,6 +2882,23 @@
   "league": "Campeonato Italiano",
   "detail": "Tabela oficial",
   "match": "Atalanta x Parma",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-02",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Lorient x Brest",
   "ch": [
    {
     "n": "Transmissão a confirmar",
