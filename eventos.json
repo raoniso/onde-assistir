@@ -44,36 +44,15 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Rodada 9",
-  "match": "Roma x Cagliari",
+  "detail": "Tabela oficial",
+  "match": "AS Roma x Cagliari",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Transmissão a confirmar",
+    "y": "tv"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-10-27",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Oitavas de Final",
-  "match": "Bradford x Peterborough",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-10-27",
@@ -88,44 +67,6 @@
    {
     "n": "Transmissão a confirmar",
     "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Copa da liga Inglesa",
-  "detail": "Oitavas de Final",
-  "match": "Fleetwood Town x Arsenal",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-10-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "14",
-  "match": "Juan Pablo II College x Sport Huancayo",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
    }
   ],
   "v": 1
