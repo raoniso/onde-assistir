@@ -229,6 +229,23 @@
  },
  {
   "date": "2026-10-28",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "14",
+  "match": "ADT x UCV Moquegua",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-10-28",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
@@ -441,47 +458,13 @@
  },
  {
   "date": "2026-10-28",
-  "t": "18:00",
+  "t": "17:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Campeonato Peruano - Clausura",
   "detail": "14",
   "match": "Alianza Atletico x Deportivo Garcilaso",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-28",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "14",
-  "match": "Cienciano x Grau",
-  "ch": [
-   {
-    "n": "Fanatiz",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-28",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Peruano - Clausura",
-  "detail": "14",
-  "match": "ADT x UCV Moquegua",
   "ch": [
    {
     "n": "Fanatiz",
@@ -846,6 +829,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-10-28",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Peruano - Clausura",
+  "detail": "14",
+  "match": "Cienciano x Grau",
+  "ch": [
+   {
+    "n": "Fanatiz",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-10-28",
