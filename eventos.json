@@ -99,23 +99,6 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Rodada 33",
-  "match": "Coritiba x Vitória",
-  "ch": [
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-10-29",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
   "detail": "Tabela oficial",
   "match": "Atlético-MG x Cruzeiro",
   "ch": [
@@ -310,6 +293,27 @@
    },
    {
     "n": "2.Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-10-30",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Rodada 9",
+  "match": "Nice x Rennes",
+  "ch": [
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Ligue 1",
     "y": "tv"
    }
   ],
