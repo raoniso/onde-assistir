@@ -1,17 +1,17 @@
 {
  "fontes": {
   "log": [
-   "Coleta 30/10 17:20 BRT — janela 2026-10-30 a 2026-11-05",
-   "  ✓ futebolnatv: 48 evento(s)",
-   "  ✓ mantosdofutebol: 158 evento(s)",
+   "Coleta 31/10 00:53 BRT — janela 2026-10-31 a 2026-11-06",
+   "  ✓ futebolnatv: 82 evento(s)",
+   "  ✓ mantosdofutebol: 140 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 70 evento(s)",
    "  ✓ Tabela oficial da Copa (autoridade): 0 evento(s)",
-   "  ✓ ESPN NBA: 51 evento(s)",
+   "  ✓ ESPN NBA: 49 evento(s)",
    "  ✓ ESPN F1: 5 evento(s)",
-   "  ✓ ESPN Tênis: 6 evento(s)",
+   "  ✓ ESPN Tênis: 5 evento(s)",
    "  ✓ extras.json: 0 evento(s)",
    "  ✓ UOL (canais por jogo): 0 evento(s)",
-   "TOTAL: 159 eventos → eventos.json",
+   "TOTAL: 177 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
