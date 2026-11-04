@@ -1,243 +1,5 @@
 [
  {
-  "date": "2026-11-03",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "QF-volta",
-  "detail": "—",
-  "match": "Flamengo x Operário Ferroviário",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Manchester United x Roma",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Barcelona x Aston Villa",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Atlético de Madrid x Bayern de Munique",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Villarreal x PSG",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Feyenoord x Inter de Milão",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Bodo/Glimt x Lille",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "LASK Linz x Slovan Bratislava",
-  "ch": [
-   {
-    "n": "Uefa Champions League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "West Bromwich x Southampton",
-  "ch": [
-   {
-    "n": "Championship",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Semifinal-ida",
-  "detail": "—",
-  "match": "Bahia x Flamengo",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Semifinal",
-  "detail": "—",
-  "match": "Athletico-PR B x Paranavaí",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Chapecoense x Mirassol",
-  "ch": [
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Internacional x Coritiba",
-  "ch": [
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-03",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "FINAL-volta",
-  "detail": "—",
-  "match": "Cruzeiro x Corinthians",
-  "ch": [
-   {
-    "n": "Brasileirão Sub-17",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-11-04",
   "t": "09:15",
   "sport": "Futebol",
@@ -341,159 +103,6 @@
  },
  {
   "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Milan x Ferencvarosi",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Real Sociedad x Lyon",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Sparta Praga x Bournemouth",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Crystal Palace x Hoffenheim",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Anderlecht x Red Bull Salzburg",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Atalanta x Kairat Almaty",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "AFG Fodbold x Braga",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Trabzonspor x Freiburg",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Midtjylland x Ajax",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
@@ -518,23 +127,6 @@
   "league": "QF-volta",
   "detail": "—",
   "match": "Atlético-MG x Santa Cruz",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "QF-volta",
-  "detail": "—",
-  "match": "São Paulo x Ceará",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -681,159 +273,6 @@
  },
  {
   "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Bayer Leverkusen x Olympique de Marseille",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Benfica x Lech Poznan",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "AZ Alkmaar x Juventus",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Celtic x Besiktas",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Sunderland x Dinamo Zagreb",
-  "ch": [
-   {
-    "n": "Uefa Europa League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Getafe x Brighton",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Copenhagen x Iberia",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Panathinaikos x CSKA Sofia",
-  "ch": [
-   {
-    "n": "Uefa Conference League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "17:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "QF-volta",
-  "detail": "—",
-  "match": "Paysandu x Palmeiras",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
@@ -878,40 +317,6 @@
   "ch": [
    {
     "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Palmeiras x Remo",
-  "ch": [
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Botafogo-SP x Londrina",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
     "y": "tv"
    }
   ],
@@ -1051,23 +456,6 @@
   "ch": [
    {
     "n": "Mg – Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-04",
-  "t": "21:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Cruzeiro x Bahia",
-  "ch": [
-   {
-    "n": "Brasileirão",
     "y": "tv"
    }
   ],
@@ -1264,13 +652,319 @@
  },
  {
   "date": "2026-11-05",
-  "t": "19:30",
+  "t": "14:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Palmeiras x Remo",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Milan x Ferencvarosi",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Real Sociedad x Lyon",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Sparta Praga x Bournemouth",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Crystal Palace x Hoffenheim",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Anderlecht x Red Bull Salzburg",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Atalanta x Kairat Almaty",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "AFG Fodbold x Braga",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Trabzonspor x Freiburg",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Midtjylland x Ajax",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "QF-volta",
+  "detail": "—",
+  "match": "São Paulo x Ceará",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Bayer Leverkusen x Olympique de Marseille",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Benfica x Lech Poznan",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "AZ Alkmaar x Juventus",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Celtic x Besiktas",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Sunderland x Dinamo Zagreb",
+  "ch": [
+   {
+    "n": "Uefa Europa League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Getafe x Brighton",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Copenhagen x Iberia",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Panathinaikos x CSKA Sofia",
+  "ch": [
+   {
+    "n": "Uefa Conference League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "17:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "QF-volta",
+  "detail": "—",
+  "match": "Paysandu x Palmeiras",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -1284,9 +978,26 @@
   "t": "19:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Palmeiras x Remo",
+  "ch": [
+   {
+    "n": "Brasileirão",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-05",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Botafogo-SP x Londrina",
   "ch": [
    {
@@ -1301,13 +1012,13 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Cruzeiro x Bahia",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Brasileirão",
     "y": "tv"
    }
   ],
@@ -1687,27 +1398,6 @@
    }
   ],
   "v": 2
- },
- {
-  "date": "2026-11-07",
-  "t": "02:00",
-  "sport": "Tênis",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Circuito WTA",
-  "detail": "Dia de jogos",
-  "match": "WTA Finals",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
  },
  {
   "date": "2026-11-07",
@@ -2298,6 +1988,27 @@
   "league": "Circuito ATP",
   "detail": "Dia de jogos",
   "match": "Bybit Stockholm Open",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "02:00",
+  "sport": "Tênis",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Circuito WTA",
+  "detail": "Dia de jogos",
+  "match": "FAGE WTA Finals Indian Wells",
   "ch": [
    {
     "n": "ESPN",
@@ -3097,6 +2808,111 @@
   "league": "NBA",
   "detail": "Temporada NBA",
   "match": "San Antonio Spurs x Phoenix Suns",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-10",
+  "t": "00:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "New Orleans Pelicans x Golden State Warriors",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-10",
+  "t": "21:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Milwaukee Bucks x New York Knicks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-10",
+  "t": "22:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Boston Celtics x Philadelphia 76ers",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-10",
+  "t": "23:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "LA Clippers x Phoenix Suns",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-10",
+  "t": "23:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Miami Heat x Utah Jazz",
   "ch": [
    {
     "n": "Prime Video",
