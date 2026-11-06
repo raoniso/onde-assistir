@@ -2715,23 +2715,6 @@
  },
  {
   "date": "2026-11-08",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Napoli x Lazio",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-08",
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
@@ -2807,40 +2790,6 @@
   "league": "Premier League",
   "detail": "Tabela oficial",
   "match": "Sunderland x Chelsea",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-08",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Genoa x AC Milan",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-08",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Monza x Atalanta",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -3029,23 +2978,6 @@
  },
  {
   "date": "2026-11-08",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Internazionale x Como",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-08",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
@@ -3104,23 +3036,6 @@
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Athletic x Atlético Goianiense",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-08",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Fiorentina x Juventus",
   "ch": [
    {
     "n": "Transmissão a confirmar",
