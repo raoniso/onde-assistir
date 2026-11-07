@@ -22,16 +22,118 @@
  },
  {
   "date": "2026-11-07",
+  "t": "08:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Fakel x Dynamo Moscow",
+  "ch": [
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Holstein Kiel x Arminia Bielefeld",
+  "ch": [
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Nürnberg x Darmstadt",
+  "ch": [
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Osnabrück x Kaiserslautern",
+  "ch": [
+   {
+    "n": "2.Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
   "t": "09:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Leeds United x Tottenham Hotspur",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Leeds United x Tottenham",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "09:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Wrexham x Wolverhampton",
+  "ch": [
+   {
+    "n": "Championship",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "09:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Manchester City x West Ham",
+  "ch": [
+   {
+    "n": "Inglês Feminino",
     "y": "tv"
    }
   ],
@@ -42,13 +144,30 @@
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Málaga x Racing Santander",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Bayer Leverkusen x Hamburgo",
+  "ch": [
+   {
+    "n": "Bundesliga Feminina",
     "y": "tv"
    }
   ],
@@ -59,9 +178,9 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Cagliari x Frosinone",
   "ch": [
    {
@@ -76,13 +195,30 @@
   "t": "11:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Torino x Lecce",
   "ch": [
    {
     "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Slovan Liberec x Bohemians",
+  "ch": [
+   {
+    "n": "Liga Checa",
     "y": "tv"
    }
   ],
@@ -118,13 +254,64 @@
   "t": "11:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "Borussia Dortmund x SV Elversberg",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Mainz 05 x Bayern de Munique",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Borussia Dortmund x Elversberg",
+  "ch": [
+   {
+    "n": "Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Paderborn x Eintracht Frankfurt",
+  "ch": [
+   {
+    "n": "Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "RB Leipzig x Augsburg",
+  "ch": [
+   {
+    "n": "Bundesliga",
     "y": "tv"
    }
   ],
@@ -149,50 +336,16 @@
  },
  {
   "date": "2026-11-07",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "RB Leipzig x FC Augsburg",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "SC Paderborn 07 x Eintracht Frankfurt",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
   "t": "12:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Arsenal x Hull City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Premier League",
     "y": "tv"
    }
   ],
@@ -203,13 +356,30 @@
   "t": "12:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Fulham x Newcastle United",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Fulham x Newcastle",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Birmingham City x Swansea City",
+  "ch": [
+   {
+    "n": "Championship",
     "y": "tv"
    }
   ],
@@ -220,10 +390,78 @@
   "t": "12:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Espanyol x Deportivo",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Espanyol x Deportivo A Coruña",
+  "ch": [
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Galatasaray x Amedspor",
+  "ch": [
+   {
+    "n": "Campeonato Turco",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "13:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Mantova x Hellas Verona",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Krasnodar x CSKA",
+  "ch": [
+   {
+    "n": "Campeonato Russo",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Parma x Bologna",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -237,13 +475,13 @@
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Parma x Bologna",
+  "country": "Mundial",
+  "league": "QF",
+  "detail": "—",
+  "match": "KC Current x Angels City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Nwsl",
     "y": "tv"
    }
   ],
@@ -254,13 +492,81 @@
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Nottingham Forest x Manchester City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Premier League",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Stuttgart x Werder Bremen",
+  "ch": [
+   {
+    "n": "Bundesliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Osasuna x Athletic Bilbao",
+  "ch": [
+   {
+    "n": "Laliga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Noia x Palma",
+  "ch": [
+   {
+    "n": "Liga Espanhola Futsal",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Altrincham x Notts County",
+  "ch": [
+   {
+    "n": "Fa Cup",
     "y": "tv"
    }
   ],
@@ -285,13 +591,30 @@
  },
  {
   "date": "2026-11-07",
-  "t": "14:30",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "VfB Stuttgart x Werder Bremen",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Auxerre x Paris FC",
+  "ch": [
+   {
+    "n": "Ligue 1",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-ida",
+  "detail": "—",
+  "match": "Joinville x Hercílio Luz",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -305,10 +628,44 @@
   "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "AJ Auxerre x Paris FC",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Jaguar x Centro Limoeirense",
+  "ch": [
+   {
+    "n": "Campeonato Pernambucano 1° Turno",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "América-PE x Ipojuca",
+  "ch": [
+   {
+    "n": "Campeonato Pernambucano 1° Turno",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Paraná Clube x Foz do Iguaçu",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -325,40 +682,6 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "VVV Venlo x PSV Jong",
-  "ch": [
-   {
-    "n": "2° Divisão Holandesa",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Heracles Almelo x Roda JC",
-  "ch": [
-   {
-    "n": "2° Divisão Holandesa",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
   "match": "Avaí x São Bernardo",
   "ch": [
    {
@@ -373,9 +696,9 @@
   "t": "16:10",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Novorizontino x Fortaleza",
   "ch": [
    {
@@ -393,10 +716,10 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Hamburgo x Borussia Mönchenglandbach",
+  "match": "Hertha Berlin x Wolfsburg",
   "ch": [
    {
-    "n": "Bundesliga",
+    "n": "2.Bundesliga",
     "y": "tv"
    }
   ],
@@ -410,58 +733,7 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Venezia x Udinese",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Toulouse x Strasbourg",
-  "ch": [
-   {
-    "n": "Ligue 1",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Oxford City x Leicester City",
-  "ch": [
-   {
-    "n": "Fa Cup",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "AS Roma x Sassuolo",
+  "match": "Roma x Sassuolo",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -478,24 +750,7 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Everton x Coventry City",
-  "ch": [
-   {
-    "n": "Premier League",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Futebol",
-  "detail": "—",
-  "match": "Sevilla x Alavés",
+  "match": "Valencia x Real Madrid",
   "ch": [
    {
     "n": "Laliga",
@@ -512,10 +767,10 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Derby County x Bolton",
+  "match": "St. Mirren x Rangers",
   "ch": [
    {
-    "n": "Championship",
+    "n": "Campeonato Escocês",
     "y": "tv"
    }
   ],
@@ -526,13 +781,47 @@
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Valencia x Real Madrid",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Peterborough x Reading",
+  "ch": [
+   {
+    "n": "Fa Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Icasa x Guarani de Juazeiro",
   "ch": [
    {
     "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "17:05",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "PSG x Troyes",
+  "ch": [
+   {
+    "n": "Ligue 1",
     "y": "tv"
    }
   ],
@@ -557,16 +846,152 @@
  },
  {
   "date": "2026-11-07",
-  "t": "17:45",
+  "t": "17:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Famalicão x Arouca",
+  "match": "Sporting x Moreirense",
   "ch": [
    {
     "n": "Liga Portugal",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Atlético-MG x Grêmio",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Inter Miami x Charlotte FC",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Chicago Fire x Columbus Crew",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "DC United x New York City",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "CF Montreal x Vancouver Whitecaps",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "NY Red Bulls x Atlanta United",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Orlando City x NE Revolution",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Phipadelphia Union x Toronto FC",
+  "ch": [
+   {
+    "n": "Mls",
     "y": "tv"
    }
   ],
@@ -595,13 +1020,13 @@
  },
  {
   "date": "2026-11-07",
-  "t": "19:30",
+  "t": "20:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Operário Ferroviário x Sport Recife",
+  "match": "Vila Nova x Criciúma",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -618,23 +1043,6 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Vitória x Fluminense",
-  "ch": [
-   {
-    "n": "Brasileirão",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-07",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
   "match": "Cuiabá x Juventude",
   "ch": [
    {
@@ -646,16 +1054,135 @@
  },
  {
   "date": "2026-11-07",
-  "t": "20:00",
+  "t": "21:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "Vila Nova x Criciúma",
+  "country": "Mundial",
+  "league": "Semifinal-ida",
+  "detail": "—",
+  "match": "São Lourenço x Vasco da Gama",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Lnf Silver",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Austin FC x Portland Timbers",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "FC Dallas x Colorado Rapids",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Houston Dynamo x St. Louis City",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Minnesota United x SJ Earthquakes",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Real Salt Lake x LA Galaxy",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "San Diego FC x Sporting KC",
+  "ch": [
+   {
+    "n": "Mls",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Seattle Sounders x Los Angeles FC",
+  "ch": [
+   {
+    "n": "Mls",
     "y": "tv"
    }
   ],
@@ -687,10 +1214,27 @@
   "t": "21:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
   "match": "Náutico x CRB",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-07",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-volta",
+  "detail": "—",
+  "match": "Flamengo x Bahia",
   "ch": [
    {
     "n": "Transmissão a confirmar",
@@ -749,7 +1293,7 @@
   "country": "Mundial",
   "league": "Futebol",
   "detail": "—",
-  "match": "Atlético San Luis x Juarez",
+  "match": "Toluca x Monterrey",
   "ch": [
    {
     "n": "Liga Mx",
@@ -799,6 +1343,23 @@
    }
   ],
   "v": 2
+ },
+ {
+  "date": "2026-11-07",
+  "t": "23:55",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Pumas x Club América",
+  "ch": [
+   {
+    "n": "Liga Mx",
+    "y": "tv"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-08",
@@ -1586,6 +2147,23 @@
   "t": "14:00",
   "sport": "Futebol",
   "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Colônia x RB Leipzig",
+  "ch": [
+   {
+    "n": "Bundesliga Feminina",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
   "detail": "Tabela oficial",
@@ -1661,6 +2239,40 @@
   "ch": [
    {
     "n": "Campeonato Belga",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "BK Häcken x Chelsea",
+  "ch": [
+   {
+    "n": "Uefa Champions League Feminina",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Real Madrid x Paris FC",
+  "ch": [
+   {
+    "n": "Uefa Champions League Feminina",
     "y": "tv"
    }
   ],
@@ -1787,6 +2399,57 @@
  },
  {
   "date": "2026-11-08",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Semifinal-ida",
+  "detail": "—",
+  "match": "Palmeiras x Santos",
+  "ch": [
+   {
+    "n": "Paulistão Sub-20",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Anaitasuna x Aalvés",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Pamplona x Eibar",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
   "t": "15:15",
   "sport": "Futebol",
   "g": "M",
@@ -1872,6 +2535,91 @@
  },
  {
   "date": "2026-11-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Amorebieta x Logrones",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Mijas Las Lagunas x Jaén",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Trival Valderas x Leganés",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Plymouth Parkway x Berkhamsted",
+  "ch": [
+   {
+    "n": "Fa Cup",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Huracan-URU x River Plate",
+  "ch": [
+   {
+    "n": "Uru – Uruguaio 2° Divisão",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
   "t": "16:45",
   "sport": "Futebol",
   "g": "M",
@@ -1950,6 +2698,74 @@
   "ch": [
    {
     "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Tavernes x Valencia",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "PSG x Bayern de Munique",
+  "ch": [
+   {
+    "n": "Uefa Champions League Feminina",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Inter de Milão x Manchester City",
+  "ch": [
+   {
+    "n": "Uefa Champions League Feminina",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Roma x Servette",
+  "ch": [
+   {
+    "n": "Uefa Champions League Feminina",
     "y": "tv"
    }
   ],
@@ -2056,6 +2872,40 @@
   "ch": [
    {
     "n": "Campeonato Venezuelano",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Vila Real x Ceará B",
+  "ch": [
+   {
+    "n": "Taça Fares Lopes",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-08",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Futebol",
+  "detail": "—",
+  "match": "Guarani de Juazeiro x Quixadá",
+  "ch": [
+   {
+    "n": "Taça Fares Lopes",
     "y": "tv"
    }
   ],
