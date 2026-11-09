@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-09-a (pos-Copa: faxina geral; +NFL; +Champions; +Copa do Brasil)
+# build: 2026-11-09-b (mantos instrumentado; fixtures enriquecem liga)
 """
 ONDE.ASSISTIR — Pipeline de dados v4 (pós-Copa 2026)
 ====================================================
@@ -216,8 +216,17 @@ def fonte_mantos():
         r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
         corpo = BeautifulSoup(r.text, "html.parser").select_one("article")
         if not corpo: continue
-        for linha in corpo.get_text("\n").split("\n"):
-            m = rx.search(linha.strip())
+        linhas = [l.strip() for l in corpo.get_text("\n").split("\n")]
+        # instrumentação: contexto (3 linhas antes) dos primeiros jogos, para
+        # ver onde o site escreve a competição/categoria (Sub-20 etc.)
+        if "mantos" not in DIAG["amostras"]:
+            blocos = []
+            for i, l in enumerate(linhas):
+                if rx.search(l) and len(blocos) < 5:
+                    blocos.append(" || ".join(x for x in linhas[max(0, i-3):i+1] if x)[:350])
+            DIAG["amostras"]["mantos"] = blocos
+        for linha in linhas:
+            m = rx.search(linha)
             if not m: continue
             h, mi, t1, t2, ctxt, comp = m.groups()
             canais = [c.strip() for c in re.split(r"[,/]| e ", ctxt) if c.strip()]
@@ -361,13 +370,22 @@ def mesmo_jogo(m1, m2):
            (casa(p1[0], p2[1]) and casa(p1[1], p2[0]))
 
 def complementar_fixtures(base, fixtures):
-    """Tabela/fallback só preenche jogos que NENHUMA fonte já trouxe."""
+    """Tabela só preenche jogos que nenhuma fonte trouxe. Quando o jogo JÁ
+    existe com liga genérica ("Futebol", vinda do scraping), herda liga/país
+    da tabela oficial — permite filtrar por campeonato de verdade."""
     for fx in fixtures:
-        existe = any(b["date"] == fx["date"] and b["sport"] == "Futebol" and
-                     mesmo_jogo(b["match"], fx["match"])
-                     for b in base)
-        if not existe:
+        achou = None
+        for b in base:
+            if b["date"] == fx["date"] and b["sport"] == "Futebol" and \
+               mesmo_jogo(b["match"], fx["match"]):
+                achou = b; break
+        if achou is None:
             base.append(fx)
+        elif achou.get("league") in ("Futebol", "", None):
+            achou["league"] = fx["league"]
+            achou["country"] = fx.get("country", achou.get("country"))
+            if (achou.get("detail") or "—") == "—":
+                achou["detail"] = fx.get("detail", achou.get("detail"))
     return base
 
 # ----------------------------------------------------------------- merge
