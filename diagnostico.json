@@ -1,7 +1,7 @@
 {
  "fontes": {
   "log": [
-   "Coleta 09/11 19:31 BRT — janela 2026-11-09 a 2026-11-15",
+   "Coleta 09/11 20:09 BRT — janela 2026-11-09 a 2026-11-15",
    "  ✓ futebolnatv: 0 evento(s)",
    "  ✓ mantosdofutebol: 49 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
@@ -54,6 +54,12 @@
      "/canais"
     ]
    }
+  ],
+  "mantos": [
+   "Segunda – 09/11 || 14h00 – Colônia x RB Leipzig – Bundesliga Feminina",
+   "Canais: DAZN || 15h00 – Palmeiras x Santos – Paulistão Sub-20 (Semifinal-ida)",
+   "Canais: Youtube.com/@TNTSportsBR || 16h30 – Plymouth Parkway x Berkhamsted – FA Cup",
+   "Canais: Disney+ || 19h00 – Vila Real x Ceará B – Taça Fares Lopes"
   ]
  }
 }
