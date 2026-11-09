@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-09-c (parser mantos v2: competição+canais reais)
+# build: 2026-11-09-d (NBA: canais por jogo via broadcasts ESPN)
 """
 ONDE.ASSISTIR — Pipeline de dados v4 (pós-Copa 2026)
 ====================================================
@@ -277,13 +277,33 @@ def fonte_mantos():
 # Canais por modalidade = direitos de transmissão vigentes no Brasil.
 # Se os direitos mudarem, ajustar SOMENTE o dicionário abaixo.
 # =================================================================
-CANAIS_MODALIDADE = {
-    "nba": [canal("Prime Video"), canal("NBA League Pass")],
-}
-
 def espn_json(path, data):
     url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}"
     return requests.get(url, headers=HEADERS, timeout=30).json()
+
+def broadcasts_espn(comp):
+    """Nomes dos transmissores (EUA) que a própria ESPN lista no jogo."""
+    nomes = []
+    for b in comp.get("broadcasts", []):
+        nomes += b.get("names", [])
+    for gb in comp.get("geoBroadcasts", []):
+        n = (gb.get("media") or {}).get("shortName")
+        if n: nomes.append(n)
+    return " | ".join(nomes).upper()
+
+def canais_nba(comp):
+    """NBA no Brasil 2026/27, POR JOGO (fonte: broadcasts da ESPN por partida):
+    - pacote Amazon (global) -> incluído no Prime Video
+    - jogos ESPN/ABC (EUA)  -> ESPN/Disney+ no Brasil
+    - todos os demais       -> só NBA League Pass (pago à parte, mesmo dentro do Prime)"""
+    tx = broadcasts_espn(comp)
+    ch = []
+    if "PRIME" in tx or "AMAZON" in tx:
+        ch.append({"n": "Prime Video", "y": "stream"})
+    if "ESPN" in tx or "ABC" in tx:
+        ch += [{"n": "ESPN", "y": "tv"}, {"n": "Disney+", "y": "stream"}]
+    ch.append({"n": "NBA League Pass", "y": "stream"})
+    return ch
 
 def fonte_nba():
     evs = []
@@ -294,10 +314,14 @@ def fonte_nba():
             comp = ev.get("competitions", [{}])[0]
             times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
             if len(times) < 2: continue
+            # instrumentação: broadcasts crus dos primeiros jogos p/ validação
+            if len(DIAG["amostras"].get("nba_broadcasts", [])) < 4:
+                DIAG["amostras"].setdefault("nba_broadcasts", []).append(
+                    f"{times[1]} x {times[0]} :: {broadcasts_espn(comp) or '(vazio)'}")
             notas = comp.get("notes", [])
             detalhe = notas[0].get("headline", "Temporada NBA") if notas else "Temporada NBA"
             evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
-                              f"{times[1]} x {times[0]}", CANAIS_MODALIDADE["nba"],
+                              f"{times[1]} x {times[0]}", canais_nba(comp),
                               detail=detalhe, country="EUA/Canadá", v=2))
     return dedup(evs)
 
