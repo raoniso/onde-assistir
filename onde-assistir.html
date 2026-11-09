@@ -241,13 +241,6 @@
     </div>
 
     <!-- SEÇÃO TEMPORÁRIA: remover este bloco inteiro após a Copa (19/07) -->
-    <div class="section" data-sec="wc">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Seleções — Copa 🏆 <span class="count" id="cnt-wc"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('wc')">Limpar seleções</button>
-        <div class="chips" id="chips-wc"></div>
-      </div>
-    </div>
 
     <div class="section" data-sec="team">
       <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
@@ -285,39 +278,7 @@
    type do canal: 'tv' | 'stream' | 'free'
    ========================================================= */
 /*DB-START*/
-const DB = [
-  // ----- dia 0 (hoje) -----
-  {d:0,t:'11:00',sport:'Tênis',g:'M',country:'França',league:'Roland Garros',detail:'Quartas de final',match:'Alcaraz x Sinner',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:0,t:'13:00',sport:'Futebol',g:'F',country:'Brasil',league:'Brasileirão Feminino A1',detail:'Rodada 12',match:'Corinthians x Ferroviária',ch:[{n:'SporTV',y:'tv'},{n:'CazéTV',y:'free'}]},
-  {d:0,t:'15:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — treino livre',match:'F1 — Montreal',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
-  {d:0,t:'16:00',sport:'Futebol',g:'M',country:'Espanha',league:'La Liga 2',detail:'Playoff — semi (volta)',match:'Málaga x Las Palmas',ch:[{n:'ESPN 4',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:0,t:'16:45',sport:'Futebol',g:'M',country:'Mundial',league:'Amistosos Internacionais',detail:'Amistoso',match:'Portugal x Nigéria',ch:[{n:'SporTV',y:'tv'}]},
-  {d:0,t:'18:30',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série B',detail:'Rodada 11',match:'Santos x Goiás',ch:[{n:'Premiere',y:'stream'},{n:'Disney+',y:'stream'}]},
-  {d:0,t:'19:30',sport:'Vôlei',g:'F',country:'Mundial',league:'Liga das Nações (VNL)',detail:'Fase classificatória',match:'Brasil x Itália',ch:[{n:'SporTV 2',y:'tv'},{n:'VBTV',y:'stream'}]},
-  {d:0,t:'20:00',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série A',detail:'Rodada 13',match:'Flamengo x Palmeiras',ch:[{n:'Globo',y:'free'},{n:'Premiere',y:'stream'}]},
-  {d:0,t:'21:30',sport:'Basquete',g:'M',country:'EUA',league:'NBA',detail:'Finais — Jogo 3',match:'Celtics x Thunder',ch:[{n:'ESPN',y:'tv'},{n:'Prime Video',y:'stream'},{n:'NBA League Pass',y:'stream'}]},
-  {d:0,t:'23:00',sport:'UFC',g:'M',country:'EUA',league:'UFC Fight Night',detail:'Card principal',match:'UFC Vegas — luta principal',ch:[{n:'UFC Fight Pass',y:'stream'},{n:'Max',y:'stream'}]},
-
-  // ----- dia 1 (amanhã) -----
-  {d:1,t:'09:00',sport:'Tênis',g:'F',country:'França',league:'Roland Garros',detail:'Semifinal',match:'Swiatek x Gauff',ch:[{n:'ESPN 2',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:1,t:'13:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — classificação',match:'F1 — Montreal (quali)',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
-  {d:1,t:'14:00',sport:'Futebol',g:'M',country:'Inglaterra',league:'Premier League',detail:'Rodada 1 — pré-temporada',match:'Arsenal x Chelsea',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:1,t:'16:00',sport:'Futebol',g:'F',country:'EUA',league:'NWSL',detail:'Temporada regular',match:'Kansas City Current x Orlando Pride',ch:[{n:'CazéTV',y:'free'},{n:'Paramount+',y:'stream'}]},
-  {d:1,t:'16:00',sport:'Futebol',g:'M',country:'Itália',league:'Serie A',detail:'Rodada 38',match:'Inter x Milan',ch:[{n:'ESPN 4',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:1,t:'18:00',sport:'Beisebol',g:'M',country:'EUA',league:'MLB',detail:'Temporada regular',match:'Yankees x Red Sox',ch:[{n:'ESPN 3',y:'tv'},{n:'MLB.TV',y:'stream'}]},
-  {d:1,t:'19:00',sport:'Futebol',g:'M',country:'América do Sul',league:'Copa Libertadores',detail:'Oitavas — ida',match:'Botafogo x River Plate',ch:[{n:'Paramount+',y:'stream'},{n:'ESPN',y:'tv'}]},
-  {d:1,t:'21:00',sport:'Futebol',g:'M',country:'Brasil',league:'Brasileirão Série A',detail:'Rodada 13',match:'Corinthians x Grêmio',ch:[{n:'Premiere',y:'stream'},{n:'Record',y:'free'}]},
-  {d:1,t:'22:00',sport:'Basquete',g:'F',country:'EUA',league:'WNBA',detail:'Temporada regular',match:'Indiana Fever x NY Liberty',ch:[{n:'Prime Video',y:'stream'}]},
-
-  // ----- dia 2 -----
-  {d:2,t:'10:00',sport:'Tênis',g:'M',country:'França',league:'Roland Garros',detail:'Final',match:'Final masculina',ch:[{n:'ESPN',y:'tv'},{n:'Disney+',y:'stream'}]},
-  {d:2,t:'15:00',sport:'Automobilismo',g:'M',country:'Mundial',league:'Fórmula 1',detail:'GP do Canadá — corrida',match:'F1 — Montreal (corrida)',ch:[{n:'Band',y:'free'},{n:'F1 TV Pro',y:'stream'}]},
-  {d:2,t:'16:00',sport:'Futebol',g:'M',country:'Alemanha',league:'Bundesliga',detail:'Rodada 34',match:'Bayern x Dortmund',ch:[{n:'CazéTV',y:'free'},{n:'OneFootball',y:'stream'}]},
-  {d:2,t:'16:00',sport:'Futebol',g:'M',country:'Europa',league:'Champions League',detail:'Final',match:'Final da Champions',ch:[{n:'SBT',y:'free'},{n:'TNT',y:'tv'},{n:'Max',y:'stream'}]},
-  {d:2,t:'18:30',sport:'Futebol',g:'F',country:'Brasil',league:'Brasileirão Feminino A1',detail:'Rodada 13',match:'Palmeiras x São Paulo',ch:[{n:'SporTV',y:'tv'}]},
-  {d:2,t:'20:00',sport:'Vôlei',g:'M',country:'Mundial',league:'Liga das Nações (VNL)',detail:'Fase classificatória',match:'Brasil x Polônia',ch:[{n:'SporTV 2',y:'tv'},{n:'VBTV',y:'stream'}]},
-  {d:2,t:'21:15',sport:'NFL',g:'M',country:'EUA',league:'NFL',detail:'Pré-temporada',match:'Chiefs x Eagles',ch:[{n:'ESPN',y:'tv'},{n:'NFL Game Pass',y:'stream'}]},
-];
+const DB = [];
 /*DB-END*/
 const GENERATED_AT = null; /* preenchido pelo script Python */
 
@@ -339,10 +300,10 @@ async function tryLoadJson(){
    Buscados pelo PRÓPRIO navegador na API pública da ESPN a cada 60s
    (independe da pipeline de 4h). Se a API falhar, o app segue sem placar. */
 const SCORE_FEEDS = [
-  'soccer/fifa.world','soccer/fifa.friendly','soccer/bra.1','soccer/bra.2',
+  'soccer/bra.1','soccer/bra.2','soccer/bra.copa_do_brazil',
   'soccer/conmebol.libertadores','soccer/conmebol.sudamericana',
-  'soccer/eng.1','soccer/esp.1','soccer/esp.2','soccer/ger.1','soccer/ita.1','soccer/fra.1',
-  'basketball/nba'
+  'soccer/uefa.champions','soccer/eng.1','soccer/esp.1','soccer/ger.1','soccer/ita.1','soccer/fra.1',
+  'basketball/nba','football/nfl'
 ];
 let SCORES = [];
 const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
@@ -459,7 +420,7 @@ function linkFor(nome){
   return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
 }
 
-const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), wc:new Set(), catSub:false, catLower:false, q:'' };
+const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), catSub:false, catLower:false, q:'' };
 
 /* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
    cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
@@ -519,7 +480,7 @@ function clearFilter(key){
   buildAllChips(); updateCounts(); render();
 }
 function clearAll(){
-  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear(); state.wc.clear();
+  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear();
   state.catSub = false; state.catLower = false;
   el('chip-cat-sub').classList.remove('on'); el('chip-cat-lower').classList.remove('on');
   state.gender=''; state.q=''; el('search').value='';
@@ -527,7 +488,7 @@ function clearAll(){
   buildAllChips(); updateCounts(); render();
 }
 function updateCounts(){
-  for(const k of ['sport','country','league','team','wc']){
+  for(const k of ['sport','country','league','team']){
     const c = el('cnt-'+k);
     c.textContent = state[k].size; c.classList.toggle('show', state[k].size>0);
   }
@@ -535,34 +496,22 @@ function updateCounts(){
 function toggleSec(head){ head.parentElement.classList.toggle('closed'); }
 
 /* Esportes sempre visíveis no filtro (ordem fixa) */
-const SPORTS = ['Futebol','Basquete','Fórmula 1','Tênis','Surf','Ciclismo','Corrida de rua'];
+const SPORTS = ['Futebol','Basquete','Futebol Americano'];
 
 /* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
    (regex), então ruído das fontes nunca vira chip novo.
    REMOVER a linha da Copa após 19/07. */
 const LEAGUES = [
-  ['Copa do Mundo FIFA',    /copa do mundo/i],
   ['Brasileirão Série A',   /brasileir\w*\s*s[ée]rie a/i],
+  ['Copa do Brasil',        /copa do brasil/i],
   ['Libertadores',          /libertadores/i],
   ['Sul-Americana',         /sul.?americana/i],
+  ['Champions League',      /champions league|liga dos campe/i],
   ['Premier League',        /premier league/i],
   ['La Liga',               /la liga|^espanhol(?!.*2)/i],
   ['Alemão (Bundesliga)',   /bundesliga|alem[ãa]o/i],
   ['NBA',                   /\bnba\b/i],
-  ['WSL (Surf)',            /\bwsl\b|championship tour/i],
-];
-/* Seleções da Copa — TEMPORÁRIO: remover após 19/07 (junto com a seção no HTML) */
-const WC_TEAMS = [
-  ['Brasil',     /\bbrasil\b/i],
-  ['Argentina',  /argentina/i],
-  ['Alemanha',   /alemanha/i],
-  ['França',     /fran[çc]a/i],
-  ['Portugal',   /portugal/i],
-  ['Espanha',    /espanha/i],
-  ['Holanda',    /holanda/i],
-  ['Bélgica',    /b[ée]lgica/i],
-  ['Uruguai',    /uruguai/i],
-  ['Inglaterra', /inglaterra/i],
+  ['NFL',                   /\bnfl\b/i],
 ];
 /* Categoria: base e divisões inferiores ocultas por padrão */
 const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes/i;
@@ -574,12 +523,6 @@ function toggleCat(k, btn){
   btn.classList.toggle('on'); render();
 }
 
-function wcMatch(e){
-  if(!state.wc.size) return true;
-  for(const [lbl,re] of WC_TEAMS)
-    if(state.wc.has(lbl) && re.test(e.match)) return true;
-  return false;
-}
 
 /* Times: lista FIXA. Casa por padrão contra os nomes no card. */
 const TEAMS = [
@@ -615,7 +558,6 @@ function leagueMatch(e){
 function buildLeagueChips(){
   buildChips('league','chips-league', LEAGUES.map(l=>l[0]));
   buildChips('team','chips-team', TEAMS.map(t=>t[0]));
-  buildChips('wc','chips-wc', WC_TEAMS.map(t=>t[0]));
 }
 function buildAllChips(){
   const extras = uniq(DB.map(e=>e.sport)).filter(s=>!SPORTS.includes(s));
@@ -663,7 +605,6 @@ function render(){
     && (!state.country.size || state.country.has(e.country))
     && leagueMatch(e)
     && teamMatch(e)
-    && wcMatch(e)
     && (state.catSub || !isSub(e))
     && (state.catLower || !isLower(e))
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
