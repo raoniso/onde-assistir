@@ -241,13 +241,6 @@
     </div>
 
     <!-- SEÇÃO TEMPORÁRIA: remover este bloco inteiro após a Copa (19/07) -->
-    <div class="section" data-sec="wc">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Seleções — Copa 🏆 <span class="count" id="cnt-wc"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('wc')">Limpar seleções</button>
-        <div class="chips" id="chips-wc"></div>
-      </div>
-    </div>
 
     <div class="section" data-sec="team">
       <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
@@ -1507,27 +1500,6 @@ const DB = [
  },
  {
   "date": "2026-11-14",
-  "t": "02:00",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Circuito ATP",
-  "detail": "Dia de jogos",
-  "match": "Nitto ATP Finals",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -2009,7 +1981,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '09/11 01:27'; /* preenchido pelo script Python */
+const GENERATED_AT = '09/11 18:19'; /* preenchido pelo script Python */
 
 /* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
@@ -2029,10 +2001,10 @@ async function tryLoadJson(){
    Buscados pelo PRÓPRIO navegador na API pública da ESPN a cada 60s
    (independe da pipeline de 4h). Se a API falhar, o app segue sem placar. */
 const SCORE_FEEDS = [
-  'soccer/fifa.world','soccer/fifa.friendly','soccer/bra.1','soccer/bra.2',
+  'soccer/bra.1','soccer/bra.2','soccer/bra.copa_do_brazil',
   'soccer/conmebol.libertadores','soccer/conmebol.sudamericana',
-  'soccer/eng.1','soccer/esp.1','soccer/esp.2','soccer/ger.1','soccer/ita.1','soccer/fra.1',
-  'basketball/nba'
+  'soccer/uefa.champions','soccer/eng.1','soccer/esp.1','soccer/ger.1','soccer/ita.1','soccer/fra.1',
+  'basketball/nba','football/nfl'
 ];
 let SCORES = [];
 const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
@@ -2149,7 +2121,7 @@ function linkFor(nome){
   return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
 }
 
-const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), wc:new Set(), catSub:false, catLower:false, q:'' };
+const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), catSub:false, catLower:false, q:'' };
 
 /* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
    cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
@@ -2209,7 +2181,7 @@ function clearFilter(key){
   buildAllChips(); updateCounts(); render();
 }
 function clearAll(){
-  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear(); state.wc.clear();
+  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear();
   state.catSub = false; state.catLower = false;
   el('chip-cat-sub').classList.remove('on'); el('chip-cat-lower').classList.remove('on');
   state.gender=''; state.q=''; el('search').value='';
@@ -2217,7 +2189,7 @@ function clearAll(){
   buildAllChips(); updateCounts(); render();
 }
 function updateCounts(){
-  for(const k of ['sport','country','league','team','wc']){
+  for(const k of ['sport','country','league','team']){
     const c = el('cnt-'+k);
     c.textContent = state[k].size; c.classList.toggle('show', state[k].size>0);
   }
@@ -2225,34 +2197,22 @@ function updateCounts(){
 function toggleSec(head){ head.parentElement.classList.toggle('closed'); }
 
 /* Esportes sempre visíveis no filtro (ordem fixa) */
-const SPORTS = ['Futebol','Basquete','Fórmula 1','Tênis','Surf','Ciclismo','Corrida de rua'];
+const SPORTS = ['Futebol','Basquete','Futebol Americano'];
 
 /* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
    (regex), então ruído das fontes nunca vira chip novo.
    REMOVER a linha da Copa após 19/07. */
 const LEAGUES = [
-  ['Copa do Mundo FIFA',    /copa do mundo/i],
   ['Brasileirão Série A',   /brasileir\w*\s*s[ée]rie a/i],
+  ['Copa do Brasil',        /copa do brasil/i],
   ['Libertadores',          /libertadores/i],
   ['Sul-Americana',         /sul.?americana/i],
+  ['Champions League',      /champions league|liga dos campe/i],
   ['Premier League',        /premier league/i],
   ['La Liga',               /la liga|^espanhol(?!.*2)/i],
   ['Alemão (Bundesliga)',   /bundesliga|alem[ãa]o/i],
   ['NBA',                   /\bnba\b/i],
-  ['WSL (Surf)',            /\bwsl\b|championship tour/i],
-];
-/* Seleções da Copa — TEMPORÁRIO: remover após 19/07 (junto com a seção no HTML) */
-const WC_TEAMS = [
-  ['Brasil',     /\bbrasil\b/i],
-  ['Argentina',  /argentina/i],
-  ['Alemanha',   /alemanha/i],
-  ['França',     /fran[çc]a/i],
-  ['Portugal',   /portugal/i],
-  ['Espanha',    /espanha/i],
-  ['Holanda',    /holanda/i],
-  ['Bélgica',    /b[ée]lgica/i],
-  ['Uruguai',    /uruguai/i],
-  ['Inglaterra', /inglaterra/i],
+  ['NFL',                   /\bnfl\b/i],
 ];
 /* Categoria: base e divisões inferiores ocultas por padrão */
 const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes/i;
@@ -2264,12 +2224,6 @@ function toggleCat(k, btn){
   btn.classList.toggle('on'); render();
 }
 
-function wcMatch(e){
-  if(!state.wc.size) return true;
-  for(const [lbl,re] of WC_TEAMS)
-    if(state.wc.has(lbl) && re.test(e.match)) return true;
-  return false;
-}
 
 /* Times: lista FIXA. Casa por padrão contra os nomes no card. */
 const TEAMS = [
@@ -2305,7 +2259,6 @@ function leagueMatch(e){
 function buildLeagueChips(){
   buildChips('league','chips-league', LEAGUES.map(l=>l[0]));
   buildChips('team','chips-team', TEAMS.map(t=>t[0]));
-  buildChips('wc','chips-wc', WC_TEAMS.map(t=>t[0]));
 }
 function buildAllChips(){
   const extras = uniq(DB.map(e=>e.sport)).filter(s=>!SPORTS.includes(s));
@@ -2353,7 +2306,6 @@ function render(){
     && (!state.country.size || state.country.has(e.country))
     && leagueMatch(e)
     && teamMatch(e)
-    && wcMatch(e)
     && (state.catSub || !isSub(e))
     && (state.catLower || !isLower(e))
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
