@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-09-b (mantos instrumentado; fixtures enriquecem liga)
+# build: 2026-11-09-c (parser mantos v2: competição+canais reais)
 """
 ONDE.ASSISTIR — Pipeline de dados v4 (pós-Copa 2026)
 ====================================================
@@ -79,7 +79,9 @@ def canal(nome):
     for a, dep in [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
                    ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Cazé Tv","CazéTV"),("Xsports","XSports"),
                    ("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),("Wsl","WSL"),
-                   ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports")]:
+                   ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports"),
+                   ("Youtube","YouTube"),(" Br ("," BR ("),
+                   ("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT")]:
         b = b.replace(a, dep)
     return {"n": b, "y": tipo}
 
@@ -207,37 +209,66 @@ def fonte_futebolnatv():
 # =================================================================
 # FUTEBOL — fonte B (cruzamento): mantosdofutebol.com.br
 # =================================================================
+def separa_canais_mantos(texto):
+    """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X)."""
+    out = []
+    for parte in re.split(r",| e ", texto):
+        parte = parte.strip()
+        if not parte: continue
+        if ".com" in parte.lower():
+            out.append(limpa_canal_mantos(parte))
+        else:
+            out += [p.strip() for p in parte.split("/") if p.strip()]
+    return out
+
+def limpa_canal_mantos(c):
+    """'Youtube.com/@TNTSportsBR' -> 'TNT Sports BR (YouTube)'"""
+    m = re.search(r"youtube\.com/@?([\w.]+)", c, re.I)
+    if m:
+        nome = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", m.group(1))
+        return f"{nome} (YouTube)"
+    return c
+
 def fonte_mantos():
     urls = {HOJE: "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
             HOJE + timedelta(days=1): "https://mantosdofutebol.com.br/jogos-de-amanha-tv/"}
-    rx = re.compile(r"(\d{1,2})[h:](\d{2})\s*[–\-—]\s*(.+?)\s+[xX]\s+(.+?)\s*[–\-—]\s*([^(\n]+)(?:\(([^)]+)\))?")
+    # Estrutura real (capturada via diagnostico.json em 09/11/2026):
+    #   "15h00 – Palmeiras x Santos – Paulistão Sub-20 (Semifinal-ida)"
+    #   "Canais: Youtube.com/@TNTSportsBR"
+    # A COMPETIÇÃO vem na linha do jogo; os CANAIS na linha seguinte.
+    rx = re.compile(r"(\d{1,2})[h:](\d{2})\s*[–\-—]\s*(.+?)\s+[xX]\s+(.+?)\s*[–\-—]\s*([^(\n]+?)\s*(?:\(([^)]+)\))?\s*$")
     evs = []
     for data, url in urls.items():
         r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
         corpo = BeautifulSoup(r.text, "html.parser").select_one("article")
         if not corpo: continue
-        linhas = [l.strip() for l in corpo.get_text("\n").split("\n")]
-        # instrumentação: contexto (3 linhas antes) dos primeiros jogos, para
-        # ver onde o site escreve a competição/categoria (Sub-20 etc.)
+        linhas = [l.strip() for l in corpo.get_text("\n").split("\n") if l.strip()]
+        # instrumentação mantida: detecta mudança futura de layout
         if "mantos" not in DIAG["amostras"]:
             blocos = []
             for i, l in enumerate(linhas):
-                if rx.search(l) and len(blocos) < 5:
-                    blocos.append(" || ".join(x for x in linhas[max(0, i-3):i+1] if x)[:350])
+                if rx.search(l) and len(blocos) < 3:
+                    blocos.append(" || ".join(linhas[i:i+2])[:300])
             DIAG["amostras"]["mantos"] = blocos
-        for linha in linhas:
+        for i, linha in enumerate(linhas):
             m = rx.search(linha)
             if not m: continue
-            h, mi, t1, t2, ctxt, comp = m.groups()
-            canais = [c.strip() for c in re.split(r"[,/]| e ", ctxt) if c.strip()]
-            liga = (comp or "").strip() or "Futebol"
-            detalhe = "—"
-            # "(Semifinal - ida)", "(Final)" etc. são FASE do torneio, não liga
-            if re.search(r"semifinal|quartas|oitavas|final|\bida\b|\bvolta\b|rodada|jogo \d",
-                         sem_acento(liga), re.I):
+            h, mi, t1, t2, compet, fase = m.groups()
+            canais = []
+            for prox in linhas[i+1:i+3]:
+                mc = re.match(r"Canais?\s*:\s*(.+)", prox, re.I)
+                if mc:
+                    canais = separa_canais_mantos(mc.group(1))
+                    break
+                if rx.search(prox): break  # próximo jogo veio antes da linha de canais
+            liga = (compet or "").strip() or "Futebol"
+            detalhe = (fase or "—").strip() or "—"
+            # segurança: se a "liga" for apenas uma fase, vira detalhe
+            if re.search(r"^(semifinal|quartas|oitavas|final|rodada|jogo \d)", sem_acento(liga), re.I):
                 detalhe, liga = liga, "Futebol"
             evs.append(evento(data, f"{int(h):02d}:{mi}", "Futebol", liga,
-                              f"{t1.strip()} x {t2.strip()}", [canal(c) for c in canais],
+                              f"{t1.strip()} x {t2.strip()}",
+                              [canal(c) for c in canais] or [{"n": "Transmissão a confirmar", "y": "tv"}],
                               detail=detalhe))
     return evs
 
@@ -454,7 +485,8 @@ def main():
     # Sanitização final: nenhum pseudo-canal passa, venha de qual fonte vier
     PSEUDO = re.compile(r"copa|fifa|rodada|grupo|s[ée]rie|amistos|libertadores|\b20\d\d\b", re.I)
     for e in eventos:
-        e["ch"] = [c for c in e["ch"] if not PSEUDO.search(sem_acento(c["n"]))]
+        e["ch"] = [c for c in e["ch"]
+                   if c["n"].strip().upper() == "FIFA+" or not PSEUDO.search(sem_acento(c["n"]))]
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
     eventos.sort(key=lambda e: (e["date"], e["t"]))
 
