@@ -2747,7 +2747,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '09/11 20:17'; /* preenchido pelo script Python */
+const GENERATED_AT = '09/11 20:23'; /* preenchido pelo script Python */
 
 /* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
    ao lado, carrega os dados de lá — senão usa o DB embutido. */
@@ -2982,7 +2982,7 @@ const LEAGUES = [
 ];
 /* Categoria: base e divisões inferiores ocultas por padrão */
 const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes|\bbase\b|\bcopinha\b/i;
-const RE_LOWER = /s[ée]rie [bcd]\b|2ª divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
+const RE_LOWER = /s[ée]rie [bcd]\b|2[ªº°]? ?divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
 function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
 const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;
   function isLower(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
