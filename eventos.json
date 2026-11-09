@@ -78,10 +78,6 @@
   "match": "Los Angeles Lakers x Atlanta Hawks",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -98,10 +94,6 @@
   "detail": "Temporada NBA",
   "match": "Cleveland Cavaliers x Charlotte Hornets",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -120,10 +112,6 @@
   "match": "Washington Wizards x Detroit Pistons",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -141,10 +129,6 @@
   "match": "Memphis Grizzlies x Toronto Raptors",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -161,10 +145,6 @@
   "detail": "Temporada NBA",
   "match": "Indiana Pacers x Dallas Mavericks",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -208,10 +188,6 @@
   "match": "Denver Nuggets x Houston Rockets",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -229,10 +205,6 @@
   "match": "San Antonio Spurs x Phoenix Suns",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -249,10 +221,6 @@
   "detail": "Temporada NBA",
   "match": "New Orleans Pelicans x Golden State Warriors",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1088,10 +1056,6 @@
   "match": "Milwaukee Bucks x New York Knicks",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1108,10 +1072,6 @@
   "detail": "Temporada NBA",
   "match": "Boston Celtics x Philadelphia 76ers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1130,10 +1090,6 @@
   "match": "LA Clippers x Phoenix Suns",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1150,10 +1106,6 @@
   "detail": "Temporada NBA",
   "match": "Miami Heat x Utah Jazz",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1172,10 +1124,6 @@
   "match": "Orlando Magic x Sacramento Kings",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1192,10 +1140,6 @@
   "detail": "Temporada NBA",
   "match": "Oklahoma City Thunder x Portland Trail Blazers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1231,10 +1175,6 @@
   "match": "Washington Wizards x Indiana Pacers",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1252,7 +1192,11 @@
   "match": "Cleveland Cavaliers x New York Knicks",
   "ch": [
    {
-    "n": "Prime Video",
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
     "y": "stream"
    },
    {
@@ -1273,10 +1217,6 @@
   "match": "Boston Celtics x Toronto Raptors",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1293,10 +1233,6 @@
   "detail": "Temporada NBA",
   "match": "San Antonio Spurs x Chicago Bulls",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1315,10 +1251,6 @@
   "match": "Denver Nuggets x Memphis Grizzlies",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1335,10 +1267,6 @@
   "detail": "Temporada NBA",
   "match": "Los Angeles Lakers x Milwaukee Bucks",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1357,10 +1285,6 @@
   "match": "Brooklyn Nets x New Orleans Pelicans",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1377,10 +1301,6 @@
   "detail": "Temporada NBA",
   "match": "Orlando Magic x Utah Jazz",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1399,7 +1319,11 @@
   "match": "Golden State Warriors x Houston Rockets",
   "ch": [
    {
-    "n": "Prime Video",
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
     "y": "stream"
    },
    {
@@ -1420,10 +1344,6 @@
   "match": "Oklahoma City Thunder x Portland Trail Blazers",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1440,10 +1360,6 @@
   "detail": "Temporada NBA",
   "match": "Toronto Raptors x Philadelphia 76ers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1462,10 +1378,6 @@
   "match": "Detroit Pistons x Washington Wizards",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1482,10 +1394,6 @@
   "detail": "Temporada NBA",
   "match": "Dallas Mavericks x Minnesota Timberwolves",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1529,10 +1437,6 @@
   "match": "Charlotte Hornets x Phoenix Suns",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1571,10 +1475,6 @@
   "match": "Milwaukee Bucks x Orlando Magic",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1591,10 +1491,6 @@
   "detail": "NBA Cup - Group Play",
   "match": "Cleveland Cavaliers x Miami Heat",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1613,10 +1509,6 @@
   "match": "Atlanta Hawks x Chicago Bulls",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1634,10 +1526,6 @@
   "match": "Memphis Grizzlies x New Orleans Pelicans",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1654,10 +1542,6 @@
   "detail": "NBA Cup - Group Play",
   "match": "Utah Jazz x Houston Rockets",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1697,10 +1581,6 @@
   "match": "Portland Trail Blazers x Sacramento Kings",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1717,10 +1597,6 @@
   "detail": "NBA Cup - Group Play",
   "match": "Oklahoma City Thunder x LA Clippers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1926,10 +1802,6 @@
   "match": "Denver Nuggets x New Orleans Pelicans",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1946,10 +1818,6 @@
   "detail": "Temporada NBA",
   "match": "Dallas Mavericks x Cleveland Cavaliers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -1968,10 +1836,6 @@
   "match": "Detroit Pistons x Miami Heat",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -1989,10 +1853,6 @@
   "match": "Brooklyn Nets x Memphis Grizzlies",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -2009,10 +1869,6 @@
   "detail": "Temporada NBA",
   "match": "Chicago Bulls x Minnesota Timberwolves",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -2051,10 +1907,6 @@
   "detail": "Temporada NBA",
   "match": "Indiana Pacers x Philadelphia 76ers",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -2220,10 +2072,6 @@
   "match": "Los Angeles Lakers x Phoenix Suns",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -2304,10 +2152,6 @@
   "match": "Charlotte Hornets x LA Clippers",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -2324,10 +2168,6 @@
   "detail": "Temporada NBA",
   "match": "San Antonio Spurs x Utah Jazz",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -2346,10 +2186,6 @@
   "match": "Dallas Mavericks x Boston Celtics",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -2366,10 +2202,6 @@
   "detail": "Temporada NBA",
   "match": "New York Knicks x Toronto Raptors",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -2388,10 +2220,6 @@
   "match": "Houston Rockets x Washington Wizards",
   "ch": [
    {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
     "n": "NBA League Pass",
     "y": "stream"
    }
@@ -2408,10 +2236,6 @@
   "detail": "Temporada NBA",
   "match": "Atlanta Hawks x Milwaukee Bucks",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"
@@ -2454,10 +2278,6 @@
   "detail": "Temporada NBA",
   "match": "Oklahoma City Thunder x Sacramento Kings",
   "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
    {
     "n": "NBA League Pass",
     "y": "stream"

@@ -1,7 +1,7 @@
 {
  "fontes": {
   "log": [
-   "Coleta 09/11 20:17 BRT — janela 2026-11-09 a 2026-11-15",
+   "Coleta 09/11 20:38 BRT — janela 2026-11-09 a 2026-11-15",
    "  ✓ futebolnatv: 0 evento(s)",
    "  ✓ mantosdofutebol: 49 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
@@ -59,6 +59,12 @@
    "14h00 – Colônia x RB Leipzig – Bundesliga Feminina || Canais: DAZN",
    "15h00 – Palmeiras x Santos – Paulistão Sub-20 (Semifinal-ida) || Canais: Youtube.com/@TNTSportsBR",
    "16h30 – Plymouth Parkway x Berkhamsted – FA Cup || Canais: Disney+"
+  ],
+  "nba_broadcasts": [
+   "Los Angeles Lakers x Atlanta Hawks :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET +",
+   "Cleveland Cavaliers x Charlotte Hornets :: DAZN CLE | DAZN CLE",
+   "Washington Wizards x Detroit Pistons :: NBCSN | NBCSN",
+   "Memphis Grizzlies x Toronto Raptors :: DAZN MEM | DAZN MEM"
   ]
  }
 }
