@@ -514,10 +514,11 @@ const LEAGUES = [
   ['NFL',                   /\bnfl\b/i],
 ];
 /* Categoria: base e divisões inferiores ocultas por padrão */
-const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes/i;
+const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes|\bbase\b|\bcopinha\b/i;
 const RE_LOWER = /s[ée]rie [bcd]\b|2ª divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
-function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league); }
-function isLower(e){ return e.sport === 'Futebol' && RE_LOWER.test(e.league + ' ' + (e.detail||'')); }
+function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
+const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;
+  function isLower(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
 function toggleCat(k, btn){
   if(k==='sub') state.catSub = !state.catSub; else state.catLower = !state.catLower;
   btn.classList.toggle('on'); render();
