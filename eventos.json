@@ -1,16 +1,16 @@
 [
  {
   "date": "2026-11-10",
-  "t": "14:00",
+  "t": "16:30",
   "sport": "Futebol",
-  "g": "F",
-  "country": "Alemanha",
-  "league": "Bundesliga Feminina",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "URU – Uruguaio 2° Divisão",
   "detail": "—",
-  "match": "Colônia x RB Leipzig",
+  "match": "Huracan-URU x River Plate",
   "ch": [
    {
-    "n": "DAZN",
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -18,30 +18,76 @@
  },
  {
   "date": "2026-11-10",
-  "t": "15:00",
+  "t": "17:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Paulistão Sub-20",
-  "detail": "Semifinal-ida",
-  "match": "Palmeiras x Santos",
+  "country": "Espanha",
+  "league": "Copa do Rei",
+  "detail": "—",
+  "match": "Tavernes x Valencia",
   "ch": [
    {
-    "n": "TNT Sports BR (YouTube)",
+    "n": "ESPN 2",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1
  },
  {
   "date": "2026-11-10",
-  "t": "16:30",
+  "t": "17:00",
   "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "FA Cup",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
   "detail": "—",
-  "match": "Plymouth Parkway x Berkhamsted",
+  "match": "PSG x Bayern de Munique",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-10",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Inter de Milão x Manchester City",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-10",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Roma x Servette",
   "ch": [
    {
     "n": "Disney+",
@@ -58,7 +104,7 @@
   "country": "Mundial",
   "league": "Taça Fares Lopes",
   "detail": "—",
-  "match": "Vila Real x Ceará B",
+  "match": "Guarani de Juazeiro x Quixadá",
   "ch": [
    {
     "n": "Metropoles Esportes (YouTube)",
@@ -967,6 +1013,23 @@
  },
  {
   "date": "2026-11-12",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série B",
+  "detail": "Tabela oficial",
+  "match": "São Bernardo x Athletic",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-12",
   "t": "21:00",
   "sport": "Basquete",
   "g": "M",
@@ -1313,23 +1376,6 @@
   "league": "Brasileirão Série B",
   "detail": "Tabela oficial",
   "match": "Juventude x Botafogo-SP",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Tabela oficial",
-  "match": "São Bernardo x Athletic",
   "ch": [
    {
     "n": "Transmissão a confirmar",

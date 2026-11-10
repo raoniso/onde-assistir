@@ -1,13 +1,13 @@
 {
  "fontes": {
   "log": [
-   "Coleta 10/11 09:03 BRT — janela 2026-11-10 a 2026-11-16",
+   "Coleta 10/11 18:37 BRT — janela 2026-11-10 a 2026-11-16",
    "  ✓ futebolnatv: 0 evento(s)",
-   "  ✓ mantosdofutebol: 37 evento(s)",
+   "  ✓ mantosdofutebol: 39 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 113 eventos → eventos.json",
+   "TOTAL: 115 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
@@ -17,7 +17,7 @@
    {
     "url": "https://www.futebolnatv.com.br/jogos-hoje",
     "http": 200,
-    "bytes": 66882,
+    "bytes": 67335,
     "links_aovivo": 4,
     "hrefs_amostra": [
      "/",
@@ -56,9 +56,9 @@
    }
   ],
   "mantos": [
-   "14h00 – Colônia x RB Leipzig – Bundesliga Feminina || Canais: DAZN",
-   "15h00 – Palmeiras x Santos – Paulistão Sub-20 (Semifinal-ida) || Canais: Youtube.com/@TNTSportsBR",
-   "16h30 – Plymouth Parkway x Berkhamsted – FA Cup || Canais: Disney+"
+   "16h30 – Huracan-URU x River Plate-URU – Uruguaio 2° Divisão || Canais: Disney+",
+   "17h00 – Tavernes x Valencia – Copa do Rei || Canais: ESPN 2 e Disney+",
+   "17h00 – PSG x Bayern de Munique – UEFA Champions League Feminina || Canais: ESPN e Disney+"
   ],
   "nba_broadcasts": [
    "Milwaukee Bucks x New York Knicks :: MYMI | BUCKS APP | MYMI | BUCKS APP",
