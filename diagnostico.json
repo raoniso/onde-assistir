@@ -1,13 +1,13 @@
 {
  "fontes": {
   "log": [
-   "Coleta 09/11 23:30 BRT — janela 2026-11-09 a 2026-11-15",
+   "Coleta 10/11 09:03 BRT — janela 2026-11-10 a 2026-11-16",
    "  ✓ futebolnatv: 0 evento(s)",
-   "  ✓ mantosdofutebol: 49 evento(s)",
+   "  ✓ mantosdofutebol: 37 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 126 eventos → eventos.json",
+   "TOTAL: 113 eventos → eventos.json",
    "index.html atualizado.",
    "onde-assistir.html atualizado."
   ]
@@ -17,8 +17,8 @@
    {
     "url": "https://www.futebolnatv.com.br/jogos-hoje",
     "http": 200,
-    "bytes": 61588,
-    "links_aovivo": 1,
+    "bytes": 66882,
+    "links_aovivo": 4,
     "hrefs_amostra": [
      "/",
      "/sign-in",
@@ -37,8 +37,8 @@
    {
     "url": "https://www.futebolnatv.com.br/jogos-amanha",
     "http": 200,
-    "bytes": 66622,
-    "links_aovivo": 4,
+    "bytes": 66848,
+    "links_aovivo": 3,
     "hrefs_amostra": [
      "/",
      "/sign-in",
@@ -61,10 +61,10 @@
    "16h30 – Plymouth Parkway x Berkhamsted – FA Cup || Canais: Disney+"
   ],
   "nba_broadcasts": [
-   "Los Angeles Lakers x Atlanta Hawks :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET +",
-   "Cleveland Cavaliers x Charlotte Hornets :: DAZN CLE | DAZN CLE",
-   "Washington Wizards x Detroit Pistons :: NBCSN | NBCSN",
-   "Memphis Grizzlies x Toronto Raptors :: DAZN MEM | DAZN MEM"
+   "Milwaukee Bucks x New York Knicks :: MYMI | BUCKS APP | MYMI | BUCKS APP",
+   "Boston Celtics x Philadelphia 76ers :: NBC | NBC",
+   "LA Clippers x Phoenix Suns :: SUNS LIVE | ARIZONA'S FAMILY 3TV | CLIPPERVISION | SUNS LIVE | ARIZONA'S FAMILY 3TV | CLIPPERVISION",
+   "Miami Heat x Utah Jazz :: KJZZ-TV | JAZZ+ | KJZZ-TV | JAZZ+"
   ]
  }
 }
