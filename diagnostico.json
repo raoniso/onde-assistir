@@ -18,9 +18,9 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 11/11 11:47 BRT — janela 2026-11-11 a 2026-11-17",
+   "Coleta 11/11 19:04 BRT — janela 2026-11-11 a 2026-11-17",
    "  ✓ mantosdofutebol: 97 evento(s)",
-   "  ✓ goal (2º guia): 34 evento(s)",
+   "  ✓ goal (2º guia): 55 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 66 evento(s)",
    "  ✓ ESPN NBA: 50 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
@@ -81,8 +81,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 287691,
-   "tabelas": 5,
+   "bytes": 314375,
+   "tabelas": 6,
    "dias": [
     {
      "titulo": "Jogos de quarta, 11 de novembro de 2026",
@@ -98,12 +98,17 @@
      "titulo": "Jogos de sexta, 13 de novembro de 2026",
      "data": "2026-11-13",
      "jogos": 13
+    },
+    {
+     "titulo": "Jogos de sábado, 14 de novembro de 2026",
+     "data": "2026-11-14",
+     "jogos": 21
     }
    ],
    "linhas_nao_lidas": []
   },
   "guias": {
-   "nos_dois": 31,
+   "nos_dois": 52,
    "so_no_segundo": [
     "11-11 21:30 Flamengo x Internacional [Copa do Brasil Feminina]",
     "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
