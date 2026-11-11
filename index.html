@@ -126,6 +126,7 @@
   }
   @keyframes rise{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
   @media (prefers-reduced-motion:reduce){ .card{animation:none} }
+  .quiet .card{animation:none} /* atualização automática de placar não re-anima a lista */
   .when{display:flex; flex-direction:column; align-items:flex-start; gap:4px}
   .time{
     font-family:'Barlow Condensed'; font-weight:800; font-size:34px;
@@ -220,7 +221,7 @@
           <button class="chip" id="chip-cat-sub" onclick="toggleCat('sub',this)">Sub / base</button>
           <button class="chip" id="chip-cat-lower" onclick="toggleCat('lower',this)">Divisões inferiores</button>
         </div>
-        <div style="font-size:11px;color:var(--faint);margin-top:8px">Desmarcados, jogos de base (Sub-17, Sub-20…) e divisões de acesso (Série B/C, 2ª divisões) ficam ocultos.</div>
+        <div style="font-size:11px;color:var(--faint);margin-top:8px">Desmarcados, jogos de base (Sub-17, Sub-20…), times B e divisões de acesso (Série B/C, 2ª divisões) ficam ocultos.</div>
       </div>
     </div>
 
@@ -240,8 +241,6 @@
       </div>
     </div>
 
-    <!-- SEÇÃO TEMPORÁRIA: remover este bloco inteiro após a Copa (19/07) -->
-
     <div class="section" data-sec="team">
       <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
       <div class="sec-body">
@@ -255,7 +254,7 @@
     </div>
 
     <div class="actions">
-      <button class="btn-update" onclick="render()">Atualizar</button>
+      <button class="btn-update" id="btn-update" onclick="atualizar()">Atualizar</button>
       <button class="btn-ghost" onclick="clearAll()">Limpar tudo</button>
     </div>
 
@@ -272,13 +271,49 @@
 
 <script>
 /* =========================================================
-   DADOS — atualizados pelo script Python (atualizar_dados.py),
-   que substitui tudo entre os marcadores DB-START e DB-END.
-   Se houver um eventos.json hospedado junto, ele tem prioridade.
-   type do canal: 'tv' | 'stream' | 'free'
+   DADOS — este arquivo é o TEMPLATE. O robô (atualizar_dados.py) gera o
+   index.html a partir dele, trocando o que está entre DB-START e DB-END
+   e preenchendo GENERATED_AT. Com o app aberto, o eventos.json hospedado
+   ao lado é recarregado e tem prioridade sobre os dados embutidos.
+   Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?}
+   Canal:  {n: nome, y: 'tv'|'stream'|'free', u?: link exato}
    ========================================================= */
 /*DB-START*/
 const DB = [
+ {
+  "date": "2026-11-11",
+  "t": "00:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Orlando Magic x Sacramento Kings",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-11",
+  "t": "01:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "Temporada NBA",
+  "match": "Oklahoma City Thunder x Portland Trail Blazers",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
  {
   "date": "2026-11-11",
   "t": "14:45",
@@ -305,14 +340,15 @@ const DB = [
   "t": "15:30",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
+  "country": "Brasil",
   "league": "Taça Fares Lopes",
   "detail": "—",
   "match": "Tirol x Fortaleza B",
   "ch": [
    {
     "n": "Metropoles Esportes (YouTube)",
-    "y": "tv"
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
    }
   ],
   "v": 1
@@ -322,14 +358,15 @@ const DB = [
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
+  "country": "Brasil",
   "league": "Campeonato Pernambucano",
   "detail": "Turno Forró – OF",
   "match": "Petrolina x Chã Grande",
   "ch": [
    {
-    "n": "Tvfpfpe (YouTube)",
-    "y": "tv"
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
    }
   ],
   "v": 1
@@ -411,23 +448,6 @@ const DB = [
   "t": "19:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
-  "league": "Taça Fares Lopes",
-  "detail": "—",
-  "match": "Guarani de Juazeiro x Quixadá",
-  "ch": [
-   {
-    "n": "Metropoles Esportes (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-11",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série B",
   "detail": "—",
@@ -438,21 +458,23 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2,
+  "espn": "Londrina x Náutico"
  },
  {
   "date": "2026-11-11",
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
+  "country": "Brasil",
   "league": "Campeonato Pernambucano",
   "detail": "Turno Forró – OF",
   "match": "Central x Salgueiro",
   "ch": [
    {
-    "n": "Tvfpfpe (YouTube)",
-    "y": "tv"
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
    }
   ],
   "v": 1
@@ -462,14 +484,15 @@ const DB = [
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Mundial",
+  "country": "Brasil",
   "league": "Campeonato Pernambucano",
   "detail": "Turno Forró – OF",
   "match": "Facilnet x Belo Jardim",
   "ch": [
    {
-    "n": "Tvfpfpe (YouTube)",
-    "y": "tv"
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
    }
   ],
   "v": 1
@@ -489,7 +512,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -514,7 +537,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -531,7 +554,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -548,7 +571,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -565,7 +588,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -582,7 +605,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -599,7 +622,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -616,7 +639,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-11",
@@ -641,7 +664,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-12",
@@ -658,7 +681,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-12",
@@ -717,44 +740,6 @@ const DB = [
  },
  {
   "date": "2026-11-12",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Moldávia x Cazaquistão",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistoso Sub-21",
-  "detail": "—",
-  "match": "Alemanha x Bélgica",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
@@ -763,44 +748,6 @@ const DB = [
   "detail": "—",
   "match": "Puertollano x Albacete",
   "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Alemanha",
-  "league": "Bundesliga Feminina",
-  "detail": "—",
-  "match": "Hamburgo x Mainz 05",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "14:45",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "UEFA Champions League Feminina",
-  "detail": "—",
-  "match": "OH Leuven x HB Koge",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
@@ -844,8 +791,9 @@ const DB = [
     "y": "free"
    },
    {
-    "n": "Ulisses Costa Tv (YouTube)",
-    "y": "tv"
+    "n": "Ulisses Costa TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@UlissesCostaTV"
    }
   ],
   "v": 1
@@ -886,68 +834,18 @@ const DB = [
  },
  {
   "date": "2026-11-12",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulistão Sub-20",
-  "detail": "Semifinal-volta",
-  "match": "Santos x Palmeiras",
-  "ch": [
-   {
-    "n": "TNT Sports BR (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "15:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Taça Fares Lopes",
-  "detail": "—",
-  "match": "Tirol x Fortaleza B",
-  "ch": [
-   {
-    "n": "Metropoles Esportes (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Pernambucano",
-  "detail": "Turno Forró – OF",
-  "match": "Petrolina x Chã Grande",
-  "ch": [
-   {
-    "n": "Tvfpfpe (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
   "league": "CONCACAF Nations League",
   "detail": "—",
   "match": "Barbados x Guadalupe",
   "ch": [
    {
     "n": "Concacaf (YouTube)",
-    "y": "tv"
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
@@ -957,82 +855,15 @@ const DB = [
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
+  "country": "Mundial",
   "league": "CONCACAF Nations League",
   "detail": "—",
   "match": "Ilhas Cayman x Guiana",
   "ch": [
    {
     "n": "Concacaf (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Bermuda x Santa Lúcia",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Porto Rico x Dominica",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Uruguaio 2° Divisão",
-  "detail": "—",
-  "match": "La Luz x Fênix",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Uruguaio 2° Divisão",
-  "detail": "—",
-  "match": "Tacuarembó x Miramar Misiones",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
@@ -1200,279 +1031,36 @@ const DB = [
  },
  {
   "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Sérvia x Alemanha",
-  "ch": [
-   {
-    "n": "GE TV (YouTube)",
-    "y": "tv"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Escócia x Macedônia do Norte",
-  "ch": [
-   {
-    "n": "ESPNbrasil (YouTube)",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Holanda x Grécia",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Eslovênia x Suíça",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Bulgária x Islândia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Eslováquia x Ilhas Faroé",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Luxemburgo x Estônia",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Andorra x Gibraltar",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Liechtenstein x Azerbaijão",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "UEFA Champions League Feminina",
-  "detail": "—",
-  "match": "Juventus x Lyon",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Europa (demais)",
-  "league": "UEFA Champions League Feminina",
-  "detail": "—",
-  "match": "Benfica x Austria Viena",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
+  "country": "Mundial",
   "league": "CONCACAF Nations League",
   "detail": "—",
   "match": "Bonaire x Cuba",
   "ch": [
    {
     "n": "Concacaf (YouTube)",
-    "y": "tv"
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
  },
  {
   "date": "2026-11-12",
-  "t": "17:00",
+  "t": "19:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Espanha",
-  "league": "Copa do Rei",
-  "detail": "—",
-  "match": "Salamanca x Celta de Vigo",
-  "ch": [
-   {
-    "n": "ESPN 3",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio",
-  "detail": "—",
-  "match": "Montevideo City Torque x Racing Montevideo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
+  "country": "Mundial",
   "league": "CONCACAF Nations League",
   "detail": "—",
-  "match": "Granada x São Cristóvão e Névis",
+  "match": "Aruba x Martinica",
   "ch": [
    {
     "n": "Concacaf (YouTube)",
-    "y": "tv"
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
@@ -1483,64 +1071,14 @@ const DB = [
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "—",
-  "match": "Londrina x Náutico",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Aruba x Martinica",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
   "league": "Taça Fares Lopes",
   "detail": "—",
   "match": "Ceará B x Atlético Cearense",
   "ch": [
    {
     "n": "Metropoles Esportes (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistoso",
-  "detail": "—",
-  "match": "Colo-Colo x Racing",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
    }
   ],
   "v": 1
@@ -1557,40 +1095,6 @@ const DB = [
   "ch": [
    {
     "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Pernambucano",
-  "detail": "Turno Forró – OF",
-  "match": "Central x Salgueiro",
-  "ch": [
-   {
-    "n": "Tvfpfpe (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Campeonato Pernambucano",
-  "detail": "Turno Forró – OF",
-  "match": "Facilnet x Belo Jardim",
-  "ch": [
-   {
-    "n": "Tvfpfpe (YouTube)",
     "y": "tv"
    }
   ],
@@ -1639,48 +1143,15 @@ const DB = [
   "t": "20:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
+  "country": "Mundial",
   "league": "CONCACAF Nations League",
   "detail": "—",
   "match": "Antigua e Barbuda x Trinidad e Tobago",
   "ch": [
    {
     "n": "Concacaf (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistoso Sub-20",
-  "detail": "—",
-  "match": "Brasil x Peru",
-  "ch": [
-   {
-    "n": "TNT Sports BR (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Saint Martin x El Salvador",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "tv"
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
@@ -1705,6 +1176,24 @@ const DB = [
  {
   "date": "2026-11-12",
   "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Curaçao x Panamá",
+  "ch": [
+   {
+    "n": "Canalgoatbr (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-12",
+  "t": "21:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -1717,7 +1206,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-12",
@@ -1732,40 +1221,6 @@ const DB = [
    {
     "n": "NBA League Pass",
     "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-11-12",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Curaçao x Panamá",
-  "ch": [
-   {
-    "n": "Canalgoatbr (YouTube)",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-12",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Montserrat x Nicarágua",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -1785,7 +1240,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-12",
@@ -1810,7 +1265,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-12",
@@ -1827,21 +1282,411 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
-  "date": "2026-11-12",
-  "t": "23:00",
+  "date": "2026-11-13",
+  "t": "14:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "CONCACAF Nations League",
+  "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Guatemala x Canadá",
+  "match": "Moldávia x Cazaquistão",
   "ch": [
    {
-    "n": "Canalgoatbr (YouTube)",
+    "n": "ESPN 4",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistoso Sub-21",
+  "detail": "—",
+  "match": "Alemanha x Bélgica",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Alemanha",
+  "league": "Bundesliga Feminina",
+  "detail": "—",
+  "match": "Hamburgo x Mainz 05",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Paulistão Sub-20",
+  "detail": "Semifinal-volta",
+  "match": "Santos x Palmeiras",
+  "ch": [
+   {
+    "n": "TNT Sports BR (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TNTSportsBR"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Bermuda x Santa Lúcia",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Porto Rico x Dominica",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Sérvia x Alemanha",
+  "ch": [
+   {
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Escócia x Macedônia do Norte",
+  "ch": [
+   {
+    "n": "ESPNbrasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@espnbrasil"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Holanda x Grécia",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Eslovênia x Suíça",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Bulgária x Islândia",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Eslováquia x Ilhas Faroé",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Luxemburgo x Estônia",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Andorra x Gibraltar",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Liechtenstein x Azerbaijão",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "Copa do Rei",
+  "detail": "—",
+  "match": "Salamanca x Celta de Vigo",
+  "ch": [
+   {
+    "n": "ESPN 3",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Montevideo City Torque x Racing Montevideo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Granada x São Cristóvão e Névis",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "19:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistoso",
+  "detail": "—",
+  "match": "Colo-Colo x Racing",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistoso Sub-20",
+  "detail": "—",
+  "match": "Brasil x Peru",
+  "ch": [
+   {
+    "n": "TNT Sports BR (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TNTSportsBR"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Saint Martin x El Salvador",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Montserrat x Nicarágua",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1
@@ -1865,7 +1710,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1882,7 +1727,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1899,7 +1744,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1916,7 +1761,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1933,7 +1778,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1950,7 +1795,25 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
+ },
+ {
+  "date": "2026-11-13",
+  "t": "23:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Guatemala x Canadá",
+  "ch": [
+   {
+    "n": "Canalgoatbr (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-13",
@@ -1971,7 +1834,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -1988,7 +1851,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2005,7 +1868,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2175,7 +2038,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2192,7 +2055,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2209,7 +2072,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2226,7 +2089,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-14",
@@ -2243,7 +2106,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2264,7 +2127,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2281,7 +2144,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2302,7 +2165,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2323,7 +2186,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2344,7 +2207,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2365,7 +2228,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2386,7 +2249,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2407,7 +2270,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2428,7 +2291,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2445,7 +2308,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2466,7 +2329,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2487,7 +2350,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2508,7 +2371,7 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2525,7 +2388,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2542,7 +2405,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2559,7 +2422,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2576,7 +2439,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2593,7 +2456,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2610,7 +2473,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2635,7 +2498,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-15",
@@ -2652,7 +2515,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2669,7 +2532,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2686,7 +2549,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2703,7 +2566,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2720,7 +2583,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2737,7 +2600,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2754,7 +2617,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2771,7 +2634,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2796,7 +2659,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-16",
@@ -2813,7 +2676,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-17",
@@ -2830,7 +2693,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-17",
@@ -2847,7 +2710,7 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  },
  {
   "date": "2026-11-17",
@@ -2864,39 +2727,61 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 2
+  "v": 1
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '11/11 01:30'; /* preenchido pelo script Python */
+const GENERATED_AT = '11/11 10:53'; /* preenchido pelo script Python */
 
-/* Se o app estiver hospedado (GitHub Pages etc.) com um eventos.json
-   ao lado, carrega os dados de lá — senão usa o DB embutido. */
+/* Carrega o eventos.json hospedado ao lado; se falhar (offline, arquivo
+   local), o app segue com os dados embutidos. */
+let DATA_AT = (typeof GENERATED_AT==='string' && GENERATED_AT) ? GENERATED_AT : '';
+let lastTry = 0;
 async function tryLoadJson(){
+  lastTry = Date.now();
   try{
     const r = await fetch(`eventos.json?t=${Date.now()}`, {cache:'no-store'});
     if(r.ok){
       const data = await r.json();
       if(Array.isArray(data) && data.length){
         DB.length = 0; DB.push(...data);
-        buildAllChips(); render();
+        /* o carimbo "dados de" acompanha o arquivo realmente carregado */
+        const lm = new Date(r.headers.get('last-modified') || '');
+        if(!isNaN(lm)) DATA_AT = lm.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}) + ' ' +
+                                 lm.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+        prepararDB(); buildAllChips(); render();
+        return true;
       }
     }
   }catch(e){ /* offline ou arquivo local — segue com dados embutidos */ }
+  return false;
 }
 /* ---------- placares ao vivo ----------
-   Buscados pelo PRÓPRIO navegador na API pública da ESPN a cada 60s
-   (independe da pipeline de 4h). Se a API falhar, o app segue sem placar. */
-const SCORE_FEEDS = [
-  'soccer/bra.1','soccer/bra.2','soccer/bra.copa_do_brazil',
-  'soccer/conmebol.libertadores','soccer/conmebol.sudamericana',
-  'soccer/uefa.champions','soccer/eng.1','soccer/esp.1','soccer/ger.1','soccer/ita.1','soccer/fra.1',
-  'basketball/nba','football/nfl'
+   Buscados pelo PRÓPRIO navegador na API pública da ESPN, a cada 60s, só
+   para o que já começou no dia aberto. Se a API falhar, o app segue sem placar. */
+const FEEDS = {   /* liga (nome oficial que o robô grava) -> feed da ESPN */
+  'Champions League':'soccer/uefa.champions', 'Copa do Brasil':'soccer/bra.copa_do_brazil',
+  'Brasileirão Série A':'soccer/bra.1', 'Brasileirão Série B':'soccer/bra.2',
+  'Copa Libertadores':'soccer/conmebol.libertadores', 'Copa Sul-Americana':'soccer/conmebol.sudamericana',
+  'Premier League':'soccer/eng.1', 'La Liga':'soccer/esp.1', 'Bundesliga':'soccer/ger.1',
+  'Campeonato Italiano':'soccer/ita.1', 'Campeonato Francês':'soccer/fra.1',
+  'NBA':'basketball/nba', 'NFL':'football/nfl'
+};
+const FEEDS_RX = [   /* nomes como o guia escreve, para jogo que não casou com a tabela */
+  [/^brasileir[ãa]o$/i,'soccer/bra.1'], [/^la ?liga$/i,'soccer/esp.1'], [/^ligue 1$/i,'soccer/fra.1'],
+  [/^(uefa )?champions league$/i,'soccer/uefa.champions'], [/^(copa )?libertadores$/i,'soccer/conmebol.libertadores'],
+  [/^(copa )?sul.?americana$/i,'soccer/conmebol.sudamericana'], [/^(campeonato )?italiano$/i,'soccer/ita.1'],
 ];
-let SCORES = [];
+function feedDe(e){
+  if(FEEDS[e.league]) return FEEDS[e.league];
+  if(e.sport!=='Futebol' || e.g==='F' || isSub(e)) return null;
+  for(const [re,f] of FEEDS_RX) if(re.test(e.league)) return f;
+  return null;
+}
+let SCORES = [], scoreSig = '';
 const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
-/* A ESPN devolve seleções em inglês; nossos dados estão em PT.
-   Traduzimos PT->EN antes de comparar para o placar casar. */
+/* Seleções: a ESPN usa o nome em inglês e os dados estão em português.
+   (Só entra em uso se um feed de seleções for ligado em FEEDS.) */
 const PT_EN = {
   'alemanha':'germany','franca':'france','espanha':'spain','holanda':'netherlands',
   'belgica':'belgium','uruguai':'uruguay','inglaterra':'england','brasil':'brazil',
@@ -2917,32 +2802,40 @@ const PT_EN = {
 };
 function bridge(s){ const n = nrm(s); return PT_EN[n] || n; }
 function simil(a,b){
-  // traduz PT->EN dos dois lados (no-op se já estiver em EN)
   a = bridge(a); b = bridge(b);
   if(!a||!b) return 0;
   if(a===b) return 1;
   if(a.includes(b)||b.includes(a)) return .9;
-  // sobreposição de palavras (robusto p/ nomes compostos)
+  /* sobreposição de palavras (robusto p/ nomes compostos) */
   const pa=a.split(' '), pb=b.split(' ');
   const comum = pa.filter(w=>w.length>2 && pb.includes(w)).length;
   if(comum>=1 && comum >= Math.min(pa.length,pb.length)) return .85;
   return 0;
 }
-let SCORE_DEBUG = {feeds:0, jogos:0, erros:[]};
+const isoLocal = d => d.toLocaleDateString('en-CA');                 /* YYYY-MM-DD no fuso do aparelho */
+const isoBRT   = d => d.toLocaleDateString('en-CA',{timeZone:'America/Sao_Paulo'});   /* datas dos dados são de Brasília */
+const minutosDe = t => { const [h,m] = t.split(':').map(Number); return h*60+m; };
+function vespera(iso){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate()-1); return isoLocal(d); }
 async function fetchScores(){
   if(document.visibilityState!=='visible') return;
+  const dia = DAYS[state.day]?.iso, agora = new Date(), hoje = isoLocal(agora);
+  const pedidos = new Set();                                         /* "feed|YYYYMMDD" */
+  if(dia && dia<=hoje){
+    const minAgora = agora.getHours()*60 + agora.getMinutes();
+    for(const e of DB){
+      if(e.date!==dia || (dia===hoje && minutosDe(e.t) > minAgora+5)) continue;   /* ainda não começou */
+      const f = feedDe(e); if(!f) continue;
+      pedidos.add(f+'|'+dia.replace(/-/g,''));
+      /* NBA/NFL: a ESPN agrupa pelo dia dos EUA; jogo da madrugada de
+         Brasília pertence à rodada americana da véspera */
+      if(!f.startsWith('soccer') && e.t<'06:00') pedidos.add(f+'|'+vespera(dia).replace(/-/g,''));
+    }
+  }
   const novo = [];
-  const d = (DAYS[state.day]?.iso || new Date().toLocaleDateString('en-CA')).replace(/-/g,'');
-  SCORE_DEBUG = {feeds:0, jogos:0, erros:[]};
-  await Promise.allSettled(SCORE_FEEDS.map(async f=>{
-    let r;
-    try {
-      // tenta com data; se falhar, tenta sem (alguns feeds não aceitam ?dates)
-      r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
-      if(!r.ok) r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard`);
-    } catch(e){ SCORE_DEBUG.erros.push(f.split('/').pop()+':'+e.message); return; }
-    if(!r.ok){ SCORE_DEBUG.erros.push(f.split('/').pop()+':HTTP'+r.status); return; }
-    SCORE_DEBUG.feeds++;
+  await Promise.allSettled([...pedidos].map(async p=>{
+    const [f,d] = p.split('|');
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
+    if(!r.ok) return;
     const j = await r.json();
     for(const ev of (j.events||[])){
       const st = ev.status?.type?.state;
@@ -2951,16 +2844,21 @@ async function fetchScores(){
       const home = (c.competitors||[]).find(x=>x.homeAway==='home') || c.competitors?.[0];
       const away = (c.competitors||[]).find(x=>x.homeAway==='away') || c.competitors?.[1];
       if(!home||!away) continue;
-      const det = ev.status?.type?.shortDetail || ev.status?.type?.detail || '';
-      SCORE_DEBUG.jogos++;
-      novo.push({ hn: home.team?.displayName||home.team?.name||'',
+      const quando = new Date(ev.date);
+      novo.push({ feed: f,
+                  hn: home.team?.displayName||home.team?.name||'',
                   an: away.team?.displayName||away.team?.name||'',
                   hs: readScore(home.score), as: readScore(away.score), state: st,
-                  clock: ev.status?.displayClock||'', det });
+                  clock: ev.status?.displayClock||'',
+                  det: ev.status?.type?.shortDetail || ev.status?.type?.detail || '',
+                  dia: isNaN(quando) ? '' : isoBRT(quando) });
     }
   }));
+  /* só redesenha se algo mudou: placar, status, ou um jogo entrou/saiu do "AO VIVO" */
+  novo.sort((a,b)=>(a.feed+a.dia+a.hn).localeCompare(b.feed+b.dia+b.hn));
+  const sig = JSON.stringify(novo) + '|' + DB.filter(isLive).map(e=>e.t+e.match).join(';');
   SCORES = novo;
-  render();
+  if(sig!==scoreSig){ scoreSig = sig; render(true); }
 }
 function readScore(s){
   if(s==null) return '';
@@ -2968,9 +2866,13 @@ function readScore(s){
   return String(s);
 }
 function scoreFor(e){
-  const partes = (e.match||'').split(/\s+x\s+/i);
-  if(partes.length!==2) return null;
+  /* "espn" = nomes dos times como a ESPN escreve (gravado pelo robô quando o
+     jogo do guia casa com a tabela oficial); sem ele, tenta pelo nome do card */
+  const feed = feedDe(e);
+  const partes = (e.espn||e.match||'').split(/\s+x\s+/i);
+  if(!feed || partes.length!==2) return null;
   for(const s of SCORES){
+    if(s.feed!==feed || (s.dia && s.dia!==e.date)) continue;   /* mesmo campeonato, mesmo dia */
     const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
     const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
     if(!direto && !inverso) continue;
@@ -2986,6 +2888,7 @@ function scoreFor(e){
    Links https "universais": no celular, abrem o app instalado
    (Globoplay, Disney+, Max...) ou o site se o app não existir. */
 const CH_LINKS = [
+  [/\(youtube\)$/i,                     'https://www.youtube.com'],   /* canal de YouTube sem link exato */
   [/sportv|premiere|globoplay|^globo/i, 'https://globoplay.globo.com'],
   [/espn|disney/i,                      'https://www.disneyplus.com'],
   [/tnt|^max$|hbo/i,                    'https://play.max.com'],
@@ -2999,14 +2902,20 @@ const CH_LINKS = [
   [/youtube|goat/i,                     'https://www.youtube.com'],
   [/dazn|nfl/i,                         'https://www.dazn.com'],
   [/nba/i,                              'https://www.nba.com/watch'],
-  [/f1/i,                               'https://f1tv.formula1.com'],
-  [/ufc/i,                              'https://ufcfightpass.com'],
+  [/fifa\+/i,                           'https://www.plus.fifa.com'],
   [/apple/i,                            'https://tv.apple.com'],
 ];
 function linkFor(nome){
   for(const [re,url] of CH_LINKS) if(re.test(nome)) return url;
   return 'https://www.google.com/search?q=' + encodeURIComponent('assistir ' + nome + ' ao vivo');
 }
+/* "u" vem do robô quando a fonte dá o endereço do canal; só é aceito se for
+   exatamente um canal do YouTube — texto raspado nunca vira link arbitrário */
+function linkDoCanal(c){
+  return (typeof c.u==='string' && /^https:\/\/www\.youtube\.com\/@[\w.\-]+$/.test(c.u)) ? c.u : linkFor(c.n);
+}
+/* todo texto que vem dos dados passa por aqui antes de virar HTML */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), catSub:false, catLower:false, q:'' };
 
@@ -3053,7 +2962,7 @@ function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); f
 
 function buildChips(key, containerId, values){
   el(containerId).innerHTML = values.map(v=>
-    `<button class="chip ${state[key].has(v)?'on':''}" onclick="toggle('${key}',this)" data-v="${v}">${v}</button>`
+    `<button class="chip ${state[key].has(v)?'on':''}" onclick="toggle('${key}',this)" data-v="${esc(v)}">${esc(v)}</button>`
   ).join('');
 }
 function toggle(key, btn){
@@ -3087,26 +2996,28 @@ function toggleSec(head){ head.parentElement.classList.toggle('closed'); }
 const SPORTS = ['Futebol','Basquete','Futebol Americano'];
 
 /* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
-   (regex), então ruído das fontes nunca vira chip novo.
-   REMOVER a linha da Copa após 19/07. */
+   (regex), então ruído das fontes nunca vira chip novo. Os padrões cobrem o
+   nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
+   "LaLiga", "UEFA Champions League"). */
 const LEAGUES = [
-  ['Brasileirão Série A',   /brasileir\w*\s*s[ée]rie a/i],
+  ['Brasileirão Série A',   /^brasileir[ãa]o(\s+s[ée]rie a)?$/i],
   ['Copa do Brasil',        /copa do brasil/i],
   ['Libertadores',          /libertadores/i],
   ['Sul-Americana',         /sul.?americana/i],
-  ['Champions League',      /champions league|liga dos campe/i],
-  ['Premier League',        /premier league/i],
-  ['La Liga',               /la liga|^espanhol(?!.*2)/i],
-  ['Alemão (Bundesliga)',   /bundesliga|alem[ãa]o/i],
+  ['Champions League',      /^(?!.*\b(afc|caf|ofc|concacaf)\b).*champions league|liga dos campe/i],
+  ['Premier League',        /premier league|^(campeonato )?ingl[êe]s$/i],
+  ['La Liga',               /la ?liga(?!\s*2)|^(campeonato )?espanhol$/i],
+  ['Alemão (Bundesliga)',   /bundesliga|^(campeonato )?alem[ãa]o$/i],
   ['NBA',                   /\bnba\b/i],
   ['NFL',                   /\bnfl\b/i],
 ];
-/* Categoria: base e divisões inferiores ocultas por padrão */
+/* Categoria: base e divisões inferiores ocultas por padrão.
+   (O robô usa a mesma noção de "base" em categoria(), no atualizar_dados.py.) */
 const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes|\bbase\b|\bcopinha\b/i;
-const RE_LOWER = /s[ée]rie [bcd]\b|2[ªº°]? ?divis|segunda divis|\bchampionship\b|2\. ?bundesliga|la liga 2|liga 2\b/i;
+const RE_LOWER = /s[ée]rie [bcd]\b|s[ée]rie a[23]\b|[2-9][ªº°]? ?divis|(segunda|terceira|quarta) divis|\bchampionship\b|league (one|two)\b|2\. ?bundesliga|la ?liga 2|ligue 2|liga 2\b/i;
+const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;   /* times B: "Ceará B x ...", "... x Bayern II" */
 function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
-const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;
-  function isLower(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
+function isLower(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
 function toggleCat(k, btn){
   if(k==='sub') state.catSub = !state.catSub; else state.catLower = !state.catLower;
   btn.classList.toggle('on'); render();
@@ -3168,27 +3079,33 @@ function block(t){
   const h = +t.split(':')[0];
   return h<12 ? 'Manhã' : h<18 ? 'Tarde' : 'Noite';
 }
-function render(){
-  const q = state.q.trim().toLowerCase();
-  /* dedup defensivo: colapsa cards do mesmo jogo (mesma data+hora, nomes
-     sobrepostos), preferindo o que tem canais reais e título mais limpo */
+/* dedup defensivo: colapsa cards do mesmo jogo (mesma data+hora, nomes
+   sobrepostos), preferindo o que tem canais reais e título mais limpo.
+   Roda uma vez por carga de dados, não a cada render. */
+let LIMPOS = [];
+function prepararDB(){
   function chave(e){ return e.date+'|'+e.t; }
   const limpos = [];
   for(const e of DB){
-    const dup = limpos.find(x=> chave(x)===chave(e) && (()=>{
+    const dup = limpos.find(x=> chave(x)===chave(e) && x.sport===e.sport && x.g===e.g && isSub(x)===isSub(e) && (()=>{
       const a=(x.match||'').toLowerCase(), b=(e.match||'').toLowerCase();
       const ta=a.split(/\s+x\s+/), tb=b.split(/\s+x\s+/);
       if(ta.length!==2||tb.length!==2) return a.includes(b)||b.includes(a);
-      const norm=s=>s.replace(/[^a-zà-ú ]/gi,'').trim();
-      return (a.includes(norm(tb[0]))&&a.includes(norm(tb[1]))) ||
-             (b.includes(norm(ta[0]))&&b.includes(norm(ta[1])));
+      const tem=(txt,t)=>{ const n=t.replace(/[^a-zà-ú ]/gi,'').trim(); return n.length>=3 && txt.includes(n); };
+      return (tem(a,tb[0])&&tem(a,tb[1])) || (tem(b,ta[0])&&tem(b,ta[1]));
     })());
     if(dup){
       const score = ev => (ev.ch.some(c=>!/confirmar/i.test(c.n))?2:0) - (ev.match.length>40?1:0);
       if(score(e) > score(dup)) limpos[limpos.indexOf(dup)] = e;
     } else limpos.push(e);
   }
-  let list = limpos.filter(e=> e.date===DAYS[state.day].iso
+  LIMPOS = limpos;
+}
+/* quiet=true: atualização automática (placar) — redesenha sem re-animar os cards */
+function render(quiet){
+  const q = state.q.trim().toLowerCase();
+  el('results').classList.toggle('quiet', quiet===true);
+  let list = LIMPOS.filter(e=> e.date===DAYS[state.day].iso
     && (!state.sport.size   || state.sport.has(e.sport))
     && (!state.gender       || e.g===state.gender)
     && (!state.country.size || state.country.has(e.country))
@@ -3199,13 +3116,13 @@ function render(){
     && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
   ).sort((a,b)=>a.t.localeCompare(b.t));
 
-  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (SCORE_DEBUG.feeds>0 ? ` · ${SCORE_DEBUG.jogos} placar(es) live` : '') + (typeof GENERATED_AT==='string' && GENERATED_AT ? ` · dados de ${GENERATED_AT}` : '');
+  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (DATA_AT ? ` · dados de ${esc(DATA_AT)}` : '');
 
   if(!list.length){
     const ultimaData = DB.reduce((m,e)=> e.date>m ? e.date : m, '');
     const semConfirmacao = DAYS[state.day].iso > ultimaData;
     el('results').innerHTML = semConfirmacao
-      ? `<div class="empty"><b>Programação ainda não confirmada para este dia.</b>As emissoras confirmam canais de futebol ~48h antes; NBA, F1 e tênis entram com até 7 dias. Volte mais perto da data — a atualização é automática.</div>`
+      ? `<div class="empty"><b>Programação ainda não confirmada para este dia.</b>As emissoras confirmam canais de futebol ~48h antes; NBA, NFL e as tabelas oficiais entram com até 7 dias. Volte mais perto da data — a atualização é automática.</div>`
       : `<div class="empty"><b>Nenhum evento com esses filtros.</b>Ajuste os filtros acima ou toque em “Limpar tudo”.</div>`;
     return;
   }
@@ -3217,23 +3134,23 @@ function render(){
     html += `
     <div class="card">
       <div class="when">
-        <div class="time">${e.t}</div>
+        <div class="time">${esc(e.t)}</div>
         ${(()=>{ const sc = scoreFor(e);
-          if(sc) return `<div class="score">${sc.a}<span> x </span>${sc.b}</div><span class="score-status ${sc.fim?'fim':''}">${sc.label}</span>`;
+          if(sc) return `<div class="score">${esc(sc.a)}<span> x </span>${esc(sc.b)}</div><span class="score-status ${sc.fim?'fim':''}">${esc(sc.label)}</span>`;
           return live ? '<span class="live-pill"><i></i>AO VIVO</span>' : '';
         })()}
         <span class="gender-tag">${e.g==='F'?'FEMININO':'MASCULINO'}</span>
       </div>
       <div>
         <div class="ev-top">
-          <span class="sport-tag">${e.sport}</span>
-          <span class="matchup">${e.match}</span>
+          <span class="sport-tag">${esc(e.sport)}</span>
+          <span class="matchup">${esc(e.match)}</span>
         </div>
-        <div class="league">${e.league} <em>(${e.detail})</em>${e.v>=2?' <span class="verified" title="Confirmado em 2 fontes">✓✓</span>':''}</div>
+        <div class="league">${esc(e.league)}${e.detail && e.detail!=='—' ? ` <em>(${esc(e.detail)})</em>` : ''}${e.v>=2?' <span class="verified" title="Confirmado em 2 fontes">✓✓</span>':''}</div>
         <div class="badges">
           ${e.ch.map(c=> /confirmar/i.test(c.n)
-            ? `<span class="badge tbd">${c.n}</span>`
-            : `<a class="badge ${c.y}" href="${linkFor(c.n)}" target="_blank" rel="noopener"><i></i>${c.n}</a>`).join('')}
+            ? `<span class="badge tbd">${esc(c.n)}</span>`
+            : `<a class="badge ${['tv','stream','free'].includes(c.y)?c.y:'tv'}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener"><i></i>${esc(c.n)}</a>`).join('')}
         </div>
       </div>
     </div>`;
@@ -3250,10 +3167,29 @@ el('seg-gender').addEventListener('click', ev=>{
 });
 el('search').addEventListener('input', ev=>{ state.q = ev.target.value; render(); });
 
-buildDayTabs(); buildAllChips(); updateCounts(); render();
+/* Botão "Atualizar": busca os dados de novo (não só redesenha) */
+async function atualizar(){
+  const b = el('btn-update'); b.disabled = true; b.textContent = 'Atualizando…';
+  await tryLoadJson(); await fetchScores();
+  b.disabled = false; b.textContent = 'Atualizar';
+}
+/* App instalado na tela de início fica dias em segundo plano: ao voltar (e a
+   cada minuto, se aberto), confere se o dia virou e se os dados envelheceram. */
+function sincronizar(){
+  if(document.visibilityState!=='visible') return;
+  if(DAYS[0].iso !== isoLocal(new Date())){            /* virou o dia: "Hoje" volta a ser hoje */
+    customIso = null; DAYS = makeDays(); state.day = 0; buildDayTabs(); render();
+  }
+  if(Date.now() - lastTry > 10*60*1000) tryLoadJson();    /* dados com mais de 10 min */
+  fetchScores();
+}
+document.addEventListener('visibilitychange', sincronizar);
+window.addEventListener('pageshow', ev=>{ if(ev.persisted) sincronizar(); });
+
+prepararDB(); buildDayTabs(); buildAllChips(); updateCounts(); render();
 tryLoadJson();
 fetchScores();
-setInterval(fetchScores, 60000); /* placares + status AO VIVO a cada minuto */
+setInterval(sincronizar, 60000); /* placares, status AO VIVO, virada do dia e dados novos */
 </script>
 </body>
 </html>

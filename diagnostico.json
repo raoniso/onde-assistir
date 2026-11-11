@@ -1,70 +1,212 @@
 {
  "fontes": {
+  "espn_tabelas_por_liga": {
+   "Champions League": 0,
+   "Copa do Brasil": 0,
+   "Brasileirão Série A": 2,
+   "Brasileirão Série B": 10,
+   "Copa Libertadores": 0,
+   "Copa Sul-Americana": 0,
+   "Premier League": 0,
+   "La Liga": 0,
+   "Bundesliga": 0,
+   "Campeonato Italiano": 0,
+   "Campeonato Francês": 0
+  },
   "log": [
-   "Coleta 11/11 01:30 BRT — janela 2026-11-11 a 2026-11-17",
+   "Coleta 11/11 10:52 BRT — janela 2026-11-11 a 2026-11-17",
+   "  ✓ mantosdofutebol: 59 evento(s)",
    "  ✓ futebolnatv: 0 evento(s)",
-   "  ✓ mantosdofutebol: 70 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
-   "  ✓ ESPN NBA: 48 evento(s)",
+   "  ✓ ESPN NBA: 50 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 143 eventos → eventos.json",
-   "index.html atualizado.",
-   "onde-assistir.html atualizado."
+   "TOTAL: 134 eventos → eventos.json",
+   "index.html gerado a partir de onde-assistir.html."
   ]
  },
  "amostras": {
+  "mantos": [
+   {
+    "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
+    "dias": [
+     {
+      "cabecalho": "Quarta – 11/11",
+      "data": "2026-11-11",
+      "jogos": 10
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": [
+     "15h00 – Ypiranga x Afogados –"
+    ]
+   },
+   {
+    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
+    "dias": [
+     {
+      "cabecalho": "Quarta – 11/11",
+      "data": "2026-11-11",
+      "jogos": 10
+     },
+     {
+      "cabecalho": "Quinta – 12/11",
+      "data": "2026-11-12",
+      "jogos": 26
+     },
+     {
+      "cabecalho": "Sexta – 13/11",
+      "data": "2026-11-13",
+      "jogos": 23
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": [
+     "15h00 – Ypiranga x Afogados –"
+    ]
+   }
+  ],
   "futebolnatv": [
    {
     "url": "https://www.futebolnatv.com.br/jogos-hoje",
     "http": 200,
-    "bytes": 66921,
-    "links_aovivo": 3,
-    "hrefs_amostra": [
-     "/",
-     "/sign-in",
-     "/profile",
-     "/profile/following",
-     "/profile/pro",
-     "/profile/settings",
-     "/profile/settings",
-     "/",
-     "/videos",
-     "/times",
-     "/ligas",
-     "/canais"
+    "bytes": 69948,
+    "links_aovivo": 4,
+    "links_amostra": [
+     {
+      "href": "/aovivo/londrina-x-nautico-02aab4f220.html",
+      "texto": "Brasileirão Série B Rodada 38 19:00",
+      "pai": "Brasileirão Série B Rodada 38 19:00"
+     },
+     {
+      "href": "/aovivo/londrina-x-nautico-02aab4f220.html",
+      "texto": "",
+      "pai": "Brasileirão Série B - Rodada 38 19:00 Londrina Náutico DISNEY+"
+     },
+     {
+      "href": "/aovivo/juventus-f-x-lyon-f-e91eee1d33b5.html",
+      "texto": "",
+      "pai": "Champions League Feminina - League Stage - 4 17:00 Juventus (F) Lyon (F) ESPN"
+     },
+     {
+      "href": "/aovivo/sl-benfica-x-austria-fien-f-a8b45939833d.html",
+      "texto": "",
+      "pai": "Champions League Feminina - League Stage - 4 17:00 SL Benfica Austria (F)ien (F) DISNEY+"
+     }
     ]
    },
    {
     "url": "https://www.futebolnatv.com.br/jogos-amanha",
     "http": 200,
-    "bytes": 88350,
-    "links_aovivo": 11,
-    "hrefs_amostra": [
-     "/",
-     "/sign-in",
-     "/profile",
-     "/profile/following",
-     "/profile/pro",
-     "/profile/settings",
-     "/profile/settings",
-     "/",
-     "/videos",
-     "/times",
-     "/ligas",
-     "/canais"
+    "bytes": 96792,
+    "links_aovivo": 15,
+    "links_amostra": [
+     {
+      "href": "/aovivo/inglaterra-x-croacia-18916be6cbec.html",
+      "texto": "UEFA Nations League League A - 5 16:45",
+      "pai": "UEFA Nations League League A - 5 16:45"
+     },
+     {
+      "href": "/aovivo/italia-x-franca-926266d8fb54.html",
+      "texto": "UEFA Nations League League A - 5 16:45",
+      "pai": "UEFA Nations League League A - 5 16:45"
+     },
+     {
+      "href": "/aovivo/republica-tcheca-x-espanha-f509c9ff26d9.html",
+      "texto": "UEFA Nations League League A - 5 16:45",
+      "pai": "UEFA Nations League League A - 5 16:45"
+     },
+     {
+      "href": "/aovivo/corinthians-sub-20-x-rb-bragantino-sub-20-54e7f57db559.html",
+      "texto": "",
+      "pai": "Paulista Sub-20 - Semifinal 15:00 RB Bragantino Sub-20 Corinthians Sub-20 XSPORTS YOUTUBE (ULISSES TV) YOUTUBE (ENERGIA 97 FM)"
+     },
+     {
+      "href": "/aovivo/armenia-x-chipre-34c1acdfbe87.html",
+      "texto": "",
+      "pai": "UEFA Nations League - League C - 5 14:00 Armenia Chipre ESPN 3"
+     },
+     {
+      "href": "/aovivo/inglaterra-x-croacia-18916be6cbec.html",
+      "texto": "",
+      "pai": "UEFA Nations League - League A - 5 16:45 Inglaterra Croácia ESPN 4"
+     }
     ]
    }
   ],
-  "mantos": [
-   "19h00 – Guarani de Juazeiro x Quixadá – Taça Fares Lopes || Canais: Youtube.com/@MetropolesEsportes",
-   "14h45 – OH Leuven x HB Koge – UEFA Champions League Feminina || Canais: ESPN 4 e Disney+",
-   "15h30 – Tirol x Fortaleza B – Taça Fares Lopes || Canais: Youtube.com/@MetropolesEsportes"
-  ],
   "nba_broadcasts": [
+   "Orlando Magic x Sacramento Kings :: (vazio)",
+   "Oklahoma City Thunder x Portland Trail Blazers :: NBC | KSBI | THUNDER APP | NBC | KSBI | THUNDER APP",
    "Washington Wizards x Indiana Pacers :: MNMT | DAZN IND | MNMT | DAZN IND",
-   "Cleveland Cavaliers x New York Knicks :: ESPN | ESPN",
-   "Boston Celtics x Toronto Raptors :: (vazio)",
-   "San Antonio Spurs x Chicago Bulls :: DAZN SAS | DAZN SAS"
+   "Cleveland Cavaliers x New York Knicks :: ESPN | ESPN"
   ]
+ },
+ "sondas": {
+  "nba_intervalo": {
+   "http": 400,
+   "bytes": 55
+  },
+  "nba_intervalo_limit": {
+   "http": 400,
+   "bytes": 55
+  },
+  "nba_mes": {
+   "http": 200,
+   "bytes": 2120075,
+   "eventos": 100,
+   "dias": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07",
+    "2026-11-08",
+    "2026-11-09",
+    "2026-11-10",
+    "2026-11-11"
+   ],
+   "exemplo": "Boston Celtics at Orlando Magic"
+  },
+  "soccer_all_hoje": {
+   "http": 200,
+   "bytes": 443157,
+   "eventos": 75,
+   "dias": [
+    "2026-11-11",
+    "2026-11-12"
+   ],
+   "exemplo": "Chinese Taipei at Vietnam"
+  },
+  "uefa_nations_amanha": {
+   "http": 200,
+   "bytes": 92876,
+   "eventos": 8,
+   "dias": [
+    "2026-11-12"
+   ],
+   "exemplo": "Cyprus at Armenia"
+  },
+  "amistosos_amanha": {
+   "http": 200,
+   "bytes": 41699,
+   "eventos": 4,
+   "dias": [
+    "2026-11-12"
+   ],
+   "exemplo": "India at New Zealand"
+  },
+  "champions_fem_hoje": {
+   "http": 200,
+   "bytes": 27230,
+   "eventos": 2,
+   "dias": [
+    "2026-11-11"
+   ],
+   "exemplo": "HB Køge at Oud-Heverlee Leuven"
+  }
  }
 }
