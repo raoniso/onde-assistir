@@ -1,6 +1,7 @@
 # Onde.Assistir — robô de dados
 # Roda o pipeline (atualizar_dados.py) de 3 em 3 horas e também:
-#   - na hora, quando o pipeline ou o template do app (onde-assistir.html) mudam;
+#   - na hora, quando o pipeline, o template do app (onde-assistir.html) ou este
+#     arquivo mudam;
 #   - manualmente, pelo botão "Run workflow" na aba Actions.
 # Publica eventos.json, index.html e diagnostico.json no próprio repositório,
 # de onde o GitHub Pages serve o site. Se uma fonte fica sem dados em coletas
@@ -19,6 +20,7 @@ on:
     paths:
       - "atualizar_dados.py"
       - "onde-assistir.html"
+      - ".github/workflows/atualizar.yml"
 
 permissions:
   contents: write
@@ -33,9 +35,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5          # v5/v6 rodam em Node 24 (as anteriores, em Node 20, foram descontinuadas)
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -59,9 +61,9 @@ jobs:
 
       # Publica primeiro, avisa depois: o alarme nunca segura os dados que deram certo.
       # O pipeline pede o alarme quando o guia de TV vem vazio (ou a ESPN inteira cai)
-      # em duas coletas seguidas, ou o 2º guia fica um dia sem jogos.
-      # Job com falha = e-mail do GitHub para o dono do
-      # repositório. Commit cuja mensagem COMEÇA por [teste-alarme] dispara um aviso de teste.
+      # em duas coletas seguidas, ou quando o 2º guia fica um dia sem jogos.
+      # Job com falha = e-mail do GitHub para o dono do repositório.
+      # Commit cuja mensagem COMEÇA por [teste-alarme] dispara um aviso de teste.
       - name: "ALARME: fonte sem dados (avise o Claude)"
         if: ${{ steps.coleta.outputs.alerta != '' || startsWith(github.event.head_commit.message, '[teste-alarme]') }}
         env:
