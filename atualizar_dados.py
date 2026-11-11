@@ -1,28 +1,32 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-09-d (NBA: canais por jogo via broadcasts ESPN)
+# build: 2026-11-11-a (auditoria: datas do guia pelo cabeçalho do dia; sondas)
 """
-ONDE.ASSISTIR — Pipeline de dados v4 (pós-Copa 2026)
-====================================================
-Roda sozinho no GitHub Actions (atualizar.yml). Nenhuma curadoria manual.
-Escopo: os esportes que o Raoni acompanha — Futebol (BR + Europa, incl.
-Libertadores/Sul-Americana/Champions/Copa do Brasil), NBA e NFL.
+ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
+============================================================
+Roda sozinho no GitHub Actions (.github/workflows/atualizar.yml). Nenhuma
+curadoria manual. Escopo: Futebol (BR + Europa, incl. Libertadores,
+Sul-Americana, Champions e Copa do Brasil), NBA e NFL.
 
 FONTES (cada uma protegida por try/except — uma falhar não derruba o resto):
-  FUTEBOL .... futebolnatv.com.br (canais por jogo; instrumentado no
-               diagnostico.json) ✕ mantosdofutebol.com.br (cruzamento).
-               Jogos confirmados nas duas fontes recebem selo "v":2 (✓✓)
-               + ESPN tabelas 7 dias (fixtures, "Transmissão a confirmar")
-  BASQUETE ... API pública da ESPN (NBA) — canais fixos do contrato Brasil:
-               Prime Video + NBA League Pass
-  FUT. AMER. . API pública da ESPN (NFL) — canais por janela de horário
-               (contratos 2026/27): qui=SporTV, seg=ESPN, dom noite=SporTV,
-               dom tarde=TV a confirmar; NFL Game Pass (DAZN) em todos.
+  FUTEBOL .... mantosdofutebol.com.br é o guia principal: jogo, competição,
+               fase e CANAIS por jogo. A data de cada jogo vem do cabeçalho
+               do dia na própria página (ela lista vários dias).
+               futebolnatv.com.br só CONFIRMA (selo v=2, canais extras).
+               ESPN (tabelas oficiais, 7 dias) completa o que o guia ainda
+               não publicou, como "Transmissão a confirmar", e confirma o
+               que ele publicou (selo v=2).
+  BASQUETE ... ESPN (NBA). Canais POR JOGO, a partir dos transmissores que a
+               ESPN informa em cada partida: pacote Amazon -> Prime Video;
+               ESPN/ABC -> ESPN + Disney+; todos -> NBA League Pass.
+  FUT. AMER. . ESPN (NFL). Canais pela janela de horário dos contratos
+               2026/27: qui=SporTV, seg=ESPN, dom noite=SporTV, dom tarde=TV
+               a confirmar; NFL Game Pass (DAZN) em todos.
 
-OBSERVABILIDADE: cada execução grava diagnostico.json no repositório com o
-log das fontes e amostras brutas — é por ele que se depura sem acesso ao log
-do Actions.
+SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
+dados embutidos) e diagnostico.json (log das fontes + amostras brutas — é
+por ele que se depura, sem precisar do log do Actions).
 
-DATAS SÃO ABSOLUTAS ("date": "2026-06-11"). O app só exibe um evento na aba
+DATAS SÃO ABSOLUTAS ("date": "2026-11-11"). O app só exibe um evento na aba
 do dia exato — dado antigo nunca "escorrega" para hoje.
 """
 
@@ -64,81 +68,79 @@ def limpa_titulo(s):
 
 CANAIS_FREE = {"GLOBO","SBT","BAND","RECORD","REDETV","TV BRASIL","CAZE TV","CAZETV",
                "XSPORTS","YOUTUBE","CANAL GOAT","GOAT","METROPOLES","TV CULTURA",
-               "SPORTYNET","GE TV","GETV","NSPORTS","N SPORTS"}
+               "SPORTYNET","GE TV","GETV","NSPORTS","N SPORTS","FIFA+"}
 CANAIS_STREAM = {"DISNEY+","MAX","HBO MAX","PARAMOUNT+","PRIME VIDEO","AMAZON PRIME VIDEO",
                  "ONEFOOTBALL","FANATIZ","ZAPPING","UOL PLAY","GLOBOPLAY","PREMIERE FC",
-                 "PREMIERE","DAZN","APPLE TV+","NOSSO FUTEBOL+","NBA LEAGUE PASS",
-                 "F1 TV PRO","WSL+"}
-COMPOSTOS = CANAIS_FREE | CANAIS_STREAM | {"SPORTV 2","SPORTV 3","ESPN 2","ESPN 3",
-                                           "ESPN 4","ESPN 5","ESPN 6","BAND SPORTS"}
+                 "PREMIERE","DAZN","APPLE TV+","NOSSO FUTEBOL+","NBA LEAGUE PASS"}
+
+# Grafia das marcas (aplicada depois do .title(), que escreveria "Espn", "Sbt"...)
+MARCAS = [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
+          ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Cazé Tv","CazéTV"),("Caze TV","CazéTV"),
+          ("Xsports","XSports"),("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),
+          ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports"),
+          ("Youtube","YouTube"),("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT")]
+def grafia(nome):
+    for a, dep in MARCAS: nome = nome.replace(a, dep)
+    return nome
 
 def canal(nome):
+    """Nome cru da fonte -> {"n": nome exibido, "y": tv|stream|free, "u": link exato}.
+    "u" só existe quando a própria fonte deu o endereço (canais de YouTube)."""
+    nome = " ".join(nome.split())
+    yt = re.search(r"youtube\.com/@([\w.\-]+)", nome, re.I)
+    if yt:   # 'Youtube.com/@TNTSportsBR' -> 'TNT Sports BR (YouTube)', grátis, link do canal
+        handle = yt.group(1)
+        legivel = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", handle)
+        legivel = grafia(legivel[:1].upper() + legivel[1:])
+        return {"n": f"{legivel} (YouTube)", "y": "free", "u": f"https://www.youtube.com/@{handle}"}
     chave = sem_acento(nome).upper().strip()
-    tipo = "free" if chave in CANAIS_FREE else "stream" if chave in CANAIS_STREAM else "tv"
-    b = nome.title()
-    for a, dep in [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
-                   ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Cazé Tv","CazéTV"),("Xsports","XSports"),
-                   ("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),("Wsl","WSL"),
-                   ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports"),
-                   ("Youtube","YouTube"),(" Br ("," BR ("),
-                   ("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT")]:
-        b = b.replace(a, dep)
-    return {"n": b, "y": tipo}
+    tipo = "free" if chave in CANAIS_FREE or "YOUTUBE" in chave else \
+           "stream" if chave in CANAIS_STREAM else "tv"
+    return {"n": grafia(nome.title()), "y": tipo}
 
-# Saídas alinhadas com os chips fixos do app
+# País/região de cada liga, alinhado com os chips fixos do app. A PRIMEIRA
+# regra que casar vence, então o específico vem antes do genérico.
 PAIS_POR_LIGA = [
-    (r"brasileir|copa do brasil|paulista|carioca|mineiro|gaucho|copinha", "Brasil"),
-    (r"libertadores|sul.?americana|recopa|argentin|chilen|uruguai|colombian", "América do Sul"),
-    (r"premier league|championship|ingl|fa cup|carabao", "Inglaterra"),
-    (r"la liga|espanhol|copa do rei", "Espanha"),
-    (r"italian|coppa", "Itália"),
+    (r"concacaf|\bafc\b|\bcaf\b|amistos|copa do mundo|mundial|eliminatorias|\bfifa\b|\bsele", "Mundial"),
+    (r"brasileir|copa do brasil|supercopa do brasil|copa do nordeste|copa verde|copinha|"
+     r"paulist|carioca|mineir|gauch|pernambucan|cearense|baian|paranaense|catarinense|goian|"
+     r"paraiban|potiguar|capixaba|sergipan|alagoan|maranhense|piauiense|paraense|amazonense|"
+     r"brasiliense|candango|mato.?grossense|tocantinense|fares lopes", "Brasil"),
+    (r"libertadores|sul.?americana|recopa|conmebol|argentin|chilen|uruguai|colombian|"
+     r"paraguai|peruan|equatorian|bolivian|venezuelan", "América do Sul"),
+    (r"premier league|championship|ingl|fa cup|carabao|copa da liga inglesa", "Inglaterra"),
+    (r"la ?liga|espanh|copa do rei", "Espanha"),
+    (r"\bital|coppa|serie a tim", "Itália"),
     (r"alem|bundesliga|dfb", "Alemanha"),
     (r"mls|nwsl|nba|wnba|nfl|mlb|\beua\b|canad", "EUA/Canadá"),
-    (r"franc|ligue 1|portug|holand|eredivisie|champions|europa league|conference|uefa|euro|nations", "Europa (demais)"),
-    (r"amistos|mundial|copa do mundo|fifa|sele|atp|wta|wsl", "Mundial"),
+    (r"franc|ligue 1|portug|holand|eredivisie|champions|europa league|conference|uefa|\beuro|nations|"
+     r"\bturc|\bruss|\bbelg|\bgreg|\bescoc|\bnoruegu|\bsuec|\bsuic|\bdinamarqu|\bservi|\bchec|\btchec|"
+     r"\baustria|\bpolon|\bcroa|\bucrani", "Europa (demais)"),
 ]
 def pais_da_liga(liga):
     alvo = sem_acento(liga).lower()
     for padrao, pais in PAIS_POR_LIGA:
         if re.search(padrao, alvo): return pais
-    return "Mundial"
-
-def normalizar_liga(liga):
-    return liga.strip() if isinstance(liga, str) else liga
+    return "Mundial"     # liga não reconhecida: aparece só sem filtro de país
 
 def genero(*textos):
     alvo = sem_acento(" ".join(textos)).lower()
-    return "F" if re.search(r"feminin|\bfem\b|\(w\)|wta|wnba", alvo) else "M"
+    return "F" if re.search(r"feminin|\bfem\b|\(w\)|\bwomen|\bnwsl\b|\bwnba\b", alvo) else "M"
 
 def evento(date, t, sport, league, match, ch, detail="—", g=None, country=None, v=1):
     return {"date": date.isoformat() if hasattr(date, "isoformat") else date,
             "t": t, "sport": sport, "g": g or genero(league, match),
             "country": country or pais_da_liga(league),
-            "league": normalizar_liga(league), "detail": detail,
+            "league": league.strip(), "detail": detail,
             "match": match, "ch": ch, "v": v}
 
-TRAD = {"Brazil":"Brasil","Germany":"Alemanha","France":"França","Spain":"Espanha",
- "Netherlands":"Holanda","Belgium":"Bélgica","Uruguay":"Uruguai","England":"Inglaterra",
- "Argentina":"Argentina","Portugal":"Portugal","Mexico":"México","South Africa":"África do Sul",
- "South Korea":"Coreia do Sul","Czechia":"República Tcheca","Czech Republic":"República Tcheca",
- "United States":"Estados Unidos","USA":"Estados Unidos","Canada":"Canadá",
- "Bosnia and Herzegovina":"Bósnia e Herzegovina","Scotland":"Escócia","Morocco":"Marrocos",
- "Switzerland":"Suíça","Qatar":"Catar","Japan":"Japão","Croatia":"Croácia","Italy":"Itália",
- "Norway":"Noruega","Sweden":"Suécia","Poland":"Polônia","Austria":"Áustria","Turkey":"Turquia",
- "Australia":"Austrália","Ecuador":"Equador","Colombia":"Colômbia","Paraguay":"Paraguai",
- "Ivory Coast":"Costa do Marfim","Côte d'Ivoire":"Costa do Marfim","Egypt":"Egito",
- "Senegal":"Senegal","Ghana":"Gana","Tunisia":"Tunísia","Algeria":"Argélia","Panama":"Panamá",
- "Costa Rica":"Costa Rica","Haiti":"Haiti","Jordan":"Jordânia","Uzbekistan":"Uzbequistão",
- "Iran":"Irã","Saudi Arabia":"Arábia Saudita","New Zealand":"Nova Zelândia","Cape Verde":"Cabo Verde",
- "Curacao":"Curaçao","Curaçao":"Curaçao","Ukraine":"Ucrânia","Denmark":"Dinamarca",
- "Ireland":"Irlanda","Northern Ireland":"Irlanda do Norte","Wales":"País de Gales",
- "North Macedonia":"Macedônia do Norte","Slovakia":"Eslováquia","Romania":"Romênia","Kosovo":"Kosovo"}
-def trad(n): return TRAD.get(n, n)
-
+# usados só pelo parser do futebolnatv
+COMPOSTOS = CANAIS_FREE | CANAIS_STREAM | {"SPORTV 2","SPORTV 3","ESPN 2","ESPN 3",
+                                           "ESPN 4","ESPN 5","ESPN 6","BAND SPORTS"}
 RE_HORA = re.compile(r"\b(\d{1,2}[:h]\d{2})\b")
 
 # =================================================================
-# FUTEBOL — fonte A: futebolnatv.com.br
+# FUTEBOL — guia secundário (só confirma): futebolnatv.com.br
 # =================================================================
 def fonte_futebolnatv():
     urls = {HOJE: "https://www.futebolnatv.com.br/jogos-hoje",
@@ -152,7 +154,10 @@ def fonte_futebolnatv():
         DIAG["amostras"].setdefault("futebolnatv", []).append({
             "url": url, "http": r.status_code, "bytes": len(r.text),
             "links_aovivo": len(links),
-            "hrefs_amostra": [a.get("href", "")[:70] for a in soup.find_all("a", href=True)[:12]],
+            "links_amostra": [{"href": a.get("href", "")[:90],
+                               "texto": " ".join(a.get_text(" ", strip=True).split())[:160],
+                               "pai": " ".join((a.parent.get_text(" ", strip=True) if a.parent else "").split())[:220]}
+                              for a in links[:6]],
         })
         vistos = set()
         for a in links:
@@ -207,52 +212,77 @@ def fonte_futebolnatv():
     return evs
 
 # =================================================================
-# FUTEBOL — fonte B (cruzamento): mantosdofutebol.com.br
+# FUTEBOL — guia principal: mantosdofutebol.com.br
 # =================================================================
 def separa_canais_mantos(texto):
-    """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X)."""
+    """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X),
+    que seguem inteiras para canal() extrair nome e link."""
     out = []
     for parte in re.split(r",| e ", texto):
         parte = parte.strip()
         if not parte: continue
         if ".com" in parte.lower():
-            out.append(limpa_canal_mantos(parte))
+            out.append(parte)
         else:
             out += [p.strip() for p in parte.split("/") if p.strip()]
     return out
 
-def limpa_canal_mantos(c):
-    """'Youtube.com/@TNTSportsBR' -> 'TNT Sports BR (YouTube)'"""
-    m = re.search(r"youtube\.com/@?([\w.]+)", c, re.I)
-    if m:
-        nome = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", m.group(1))
-        return f"{nome} (YouTube)"
-    return c
+# Cabeçalho de dia nas páginas do mantos: "Segunda – 09/11", "Sexta-feira, 13/11"...
+# Precisa COMEÇAR pelo dia da semana: data solta no meio de um texto não é cabeçalho.
+RX_DIA_MANTOS = re.compile(
+    r"^\W*(segunda|terca|quarta|quinta|sexta|sabado|domingo)(?:-feira)?\W+(\d{1,2})/(\d{1,2})\b", re.I)
+
+def data_do_cabecalho(linha):
+    """'Segunda – 09/11' -> date (o ano é o que deixa a data mais perto de hoje)."""
+    if len(linha) > 40: return None
+    m = RX_DIA_MANTOS.match(sem_acento(linha))
+    if not m: return None
+    dia, mes = int(m.group(2)), int(m.group(3))
+    opcoes = []
+    for ano in (HOJE.year - 1, HOJE.year, HOJE.year + 1):
+        try:
+            opcoes.append(datetime(ano, mes, dia).date())
+        except ValueError:
+            pass
+    return min(opcoes, key=lambda d: abs((d - HOJE).days)) if opcoes else None
 
 def fonte_mantos():
     urls = {HOJE: "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
             HOJE + timedelta(days=1): "https://mantosdofutebol.com.br/jogos-de-amanha-tv/"}
-    # Estrutura real (capturada via diagnostico.json em 09/11/2026):
+    # Estrutura real (capturada via diagnostico.json em 09 e 11/11/2026):
+    #   "Segunda – 09/11"                                   <- cabeçalho do DIA
     #   "15h00 – Palmeiras x Santos – Paulistão Sub-20 (Semifinal-ida)"
     #   "Canais: Youtube.com/@TNTSportsBR"
-    # A COMPETIÇÃO vem na linha do jogo; os CANAIS na linha seguinte.
-    rx = re.compile(r"(\d{1,2})[h:](\d{2})\s*[–\-—]\s*(.+?)\s+[xX]\s+(.+?)\s*[–\-—]\s*([^(\n]+?)\s*(?:\(([^)]+)\))?\s*$")
+    # Cada página traz VÁRIOS dias em sequência. A data de cada jogo vem do
+    # cabeçalho acima dele — nunca da URL ("hoje"/"amanhã"), que só vale como
+    # último recurso se a página vier sem cabeçalho nenhum.
+    # Entre o 2º time e a competição o separador é um travessão (– ou —) ou um
+    # hífen COM espaço dos dois lados; hífen colado faz parte do nome do time
+    # ("Atlético-MG", "River Plate-URU", "Al-Nassr").
+    rx = re.compile(r"(\d{1,2})[h:](\d{2})\s*[–\-—]\s*(.+?)\s+[xX]\s+(.+?)(?:\s*[–—]\s*|\s+-\s+)([^(\n]+?)\s*(?:\(([^)]+)\))?\s*$")
     evs = []
-    for data, url in urls.items():
+    for data_url, url in urls.items():
         r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
         corpo = BeautifulSoup(r.text, "html.parser").select_one("article")
         if not corpo: continue
         linhas = [l.strip() for l in corpo.get_text("\n").split("\n") if l.strip()]
-        # instrumentação mantida: detecta mudança futura de layout
-        if "mantos" not in DIAG["amostras"]:
-            blocos = []
-            for i, l in enumerate(linhas):
-                if rx.search(l) and len(blocos) < 3:
-                    blocos.append(" || ".join(linhas[i:i+2])[:300])
-            DIAG["amostras"]["mantos"] = blocos
+        diag = {"url": url, "dias": [], "jogos_sem_cabecalho": 0, "jogos_sem_canal": 0,
+                "linhas_com_data_ignoradas": [], "linhas_de_jogo_nao_lidas": []}
+        data_atual, secao = None, None
         for i, linha in enumerate(linhas):
             m = rx.search(linha)
-            if not m: continue
+            if not m:
+                d = data_do_cabecalho(linha)
+                if d:
+                    data_atual = d
+                    secao = {"cabecalho": linha[:40], "data": d.isoformat(), "jogos": 0}
+                    diag["dias"].append(secao)
+                elif re.search(r"\b\d{1,2}/\d{1,2}\b", linha) and len(linha) <= 60 \
+                        and len(diag["linhas_com_data_ignoradas"]) < 5:
+                    diag["linhas_com_data_ignoradas"].append(linha)
+                elif re.match(r"\d{1,2}h\d{2}\b", linha) and len(diag["linhas_de_jogo_nao_lidas"]) < 5:
+                    diag["linhas_de_jogo_nao_lidas"].append(linha[:120])   # formato novo? aparece aqui
+                continue
             h, mi, t1, t2, compet, fase = m.groups()
             canais = []
             for prox in linhas[i+1:i+3]:
@@ -266,20 +296,45 @@ def fonte_mantos():
             # segurança: se a "liga" for apenas uma fase, vira detalhe
             if re.search(r"^(semifinal|quartas|oitavas|final|rodada|jogo \d)", sem_acento(liga), re.I):
                 detalhe, liga = liga, "Futebol"
-            evs.append(evento(data, f"{int(h):02d}:{mi}", "Futebol", liga,
+            if secao: secao["jogos"] += 1
+            else: diag["jogos_sem_cabecalho"] += 1
+            if not canais: diag["jogos_sem_canal"] += 1
+            esporte = "Futsal" if re.search(r"futsal|\blnf\b", liga, re.I) else "Futebol"
+            evs.append(evento(data_atual or data_url, f"{int(h):02d}:{mi}", esporte, liga,
                               f"{t1.strip()} x {t2.strip()}",
                               [canal(c) for c in canais] or [{"n": "Transmissão a confirmar", "y": "tv"}],
                               detail=detalhe))
-    return evs
+        DIAG["amostras"].setdefault("mantos", []).append(diag)
+    return dedup(evs)
 
 # =================================================================
-# ESPN API (pública, JSON) — NBA, F1, Tênis
-# Canais por modalidade = direitos de transmissão vigentes no Brasil.
-# Se os direitos mudarem, ajustar SOMENTE o dicionário abaixo.
+# ESPN API (pública, JSON) — NBA, NFL e tabelas de futebol
+# Os canais NÃO vêm de uma lista fixa: NBA usa os transmissores que a ESPN
+# informa em cada jogo (canais_nba); NFL usa a janela de horário do contrato
+# (canais_nfl); futebol entra como "Transmissão a confirmar".
 # =================================================================
 def espn_json(path, data):
     url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}"
-    return requests.get(url, headers=HEADERS, timeout=30).json()
+    r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
+    return r.json()
+
+def espn_eventos(path, dias):
+    """Eventos do scoreboard em cada dia pedido. Um dia que falhe não derruba
+    os outros; só é erro se TODAS as consultas falharem."""
+    evs, falhas = [], 0
+    for data in dias:
+        try:
+            evs += espn_json(path, data).get("events", [])
+        except Exception:
+            falhas += 1
+    if falhas == len(dias):
+        raise RuntimeError(f"ESPN {path}: as {falhas} consultas falharam")
+    return evs
+
+# A ESPN agrupa os jogos pelo dia dos EUA. Jogo que começa depois da
+# meia-noite de Brasília (00h00–02h) pertence à rodada americana da VÉSPERA,
+# então NBA/NFL consultam também o dia anterior à janela.
+DIAS_EUA = [HOJE - timedelta(days=1)] + JANELA
 
 def broadcasts_espn(comp):
     """Nomes dos transmissores (EUA) que a própria ESPN lista no jogo."""
@@ -307,22 +362,21 @@ def canais_nba(comp):
 
 def fonte_nba():
     evs = []
-    for data in JANELA:
-        for ev in espn_json("basketball/nba", data).get("events", []):
-            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-            if dt.date() not in JANELA: continue
-            comp = ev.get("competitions", [{}])[0]
-            times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
-            if len(times) < 2: continue
-            # instrumentação: broadcasts crus dos primeiros jogos p/ validação
-            if len(DIAG["amostras"].get("nba_broadcasts", [])) < 4:
-                DIAG["amostras"].setdefault("nba_broadcasts", []).append(
-                    f"{times[1]} x {times[0]} :: {broadcasts_espn(comp) or '(vazio)'}")
-            notas = comp.get("notes", [])
-            detalhe = notas[0].get("headline", "Temporada NBA") if notas else "Temporada NBA"
-            evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
-                              f"{times[1]} x {times[0]}", canais_nba(comp),
-                              detail=detalhe, country="EUA/Canadá", v=2))
+    for ev in espn_eventos("basketball/nba", DIAS_EUA):
+        dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+        if dt.date() not in JANELA: continue
+        comp = ev.get("competitions", [{}])[0]
+        times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
+        if len(times) < 2: continue
+        # instrumentação: transmissores crus dos primeiros jogos (valida canais_nba)
+        if len(DIAG["amostras"].get("nba_broadcasts", [])) < 4:
+            DIAG["amostras"].setdefault("nba_broadcasts", []).append(
+                f"{times[1]} x {times[0]} :: {broadcasts_espn(comp) or '(vazio)'}")
+        notas = comp.get("notes", [])
+        detalhe = notas[0].get("headline", "Temporada NBA") if notas else "Temporada NBA"
+        evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
+                          f"{times[1]} x {times[0]}", canais_nba(comp),
+                          detail=detalhe, country="EUA/Canadá"))
     return dedup(evs)
 
 # Direitos NFL no Brasil 2026/27 (contratos públicos, por janela de horário):
@@ -343,18 +397,17 @@ def canais_nfl(dt):
 
 def fonte_nfl():
     evs = []
-    for data in JANELA:
-        for ev in espn_json("football/nfl", data).get("events", []):
-            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-            if dt.date() not in JANELA: continue
-            comp = ev.get("competitions", [{}])[0]
-            times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
-            if len(times) < 2: continue
-            notas = comp.get("notes", [])
-            detalhe = notas[0].get("headline", "Temporada NFL") if notas else "Temporada NFL"
-            evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
-                              f"{times[1]} x {times[0]}", canais_nfl(dt),
-                              detail=detalhe, country="EUA/Canadá", v=2))
+    for ev in espn_eventos("football/nfl", DIAS_EUA):
+        dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+        if dt.date() not in JANELA: continue
+        comp = ev.get("competitions", [{}])[0]
+        times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
+        if len(times) < 2: continue
+        notas = comp.get("notes", [])
+        detalhe = notas[0].get("headline", "Temporada NFL") if notas else "Temporada NFL"
+        evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
+                          f"{times[1]} x {times[0]}", canais_nfl(dt),
+                          detail=detalhe, country="EUA/Canadá"))
     return dedup(evs)
 
 
@@ -373,80 +426,130 @@ LIGAS_FIXTURES = [
     ("soccer/fra.1",                  "Campeonato Francês",   "Europa (demais)"),
 ]
 def fonte_fixtures():
-    evs = []
+    evs, por_liga = [], {}
     for slug, liga, pais in LIGAS_FIXTURES:
-        for data in JANELA:
+        try:
+            brutos = espn_eventos(slug, JANELA)
+        except Exception as e:
+            por_liga[liga] = f"ERRO ({type(e).__name__})"   # slug inválido ou ESPN fora do ar
+            continue
+        n = 0
+        for ev in brutos:
             try:
-                j = espn_json(slug, data)
+                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
             except Exception:
                 continue
-            for ev in j.get("events", []):
-                try:
-                    dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-                except Exception:
-                    continue
-                if dt.date() not in JANELA: continue
-                comp = ev.get("competitions", [{}])[0]
-                cs = comp.get("competitors", [])
-                if len(cs) < 2: continue
-                home = next((c for c in cs if c.get("homeAway") == "home"), cs[0])
-                away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
-                hn = trad(home.get("team", {}).get("displayName", "?"))
-                an = trad(away.get("team", {}).get("displayName", "?"))
-                notas = comp.get("notes", [])
-                detalhe = (notas[0].get("headline", "") if notas else "") or "Tabela oficial"
-                evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
-                                  f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
-                                  detail=detalhe, country=pais, v=1))
+            if dt.date() not in JANELA: continue
+            comp = ev.get("competitions", [{}])[0]
+            cs = comp.get("competitors", [])
+            if len(cs) < 2: continue
+            home = next((c for c in cs if c.get("homeAway") == "home"), cs[0])
+            away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
+            hn = home.get("team", {}).get("displayName", "?")
+            an = away.get("team", {}).get("displayName", "?")
+            notas = comp.get("notes", [])
+            detalhe = (notas[0].get("headline", "") if notas else "") or "Tabela oficial"
+            evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
+                              f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
+                              detail=detalhe, country=pais, v=1))
+            n += 1
+        por_liga[liga] = n
+    DIAG["fontes"]["espn_tabelas_por_liga"] = por_liga   # mostra slug morto na hora
     return dedup(evs)
 
 
-
-
-
 # =================================================================
-# UOL — página da Copa com jogos e ONDE VAI PASSAR por jogo.
-# Parser defensivo: procura blocos "Time x Time" com canais próximos.
-# Grava amostra bruta no diagnóstico para calibragem com dados reais.
+# Cruzamento entre fontes
+# =================================================================
+RE_BASE = re.compile(r"sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|junior|aspirantes|\bbase\b|\bcopinha\b", re.I)
+RE_TIME_B = re.compile(r"\s(B|II)$")
+
+def categoria(e):
+    """Elenco que joga: feminino, base (Sub-20...), time B ou principal.
+    O mesmo confronto no mesmo dia em categorias diferentes são jogos DIFERENTES."""
+    if e.get("g") == "F": return "F"
+    if RE_BASE.search(sem_acento(f'{e["match"]} {e["league"]} {e.get("detail") or ""}')): return "base"
+    if any(RE_TIME_B.search(t.strip()) for t in re.split(r"\s+x\s+", e["match"], flags=re.I)): return "B"
+    return "principal"
+
+def casa_time(a, b):
+    a, b = norm(a), norm(b)
+    if not a or not b: return False
+    if a == b or a in b or b in a: return True
+    return difflib.SequenceMatcher(None, a, b).ratio() > 0.8
+
+def times_de(match):
+    p = re.split(r"\s+x\s+", match, flags=re.I)
+    return p if len(p) == 2 else None
+
 def mesmo_jogo(m1, m2):
-    """Compara TIME A TIME, não a string inteira (evita falsos positivos como
-    'Holanda x Japão' ~ 'Alemanha x Curaçao' por letras coincidentes)."""
-    p1 = re.split(r"\s+x\s+", m1, flags=re.I)
-    p2 = re.split(r"\s+x\s+", m2, flags=re.I)
-    if len(p1) != 2 or len(p2) != 2:
+    """Os DOIS times casam (direto ou invertido). Compara time a time, não a
+    string inteira (evita falsos positivos como 'Holanda x Japão' ~
+    'Alemanha x Curaçao' por letras coincidentes)."""
+    p1, p2 = times_de(m1), times_de(m2)
+    if not p1 or not p2:
         return difflib.SequenceMatcher(None, norm(m1), norm(m2)).ratio() > 0.7
-    def casa(a, b):
-        a, b = norm(a), norm(b)
-        if not a or not b: return False
-        if a == b or a in b or b in a: return True
-        return difflib.SequenceMatcher(None, a, b).ratio() > 0.8
-    # mesmo jogo se ambos os times casam (direto ou invertido)
-    return (casa(p1[0], p2[0]) and casa(p1[1], p2[1])) or \
-           (casa(p1[0], p2[1]) and casa(p1[1], p2[0]))
+    return (casa_time(p1[0], p2[0]) and casa_time(p1[1], p2[1])) or \
+           (casa_time(p1[0], p2[1]) and casa_time(p1[1], p2[0]))
+
+def um_time_em_comum(m1, m2):
+    p1, p2 = times_de(m1), times_de(m2)
+    return bool(p1 and p2) and any(casa_time(a, b) for a in p1 for b in p2)
+
+def paises_compativeis(a, b):
+    pa, pb = a.get("country"), b.get("country")
+    return pa == pb or "Mundial" in (pa, pb)      # "Mundial" = país não identificado
+
+def casar_fontes(e, candidatos):
+    """Acha em `candidatos` o registro do MESMO jogo que `e` (mesmo dia, mesmo
+    esporte, mesma categoria). 1º: os dois times casam. 2º: mesmo horário + um
+    time em comum + país compatível — cobre nomes que cada fonte escreve de um
+    jeito ('PSG' x 'Paris Saint-Germain', 'Rennes' x 'Stade Rennais'): um time
+    não joga duas partidas na mesma hora."""
+    mesmos = [c for c in candidatos
+              if c["date"] == e["date"] and c["sport"] == e["sport"] and categoria(c) == categoria(e)]
+    for c in mesmos:
+        if mesmo_jogo(c["match"], e["match"]): return c
+    for c in mesmos:
+        if c["t"] == e["t"] and paises_compativeis(c, e) and um_time_em_comum(c["match"], e["match"]):
+            return c
+    return None
+
+def minutos(t):
+    h, m = t.split(":"); return int(h) * 60 + int(m)
 
 def complementar_fixtures(base, fixtures):
-    """Tabela só preenche jogos que nenhuma fonte trouxe. Quando o jogo JÁ
-    existe com liga genérica ("Futebol", vinda do scraping), herda liga/país
-    da tabela oficial — permite filtrar por campeonato de verdade."""
+    """Cruza o guia de TV com a tabela oficial da ESPN.
+    - jogo só na tabela  -> entra como card "Transmissão a confirmar";
+    - jogo nos dois      -> fica o do guia (tem canais); se o horário confere,
+      ganha selo v=2 e o nome oficial da liga; guarda os nomes da ESPN em
+      "espn" (é com eles que o app casa o placar ao vivo)."""
+    divergencias = []
     for fx in fixtures:
-        achou = None
-        for b in base:
-            if b["date"] == fx["date"] and b["sport"] == "Futebol" and \
-               mesmo_jogo(b["match"], fx["match"]):
-                achou = b; break
+        achou = casar_fontes(fx, base)
         if achou is None:
             base.append(fx)
-        elif achou.get("league") in ("Futebol", "", None):
-            achou["league"] = fx["league"]
-            achou["country"] = fx.get("country", achou.get("country"))
-            if (achou.get("detail") or "—") == "—":
-                achou["detail"] = fx.get("detail", achou.get("detail"))
+            continue
+        achou["espn"] = fx["match"]
+        confere = abs(minutos(achou["t"]) - minutos(fx["t"])) <= 30
+        if confere:
+            achou["v"] = 2
+        elif len(divergencias) < 5:
+            divergencias.append(f'{fx["date"]} {achou["match"]}: guia {achou["t"]} x ESPN {fx["t"]}')
+        if confere or achou.get("league") in ("Futebol", "", None):
+            # uma liga, um nome: "Brasileirão", "LaLiga", "Ligue 1" do guia viram
+            # o nome da tabela oficial — é com ele que os chips do app filtram
+            achou["league"], achou["country"] = fx["league"], fx["country"]
+            if (achou.get("detail") or "—") == "—" and fx.get("detail") != "Tabela oficial":
+                achou["detail"] = fx["detail"]
+    if divergencias:
+        DIAG["amostras"]["horario_guia_x_espn"] = divergencias
     return base
 
 # ----------------------------------------------------------------- merge
 def dedup_por_jogo(evs):
-    """Remove o MESMO jogo aparecendo 2x no dia (fontes com horário/grafia
-    divergentes). Mantém o de maior prioridade: tem canais reais > tem placar(v) > scraping."""
+    """Rede de segurança: o MESMO jogo 2x no dia (mesmo esporte e categoria, os
+    dois times casam). Fica o de maior prioridade: canais reais > selo v."""
     def prioridade(e):
         tem_canal = any("confirmar" not in c["n"].lower() for c in e["ch"])
         return (2 if tem_canal else 0) + e.get("v", 1)
@@ -454,6 +557,7 @@ def dedup_por_jogo(evs):
     for e in sorted(evs, key=prioridade, reverse=True):
         dup = next((s for s in saida
                     if s["date"] == e["date"] and s["sport"] == e["sport"]
+                    and categoria(s) == categoria(e)
                     and mesmo_jogo(s["match"], e["match"])), None)
         if dup is None:
             saida.append(e)
@@ -467,25 +571,65 @@ def dedup(evs):
         vistos.add(k); saida.append(e)
     return saida
 
-def mesclar_futebol(base, extra):
-    for ev in extra:
-        achou = None
-        for b in base:
-            if b["date"] == ev["date"] and b["t"] == ev["t"] and mesmo_jogo(b["match"], ev["match"]):
-                achou = b; break
+def confirmar_com(guia, outra):
+    """Segundo guia de TV só CONFIRMA: jogo que está nos dois ganha selo v=2 e
+    os canais que faltavam. Nada é removido do guia principal — uma fonte
+    secundária capenga nunca apaga jogos."""
+    for ev in outra:
+        achou = casar_fontes(ev, guia)
         if achou:
             nomes = {norm(c["n"]) for c in achou["ch"]}
-            achou["ch"] += [c for c in ev["ch"] if norm(c["n"]) not in nomes]
+            achou["ch"] += [c for c in ev["ch"]
+                            if "confirmar" not in c["n"].lower() and norm(c["n"]) not in nomes]
             achou["v"] = 2
-            if achou["league"] in ("Futebol", "—") and ev["league"] not in ("Futebol", "—"):
-                achou["league"], achou["country"] = ev["league"], ev["country"]
-        # IMPORTANTE: fonte B é apenas CRUZAMENTO. Evento que só existe nela
-        # é descartado — evita "ligas" fantasmas geradas por erro de parsing.
-    return base
+    return guia
+
+def sondas_espn():
+    """TEMPORÁRIO (auditoria de 11/11/2026): tira dúvidas sobre a API da ESPN
+    que não dá para testar fora do robô. Remover depois de lido o resultado."""
+    base = "https://site.api.espn.com/apis/site/v2/sports/"
+    d0, d1, amanha = HOJE - timedelta(days=1), HOJE + timedelta(days=6), HOJE + timedelta(days=1)
+    testes = {
+        "nba_intervalo":        f"basketball/nba/scoreboard?dates={d0:%Y%m%d}-{d1:%Y%m%d}",
+        "nba_intervalo_limit":  f"basketball/nba/scoreboard?dates={d0:%Y%m%d}-{d1:%Y%m%d}&limit=300",
+        "nba_mes":              f"basketball/nba/scoreboard?dates={HOJE:%Y%m}",
+        "soccer_all_hoje":      f"soccer/all/scoreboard?dates={HOJE:%Y%m%d}",
+        "uefa_nations_amanha":  f"soccer/uefa.nations/scoreboard?dates={amanha:%Y%m%d}",
+        "amistosos_amanha":     f"soccer/fifa.friendly/scoreboard?dates={amanha:%Y%m%d}",
+        "champions_fem_hoje":   f"soccer/uefa.wchampions/scoreboard?dates={HOJE:%Y%m%d}",
+    }
+    out = {}
+    for nome, caminho in testes.items():
+        try:
+            r = requests.get(base + caminho, headers=HEADERS, timeout=30)
+            info = {"http": r.status_code, "bytes": len(r.content)}
+            if r.ok:
+                evs = r.json().get("events", [])
+                info["eventos"] = len(evs)
+                info["dias"] = sorted({e.get("date", "")[:10] for e in evs})[:10]
+                info["exemplo"] = (evs[0].get("name") or "")[:60] if evs else ""
+            out[nome] = info
+        except Exception as e:
+            out[nome] = {"erro": f"{type(e).__name__}: {e}"[:120]}
+    return out
+
+TEMPLATE, PAGINA = "onde-assistir.html", "index.html"
+
+def publicar_pagina(eventos, agora):
+    """index.html = template (onde-assistir.html) + dados. O template nunca é
+    alterado pelo robô: editar o app é editar só o template."""
+    html = Path(TEMPLATE).read_text(encoding="utf-8")
+    # "</" escapado: texto raspado de terceiros nunca fecha o <script> da página
+    dados = json.dumps(eventos, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    bloco = "/*DB-START*/\nconst DB = " + dados + ";\n/*DB-END*/"
+    # função no lugar de string: o re.sub não reinterpreta barras do JSON
+    html, n1 = re.subn(r"/\*DB-START\*/.*?/\*DB-END\*/", lambda _: bloco, html, count=1, flags=re.S)
+    html, n2 = re.subn(r"const GENERATED_AT = .*?;", lambda _: f"const GENERATED_AT = '{agora}';", html, count=1)
+    if n1 != 1 or n2 != 1:
+        raise RuntimeError("template sem os marcadores DB-START/DB-END ou GENERATED_AT")
+    Path(PAGINA).write_text(html, encoding="utf-8")
 
 def main():
-    eventos = []
-
     def roda(nome, fn, log):
         try:
             r = fn(); log.append(f"  ✓ {nome}: {len(r)} evento(s)"); return r
@@ -494,9 +638,9 @@ def main():
 
     log = [f"Coleta {datetime.now(BRT):%d/%m %H:%M} BRT — janela {JANELA[0]} a {JANELA[-1]}"]
 
-    fut_a = roda("futebolnatv", fonte_futebolnatv, log)
-    fut_b = roda("mantosdofutebol", fonte_mantos, log)
-    eventos += mesclar_futebol(fut_a, fut_b) if fut_a else fut_b
+    guia = roda("mantosdofutebol", fonte_mantos, log)
+    outro = roda("futebolnatv", fonte_futebolnatv, log)
+    eventos = confirmar_com(guia, outro)
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
@@ -505,12 +649,13 @@ def main():
     eventos += roda("ESPN NFL", fonte_nfl, log)
     eventos = dedup_por_jogo(eventos)
     eventos = dedup(eventos)
-    eventos = [e for e in eventos if e["date"] >= HOJE.isoformat()]
-    # Sanitização final: nenhum pseudo-canal passa, venha de qual fonte vier
+    eventos = [e for e in eventos if JANELA[0].isoformat() <= e["date"] <= JANELA[-1].isoformat()]
+    # Sanitização final: competição/fase que escape para o lugar do canal não passa.
+    # Canais vindos de URL explícita (YouTube) e o FIFA+ são sempre legítimos.
     PSEUDO = re.compile(r"copa|fifa|rodada|grupo|s[ée]rie|amistos|libertadores|\b20\d\d\b", re.I)
     for e in eventos:
         e["ch"] = [c for c in e["ch"]
-                   if c["n"].strip().upper() == "FIFA+" or not PSEUDO.search(sem_acento(c["n"]))]
+                   if c.get("u") or c["n"].strip().upper() == "FIFA+" or not PSEUDO.search(sem_acento(c["n"]))]
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
     eventos.sort(key=lambda e: (e["date"], e["t"]))
 
@@ -518,15 +663,15 @@ def main():
     log.append(f"TOTAL: {len(eventos)} eventos → eventos.json")
 
     agora = datetime.now(BRT).strftime("%d/%m %H:%M")
-    for nome in ("index.html", "onde-assistir.html"):
-        p = Path(nome)
-        if p.exists():
-            html = p.read_text(encoding="utf-8")
-            bloco = "/*DB-START*/\nconst DB = " + json.dumps(eventos, ensure_ascii=False, indent=1) + ";\n/*DB-END*/"
-            html = re.sub(r"/\*DB-START\*/.*?/\*DB-END\*/", bloco, html, flags=re.S)
-            html = re.sub(r"const GENERATED_AT = .*?;", f"const GENERATED_AT = '{agora}';", html)
-            p.write_text(html, encoding="utf-8")
-            log.append(f"{nome} atualizado.")
+    try:
+        publicar_pagina(eventos, agora)
+        log.append(f"{PAGINA} gerado a partir de {TEMPLATE}.")
+    except Exception as e:
+        log.append(f"  ✗ {PAGINA} NÃO atualizado ({type(e).__name__}: {e})")
+    try:
+        DIAG["sondas"] = sondas_espn()
+    except Exception as e:
+        DIAG["sondas"] = {"erro": str(e)[:120]}
     DIAG["fontes"]["log"] = log
     Path("diagnostico.json").write_text(json.dumps(DIAG, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n".join(log))

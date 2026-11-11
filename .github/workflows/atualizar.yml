@@ -1,24 +1,36 @@
-# Salve este arquivo no repositório como: .github/workflows/atualizar.yml
-# Ele roda o atualizador a cada 6 horas (e também manualmente pelo botão
-# "Run workflow" na aba Actions) e publica os dados novos no site.
+# Onde.Assistir — robô de dados
+# Roda o pipeline (atualizar_dados.py) de 3 em 3 horas e também:
+#   - na hora, quando o pipeline ou o template do app (onde-assistir.html) mudam;
+#   - manualmente, pelo botão "Run workflow" na aba Actions.
+# Publica eventos.json, index.html e diagnostico.json no próprio repositório,
+# de onde o GitHub Pages serve o site.
 
 name: Atualizar jogos
 
 on:
   schedule:
-    - cron: "0 */4 * * *"   # a cada 4 horas
-  workflow_dispatch:        # permite rodar manualmente pelo celular
+    # Minuto 23, e não 0: na hora cheia o GitHub atrasa e descarta agendamentos
+    # (com "0 */4" só ~3 das 6 execuções diárias aconteciam, com até 2h30 de atraso).
+    - cron: "23 */3 * * *"   # 8x por dia — em Brasília: 00h23, 03h23 ... 21h23
+  workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - "atualizar_dados.py"   # roda na hora quando o pipeline muda
-      - "extras.json"          # ou quando você adicionar eventos extras
+      - "atualizar_dados.py"
+      - "onde-assistir.html"
 
 permissions:
   contents: write
 
+# Uma execução por vez: push e agendamento nunca disputam o mesmo commit.
+concurrency:
+  group: atualizar-jogos
+  cancel-in-progress: false
+
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -39,6 +51,6 @@ jobs:
           git add eventos.json index.html diagnostico.json
           git diff --cached --quiet && echo "Sem mudanças." || {
             git commit -m "Atualiza jogos — $(date -u -d '-3 hours' +'%d/%m %H:%M') BRT"
-            git pull --rebase origin main || true
+            git pull --rebase --autostash origin main
             git push
           }
