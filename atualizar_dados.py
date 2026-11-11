@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-11-d (2º guia de TV, tabelas de seleções, alarme por fonte)
+# build: 2026-11-11-e (2º guia de TV, tabelas de seleções, alarme por fonte)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -78,7 +78,8 @@ MARCAS = [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
           ("Cazétv","CazéTV"),("Caze Tv","CazéTV"),("Cazé Tv","CazéTV"),("Caze TV","CazéTV"),
           ("Xsports","XSports"),("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),
           ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports"),
-          ("Youtube","YouTube"),("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT")]
+          ("Youtube","YouTube"),("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT"),
+          ("Redetv","RedeTV"),("Sportynet","SportyNet")]
 def grafia(nome):
     for a, dep in MARCAS: nome = nome.replace(a, dep)
     return nome
@@ -86,7 +87,8 @@ def grafia(nome):
 # Canais de YouTube cujo endereço vem todo em minúsculas (não dá para separar as
 # palavras pelo maiúsculo/minúsculo): nome de exibição igual ao do canal de TV.
 NOMES_YT = {"canalgoatbr": "Canal GOAT", "espnbrasil": "ESPN Brasil", "cazetv": "CazéTV",
-            "metropolesesportes": "Metrópoles Esportes"}
+            "metropolesesportes": "Metrópoles Esportes", "sportynetbrasil": "SportyNet",
+            "xsports.brasil": "XSports"}
 
 def canal(nome):
     """Nome cru da fonte -> {"n": nome exibido, "y": tv|stream|free, "u": link exato}.
@@ -112,10 +114,14 @@ PAIS_POR_LIGA = [
     (r"brasileir|copa do brasil|supercopa do brasil|copa do nordeste|copa verde|copinha|"
      r"paulist|carioca|mineir|gauch|pernambucan|cearense|baian|paranaense|catarinense|goian|"
      r"paraiban|potiguar|capixaba|sergipan|alagoan|maranhense|piauiense|paraense|amazonense|"
-     r"brasiliense|candango|mato.?grossense|tocantinense|fares lopes", "Brasil"),
+     r"brasiliense|candango|mato.?grossense|tocantinense|fares lopes|"
+     # copas estaduais que levam o nome do estado ("Copa Santa Catarina", "Copa Rio")
+     r"santa catarina|espirito santo|alagoas|sergipe|paraiba|pernambuco|\bceara\b|\bbahia\b|\bgoias\b|"
+     r"\bparana\b|maranhao|piaui|rio grande|mato grosso|tocantins|amazonas|rondonia|roraima|amapa|"
+     r"\bacre\b|distrito federal|copa rio\b", "Brasil"),
     (r"libertadores|sul.?americana|recopa|conmebol|argentin|chilen|uruguai|colombian|"
      r"paraguai|peruan|equatorian|bolivian|venezuelan", "América do Sul"),
-    (r"premier league|championship|ingl|fa cup|carabao|copa da liga inglesa", "Inglaterra"),
+    (r"premier league|championship|ingl|fa cup|carabao|copa da liga inglesa|\befl\b|league (one|two)\b", "Inglaterra"),
     (r"la ?liga|espanh|copa do rei", "Espanha"),
     (r"\bital|coppa|serie a tim", "Itália"),
     (r"alem|bundesliga|dfb", "Alemanha"),
