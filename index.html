@@ -275,7 +275,8 @@
    index.html a partir dele, trocando o que está entre DB-START e DB-END
    e preenchendo GENERATED_AT. Com o app aberto, o eventos.json hospedado
    ao lado é recarregado e tem prioridade sobre os dados embutidos.
-   Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?}
+   Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?, sel?}
+           (sel=1: jogo de seleções, marcado pelo robô)
    Canal:  {n: nome, y: 'tv'|'stream'|'free', u?: link exato}
    ========================================================= */
 /*DB-START*/
@@ -716,7 +717,8 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -737,7 +739,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -754,7 +757,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -866,7 +870,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -884,7 +889,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -952,7 +958,8 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -973,7 +980,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -994,7 +1002,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1011,7 +1020,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1028,7 +1038,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1045,7 +1056,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1063,7 +1075,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1081,7 +1094,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1172,7 +1186,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1207,7 +1222,8 @@ const DB = [
     "u": "https://www.youtube.com/@canalgoatbr"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-12",
@@ -1321,7 +1337,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1338,7 +1355,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1391,7 +1409,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1409,7 +1428,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1431,7 +1451,8 @@ const DB = [
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1453,7 +1474,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1474,7 +1496,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1495,7 +1518,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1512,7 +1536,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1529,7 +1554,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1546,7 +1572,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1563,7 +1590,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1580,7 +1608,8 @@ const DB = [
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1636,7 +1665,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1671,7 +1701,8 @@ const DB = [
     "u": "https://www.youtube.com/@TNTSportsBR"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1689,7 +1720,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1707,7 +1739,8 @@ const DB = [
     "u": "https://www.youtube.com/@concacaf"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -1831,7 +1864,8 @@ const DB = [
     "u": "https://www.youtube.com/@canalgoatbr"
    }
   ],
-  "v": 1
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-13",
@@ -2749,7 +2783,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '11/11 11:08'; /* preenchido pelo script Python */
+const GENERATED_AT = '11/11 11:35'; /* preenchido pelo script Python */
 
 /* Carrega o eventos.json hospedado ao lado; se falhar (offline, arquivo
    local), o app segue com os dados embutidos. */
@@ -2798,29 +2832,8 @@ function feedDe(e){
 }
 let SCORES = [], scoreSig = '';
 const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
-/* Seleções: a ESPN usa o nome em inglês e os dados estão em português.
-   (Só entra em uso se um feed de seleções for ligado em FEEDS.) */
-const PT_EN = {
-  'alemanha':'germany','franca':'france','espanha':'spain','holanda':'netherlands',
-  'belgica':'belgium','uruguai':'uruguay','inglaterra':'england','brasil':'brazil',
-  'mexico':'mexico','africa do sul':'south africa','coreia do sul':'south korea',
-  'republica tcheca':'czechia','estados unidos':'united states','canada':'canada',
-  'bosnia e herzegovina':'bosnia and herzegovina','bosnia-herzegovina':'bosnia and herzegovina',
-  'escocia':'scotland','marrocos':'morocco','suica':'switzerland','catar':'qatar',
-  'japao':'japan','croacia':'croatia','italia':'italy','noruega':'norway','suecia':'sweden',
-  'polonia':'poland','austria':'austria','turquia':'turkey','turkiye':'turkey',
-  'australia':'australia','equador':'ecuador','colombia':'colombia','paraguai':'paraguay',
-  'costa do marfim':'ivory coast','egito':'egypt','senegal':'senegal','gana':'ghana',
-  'tunisia':'tunisia','argelia':'algeria','panama':'panama','costa rica':'costa rica',
-  'haiti':'haiti','jordania':'jordan','uzbequistao':'uzbekistan','ira':'iran',
-  'arabia saudita':'saudi arabia','nova zelandia':'new zealand','cabo verde':'cape verde',
-  'curacao':'curacao','ucrania':'ukraine','dinamarca':'denmark','irlanda':'ireland',
-  'pais de gales':'wales','eslovaquia':'slovakia','romenia':'romania','argentina':'argentina',
-  'portugal':'portugal','nigeria':'nigeria','bolivia':'bolivia','peru':'peru','chile':'chile'
-};
-function bridge(s){ const n = nrm(s); return PT_EN[n] || n; }
 function simil(a,b){
-  a = bridge(a); b = bridge(b);
+  a = nrm(a); b = nrm(b);
   if(!a||!b) return 0;
   if(a===b) return 1;
   if(a.includes(b)||b.includes(a)) return .9;
@@ -3016,8 +3029,12 @@ const SPORTS = ['Futebol','Basquete','Futebol Americano'];
 /* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
    (regex), então ruído das fontes nunca vira chip novo. Os padrões cobrem o
    nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
-   "LaLiga", "UEFA Champions League"). */
+   "LaLiga", "UEFA Champions League").
+   "Seleções" não é uma liga: junta todo jogo de seleção (datas FIFA, Nations
+   League, eliminatórias, Euro, Copa América, amistosos entre países), que o
+   robô marca com sel=1. */
 const LEAGUES = [
+  ['Seleções',              e => !!e.sel],
   ['Brasileirão Série A',   /^brasileir[ãa]o(\s+s[ée]rie a)?$/i],
   ['Copa do Brasil',        /copa do brasil/i],
   ['Libertadores',          /libertadores/i],
@@ -3069,8 +3086,8 @@ function teamMatch(e){
 }
 function leagueMatch(e){
   if(!state.league.size) return true;
-  for(const [lbl,re] of LEAGUES)
-    if(state.league.has(lbl) && re.test(e.league)) return true;
+  for(const [lbl,regra] of LEAGUES)
+    if(state.league.has(lbl) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
   return false;
 }
 function buildLeagueChips(){
