@@ -3,7 +3,8 @@
 #   - na hora, quando o pipeline ou o template do app (onde-assistir.html) mudam;
 #   - manualmente, pelo botão "Run workflow" na aba Actions.
 # Publica eventos.json, index.html e diagnostico.json no próprio repositório,
-# de onde o GitHub Pages serve o site.
+# de onde o GitHub Pages serve o site. Se uma fonte fica sem dados em duas
+# coletas seguidas, o último passo falha de propósito (alarme por e-mail).
 
 name: Atualizar jogos
 
@@ -42,6 +43,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Buscar e cruzar fontes
+        id: coleta
         run: python atualizar_dados.py
 
       - name: Publicar dados novos
@@ -54,3 +56,15 @@ jobs:
             git pull --rebase --autostash origin main
             git push
           }
+
+      # Publica primeiro, avisa depois: o alarme nunca segura os dados que deram certo.
+      # O pipeline pede o alarme quando o guia de TV vem vazio (ou a ESPN inteira cai)
+      # em duas coletas seguidas. Job com falha = e-mail do GitHub para o dono do
+      # repositório. Um commit com [teste-alarme] na mensagem dispara um aviso de teste.
+      - name: "ALARME: fonte sem dados (avise o Claude)"
+        if: ${{ steps.coleta.outputs.alerta != '' || contains(github.event.head_commit.message, '[teste-alarme]') }}
+        env:
+          ALERTA: ${{ steps.coleta.outputs.alerta }}
+        run: |
+          echo "::error title=Onde.Assistir::${ALERTA:-Teste do alarme. Está tudo funcionando: esta falha foi provocada só para conferir se o aviso chega por e-mail.}"
+          exit 1

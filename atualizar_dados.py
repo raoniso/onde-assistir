@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-11-b (auditoria: datas do guia pelo cabeçalho do dia; guia único)
+# build: 2026-11-11-c (alarme, seleções, madrugada no próprio dia; 2º guia em teste)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -29,12 +29,17 @@ SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
 dados embutidos) e diagnostico.json (log das fontes + amostras brutas — é
 por ele que se depura, sem precisar do log do Actions).
 
+ALARME: se o guia de TV vier vazio (ou a ESPN inteira cair) em duas coletas
+seguidas, o robô publica o que tem e depois falha de propósito — o GitHub
+avisa o dono do repositório por e-mail. Repete o aviso a cada 24h enquanto durar.
+
 DATAS SÃO ABSOLUTAS ("date": "2026-11-11"). O app só exibe um evento na aba
 do dia exato — dado antigo nunca "escorrega" para hoje.
 """
 
 import difflib
 import json
+import os
 import re
 import unicodedata
 from datetime import datetime, timedelta, timezone
@@ -192,9 +197,11 @@ def fonte_mantos():
         if not corpo: continue
         linhas = [l.strip() for l in corpo.get_text("\n").split("\n") if l.strip()]
         diag = {"url": url, "dias": [], "jogos_sem_cabecalho": 0, "jogos_sem_canal": 0,
-                "jogos_sem_competicao": 0, "linhas_emendadas": [],
+                "jogos_sem_competicao": 0, "futsal_descartados": 0, "linhas_emendadas": [],
+                "madrugada_no_dia_seguinte": [],
                 "linhas_com_data_ignoradas": [], "linhas_de_jogo_nao_lidas": []}
         data_atual, secao = None, None
+        ant_min, virou, em_ordem = None, False, True     # ordem dos horários dentro do dia
         for i, linha in enumerate(linhas):
             m, extra = rx.search(linha), 0       # extra = linhas seguintes já usadas por este jogo
             if not m and RX_JOGO.match(linha):
@@ -223,6 +230,7 @@ def fonte_mantos():
                     data_atual = d
                     secao = {"cabecalho": linha[:40], "data": d.isoformat(), "jogos": 0}
                     diag["dias"].append(secao)
+                    ant_min, virou, em_ordem = None, False, True
                 elif re.search(r"\b\d{1,2}/\d{1,2}\b", linha) and len(linha) <= 60 \
                         and len(diag["linhas_com_data_ignoradas"]) < 5:
                     diag["linhas_com_data_ignoradas"].append(linha)
@@ -248,11 +256,26 @@ def fonte_mantos():
             # segurança: se a "liga" for apenas uma fase, vira detalhe
             if re.search(r"^(semifinal|quartas|oitavas|final|rodada|jogo \d)", sem_acento(liga), re.I):
                 detalhe, liga = liga, "Futebol"
+            # A lista de cada dia vem em ordem de horário. Se depois de um jogo da
+            # tarde/noite aparece um de madrugada (00h00–05h59), ele acontece no dia
+            # seguinte — e é nesse dia que o app mostra.
+            minuto = int(h) * 60 + int(mi)
+            if ant_min is not None and minuto < ant_min:
+                if em_ordem and int(h) < 6 and ant_min >= 12 * 60: virou = True
+                elif not virou: em_ordem = False             # lista fora de ordem: não conclui nada
+            ant_min = minuto
+            data_jogo = data_atual or data_url
+            if virou and int(h) < 6:
+                data_jogo += timedelta(days=1)
+                if len(diag["madrugada_no_dia_seguinte"]) < 5:
+                    diag["madrugada_no_dia_seguinte"].append(f"{linha[:70]} -> {data_jogo}")
+            if re.search(r"futsal|\blnf\b", liga, re.I):          # futsal está fora do escopo do app
+                diag["futsal_descartados"] += 1
+                continue
             if secao: secao["jogos"] += 1
             else: diag["jogos_sem_cabecalho"] += 1
             if not canais: diag["jogos_sem_canal"] += 1
-            esporte = "Futsal" if re.search(r"futsal|\blnf\b", liga, re.I) else "Futebol"
-            evs.append(evento(data_atual or data_url, f"{int(h):02d}:{mi}", esporte, liga,
+            evs.append(evento(data_jogo, f"{int(h):02d}:{mi}", "Futebol", liga,
                               f"{t1.strip()} x {t2.strip()}",
                               [canal(c) for c in canais] or [{"n": "Transmissão a confirmar", "y": "tv"}],
                               detail=detalhe))
@@ -498,6 +521,65 @@ def complementar_fixtures(base, fixtures):
         DIAG["amostras"]["horario_guia_x_espn"] = divergencias
     return base
 
+# =================================================================
+# Seleções (filtro "Seleções" do app: datas FIFA, Euro, Copa América...)
+# =================================================================
+# Países como os guias escrevem, com as variações comuns. Mônaco fica de fora
+# de propósito: não tem seleção na FIFA e é nome de clube.
+PAISES = {norm(p) for p in """
+Argentina; Bolívia; Brasil; Chile; Colômbia; Equador; Paraguai; Peru; Uruguai; Venezuela;
+Albânia; Alemanha; Andorra; Armênia; Áustria; Azerbaijão; Belarus; Bielorrússia; Bélgica; Bósnia;
+Bósnia e Herzegovina; Bósnia-Herzegovina; Bulgária; Cazaquistão; Chipre; Croácia; Dinamarca; Escócia;
+Eslováquia; Eslovênia; Espanha; Estônia; Finlândia; França; Geórgia; Gibraltar; Grécia; Holanda;
+Países Baixos; Hungria; Ilhas Faroé; Ilhas Faroe; Ilhas Féroe; Inglaterra; Irlanda; República da Irlanda;
+Irlanda do Norte; Islândia; Israel; Itália; Kosovo; Letônia; Liechtenstein; Lituânia; Luxemburgo;
+Macedônia do Norte; Malta; Moldávia; Moldova; Montenegro; Noruega; País de Gales; Gales; Polônia; Portugal;
+República Tcheca; Rep. Tcheca; Tchéquia; Chéquia; Romênia; Rússia; San Marino; Sérvia; Suécia; Suíça;
+Turquia; Türkiye; Ucrânia;
+Anguilla; Antígua e Barbuda; Aruba; Bahamas; Barbados; Belize; Bermudas; Bermuda; Ilhas Virgens Britânicas;
+Canadá; Ilhas Cayman; Ilhas Caimã; Costa Rica; Cuba; Curaçao; Dominica; República Dominicana; El Salvador;
+Granada; Guatemala; Guiana; Haiti; Honduras; Jamaica; México; Montserrat; Nicarágua; Panamá; Porto Rico;
+São Cristóvão e Névis; Saint Kitts e Nevis; Santa Lúcia; São Vicente e Granadinas; Suriname;
+Trinidad e Tobago; Ilhas Turcas e Caicos; Turks e Caicos; Estados Unidos; EUA; Ilhas Virgens Americanas;
+Bonaire; Guiana Francesa; Guadalupe; Martinica; Saint Martin; São Martinho; Sint Maarten;
+Afeganistão; Arábia Saudita; Austrália; Bahrein; Barein; Bangladesh; Butão; Brunei; Camboja; Catar; Qatar;
+China; Coreia do Norte; Coreia do Sul; Emirados Árabes Unidos; Emirados Árabes; Filipinas; Guam; Hong Kong;
+Iêmen; Índia; Indonésia; Irã; Iraque; Japão; Jordânia; Kuwait; Kuait; Laos; Líbano; Macau; Malásia; Maldivas;
+Mongólia; Mianmar; Myanmar; Nepal; Omã; Paquistão; Palestina; Quirguistão; Singapura; Cingapura; Síria;
+Sri Lanka; Tadjiquistão; Tajiquistão; Tailândia; Taiwan; Taipé Chinesa; China Taipé; Timor-Leste;
+Turcomenistão; Uzbequistão; Vietnã;
+África do Sul; Angola; Argélia; Benin; Botsuana; Burkina Faso; Burquina Faso; Burundi; Cabo Verde; Camarões;
+Chade; Comores; Congo; República do Congo; RD Congo; República Democrática do Congo; Congo DR;
+Costa do Marfim; Djibuti; Egito; Eritreia; Essuatíni; Suazilândia; Etiópia; Gabão; Gâmbia; Gana; Guiné;
+Guiné-Bissau; Guiné Equatorial; Lesoto; Libéria; Líbia; Madagascar; Madagáscar; Malawi; Malaui; Mali;
+Marrocos; Maurício; Ilhas Maurício; Mauritânia; Moçambique; Namíbia; Níger; Nigéria; Quênia;
+República Centro-Africana; Ruanda; São Tomé e Príncipe; Senegal; Seicheles; Seychelles; Serra Leoa;
+Somália; Sudão; Sudão do Sul; Tanzânia; Togo; Tunísia; Uganda; Zâmbia; Zimbábue; Zimbabwe;
+Fiji; Ilhas Cook; Ilhas Salomão; Nova Caledônia; Nova Zelândia; Papua-Nova Guiné; Papua Nova Guiné; Samoa;
+Samoa Americana; Taiti; Tonga; Vanuatu
+""".replace("\n", " ").split(";") if p.strip()}
+
+# Competições que só seleções jogam (olha só o NOME da competição: "eliminatória"
+# também é fase de copa de clubes, e fase fica no detalhe).
+RX_LIGA_SELECOES = re.compile(
+    r"nations league|(das|de) nacoes|eliminatoria|qualificatoria|copa do mundo|mundial (sub|feminin)|"
+    r"eurocopa|\beuro\b|copa america|copa ouro|gold cup|copa da asia|copa arabe|copa do golfo|finalissima|"
+    r"olimpi|(sul.?americano|europeu|africano|asiatico) sub|fifa series|\bselec", re.I)
+# Fora delas, só vale como jogo de seleções o confronto ENTRE DOIS PAÍSES em
+# amistoso/torneio ("Amistoso: Lituânia x Suriname"). Assim "Copa do Rei: Andorra
+# x Granada" e "Amistoso: Colo-Colo x Racing" continuam sendo jogos de clubes.
+RX_AMISTOSO = re.compile(r"amistos|friendl|torneio|\bcup\b", re.I)
+RX_SUFIXO_SELECAO = re.compile(r"\(f\)|\bfeminin[oa]\b|\bolimpic[oa]\b|\b(sub|u)[- ]?\d{2}\b", re.I)
+
+def eh_selecao(e):
+    if e["sport"] != "Futebol": return False
+    liga = sem_acento(e["league"]).lower()
+    if re.search(r"\bclubes\b", liga): return False           # Mundial / Copa do Mundo de Clubes
+    if RX_LIGA_SELECOES.search(liga): return True
+    if not RX_AMISTOSO.search(liga) and liga != "futebol": return False     # "futebol" = guia sem competição
+    times = times_de(e["match"])
+    return bool(times) and all(norm(RX_SUFIXO_SELECAO.sub(" ", sem_acento(t))) in PAISES for t in times)
+
 # ----------------------------------------------------------------- duplicatas
 def dedup_por_jogo(evs):
     """Rede de segurança: o MESMO jogo 2x no dia (mesmo esporte e categoria, os
@@ -523,6 +605,177 @@ def dedup(evs):
         vistos.add(k); saida.append(e)
     return saida
 
+# =================================================================
+# Alarme: fonte sem dados em coletas seguidas
+# =================================================================
+def avaliar_saude(anterior, problemas, agora):
+    """anterior = estado gravado pela coleta passada (diagnostico.json -> "saude").
+    Devolve (estado novo, texto do alarme ou None). Uma falha isolada não toca
+    o alarme (o guia já teve soluços de minutos); duas coletas seguidas, sim.
+    Enquanto o problema durar, repete o aviso a cada 24h."""
+    if not problemas:
+        return {"seguidas": 0, "avisado_em": None, "problemas": []}, None
+    seguidas = int(anterior.get("seguidas") or 0) + 1
+    avisado, alerta = anterior.get("avisado_em"), None
+    if seguidas >= 2:
+        try:
+            venceu = not avisado or agora - datetime.fromisoformat(avisado) >= timedelta(hours=24)
+        except Exception:
+            venceu = True
+        if venceu:
+            alerta = " | ".join(problemas) + f" — {seguidas} coletas seguidas"
+            avisado = agora.isoformat(timespec="minutes")
+    return {"seguidas": seguidas, "avisado_em": avisado, "problemas": problemas}, alerta
+
+# =================================================================
+# EM TESTE — 2º guia de TV (Goal). NÃO alimenta o app: só é lido e comparado
+# com o guia principal no diagnostico.json, para decidir com dado real.
+# =================================================================
+URL_GOAL = "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315"
+MESES = {"janeiro": 1, "fevereiro": 2, "marco": 3, "abril": 4, "maio": 5, "junho": 6, "julho": 7,
+         "agosto": 8, "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12}
+RX_DIA_GOAL = re.compile(r"(segunda|terca|quarta|quinta|sexta|sabado|domingo)\D{0,20}?(\d{1,2})\s+de\s+("
+                         + "|".join(MESES) + r")", re.I)
+
+def fonte_goal(info):
+    """Tabelas por dia: JOGO | CAMPEONATO | HORÁRIO | ONDE PASSA?  (título do dia
+    acima de cada tabela: "Jogos de quarta, 11 de novembro de 2026")."""
+    r = requests.get(URL_GOAL, headers=HEADERS, timeout=30)
+    info.update({"http": r.status_code, "bytes": len(r.text)})
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+    info["tabelas"] = len(soup.find_all("table"))
+    info["html"] = r.text
+    evs, data_atual, dias, nao_lidas = [], None, [], []
+    for no in soup.descendants:
+        if isinstance(no, str):
+            m = RX_DIA_GOAL.search(sem_acento(str(no))) if len(no) <= 120 else None
+            if m:
+                opcoes = []
+                for ano in (HOJE.year - 1, HOJE.year, HOJE.year + 1):
+                    try: opcoes.append(datetime(ano, MESES[m.group(3).lower()], int(m.group(2))).date())
+                    except ValueError: pass
+                if opcoes:
+                    data_atual = min(opcoes, key=lambda d: abs((d - HOJE).days))
+                    if not dias or dias[-1]["data"] != data_atual.isoformat():
+                        dias.append({"titulo": " ".join(str(no).split())[:60], "data": data_atual.isoformat(), "jogos": 0})
+            continue
+        if getattr(no, "name", None) != "table" or not data_atual: continue
+        col = {"jogo": 0, "liga": 1, "hora": 2, "onde": 3}
+        for tr in no.find_all("tr"):
+            cel = [" ".join(c.get_text(" ", strip=True).split()) for c in tr.find_all(["td", "th"])]
+            maius = [sem_acento(c).upper() for c in cel]
+            if "JOGO" in maius:                       # cabeçalho da tabela: confere a ordem das colunas
+                for i, c in enumerate(maius):
+                    if c == "JOGO": col["jogo"] = i
+                    elif c.startswith("CAMPEONATO"): col["liga"] = i
+                    elif c.startswith("HOR"): col["hora"] = i
+                    elif c.startswith("ONDE"): col["onde"] = i
+                continue
+            if len(cel) <= max(col.values()): continue
+            times = re.split(r"\s+x\s+", cel[col["jogo"]], flags=re.I)
+            mh = re.search(r"(\d{1,2})\s*[h:]\s*(\d{2})?", cel[col["hora"]])
+            if len(times) != 2 or not mh:
+                if len(nao_lidas) < 5: nao_lidas.append(" | ".join(cel)[:140])
+                continue
+            fem = any("(f)" in t.lower() for t in times)
+            t1, t2 = [re.sub(r"\s*\(f\)", "", t, flags=re.I).strip() for t in times]
+            ml = re.match(r"(.+?)\s*\(([^)]+)\)\s*$", cel[col["liga"]])
+            liga, detalhe = (ml.group(1), ml.group(2)) if ml else (cel[col["liga"]], "—")
+            canais = [canal(c) for c in separa_canais_mantos(cel[col["onde"]])]
+            evs.append(evento(data_atual, f"{int(mh.group(1)):02d}:{mh.group(2) or '00'}", "Futebol", liga or "Futebol",
+                              f"{t1} x {t2}", canais or [{"n": "Transmissão a confirmar", "y": "tv"}],
+                              detail=detalhe, g="F" if fem else None))
+            dias[-1]["jogos"] += 1
+    info.update({"dias": dias, "linhas_nao_lidas": nao_lidas})
+    return dedup(evs)
+
+def sombra_goal(guia):
+    """Lê o Goal e compara com o guia principal. Resultado só no diagnóstico."""
+    info = {}
+    try:
+        goal = fonte_goal(info)
+    except Exception as e:
+        info["erro"] = f"{type(e).__name__}: {e}"[:200]
+        goal = []
+    html = info.pop("html", "")
+    nomes = lambda e: sorted(norm(c["n"]) for c in e["ch"])
+    info["jogos"] = [f'{e["date"][5:]} {e["t"]} {e["match"]} | {e["league"]} ({e["detail"]}) | '
+                     + ", ".join(c["n"] for c in e["ch"]) for e in goal][:60]
+    comp = []
+    for dia in sorted({e["date"] for e in goal}):
+        g_dia = [e for e in goal if e["date"] == dia]
+        m_dia = [e for e in guia if e["date"] == dia]
+        iguais, so_goal, hora_dif, canal_dif, casados = 0, [], [], [], set()
+        for e in g_dia:
+            par = casar_fontes(e, m_dia)
+            if par is None:
+                so_goal.append(f'{e["t"]} {e["match"]} [{e["league"]}] ' + ", ".join(c["n"] for c in e["ch"]))
+                continue
+            casados.add(id(par)); iguais += 1
+            if par["t"] != e["t"]: hora_dif.append(f'{e["match"]}: guia {par["t"]} x goal {e["t"]}')
+            if nomes(par) != nomes(e):
+                canal_dif.append(f'{par["match"]}: guia [{", ".join(c["n"] for c in par["ch"])}] x goal [{", ".join(c["n"] for c in e["ch"])}]')
+        comp.append({"data": dia, "goal": len(g_dia), "guia": len(m_dia), "nos_dois": iguais,
+                     "so_no_goal": so_goal[:12], "so_no_guia": len(m_dia) - len(casados),
+                     "horario_diferente": hora_dif[:6], "canais_diferentes": canal_dif[:12]})
+    info["comparacao"] = comp
+    if not goal and html:      # formato inesperado: guarda um trecho cru para escrever o leitor certo
+        alvo = next((t for e in guia for t in times_de(e["match"]) or [] if len(t) > 4 and t in html), None)
+        pos = html.find(alvo) if alvo else -1
+        info["amostra_html"] = html[max(0, pos - 900):pos + 900] if pos >= 0 else html[:1500]
+    return info
+
+def sondas():
+    """TEMPORÁRIO: perguntas que só o robô consegue responder (remover depois)."""
+    out, amanha = {}, HOJE + timedelta(days=1)
+    base = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
+    def jogos(js):
+        linhas = []
+        for ev in js.get("events", []):
+            try:
+                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+                cs = ev["competitions"][0]["competitors"]
+                casa = next((c for c in cs if c.get("homeAway") == "home"), cs[0])["team"]["displayName"]
+                fora = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])["team"]["displayName"]
+                linhas.append(f"{dt:%m-%d %H:%M} {casa} x {fora}")
+            except Exception:
+                continue
+        return linhas
+    # 1) a ESPN entrega os nomes das seleções em português?
+    for slug in ("uefa.nations", "fifa.friendly", "concacaf.nations.league"):
+        for rot, sufixo in (("pt", "&lang=pt&region=br"), ("en", "")):
+            chave = f"{slug}|{rot}"
+            try:
+                r = requests.get(f"{base}{slug}/scoreboard?dates={amanha:%Y%m%d}{sufixo}", headers=HEADERS, timeout=30)
+                out[chave] = {"http": r.status_code}
+                if r.ok:
+                    js = r.json()
+                    out[chave].update({"liga": ((js.get("leagues") or [{}])[0].get("name") or "")[:60],
+                                       "jogos": jogos(js)[:10]})
+            except Exception as e:
+                out[chave] = {"erro": f"{type(e).__name__}: {e}"[:120]}
+    # 2) amistosos de seleções na janela inteira (aparece a Seleção Brasileira?)
+    amistosos = []
+    for d in JANELA:
+        try:
+            r = requests.get(f"{base}fifa.friendly/scoreboard?dates={d:%Y%m%d}&lang=pt&region=br", headers=HEADERS, timeout=30)
+            if r.ok: amistosos += jogos(r.json())
+        except Exception:
+            pass
+    out["amistosos_7_dias_pt"] = sorted(set(amistosos))[:60]
+    # 3) outro candidato a 2º guia: o robô consegue abrir?
+    try:
+        r = requests.get("https://trivela.com.br/onde-assistir/futebol-ao-vivo-os-jogos-de-hoje-na-tv/", headers=HEADERS, timeout=30)
+        sopa = BeautifulSoup(r.text, "html.parser")
+        out["trivela"] = {"http": r.status_code, "bytes": len(r.text), "tabelas": len(sopa.find_all("table")),
+                          "titulo": (sopa.title.get_text(" ", strip=True) if sopa.title else "")[:90],
+                          "linhas": [" | ".join(c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"]))[:120]
+                                     for tr in sopa.find_all("tr")[:6]]}
+    except Exception as e:
+        out["trivela"] = {"erro": f"{type(e).__name__}: {e}"[:120]}
+    return out
+
 TEMPLATE, PAGINA = "onde-assistir.html", "index.html"
 
 def publicar_pagina(eventos, agora):
@@ -540,15 +793,23 @@ def publicar_pagina(eventos, agora):
     Path(PAGINA).write_text(html, encoding="utf-8")
 
 def main():
+    falhas = {}
     def roda(nome, fn, log):
         try:
             r = fn(); log.append(f"  ✓ {nome}: {len(r)} evento(s)"); return r
         except Exception as e:
+            falhas[nome] = f"{type(e).__name__}: {e}"[:160]
             log.append(f"  ✗ {nome} indisponível ({type(e).__name__}: {e})"); return []
 
-    log = [f"Coleta {datetime.now(BRT):%d/%m %H:%M} BRT — janela {JANELA[0]} a {JANELA[-1]}"]
+    agora_dt = datetime.now(BRT)
+    log = [f"Coleta {agora_dt:%d/%m %H:%M} BRT — janela {JANELA[0]} a {JANELA[-1]}"]
+    try:        # estado do alarme deixado pela coleta anterior
+        saude_anterior = json.loads(Path("diagnostico.json").read_text(encoding="utf-8")).get("saude") or {}
+    except Exception:
+        saude_anterior = {}
 
     eventos = roda("mantosdofutebol", fonte_mantos, log)
+    guia_puro = [dict(e) for e in eventos]       # só o guia, antes de cruzar com a tabela
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
@@ -565,17 +826,48 @@ def main():
         e["ch"] = [c for c in e["ch"]
                    if c.get("u") or c["n"].strip().upper() == "FIFA+" or not PSEUDO.search(sem_acento(c["n"]))]
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
+        if eh_selecao(e): e["sel"] = 1            # filtro "Seleções" do app
     eventos.sort(key=lambda e: (e["date"], e["t"]))
 
     Path("eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1), encoding="utf-8")
     log.append(f"TOTAL: {len(eventos)} eventos → eventos.json")
 
-    agora = datetime.now(BRT).strftime("%d/%m %H:%M")
+    agora = agora_dt.strftime("%d/%m %H:%M")
     try:
         publicar_pagina(eventos, agora)
         log.append(f"{PAGINA} gerado a partir de {TEMPLATE}.")
     except Exception as e:
         log.append(f"  ✗ {PAGINA} NÃO atualizado ({type(e).__name__}: {e})")
+
+    # ---- alarme: os dados acima já foram gravados; aqui só se decide se avisa
+    problemas = []
+    if "mantosdofutebol" in falhas:
+        problemas.append(f"guia de TV fora do ar ({falhas['mantosdofutebol']})")
+    elif not guia_puro:
+        problemas.append("guia de TV abriu, mas nenhum jogo foi lido (o formato da página pode ter mudado)")
+    por_liga = DIAG["fontes"].get("espn_tabelas_por_liga") or {}
+    if "ESPN NBA" in falhas and "ESPN NFL" in falhas and por_liga \
+            and all(str(v).startswith("ERRO") for v in por_liga.values()):
+        problemas.append("ESPN fora do ar (sem NBA, NFL e tabelas)")
+    DIAG["saude"], alerta = avaliar_saude(saude_anterior, problemas, agora_dt)
+    if alerta:
+        log.append(f"ALARME: {alerta}")
+        saida = os.environ.get("GITHUB_OUTPUT")      # lido pelo último passo do workflow
+        if saida:
+            with open(saida, "a", encoding="utf-8") as f:
+                f.write("alerta=" + " ".join(alerta.split())[:400] + "\n")
+    elif problemas:
+        log.append("  ! " + " | ".join(problemas) + (" — alarme já enviado" if DIAG["saude"]["avisado_em"]
+                                                     else " — o alarme toca se repetir na próxima coleta"))
+
+    try:        # 2º guia em teste: nunca derruba a coleta
+        DIAG["amostras"]["goal_sombra"] = sombra_goal(guia_puro)
+    except Exception as e:
+        DIAG["amostras"]["goal_sombra"] = {"erro": f"{type(e).__name__}: {e}"[:200]}
+    try:
+        DIAG["sondas"] = sondas()
+    except Exception as e:
+        DIAG["sondas"] = {"erro": f"{type(e).__name__}: {e}"[:120]}
     DIAG["fontes"]["log"] = log
     Path("diagnostico.json").write_text(json.dumps(DIAG, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n".join(log))
