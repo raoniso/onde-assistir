@@ -11,15 +11,20 @@
    "La Liga": 0,
    "Bundesliga": 0,
    "Campeonato Italiano": 0,
-   "Campeonato Francês": 0
+   "Campeonato Francês": 0,
+   "Amistoso": 2,
+   "UEFA Nations League": 52,
+   "Eliminatórias Sul-Americanas": 0,
+   "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 11/11 11:35 BRT — janela 2026-11-11 a 2026-11-17",
-   "  ✓ mantosdofutebol: 60 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 12 evento(s)",
+   "Coleta 11/11 11:43 BRT — janela 2026-11-11 a 2026-11-17",
+   "  ✓ mantosdofutebol: 97 evento(s)",
+   "  ✓ goal (2º guia): 34 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 66 evento(s)",
    "  ✓ ESPN NBA: 50 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 135 eventos → eventos.json",
+   "TOTAL: 190 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -49,11 +54,6 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Quarta – 11/11",
-      "data": "2026-11-11",
-      "jogos": 11
-     },
-     {
       "cabecalho": "Quinta – 12/11",
       "data": "2026-11-12",
       "jogos": 26
@@ -62,33 +62,30 @@
       "cabecalho": "Sexta – 13/11",
       "data": "2026-11-13",
       "jogos": 23
+     },
+     {
+      "cabecalho": "Sábado – 14/11",
+      "data": "2026-11-14",
+      "jogos": 37
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 0,
-    "linhas_emendadas": [
-     "15h00 – Ypiranga x Afogados – Campeonato Pernambucano (Turno Forró – OF)"
-    ],
+    "futsal_descartados": 3,
+    "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
    }
   ],
-  "nba_broadcasts": [
-   "Orlando Magic x Sacramento Kings :: (vazio)",
-   "Oklahoma City Thunder x Portland Trail Blazers :: NBC | KSBI | THUNDER APP | NBC | KSBI | THUNDER APP",
-   "Washington Wizards x Indiana Pacers :: MNMT | DAZN IND | MNMT | DAZN IND",
-   "Cleveland Cavaliers x New York Knicks :: ESPN | ESPN"
-  ],
-  "goal_sombra": {
+  "goal": {
    "http": 200,
-   "bytes": 287589,
+   "bytes": 287598,
    "tabelas": 5,
    "dias": [
     {
-     "titulo": "Futebol na TV: a programação completa dos jogos de hoje, qua",
+     "titulo": "Jogos de quarta, 11 de novembro de 2026",
      "data": "2026-11-11",
      "jogos": 5
     },
@@ -103,224 +100,27 @@
      "jogos": 13
     }
    ],
-   "linhas_nao_lidas": [],
-   "jogos": [
-    "11-11 14:45 OH Leuven x Koge | Champions League Feminina (—) | ESPN 4, Disney+",
-    "11-11 17:00 Benfica x Austria Vienna | Champions League Feminina (—) | Disney+",
-    "11-11 17:00 Juventus x Lyon | Champions League Feminina (—) | ESPN, Disney+",
-    "11-11 19:00 Londrina x Náutico | Campeonato Brasileiro (segunda divisão) | Disney+",
-    "11-11 21:30 Flamengo x Internacional | Copa do Brasil Feminina (final) | XSports, SporTV, GE TV, N Sports, Lance! (YouTube)",
-    "11-12 14:00 Armênia x Chipre | Liga das Nações C (—) | ESPN 3, Disney+",
-    "11-12 14:00 Turquia x Bélgica | Liga das Nações A (—) | SporTV",
-    "11-12 14:00 Lituânia x Suriname | Amistoso Internacional (—) | Disney+",
-    "11-12 14:45 Barcelona x Arsenal | Champions League Feminina (—) | ESPN 4, Disney+",
-    "11-12 15:00 Navalcanero x Real Betis | Copa do Rei (64-avos de final) | Disney+",
-    "11-12 15:00 Tarancon x Levante | Copa do Rei (64-avos de final) | Disney+",
-    "11-12 16:45 Itália x França | Liga das Nações A (—) | ESPN, Disney+",
-    "11-12 16:45 Inglaterra x Croácia | Liga das Nações A (—) | ESPN 4, Disney+",
-    "11-12 16:45 República Tcheca x Espanha | Liga das Nações A (—) | SporTV",
-    "11-12 16:45 Albânia x Finlândia | Liga das Nações C (—) | Disney+",
-    "11-12 16:45 Montenegro x Letônia | Liga das Nações C (—) | Disney+",
-    "11-12 16:45 San Marino x Belarus | Liga das Nações C (—) | Disney+",
-    "11-12 19:00 Ponte Preta x Operário-PR | Campeonato Brasileiro (segunda divisão) | Disney+",
-    "11-12 20:00 São Bernardo x Athletic Club-MG | Campeonato Brasileiro (segunda divisão) | GE TV, Premiere",
-    "11-12 20:00 Estudiantes x Independiente Rivadavia | Supercopa Argentina (final) | ESPN, Disney+",
-    "11-12 21:00 Curaçao x Panamá | Liga das Nações da Concacaf (quartas de final) | Canal GOAT",
-    "11-13 14:00 Moldávia x Cazaquistão | Liga das Nações C (—) | ESPN 4, Disney+",
-    "11-13 16:45 Holanda x Grécia | Liga das Nações A (—) | ESPN, Disney+",
-    "11-13 16:45 Sérvia x Alemanha | Liga das Nações A (—) | SporTV, GE TV",
-    "11-13 16:45 Escócia x Macedônia do Norte | Liga das Nações B (—) | ESPN Brasil (YouTube), Disney+",
-    "11-13 16:45 Eslovênia x Suíça | Liga das Nações B (—) | ESPN 4, Disney+",
-    "11-13 16:45 Bulgária x Islândia | Liga das Nações C (—) | Disney+",
-    "11-13 16:45 Eslováquia x Ilhas Faroé | Liga das Nações C (—) | Disney+",
-    "11-13 16:45 Luxemburgo x Estônia | Liga das Nações C (—) | Disney+",
-    "11-13 16:45 Andorra x Gibraltar | Liga das Nações D (—) | Disney+",
-    "11-13 16:45 Liechtenstein x Azerbaijão | Liga das Nações D (—) | Disney+",
-    "11-13 17:00 Salamanca x Celta de Vigo | Copa do Rei (64-avos de final) | ESPN 3, Disney+",
-    "11-13 19:00 Colo-Colo x Racing | Amistoso de Clubes (—) | Disney+",
-    "11-13 23:00 Guatemala x Canadá | Liga das Nações da Concacaf (quartas de final) | Canal GOAT"
+   "linhas_nao_lidas": []
+  },
+  "guias": {
+   "nos_dois": 31,
+   "so_no_segundo": [
+    "11-11 21:30 Flamengo x Internacional [Copa do Brasil Feminina]",
+    "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
+    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]"
    ],
-   "comparacao": [
-    {
-     "data": "2026-11-11",
-     "goal": 5,
-     "guia": 11,
-     "nos_dois": 4,
-     "so_no_goal": [
-      "21:30 Flamengo x Internacional [Copa do Brasil Feminina] XSports, SporTV, GE TV, N Sports, Lance! (YouTube)"
-     ],
-     "so_no_guia": 7,
-     "horario_diferente": [],
-     "canais_diferentes": []
-    },
-    {
-     "data": "2026-11-12",
-     "goal": 16,
-     "guia": 26,
-     "nos_dois": 14,
-     "so_no_goal": [
-      "19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro] Disney+",
-      "20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro] GE TV, Premiere"
-     ],
-     "so_no_guia": 12,
-     "horario_diferente": [],
-     "canais_diferentes": [
-      "Turquia x Bélgica: guia [SporTV 2] x goal [SporTV]",
-      "Curaçao x Panamá: guia [Canal GOAT (YouTube)] x goal [Canal GOAT]"
-     ]
-    },
-    {
-     "data": "2026-11-13",
-     "goal": 13,
-     "guia": 23,
-     "nos_dois": 13,
-     "so_no_goal": [],
-     "so_no_guia": 10,
-     "horario_diferente": [],
-     "canais_diferentes": [
-      "Sérvia x Alemanha: guia [GE TV (YouTube), SporTV] x goal [SporTV, GE TV]",
-      "Guatemala x Canadá: guia [Canal GOAT (YouTube)] x goal [Canal GOAT]"
-     ]
-    }
-   ]
-  }
+   "horario_diferente": []
+  },
+  "nba_broadcasts": [
+   "Orlando Magic x Sacramento Kings :: (vazio)",
+   "Oklahoma City Thunder x Portland Trail Blazers :: NBC | KSBI | THUNDER APP | NBC | KSBI | THUNDER APP",
+   "Washington Wizards x Indiana Pacers :: MNMT | DAZN IND | MNMT | DAZN IND",
+   "Cleveland Cavaliers x New York Knicks :: ESPN | ESPN"
+  ]
  },
  "saude": {
-  "seguidas": 0,
-  "avisado_em": null,
+  "contagem": {},
+  "avisos": {},
   "problemas": []
- },
- "sondas": {
-  "uefa.nations|pt": {
-   "http": 200,
-   "liga": "UEFA Nations League",
-   "jogos": [
-    "11-12 14:00 Armênia x Chipre",
-    "11-12 14:00 Turquia x Bélgica",
-    "11-12 16:45 Albania x Finlândia",
-    "11-12 16:45 República Tcheca x Espanha",
-    "11-12 16:45 Inglaterra x Croácia",
-    "11-12 16:45 Itália x França",
-    "11-12 16:45 Montenegro x Letônia",
-    "11-12 16:45 San Marino x Bielorússia"
-   ]
-  },
-  "uefa.nations|en": {
-   "http": 200,
-   "liga": "UEFA Nations League",
-   "jogos": [
-    "11-12 14:00 Armenia x Cyprus",
-    "11-12 14:00 Türkiye x Belgium",
-    "11-12 16:45 Albania x Finland",
-    "11-12 16:45 Czechia x Spain",
-    "11-12 16:45 England x Croatia",
-    "11-12 16:45 Italy x France",
-    "11-12 16:45 Montenegro x Latvia",
-    "11-12 16:45 San Marino x Belarus"
-   ]
-  },
-  "fifa.friendly|pt": {
-   "http": 200,
-   "liga": "Amistoso internacional",
-   "jogos": [
-    "11-12 03:10 Nova Zelândia x Índia",
-    "11-12 12:00 Uzbequistão x Rússia",
-    "11-12 14:00 Lituânia x Suriname",
-    "11-12 14:30 Malta x Eswatini"
-   ]
-  },
-  "fifa.friendly|en": {
-   "http": 200,
-   "liga": "International Friendly",
-   "jogos": [
-    "11-12 03:10 New Zealand x India",
-    "11-12 12:00 Uzbekistan x Russia",
-    "11-12 14:00 Lithuania x Suriname",
-    "11-12 14:30 Malta x Eswatini"
-   ]
-  },
-  "concacaf.nations.league|pt": {
-   "http": 200,
-   "liga": "Concacaf Nations League",
-   "jogos": [
-    "11-12 16:00 Barbados x Guadeloupe",
-    "11-12 16:00 Cayman Islands x Guyana",
-    "11-12 17:00 Bonaire x Cuba",
-    "11-12 19:00 Aruba x Martinique",
-    "11-12 20:00 Antigua and Barbuda x Trindade e Tobago",
-    "11-12 21:30 Curaçao x Panamá"
-   ]
-  },
-  "concacaf.nations.league|en": {
-   "http": 200,
-   "liga": "Concacaf Nations League",
-   "jogos": [
-    "11-12 16:00 Barbados x Guadeloupe",
-    "11-12 16:00 Cayman Islands x Guyana",
-    "11-12 17:00 Bonaire x Cuba",
-    "11-12 19:00 Aruba x Martinique",
-    "11-12 20:00 Antigua and Barbuda x Trinidad and Tobago",
-    "11-12 21:30 Curaçao x Panama"
-   ]
-  },
-  "amistosos_7_dias_pt": [
-   "11-11 09:00 Vietnã x China Taipéi",
-   "11-12 03:10 Nova Zelândia x Índia",
-   "11-12 12:00 Uzbequistão x Rússia",
-   "11-12 14:00 Lituânia x Suriname",
-   "11-12 14:30 Malta x Eswatini",
-   "11-13 09:00 Singapura x Paraguai",
-   "11-13 11:00 Kuwait x Síria",
-   "11-13 11:15 Emirados Árabes x Honduras",
-   "11-13 11:30 Arábia Saudita x Coreia do Sul",
-   "11-13 11:45 Catar x Austrália",
-   "11-13 12:00 Iraque x Líbano",
-   "11-13 17:00 Jordânia x Indonesia",
-   "11-13 20:00 Argentina x Uruguai",
-   "11-13 21:00 Colômbia x Chile",
-   "11-13 21:00 Equador x Costa Rica",
-   "11-13 22:00 Peru x Bolívia",
-   "11-14 02:30 Tahiti x Ilhas Cook",
-   "11-14 03:00 Bahrein x Iémen",
-   "11-14 07:15 Japão x Brasil",
-   "11-14 09:00 China Taipéi x Quirguizistão",
-   "11-14 09:00 China x Malásia",
-   "11-14 12:00 Palestina x Irã",
-   "11-15 00:10 Nova Zelândia x Índia",
-   "11-15 14:00 Suriname x Eswatini",
-   "11-16 15:00 Andorra x Azerbaijão",
-   "11-17 02:30 Tahiti x Ilhas Cook",
-   "11-17 03:00 Malásia x Iémen",
-   "11-17 07:00 Singapura x Brasil",
-   "11-17 09:00 China x Bahrein",
-   "11-17 09:00 Quirguizistão x Vietnã",
-   "11-17 10:00 Líbano x Palestina",
-   "11-17 10:10 Japão x Paraguai",
-   "11-17 11:00 Catar x Coreia do Sul",
-   "11-17 11:10 Emirados Árabes x Síria",
-   "11-17 12:30 Arábia Saudita x Uzbequistão",
-   "11-17 13:00 Jordânia x Austrália",
-   "11-17 13:00 Rússia x Venezuela",
-   "11-17 13:15 Iraque x Irã",
-   "11-17 17:00 Kuwait x Honduras",
-   "11-17 20:00 Argentina x Costa Rica",
-   "11-17 20:00 Chile x Colômbia",
-   "11-17 20:30 Equador x Bolívia",
-   "11-17 20:30 Uruguai x República Dominicana"
-  ],
-  "trivela": {
-   "http": 200,
-   "bytes": 249991,
-   "tabelas": 2,
-   "titulo": "Jogos de hoje (11/11): horário e onde assistir ao vivo",
-   "linhas": [
-    "Hora | Competição | Jogo | Transmissão",
-    "Hora 21h30 | Competição Copa do Brasil Fem. (final, ida) | Jogo Flamengo x Internacional ★ Jogão | Canal Ge TV SporTV XS",
-    "Hora 17h00 | Competição Champions League Fem. | Jogo Juventus x Lyon ★ Jogão | Canal ESPN Disney+",
-    "Hora 19h00 | Competição Brasileirão (Série B) | Jogo Londrina x Náutico ★ Jogão | Canal Disney+ Premium",
-    "",
-    "Hora 09h00 | Competição CAF Champions League Fem. | Jogo ASFAR x Lekié | Canal YouTube (CAF TV)"
-   ]
-  }
  }
 }
