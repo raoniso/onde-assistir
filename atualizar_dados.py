@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-11-c (alarme, seleções, madrugada no próprio dia; 2º guia em teste)
+# build: 2026-11-11-d (2º guia de TV, tabelas de seleções, alarme por fonte)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -8,16 +8,20 @@ curadoria manual. Escopo: Futebol (BR + Europa, incl. Libertadores,
 Sul-Americana, Champions e Copa do Brasil), NBA e NFL.
 
 FONTES (cada uma protegida por try/except — uma falhar não derruba o resto):
-  FUTEBOL .... mantosdofutebol.com.br é o guia de TV: jogo, competição, fase
-               e CANAIS por jogo. A data de cada jogo vem do cabeçalho do dia
-               na própria página (ela lista vários dias).
-               ESPN (tabelas oficiais, 7 dias) completa o que o guia ainda
-               não publicou, como "Transmissão a confirmar", e confirma o
-               que ele publicou (selo v=2 quando o horário confere).
-               O antigo 2º guia, futebolnatv.com.br, saiu em 11/11/2026: o
-               site mudou de formato no fim de outubro, o leitor passou a
-               devolver zero jogos e a página hoje lista bem menos partidas
-               (3 contra 11 do guia, no dia da troca).
+  FUTEBOL .... Dois guias de TV, unidos (juntar_guias):
+               - mantosdofutebol.com.br é o principal: jogo, competição, fase
+                 e CANAIS por jogo, inclusive jogos pequenos (YouTube).
+               - goal.com/br é o segundo: confirma o principal (selo v=2) e
+                 acrescenta jogos que ele não lista. Entrou em 11/11/2026, no
+                 lugar do futebolnatv.com.br (mudou de formato no fim de
+                 outubro e passou a devolver zero jogos).
+               Nos dois, a data de cada jogo vem do título do dia na própria
+               página (elas listam vários dias).
+               ESPN (tabelas oficiais, 7 dias) completa o que os guias ainda
+               não publicaram, como "Transmissão a confirmar", e confirma o
+               que publicaram (selo v=2 quando o horário confere). Clubes: 11
+               ligas. Seleções: Nations League, eliminatórias e os amistosos
+               da Seleção Brasileira (nomes já em português, lang=pt).
   BASQUETE ... ESPN (NBA). Canais POR JOGO, a partir dos transmissores que a
                ESPN informa em cada partida: pacote Amazon -> Prime Video;
                ESPN/ABC -> ESPN + Disney+; todos -> NBA League Pass.
@@ -29,9 +33,10 @@ SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
 dados embutidos) e diagnostico.json (log das fontes + amostras brutas — é
 por ele que se depura, sem precisar do log do Actions).
 
-ALARME: se o guia de TV vier vazio (ou a ESPN inteira cair) em duas coletas
-seguidas, o robô publica o que tem e depois falha de propósito — o GitHub
-avisa o dono do repositório por e-mail. Repete o aviso a cada 24h enquanto durar.
+ALARME: se o guia principal vier vazio (ou a ESPN inteira cair) em duas
+coletas seguidas, ou o segundo guia ficar um dia sem jogos, o robô publica o
+que tem e depois falha de propósito — o GitHub avisa o dono do repositório por
+e-mail. Repete o aviso a cada 24h enquanto durar.
 
 DATAS SÃO ABSOLUTAS ("date": "2026-11-11"). O app só exibe um evento na aba
 do dia exato — dado antigo nunca "escorrega" para hoje.
@@ -137,7 +142,7 @@ def evento(date, t, sport, league, match, ch, detail="—", g=None, country=None
             "match": match, "ch": ch, "v": v}
 
 # =================================================================
-# FUTEBOL — guia de TV: mantosdofutebol.com.br
+# FUTEBOL — guia de TV principal: mantosdofutebol.com.br
 # =================================================================
 def separa_canais_mantos(texto):
     """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X),
@@ -288,18 +293,18 @@ def fonte_mantos():
 # informa em cada jogo (canais_nba); NFL usa a janela de horário do contrato
 # (canais_nfl); futebol entra como "Transmissão a confirmar".
 # =================================================================
-def espn_json(path, data):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}"
+def espn_json(path, data, extra=""):
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}{extra}"
     r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
     return r.json()
 
-def espn_eventos(path, dias):
+def espn_eventos(path, dias, extra=""):
     """Eventos do scoreboard em cada dia pedido. Um dia que falhe não derruba
     os outros; só é erro se TODAS as consultas falharem."""
     evs, falhas = [], 0
     for data in dias:
         try:
-            evs += espn_json(path, data).get("events", [])
+            evs += espn_json(path, data, extra).get("events", [])
         except Exception:
             falhas += 1
     if falhas == len(dias):
@@ -400,11 +405,27 @@ LIGAS_FIXTURES = [
     ("soccer/ita.1",                  "Campeonato Italiano",  "Itália"),
     ("soccer/fra.1",                  "Campeonato Francês",   "Europa (demais)"),
 ]
+# Seleções. Com lang=pt a ESPN entrega os nomes em português ("Holanda",
+# "República Tcheca"), então casam com os guias sem tabela de tradução.
+# Nos amistosos só entram os jogos da Seleção Brasileira: a maioria dos outros
+# não tem transmissão no Brasil e viraria card "a confirmar" para sempre — os
+# que têm chegam pelos guias, já com canal.
+# Para ligar depois, quando voltarem a ter jogos: soccer/uefa.euro (Eurocopa),
+# soccer/conmebol.america (Copa América), soccer/fifa.world (Copa do Mundo).
+ESPN_PT = "&lang=pt&region=br"
+LIGAS_SELECOES = [
+    ("soccer/fifa.friendly",        "Amistoso",                     "Mundial",         "Brasil"),
+    ("soccer/uefa.nations",         "UEFA Nations League",          "Europa (demais)", None),
+    ("soccer/fifa.worldq.conmebol", "Eliminatórias Sul-Americanas", "América do Sul",  None),
+    ("soccer/uefa.euroq",           "Eliminatórias da Euro",        "Europa (demais)", None),
+]
 def fonte_fixtures():
     evs, por_liga = [], {}
-    for slug, liga, pais in LIGAS_FIXTURES:
+    ligas = [(s, l, p, "", None, False) for s, l, p in LIGAS_FIXTURES] + \
+            [(s, l, p, ESPN_PT, so, True) for s, l, p, so in LIGAS_SELECOES]
+    for slug, liga, pais, extra, so_time, selecoes in ligas:
         try:
-            brutos = espn_eventos(slug, JANELA)
+            brutos = espn_eventos(slug, JANELA, extra)
         except Exception as e:
             por_liga[liga] = f"ERRO ({type(e).__name__})"   # slug inválido ou ESPN fora do ar
             continue
@@ -422,11 +443,14 @@ def fonte_fixtures():
             away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
             hn = home.get("team", {}).get("displayName", "?")
             an = away.get("team", {}).get("displayName", "?")
+            if so_time and so_time not in (hn, an): continue
             notas = comp.get("notes", [])
             detalhe = (notas[0].get("headline", "") if notas else "") or "Tabela oficial"
-            evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
-                              f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
-                              detail=detalhe, country=pais, v=1))
+            ev = evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
+                        f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
+                        detail=detalhe, country=pais, v=1)
+            if selecoes: ev["sel"] = 1
+            evs.append(ev)
             n += 1
         por_liga[liga] = n
     DIAG["fontes"]["espn_tabelas_por_liga"] = por_liga   # mostra slug morto na hora
@@ -506,6 +530,7 @@ def complementar_fixtures(base, fixtures):
             base.append(fx)
             continue
         achou["espn"] = fx["match"]
+        if fx.get("sel"): achou["sel"] = 1
         confere = abs(minutos(achou["t"]) - minutos(fx["t"])) <= 30
         if confere:
             achou["v"] = 2
@@ -609,43 +634,48 @@ def dedup(evs):
 # Alarme: fonte sem dados em coletas seguidas
 # =================================================================
 def avaliar_saude(anterior, problemas, agora):
-    """anterior = estado gravado pela coleta passada (diagnostico.json -> "saude").
-    Devolve (estado novo, texto do alarme ou None). Uma falha isolada não toca
-    o alarme (o guia já teve soluços de minutos); duas coletas seguidas, sim.
-    Enquanto o problema durar, repete o aviso a cada 24h."""
-    if not problemas:
-        return {"seguidas": 0, "avisado_em": None, "problemas": []}, None
-    seguidas = int(anterior.get("seguidas") or 0) + 1
-    avisado, alerta = anterior.get("avisado_em"), None
-    if seguidas >= 2:
-        try:
-            venceu = not avisado or agora - datetime.fromisoformat(avisado) >= timedelta(hours=24)
-        except Exception:
-            venceu = True
-        if venceu:
-            alerta = " | ".join(problemas) + f" — {seguidas} coletas seguidas"
-            avisado = agora.isoformat(timespec="minutes")
-    return {"seguidas": seguidas, "avisado_em": avisado, "problemas": problemas}, alerta
+    """problemas = [(chave, texto, limite)]: `limite` é quantas coletas seguidas
+    com o problema até tocar (uma falha isolada do guia não toca: ele já teve
+    soluços de minutos). anterior = estado gravado pela coleta passada
+    (diagnostico.json -> "saude"). Devolve (estado novo, texto do alarme ou
+    None). Enquanto o problema durar, repete o aviso a cada 24h."""
+    antigas, avisos_ant = anterior.get("contagem") or {}, anterior.get("avisos") or {}
+    contagem, avisos, textos = {}, {}, []
+    for chave, texto, limite in problemas:
+        contagem[chave] = int(antigas.get(chave) or 0) + 1
+        ultimo = avisos_ant.get(chave)
+        if contagem[chave] >= limite:
+            try:
+                venceu = not ultimo or agora - datetime.fromisoformat(ultimo) >= timedelta(hours=24)
+            except Exception:
+                venceu = True
+            if venceu:
+                textos.append(f"{texto} — {contagem[chave]} coletas seguidas")
+                ultimo = agora.isoformat(timespec="minutes")
+        if ultimo: avisos[chave] = ultimo
+    return {"contagem": contagem, "avisos": avisos, "problemas": [t for _, t, _ in problemas]}, \
+           (" | ".join(textos) or None)
 
 # =================================================================
-# EM TESTE — 2º guia de TV (Goal). NÃO alimenta o app: só é lido e comparado
-# com o guia principal no diagnostico.json, para decidir com dado real.
+# FUTEBOL — segundo guia de TV: goal.com/br ("Futebol na TV", página fixa,
+# atualizada todo dia, com uma tabela por dia)
 # =================================================================
 URL_GOAL = "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315"
 MESES = {"janeiro": 1, "fevereiro": 2, "marco": 3, "abril": 4, "maio": 5, "junho": 6, "julho": 7,
          "agosto": 8, "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12}
-RX_DIA_GOAL = re.compile(r"(segunda|terca|quarta|quinta|sexta|sabado|domingo)\D{0,20}?(\d{1,2})\s+de\s+("
-                         + "|".join(MESES) + r")", re.I)
+# Só vale como título de dia o texto que COMEÇA por "Jogos de <dia da semana>":
+# data citada em outro lugar da página (título, "atualizado em...") não muda o dia.
+RX_DIA_GOAL = re.compile(r"^\W*jogos de (?:hoje\W+)?(segunda|terca|quarta|quinta|sexta|sabado|domingo)(?:-feira)?"
+                         r"\W+(\d{1,2})\s+de\s+(" + "|".join(MESES) + r")", re.I)
 
-def fonte_goal(info):
+def fonte_goal():
     """Tabelas por dia: JOGO | CAMPEONATO | HORÁRIO | ONDE PASSA?  (título do dia
     acima de cada tabela: "Jogos de quarta, 11 de novembro de 2026")."""
     r = requests.get(URL_GOAL, headers=HEADERS, timeout=30)
-    info.update({"http": r.status_code, "bytes": len(r.text)})
+    info = DIAG["amostras"]["goal"] = {"http": r.status_code, "bytes": len(r.text)}
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
     info["tabelas"] = len(soup.find_all("table"))
-    info["html"] = r.text
     evs, data_atual, dias, nao_lidas = [], None, [], []
     for no in soup.descendants:
         if isinstance(no, str):
@@ -682,6 +712,8 @@ def fonte_goal(info):
             t1, t2 = [re.sub(r"\s*\(f\)", "", t, flags=re.I).strip() for t in times]
             ml = re.match(r"(.+?)\s*\(([^)]+)\)\s*$", cel[col["liga"]])
             liga, detalhe = (ml.group(1), ml.group(2)) if ml else (cel[col["liga"]], "—")
+            if re.search(r"divis", sem_acento(detalhe), re.I):      # "(segunda divisão)" é parte do nome da liga
+                liga, detalhe = cel[col["liga"]], "—"
             canais = [canal(c) for c in separa_canais_mantos(cel[col["onde"]])]
             evs.append(evento(data_atual, f"{int(mh.group(1)):02d}:{mh.group(2) or '00'}", "Futebol", liga or "Futebol",
                               f"{t1} x {t2}", canais or [{"n": "Transmissão a confirmar", "y": "tv"}],
@@ -690,91 +722,28 @@ def fonte_goal(info):
     info.update({"dias": dias, "linhas_nao_lidas": nao_lidas})
     return dedup(evs)
 
-def sombra_goal(guia):
-    """Lê o Goal e compara com o guia principal. Resultado só no diagnóstico."""
-    info = {}
-    try:
-        goal = fonte_goal(info)
-    except Exception as e:
-        info["erro"] = f"{type(e).__name__}: {e}"[:200]
-        goal = []
-    html = info.pop("html", "")
-    nomes = lambda e: sorted(norm(c["n"]) for c in e["ch"])
-    info["jogos"] = [f'{e["date"][5:]} {e["t"]} {e["match"]} | {e["league"]} ({e["detail"]}) | '
-                     + ", ".join(c["n"] for c in e["ch"]) for e in goal][:60]
-    comp = []
-    for dia in sorted({e["date"] for e in goal}):
-        g_dia = [e for e in goal if e["date"] == dia]
-        m_dia = [e for e in guia if e["date"] == dia]
-        iguais, so_goal, hora_dif, canal_dif, casados = 0, [], [], [], set()
-        for e in g_dia:
-            par = casar_fontes(e, m_dia)
-            if par is None:
-                so_goal.append(f'{e["t"]} {e["match"]} [{e["league"]}] ' + ", ".join(c["n"] for c in e["ch"]))
-                continue
-            casados.add(id(par)); iguais += 1
-            if par["t"] != e["t"]: hora_dif.append(f'{e["match"]}: guia {par["t"]} x goal {e["t"]}')
-            if nomes(par) != nomes(e):
-                canal_dif.append(f'{par["match"]}: guia [{", ".join(c["n"] for c in par["ch"])}] x goal [{", ".join(c["n"] for c in e["ch"])}]')
-        comp.append({"data": dia, "goal": len(g_dia), "guia": len(m_dia), "nos_dois": iguais,
-                     "so_no_goal": so_goal[:12], "so_no_guia": len(m_dia) - len(casados),
-                     "horario_diferente": hora_dif[:6], "canais_diferentes": canal_dif[:12]})
-    info["comparacao"] = comp
-    if not goal and html:      # formato inesperado: guarda um trecho cru para escrever o leitor certo
-        alvo = next((t for e in guia for t in times_de(e["match"]) or [] if len(t) > 4 and t in html), None)
-        pos = html.find(alvo) if alvo else -1
-        info["amostra_html"] = html[max(0, pos - 900):pos + 900] if pos >= 0 else html[:1500]
-    return info
-
-def sondas():
-    """TEMPORÁRIO: perguntas que só o robô consegue responder (remover depois)."""
-    out, amanha = {}, HOJE + timedelta(days=1)
-    base = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
-    def jogos(js):
-        linhas = []
-        for ev in js.get("events", []):
-            try:
-                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-                cs = ev["competitions"][0]["competitors"]
-                casa = next((c for c in cs if c.get("homeAway") == "home"), cs[0])["team"]["displayName"]
-                fora = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])["team"]["displayName"]
-                linhas.append(f"{dt:%m-%d %H:%M} {casa} x {fora}")
-            except Exception:
-                continue
-        return linhas
-    # 1) a ESPN entrega os nomes das seleções em português?
-    for slug in ("uefa.nations", "fifa.friendly", "concacaf.nations.league"):
-        for rot, sufixo in (("pt", "&lang=pt&region=br"), ("en", "")):
-            chave = f"{slug}|{rot}"
-            try:
-                r = requests.get(f"{base}{slug}/scoreboard?dates={amanha:%Y%m%d}{sufixo}", headers=HEADERS, timeout=30)
-                out[chave] = {"http": r.status_code}
-                if r.ok:
-                    js = r.json()
-                    out[chave].update({"liga": ((js.get("leagues") or [{}])[0].get("name") or "")[:60],
-                                       "jogos": jogos(js)[:10]})
-            except Exception as e:
-                out[chave] = {"erro": f"{type(e).__name__}: {e}"[:120]}
-    # 2) amistosos de seleções na janela inteira (aparece a Seleção Brasileira?)
-    amistosos = []
-    for d in JANELA:
-        try:
-            r = requests.get(f"{base}fifa.friendly/scoreboard?dates={d:%Y%m%d}&lang=pt&region=br", headers=HEADERS, timeout=30)
-            if r.ok: amistosos += jogos(r.json())
-        except Exception:
-            pass
-    out["amistosos_7_dias_pt"] = sorted(set(amistosos))[:60]
-    # 3) outro candidato a 2º guia: o robô consegue abrir?
-    try:
-        r = requests.get("https://trivela.com.br/onde-assistir/futebol-ao-vivo-os-jogos-de-hoje-na-tv/", headers=HEADERS, timeout=30)
-        sopa = BeautifulSoup(r.text, "html.parser")
-        out["trivela"] = {"http": r.status_code, "bytes": len(r.text), "tabelas": len(sopa.find_all("table")),
-                          "titulo": (sopa.title.get_text(" ", strip=True) if sopa.title else "")[:90],
-                          "linhas": [" | ".join(c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"]))[:120]
-                                     for tr in sopa.find_all("tr")[:6]]}
-    except Exception as e:
-        out["trivela"] = {"erro": f"{type(e).__name__}: {e}"[:120]}
-    return out
+def juntar_guias(principal, segundo):
+    """Une os dois guias de TV; o principal manda. Jogo que está nos dois fica
+    com os dados do principal (se ele veio sem canal, usa os do segundo) e, com
+    o horário conferindo, ganha selo v=2. Jogo que só o segundo traz entra na
+    lista. Nada é removido."""
+    sem_canal = lambda e: all("confirmar" in c["n"].lower() for c in e["ch"])
+    extras, divergencias = [], []
+    for ev in segundo:
+        achou = casar_fontes(ev, principal)
+        if achou is None:
+            extras.append(ev)
+            continue
+        if abs(minutos(achou["t"]) - minutos(ev["t"])) <= 30:
+            achou["v"] = 2
+        elif len(divergencias) < 5:
+            divergencias.append(f'{ev["date"]} {achou["match"]}: principal {achou["t"]} x segundo {ev["t"]}')
+        if sem_canal(achou) and not sem_canal(ev):
+            achou["ch"] = ev["ch"]
+    DIAG["amostras"]["guias"] = {"nos_dois": len(segundo) - len(extras),
+                                 "so_no_segundo": [f'{e["date"][5:]} {e["t"]} {e["match"]} [{e["league"]}]' for e in extras][:15],
+                                 "horario_diferente": divergencias}
+    return principal + extras
 
 TEMPLATE, PAGINA = "onde-assistir.html", "index.html"
 
@@ -808,8 +777,10 @@ def main():
     except Exception:
         saude_anterior = {}
 
-    eventos = roda("mantosdofutebol", fonte_mantos, log)
-    guia_puro = [dict(e) for e in eventos]       # só o guia, antes de cruzar com a tabela
+    guia = roda("mantosdofutebol", fonte_mantos, log)
+    n_guia = len(guia)
+    segundo = roda("goal (2º guia)", fonte_goal, log)
+    eventos = juntar_guias(guia, segundo)
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
@@ -840,15 +811,17 @@ def main():
         log.append(f"  ✗ {PAGINA} NÃO atualizado ({type(e).__name__}: {e})")
 
     # ---- alarme: os dados acima já foram gravados; aqui só se decide se avisa
-    problemas = []
+    problemas = []          # (chave, texto, coletas seguidas até tocar)
     if "mantosdofutebol" in falhas:
-        problemas.append(f"guia de TV fora do ar ({falhas['mantosdofutebol']})")
-    elif not guia_puro:
-        problemas.append("guia de TV abriu, mas nenhum jogo foi lido (o formato da página pode ter mudado)")
+        problemas.append(("guia", f"guia de TV fora do ar ({falhas['mantosdofutebol']})", 2))
+    elif not n_guia:
+        problemas.append(("guia", "guia de TV abriu, mas nenhum jogo foi lido (o formato da página pode ter mudado)", 2))
+    if "goal (2º guia)" in falhas or not segundo:           # menos urgente: espera um dia inteiro (8 coletas)
+        problemas.append(("guia2", "2º guia de TV (Goal) sem jogos: " + falhas.get("goal (2º guia)", "nenhum jogo lido"), 8))
     por_liga = DIAG["fontes"].get("espn_tabelas_por_liga") or {}
     if "ESPN NBA" in falhas and "ESPN NFL" in falhas and por_liga \
             and all(str(v).startswith("ERRO") for v in por_liga.values()):
-        problemas.append("ESPN fora do ar (sem NBA, NFL e tabelas)")
+        problemas.append(("espn", "ESPN fora do ar (sem NBA, NFL e tabelas)", 2))
     DIAG["saude"], alerta = avaliar_saude(saude_anterior, problemas, agora_dt)
     if alerta:
         log.append(f"ALARME: {alerta}")
@@ -857,17 +830,9 @@ def main():
             with open(saida, "a", encoding="utf-8") as f:
                 f.write("alerta=" + " ".join(alerta.split())[:400] + "\n")
     elif problemas:
-        log.append("  ! " + " | ".join(problemas) + (" — alarme já enviado" if DIAG["saude"]["avisado_em"]
-                                                     else " — o alarme toca se repetir na próxima coleta"))
+        log.append("  ! " + " | ".join(t for _, t, _ in problemas) +
+                   (" — alarme já enviado" if DIAG["saude"]["avisos"] else " — o alarme toca se continuar assim"))
 
-    try:        # 2º guia em teste: nunca derruba a coleta
-        DIAG["amostras"]["goal_sombra"] = sombra_goal(guia_puro)
-    except Exception as e:
-        DIAG["amostras"]["goal_sombra"] = {"erro": f"{type(e).__name__}: {e}"[:200]}
-    try:
-        DIAG["sondas"] = sondas()
-    except Exception as e:
-        DIAG["sondas"] = {"erro": f"{type(e).__name__}: {e}"[:120]}
     DIAG["fontes"]["log"] = log
     Path("diagnostico.json").write_text(json.dumps(DIAG, ensure_ascii=False, indent=1), encoding="utf-8")
     print("\n".join(log))
