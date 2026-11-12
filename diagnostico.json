@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 12/11 14:39 BRT — janela 2026-11-12 a 2026-11-18",
-   "  ✓ mantosdofutebol: 86 evento(s)",
+   "Coleta 12/11 20:42 BRT — janela 2026-11-12 a 2026-11-18",
+   "  ✓ mantosdofutebol: 109 evento(s)",
    "  ✓ goal (2º guia): 60 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 187 eventos → eventos.json",
+   "TOTAL: 203 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,7 +36,7 @@
      {
       "cabecalho": "Quinta – 12/11",
       "data": "2026-11-12",
-      "jogos": 26
+      "jogos": 22
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -54,18 +54,23 @@
      {
       "cabecalho": "Sexta – 13/11",
       "data": "2026-11-13",
-      "jogos": 23
+      "jogos": 24
      },
      {
       "cabecalho": "Sábado – 14/11",
       "data": "2026-11-14",
-      "jogos": 37
+      "jogos": 39
+     },
+     {
+      "cabecalho": "Domingo – 15/11",
+      "data": "2026-11-15",
+      "jogos": 24
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 9,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -74,7 +79,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 319371,
+   "bytes": 319372,
    "tabelas": 6,
    "dias": [
     {
@@ -101,20 +106,13 @@
    "linhas_nao_lidas": []
   },
   "guias": {
-   "nos_dois": 48,
+   "nos_dois": 55,
    "so_no_segundo": [
+    "11-12 14:00 Armênia x Chipre [Liga das Nações C]",
+    "11-12 14:00 Turquia x Bélgica [Liga das Nações A]",
+    "11-12 14:00 Lituânia x Suriname [Amistoso Internacional]",
     "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
-    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]",
-    "11-15 11:00 Letônia x Armênia [Liga das Nações C]",
-    "11-15 11:00 Chipre x Montenegro [Liga das Nações C]",
-    "11-15 13:30 Arsenal x London CIty Lionesses [Campeonato Inglês Feminino]",
-    "11-15 14:00 Belarus x Albânia [Liga das Nações C]",
-    "11-15 14:00 Finlândia x San Marino [Liga das Nações C]",
-    "11-15 16:00 Internacional x Flamengo [Copa do Brasil Feminina]",
-    "11-15 16:45 Bélgica x Itália [Liga das Nações A]",
-    "11-15 16:45 Espanha x Inglaterra [Liga das Nações A]",
-    "11-15 16:45 França x Turquia [Liga das Nações A]",
-    "11-15 16:45 Croácia x República Tcheca [Liga das Nações A]"
+    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]"
    ],
    "horario_diferente": []
   },
