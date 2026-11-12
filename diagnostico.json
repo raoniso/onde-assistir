@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 12/11 04:26 BRT — janela 2026-11-12 a 2026-11-18",
-   "  ✓ mantosdofutebol: 71 evento(s)",
-   "  ✓ goal (2º guia): 50 evento(s)",
+   "Coleta 12/11 14:39 BRT — janela 2026-11-12 a 2026-11-18",
+   "  ✓ mantosdofutebol: 86 evento(s)",
+   "  ✓ goal (2º guia): 60 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 173 eventos → eventos.json",
+   "TOTAL: 187 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -34,18 +34,16 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Quarta – 11/11",
-      "data": "2026-11-11",
-      "jogos": 11
+      "cabecalho": "Quinta – 12/11",
+      "data": "2026-11-12",
+      "jogos": 26
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
     "futsal_descartados": 0,
-    "linhas_emendadas": [
-     "15h00 – Ypiranga x Afogados – Campeonato Pernambucano (Turno Forró – OF)"
-    ],
+    "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
@@ -76,8 +74,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 304108,
-   "tabelas": 5,
+   "bytes": 319371,
+   "tabelas": 6,
    "dias": [
     {
      "titulo": "Jogos de quinta, 12 de novembro de 2026",
@@ -93,28 +91,30 @@
      "titulo": "Jogos de sábado, 14 de novembro de 2026",
      "data": "2026-11-14",
      "jogos": 21
+    },
+    {
+     "titulo": "Jogos de domingo, 15 de novembro de 2026",
+     "data": "2026-11-15",
+     "jogos": 10
     }
    ],
    "linhas_nao_lidas": []
   },
   "guias": {
-   "nos_dois": 34,
+   "nos_dois": 48,
    "so_no_segundo": [
-    "11-12 14:00 Armênia x Chipre [Liga das Nações C]",
-    "11-12 14:00 Turquia x Bélgica [Liga das Nações A]",
-    "11-12 14:00 Lituânia x Suriname [Amistoso Internacional]",
-    "11-12 14:45 Barcelona x Arsenal [Champions League Feminina]",
-    "11-12 15:00 Navalcanero x Real Betis [Copa do Rei]",
-    "11-12 15:00 Tarancon x Levante [Copa do Rei]",
-    "11-12 16:45 Itália x França [Liga das Nações A]",
-    "11-12 16:45 Inglaterra x Croácia [Liga das Nações A]",
-    "11-12 16:45 República Tcheca x Espanha [Liga das Nações A]",
-    "11-12 16:45 Albânia x Finlândia [Liga das Nações C]",
-    "11-12 16:45 Montenegro x Letônia [Liga das Nações C]",
-    "11-12 16:45 San Marino x Belarus [Liga das Nações C]",
     "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
     "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]",
-    "11-12 20:00 Estudiantes x Independiente Rivadavia [Supercopa Argentina]"
+    "11-15 11:00 Letônia x Armênia [Liga das Nações C]",
+    "11-15 11:00 Chipre x Montenegro [Liga das Nações C]",
+    "11-15 13:30 Arsenal x London CIty Lionesses [Campeonato Inglês Feminino]",
+    "11-15 14:00 Belarus x Albânia [Liga das Nações C]",
+    "11-15 14:00 Finlândia x San Marino [Liga das Nações C]",
+    "11-15 16:00 Internacional x Flamengo [Copa do Brasil Feminina]",
+    "11-15 16:45 Bélgica x Itália [Liga das Nações A]",
+    "11-15 16:45 Espanha x Inglaterra [Liga das Nações A]",
+    "11-15 16:45 França x Turquia [Liga das Nações A]",
+    "11-15 16:45 Croácia x República Tcheca [Liga das Nações A]"
    ],
    "horario_diferente": []
   },
