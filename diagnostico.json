@@ -3,8 +3,8 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 2,
-   "Brasileirão Série B": 10,
+   "Brasileirão Série A": 8,
+   "Brasileirão Série B": 9,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 0,
    "Premier League": 0,
@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 11/11 19:04 BRT — janela 2026-11-11 a 2026-11-17",
-   "  ✓ mantosdofutebol: 97 evento(s)",
-   "  ✓ goal (2º guia): 55 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 66 evento(s)",
-   "  ✓ ESPN NBA: 50 evento(s)",
+   "Coleta 12/11 04:26 BRT — janela 2026-11-12 a 2026-11-18",
+   "  ✓ mantosdofutebol: 71 evento(s)",
+   "  ✓ goal (2º guia): 50 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
+   "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 190 eventos → eventos.json",
+   "TOTAL: 173 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -54,11 +54,6 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Quinta – 12/11",
-      "data": "2026-11-12",
-      "jogos": 26
-     },
-     {
       "cabecalho": "Sexta – 13/11",
       "data": "2026-11-13",
       "jogos": 23
@@ -81,14 +76,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 314375,
-   "tabelas": 6,
+   "bytes": 304108,
+   "tabelas": 5,
    "dias": [
-    {
-     "titulo": "Jogos de quarta, 11 de novembro de 2026",
-     "data": "2026-11-11",
-     "jogos": 5
-    },
     {
      "titulo": "Jogos de quinta, 12 de novembro de 2026",
      "data": "2026-11-12",
@@ -108,19 +98,31 @@
    "linhas_nao_lidas": []
   },
   "guias": {
-   "nos_dois": 52,
+   "nos_dois": 34,
    "so_no_segundo": [
-    "11-11 21:30 Flamengo x Internacional [Copa do Brasil Feminina]",
+    "11-12 14:00 Armênia x Chipre [Liga das Nações C]",
+    "11-12 14:00 Turquia x Bélgica [Liga das Nações A]",
+    "11-12 14:00 Lituânia x Suriname [Amistoso Internacional]",
+    "11-12 14:45 Barcelona x Arsenal [Champions League Feminina]",
+    "11-12 15:00 Navalcanero x Real Betis [Copa do Rei]",
+    "11-12 15:00 Tarancon x Levante [Copa do Rei]",
+    "11-12 16:45 Itália x França [Liga das Nações A]",
+    "11-12 16:45 Inglaterra x Croácia [Liga das Nações A]",
+    "11-12 16:45 República Tcheca x Espanha [Liga das Nações A]",
+    "11-12 16:45 Albânia x Finlândia [Liga das Nações C]",
+    "11-12 16:45 Montenegro x Letônia [Liga das Nações C]",
+    "11-12 16:45 San Marino x Belarus [Liga das Nações C]",
     "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
-    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]"
+    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]",
+    "11-12 20:00 Estudiantes x Independiente Rivadavia [Supercopa Argentina]"
    ],
    "horario_diferente": []
   },
   "nba_broadcasts": [
-   "Orlando Magic x Sacramento Kings :: (vazio)",
-   "Oklahoma City Thunder x Portland Trail Blazers :: NBC | KSBI | THUNDER APP | NBC | KSBI | THUNDER APP",
-   "Washington Wizards x Indiana Pacers :: MNMT | DAZN IND | MNMT | DAZN IND",
-   "Cleveland Cavaliers x New York Knicks :: ESPN | ESPN"
+   "Oklahoma City Thunder x Portland Trail Blazers :: KUNP 16 | BLAZERVISION | KSBI | THUNDER APP | KUNP 16 | KSBI | BLAZERVISION | THUNDER APP",
+   "Toronto Raptors x Philadelphia 76ers :: (vazio)",
+   "Detroit Pistons x Washington Wizards :: MNMT | MNMT",
+   "Dallas Mavericks x Minnesota Timberwolves :: NBA TV | KFAA-TV | MAVSTV | NBA TV | KFAA-TV | MAVSTV"
   ]
  },
  "saude": {
