@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 13/11 03:57 BRT — janela 2026-11-13 a 2026-11-19",
-   "  ✓ mantosdofutebol: 69 evento(s)",
-   "  ✓ goal (2º guia): 44 evento(s)",
+   "Coleta 13/11 14:16 BRT — janela 2026-11-13 a 2026-11-19",
+   "  ✓ mantosdofutebol: 87 evento(s)",
+   "  ✓ goal (2º guia): 57 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 64 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 169 eventos → eventos.json",
+   "TOTAL: 188 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -34,9 +34,9 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Quinta – 12/11",
-      "data": "2026-11-12",
-      "jogos": 6
+      "cabecalho": "Sexta – 13/11",
+      "data": "2026-11-13",
+      "jogos": 24
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -74,14 +74,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 297350,
-   "tabelas": 5,
+   "bytes": 315762,
+   "tabelas": 6,
    "dias": [
-    {
-     "titulo": "Jogos de sexta, 13 de novembro de 2026",
-     "data": "2026-11-13",
-     "jogos": 13
-    },
     {
      "titulo": "Jogos de sábado, 14 de novembro de 2026",
      "data": "2026-11-14",
@@ -91,6 +86,16 @@
      "titulo": "Jogos de domingo, 15 de novembro de 2026",
      "data": "2026-11-15",
      "jogos": 10
+    },
+    {
+     "titulo": "Jogos de segunda, 16 de novembro de 2026",
+     "data": "2026-11-16",
+     "jogos": 12
+    },
+    {
+     "titulo": "Jogos de terça, 17 de novembro de 2026",
+     "data": "2026-11-17",
+     "jogos": 14
     }
    ],
    "linhas_nao_lidas": []
@@ -98,19 +103,21 @@
   "guias": {
    "nos_dois": 31,
    "so_no_segundo": [
-    "11-13 14:00 Moldávia x Cazaquistão [Liga das Nações C]",
-    "11-13 16:45 Holanda x Grécia [Liga das Nações A]",
-    "11-13 16:45 Sérvia x Alemanha [Liga das Nações A]",
-    "11-13 16:45 Escócia x Macedônia do Norte [Liga das Nações B]",
-    "11-13 16:45 Eslovênia x Suíça [Liga das Nações B]",
-    "11-13 16:45 Bulgária x Islândia [Liga das Nações C]",
-    "11-13 16:45 Eslováquia x Ilhas Faroé [Liga das Nações C]",
-    "11-13 16:45 Luxemburgo x Estônia [Liga das Nações C]",
-    "11-13 16:45 Andorra x Gibraltar [Liga das Nações D]",
-    "11-13 16:45 Liechtenstein x Azerbaijão [Liga das Nações D]",
-    "11-13 17:00 Salamanca x Celta de Vigo [Copa do Rei]",
-    "11-13 19:00 Colo-Colo x Racing [Amistoso de Clubes]",
-    "11-13 23:00 Guatemala x Canadá [Liga das Nações da Concacaf]"
+    "11-16 12:00 Ilhas Faroé x Moldávia [Liga das Nações C]",
+    "11-16 12:00 Cazaquistão x Eslováquia [Liga das Nações C]",
+    "11-16 14:00 Islândia x Luxemburgo [Liga das Nações C]",
+    "11-16 14:00 Estônia x Bulgária [Liga das Nações C]",
+    "11-16 14:00 Lituânia x Liechtenstein [Liga das Nações D]",
+    "11-16 15:00 Andorra x Azerbaijão [Amistoso Internacional]",
+    "11-16 16:45 Alemanha x Holanda [Liga das Nações A]",
+    "11-16 16:45 Grécia x Sérvia [Liga das Nações A]",
+    "11-16 16:45 Suíça x Escócia [Liga das Nações B]",
+    "11-16 16:45 Macedônia do Norte x Eslovênia [Liga das Nações B]",
+    "11-16 16:45 Gibraltar x Malta [Liga das Nações D]",
+    "11-16 22:00 Canadá x Guatemala [Liga das Nações da Concacaf]",
+    "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
+    "11-17 16:45 País de Gales x Portugal [Liga das Nações A]",
+    "11-17 16:45 Dinamarca x Noruega [Liga das Nações A]"
    ],
    "horario_diferente": []
   },
