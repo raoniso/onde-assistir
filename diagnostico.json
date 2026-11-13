@@ -18,7 +18,7 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 13/11 14:16 BRT — janela 2026-11-13 a 2026-11-19",
+   "Coleta 13/11 15:27 BRT — janela 2026-11-13 a 2026-11-19",
    "  ✓ mantosdofutebol: 87 evento(s)",
    "  ✓ goal (2º guia): 57 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 64 evento(s)",
@@ -74,7 +74,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 315762,
+   "bytes": 315769,
    "tabelas": 6,
    "dias": [
     {
@@ -99,6 +99,10 @@
     }
    ],
    "linhas_nao_lidas": []
+  },
+  "memoria": {
+   "mantos": [],
+   "goal": []
   },
   "guias": {
    "nos_dois": 31,
@@ -128,9 +132,8 @@
    "Atlanta Hawks x Chicago Bulls :: (vazio)"
   ]
  },
+ "build": "2026-11-13-a",
  "saude": {
-  "contagem": {},
-  "avisos": {},
-  "problemas": []
+  "abertos": {}
  }
 }
