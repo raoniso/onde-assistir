@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-11-e (2º guia de TV, tabelas de seleções, alarme por fonte)
+# build: 2026-11-13-a (memória por dia dos guias; alarme por tempo; coleta de hora em hora)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -29,14 +29,23 @@ FONTES (cada uma protegida por try/except — uma falhar não derruba o resto):
                2026/27: qui=SporTV, seg=ESPN, dom noite=SporTV, dom tarde=TV
                a confirmar; NFL Game Pass (DAZN) em todos.
 
-SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
-dados embutidos) e diagnostico.json (log das fontes + amostras brutas — é
-por ele que se depura, sem precisar do log do Actions).
+MEMÓRIA: de madrugada a página "hoje" do guia ainda mostra ontem e a de
+"amanhã" já pulou para depois de amanhã — o dia de hoje some por algumas horas.
+Por isso cada guia tem memória por dia (memoria_guias.json): se a página deixa
+de listar um dia que já listou, vale a última leitura daquele dia. Dia listado
+agora sempre substitui a memória. O mesmo vale se o guia sair do ar, inteiro ou
+só uma das páginas. A memória nunca derruba a coleta: se estiver estragada, ou
+tiver sido gravada por outra versão deste arquivo, é descartada e recomeça.
 
-ALARME: se o guia principal vier vazio (ou a ESPN inteira cair) em duas
-coletas seguidas, ou o segundo guia ficar um dia sem jogos, o robô publica o
-que tem e depois falha de propósito — o GitHub avisa o dono do repositório por
-e-mail. Repete o aviso a cada 24h enquanto durar.
+SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
+dados embutidos), memoria_guias.json (última leitura de cada dia dos guias) e
+diagnostico.json (log das fontes + amostras brutas — é por ele que se depura,
+sem precisar do log do Actions).
+
+ALARME: se o guia principal ficar 2 horas sem jogos (ou a ESPN inteira fora),
+ou o segundo guia ficar um dia sem jogos, o robô publica o que tem e depois
+falha de propósito — o GitHub avisa o dono do repositório por e-mail. Uma falha
+isolada não toca. Repete o aviso a cada 24h enquanto durar.
 
 DATAS SÃO ABSOLUTAS ("date": "2026-11-11"). O app só exibe um evento na aba
 do dia exato — dado antigo nunca "escorrega" para hoje.
@@ -53,8 +62,10 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+BUILD = "2026-11-13-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 DIAG = {"fontes": {}, "amostras": {}}
+DIAS_LIDOS = {"mantos": set(), "goal": set()}     # dias (ISO) que cada guia listou nesta coleta
 BRT = timezone(timedelta(hours=-3))
 HOJE = datetime.now(BRT).date()
 JANELA = [HOJE + timedelta(days=i) for i in range(7)]  # baseline semanal
@@ -241,6 +252,7 @@ def fonte_mantos():
                     data_atual = d
                     secao = {"cabecalho": linha[:40], "data": d.isoformat(), "jogos": 0}
                     diag["dias"].append(secao)
+                    DIAS_LIDOS["mantos"].add(d.isoformat())
                     ant_min, virou, em_ordem = None, False, True
                 elif re.search(r"\b\d{1,2}/\d{1,2}\b", linha) and len(linha) <= 60 \
                         and len(diag["linhas_com_data_ignoradas"]) < 5:
@@ -640,27 +652,58 @@ def dedup(evs):
 # Alarme: fonte sem dados em coletas seguidas
 # =================================================================
 def avaliar_saude(anterior, problemas, agora):
-    """problemas = [(chave, texto, limite)]: `limite` é quantas coletas seguidas
-    com o problema até tocar (uma falha isolada do guia não toca: ele já teve
-    soluços de minutos). anterior = estado gravado pela coleta passada
-    (diagnostico.json -> "saude"). Devolve (estado novo, texto do alarme ou
-    None). Enquanto o problema durar, repete o aviso a cada 24h."""
-    antigas, avisos_ant = anterior.get("contagem") or {}, anterior.get("avisos") or {}
-    contagem, avisos, textos = {}, {}, []
-    for chave, texto, limite in problemas:
-        contagem[chave] = int(antigas.get(chave) or 0) + 1
-        ultimo = avisos_ant.get(chave)
-        if contagem[chave] >= limite:
-            try:
-                venceu = not ultimo or agora - datetime.fromisoformat(ultimo) >= timedelta(hours=24)
-            except Exception:
-                venceu = True
-            if venceu:
-                textos.append(f"{texto} — {contagem[chave]} coletas seguidas")
-                ultimo = agora.isoformat(timespec="minutes")
-        if ultimo: avisos[chave] = ultimo
-    return {"contagem": contagem, "avisos": avisos, "problemas": [t for _, t, _ in problemas]}, \
-           (" | ".join(textos) or None)
+    """problemas = [(chave, texto, horas)]: toca quando o problema já dura `horas`
+    E foi visto em pelo menos duas coletas (uma falha isolada não toca: o guia
+    já teve soluços de minutos). Conta em horas, não em coletas, porque o GitHub
+    não cumpre o agendamento à risca. anterior = estado gravado pela coleta
+    passada (diagnostico.json -> "saude"). Devolve (estado novo, texto do alarme
+    ou None). Enquanto o problema durar, repete o aviso a cada 24h."""
+    def quando(txt):
+        try: return datetime.fromisoformat(txt)
+        except Exception: return None
+    antes, abertos, textos = anterior.get("abertos") or {}, {}, []
+    for chave, texto, horas in problemas:
+        p = dict(antes.get(chave) or {})
+        desde = quando(p.get("desde")) or agora
+        p.update(desde=desde.isoformat(timespec="minutes"), vezes=int(p.get("vezes") or 0) + 1, texto=texto)
+        if p["vezes"] >= 2 and agora - desde >= timedelta(hours=horas):
+            ultimo = quando(p.get("avisado"))
+            if not ultimo or agora - ultimo >= timedelta(hours=24):
+                textos.append(f"{texto} — desde {desde:%d/%m %H:%M}, {p['vezes']} coletas seguidas")
+                p["avisado"] = agora.isoformat(timespec="minutes")
+        abertos[chave] = p
+    return {"abertos": abertos}, (" | ".join(textos) or None)
+
+# =================================================================
+# Memória por dia dos guias de TV
+# =================================================================
+MEMORIA = "memoria_guias.json"
+
+def com_memoria(nome, lidos, memoria, agora):
+    """Junta o que o guia `nome` listou agora com a memória dos dias que ele
+    deixou de listar. `lidos` = jogos desta coleta; DIAS_LIDOS[nome] = dias cujo
+    título a página trouxe. Regra, para cada dia da janela:
+      - a página trouxe o título do dia -> vale a leitura de agora (substitui a memória);
+      - não trouxe -> vale a última leitura daquele dia, mais algum jogo que tenha
+        caído nele agora (o da madrugada, listado no fim do dia anterior).
+    Atualiza `memoria[nome]` e devolve (jogos, dias que vieram da memória)."""
+    copia = lambda x: json.loads(json.dumps(x))
+    antiga, nova, da_memoria, por_dia = memoria.get(nome) or {}, {}, [], {}
+    for e in lidos: por_dia.setdefault(e["date"], []).append(e)
+    for dia in (d.isoformat() for d in JANELA):
+        if dia in DIAS_LIDOS[nome]:
+            nova[dia] = {"lido_em": agora, "jogos": copia(por_dia.get(dia, []))}
+            continue
+        guardado = antiga.get(dia) or {}
+        de_agora = copia(por_dia.get(dia, []))
+        ja = {(e["t"], norm(e["match"])) for e in de_agora}
+        so_memoria = [e for e in (guardado.get("jogos") or []) if (e["t"], norm(e["match"])) not in ja]
+        if so_memoria: da_memoria.append(f'{dia} (lido em {guardado.get("lido_em", "?")})')
+        if de_agora or so_memoria:
+            nova[dia] = {"lido_em": guardado.get("lido_em", agora) if so_memoria else agora, "jogos": de_agora + so_memoria}
+    memoria[nome] = nova
+    # cópias: o cruzamento com as outras fontes altera os jogos, e a memória guarda o guia puro
+    return [copia(e) for dia in sorted(nova) for e in nova[dia]["jogos"]], da_memoria
 
 # =================================================================
 # FUTEBOL — segundo guia de TV: goal.com/br ("Futebol na TV", página fixa,
@@ -693,6 +736,7 @@ def fonte_goal():
                     except ValueError: pass
                 if opcoes:
                     data_atual = min(opcoes, key=lambda d: abs((d - HOJE).days))
+                    DIAS_LIDOS["goal"].add(data_atual.isoformat())
                     if not dias or dias[-1]["data"] != data_atual.isoformat():
                         dias.append({"titulo": " ".join(str(no).split())[:60], "data": data_atual.isoformat(), "jogos": 0})
             continue
@@ -782,10 +826,35 @@ def main():
         saude_anterior = json.loads(Path("diagnostico.json").read_text(encoding="utf-8")).get("saude") or {}
     except Exception:
         saude_anterior = {}
+    try:        # última leitura de cada dia dos guias — só vale a gravada por esta mesma versão
+        memoria = json.loads(Path(MEMORIA).read_text(encoding="utf-8"))
+        assert isinstance(memoria, dict) and memoria.get("build") == BUILD
+    except Exception:
+        memoria = {}
+    memoria["build"] = DIAG["build"] = BUILD
+    for dias in DIAS_LIDOS.values(): dias.clear()
+    agora_txt = agora_dt.strftime("%d/%m %H:%M")
 
-    guia = roda("mantosdofutebol", fonte_mantos, log)
-    n_guia = len(guia)
-    segundo = roda("goal (2º guia)", fonte_goal, log)
+    def le_guia(rotulo, nome, fn):
+        """Lê um guia e completa com a memória. Devolve (jogos lidos agora, jogos
+        que valem, dias que vieram da memória)."""
+        lidos = roda(rotulo, fn, log)
+        if rotulo in falhas: DIAS_LIDOS[nome].clear()    # leitura interrompida não apaga a memória de dia nenhum
+        try:
+            jogos, da_memoria = com_memoria(nome, lidos, memoria, agora_txt)
+        except Exception as e:      # memória estragada: joga fora e recomeça da leitura de agora
+            log.append(f"  ✗ memória de {rotulo} descartada ({type(e).__name__}: {e})")
+            memoria[nome] = {}
+            try: jogos, da_memoria = com_memoria(nome, lidos, memoria, agora_txt)
+            except Exception: jogos, da_memoria = lidos, []
+        return lidos, jogos, da_memoria
+
+    lidos1, guia, mem1 = le_guia("mantosdofutebol", "mantos", fonte_mantos)
+    lidos2, segundo, mem2 = le_guia("goal (2º guia)", "goal", fonte_goal)
+    Path(MEMORIA).write_text(json.dumps(memoria, ensure_ascii=False, indent=1), encoding="utf-8")
+    for nome, dias in (("mantosdofutebol", mem1), ("goal (2º guia)", mem2)):
+        if dias: log.append(f"  ↺ {nome}: a página não listou {', '.join(dias)} — vale a última leitura")
+    DIAG["amostras"]["memoria"] = {"mantos": mem1, "goal": mem2}
     eventos = juntar_guias(guia, segundo)
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
@@ -809,21 +878,20 @@ def main():
     Path("eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1), encoding="utf-8")
     log.append(f"TOTAL: {len(eventos)} eventos → eventos.json")
 
-    agora = agora_dt.strftime("%d/%m %H:%M")
     try:
-        publicar_pagina(eventos, agora)
+        publicar_pagina(eventos, agora_txt)
         log.append(f"{PAGINA} gerado a partir de {TEMPLATE}.")
     except Exception as e:
         log.append(f"  ✗ {PAGINA} NÃO atualizado ({type(e).__name__}: {e})")
 
     # ---- alarme: os dados acima já foram gravados; aqui só se decide se avisa
-    problemas = []          # (chave, texto, coletas seguidas até tocar)
+    problemas = []          # (chave, texto, horas com o problema até tocar)
     if "mantosdofutebol" in falhas:
         problemas.append(("guia", f"guia de TV fora do ar ({falhas['mantosdofutebol']})", 2))
-    elif not n_guia:
+    elif not lidos1:
         problemas.append(("guia", "guia de TV abriu, mas nenhum jogo foi lido (o formato da página pode ter mudado)", 2))
-    if "goal (2º guia)" in falhas or not segundo:           # menos urgente: espera um dia inteiro (8 coletas)
-        problemas.append(("guia2", "2º guia de TV (Goal) sem jogos: " + falhas.get("goal (2º guia)", "nenhum jogo lido"), 8))
+    if "goal (2º guia)" in falhas or not lidos2:            # menos urgente: espera um dia inteiro
+        problemas.append(("guia2", "2º guia de TV (Goal) sem jogos: " + falhas.get("goal (2º guia)", "nenhum jogo lido"), 24))
     por_liga = DIAG["fontes"].get("espn_tabelas_por_liga") or {}
     if "ESPN NBA" in falhas and "ESPN NFL" in falhas and por_liga \
             and all(str(v).startswith("ERRO") for v in por_liga.values()):
@@ -837,7 +905,8 @@ def main():
                 f.write("alerta=" + " ".join(alerta.split())[:400] + "\n")
     elif problemas:
         log.append("  ! " + " | ".join(t for _, t, _ in problemas) +
-                   (" — alarme já enviado" if DIAG["saude"]["avisos"] else " — o alarme toca se continuar assim"))
+                   (" — alarme já enviado" if any(p.get("avisado") for p in DIAG["saude"]["abertos"].values())
+                    else " — o alarme toca se continuar assim"))
 
     DIAG["fontes"]["log"] = log
     Path("diagnostico.json").write_text(json.dumps(DIAG, ensure_ascii=False, indent=1), encoding="utf-8")

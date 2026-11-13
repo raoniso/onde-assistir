@@ -1,19 +1,21 @@
 # Onde.Assistir — robô de dados
-# Roda o pipeline (atualizar_dados.py) de 3 em 3 horas e também:
+# Roda o pipeline (atualizar_dados.py) de hora em hora e também:
 #   - na hora, quando o pipeline, o template do app (onde-assistir.html) ou este
 #     arquivo mudam;
 #   - manualmente, pelo botão "Run workflow" na aba Actions.
-# Publica eventos.json, index.html e diagnostico.json no próprio repositório,
-# de onde o GitHub Pages serve o site. Se uma fonte fica sem dados em coletas
-# seguidas, o último passo falha de propósito (alarme por e-mail).
+# Publica eventos.json, index.html, memoria_guias.json e diagnostico.json no
+# próprio repositório, de onde o GitHub Pages serve o site. Se uma fonte fica
+# horas sem dados, o último passo falha de propósito (alarme por e-mail).
 
 name: Atualizar jogos
 
 on:
   schedule:
-    # Minuto 23, e não 0: na hora cheia o GitHub atrasa e descarta agendamentos
-    # (com "0 */4" só ~3 das 6 execuções diárias aconteciam, com até 2h30 de atraso).
-    - cron: "23 */3 * * *"   # 8x por dia — em Brasília: 00h23, 03h23 ... 21h23
+    # O GitHub não cumpre agendamento à risca neste repositório: com "0 */4"
+    # rodavam ~3 das 6 execuções diárias, com 2 a 4 horas de atraso; com
+    # "23 */3", 2 das 7 primeiras. Por isso o pedido é de hora em hora (fora da
+    # hora cheia, que é o pior momento): perder alguns disparos deixa de importar.
+    - cron: "23 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -53,6 +55,8 @@ jobs:
           git config user.name "onde-assistir-bot"
           git config user.email "bot@users.noreply.github.com"
           git add eventos.json index.html diagnostico.json
+          # a memória dos guias só existe se o pipeline a gravou; sem ela, publica o resto
+          if [ -f memoria_guias.json ]; then git add memoria_guias.json; fi
           git diff --cached --quiet && echo "Sem mudanças." || {
             git commit -m "Atualiza jogos — $(date -u -d '-3 hours' +'%d/%m %H:%M') BRT"
             git pull --rebase --autostash origin main
@@ -60,8 +64,8 @@ jobs:
           }
 
       # Publica primeiro, avisa depois: o alarme nunca segura os dados que deram certo.
-      # O pipeline pede o alarme quando o guia de TV vem vazio (ou a ESPN inteira cai)
-      # em duas coletas seguidas, ou quando o 2º guia fica um dia sem jogos.
+      # O pipeline pede o alarme quando o guia de TV fica 2 horas sem jogos (ou a ESPN
+      # inteira fora), ou quando o 2º guia fica um dia sem jogos.
       # Job com falha = e-mail do GitHub para o dono do repositório.
       # Commit cuja mensagem COMEÇA por [teste-alarme] dispara um aviso de teste.
       - name: "ALARME: fonte sem dados (avise o Claude)"
