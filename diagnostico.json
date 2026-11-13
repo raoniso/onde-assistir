@@ -3,8 +3,8 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 8,
-   "Brasileirão Série B": 9,
+   "Brasileirão Série A": 11,
+   "Brasileirão Série B": 7,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 0,
    "Premier League": 0,
@@ -13,18 +13,18 @@
    "Campeonato Italiano": 0,
    "Campeonato Francês": 0,
    "Amistoso": 2,
-   "UEFA Nations League": 52,
+   "UEFA Nations League": 44,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 12/11 20:42 BRT — janela 2026-11-12 a 2026-11-18",
-   "  ✓ mantosdofutebol: 109 evento(s)",
-   "  ✓ goal (2º guia): 60 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
-   "  ✓ ESPN NBA: 51 evento(s)",
+   "Coleta 13/11 03:57 BRT — janela 2026-11-13 a 2026-11-19",
+   "  ✓ mantosdofutebol: 69 evento(s)",
+   "  ✓ goal (2º guia): 44 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 64 evento(s)",
+   "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 203 eventos → eventos.json",
+   "TOTAL: 169 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,7 +36,7 @@
      {
       "cabecalho": "Quinta – 12/11",
       "data": "2026-11-12",
-      "jogos": 22
+      "jogos": 6
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -51,11 +51,6 @@
    {
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
-     {
-      "cabecalho": "Sexta – 13/11",
-      "data": "2026-11-13",
-      "jogos": 24
-     },
      {
       "cabecalho": "Sábado – 14/11",
       "data": "2026-11-14",
@@ -79,14 +74,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 319372,
-   "tabelas": 6,
+   "bytes": 297350,
+   "tabelas": 5,
    "dias": [
-    {
-     "titulo": "Jogos de quinta, 12 de novembro de 2026",
-     "data": "2026-11-12",
-     "jogos": 16
-    },
     {
      "titulo": "Jogos de sexta, 13 de novembro de 2026",
      "data": "2026-11-13",
@@ -106,21 +96,29 @@
    "linhas_nao_lidas": []
   },
   "guias": {
-   "nos_dois": 55,
+   "nos_dois": 31,
    "so_no_segundo": [
-    "11-12 14:00 Armênia x Chipre [Liga das Nações C]",
-    "11-12 14:00 Turquia x Bélgica [Liga das Nações A]",
-    "11-12 14:00 Lituânia x Suriname [Amistoso Internacional]",
-    "11-12 19:00 Ponte Preta x Operário-PR [Campeonato Brasileiro (segunda divisão)]",
-    "11-12 20:00 São Bernardo x Athletic Club-MG [Campeonato Brasileiro (segunda divisão)]"
+    "11-13 14:00 Moldávia x Cazaquistão [Liga das Nações C]",
+    "11-13 16:45 Holanda x Grécia [Liga das Nações A]",
+    "11-13 16:45 Sérvia x Alemanha [Liga das Nações A]",
+    "11-13 16:45 Escócia x Macedônia do Norte [Liga das Nações B]",
+    "11-13 16:45 Eslovênia x Suíça [Liga das Nações B]",
+    "11-13 16:45 Bulgária x Islândia [Liga das Nações C]",
+    "11-13 16:45 Eslováquia x Ilhas Faroé [Liga das Nações C]",
+    "11-13 16:45 Luxemburgo x Estônia [Liga das Nações C]",
+    "11-13 16:45 Andorra x Gibraltar [Liga das Nações D]",
+    "11-13 16:45 Liechtenstein x Azerbaijão [Liga das Nações D]",
+    "11-13 17:00 Salamanca x Celta de Vigo [Copa do Rei]",
+    "11-13 19:00 Colo-Colo x Racing [Amistoso de Clubes]",
+    "11-13 23:00 Guatemala x Canadá [Liga das Nações da Concacaf]"
    ],
    "horario_diferente": []
   },
   "nba_broadcasts": [
-   "Oklahoma City Thunder x Portland Trail Blazers :: KUNP 16 | BLAZERVISION | KSBI | THUNDER APP | KUNP 16 | KSBI | BLAZERVISION | THUNDER APP",
-   "Toronto Raptors x Philadelphia 76ers :: (vazio)",
-   "Detroit Pistons x Washington Wizards :: MNMT | MNMT",
-   "Dallas Mavericks x Minnesota Timberwolves :: NBA TV | KFAA-TV | MAVSTV | NBA TV | KFAA-TV | MAVSTV"
+   "New York Knicks x Indiana Pacers :: PRIME VIDEO | PRIME VIDEO",
+   "Milwaukee Bucks x Orlando Magic :: MYMI | BUCKS APP | MYMI | BUCKS APP",
+   "Cleveland Cavaliers x Miami Heat :: DAZN CLE | DAZN CLE",
+   "Atlanta Hawks x Chicago Bulls :: (vazio)"
   ]
  },
  "saude": {
