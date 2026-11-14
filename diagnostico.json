@@ -8,23 +8,23 @@
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 0,
    "Premier League": 0,
-   "La Liga": 0,
-   "Bundesliga": 0,
+   "La Liga": 1,
+   "Bundesliga": 1,
    "Campeonato Italiano": 0,
-   "Campeonato Francês": 0,
+   "Campeonato Francês": 1,
    "Amistoso": 2,
-   "UEFA Nations League": 44,
+   "UEFA Nations League": 34,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 13/11 21:23 BRT — janela 2026-11-13 a 2026-11-19",
-   "  ✓ mantosdofutebol: 105 evento(s)",
-   "  ✓ goal (2º guia): 71 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 64 evento(s)",
+   "Coleta 14/11 04:41 BRT — janela 2026-11-14 a 2026-11-20",
+   "  ✓ mantosdofutebol: 90 evento(s)",
+   "  ✓ goal (2º guia): 57 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 57 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 195 eventos → eventos.json",
+   "TOTAL: 176 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,13 +36,18 @@
      {
       "cabecalho": "Sexta – 13/11",
       "data": "2026-11-13",
-      "jogos": 21
+      "jogos": 6
+     },
+     {
+      "cabecalho": "Sábado – 14/11",
+      "data": "2026-11-14",
+      "jogos": 39
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 0,
+    "futsal_descartados": 6,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -51,11 +56,6 @@
    {
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
-     {
-      "cabecalho": "Sábado – 14/11",
-      "data": "2026-11-14",
-      "jogos": 39
-     },
      {
       "cabecalho": "Domingo – 15/11",
       "data": "2026-11-15",
@@ -70,7 +70,7 @@
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 10,
+    "futsal_descartados": 4,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -87,14 +87,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 334514,
-   "tabelas": 7,
+   "bytes": 315592,
+   "tabelas": 6,
    "dias": [
-    {
-     "titulo": "Jogos de sexta, 13 de novembro de 2026",
-     "data": "2026-11-13",
-     "jogos": 14
-    },
     {
      "titulo": "Jogos de sábado, 14 de novembro de 2026",
      "data": "2026-11-14",
@@ -123,9 +118,8 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 56,
+   "nos_dois": 43,
    "so_no_segundo": [
-    "11-13 14:00 Moldávia x Cazaquistão [Liga das Nações C]",
     "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
     "11-17 16:45 País de Gales x Portugal [Liga das Nações A]",
     "11-17 16:45 Dinamarca x Noruega [Liga das Nações A]",
@@ -144,10 +138,10 @@
    "horario_diferente": []
   },
   "nba_broadcasts": [
-   "New York Knicks x Indiana Pacers :: PRIME VIDEO | PRIME VIDEO",
-   "Milwaukee Bucks x Orlando Magic :: MYMI | BUCKS APP | MYMI | BUCKS APP",
-   "Cleveland Cavaliers x Miami Heat :: DAZN CLE | DAZN CLE",
-   "Atlanta Hawks x Chicago Bulls :: (vazio)"
+   "Portland Trail Blazers x Sacramento Kings :: KUNP 16 | BLAZERVISION | KUNP 16 | BLAZERVISION",
+   "Oklahoma City Thunder x LA Clippers :: KSBI | THUNDER APP | KTLA | CLIPPERVISION | KSBI | KTLA | CLIPPERVISION | THUNDER APP",
+   "Denver Nuggets x New Orleans Pelicans :: GCSEN | PELICANS.COM | GCSEN | PELICANS.COM",
+   "Dallas Mavericks x Cleveland Cavaliers :: KFAA-TV | MAVSTV | KFAA-TV | MAVSTV"
   ]
  },
  "build": "2026-11-13-a",
