@@ -18,8 +18,8 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 14/11 04:41 BRT — janela 2026-11-14 a 2026-11-20",
-   "  ✓ mantosdofutebol: 90 evento(s)",
+   "Coleta 14/11 12:12 BRT — janela 2026-11-14 a 2026-11-20",
+   "  ✓ mantosdofutebol: 84 evento(s)",
    "  ✓ goal (2º guia): 57 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 57 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
@@ -33,11 +33,6 @@
    {
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
-     {
-      "cabecalho": "Sexta – 13/11",
-      "data": "2026-11-13",
-      "jogos": 6
-     },
      {
       "cabecalho": "Sábado – 14/11",
       "data": "2026-11-14",
@@ -87,7 +82,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 315592,
+   "bytes": 315593,
    "tabelas": 6,
    "dias": [
     {
