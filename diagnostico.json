@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 14/11 12:12 BRT — janela 2026-11-14 a 2026-11-20",
-   "  ✓ mantosdofutebol: 84 evento(s)",
+   "Coleta 14/11 16:58 BRT — janela 2026-11-14 a 2026-11-20",
+   "  ✓ mantosdofutebol: 78 evento(s)",
    "  ✓ goal (2º guia): 57 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 57 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 176 eventos → eventos.json",
+   "TOTAL: 173 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,13 +36,13 @@
      {
       "cabecalho": "Sábado – 14/11",
       "data": "2026-11-14",
-      "jogos": 39
+      "jogos": 33
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 6,
+    "futsal_descartados": 4,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -82,7 +82,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 315593,
+   "bytes": 315698,
    "tabelas": 6,
    "dias": [
     {
@@ -113,8 +113,11 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 43,
+   "nos_dois": 40,
    "so_no_segundo": [
+    "11-14 07:15 Japão x Brasil [Amistoso Internacional]",
+    "11-14 09:45 Manchester United x Crystal Palace [Campeonato Inglês Feminino]",
+    "11-14 11:00 Kosovo x Israel [Liga das Nações B]",
     "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
     "11-17 16:45 País de Gales x Portugal [Liga das Nações A]",
     "11-17 16:45 Dinamarca x Noruega [Liga das Nações A]",
@@ -126,9 +129,7 @@
     "11-17 16:45 Irlanda x Kosovo [Liga das Nações B]",
     "11-17 18:00 Argentina x Costa Rica [Amistoso Internacional]",
     "11-17 19:00 São Paulo x Santos [Campeonato Paulista Feminino]",
-    "11-17 21:00 RB Bragantino x Corinthians [Campeonato Paulista Feminino]",
-    "11-17 21:00 Estados Unidos x Haiti [Liga das Nações da Concacaf]",
-    "11-17 23:30 México x Jamaica [Liga das Nações da Concacaf]"
+    "11-17 21:00 RB Bragantino x Corinthians [Campeonato Paulista Feminino]"
    ],
    "horario_diferente": []
   },

@@ -2,124 +2,8 @@
  "build": "2026-11-13-a",
  "mantos": {
   "2026-11-14": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
-    {
-     "date": "2026-11-14",
-     "t": "07:15",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Amistoso",
-     "detail": "—",
-     "match": "Japão x Brasil",
-     "ch": [
-      {
-       "n": "GE TV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@getv"
-      },
-      {
-       "n": "Globo",
-       "y": "free"
-      },
-      {
-       "n": "SporTV",
-       "y": "tv"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-14",
-     "t": "09:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Brasil",
-     "league": "Copa Fares Lopes",
-     "detail": "—",
-     "match": "Fortaleza B x Palmacia",
-     "ch": [
-      {
-       "n": "Metrópoles Esportes (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@MetropolesEsportes"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-14",
-     "t": "09:30",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Inglaterra",
-     "league": "EFL League Two",
-     "detail": "—",
-     "match": "Exeter City x Cheltenham Town",
-     "ch": [
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-14",
-     "t": "09:45",
-     "sport": "Futebol",
-     "g": "F",
-     "country": "Inglaterra",
-     "league": "Inglês Feminino",
-     "detail": "—",
-     "match": "Manchester United x Crystal Palace",
-     "ch": [
-      {
-       "n": "XSports",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-14",
-     "t": "10:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "América do Sul",
-     "league": "Campeonato Uruguaio",
-     "detail": "—",
-     "match": "Central Español x Boston River",
-     "ch": [
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-14",
-     "t": "11:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Nations League",
-     "detail": "—",
-     "match": "Kosovo x Israel",
-     "ch": [
-      {
-       "n": "ESPN",
-       "y": "tv"
-      },
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
     {
      "date": "2026-11-14",
      "t": "14:00",
@@ -758,7 +642,7 @@
    ]
   },
   "2026-11-15": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-15",
@@ -1238,7 +1122,7 @@
    ]
   },
   "2026-11-16": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -1613,7 +1497,7 @@
  },
  "goal": {
   "2026-11-14": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-14",
@@ -2035,7 +1919,7 @@
    ]
   },
   "2026-11-15": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-15",
@@ -2234,7 +2118,7 @@
    ]
   },
   "2026-11-16": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -2459,7 +2343,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "14/11 12:12",
+   "lido_em": "14/11 16:58",
    "jogos": [
     {
      "date": "2026-11-17",
