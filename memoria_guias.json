@@ -2,63 +2,8 @@
  "build": "2026-11-13-a",
  "mantos": {
   "2026-11-13": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
-    {
-     "date": "2026-11-13",
-     "t": "14:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Nations League",
-     "detail": "—",
-     "match": "Moldávia x Cazaquistão",
-     "ch": [
-      {
-       "n": "ESPN 4",
-       "y": "tv"
-      },
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-13",
-     "t": "14:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Amistoso Sub-21",
-     "detail": "—",
-     "match": "Alemanha x Bélgica",
-     "ch": [
-      {
-       "n": "DAZN",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-13",
-     "t": "14:30",
-     "sport": "Futebol",
-     "g": "F",
-     "country": "Alemanha",
-     "league": "Bundesliga Feminina",
-     "detail": "—",
-     "match": "Hamburgo x Mainz 05",
-     "ch": [
-      {
-       "n": "DAZN",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
     {
      "date": "2026-11-13",
      "t": "15:00",
@@ -449,7 +394,7 @@
    ]
   },
   "2026-11-14": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-14",
@@ -1205,7 +1150,7 @@
    ]
   },
   "2026-11-15": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-15",
@@ -1363,6 +1308,28 @@
      "ch": [
       {
        "n": "XSports",
+       "y": "free"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-15",
+     "t": "13:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Itália",
+     "league": "Serie C Italiana",
+     "detail": "Retorno de Ronaldinho",
+     "match": "Ravenna FC x Forlí",
+     "ch": [
+      {
+       "n": "Esportesredetv (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@esportesredetv"
+      },
+      {
+       "n": "RedeTV",
        "y": "free"
       }
      ],
@@ -1661,11 +1628,651 @@
      "v": 1
     }
    ]
+  },
+  "2026-11-16": {
+   "lido_em": "13/11 21:23",
+   "jogos": [
+    {
+     "date": "2026-11-16",
+     "t": "12:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Ilhas Faroé x Moldávia",
+     "ch": [
+      {
+       "n": "SporTV 2",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "12:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Cazaquistão x Eslováquia",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Estônia x Bulgária",
+     "ch": [
+      {
+       "n": "SporTV 2",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Islândia x Luxemburgo",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Lituânia x Liechtenstein",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Alemanha",
+     "league": "Bundesliga Feminina",
+     "detail": "—",
+     "match": "Stuttgart x Bayer Leverkusen",
+     "ch": [
+      {
+       "n": "DAZN",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "15:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Amistoso",
+     "detail": "—",
+     "match": "Andorra x Azerbaijão",
+     "ch": [
+      {
+       "n": "SporTV 3",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "CONCACAF Nations League",
+     "detail": "—",
+     "match": "Guadalupe x Bermuda",
+     "ch": [
+      {
+       "n": "Concacaf (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@concacaf"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "CONCACAF Nations League",
+     "detail": "—",
+     "match": "Guiana x Porto Rico",
+     "ch": [
+      {
+       "n": "Concacaf (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@concacaf"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Grécia x Sérvia",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Alemanha x Holanda",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Suíça x Escócia",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Macedônia do Norte x Eslovênia",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "UEFA Nations League",
+     "detail": "—",
+     "match": "Gibraltar x Malta",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "CONCACAF Nations League",
+     "detail": "—",
+     "match": "Cuba x Granada",
+     "ch": [
+      {
+       "n": "Concacaf (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@concacaf"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Amistoso Sub-20",
+     "detail": "—",
+     "match": "Brasil x Peru",
+     "ch": [
+      {
+       "n": "TNT Sports BR (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@TNTSportsBR"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Copa Paraná",
+     "detail": "FINAL-ida",
+     "match": "Athletico-PR B x Paraná Clube",
+     "ch": [
+      {
+       "n": "Federacaopr (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@federacaopr"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "América do Sul",
+     "league": "Campeonato Uruguaio",
+     "detail": "—",
+     "match": "Montevideo Wanderers x Juventud",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "21:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "CONCACAF Nations League",
+     "detail": "—",
+     "match": "Martinica x Aruba",
+     "ch": [
+      {
+       "n": "Concacaf (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@concacaf"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-16",
+     "t": "22:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "CONCACAF Nations League",
+     "detail": "QF-volta",
+     "match": "Canadá x Guatemala",
+     "ch": [
+      {
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "Concacaf (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@concacaf"
+      }
+     ],
+     "v": 1
+    }
+   ]
   }
  },
  "goal": {
+  "2026-11-13": {
+   "lido_em": "13/11 21:23",
+   "jogos": [
+    {
+     "date": "2026-11-13",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações C",
+     "detail": "—",
+     "match": "Moldávia x Cazaquistão",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações A",
+     "detail": "—",
+     "match": "Holanda x Grécia",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações A",
+     "detail": "—",
+     "match": "Sérvia x Alemanha",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      },
+      {
+       "n": "GE TV",
+       "y": "free"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações B",
+     "detail": "—",
+     "match": "Escócia x Macedônia do Norte",
+     "ch": [
+      {
+       "n": "ESPN Brasil (YouTube)",
+       "y": "free"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações B",
+     "detail": "—",
+     "match": "Eslovênia x Suíça",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações C",
+     "detail": "—",
+     "match": "Bulgária x Islândia",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações C",
+     "detail": "—",
+     "match": "Eslováquia x Ilhas Faroé",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações C",
+     "detail": "—",
+     "match": "Luxemburgo x Estônia",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações D",
+     "detail": "—",
+     "match": "Andorra x Gibraltar",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações D",
+     "detail": "—",
+     "match": "Liechtenstein x Azerbaijão",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Espanha",
+     "league": "Copa do Rei",
+     "detail": "64-avos de final",
+     "match": "Salamanca x Celta de Vigo",
+     "ch": [
+      {
+       "n": "ESPN 3",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "19:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Amistoso de Clubes",
+     "detail": "—",
+     "match": "Colo-Colo x Racing",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Amistoso Internacional",
+     "detail": "—",
+     "match": "Argentina x Uruguai",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-13",
+     "t": "23:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações da Concacaf",
+     "detail": "quartas de final",
+     "match": "Guatemala x Canadá",
+     "ch": [
+      {
+       "n": "Canal GOAT",
+       "y": "free"
+      }
+     ],
+     "v": 1
+    }
+   ]
+  },
   "2026-11-14": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-14",
@@ -2087,7 +2694,7 @@
    ]
   },
   "2026-11-15": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-15",
@@ -2286,7 +2893,7 @@
    ]
   },
   "2026-11-16": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -2511,7 +3118,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "13/11 15:27",
+   "lido_em": "13/11 21:23",
    "jogos": [
     {
      "date": "2026-11-17",

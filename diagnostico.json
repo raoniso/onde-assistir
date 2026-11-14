@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 13/11 15:27 BRT — janela 2026-11-13 a 2026-11-19",
-   "  ✓ mantosdofutebol: 87 evento(s)",
-   "  ✓ goal (2º guia): 57 evento(s)",
+   "Coleta 13/11 21:23 BRT — janela 2026-11-13 a 2026-11-19",
+   "  ✓ mantosdofutebol: 105 evento(s)",
+   "  ✓ goal (2º guia): 71 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 64 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 188 eventos → eventos.json",
+   "TOTAL: 195 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,7 +36,7 @@
      {
       "cabecalho": "Sexta – 13/11",
       "data": "2026-11-13",
-      "jogos": 24
+      "jogos": 21
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -59,24 +59,42 @@
      {
       "cabecalho": "Domingo – 15/11",
       "data": "2026-11-15",
-      "jogos": 24
+      "jogos": 25
+     },
+     {
+      "cabecalho": "Segunda – 16/11",
+      "data": "2026-11-16",
+      "jogos": 20
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 9,
+    "futsal_descartados": 10,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
+    "linhas_de_jogo_nao_lidas": [
+     {
+      "linha": "21h00 – Trinidad e Tobago – CONCACAF Nations League",
+      "seguintes": [
+       "Canais: Youtube.com/@concacaf",
+       "22h00 – Canadá x Guatemala – CONCACAF Nations League (QF-volta)"
+      ]
+     }
+    ]
    }
   ],
   "goal": {
    "http": 200,
-   "bytes": 315769,
-   "tabelas": 6,
+   "bytes": 334514,
+   "tabelas": 7,
    "dias": [
+    {
+     "titulo": "Jogos de sexta, 13 de novembro de 2026",
+     "data": "2026-11-13",
+     "jogos": 14
+    },
     {
      "titulo": "Jogos de sábado, 14 de novembro de 2026",
      "data": "2026-11-14",
@@ -105,23 +123,23 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 31,
+   "nos_dois": 56,
    "so_no_segundo": [
-    "11-16 12:00 Ilhas Faroé x Moldávia [Liga das Nações C]",
-    "11-16 12:00 Cazaquistão x Eslováquia [Liga das Nações C]",
-    "11-16 14:00 Islândia x Luxemburgo [Liga das Nações C]",
-    "11-16 14:00 Estônia x Bulgária [Liga das Nações C]",
-    "11-16 14:00 Lituânia x Liechtenstein [Liga das Nações D]",
-    "11-16 15:00 Andorra x Azerbaijão [Amistoso Internacional]",
-    "11-16 16:45 Alemanha x Holanda [Liga das Nações A]",
-    "11-16 16:45 Grécia x Sérvia [Liga das Nações A]",
-    "11-16 16:45 Suíça x Escócia [Liga das Nações B]",
-    "11-16 16:45 Macedônia do Norte x Eslovênia [Liga das Nações B]",
-    "11-16 16:45 Gibraltar x Malta [Liga das Nações D]",
-    "11-16 22:00 Canadá x Guatemala [Liga das Nações da Concacaf]",
+    "11-13 14:00 Moldávia x Cazaquistão [Liga das Nações C]",
     "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
     "11-17 16:45 País de Gales x Portugal [Liga das Nações A]",
-    "11-17 16:45 Dinamarca x Noruega [Liga das Nações A]"
+    "11-17 16:45 Dinamarca x Noruega [Liga das Nações A]",
+    "11-17 16:45 Hungria x Irlanda do Norte [Liga das Nações B]",
+    "11-17 16:45 Israel x Áustria [Liga das Nações B]",
+    "11-17 16:45 Ucrânia x Geórgia [Liga das Nações B]",
+    "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]",
+    "11-17 16:45 Polônia x Suécia [Liga das Nações B]",
+    "11-17 16:45 Irlanda x Kosovo [Liga das Nações B]",
+    "11-17 18:00 Argentina x Costa Rica [Amistoso Internacional]",
+    "11-17 19:00 São Paulo x Santos [Campeonato Paulista Feminino]",
+    "11-17 21:00 RB Bragantino x Corinthians [Campeonato Paulista Feminino]",
+    "11-17 21:00 Estados Unidos x Haiti [Liga das Nações da Concacaf]",
+    "11-17 23:30 México x Jamaica [Liga das Nações da Concacaf]"
    ],
    "horario_diferente": []
   },
