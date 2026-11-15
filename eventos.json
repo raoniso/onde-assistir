@@ -108,25 +108,6 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Geórgia x Hungria",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "espn": "Georgia x Hungria",
-  "sel": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
   "match": "Noruega x País de Gales",
   "ch": [
    {
@@ -146,142 +127,19 @@
   "date": "2026-11-14",
   "t": "14:00",
   "sport": "Futebol",
-  "g": "F",
-  "country": "EUA/Canadá",
-  "league": "NWSL",
-  "detail": "Semifinal",
-  "match": "Washington Spirit x Utah Royals",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Alemanha",
-  "league": "Bundesliga Feminina",
-  "detail": "—",
-  "match": "Wolfsburg x Bayern de Munique",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "14:00",
-  "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "Euro Sub-19",
-  "detail": "Qualificação",
-  "match": "Portugal x Alemanha",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "EFL League Two",
+  "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Fleetwood Town x Tranmere Rovers",
+  "match": "Geórgia x Hungria",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "SporTV",
+    "y": "tv"
    }
   ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Campeonato Pernambucano",
-  "detail": "Turno Forró-QF",
-  "match": "América-PE x Vera Cruz",
-  "ch": [
-   {
-    "n": "TVFPFPE (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@TVFPFPE"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Campeonato Pernambucano",
-  "detail": "Turno Forró-QF",
-  "match": "Íbis x Ipojuca",
-  "ch": [
-   {
-    "n": "TVFPFPE (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@TVFPFPE"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Santa Catarina",
-  "detail": "Semifinal-volta",
-  "match": "Figueirense x Marcílio Dias",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-14",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Sint Maarten x Guiana Francesa",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@concacaf"
-   }
-  ],
-  "v": 1,
+  "v": 2,
+  "espn": "Georgia x Hungria",
   "sel": 1
  },
  {
@@ -2317,11 +2175,12 @@
   "match": "Singapura x Brasil",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
    },
    {
-    "n": "GE TV",
+    "n": "Globo",
     "y": "free"
    },
    {
@@ -2331,6 +2190,117 @@
   ],
   "v": 2,
   "espn": "Singapura x Brasil",
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Euro Sub-19",
+  "detail": "Qualificação",
+  "match": "Lituânia x Alemanha",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistoso Sub-21",
+  "detail": "—",
+  "match": "Croácia x Alemanha",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Fares Lopes",
+  "detail": "—",
+  "match": "Palmácia x Fortaleza B",
+  "ch": [
+   {
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Belize x Sint Maarten",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Dominica x Ilhas Cayman",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Santa Lucia x Barbados",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1,
   "sel": 1
  },
  {
@@ -2350,6 +2320,68 @@
   ],
   "v": 2,
   "espn": "País de Gales x Portugal",
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Polônia x Suécia",
+  "ch": [
+   {
+    "n": "SporTV 2",
+    "y": "tv"
+   }
+  ],
+  "v": 2,
+  "espn": "Polônia x Suécia",
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Hungria x Irlanda do Norte",
+  "ch": [
+   {
+    "n": "SporTV 3",
+    "y": "tv"
+   }
+  ],
+  "v": 2,
+  "espn": "Hungria x Irlanda do Norte",
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
+  "detail": "—",
+  "match": "Ucrânia x Geórgia",
+  "ch": [
+   {
+    "n": "ESPN Brasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@espnbrasil"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Ucrânia x Georgia",
   "sel": 1
  },
  {
@@ -2383,25 +2415,6 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Hungria x Irlanda do Norte",
-  "ch": [
-   {
-    "n": "SporTV 3",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "espn": "Hungria x Irlanda do Norte",
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
   "match": "Israel x Áustria",
   "ch": [
    {
@@ -2425,19 +2438,15 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Ucrânia x Geórgia",
+  "match": "Irlanda x Kosovo",
   "ch": [
-   {
-    "n": "ESPN Brasil (YouTube)",
-    "y": "free"
-   },
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Ucrânia x Georgia",
+  "espn": "Irlanda x Kosovo",
   "sel": 1
  },
  {
@@ -2461,55 +2470,18 @@
  },
  {
   "date": "2026-11-17",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Polônia x Suécia",
-  "ch": [
-   {
-    "n": "SporTV 2",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "espn": "Polônia x Suécia",
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Irlanda x Kosovo",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Irlanda x Kosovo",
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "18:00",
+  "t": "17:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Amistoso Internacional",
+  "league": "CONCACAF Nations League",
   "detail": "—",
-  "match": "Argentina x Costa Rica",
+  "match": "São Cristóvão e Névis x Bonaire",
   "ch": [
    {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1,
@@ -2521,29 +2493,38 @@
   "sport": "Futebol",
   "g": "F",
   "country": "Brasil",
-  "league": "Campeonato Paulista Feminino",
-  "detail": "—",
-  "match": "São Paulo x Santos",
+  "league": "Paulistão Feminino",
+  "detail": "QF-ida",
+  "match": "Santos x São Paulo",
   "ch": [
+   {
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
+   },
+   {
+    "n": "Record News",
+    "y": "tv"
+   },
    {
     "n": "HBO Max",
     "y": "stream"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-11-17",
-  "t": "21:00",
+  "t": "19:00",
   "sport": "Futebol",
-  "g": "F",
+  "g": "M",
   "country": "Brasil",
-  "league": "Campeonato Paulista Feminino",
-  "detail": "—",
-  "match": "RB Bragantino x Corinthians",
+  "league": "Copa do Brasil Sub-20",
+  "detail": "Semifinal-ida",
+  "match": "Atlético-MG x São Paulo",
   "ch": [
    {
-    "n": "SporTV 3",
+    "n": "SporTV 2",
     "y": "tv"
    }
   ],
@@ -2551,17 +2532,82 @@
  },
  {
   "date": "2026-11-17",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Amistoso",
+  "detail": "—",
+  "match": "Argentina x Costa Rica",
+  "ch": [
+   {
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Paulistão Feminino",
+  "detail": "QF-ida",
+  "match": "Red Bull Bragantino x Corinthians",
+  "ch": [
+   {
+    "n": "SporTV 3",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-17",
   "t": "21:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Liga das Nações da Concacaf",
-  "detail": "quartas de final",
+  "league": "CONCACAF Nations League",
+  "detail": "QF-volta",
   "match": "Estados Unidos x Haiti",
   "ch": [
    {
-    "n": "Canal GOAT",
-    "y": "free"
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   },
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 2,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "Guiana Francesa x São Vicente e Granadinas",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 1,
@@ -2583,6 +2629,25 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-11-17",
+  "t": "22:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "CONCACAF Nations League",
+  "detail": "—",
+  "match": "El Salvador x São Martinho",
+  "ch": [
+   {
+    "n": "Concacaf (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@concacaf"
+   }
+  ],
+  "v": 1,
+  "sel": 1
  },
  {
   "date": "2026-11-17",
@@ -2624,16 +2689,17 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Liga das Nações da Concacaf",
-  "detail": "quartas de final",
+  "league": "CONCACAF Nations League",
+  "detail": "QF-volta",
   "match": "México x Jamaica",
   "ch": [
    {
-    "n": "Canal GOAT",
-    "y": "free"
+    "n": "YouTube.com (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@Youtube.com"
    }
   ],
-  "v": 1,
+  "v": 2,
   "sel": 1
  },
  {
