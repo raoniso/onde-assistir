@@ -3,28 +3,28 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 11,
-   "Brasileirão Série B": 7,
+   "Brasileirão Série A": 12,
+   "Brasileirão Série B": 2,
    "Copa Libertadores": 0,
-   "Copa Sul-Americana": 0,
-   "Premier League": 0,
-   "La Liga": 1,
-   "Bundesliga": 1,
-   "Campeonato Italiano": 0,
-   "Campeonato Francês": 1,
-   "Amistoso": 2,
-   "UEFA Nations League": 34,
+   "Copa Sul-Americana": 1,
+   "Premier League": 7,
+   "La Liga": 5,
+   "Bundesliga": 7,
+   "Campeonato Italiano": 4,
+   "Campeonato Francês": 6,
+   "Amistoso": 1,
+   "UEFA Nations League": 26,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 14/11 20:59 BRT — janela 2026-11-14 a 2026-11-20",
-   "  ✓ mantosdofutebol: 91 evento(s)",
-   "  ✓ goal (2º guia): 57 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 57 evento(s)",
+   "Coleta 15/11 03:50 BRT — janela 2026-11-15 a 2026-11-21",
+   "  ✓ mantosdofutebol: 77 evento(s)",
+   "  ✓ goal (2º guia): 36 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 175 eventos → eventos.json",
+   "TOTAL: 179 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,13 +36,13 @@
      {
       "cabecalho": "Sábado – 14/11",
       "data": "2026-11-14",
-      "jogos": 23
+      "jogos": 9
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 2,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -94,14 +94,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 315629,
-   "tabelas": 6,
+   "bytes": 288517,
+   "tabelas": 5,
    "dias": [
-    {
-     "titulo": "Jogos de sábado, 14 de novembro de 2026",
-     "data": "2026-11-14",
-     "jogos": 21
-    },
     {
      "titulo": "Jogos de domingo, 15 de novembro de 2026",
      "data": "2026-11-15",
@@ -125,13 +120,8 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 51,
+   "nos_dois": 35,
    "so_no_segundo": [
-    "11-14 07:15 Japão x Brasil [Amistoso Internacional]",
-    "11-14 09:45 Manchester United x Crystal Palace [Campeonato Inglês Feminino]",
-    "11-14 11:00 Kosovo x Israel [Liga das Nações B]",
-    "11-14 14:00 Noruega x País de Gales [Liga das Nações A]",
-    "11-14 14:00 Geórgia x Hungria [Liga das Nações B]",
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
    "horario_diferente": [
@@ -139,10 +129,10 @@
    ]
   },
   "nba_broadcasts": [
-   "Portland Trail Blazers x Sacramento Kings :: KUNP 16 | BLAZERVISION | KUNP 16 | BLAZERVISION",
-   "Oklahoma City Thunder x LA Clippers :: KSBI | THUNDER APP | KTLA | CLIPPERVISION | KSBI | KTLA | CLIPPERVISION | THUNDER APP",
-   "Denver Nuggets x New Orleans Pelicans :: GCSEN | PELICANS.COM | GCSEN | PELICANS.COM",
-   "Dallas Mavericks x Cleveland Cavaliers :: KFAA-TV | MAVSTV | KFAA-TV | MAVSTV"
+   "Indiana Pacers x Philadelphia 76ers :: DAZN IND | DAZN IND",
+   "Los Angeles Lakers x Phoenix Suns :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | ARIZONA'S FAMILY 3TV | SUNS LIVE | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | ARIZONA'S FAMILY 3TV | SUNS LIVE",
+   "Charlotte Hornets x LA Clippers :: CLIPPERVISION | CLIPPERVISION",
+   "San Antonio Spurs x Utah Jazz :: KJZZ-TV | JAZZ+ | DAZN SAS | KJZZ-TV | JAZZ+ | DAZN SAS"
   ]
  },
  "build": "2026-11-13-a",
