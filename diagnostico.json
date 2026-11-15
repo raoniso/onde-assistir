@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 15/11 03:50 BRT — janela 2026-11-15 a 2026-11-21",
-   "  ✓ mantosdofutebol: 77 evento(s)",
+   "Coleta 15/11 11:52 BRT — janela 2026-11-15 a 2026-11-21",
+   "  ✓ mantosdofutebol: 76 evento(s)",
    "  ✓ goal (2º guia): 36 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 179 eventos → eventos.json",
+   "TOTAL: 181 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -34,15 +34,15 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Sábado – 14/11",
-      "data": "2026-11-14",
-      "jogos": 9
+      "cabecalho": "Domingo – 15/11",
+      "data": "2026-11-15",
+      "jogos": 20
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 2,
+    "futsal_descartados": 3,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -52,11 +52,6 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Domingo – 15/11",
-      "data": "2026-11-15",
-      "jogos": 25
-     },
-     {
       "cabecalho": "Segunda – 16/11",
       "data": "2026-11-16",
       "jogos": 20
@@ -65,12 +60,17 @@
       "cabecalho": "Terça – 17/11",
       "data": "2026-11-17",
       "jogos": 23
+     },
+     {
+      "cabecalho": "Quarta – 18/11",
+      "data": "2026-11-18",
+      "jogos": 13
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 4,
+    "futsal_descartados": 2,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -88,13 +88,27 @@
        "Canais: Disney+",
        "16h45 – Irlanda x Kosovo – UEFA Nations League"
       ]
+     },
+     {
+      "linha": "17h00 – Copa Intercontinental Futsal (Semifinal)",
+      "seguintes": [
+       "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
+       "19h30 – Coritiba x Santos – Brasileirão"
+      ]
+     },
+     {
+      "linha": "20h00 – Copa Intercontinental Futsal (Semifinal)",
+      "seguintes": [
+       "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
+       "20h30 – Flamengo x Athletico-PR – Brasileirão"
+      ]
      }
     ]
    }
   ],
   "goal": {
    "http": 200,
-   "bytes": 288517,
+   "bytes": 288463,
    "tabelas": 5,
    "dias": [
     {

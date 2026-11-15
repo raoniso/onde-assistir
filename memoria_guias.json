@@ -2,97 +2,8 @@
  "build": "2026-11-13-a",
  "mantos": {
   "2026-11-15": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
-    {
-     "date": "2026-11-15",
-     "t": "00:05",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Amistoso",
-     "detail": "—",
-     "match": "Nova Zelândia x Índia",
-     "ch": [
-      {
-       "n": "DAZN",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-15",
-     "t": "02:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Levain Cup",
-     "detail": "QF-volta",
-     "match": "Machida Zelvia x Vissel Kobe",
-     "ch": [
-      {
-       "n": "JLEAGUE International (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@JLEAGUEInternational"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-15",
-     "t": "03:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Levain Cup",
-     "detail": "QF-volta",
-     "match": "Cerezo Osaka x Urawa Red Diamonds",
-     "ch": [
-      {
-       "n": "JLEAGUE International (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@JLEAGUEInternational"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-15",
-     "t": "03:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Levain Cup",
-     "detail": "QF-volta",
-     "match": "Kashima Antlers x Yokohama F. Marinos",
-     "ch": [
-      {
-       "n": "JLEAGUE International (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@JLEAGUEInternational"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-15",
-     "t": "05:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Levain Cup",
-     "detail": "QF-volta",
-     "match": "Kashiwa Reysol x Kawasaki Frontale",
-     "ch": [
-      {
-       "n": "JLEAGUE International (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@JLEAGUEInternational"
-      }
-     ],
-     "v": 1
-    },
     {
      "date": "2026-11-15",
      "t": "11:00",
@@ -450,7 +361,7 @@
      "sport": "Futebol",
      "g": "M",
      "country": "Mundial",
-     "league": "CONCACAF NAtions League",
+     "league": "CONCACAF Nations League",
      "detail": "—",
      "match": "Panamá x Curaçao",
      "ch": [
@@ -482,7 +393,7 @@
    ]
   },
   "2026-11-16": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -855,7 +766,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
     {
      "date": "2026-11-17",
@@ -1299,11 +1210,267 @@
      "v": 1
     }
    ]
+  },
+  "2026-11-18": {
+   "lido_em": "15/11 11:52",
+   "jogos": [
+    {
+     "date": "2026-11-18",
+     "t": "14:45",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "UEFA Champions League Feminina",
+     "detail": "—",
+     "match": "BK Häcken x Manchester City",
+     "ch": [
+      {
+       "n": "ESPN Brasil (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@espnbrasil"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "14:45",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "UEFA Champions League Feminina",
+     "detail": "—",
+     "match": "Real Madrid x Inter de Milão",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "16:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Copa do Brasil Sub-20",
+     "detail": "Semifinal-ida",
+     "match": "Operário Ferroviário x Palmeiras",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "16:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "América do Sul",
+     "league": "Uruguaio 2° Divisão",
+     "detail": "—",
+     "match": "Atenas x Fênix",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "UEFA Champions League Feminina",
+     "detail": "—",
+     "match": "Chelsea x PSG",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "UEFA Champions League Feminina",
+     "detail": "—",
+     "match": "Juventus x OH Leuven",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "19:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Coritiba x Santos",
+     "ch": [
+      {
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
+      },
+      {
+       "n": "Record",
+       "y": "free"
+      },
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "19:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "América do Sul",
+     "league": "Uruguaio 2° Divisão",
+     "detail": "—",
+     "match": "Colon-URU x Oriental",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Remo x Chapecoense",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Flamengo x Athletico-PR",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      },
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Cruzeiro x Palmeiras",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "21:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Corinthians x Botafogo",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "21:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Grêmio x Bahia",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    }
+   ]
   }
  },
  "goal": {
   "2026-11-15": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
     {
      "date": "2026-11-15",
@@ -1502,7 +1669,7 @@
    ]
   },
   "2026-11-16": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -1727,7 +1894,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "15/11 03:50",
+   "lido_em": "15/11 11:52",
    "jogos": [
     {
      "date": "2026-11-17",
