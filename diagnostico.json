@@ -18,9 +18,9 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 16/11 05:05 BRT — janela 2026-11-16 a 2026-11-22",
+   "Coleta 16/11 15:41 BRT — janela 2026-11-16 a 2026-11-22",
    "  ✓ mantosdofutebol: 56 evento(s)",
-   "  ✓ goal (2º guia): 26 evento(s)",
+   "  ✓ goal (2º guia): 36 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 82 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
@@ -116,7 +116,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 273639,
+   "bytes": 396217,
    "tabelas": 4,
    "dias": [
     {
@@ -128,6 +128,11 @@
      "titulo": "Jogos de terça, 17 de novembro de 2026",
      "data": "2026-11-17",
      "jogos": 14
+    },
+    {
+     "titulo": "Jogos de quarta, 18 de novembro de 2026",
+     "data": "2026-11-18",
+     "jogos": 10
     }
    ],
    "linhas_nao_lidas": []
@@ -137,13 +142,11 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 25,
+   "nos_dois": 35,
    "so_no_segundo": [
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
-   "horario_diferente": [
-    "2026-11-17 Argentina x Costa Rica: principal 20:00 x segundo 18:00"
-   ]
+   "horario_diferente": []
   },
   "nba_broadcasts": [
    "Orlando Magic x Boston Celtics :: NBCSN | NBCSN",

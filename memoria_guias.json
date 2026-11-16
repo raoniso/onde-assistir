@@ -2,7 +2,7 @@
  "build": "2026-11-13-a",
  "mantos": {
   "2026-11-16": {
-   "lido_em": "16/11 05:05",
+   "lido_em": "16/11 15:41",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -375,7 +375,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "16/11 05:05",
+   "lido_em": "16/11 15:41",
    "jogos": [
     {
      "date": "2026-11-17",
@@ -821,7 +821,7 @@
    ]
   },
   "2026-11-18": {
-   "lido_em": "16/11 05:05",
+   "lido_em": "16/11 15:41",
    "jogos": [
     {
      "date": "2026-11-18",
@@ -1079,7 +1079,7 @@
  },
  "goal": {
   "2026-11-16": {
-   "lido_em": "16/11 05:05",
+   "lido_em": "16/11 15:41",
    "jogos": [
     {
      "date": "2026-11-16",
@@ -1304,7 +1304,7 @@
    ]
   },
   "2026-11-17": {
-   "lido_em": "16/11 05:05",
+   "lido_em": "16/11 15:41",
    "jogos": [
     {
      "date": "2026-11-17",
@@ -1321,12 +1321,12 @@
        "y": "free"
       },
       {
-       "n": "GE TV",
-       "y": "free"
-      },
-      {
        "n": "SporTV",
        "y": "tv"
+      },
+      {
+       "n": "GE TV",
+       "y": "free"
       }
      ],
      "v": 1
@@ -1377,6 +1377,23 @@
      "country": "Mundial",
      "league": "Liga das Nações B",
      "detail": "—",
+     "match": "Polônia x Suécia",
+     "ch": [
+      {
+       "n": "SporTV 2",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-17",
+     "t": "16:45",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga das Nações B",
+     "detail": "—",
      "match": "Hungria x Irlanda do Norte",
      "ch": [
       {
@@ -1415,49 +1432,11 @@
      "country": "Mundial",
      "league": "Liga das Nações B",
      "detail": "—",
-     "match": "Ucrânia x Geórgia",
-     "ch": [
-      {
-       "n": "ESPN Brasil (YouTube)",
-       "y": "free"
-      },
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-17",
-     "t": "16:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Liga das Nações B",
-     "detail": "—",
      "match": "Bósnia e Herzegovina x Romênia",
      "ch": [
       {
        "n": "Disney+",
        "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-17",
-     "t": "16:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Liga das Nações B",
-     "detail": "—",
-     "match": "Polônia x Suécia",
-     "ch": [
-      {
-       "n": "SporTV 2",
-       "y": "tv"
       }
      ],
      "v": 1
@@ -1481,14 +1460,18 @@
     },
     {
      "date": "2026-11-17",
-     "t": "18:00",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Mundial",
-     "league": "Amistoso Internacional",
+     "league": "Liga das Nações B",
      "detail": "—",
-     "match": "Argentina x Costa Rica",
+     "match": "Ucrânia x Geórgia",
      "ch": [
+      {
+       "n": "ESPN Brasil (YouTube)",
+       "y": "free"
+      },
       {
        "n": "Disney+",
        "y": "stream"
@@ -1503,12 +1486,41 @@
      "g": "F",
      "country": "Brasil",
      "league": "Campeonato Paulista Feminino",
-     "detail": "—",
-     "match": "São Paulo x Santos",
+     "detail": "quartas de final",
+     "match": "Santos x São Paulo",
      "ch": [
+      {
+       "n": "Record News",
+       "y": "tv"
+      },
+      {
+       "n": "CazéTV",
+       "y": "free"
+      },
       {
        "n": "HBO Max",
        "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-17",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Amistoso Internacional",
+     "detail": "—",
+     "match": "Argentina x Costa Rica",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      },
+      {
+       "n": "GE TV",
+       "y": "free"
       }
      ],
      "v": 1
@@ -1520,7 +1532,7 @@
      "g": "F",
      "country": "Brasil",
      "league": "Campeonato Paulista Feminino",
-     "detail": "—",
+     "detail": "quartas de final",
      "match": "RB Bragantino x Corinthians",
      "ch": [
       {
@@ -1560,6 +1572,209 @@
       {
        "n": "Canal GOAT",
        "y": "free"
+      }
+     ],
+     "v": 1
+    }
+   ]
+  },
+  "2026-11-18": {
+   "lido_em": "16/11 15:41",
+   "jogos": [
+    {
+     "date": "2026-11-18",
+     "t": "14:45",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "Champions League Feminina",
+     "detail": "—",
+     "match": "Real Madrid x Inter de MIlão",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "14:45",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "Champions League Feminina",
+     "detail": "—",
+     "match": "Hacken x Manchester City",
+     "ch": [
+      {
+       "n": "ESPN Brasil (YouTube)",
+       "y": "free"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "Champions League Feminina",
+     "detail": "—",
+     "match": "Chelsea x PSG",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "17:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Europa (demais)",
+     "league": "Champions League Feminina",
+     "detail": "—",
+     "match": "Juventus x OH Leuven",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "19:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Coritiba x Santos",
+     "ch": [
+      {
+       "n": "Record",
+       "y": "free"
+      },
+      {
+       "n": "CazéTV",
+       "y": "free"
+      },
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Remo x Chapecoense",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Flamengo x Athletico-PR",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      },
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "20:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Cruzeiro x Palmeiras",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "21:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Corinthians x Botafogo",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-18",
+     "t": "21:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Campeonato Brasileiro",
+     "detail": "—",
+     "match": "Grêmio x Bahia",
+     "ch": [
+      {
+       "n": "Premiere",
+       "y": "stream"
       }
      ],
      "v": 1
