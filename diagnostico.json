@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 15/11 17:26 BRT — janela 2026-11-15 a 2026-11-21",
-   "  ✓ mantosdofutebol: 76 evento(s)",
+   "Coleta 15/11 22:10 BRT — janela 2026-11-15 a 2026-11-21",
+   "  ✓ mantosdofutebol: 66 evento(s)",
    "  ✓ goal (2º guia): 36 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 181 eventos → eventos.json",
+   "TOTAL: 176 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,13 +36,13 @@
      {
       "cabecalho": "Domingo – 15/11",
       "data": "2026-11-15",
-      "jogos": 20
+      "jogos": 10
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 2,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -108,7 +108,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 288321,
+   "bytes": 288351,
    "tabelas": 5,
    "dias": [
     {
@@ -134,8 +134,13 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 35,
+   "nos_dois": 30,
    "so_no_segundo": [
+    "11-15 11:00 Letônia x Armênia [Liga das Nações C]",
+    "11-15 11:00 Chipre x Montenegro [Liga das Nações C]",
+    "11-15 13:30 Arsenal x London CIty Lionesses [Campeonato Inglês Feminino]",
+    "11-15 14:00 Belarus x Albânia [Liga das Nações C]",
+    "11-15 14:00 Finlândia x San Marino [Liga das Nações C]",
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
    "horario_diferente": [

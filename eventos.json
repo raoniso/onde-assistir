@@ -7,19 +7,15 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Chipre x Montenegro",
+  "match": "Letônia x Armênia",
   "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Chipre x Montenegro",
+  "espn": "Letônia x Armênia",
   "sel": 1
  },
  {
@@ -30,7 +26,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Letônia x Armênia",
+  "match": "Chipre x Montenegro",
   "ch": [
    {
     "n": "Disney+",
@@ -38,7 +34,7 @@
    }
   ],
   "v": 2,
-  "espn": "Letônia x Armênia",
+  "espn": "Chipre x Montenegro",
   "sel": 1
  },
  {
@@ -64,78 +60,20 @@
  },
  {
   "date": "2026-11-15",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Alemanha",
-  "league": "Bundesliga Feminina",
-  "detail": "—",
-  "match": "RB Leipzig x Eintracht Frankfurt",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-15",
   "t": "13:30",
   "sport": "Futebol",
   "g": "F",
   "country": "Inglaterra",
-  "league": "Inglês Feminino",
+  "league": "Campeonato Inglês Feminino",
   "detail": "—",
-  "match": "Arsenal x London City Lionesses",
+  "match": "Arsenal x London CIty Lionesses",
   "ch": [
    {
     "n": "XSports",
     "y": "free"
    }
   ],
-  "v": 2
- },
- {
-  "date": "2026-11-15",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Serie C Italiana",
-  "detail": "Retorno de Ronaldinho",
-  "match": "Ravenna FC x Forlí",
-  "ch": [
-   {
-    "n": "Esportesredetv (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@esportesredetv"
-   },
-   {
-    "n": "RedeTV",
-    "y": "free"
-   }
-  ],
   "v": 1
- },
- {
-  "date": "2026-11-15",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "UEFA Nations League",
-  "detail": "—",
-  "match": "Finlândia x San Marino",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "espn": "Finlândia x San Marino",
-  "sel": 1
  },
  {
   "date": "2026-11-15",
@@ -162,57 +100,22 @@
  },
  {
   "date": "2026-11-15",
-  "t": "15:00",
+  "t": "14:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "América do Sul",
-  "league": "Copa da Liga Peruana",
-  "detail": "FINAL",
-  "match": "Sporting Cristal x Atlético Alianza",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-15",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Santa Catarina",
-  "detail": "Semifinal-volta",
-  "match": "Hercílio Luz x Joinville",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-15",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Fares Lopes",
+  "country": "Europa (demais)",
+  "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Ceará B x Vila Real",
+  "match": "Finlândia x San Marino",
   "ch": [
    {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
+    "n": "SporTV",
+    "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2,
+  "espn": "Finlândia x San Marino",
+  "sel": 1
  },
  {
   "date": "2026-11-15",
