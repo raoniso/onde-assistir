@@ -3,28 +3,28 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 12,
+   "Brasileirão Série A": 15,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 1,
-   "Premier League": 7,
-   "La Liga": 5,
-   "Bundesliga": 7,
-   "Campeonato Italiano": 4,
-   "Campeonato Francês": 6,
+   "Premier League": 9,
+   "La Liga": 9,
+   "Bundesliga": 9,
+   "Campeonato Italiano": 9,
+   "Campeonato Francês": 9,
    "Amistoso": 1,
-   "UEFA Nations League": 26,
+   "UEFA Nations League": 18,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 15/11 22:10 BRT — janela 2026-11-15 a 2026-11-21",
-   "  ✓ mantosdofutebol: 66 evento(s)",
-   "  ✓ goal (2º guia): 36 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
-   "  ✓ ESPN NBA: 52 evento(s)",
-   "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 176 eventos → eventos.json",
+   "Coleta 16/11 05:05 BRT — janela 2026-11-16 a 2026-11-22",
+   "  ✓ mantosdofutebol: 56 evento(s)",
+   "  ✓ goal (2º guia): 26 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 82 evento(s)",
+   "  ✓ ESPN NBA: 51 evento(s)",
+   "  ✓ ESPN NFL: 13 evento(s)",
+   "TOTAL: 178 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -34,9 +34,9 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Domingo – 15/11",
-      "data": "2026-11-15",
-      "jogos": 10
+      "cabecalho": "Segunda – 16/11",
+      "data": "2026-11-16",
+      "jogos": 20
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -46,7 +46,15 @@
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
+    "linhas_de_jogo_nao_lidas": [
+     {
+      "linha": "21h00 – Trinidad e Tobago – CONCACAF Nations League",
+      "seguintes": [
+       "Canais: Youtube.com/@concacaf",
+       "22h00 – Canadá x Guatemala – CONCACAF Nations League (QF-volta)"
+      ]
+     }
+    ]
    },
    {
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
@@ -70,7 +78,7 @@
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 2,
+    "futsal_descartados": 3,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -108,14 +116,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 288351,
-   "tabelas": 5,
+   "bytes": 273639,
+   "tabelas": 4,
    "dias": [
-    {
-     "titulo": "Jogos de domingo, 15 de novembro de 2026",
-     "data": "2026-11-15",
-     "jogos": 10
-    },
     {
      "titulo": "Jogos de segunda, 16 de novembro de 2026",
      "data": "2026-11-16",
@@ -134,13 +137,8 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 30,
+   "nos_dois": 25,
    "so_no_segundo": [
-    "11-15 11:00 Letônia x Armênia [Liga das Nações C]",
-    "11-15 11:00 Chipre x Montenegro [Liga das Nações C]",
-    "11-15 13:30 Arsenal x London CIty Lionesses [Campeonato Inglês Feminino]",
-    "11-15 14:00 Belarus x Albânia [Liga das Nações C]",
-    "11-15 14:00 Finlândia x San Marino [Liga das Nações C]",
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
    "horario_diferente": [
@@ -148,10 +146,10 @@
    ]
   },
   "nba_broadcasts": [
-   "Indiana Pacers x Philadelphia 76ers :: DAZN IND | DAZN IND",
-   "Los Angeles Lakers x Phoenix Suns :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | ARIZONA'S FAMILY 3TV | SUNS LIVE | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | ARIZONA'S FAMILY 3TV | SUNS LIVE",
-   "Charlotte Hornets x LA Clippers :: CLIPPERVISION | CLIPPERVISION",
-   "San Antonio Spurs x Utah Jazz :: KJZZ-TV | JAZZ+ | DAZN SAS | KJZZ-TV | JAZZ+ | DAZN SAS"
+   "Orlando Magic x Boston Celtics :: NBCSN | NBCSN",
+   "Chicago Bulls x Cleveland Cavaliers :: DAZN CLE | DAZN CLE",
+   "Memphis Grizzlies x Washington Wizards :: MNMT | MNMT",
+   "Philadelphia 76ers x Brooklyn Nets :: DAZN (YES) | DAZN (YES)"
   ]
  },
  "build": "2026-11-13-a",
