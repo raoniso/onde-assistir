@@ -28,99 +28,6 @@
  },
  {
   "date": "2026-11-17",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Amistoso Sub-21",
-  "detail": "—",
-  "match": "Croácia x Alemanha",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Fares Lopes",
-  "detail": "—",
-  "match": "Palmácia x Fortaleza B",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Belize x Sint Maarten",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@concacaf"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Dominica x Ilhas Cayman",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@concacaf"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "CONCACAF Nations League",
-  "detail": "—",
-  "match": "Santa Lucia x Barbados",
-  "ch": [
-   {
-    "n": "Concacaf (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@concacaf"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
   "t": "16:45",
   "sport": "Futebol",
   "g": "M",
@@ -254,7 +161,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Irlanda x Kosovo",
+  "match": "Bósnia e Herzegovina x Romênia",
   "ch": [
    {
     "n": "Disney+",
@@ -262,7 +169,7 @@
    }
   ],
   "v": 2,
-  "espn": "Irlanda x Kosovo",
+  "espn": "Bósnia e Herzegovina x Romênia",
   "sel": 1
  },
  {
@@ -273,7 +180,7 @@
   "country": "Europa (demais)",
   "league": "UEFA Nations League",
   "detail": "—",
-  "match": "Bósnia e Herzegovina x Romênia",
+  "match": "Irlanda x Kosovo",
   "ch": [
    {
     "n": "Disney+",
@@ -281,7 +188,7 @@
    }
   ],
   "v": 2,
-  "espn": "Bósnia e Herzegovina x Romênia",
+  "espn": "Irlanda x Kosovo",
   "sel": 1
  },
  {

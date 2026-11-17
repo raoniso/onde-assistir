@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 17/11 18:07 BRT — janela 2026-11-17 a 2026-11-23",
-   "  ✓ mantosdofutebol: 48 evento(s)",
+   "Coleta 17/11 19:22 BRT — janela 2026-11-17 a 2026-11-23",
+   "  ✓ mantosdofutebol: 44 evento(s)",
    "  ✓ goal (2º guia): 38 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 177 eventos → eventos.json",
+   "TOTAL: 172 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,7 +36,7 @@
      {
       "cabecalho": "Terça – 17/11",
       "data": "2026-11-17",
-      "jogos": 21
+      "jogos": 17
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -46,15 +46,7 @@
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": [
-     {
-      "linha": "16h45 – Bósnia e Herzegovina – UEFA Nations League",
-      "seguintes": [
-       "Canais: Disney+",
-       "16h45 – Irlanda x Kosovo – UEFA Nations League"
-      ]
-     }
-    ]
+    "linhas_de_jogo_nao_lidas": []
    },
    {
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
@@ -128,10 +120,9 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 31,
+   "nos_dois": 32,
    "so_no_segundo": [
     "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
-    "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]",
     "11-19 00:00 Seattle Sounders x Real Salt Lake [MLS]",
     "11-20 14:30 Al Ahli x Al Nassr [Campeonato Saudita]",
     "11-20 16:30 Bayern de Munique x Colônia [Campeonato Alemão]",
