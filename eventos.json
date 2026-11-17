@@ -10,39 +10,20 @@
   "match": "Singapura x Brasil",
   "ch": [
    {
-    "n": "GE TV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@getv"
-   },
-   {
     "n": "Globo",
     "y": "free"
    },
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
    }
   ],
   "v": 2,
   "espn": "Singapura x Brasil",
-  "sel": 1
- },
- {
-  "date": "2026-11-17",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Euro Sub-19",
-  "detail": "Qualificação",
-  "match": "Lituânia x Alemanha",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
   "sel": 1
  },
  {
@@ -1017,6 +998,23 @@
  {
   "date": "2026-11-19",
   "t": "00:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "—",
+  "match": "Seattle Sounders x Real Salt Lake",
+  "ch": [
+   {
+    "n": "Apple Tv",
+    "y": "tv"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-19",
+  "t": "00:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -1050,17 +1048,166 @@
  },
  {
   "date": "2026-11-19",
-  "t": "19:30",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Paris FC x HB Koge",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-19",
+  "t": "14:45",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Austria Viena x Bayern de Munique",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-19",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Peñarol x Cerro Largo",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-19",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Boston River x Deportivo Maldonado",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-19",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Progreso x Montevideo City Torque",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-19",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Arsenal x Lyon",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-19",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Benfica x Roma",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-19",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Europa (demais)",
+  "league": "UEFA Champions League Feminina",
+  "detail": "—",
+  "match": "Barcelona x Servette",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-19",
+  "t": "17:00",
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Vasco da Gama x Internacional",
+  "league": "Taça Fares Lopes",
+  "detail": "—",
+  "match": "Fortaleza B x Tirol",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
    }
   ],
   "v": 1
@@ -1072,12 +1219,53 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "—",
+  "match": "Vasco da Gama x Internacional",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Vasco da Gama x Internacional"
+ },
+ {
+  "date": "2026-11-19",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "—",
   "match": "Vitória x Red Bull Bragantino",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Vitória x Red Bull Bragantino"
+ },
+ {
+  "date": "2026-11-19",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Paraíba",
+  "detail": "—",
+  "match": "Treze x Serra Branca",
+  "ch": [
+   {
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
    }
   ],
   "v": 1
@@ -1089,15 +1277,42 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "São Paulo x Fluminense",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
+   },
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "São Paulo x Fluminense"
+ },
+ {
+  "date": "2026-11-19",
+  "t": "21:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "—",
+  "match": "Orlando City x FC Cincinnati",
+  "ch": [
+   {
+    "n": "Appletv",
     "y": "tv"
    }
   ],
-  "v": 1
+  "v": 2
  },
  {
   "date": "2026-11-19",
@@ -1194,6 +1409,56 @@
  },
  {
   "date": "2026-11-20",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Campeonato Saudita",
+  "detail": "—",
+  "match": "Al Ahli x Al Nassr",
+  "ch": [
+   {
+    "n": "Canal GOAT",
+    "y": "free"
+   },
+   {
+    "n": "XSports",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Campeonato Alemão",
+  "detail": "—",
+  "match": "Bayern de Munique x Colônia",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Onefootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
   "t": "16:30",
   "sport": "Futebol",
   "g": "M",
@@ -1216,15 +1481,16 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Troyes x Le Havre AC",
+  "detail": "—",
+  "match": "Troyes x Le Havre",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1
+  "v": 2,
+  "espn": "Troyes x Le Havre AC"
  },
  {
   "date": "2026-11-20",
@@ -1233,15 +1499,20 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Athletic Club x Espanyol",
+  "detail": "—",
+  "match": "Athletic Bilbao x Espanyol",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "SportyNet (Tv",
     "y": "tv"
+   },
+   {
+    "n": "YouTube)",
+    "y": "free"
    }
   ],
-  "v": 1
+  "v": 2,
+  "espn": "Athletic Club x Espanyol"
  },
  {
   "date": "2026-11-20",

@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 17/11 09:07 BRT — janela 2026-11-17 a 2026-11-23",
-   "  ✓ mantosdofutebol: 36 evento(s)",
-   "  ✓ goal (2º guia): 24 evento(s)",
+   "Coleta 17/11 16:23 BRT — janela 2026-11-17 a 2026-11-23",
+   "  ✓ mantosdofutebol: 48 evento(s)",
+   "  ✓ goal (2º guia): 38 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 164 eventos → eventos.json",
+   "TOTAL: 177 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,7 +36,7 @@
      {
       "cabecalho": "Terça – 17/11",
       "data": "2026-11-17",
-      "jogos": 23
+      "jogos": 21
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -63,28 +63,33 @@
       "cabecalho": "Quarta – 18/11",
       "data": "2026-11-18",
       "jogos": 13
+     },
+     {
+      "cabecalho": "Quinta – 19/11",
+      "data": "2026-11-19",
+      "jogos": 14
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 1,
+    "futsal_descartados": 3,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": [
      {
-      "linha": "17h00 – Copa Intercontinental Futsal (Semifinal)",
+      "linha": "16h00 – Copa Intercontinental de Futsal (3° lugar)",
       "seguintes": [
-       "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
-       "19h30 – Coritiba x Santos – Brasileirão"
+       "Canais: Youtube.com/@canalgolbrasil",
+       "16h30 – Peñarol x Cerro Largo – Campeonato Uruguaio"
       ]
      },
      {
-      "linha": "20h00 – Copa Intercontinental Futsal (Semifinal)",
+      "linha": "19h00 – Copa Intercontinental de Futsal (FINAL)",
       "seguintes": [
        "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
-       "20h30 – Flamengo x Athletico-PR – Brasileirão"
+       "19h30 – Vasco da Gama x Internacional – Brasileirão"
       ]
      }
     ]
@@ -92,8 +97,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 346984,
-   "tabelas": 3,
+   "bytes": 412643,
+   "tabelas": 5,
    "dias": [
     {
      "titulo": "Jogos de terça, 17 de novembro de 2026",
@@ -104,6 +109,16 @@
      "titulo": "Jogos de quarta, 18 de novembro de 2026",
      "data": "2026-11-18",
      "jogos": 10
+    },
+    {
+     "titulo": "Jogos de quinta, 19 de novembro de 2026",
+     "data": "2026-11-19",
+     "jogos": 10
+    },
+    {
+     "titulo": "Jogos de sexta, 20 de novembro de 2026",
+     "data": "2026-11-20",
+     "jogos": 4
     }
    ],
    "linhas_nao_lidas": []
@@ -113,9 +128,15 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 23,
+   "nos_dois": 31,
    "so_no_segundo": [
-    "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
+    "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
+    "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]",
+    "11-19 00:00 Seattle Sounders x Real Salt Lake [MLS]",
+    "11-20 14:30 Al Ahli x Al Nassr [Campeonato Saudita]",
+    "11-20 16:30 Bayern de Munique x Colônia [Campeonato Alemão]",
+    "11-20 16:45 Troyes x Le Havre [Campeonato Francês]",
+    "11-20 17:00 Athletic Bilbao x Espanyol [Campeonato Espanhol]"
    ],
    "horario_diferente": []
   },
