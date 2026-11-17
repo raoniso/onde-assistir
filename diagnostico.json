@@ -3,28 +3,28 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 15,
+   "Brasileirão Série A": 18,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 1,
-   "Premier League": 9,
-   "La Liga": 9,
+   "Premier League": 10,
+   "La Liga": 10,
    "Bundesliga": 9,
-   "Campeonato Italiano": 9,
+   "Campeonato Italiano": 10,
    "Campeonato Francês": 9,
    "Amistoso": 1,
-   "UEFA Nations League": 18,
+   "UEFA Nations League": 8,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 16/11 23:32 BRT — janela 2026-11-16 a 2026-11-22",
-   "  ✓ mantosdofutebol: 38 evento(s)",
-   "  ✓ goal (2º guia): 36 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 82 evento(s)",
+   "Coleta 17/11 09:07 BRT — janela 2026-11-17 a 2026-11-23",
+   "  ✓ mantosdofutebol: 36 evento(s)",
+   "  ✓ goal (2º guia): 24 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 171 eventos → eventos.json",
+   "TOTAL: 164 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -33,11 +33,6 @@
    {
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
-     {
-      "cabecalho": "Segunda – 16/11",
-      "data": "2026-11-16",
-      "jogos": 2
-     },
      {
       "cabecalho": "Terça – 17/11",
       "data": "2026-11-17",
@@ -52,13 +47,6 @@
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": [
-     {
-      "linha": "21h00 – Trinidad e Tobago – CONCACAF Nations League",
-      "seguintes": [
-       "Canais: Youtube.com/@concacaf",
-       "22h00 – Canadá x Guatemala – CONCACAF Nations League (QF-volta)"
-      ]
-     },
      {
       "linha": "16h45 – Bósnia e Herzegovina – UEFA Nations League",
       "seguintes": [
@@ -104,14 +92,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 396472,
-   "tabelas": 4,
+   "bytes": 346984,
+   "tabelas": 3,
    "dias": [
-    {
-     "titulo": "Jogos de segunda, 16 de novembro de 2026",
-     "data": "2026-11-16",
-     "jogos": 12
-    },
     {
      "titulo": "Jogos de terça, 17 de novembro de 2026",
      "data": "2026-11-17",
@@ -130,28 +113,17 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 24,
+   "nos_dois": 23,
    "so_no_segundo": [
-    "11-16 12:00 Ilhas Faroé x Moldávia [Liga das Nações C]",
-    "11-16 12:00 Cazaquistão x Eslováquia [Liga das Nações C]",
-    "11-16 14:00 Islândia x Luxemburgo [Liga das Nações C]",
-    "11-16 14:00 Estônia x Bulgária [Liga das Nações C]",
-    "11-16 14:00 Lituânia x Liechtenstein [Liga das Nações D]",
-    "11-16 15:00 Andorra x Azerbaijão [Amistoso Internacional]",
-    "11-16 16:45 Alemanha x Holanda [Liga das Nações A]",
-    "11-16 16:45 Grécia x Sérvia [Liga das Nações A]",
-    "11-16 16:45 Suíça x Escócia [Liga das Nações B]",
-    "11-16 16:45 Macedônia do Norte x Eslovênia [Liga das Nações B]",
-    "11-16 16:45 Gibraltar x Malta [Liga das Nações D]",
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
    "horario_diferente": []
   },
   "nba_broadcasts": [
-   "Orlando Magic x Boston Celtics :: NBCSN | NBCSN",
-   "Chicago Bulls x Cleveland Cavaliers :: DAZN CLE | DAZN CLE",
-   "Memphis Grizzlies x Washington Wizards :: MNMT | MNMT",
-   "Philadelphia 76ers x Brooklyn Nets :: DAZN (YES) | DAZN (YES)"
+   "New York Knicks x Toronto Raptors :: (vazio)",
+   "Portland Trail Blazers x Minnesota Timberwolves :: BLAZERVISION | DAZN MIN | BLAZERVISION | DAZN MIN",
+   "Detroit Pistons x San Antonio Spurs :: NBC | NBC",
+   "Utah Jazz x LA Clippers :: CLIPPERVISION | KJZZ-TV | JAZZ+ | CLIPPERVISION | KJZZ-TV | JAZZ+"
   ]
  },
  "build": "2026-11-13-a",
