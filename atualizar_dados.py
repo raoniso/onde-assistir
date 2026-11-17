@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-13-a (memória por dia dos guias; alarme por tempo; coleta de hora em hora)
+# build: 2026-11-17-a (canal entre parênteses e endereço de YouTube repetido; "Juniors" não é base)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -62,7 +62,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-BUILD = "2026-11-13-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
+BUILD = "2026-11-17-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 DIAG = {"fontes": {}, "amostras": {}}
 DIAS_LIDOS = {"mantos": set(), "goal": set()}     # dias (ISO) que cada guia listou nesta coleta
@@ -79,10 +79,10 @@ def norm(s):
 
 CANAIS_FREE = {"GLOBO","SBT","BAND","RECORD","REDETV","TV BRASIL","CAZE TV","CAZETV",
                "XSPORTS","YOUTUBE","CANAL GOAT","GOAT","METROPOLES","TV CULTURA",
-               "SPORTYNET","GE TV","GETV","NSPORTS","N SPORTS","FIFA+"}
+               "SPORTYNET","GE TV","GETV","NSPORTS","N SPORTS","FIFA+","RECORD NEWS"}
 CANAIS_STREAM = {"DISNEY+","MAX","HBO MAX","PARAMOUNT+","PRIME VIDEO","AMAZON PRIME VIDEO",
                  "ONEFOOTBALL","FANATIZ","ZAPPING","UOL PLAY","GLOBOPLAY","PREMIERE FC",
-                 "PREMIERE","DAZN","APPLE TV+","NOSSO FUTEBOL+","NBA LEAGUE PASS"}
+                 "PREMIERE","DAZN","APPLE TV+","APPLE TV","APPLETV","NOSSO FUTEBOL+","NBA LEAGUE PASS"}
 
 # Grafia das marcas (aplicada depois do .title(), que escreveria "Espn", "Sbt"...)
 MARCAS = [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
@@ -90,7 +90,8 @@ MARCAS = [("Fc","FC"),("Espn","ESPN"),("Sbt","SBT"),("Sportv","SporTV"),
           ("Xsports","XSports"),("Hbo","HBO"),("Tnt","TNT"),("Nba","NBA"),
           ("Ge Tv","GE TV"),("Getv","GE TV"),("Nsports","N Sports"),
           ("Youtube","YouTube"),("Dazn","DAZN"),("Fifa","FIFA"),("Goat","GOAT"),
-          ("Redetv","RedeTV"),("Sportynet","SportyNet")]
+          ("Redetv","RedeTV"),("Sportynet","SportyNet"),
+          ("Apple Tv","Apple TV"),("Appletv","Apple TV"),("Onefootball","OneFootball")]
 def grafia(nome):
     for a, dep in MARCAS: nome = nome.replace(a, dep)
     return nome
@@ -105,17 +106,23 @@ def canal(nome):
     """Nome cru da fonte -> {"n": nome exibido, "y": tv|stream|free, "u": link exato}.
     "u" só existe quando a própria fonte deu o endereço (canais de YouTube)."""
     nome = " ".join(nome.split())
-    yt = re.search(r"youtube\.com/@([\w.\-]+)", nome, re.I)
-    if yt:   # 'Youtube.com/@TNTSportsBR' -> 'TNT Sports BR (YouTube)', grátis, link do canal
-        handle = yt.group(1)
+    if re.search(r"youtube\.com/@", nome, re.I):
+        # 'Youtube.com/@TNTSportsBR' -> 'TNT Sports BR (YouTube)', grátis, link do canal.
+        # A fonte às vezes repete o começo do endereço ('Youtube.com/@Youtube.com/@concacaf'):
+        # o canal é o último @, e 'youtube.com' nunca é nome de canal.
+        handles = [h.rstrip(".-") for h in re.findall(r"@([\w.\-]+)", nome)]
+        handles = [h for h in handles if h and not re.fullmatch(r"(www\.)?youtube(\.com)?", h, re.I)]
+        if not handles: return {"n": "YouTube", "y": "free"}
+        handle = handles[-1]
         legivel = NOMES_YT.get(handle.lower())
         if not legivel:
             legivel = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])", " ", handle)
             legivel = grafia(legivel[:1].upper() + legivel[1:])
         return {"n": f"{legivel} (YouTube)", "y": "free", "u": f"https://www.youtube.com/@{handle}"}
     chave = sem_acento(nome).upper().strip()
-    tipo = "free" if chave in CANAIS_FREE or "YOUTUBE" in chave else \
-           "stream" if chave in CANAIS_STREAM else "tv"
+    base = re.sub(r"\s*\([^()]*\)$", "", chave).strip() or chave      # "Globo (SP)" é a Globo
+    tipo = "free" if chave in CANAIS_FREE or base in CANAIS_FREE or "YOUTUBE" in chave else \
+           "stream" if chave in CANAIS_STREAM or base in CANAIS_STREAM else "tv"
     return {"n": grafia(nome.title()), "y": tipo}
 
 # País/região de cada liga, alinhado com os chips fixos do app. A PRIMEIRA
@@ -161,17 +168,40 @@ def evento(date, t, sport, league, match, ch, detail="—", g=None, country=None
 # =================================================================
 # FUTEBOL — guia de TV principal: mantosdofutebol.com.br
 # =================================================================
-def separa_canais_mantos(texto):
-    """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X),
-    que seguem inteiras para canal() extrair nome e link."""
-    out = []
-    for parte in re.split(r",| e ", texto):
-        parte = parte.strip()
-        if not parte: continue
-        if ".com" in parte.lower():
-            out.append(parte)
+def divide_fora_dos_parenteses(texto, separadores):
+    """Como str.split, mas sem cortar o que está entre parênteses."""
+    if texto.count("(") != texto.count(")"):            # parêntese sem par: corta em tudo, como sempre foi
+        return [p.strip() for p in re.split("|".join(map(re.escape, separadores)), texto) if p.strip()]
+    partes, atual, nivel, i = [], "", 0, 0
+    while i < len(texto):
+        c = texto[i]
+        if c == "(": nivel += 1
+        elif c == ")": nivel -= 1
+        sep = next((x for x in separadores if texto.startswith(x, i)), None) if nivel == 0 else None
+        if sep:
+            partes.append(atual); atual = ""; i += len(sep)
         else:
-            out += [p.strip() for p in parte.split("/") if p.strip()]
+            atual += c; i += 1
+    partes.append(atual)
+    return [p.strip() for p in partes if p.strip()]
+
+# "(TV e YouTube)", "(TV/YouTube)": o parêntese só diz ONDE o canal passa
+_ONDE = r"(?:tv(?: aberta| fechada)?|youtube|app|site|streaming|online)"
+RX_SO_ONDE_PASSA = re.compile(rf"{_ONDE}(?:\s*(?:,|/|\+|&|\be\b)\s*{_ONDE})+", re.I)
+
+def separa_canais_mantos(texto):
+    """Divide 'A, B e C' e 'Globo/SporTV' sem quebrar URLs (Youtube.com/@X), que
+    seguem inteiras para canal() extrair nome e link, nem o que vem entre
+    parênteses: 'SportyNet (TV e YouTube)' é o mesmo canal em dois lugares."""
+    out = []
+    for parte in divide_fora_dos_parenteses(texto, [",", " e "]):
+        for p in ([parte] if ".com" in parte.lower() else divide_fora_dos_parenteses(parte, ["/"])):
+            m = re.fullmatch(r"(.+?)\s*\(([^()]*)\)", p)
+            if m and RX_SO_ONDE_PASSA.fullmatch(m.group(2).strip()):
+                out.append(m.group(1).strip())
+                if re.search(r"youtube", m.group(2), re.I): out.append(m.group(1).strip() + " (YouTube)")
+            else:
+                out.append(p)
     return out
 
 # Cabeçalho de dia nas páginas do mantos: "Segunda – 09/11", "Sexta-feira, 13/11"...
@@ -478,14 +508,18 @@ def fonte_fixtures():
 # =================================================================
 # Cruzamento entre fontes
 # =================================================================
-RE_BASE = re.compile(r"sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|junior|aspirantes|\bbase\b|\bcopinha\b", re.I)
+# "Sub-20" e "U-21" valem em qualquer campo; "júnior", "juvenil" etc. só no nome do
+# campeonato: há clubes chamados Boca Juniors, Argentinos Juniors e Junior Barranquilla.
+RE_BASE = re.compile(r"\bsub.?\d{1,2}\b|\bu-?\d{2}\b", re.I)
+RE_BASE_LIGA = re.compile(r"juvenil|\bjunior(es)?\b|aspirantes|\bbase\b|\bcopinha\b", re.I)
 RE_TIME_B = re.compile(r"\s(B|II)$")
 
 def categoria(e):
     """Elenco que joga: feminino, base (Sub-20...), time B ou principal.
     O mesmo confronto no mesmo dia em categorias diferentes são jogos DIFERENTES."""
     if e.get("g") == "F": return "F"
-    if RE_BASE.search(sem_acento(f'{e["match"]} {e["league"]} {e.get("detail") or ""}')): return "base"
+    if RE_BASE.search(sem_acento(f'{e["match"]} {e["league"]} {e.get("detail") or ""}')) \
+            or RE_BASE_LIGA.search(sem_acento(e["league"])): return "base"
     if any(RE_TIME_B.search(t.strip()) for t in re.split(r"\s+x\s+", e["match"], flags=re.I)): return "B"
     return "principal"
 
@@ -871,6 +905,11 @@ def main():
     for e in eventos:
         e["ch"] = [c for c in e["ch"]
                    if c.get("u") or c["n"].strip().upper() == "FIFA+" or not PSEUDO.search(sem_acento(c["n"]))]
+        unicos = {}                               # o mesmo canal duas vezes no jogo: fica um, de preferência o que tem link
+        for c in e["ch"]:
+            k = norm(c["n"]) or c["n"]
+            if k not in unicos or (c.get("u") and not unicos[k].get("u")): unicos[k] = c
+        e["ch"] = list(unicos.values())
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
         if eh_selecao(e): e["sel"] = 1            # filtro "Seleções" do app
     eventos.sort(key=lambda e: (e["date"], e["t"]))
