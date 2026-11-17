@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-17-a (canal entre parênteses e endereço de YouTube repetido; "Juniors" não é base)
+# build: 2026-11-17-b (ESPN com nova tentativa e memória por dia; canal entre parênteses; "Juniors" não é base)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -36,6 +36,11 @@ de listar um dia que já listou, vale a última leitura daquele dia. Dia listado
 agora sempre substitui a memória. O mesmo vale se o guia sair do ar, inteiro ou
 só uma das páginas. A memória nunca derruba a coleta: se estiver estragada, ou
 tiver sido gravada por outra versão deste arquivo, é descartada e recomeça.
+A ESPN (NBA, NFL e tabelas) tem a mesma proteção, por dia consultado: cada
+consulta é tentada 3 vezes; se mesmo assim não responder — ou responder uma
+lista vazia para um dia que tinha jogos há menos de 12 horas — vale a última
+leitura daquele dia (le_espn). Em 17/11/2026 a ESPN falhou só nas consultas da
+NFL e os 13 jogos da semana sumiram do app sem aviso; não acontece mais.
 
 SAÍDAS: eventos.json (dados), index.html (= template onde-assistir.html +
 dados embutidos), memoria_guias.json (última leitura de cada dia dos guias) e
@@ -43,7 +48,8 @@ diagnostico.json (log das fontes + amostras brutas — é por ele que se depura,
 sem precisar do log do Actions).
 
 ALARME: se o guia principal ficar 2 horas sem jogos (ou a ESPN inteira fora),
-ou o segundo guia ficar um dia sem jogos, o robô publica o que tem e depois
+a ESPN ficar 6 horas falhando em alguma consulta, ou o segundo guia ficar um
+dia sem jogos, o robô publica o que tem e depois
 falha de propósito — o GitHub avisa o dono do repositório por e-mail. Uma falha
 isolada não toca. Repete o aviso a cada 24h enquanto durar.
 
@@ -55,6 +61,7 @@ import difflib
 import json
 import os
 import re
+import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -62,7 +69,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-BUILD = "2026-11-17-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
+BUILD = "2026-11-17-b"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 DIAG = {"fontes": {}, "amostras": {}}
 DIAS_LIDOS = {"mantos": set(), "goal": set()}     # dias (ISO) que cada guia listou nesta coleta
@@ -341,23 +348,109 @@ def fonte_mantos():
 # informa em cada jogo (canais_nba); NFL usa a janela de horário do contrato
 # (canais_nfl); futebol entra como "Transmissão a confirmar".
 # =================================================================
-def espn_json(path, data, extra=""):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}{extra}"
-    r = requests.get(url, headers=HEADERS, timeout=30); r.raise_for_status()
-    return r.json()
+class EnderecoMorto(Exception):
+    """A ESPN respondeu que o endereço não existe (400/404): tentar de novo não adianta."""
 
-def espn_eventos(path, dias, extra=""):
-    """Eventos do scoreboard em cada dia pedido. Um dia que falhe não derruba
-    os outros; só é erro se TODAS as consultas falharem."""
-    evs, falhas = [], 0
+ESPN_TENTATIVAS, ESPN_ESPERA = 3, 2      # tentativas por consulta; segundos de espera entre elas (x1, x2)
+ESPN_SUSPEITA_H = 12                     # resposta vazia para um dia que tinha jogos há menos de 12 h: não vale
+ESPN_CORTE = 4                           # consultas seguidas sem resposta até desistir da ESPN nesta coleta
+ESPN = {"memoria": {}, "agora": None, "faltas": [], "sem_resposta": set(), "seguidas": 0, "cortada": False}     # o main() zera a cada coleta
+
+def espn_json(path, data, extra=""):
+    # ESPN parada: depois de 4 consultas seguidas sem resposta, não insiste nas outras
+    # (cada uma poderia levar minutos, e a coleta tem de terminar para publicar o resto)
+    if ESPN["cortada"]: raise RuntimeError("ESPN sem resposta nesta coleta")
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}{extra}"
+    erro = None
+    for tentativa in range(1, ESPN_TENTATIVAS + 1):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+        except Exception as e:               # sem resposta: rede, tempo esgotado
+            erro = e
+        else:
+            if r.status_code in (400, 404): raise EnderecoMorto(f"HTTP {r.status_code}")
+            try:
+                r.raise_for_status()
+                dados = r.json()
+                if isinstance(dados, dict):
+                    ESPN["seguidas"] = 0
+                    return dados
+                erro = ValueError("resposta da ESPN fora do formato")
+            except Exception as e:           # 403, 429, 5xx, ou corpo que não é JSON
+                erro = e
+        if tentativa < ESPN_TENTATIVAS: time.sleep(ESPN_ESPERA * tentativa)
+    ESPN["seguidas"] += 1
+    if ESPN["seguidas"] >= ESPN_CORTE: ESPN["cortada"] = True
+    raise erro
+
+def le_espn(chave, path, dias, converte, extra=""):
+    """Lê o scoreboard de `path` dia a dia e devolve os jogos já convertidos
+    (`converte(evento cru)` devolve um evento do app, ou None para descartar).
+    A ESPN às vezes falha numa consulta, ou responde uma lista vazia por engano;
+    antes, os jogos daquele dia simplesmente sumiam do app. Agora cada dia
+    consultado tem memória (memoria_guias.json, em "espn") e, para cada dia, vale:
+      - respondeu com jogos ................... a leitura de agora;
+      - não respondeu, depois de 3 tentativas . a última leitura daquele dia;
+      - respondeu vazio, mas a última leitura, de menos de 12 h, tinha jogos:
+        resposta suspeita, vale a última leitura (um dia inteiro não some de uma
+        hora para a outra; se sumiu mesmo, a coleta depois das 12 h aceita);
+      - respondeu vazio e não havia jogos ..... vazio mesmo.
+    O que veio da memória fica anotado em ESPN["faltas"]: vai para o log, para o
+    diagnóstico e, se durar, para o alarme. Só levanta erro quando nenhum dia
+    respondeu e não há memória nenhuma (endereço morto, ou ESPN fora do ar na
+    primeira coleta)."""
+    copia = lambda x: json.loads(json.dumps(x))
+    respostas, mortos = {}, []
     for data in dias:
         try:
-            evs += espn_json(path, data, extra).get("events", [])
+            respostas[data.isoformat()] = espn_json(path, data, extra).get("events") or []
+        except EnderecoMorto:
+            mortos.append(data.isoformat())
         except Exception:
-            falhas += 1
-    if falhas == len(dias):
-        raise RuntimeError(f"ESPN {path}: as {falhas} consultas falharam")
-    return evs
+            pass
+    if not respostas: ESPN["sem_resposta"].add(chave)
+    agora = ESPN["agora"] or datetime.now(BRT)
+    todas = ESPN["memoria"].get("espn")
+    if not isinstance(todas, dict): todas = ESPN["memoria"]["espn"] = {}
+    antiga = todas.get(chave) if isinstance(todas.get(chave), dict) else {}
+    def guardado_de(dia):                    # leitura anterior do dia, se estiver inteira
+        g = antiga.get(dia)
+        ok = isinstance(g, dict) and isinstance(g.get("jogos"), list) and \
+             all(isinstance(j, dict) and all(isinstance(j.get(k), str) for k in ("date", "t", "match")) and isinstance(j.get("ch"), list)
+                 for j in g["jogos"])
+        return g if ok else None
+    def idade_h(g):
+        try: return (agora - datetime.fromisoformat(g["em"])).total_seconds() / 3600
+        except Exception: return 1e9
+    def converte_sem_quebrar(ev):            # um evento malformado não derruba a fonte
+        try: return converte(ev)
+        except Exception: return None
+    nova, saida = {}, []
+    for dia in (d.isoformat() for d in dias):
+        g = guardado_de(dia)
+        if dia in respostas:
+            crus = respostas[dia]
+            if crus or not (g and g["jogos"]) or idade_h(g) > ESPN_SUSPEITA_H:
+                jogos = [j for j in map(converte_sem_quebrar, crus) if j]
+                nova[dia] = {"lido_em": agora.strftime("%d/%m %H:%M"), "em": agora.isoformat(timespec="minutes"), "jogos": copia(jogos)}
+                saida += jogos
+                continue
+            motivo = "respondeu vazio"
+        elif dia in mortos and not antiga:
+            continue                         # endereço que nunca funcionou: não é falta de um dia, é ERRO da liga
+        else:
+            motivo = "não respondeu"
+        rotulo = f"{chave} {dia[8:]}/{dia[5:7]} {motivo}"
+        if g:
+            nova[dia] = g
+            saida += copia(g["jogos"])
+            ESPN["faltas"].append(f'{rotulo}: vale a leitura de {g.get("lido_em", "?")}, com {len(g["jogos"])} jogo(s)')
+        else:
+            ESPN["faltas"].append(f"{rotulo} e não há leitura anterior desse dia")
+    todas[chave] = nova
+    if not respostas and not saida:
+        raise RuntimeError(f"ESPN {path}: nenhuma das {len(dias)} consultas respondeu")
+    return saida
 
 # A ESPN agrupa os jogos pelo dia dos EUA. Jogo que começa depois da
 # meia-noite de Brasília (00h00–02h) pertence à rodada americana da VÉSPERA,
@@ -389,23 +482,22 @@ def canais_nba(comp):
     return ch
 
 def fonte_nba():
-    evs = []
-    for ev in espn_eventos("basketball/nba", DIAS_EUA):
+    def converte(ev):
         dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-        if dt.date() not in JANELA: continue
+        if dt.date() not in JANELA: return None
         comp = ev.get("competitions", [{}])[0]
         times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
-        if len(times) < 2: continue
+        if len(times) < 2: return None
         # instrumentação: transmissores crus dos primeiros jogos (valida canais_nba)
         if len(DIAG["amostras"].get("nba_broadcasts", [])) < 4:
             DIAG["amostras"].setdefault("nba_broadcasts", []).append(
                 f"{times[1]} x {times[0]} :: {broadcasts_espn(comp) or '(vazio)'}")
         notas = comp.get("notes", [])
         detalhe = (notas[0].get("headline") if notas else "") or "—"   # só o que a ESPN destaca (NBA Cup, jogo internacional)
-        evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
-                          f"{times[1]} x {times[0]}", canais_nba(comp),
-                          detail=detalhe, country="EUA/Canadá"))
-    return dedup(evs)
+        return evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
+                      f"{times[1]} x {times[0]}", canais_nba(comp),
+                      detail=detalhe, country="EUA/Canadá")
+    return dedup(le_espn("NBA", "basketball/nba", DIAS_EUA, converte))
 
 # Direitos NFL no Brasil 2026/27 (contratos públicos, por janela de horário):
 # quinta = SporTV; segunda à noite = ESPN; domingo à noite = SporTV;
@@ -424,19 +516,18 @@ def canais_nfl(dt):
     return base
 
 def fonte_nfl():
-    evs = []
-    for ev in espn_eventos("football/nfl", DIAS_EUA):
+    def converte(ev):
         dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-        if dt.date() not in JANELA: continue
+        if dt.date() not in JANELA: return None
         comp = ev.get("competitions", [{}])[0]
         times = [c.get("team", {}).get("displayName", "?") for c in comp.get("competitors", [])]
-        if len(times) < 2: continue
+        if len(times) < 2: return None
         notas = comp.get("notes", [])
         detalhe = (notas[0].get("headline") if notas else "") or "—"   # só o que a ESPN destaca (NBA Cup, jogo internacional)
-        evs.append(evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
-                          f"{times[1]} x {times[0]}", canais_nfl(dt),
-                          detail=detalhe, country="EUA/Canadá"))
-    return dedup(evs)
+        return evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
+                      f"{times[1]} x {times[0]}", canais_nfl(dt),
+                      detail=detalhe, country="EUA/Canadá")
+    return dedup(le_espn("NFL", "football/nfl", DIAS_EUA, converte))
 
 
 # =================================================================
@@ -472,35 +563,31 @@ def fonte_fixtures():
     ligas = [(s, l, p, "", None, False) for s, l, p in LIGAS_FIXTURES] + \
             [(s, l, p, ESPN_PT, so, True) for s, l, p, so in LIGAS_SELECOES]
     for slug, liga, pais, extra, so_time, selecoes in ligas:
-        try:
-            brutos = espn_eventos(slug, JANELA, extra)
-        except Exception as e:
-            por_liga[liga] = f"ERRO ({type(e).__name__})"   # slug inválido ou ESPN fora do ar
-            continue
-        n = 0
-        for ev in brutos:
-            try:
-                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
-            except Exception:
-                continue
-            if dt.date() not in JANELA: continue
+        def converte(ev, liga=liga, pais=pais, so_time=so_time, selecoes=selecoes):
+            dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+            if dt.date() not in JANELA: return None
             comp = ev.get("competitions", [{}])[0]
             cs = comp.get("competitors", [])
-            if len(cs) < 2: continue
+            if len(cs) < 2: return None
             home = next((c for c in cs if c.get("homeAway") == "home"), cs[0])
             away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
             hn = home.get("team", {}).get("displayName", "?")
             an = away.get("team", {}).get("displayName", "?")
-            if so_time and so_time not in (hn, an): continue
+            if so_time and so_time not in (hn, an): return None
             notas = comp.get("notes", [])
             detalhe = (notas[0].get("headline", "") if notas else "") or "Tabela oficial"
-            ev = evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
-                        f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
-                        detail=detalhe, country=pais, v=1)
-            if selecoes: ev["sel"] = 1
-            evs.append(ev)
-            n += 1
-        por_liga[liga] = n
+            jogo = evento(dt.date(), dt.strftime("%H:%M"), "Futebol", liga,
+                          f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
+                          detail=detalhe, country=pais, v=1)
+            if selecoes: jogo["sel"] = 1
+            return jogo
+        try:
+            jogos = le_espn(liga, slug, JANELA, converte, extra)
+        except Exception as e:
+            por_liga[liga] = f"ERRO ({type(e).__name__})"   # slug inválido ou ESPN fora do ar
+            continue
+        evs += jogos
+        por_liga[liga] = len(jogos)
     DIAG["fontes"]["espn_tabelas_por_liga"] = por_liga   # mostra slug morto na hora
     return dedup(evs)
 
@@ -867,6 +954,7 @@ def main():
         memoria = {}
     memoria["build"] = DIAG["build"] = BUILD
     for dias in DIAS_LIDOS.values(): dias.clear()
+    ESPN.update(memoria=memoria, agora=agora_dt, faltas=[], sem_resposta=set(), seguidas=0, cortada=False)
     agora_txt = agora_dt.strftime("%d/%m %H:%M")
 
     def le_guia(rotulo, nome, fn):
@@ -896,6 +984,13 @@ def main():
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN NFL", fonte_nfl, log)
+    # memória de novo, agora com a leitura da ESPN; e o que a ESPN deixou de responder nesta coleta
+    Path(MEMORIA).write_text(json.dumps(memoria, ensure_ascii=False, indent=1), encoding="utf-8")
+    ESPN["faltas"].sort(key=lambda f: "com 0 jogo(s)" in f)          # primeiro as que envolvem jogos
+    if ESPN["cortada"]: log.append("  ✗ ESPN parou de responder: as consultas seguintes desta coleta não foram feitas")
+    for falta in ESPN["faltas"][:12]: log.append(f"  ↺ ESPN {falta}")
+    if len(ESPN["faltas"]) > 12: log.append(f'  ↺ ESPN: mais {len(ESPN["faltas"]) - 12} consulta(s) na mesma situação')
+    DIAG["amostras"]["espn_faltas"] = ESPN["faltas"][:60]
     eventos = dedup_por_jogo(eventos)
     eventos = dedup(eventos)
     eventos = [e for e in eventos if JANELA[0].isoformat() <= e["date"] <= JANELA[-1].isoformat()]
@@ -932,9 +1027,11 @@ def main():
     if "goal (2º guia)" in falhas or not lidos2:            # menos urgente: espera um dia inteiro
         problemas.append(("guia2", "2º guia de TV (Goal) sem jogos: " + falhas.get("goal (2º guia)", "nenhum jogo lido"), 24))
     por_liga = DIAG["fontes"].get("espn_tabelas_por_liga") or {}
-    if "ESPN NBA" in falhas and "ESPN NFL" in falhas and por_liga \
-            and all(str(v).startswith("ERRO") for v in por_liga.values()):
+    fora = ESPN["sem_resposta"]             # fontes da ESPN em que nenhuma consulta respondeu
+    if {"NBA", "NFL"} <= fora and por_liga and all(liga in fora for liga in por_liga):
         problemas.append(("espn", "ESPN fora do ar (sem NBA, NFL e tabelas)", 2))
+    elif ESPN["faltas"]:                    # os jogos seguem no ar pela memória; avisa se continuar
+        problemas.append(("espn_dias", f'ESPN falhou em {len(ESPN["faltas"])} consulta(s): ' + "; ".join(ESPN["faltas"][:2]), 6))
     DIAG["saude"], alerta = avaliar_saude(saude_anterior, problemas, agora_dt)
     if alerta:
         log.append(f"ALARME: {alerta}")
