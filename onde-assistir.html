@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-17-c">
+<meta name="versao-da-tela" content="2026-11-17-d">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -553,7 +553,9 @@ function jogaAlgum(e, times){
   const lados = ladosDe(e);
   return times.some(t => lados.some(l => mesmoTime(t, l)));
 }
-const ehMeuTime = e => jogaAlgum(e, estado.times);
+/* "Meu time" é o time principal: jogo de base (Sub-20, Sub-17...) e do feminino não
+   contam, mesmo com o mesmo nome. (O filtro "Times" é outra coisa: vai pelo nome.) */
+const ehMeuTime = e => e.g !== 'F' && !ehBase(e) && jogaAlgum(e, estado.times);
 function ligaOk(e){
   for(const [nome,regra] of LIGAS)
     if(estado.ligas.includes(nome) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
@@ -813,7 +815,7 @@ function desenharFolha(){
     <header><h2 id="folha-titulo">${titulo}</h2><button type="button" class="texto" data-acao="fechar-folha">Pronto</button></header>`;
   el('folha').innerHTML = folhaModo==='time' ? `${topo('Meu time')}
     <p>Escolha seu time e sua seleção, quantos quiser. O dia em que eles jogam ganha um ponto amarelo no calendário, e o jogo, uma estrela.</p>
-    <p>Vale para todo jogo com esse nome: principal, feminino e base. Isso não filtra a lista.</p>
+    <p>Vale só para o time principal: jogos de base (Sub-20, Sub-17) e do feminino não contam. Isso não filtra a lista.</p>
     ${campoDeTime('times')}`
   : `${topo('Filtros')}
     <p>Marcou, a lista mostra só o que combina. Sem nada marcado, aparece tudo.</p>
