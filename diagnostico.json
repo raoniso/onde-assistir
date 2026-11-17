@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 17/11 16:23 BRT — janela 2026-11-17 a 2026-11-23",
+   "Coleta 17/11 17:40 BRT — janela 2026-11-17 a 2026-11-23",
    "  ✓ mantosdofutebol: 48 evento(s)",
    "  ✓ goal (2º guia): 38 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
-   "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 177 eventos → eventos.json",
+   "  ✓ ESPN NFL: 0 evento(s)",
+   "TOTAL: 164 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -97,7 +97,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 412643,
+   "bytes": 412715,
    "tabelas": 5,
    "dias": [
     {
@@ -147,7 +147,7 @@
    "Utah Jazz x LA Clippers :: CLIPPERVISION | KJZZ-TV | JAZZ+ | CLIPPERVISION | KJZZ-TV | JAZZ+"
   ]
  },
- "build": "2026-11-13-a",
+ "build": "2026-11-17-a",
  "saude": {
   "abertos": {}
  }

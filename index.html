@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-17-a">
+<meta name="versao-da-tela" content="2026-11-17-c">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -41,25 +41,29 @@
   /* ---------- topo fixo: marca, dias, filtros rápidos ---------- */
   .topo{position:sticky; top:0; z-index:20; background:rgba(10,13,19,.94); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
         border-bottom:1px solid var(--linha); padding-top:env(safe-area-inset-top)}
-  .marca{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:6px 4px 0 14px}
-  .marca h1{margin:0; font:800 23px/1 var(--placar); letter-spacing:.4px; text-transform:uppercase; white-space:nowrap}
+  .marca{display:flex; align-items:center; justify-content:space-between; gap:6px; padding:6px 4px 0 14px}
+  .nome{min-width:0}
+  .marca h1{margin:0; font:800 23px/1 var(--placar); letter-spacing:.4px; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .marca h1 b{color:var(--verde); font-weight:800}
-  .frescor{display:flex; align-items:center; min-width:0; color:var(--texto3); font-size:12.5px}
-  .frescor span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right:2px}
-  .frescor.velho span{color:var(--hora)}
-  .frescor i{font-style:normal}
-  @media (max-width:359px){ .frescor i{display:none} }
+  .frescor{margin:2px 0 0; min-height:15px; color:var(--texto3); font-size:12px; line-height:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}      /* de quando são os dados */
+  .frescor.velho{color:var(--hora)}
+  .botoes{display:flex; flex:0 0 auto}
+  @media (max-width:359px){ .marca h1{font-size:20px} }
   .icone{flex:0 0 auto; width:44px; height:44px; display:grid; place-items:center; color:var(--texto2); border-radius:12px}
   .icone.girando svg{animation:gira .8s linear infinite}
   @keyframes gira{to{transform:rotate(360deg)}}
-  .rolagem{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:4px 14px; scroll-padding:0 14px}
+  .rolagem{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:4px 14px}
   .rolagem::-webkit-scrollbar{display:none}
-  .dia{flex:0 0 auto; min-width:60px; height:46px; padding:0 12px; border-radius:12px; border:1px solid var(--linha); color:var(--texto2);
-       display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:600; font-size:13.5px; line-height:1.15}
+  .semana{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:5px; padding:4px 14px}      /* os 7 dias sempre à vista */
+  .dia{min-width:0; height:46px; border-radius:12px; border:1px solid var(--linha); color:var(--texto2);
+       display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:600; font-size:13px; line-height:1.15}
   .dia small{font-weight:500; font-size:12px; color:var(--texto3)}
   .dia.sel{background:var(--verde); border-color:var(--verde); color:#06140C}
   .dia.sel small{color:#0B3A22}
-  .dia i{width:6px; height:6px; border-radius:50%; background:var(--hora); position:absolute; top:5px; right:6px}
+  .dia i{width:7px; height:7px; border-radius:50%; background:var(--hora); position:absolute; top:4px; right:5px}      /* "Meu time" joga neste dia */
+  .dia.sel i{background:#06140C}
+  .icone.tem{color:var(--hora)}
+  .icone.tem path{fill:currentColor}
   .barra{display:flex; align-items:center; padding:6px 14px 10px 0}
   .barra .rolagem{flex:1 1 auto; padding:3px 18px 3px 14px; margin:-3px 0; scroll-padding:0 30px 0 14px; -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent); mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
   .rapido{flex:0 0 auto; height:38px; padding:0 14px; border-radius:19px; border:1px solid var(--linha); color:var(--texto2); font-weight:500; font-size:14px;
@@ -79,7 +83,6 @@
   .secao{margin:14px 4px 6px; font:600 13.5px/1.4 var(--corpo); color:var(--texto2); display:flex; align-items:center; gap:8px}
   .secao .pulso{width:8px; height:8px; border-radius:50%; background:var(--vivo)}
   .grupo{list-style:none; margin:0; padding:0; background:var(--faixa); border:1px solid var(--linha); border-radius:14px; overflow:hidden}
-  .grupo.recolhido{margin-top:8px}
   .jogo{display:grid; grid-template-columns:62px minmax(0,1fr); column-gap:6px; padding:11px 12px; border-top:1px solid var(--linha)}
   .jogo:first-child{border-top:0}
   .hora{font:700 27px/1 var(--placar); color:var(--hora); letter-spacing:.3px; padding-top:1px; min-width:0}
@@ -99,18 +102,20 @@
   .canal{position:relative; min-height:36px; padding:0 12px; border-radius:18px; border:1px solid var(--linha2); color:var(--texto2); font-weight:600; font-size:13px;
          display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
   a.canal::after{content:''; position:absolute; inset:-5px 0}                  /* alvo de toque de 44 px */
-  .canal.meu{background:var(--verde-fundo); border-color:transparent; color:var(--verde-texto)}
+  .canal.gratis{background:var(--verde-fundo); border-color:transparent; color:var(--verde-texto)}      /* verde = passa de graça */
   .canal small{font-weight:500; font-size:12px; opacity:.85}
   .aconfirmar{color:var(--texto3); font-size:13px; white-space:nowrap; align-self:center}
   .agora{display:flex; align-items:center; gap:10px; margin:12px 4px 2px; color:var(--vivo); font:600 12.5px/1 var(--corpo)}
   .agora::before,.agora::after{content:''; height:1px; background:var(--vivo); opacity:.55}
   .agora::before{width:14px} .agora::after{flex:1}
   .nada{margin:14px 4px 6px; color:var(--texto2); font-size:13.5px}
-  .dobra{width:100%; min-height:48px; margin-top:8px; padding:0 14px; border:1px dashed var(--linha2); border-radius:14px; color:var(--texto2); font-size:13.5px;
-         display:flex; align-items:center; justify-content:space-between; gap:10px; text-align:left}
-  .dobra b{color:var(--texto); font-weight:600}
-  .dobra svg{flex:0 0 auto; color:var(--texto3)}
-  .dobra[aria-expanded="true"] svg{transform:rotate(90deg)}
+  .ligados{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 4px 0; font-size:13px; color:var(--texto2)}
+  .etq{min-height:36px; padding:0 10px 0 12px; border-radius:18px; background:var(--verde-fundo); color:var(--verde-texto); font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:8px}
+  .etq::after{content:''; position:absolute; inset:-4px 0}                     /* alvo de toque de 44 px */
+  .etq b{font-weight:400; font-size:17px; line-height:1; opacity:.85}
+  .ligados .texto, .nada .texto{min-height:36px; padding:0 6px}
+  .legenda{display:flex; align-items:center; gap:8px; margin:14px 4px 0; color:var(--texto3); font-size:12.5px}
+  .legenda .canal{min-height:24px; padding:0 9px; font-size:12px}
   .dica, .vazio{margin-top:14px; padding:14px; border:1px solid var(--linha); border-radius:14px; background:var(--faixa); font-size:14px; color:var(--texto2)}
   .vazio{border-style:dashed; background:none; text-align:center; padding:28px 18px}
   .dica b, .vazio b{color:var(--texto); font-weight:600}
@@ -141,19 +146,11 @@
   .op.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto); font-weight:600}
   .op.sel::before{content:'✓'; font-weight:700}
   .op.mais::before{content:'+'; font-weight:600; color:var(--texto3)}
-  .chave{display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:52px; border-top:1px solid var(--linha); margin-top:16px; padding-top:12px}
-  .chave div{font-weight:600; font-size:14.5px}
-  .chave div small{display:block; font-weight:400; font-size:13px; color:var(--texto2)}
-  .liga-desliga{flex:0 0 auto; width:50px; height:30px; border-radius:15px; background:#3A465E; transition:background .15s}
-  .liga-desliga::before{content:''; position:absolute; inset:-7px 0}           /* alvo de toque de 44 px */
-  .liga-desliga::after{content:''; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; transition:transform .15s}
-  .liga-desliga[aria-checked="true"]{background:var(--verde)}
-  .liga-desliga[aria-checked="true"]::after{transform:translateX(20px)}
   .campo{width:100%; height:44px; border-radius:12px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px; margin-bottom:10px}
   .pe-folha{margin:18px -10px 0; border-top:1px solid var(--linha); padding-top:4px}
   @media (prefers-reduced-motion:no-preference){ .secao .pulso{animation:pulso 1.4s ease-in-out infinite} }
   @keyframes pulso{50%{opacity:.3}}
-  @media (prefers-reduced-motion:reduce){ .veu,.folha,.liga-desliga,.liga-desliga::after{transition:none !important} .icone.girando svg{animation:none} }
+  @media (prefers-reduced-motion:reduce){ .veu,.folha{transition:none !important} .icone.girando svg{animation:none} }
 </style>
 </head>
 <body>
@@ -161,15 +158,18 @@
 <header class="topo" id="topo">
   <div class="miolo">
     <div class="marca">
-      <h1>Onde<b>.</b>Assistir</h1>
-      <div class="frescor" id="frescor">
-        <span id="quando"></span>
+      <div class="nome">
+        <h1>Onde<b>.</b>Assistir</h1>
+        <p class="frescor" id="frescor"><span id="quando"></span></p>
+      </div>
+      <div class="botoes">
+        <button type="button" class="icone" id="abre-time" data-acao="abrir-time" aria-haspopup="dialog" aria-label="Meu time: marcar no calendário os dias em que ele joga"><svg width="19" height="19" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.6l2.3 4.7 5.2.75-3.75 3.65.9 5.15L10 14.4l-4.65 2.45.9-5.15L2.5 8.05l5.2-.75z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
         <button type="button" class="icone" id="abre-busca" data-acao="abrir-busca" aria-label="Buscar nos próximos 7 dias"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.2" stroke="currentColor" stroke-width="1.6"/><path d="m12 12 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
         <button type="button" class="icone" id="atualizar" data-acao="atualizar" aria-label="Atualizar agora"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M15 9a6 6 0 1 1-1.9-4.4M15 3v3.2h-3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       </div>
     </div>
     <div id="navegacao">
-      <nav class="rolagem" id="dias" aria-label="Dia"></nav>
+      <nav class="semana" id="dias" aria-label="Dia"></nav>
       <div class="barra">
         <div class="rolagem" id="rapidos" role="group" aria-label="O que mostrar"></div>
         <button type="button" class="rapido filtros" id="abre-filtros" data-acao="abrir-filtros" aria-haspopup="dialog">Filtros</button>
@@ -185,7 +185,7 @@
 <p class="fuso miolo" id="fuso" hidden>Os horários são de Brasília.</p>
 <main class="miolo" id="lista"></main>
 
-<div class="veu" id="veu" data-acao="fechar-filtros"></div>
+<div class="veu" id="veu" data-acao="fechar-folha"></div>
 <section class="folha" id="folha" role="dialog" aria-modal="true" aria-labelledby="folha-titulo" tabindex="-1"></section>
 
 <script>
@@ -521,7 +521,7 @@ const DB = [
    },
    {
     "n": "Record News",
-    "y": "tv"
+    "y": "free"
    },
    {
     "n": "HBO Max",
@@ -711,9 +711,9 @@ const DB = [
   "match": "México x Jamaica",
   "ch": [
    {
-    "n": "YouTube.com (YouTube)",
+    "n": "Concacaf (YouTube)",
     "y": "free",
-    "u": "https://www.youtube.com/@Youtube.com"
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 2,
@@ -1207,8 +1207,8 @@ const DB = [
   "match": "Seattle Sounders x Real Salt Lake",
   "ch": [
    {
-    "n": "Apple Tv",
-    "y": "tv"
+    "n": "Apple TV",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1509,8 +1509,8 @@ const DB = [
   "match": "Orlando City x FC Cincinnati",
   "ch": [
    {
-    "n": "Appletv",
-    "y": "tv"
+    "n": "Apple TV",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -1584,31 +1584,6 @@ const DB = [
   "v": 1
  },
  {
-  "date": "2026-11-19",
-  "t": "22:15",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Indianapolis Colts x Houston Texans",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-11-20",
   "t": "14:30",
   "sport": "Futebol",
@@ -1652,7 +1627,7 @@ const DB = [
     "y": "tv"
    },
    {
-    "n": "Onefootball",
+    "n": "OneFootball",
     "y": "stream"
    }
   ],
@@ -1704,11 +1679,11 @@ const DB = [
   "match": "Athletic Bilbao x Espanyol",
   "ch": [
    {
-    "n": "SportyNet (Tv",
-    "y": "tv"
+    "n": "SportyNet",
+    "y": "free"
    },
    {
-    "n": "YouTube)",
+    "n": "SportyNet (YouTube)",
     "y": "free"
    }
   ],
@@ -2711,153 +2686,6 @@ const DB = [
  },
  {
   "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Miami Dolphins x Buffalo Bills",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New Orleans Saints x Chicago Bears",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tennessee Titans x Dallas Cowboys",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tampa Bay Buccaneers x Detroit Lions",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Arizona Cardinals x Kansas City Chiefs",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Pittsburgh Steelers x Philadelphia Eagles",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Baltimore Ravens x Carolina Panthers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -2954,69 +2782,6 @@ const DB = [
    {
     "n": "NBA League Pass",
     "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:05",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New York Jets x Los Angeles Chargers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Las Vegas Raiders x Denver Broncos",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Jacksonville Jaguars x New York Giants",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -3152,31 +2917,6 @@ const DB = [
   "ch": [
    {
     "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "22:20",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "NFL Mexico City Game",
-  "match": "Minnesota Vikings x San Francisco 49ers",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
     "y": "stream"
    }
   ],
@@ -3422,31 +3162,6 @@ const DB = [
  },
  {
   "date": "2026-11-23",
-  "t": "22:15",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Cincinnati Bengals x Washington Commanders",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-23",
   "t": "22:30",
   "sport": "Basquete",
   "g": "M",
@@ -3464,7 +3179,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '17/11 16:23'; /* preenchido pelo script Python */
+const GENERATED_AT = '17/11 17:40'; /* preenchido pelo script Python */
 
 const el = id => document.getElementById(id);
 /* todo texto que vem dos dados passa por aqui antes de virar HTML */
@@ -3491,7 +3206,7 @@ const minutos = t => { const [h,m] = t.split(':').map(Number); return h*60+m; };
 const diaMes = iso => +iso.slice(8,10) + '/' + +iso.slice(5,7);
 function nomeDoDia(iso, i, longo){
   if(i===0) return 'Hoje';
-  if(i===1) return 'Amanhã';
+  if(i===1 && longo) return 'Amanhã';                    /* no calendário de 7 colunas vai o dia da semana */
   const s = new Date(iso+'T12:00:00Z').toLocaleDateString('pt-BR', {weekday: longo ? 'long' : 'short', timeZone:'UTC'}).replace('.','');
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
@@ -3681,9 +3396,16 @@ function linkDoCanal(c){
   return (typeof c.u==='string' && /^https:\/\/www\.youtube\.com\/@[\w.\-]+$/.test(c.u)) ? c.u : linkFor(c.n);
 }
 
-/* ---------- o que cada pessoa assina e acompanha ----------
-   Fica salvo no aparelho. Grátis (TV aberta, YouTube) sempre conta como "meu". */
-const SERVICOS = [
+/* ---------- filtros ----------
+   Regra única: filtro só filtra. Marcou um item, a lista mostra só o que
+   combina com ele; sem nada marcado, aparece tudo o que os dados trazem — não
+   existe categoria escondida por conta própria. Dentro de um grupo os itens
+   somam (Palmeiras OU Flamengo); grupos diferentes se combinam (time E canal).
+   Nada vem marcado sozinho, e o que está ligado aparece escrito no topo da
+   lista.
+   "Meu time" é outra coisa e fica à parte: só marca o calendário. */
+const CANAIS = [
+  {id:'gratis',    nome:'Grátis (TV aberta e YouTube)', curto:'Grátis'},
   {id:'sportv',    nome:'SporTV',          rx:/sportv/i},
   {id:'premiere',  nome:'Premiere',        rx:/premiere/i},
   {id:'globoplay', nome:'Globoplay',       rx:/globoplay/i},
@@ -3693,12 +3415,15 @@ const SERVICOS = [
   {id:'max',       nome:'HBO Max',         rx:/\bmax\b|hbo/i},
   {id:'prime',     nome:'Prime Video',     rx:/prime video|amazon/i},
   {id:'paramount', nome:'Paramount+',      rx:/paramount/i},
-  {id:'apple',     nome:'Apple TV+',       rx:/apple/i},
+  {id:'apple',     nome:'Apple TV',        rx:/apple/i},
   {id:'dazn',      nome:'DAZN',            rx:/dazn/i},
-  {id:'nbalp',     nome:'NBA League Pass', rx:/league pass/i, passe:true},   /* passe da liga: tem todos os jogos */
-  {id:'nflgp',     nome:'NFL Game Pass',   rx:/game pass/i,   passe:true},
+  {id:'nbalp',     nome:'NBA League Pass', rx:/league pass/i},
+  {id:'nflgp',     nome:'NFL Game Pass',   rx:/game pass/i},
+  {id:'outros',    nome:'Outros canais'},                             /* pago que não é nenhum dos de cima */
 ];
-const RAPIDOS = ['Tudo','Meus times','Futebol','Seleções','NBA','NFL'];
+const GENEROS = [['M','Masculino'], ['F','Feminino']];
+const CATEGORIAS = [['principal','Principais'], ['base','Sub-20 e base'], ['inferior','Divisões inferiores']];
+const RAPIDOS = ['Tudo','Futebol','Seleções','NBA','NFL'];
 /* Campeonatos: lista FIXA e curada. Cada opção casa com os eventos por padrão
    (regex), então ruído das fontes nunca vira opção nova. Os padrões cobrem o
    nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
@@ -3739,20 +3464,33 @@ const FAMILIA_DE = {};
 for(const g of FAMILIAS){ const s = new Set(g.map(chaveTime)); for(const k of s) FAMILIA_DE[k] = s; }
 const mesmoTime = (a, b) => { const ka = chaveTime(a), kb = chaveTime(b); return !!ka && (ka===kb || !!(FAMILIA_DE[ka] && FAMILIA_DE[ka].has(kb))); };
 
-const CHAVE = 'oa.estado';
-const PADRAO = { rapido:'Tudo', soMeus:true, base:false, inferiores:false, feminino:true, servicos:[], times:[], ligas:[], dica:true };
+/* O que fica salvo no aparelho:
+   rapido, ligas, filtroTimes, canais, genero, categoria ... filtros (só filtram)
+   times ................................................. "Meu time": só marca o calendário
+   dica .................................................. se o lembrete do "Meu time" ainda aparece */
+const CHAVE = 'oa.estado.v2';
+const PADRAO = { rapido:'Tudo', ligas:[], filtroTimes:[], canais:[], genero:[], categoria:[], times:[], dica:true };
 function lerEstado(){
-  let salvo = {};
-  try{ salvo = JSON.parse(localStorage.getItem(CHAVE) || '{}') || {}; }catch(e){ salvo = {}; }
+  let salvo = null;
+  try{ salvo = JSON.parse(localStorage.getItem(CHAVE) || 'null'); }catch(e){ salvo = null; }
+  if(!salvo || typeof salvo!=='object'){
+    /* primeira vez nesta versão: do que a versão anterior guardou, só os times
+       escolhidos continuam valendo, agora como "Meu time". Nenhum filtro é herdado. */
+    let antigo = null;
+    try{ antigo = JSON.parse(localStorage.getItem('oa.estado') || 'null'); }catch(e){ antigo = null; }
+    salvo = (antigo && typeof antigo==='object') ? { times: antigo.times, dica: antigo.dica } : {};
+  }
   const s = JSON.parse(JSON.stringify(PADRAO));
   for(const k of Object.keys(PADRAO)){
     const v = salvo[k];
-    if(Array.isArray(PADRAO[k])){ if(Array.isArray(v)) s[k] = v.filter(x => typeof x==='string' && x.trim()).slice(0,40); }
+    if(Array.isArray(PADRAO[k])){ if(Array.isArray(v)) s[k] = [...new Set(v.filter(x => typeof x==='string' && x.trim()))].slice(0,40); }
     else if(typeof v === typeof PADRAO[k]) s[k] = v;
   }
   if(!RAPIDOS.includes(s.rapido)) s.rapido = 'Tudo';
-  s.servicos = s.servicos.filter(id => SERVICOS.some(x => x.id===id));
   s.ligas = s.ligas.filter(n => LIGAS.some(l => l[0]===n));
+  s.canais = s.canais.filter(id => CANAIS.some(x => x.id===id));
+  s.genero = s.genero.filter(g => GENEROS.some(x => x[0]===g));
+  s.categoria = s.categoria.filter(c => CATEGORIAS.some(x => x[0]===c));
   return s;
 }
 function salvar(){ try{ localStorage.setItem(CHAVE, JSON.stringify(estado)); }catch(e){ /* navegação privada: vale só nesta visita */ } }
@@ -3761,29 +3499,25 @@ let estado = lerEstado();
 let HOJE = relogio().iso;            /* dia de Brasília em que o app está */
 let diaSel = 0;                      /* aba aberta: 0 = hoje ... 6 */
 let busca = '', buscando = false;    /* busca aberta procura nos 7 dias */
-let aberto = { fora:false, fim:false };   /* grupos recolhidos do fim da lista */
+let buscaTudo = false;               /* busca sem contar os filtros (vale só enquanto a busca está aberta) */
+let folhaModo = 'filtros';           /* o que a folha de baixo mostra: 'filtros' ou 'time' */
 
-/* ---------- regras de exibição ---------- */
+/* ---------- regras ---------- */
 const aConfirmar = c => /confirmar/i.test(c.n);
 const gratis = c => c.y === 'free';
-const servicoDe = c => gratis(c) ? null : (SERVICOS.find(s => s.rx.test(c.n)) || null);
-const tenho = c => !aConfirmar(c) && (gratis(c) || (s => !!s && estado.servicos.includes(s.id))(servicoDe(c)));
-/* "não assino" só vale para serviço conhecido: canal que o app não reconhece
-   nunca esconde um jogo */
-const naoAssino = c => !aConfirmar(c) && (s => !!s && !estado.servicos.includes(s.id))(servicoDe(c));
-const semCanal = e => e.ch.every(aConfirmar);
-/* Só recolhe o jogo quando a fonte afirma um canal específico que a pessoa não
-   assina. Com canal ainda a confirmar, ou só com o passe da liga listado (que
-   tem todos os jogos e não diz onde mais passa), não dá para afirmar. */
-const soForaDoMeu = e => e.ch.length > 0 && !e.ch.some(aConfirmar) && e.ch.every(naoAssino)
-                         && e.ch.some(c => !(servicoDe(c) || {}).passe);
-/* Categoria: base e divisões inferiores ocultas por padrão.
+const servicoDe = c => gratis(c) ? null : (CANAIS.find(s => s.rx && s.rx.test(c.n)) || null);
+const canalBate = (c, id) => !aConfirmar(c) && (id==='gratis' ? gratis(c) : id==='outros' ? (!gratis(c) && !servicoDe(c)) : (servicoDe(c) || {}).id === id);
+/* Categoria do jogo: base (Sub-20, Sub-17...), divisão inferior ou principal.
+   "Sub-20" e "U-21" valem em qualquer campo; palavras como "júnior" e "juvenil"
+   só no nome do campeonato: há clubes chamados Boca Juniors e Junior Barranquilla.
    (O robô usa a mesma noção de "base" em categoria(), no atualizar_dados.py.) */
-const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes|\bbase\b|\bcopinha\b/i;
+const RE_SUB   = /\bsub.?\d{1,2}\b|\bu-?\d{2}\b/i;
+const RE_SUB_LIGA = /juvenil|\bj[úu]nior(es)?\b|aspirantes|\bbase\b|\bcopinha\b/i;
 const RE_LOWER = /s[ée]rie [bcd]\b|s[ée]rie a[23]\b|[2-9][ªº°]? ?divis|(segunda|terceira|quarta) divis|\bchampionship\b|league (one|two)\b|2\. ?bundesliga|la ?liga 2|ligue 2|liga 2\b/i;
 const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;   /* times B: "Ceará B x ...", "... x Bayern II" */
-function ehBase(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
+function ehBase(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')) || RE_SUB_LIGA.test(e.league); }
 function ehInferior(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
+const categoriaDe = e => ehBase(e) ? 'base' : ehInferior(e) ? 'inferior' : 'principal';
 function ladosDe(e){
   const out = [];
   for(const txt of [e.match, e.espn]){
@@ -3792,30 +3526,45 @@ function ladosDe(e){
   }
   return out;
 }
-function ehFav(e){
-  if(!estado.times.length) return false;
+function jogaAlgum(e, times){
+  if(!times.length) return false;
   const lados = ladosDe(e);
-  return estado.times.some(t => lados.some(l => mesmoTime(t, l)));
+  return times.some(t => lados.some(l => mesmoTime(t, l)));
 }
+const ehMeuTime = e => jogaAlgum(e, estado.times);
 function ligaOk(e){
   for(const [nome,regra] of LIGAS)
     if(estado.ligas.includes(nome) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
   return false;
 }
+/* passa só o que combina com tudo o que está marcado; sem nada marcado, passa tudo */
 function passa(e){
-  if(!estado.feminino && e.g==='F') return false;
-  if(!estado.base && ehBase(e)) return false;
-  if(!estado.inferiores && ehInferior(e) && !ehFav(e)) return false;        /* time seu aparece mesmo na Série B */
-  if(estado.ligas.length && !ligaOk(e)) return false;
   switch(estado.rapido){
-    case 'Futebol':    return e.sport==='Futebol';
-    case 'Seleções':   return !!e.sel;
-    case 'NBA':        return /\bnba\b/i.test(e.league);
-    case 'NFL':        return /\bnfl\b/i.test(e.league);
-    case 'Meus times': return ehFav(e);
-    default:           return true;
+    case 'Futebol':  if(e.sport!=='Futebol') return false; break;
+    case 'Seleções': if(!e.sel) return false; break;
+    case 'NBA':      if(!/\bnba\b/i.test(e.league)) return false; break;
+    case 'NFL':      if(!/\bnfl\b/i.test(e.league)) return false; break;
   }
+  if(estado.ligas.length && !ligaOk(e)) return false;
+  if(estado.filtroTimes.length && !jogaAlgum(e, estado.filtroTimes)) return false;
+  if(estado.canais.length && !e.ch.some(c => estado.canais.some(id => canalBate(c, id)))) return false;
+  if(estado.genero.length && !estado.genero.includes(e.g==='F' ? 'F' : 'M')) return false;
+  if(estado.categoria.length && !estado.categoria.includes(categoriaDe(e))) return false;
+  return true;
 }
+/* itens marcados na folha de filtros, um por um: [tipo, valor, como aparece] */
+function etiquetas(){
+  return estado.ligas.map(v => ['liga', v, v])
+    .concat(estado.filtroTimes.map(v => ['time', v, v]))
+    .concat(estado.canais.map(v => { const c = CANAIS.find(x => x.id===v) || {}; return ['canal', v, c.curto || c.nome || v]; }))
+    .concat(estado.genero.map(v => ['genero', v, (GENEROS.find(x => x[0]===v) || [])[1] || v]))
+    .concat(estado.categoria.map(v => ['categoria', v, (CATEGORIAS.find(x => x[0]===v) || [])[1] || v]));
+}
+const LISTA_DO_TIPO = { liga:'ligas', time:'filtroTimes', canal:'canais', genero:'genero', categoria:'categoria' };
+const quantosFiltros = () => etiquetas().length + (estado.rapido!=='Tudo' ? 1 : 0);
+const temFiltro = () => quantosFiltros() > 0;
+const esseFiltro = () => quantosFiltros()===1 ? 'esse filtro' : 'esses filtros';
+function limparFiltros(){ estado.rapido = 'Tudo'; estado.ligas = []; estado.filtroTimes = []; estado.canais = []; estado.genero = []; estado.categoria = []; }
 /* "Ao vivo" pelo relógio, com a duração típica de cada esporte; quando a ESPN
    informa o andamento do jogo, vale o que ela diz. */
 const DUR = { 'Futebol':120, 'Basquete':150, 'Futebol Americano':200 };
@@ -3858,8 +3607,8 @@ function prepararDB(){
 }
 
 /* ---------- desenho ---------- */
-const SETA = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const porHora = (a,b) => a.t.localeCompare(b.t) || a.match.localeCompare(b.match, 'pt');
+const porDiaHora = (a,b) => (a.date+a.t).localeCompare(b.date+b.t) || a.match.localeCompare(b.match, 'pt');
 const plural = (n, um, varios) => n + ' ' + (n===1 ? um : varios);
 
 function textoLiga(e){
@@ -3875,17 +3624,16 @@ function linhaJogo(e, f){
   const st = f==='vivo' ? `<small class="st vivo">${esc(sc ? sc.label : 'ao vivo')}</small>`
            : (f==='fim' && sc) ? '<small class="st">encerrado</small>' : '';
   const meio = sc ? `<b class="pl">${esc(sc.a)}</b> <span class="x">x</span> <b class="pl">${esc(sc.b)}</b>` : '<span class="x">x</span>';
-  const canais = e.ch.map((c,i) => [c,i]).sort((x,y) => (tenho(y[0]) - tenho(x[0])) || (x[1]-y[1])).map(x => x[0]);
   let confirmar = false;
-  const pilulas = canais.map(c => {
+  const pilulas = e.ch.map(c => {
     if(aConfirmar(c)){ if(confirmar) return ''; confirmar = true; return '<span class="aconfirmar">canal a confirmar</span>'; }
     const yt = /\s*\(YouTube\)$/i.test(c.n), nome = c.n.replace(/\s*\(YouTube\)$/i,'');
-    return `<a class="canal${tenho(c)?' meu':''}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener">${esc(nome)}${yt?'<small>YouTube</small>':''}</a>`;
+    return `<a class="canal${gratis(c)?' gratis':''}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener">${esc(nome)}${yt?'<small>YouTube</small>':''}</a>`;
   }).join('');
   return `<li class="jogo${f==='fim'?' fim':''}${f==='vivo'?' vivo':''}">
     <div class="hora"><time>${esc(e.t)}</time>${st}</div>
     <div>
-      <div class="times">${ehFav(e)?'<span class="fav" role="img" aria-label="Seu time">★</span>':''}${dois ? `${esc(apelido(lados[0],e))} ${meio} ${esc(apelido(lados[1],e))}` : esc(e.match)}</div>
+      <div class="times">${ehMeuTime(e)?'<span class="fav" role="img" aria-label="Seu time">★</span>':''}${dois ? `${esc(apelido(lados[0],e))} ${meio} ${esc(apelido(lados[1],e))}` : esc(e.match)}</div>
       <div class="linha2"><div class="liga">${textoLiga(e)}</div><div class="canais">${pilulas}</div></div>
     </div>
   </li>`;
@@ -3894,74 +3642,82 @@ function bloco(titulo, jogos, faseDe, extra){
   if(!jogos.length) return '';
   return `<h2 class="secao">${extra||''}${titulo}</h2><ul class="grupo">${jogos.map(e => linhaJogo(e, faseDe(e))).join('')}</ul>`;
 }
-function dobra(qual, rotulo, jogos, faseDe){
-  if(!jogos.length) return '';
-  return `<button type="button" class="dobra" data-acao="dobra" data-qual="${qual}" aria-expanded="${!!aberto[qual]}"><span>${rotulo}</span>${SETA}</button>`
-       + (aberto[qual] ? `<ul class="grupo recolhido">${jogos.map(e => linhaJogo(e, faseDe(e))).join('')}</ul>` : '');
-}
-function vazio(titulo, texto, botao){
-  return `<div class="vazio"><b>${titulo}</b><p>${texto}</p>${botao ? `<div class="acoes">${botao}</div>` : ''}</div>`;
+function vazio(titulo, texto, botoes){
+  return `<div class="vazio"><b>${titulo}</b>${texto ? `<p>${texto}</p>` : ''}${botoes ? `<div class="acoes">${botoes}</div>` : ''}</div>`;
 }
 function htmlDica(){
-  if(!estado.dica || estado.servicos.length) return '';
-  return `<div class="dica"><p><b>Marque os canais que você assina.</b> Eles passam a aparecer em verde, e os jogos que só passam em outros canais vão para o fim da lista.</p>
-    <div class="acoes"><button type="button" class="botao" data-acao="abrir-filtros">Escolher canais</button><button type="button" class="botao fantasma" data-acao="dispensar-dica">Agora não</button></div></div>`;
+  if(!estado.dica || estado.times.length) return '';
+  return `<div class="dica"><p><b>Tem um time ou uma seleção?</b> Escolha em “Meu time” e os dias em que ele joga ficam marcados com um ponto amarelo no calendário.</p>
+    <div class="acoes"><button type="button" class="botao" data-acao="abrir-time">Escolher meu time</button><button type="button" class="botao fantasma" data-acao="dispensar-dica">Agora não</button></div></div>`;
 }
-const filtrosAtivos = () => (estado.ligas.length?1:0) + (estado.base?1:0) + (estado.inferiores?1:0) + (estado.feminino?0:1);
+/* os filtros ligados, escritos no topo da lista: nada fica restrito sem aviso */
+function htmlLigados(){
+  const es = etiquetas();
+  if(!es.length) return '';
+  return `<div class="ligados" role="group" aria-label="Filtros ligados"><span>Filtrando por</span>${es.map(([tipo, valor, nome]) =>
+    `<button type="button" class="etq" data-acao="tira-filtro" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-label="Tirar o filtro ${esc(nome)}">${esc(nome)}<b aria-hidden="true">×</b></button>`).join('')}<button type="button" class="texto" data-acao="limpar">Limpar</button></div>`;
+}
+/* fim da lista do dia: a legenda do verde, quando há canal grátis na tela */
+const htmlLegenda = temGratis => temGratis ? '<p class="legenda"><span class="canal gratis" aria-hidden="true">Canal</span> em verde passa de graça, na TV aberta ou no YouTube.</p>' : '';
 
-function htmlDia(dia, agora){
-  const doDia = LIMPOS.filter(e => e.date===dia && passa(e)).sort(porHora);
+function htmlDia(dia, agora, dias){
+  const noDia = LIMPOS.filter(e => e.date===dia);
+  const doDia = noDia.filter(passa).sort(porHora);
   const ehHoje = dia === agora.iso;
   const fases = new Map(doDia.map(e => [e, fase(e, agora)])), faseDe = e => fases.get(e) || fase(e, agora);
-  const dobrar = estado.soMeus && estado.servicos.length > 0;
-  const fora = dobrar ? doDia.filter(e => soForaDoMeu(e) && !ehFav(e) && faseDe(e)!=='fim') : [];     /* jogo de time seu nunca é recolhido */
-  const vis = doDia.filter(e => !fora.includes(e));
   /* começou ontem e ainda está em campo (NBA das 22h30, por exemplo) */
-  const viradas = ehHoje ? LIMPOS.filter(e => e.date===somaDias(dia,-1) && passa(e) && fase(e, agora)==='vivo' && !(dobrar && soForaDoMeu(e) && !ehFav(e))).sort(porHora) : [];
+  const viradas = ehHoje ? LIMPOS.filter(e => e.date===somaDias(dia,-1) && passa(e) && fase(e, agora)==='vivo').sort(porHora) : [];
+  let html = htmlDica() + htmlLigados();
   if(!doDia.length && !viradas.length){
-    const temNoDia = LIMPOS.some(e => e.date===dia);
-    const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
-    if(!temNoDia) return htmlDica() + (dia > ultima
-      ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
-      : vazio('Nenhum jogo neste dia.', 'Não há jogos listados pelas fontes para esta data.'));
-    return htmlDica() + vazio('Nenhum jogo com esses filtros.', plural(LIMPOS.filter(e => e.date===dia).length, 'jogo fica', 'jogos ficam') + ' de fora neste dia.',
-                              '<button type="button" class="botao" data-acao="limpar">Limpar filtros</button>');
+    if(!noDia.length){
+      const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
+      return html + (dia > ultima
+        ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
+        : vazio('Nenhum jogo neste dia.', 'As fontes não listam jogos para esta data.'));
+    }
+    /* há jogos no dia, mas nenhum combina com os filtros: diz em que dias há */
+    const um = quantosFiltros()===1, comEle = um ? 'Com ele' : 'Com eles';
+    const outros = dias.map((d,i) => [d, i, LIMPOS.filter(e => e.date===d && passa(e)).length]).filter(x => x[2] > 0);
+    return html + vazio(`Nenhum jogo neste dia com ${esseFiltro()}.`,
+                        outros.length ? `${comEle}, há jogo em:` : `${comEle}, não há jogo nos próximos 7 dias.`,
+                        outros.map(([d,i,n]) => `<button type="button" class="botao fantasma" data-acao="dia" data-i="${i}">${nomeDoDia(d,i,true)}, ${diaMes(d)} (${n})</button>`).join('')
+                        + `<button type="button" class="botao" data-acao="limpar">${um ? 'Limpar filtro' : 'Limpar filtros'}</button>`);
   }
-  const nomesFora = [...new Set(fora.flatMap(e => e.ch.filter(c => !aConfirmar(c)).map(c => c.n)))];
-  const rodape = dobra('fora', `<b>${plural(fora.length,'jogo','jogos')}</b> só em canal que você não assina${nomesFora.length ? ` (${esc(nomesFora.slice(0,2).join(' e '))}${nomesFora.length>2?' e outros':''})` : ''}`, fora, faseDe);
-  let html = htmlDica();
   if(ehHoje){
-    const vivo = [...viradas, ...vis.filter(e => faseDe(e)==='vivo')], depois = vis.filter(e => faseDe(e)==='depois'), fim = vis.filter(e => faseDe(e)==='fim');
+    const vivo = [...viradas, ...doDia.filter(e => faseDe(e)==='vivo')], depois = doDia.filter(e => faseDe(e)==='depois'), fim = doDia.filter(e => faseDe(e)==='fim');
     html += bloco('Ao vivo', vivo, faseDe, '<i class="pulso" aria-hidden="true"></i>');
     html += `<div class="agora"><span>agora, <span id="relogio">${agora.hhmm}</span>${agora.fora ? ' em Brasília' : ''}</span></div>`;
-    html += depois.length ? bloco('A seguir', depois, faseDe) : `<p class="nada">${fora.length ? 'O que resta hoje está em canal que você não assina.' : 'Nada mais hoje com esses filtros.'}</p>`;
-    html += rodape;
-    html += dobra('fim', `<b>${plural(fim.length,'jogo','jogos')}</b> de mais cedo hoje`, fim, faseDe);
+    html += depois.length ? bloco('A seguir', depois, faseDe) : `<p class="nada">Nada mais hoje${temFiltro() ? ' com ' + esseFiltro() : ''}.</p>`;
+    html += bloco('Mais cedo hoje', fim, faseDe);
   } else {
-    const favs = vis.filter(ehFav);
-    html += bloco('Dos seus times', favs, faseDe);
-    const resto = vis.filter(e => !favs.includes(e));
     for(const [nome, de, ate] of [['Madrugada',0,360],['Manhã',360,720],['Tarde',720,1080],['Noite',1080,1440]])
-      html += bloco(nome, resto.filter(e => minutos(e.t)>=de && minutos(e.t)<ate), faseDe);
-    html += rodape;
+      html += bloco(nome, doDia.filter(e => minutos(e.t)>=de && minutos(e.t)<ate), faseDe);
   }
-  return html;
+  return html + htmlLegenda(doDia.concat(viradas).some(e => e.ch.some(gratis)));
 }
+/* A busca respeita os filtros, como o resto do app. Se eles deixarem algum
+   resultado de fora, ela avisa e oferece buscar em tudo (só enquanto estiver aberta). */
 function htmlBusca(agora, dias){
   const q = nrmBusca(busca);
   if(q.length < 2) return '<p class="nada">Digite pelo menos 2 letras: time, campeonato ou canal.</p>';
   const ondeProcurar = e => nrmBusca([e.match, e.espn||'', e.league, e.detail||'', e.sport].concat(e.ch.map(c => c.n)).join(' '));
-  const achou = LIMPOS.filter(e => dias.includes(e.date) && ondeProcurar(e).includes(q)).sort((a,b) => (a.date+a.t).localeCompare(b.date+b.t) || a.match.localeCompare(b.match,'pt'));
-  if(!achou.length) return vazio('Nada encontrado nos próximos 7 dias.', 'Confira a grafia ou tente só uma parte do nome.');
-  let html = `<p class="nada">${plural(achou.length,'jogo','jogos')} nos próximos 7 dias</p>`;
-  dias.forEach((d,i) => { html += bloco(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, achou.filter(e => e.date===d), e => fase(e, agora)); });
+  const todos = LIMPOS.filter(e => dias.includes(e.date) && ondeProcurar(e).includes(q));
+  const lista = (buscaTudo ? todos : todos.filter(passa)).sort(porDiaHora), escondidos = todos.length - lista.length;
+  const emTudo = '<button type="button" class="texto" data-acao="busca-tudo">Buscar em tudo</button>';
+  let html = buscaTudo ? '' : htmlLigados();
+  if(!lista.length) return html + (escondidos
+    ? vazio('Nada na lista atual.', plural(escondidos, 'jogo combina', 'jogos combinam') + ' com a busca, mas ' + (escondidos===1 ? 'fica' : 'ficam') + ' de fora por causa dos filtros.',
+            '<button type="button" class="botao" data-acao="busca-tudo">Buscar em tudo</button>')
+    : vazio('Nada encontrado nos próximos 7 dias.', 'Confira a grafia ou tente só uma parte do nome.'));
+  html += `<p class="nada">${plural(lista.length,'jogo','jogos')} nos próximos 7 dias${buscaTudo ? ', sem contar os filtros' : ''}${escondidos ? `. ${escondidos===1 ? 'Outro fica' : 'Outros ' + escondidos + ' ficam'} de fora por causa dos filtros. ${emTudo}` : ''}</p>`;
+  dias.forEach((d,i) => { html += bloco(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, lista.filter(e => e.date===d), e => fase(e, agora)); });
   return html;
 }
 
 /* troca o HTML de um trecho sem perder o foco de quem navega pelo teclado */
 function trocar(caixa, html){
   const a = document.activeElement, dentro = a && caixa.contains(a) && a.dataset && a.dataset.acao;
-  const sel = dentro ? `[data-acao="${a.dataset.acao}"]` + (a.dataset.i ? `[data-i="${a.dataset.i}"]` : '') + (a.dataset.qual ? `[data-qual="${a.dataset.qual}"]` : '')
+  const sel = dentro ? `[data-acao="${a.dataset.acao}"]` + (a.dataset.i ? `[data-i="${a.dataset.i}"]` : '') + (a.dataset.tipo ? `[data-tipo="${a.dataset.tipo}"]` : '')
                                                          + (a.dataset.valor ? `[data-valor="${CSS.escape(a.dataset.valor)}"]` : '') : '';
   caixa.innerHTML = html;
   if(sel){ const n = caixa.querySelector(sel); if(n) n.focus({preventScroll:true}); }
@@ -3971,33 +3727,35 @@ function desenharFrescor(agora){
   if(DADOS_EM){
     const r = relogio(DADOS_EM);
     velho = Date.now() - DADOS_EM > 12*3600*1000;       /* o robô costuma passar a cada 6 a 10 horas */
-    txt = r.iso===agora.iso ? `<i>atualizado às </i>${r.hhmm}` : `<i>atualizado </i>${diaMes(r.iso)} às ${r.hhmm}`;      /* só números do relógio */
+    txt = r.iso===agora.iso ? `atualizado às ${r.hhmm}` : `atualizado ${diaMes(r.iso)} às ${r.hhmm}`;      /* só números do relógio */
   }
-  if(el('quando').innerHTML !== txt) el('quando').innerHTML = txt;
+  if(el('quando').textContent !== txt) el('quando').textContent = txt;
   el('frescor').classList.toggle('velho', velho);
 }
 function desenhar(){
   const agora = relogio();
-  if(agora.iso !== HOJE){ HOJE = agora.iso; diaSel = 0; aberto = {fora:false, fim:false}; }     /* virou o dia em Brasília: "Hoje" volta a ser hoje */
+  if(agora.iso !== HOJE){ HOJE = agora.iso; diaSel = 0; }     /* virou o dia em Brasília: "Hoje" volta a ser hoje */
   const dias = [0,1,2,3,4,5,6].map(i => somaDias(HOJE, i));
-  if(!estado.times.length && estado.rapido==='Meus times') estado.rapido = 'Tudo';
   el('fuso').hidden = !agora.fora;
   el('navegacao').hidden = buscando; el('busca').hidden = !buscando;
+  /* calendário: ponto amarelo no dia em que o "Meu time" joga. Vale a mesma lista
+     da tela: dia com ponto tem jogo com estrela, e vice-versa. */
   trocar(el('dias'), dias.map((d,i) => {
-    const marca = i!==diaSel && LIMPOS.some(e => e.date===d && ehFav(e) && passa(e) && (i>0 || fase(e, agora)!=='fim'));
-    return `<button type="button" class="dia${i===diaSel?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${i===diaSel}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${marca?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
+    const joga = LIMPOS.some(e => e.date===d && ehMeuTime(e) && passa(e));
+    return `<button type="button" class="dia${i===diaSel?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${i===diaSel}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${joga?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
   }).join(''));
-  trocar(el('rapidos'), RAPIDOS.filter(r => r!=='Meus times' || estado.times.length).map(r =>
+  el('abre-time').classList.toggle('tem', estado.times.length > 0);
+  trocar(el('rapidos'), RAPIDOS.map(r =>
     `<button type="button" class="rapido${estado.rapido===r?' sel':''}" data-acao="rapido" data-valor="${r}" aria-pressed="${estado.rapido===r}">${r}</button>`).join(''));
-  const n = filtrosAtivos();
-  el('abre-filtros').innerHTML = 'Filtros' + (n ? `<span class="n" aria-label="${plural(n,'filtro ativo','filtros ativos')}">${n}</span>` : '');
+  const n = etiquetas().length;
+  el('abre-filtros').innerHTML = 'Filtros' + (n ? `<span class="n" aria-label="${plural(n,'filtro ligado','filtros ligados')}">${n}</span>` : '');
   desenharFrescor(agora);
-  trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlDia(dias[diaSel], agora));
+  trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlDia(dias[diaSel], agora, dias));
   const ontem = somaDias(agora.iso, -1);
   assinatura = JSON.stringify(SCORES) + '|' + LIMPOS.filter(e => e.date===agora.iso || e.date===ontem).map(e => fase(e, agora)[0]).join('');
 }
 
-/* ---------- folha de filtros ---------- */
+/* ---------- folha de baixo: "Filtros" ou "Meu time" ---------- */
 const op = (tipo, valor, rotulo, sel) =>
   `<button type="button" class="op${sel?' sel':''}" data-acao="op" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-pressed="${!!sel}">${esc(rotulo)}</button>`;
 function nomesDosDados(){
@@ -4009,8 +3767,10 @@ function nomesDosDados(){
   }
   return [...nomes.values()].sort((a,b) => a.localeCompare(b,'pt'));
 }
-function htmlTimes(texto){
-  const q = nrmBusca(texto), jaTenho = n => estado.times.some(t => mesmoTime(t, n));
+/* escolha de times: serve ao filtro "Times" (alvo 'filtroTimes') e ao "Meu time" (alvo 'times') */
+function htmlEscolha(alvo, texto){
+  const marcados = estado[alvo];
+  const q = nrmBusca(texto), jaTenho = n => marcados.some(t => mesmoTime(t, n));
   const cand = [], poe = n => { if(!jaTenho(n) && !cand.some(c => mesmoTime(c, n))) cand.push(n); };
   if(q.length < 2) POPULARES.forEach(poe);
   else {
@@ -4020,53 +3780,56 @@ function htmlTimes(texto){
   const lista = cand.slice(0, q.length < 2 ? 12 : 8);
   const livre = texto.trim();
   const novo = q.length >= 3 && !jaTenho(livre) && !lista.some(c => mesmoTime(c, livre));
-  return estado.times.map(t => `<button type="button" class="op sel" data-acao="tira-time" data-valor="${esc(t)}" aria-pressed="true" aria-label="${esc(t)}, toque para tirar">${esc(t)}</button>`).join('')
+  return marcados.map(t => `<button type="button" class="op sel" data-acao="tira-time" data-valor="${esc(t)}" aria-pressed="true" aria-label="${esc(t)}, toque para tirar">${esc(t)}</button>`).join('')
        + lista.map(n => `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(n)}" aria-pressed="false">${esc(n)}</button>`).join('')
        + (novo ? `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(livre)}" aria-pressed="false">Adicionar “${esc(livre)}”</button>` : '');
 }
-const textoSoMeus = () => estado.servicos.length ? 'Jogos só em canal que você não assina ficam recolhidos no fim da lista.'
-                                                  : 'Começa a valer quando você marcar pelo menos um canal acima.';
+const campoDeTime = alvo => `<input class="campo" id="busca-time" type="search" placeholder="Buscar time ou seleção" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Buscar time ou seleção">
+    <div class="opcoes" id="op-times" data-alvo="${alvo}">${htmlEscolha(alvo, '')}</div>`;
 function desenharFolha(){
-  el('folha').innerHTML = `
-    <div class="pega" aria-hidden="true"></div>
-    <header><h2 id="folha-titulo">Filtros</h2><button type="button" class="texto" data-acao="fechar-filtros">Pronto</button></header>
-    <h3>Meus canais</h3>
-    <p>Marque o que você assina. TV aberta e YouTube já contam como seus.</p>
-    <div class="opcoes">${SERVICOS.map(s => op('servico', s.id, s.nome, estado.servicos.includes(s.id))).join('')}</div>
-    <div class="chave"><div id="rot-so-meus">Só o que eu consigo assistir<small id="txt-so-meus">${textoSoMeus()}</small></div>
-      <button type="button" class="liga-desliga" role="switch" aria-checked="${!!estado.soMeus}" aria-labelledby="rot-so-meus" data-acao="so-meus"></button></div>
-    <h3>Meus times</h3>
-    <p>Os jogos deles ganham uma estrela, abrem a lista dos outros dias e marcam a aba do dia com um ponto.</p>
-    <input class="campo" id="busca-time" type="search" placeholder="Buscar time ou seleção" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Buscar time ou seleção">
-    <div class="opcoes" id="op-times">${htmlTimes('')}</div>
-    <h3>Também mostrar</h3>
-    <div class="opcoes">${op('extra','base','Sub-20 e base', estado.base)}${op('extra','inferiores','Séries B, C e 2ªs divisões', estado.inferiores)}${op('extra','feminino','Feminino', estado.feminino)}</div>
+  const topo = titulo => `<div class="pega" aria-hidden="true"></div>
+    <header><h2 id="folha-titulo">${titulo}</h2><button type="button" class="texto" data-acao="fechar-folha">Pronto</button></header>`;
+  el('folha').innerHTML = folhaModo==='time' ? `${topo('Meu time')}
+    <p>Escolha seu time e sua seleção, quantos quiser. O dia em que eles jogam ganha um ponto amarelo no calendário, e o jogo, uma estrela.</p>
+    <p>Vale para todo jogo com esse nome: principal, feminino e base. Isso não filtra a lista.</p>
+    ${campoDeTime('times')}`
+  : `${topo('Filtros')}
+    <p>Marcou, a lista mostra só o que combina. Sem nada marcado, aparece tudo.</p>
     <h3>Campeonatos</h3>
-    <p>Sem nenhum marcado, aparecem todos.</p>
     <div class="opcoes">${LIGAS.map(l => op('liga', l[0], l[0], estado.ligas.includes(l[0]))).join('')}</div>
-    <div class="pe-folha"><button type="button" class="texto" data-acao="padrao">Voltar ao padrão</button></div>`;
+    <h3>Times</h3>
+    ${campoDeTime('filtroTimes')}
+    <h3>Canais</h3>
+    <div class="opcoes">${CANAIS.map(c => op('canal', c.id, c.nome, estado.canais.includes(c.id))).join('')}</div>
+    <h3>Gênero</h3>
+    <div class="opcoes">${GENEROS.map(g => op('genero', g[0], g[1], estado.genero.includes(g[0]))).join('')}</div>
+    <h3>Categoria</h3>
+    <p>“Principais” deixa de fora a base e as divisões inferiores.</p>
+    <div class="opcoes">${CATEGORIAS.map(c => op('categoria', c[0], c[1], estado.categoria.includes(c[0]))).join('')}</div>
+    <div class="pe-folha"><button type="button" class="texto" data-acao="limpar-folha">Limpar filtros</button></div>`;
 }
-function abrirFiltros(){
+function abrirFolha(modo){
+  folhaModo = modo;
   desenharFolha();
   document.body.classList.add('filtrando');
   el('topo').inert = true; el('lista').inert = true;
   el('folha').scrollTop = 0; el('folha').focus({preventScroll:true});
 }
-function fecharFiltros(){
+function fecharFolha(){
   if(!document.body.classList.contains('filtrando')) return;
   document.body.classList.remove('filtrando');
   el('topo').inert = false; el('lista').inert = false;
-  if(estado.servicos.length) estado.dica = false;
+  if(estado.times.length) estado.dica = false;
   salvar(); desenhar(); mostrarEscolhidos();
-  el('abre-filtros').focus({preventScroll:true});
+  el(folhaModo==='time' ? 'abre-time' : 'abre-filtros').focus({preventScroll:true});
 }
-/* a aba e o filtro rápido escolhidos nunca ficam escondidos na fileira que rola */
+/* o filtro rápido escolhido nunca fica escondido na fileira que rola */
 function mostrarEscolhidos(){
-  for(const id of ['dias','rapidos']){ const s = el(id).querySelector('.sel'); if(s) s.scrollIntoView({inline:'nearest', block:'nearest'}); }
+  const s = el('rapidos').querySelector('.sel'); if(s) s.scrollIntoView({inline:'nearest', block:'nearest'});
 }
 function alternar(lista, valor){ const i = lista.indexOf(valor); if(i<0) lista.push(valor); else lista.splice(i,1); return i<0; }
-function abrirBusca(){ buscando = true; desenhar(); el('q').value = busca; el('q').focus(); fetchScores(); }
-function fecharBusca(){ if(!buscando) return; buscando = false; busca = ''; el('q').value = ''; desenhar(); el('abre-busca').focus({preventScroll:true}); fetchScores(); }
+function abrirBusca(){ buscando = true; buscaTudo = false; desenhar(); el('q').value = busca; el('q').focus(); fetchScores(); }
+function fecharBusca(){ if(!buscando) return; buscando = false; buscaTudo = false; busca = ''; el('q').value = ''; desenhar(); el('abre-busca').focus({preventScroll:true}); fetchScores(); }
 
 /* Botão de atualizar: busca os dados de novo (não só redesenha) */
 async function atualizar(){
@@ -4080,40 +3843,43 @@ document.addEventListener('click', ev => {
   const b = ev.target.closest('[data-acao]'); if(!b) return;
   const d = b.dataset;
   switch(d.acao){
-    case 'dia':            diaSel = +d.i; aberto = {fora:false, fim:false}; desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); fetchScores(); break;
-    case 'rapido':         estado.rapido = d.valor; salvar(); desenhar(); mostrarEscolhidos(); break;
-    case 'dobra':          aberto[d.qual] = !aberto[d.qual]; desenhar(); break;
-    case 'abrir-filtros':  abrirFiltros(); break;
-    case 'fechar-filtros': fecharFiltros(); break;
+    case 'dia':            diaSel = +d.i; desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); fetchScores(); break;
+    case 'rapido':         estado.rapido = d.valor; salvar(); desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); break;
+    case 'abrir-filtros':  abrirFolha('filtros'); break;
+    case 'abrir-time':     abrirFolha('time'); break;
+    case 'fechar-folha':   fecharFolha(); break;
     case 'abrir-busca':    abrirBusca(); break;
     case 'fechar-busca':   fecharBusca(); break;
+    case 'busca-tudo':     buscaTudo = true; desenhar(); break;
     case 'atualizar':      atualizar(); break;
     case 'dispensar-dica': estado.dica = false; salvar(); desenhar(); break;
-    case 'limpar':         estado.rapido = 'Tudo'; estado.ligas = []; estado.base = false; estado.inferiores = false; estado.feminino = true; salvar(); desenhar(); mostrarEscolhidos(); break;
-    case 'padrao':         Object.assign(estado, {rapido:'Tudo', ligas:[], base:false, inferiores:false, feminino:true, soMeus:true}); salvar(); desenharFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
-    case 'so-meus':        estado.soMeus = !estado.soMeus; b.setAttribute('aria-checked', estado.soMeus); salvar(); desenhar(); break;
+    case 'limpar':         limparFiltros(); salvar(); desenhar(); mostrarEscolhidos(); break;
+    case 'limpar-folha':   limparFiltros(); salvar(); desenharFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
+    case 'tira-filtro':    if(LISTA_DO_TIPO[d.tipo]){ estado[LISTA_DO_TIPO[d.tipo]] = estado[LISTA_DO_TIPO[d.tipo]].filter(v => v !== d.valor); salvar(); desenhar(); } break;
     case 'op': {
-      let ligado;
-      if(d.tipo==='servico'){ ligado = alternar(estado.servicos, d.valor); el('txt-so-meus').textContent = textoSoMeus(); }
-      else if(d.tipo==='liga') ligado = alternar(estado.ligas, d.valor);
-      else ligado = estado[d.valor] = !estado[d.valor];
+      if(!LISTA_DO_TIPO[d.tipo]) break;
+      const ligado = alternar(estado[LISTA_DO_TIPO[d.tipo]], d.valor);
       b.classList.toggle('sel', ligado); b.setAttribute('aria-pressed', ligado);
       salvar(); desenhar(); break;
     }
-    case 'poe-time':
-      if(estado.times.length < 30 && !estado.times.some(t => mesmoTime(t, d.valor))) estado.times.push(d.valor.trim().slice(0,40));
-      el('busca-time').value = ''; el('op-times').innerHTML = htmlTimes(''); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
-    case 'tira-time':
-      estado.times = estado.times.filter(t => t !== d.valor);
-      el('op-times').innerHTML = htmlTimes(el('busca-time').value); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+    case 'poe-time': {
+      const alvo = el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes', lista = estado[alvo];
+      if(lista.length < 30 && !lista.some(t => mesmoTime(t, d.valor))) lista.push(d.valor.trim().slice(0,40));
+      el('busca-time').value = ''; el('op-times').innerHTML = htmlEscolha(alvo, ''); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+    }
+    case 'tira-time': {
+      const alvo = el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes';
+      estado[alvo] = estado[alvo].filter(t => t !== d.valor);
+      el('op-times').innerHTML = htmlEscolha(alvo, el('busca-time').value); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+    }
   }
 });
 document.addEventListener('input', ev => {
   if(ev.target.id==='q'){ busca = ev.target.value; desenhar(); }
-  else if(ev.target.id==='busca-time') el('op-times').innerHTML = htmlTimes(ev.target.value);
+  else if(ev.target.id==='busca-time') el('op-times').innerHTML = htmlEscolha(el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes', ev.target.value);
 });
 document.addEventListener('keydown', ev => {
-  if(ev.key==='Escape'){ if(document.body.classList.contains('filtrando')) fecharFiltros(); else fecharBusca(); }
+  if(ev.key==='Escape'){ if(document.body.classList.contains('filtrando')) fecharFolha(); else fecharBusca(); }
   if(ev.key==='Enter' && ev.target.id==='busca-time'){ const p = el('op-times').querySelector('[data-acao="poe-time"]'); if(p && ev.target.value.trim().length>=2){ ev.preventDefault(); p.click(); } }
 });
 el('busca').addEventListener('submit', ev => { ev.preventDefault(); el('q').blur(); });

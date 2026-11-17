@@ -1,8 +1,8 @@
 {
- "build": "2026-11-13-a",
+ "build": "2026-11-17-a",
  "mantos": {
   "2026-11-17": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-17",
@@ -260,7 +260,7 @@
       },
       {
        "n": "Record News",
-       "y": "tv"
+       "y": "free"
       },
       {
        "n": "HBO Max",
@@ -395,9 +395,9 @@
      "match": "México x Jamaica",
      "ch": [
       {
-       "n": "YouTube.com (YouTube)",
+       "n": "Concacaf (YouTube)",
        "y": "free",
-       "u": "https://www.youtube.com/@Youtube.com"
+       "u": "https://www.youtube.com/@concacaf"
       }
      ],
      "v": 1
@@ -405,7 +405,7 @@
    ]
   },
   "2026-11-18": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-18",
@@ -661,7 +661,7 @@
    ]
   },
   "2026-11-19": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-19",
@@ -922,8 +922,8 @@
      "match": "Orlando City x FC Cincinnati",
      "ch": [
       {
-       "n": "Appletv",
-       "y": "tv"
+       "n": "Apple TV",
+       "y": "stream"
       }
      ],
      "v": 1
@@ -933,7 +933,7 @@
  },
  "goal": {
   "2026-11-17": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-17",
@@ -1120,7 +1120,7 @@
      "ch": [
       {
        "n": "Record News",
-       "y": "tv"
+       "y": "free"
       },
       {
        "n": "CazéTV",
@@ -1208,7 +1208,7 @@
    ]
   },
   "2026-11-18": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-18",
@@ -1411,7 +1411,7 @@
    ]
   },
   "2026-11-19": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-19",
@@ -1584,8 +1584,8 @@
      "match": "Orlando City x Cincinnati",
      "ch": [
       {
-       "n": "Apple Tv",
-       "y": "tv"
+       "n": "Apple TV",
+       "y": "stream"
       }
      ],
      "v": 1
@@ -1601,8 +1601,8 @@
      "match": "Seattle Sounders x Real Salt Lake",
      "ch": [
       {
-       "n": "Apple Tv",
-       "y": "tv"
+       "n": "Apple TV",
+       "y": "stream"
       }
      ],
      "v": 1
@@ -1610,7 +1610,7 @@
    ]
   },
   "2026-11-20": {
-   "lido_em": "17/11 16:23",
+   "lido_em": "17/11 17:40",
    "jogos": [
     {
      "date": "2026-11-20",
@@ -1656,7 +1656,7 @@
        "y": "tv"
       },
       {
-       "n": "Onefootball",
+       "n": "OneFootball",
        "y": "stream"
       }
      ],
@@ -1690,11 +1690,11 @@
      "match": "Athletic Bilbao x Espanyol",
      "ch": [
       {
-       "n": "SportyNet (Tv",
-       "y": "tv"
+       "n": "SportyNet",
+       "y": "free"
       },
       {
-       "n": "YouTube)",
+       "n": "SportyNet (YouTube)",
        "y": "free"
       }
      ],

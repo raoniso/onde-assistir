@@ -320,7 +320,7 @@
    },
    {
     "n": "Record News",
-    "y": "tv"
+    "y": "free"
    },
    {
     "n": "HBO Max",
@@ -510,9 +510,9 @@
   "match": "México x Jamaica",
   "ch": [
    {
-    "n": "YouTube.com (YouTube)",
+    "n": "Concacaf (YouTube)",
     "y": "free",
-    "u": "https://www.youtube.com/@Youtube.com"
+    "u": "https://www.youtube.com/@concacaf"
    }
   ],
   "v": 2,
@@ -1006,8 +1006,8 @@
   "match": "Seattle Sounders x Real Salt Lake",
   "ch": [
    {
-    "n": "Apple Tv",
-    "y": "tv"
+    "n": "Apple TV",
+    "y": "stream"
    }
   ],
   "v": 1
@@ -1308,8 +1308,8 @@
   "match": "Orlando City x FC Cincinnati",
   "ch": [
    {
-    "n": "Appletv",
-    "y": "tv"
+    "n": "Apple TV",
+    "y": "stream"
    }
   ],
   "v": 2
@@ -1383,31 +1383,6 @@
   "v": 1
  },
  {
-  "date": "2026-11-19",
-  "t": "22:15",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Indianapolis Colts x Houston Texans",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
   "date": "2026-11-20",
   "t": "14:30",
   "sport": "Futebol",
@@ -1451,7 +1426,7 @@
     "y": "tv"
    },
    {
-    "n": "Onefootball",
+    "n": "OneFootball",
     "y": "stream"
    }
   ],
@@ -1503,11 +1478,11 @@
   "match": "Athletic Bilbao x Espanyol",
   "ch": [
    {
-    "n": "SportyNet (Tv",
-    "y": "tv"
+    "n": "SportyNet",
+    "y": "free"
    },
    {
-    "n": "YouTube)",
+    "n": "SportyNet (YouTube)",
     "y": "free"
    }
   ],
@@ -2510,153 +2485,6 @@
  },
  {
   "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Miami Dolphins x Buffalo Bills",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New Orleans Saints x Chicago Bears",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tennessee Titans x Dallas Cowboys",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tampa Bay Buccaneers x Detroit Lions",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Arizona Cardinals x Kansas City Chiefs",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Pittsburgh Steelers x Philadelphia Eagles",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Baltimore Ravens x Carolina Panthers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
   "t": "16:00",
   "sport": "Futebol",
   "g": "M",
@@ -2753,69 +2581,6 @@
    {
     "n": "NBA League Pass",
     "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:05",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New York Jets x Los Angeles Chargers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Las Vegas Raiders x Denver Broncos",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Jacksonville Jaguars x New York Giants",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
    }
   ],
   "v": 1
@@ -2951,31 +2716,6 @@
   "ch": [
    {
     "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "22:20",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "NFL Mexico City Game",
-  "match": "Minnesota Vikings x San Francisco 49ers",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
     "y": "stream"
    }
   ],
@@ -3214,31 +2954,6 @@
   "ch": [
    {
     "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-23",
-  "t": "22:15",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Cincinnati Bengals x Washington Commanders",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
     "y": "stream"
    }
   ],
