@@ -2,281 +2,200 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
+<meta name="color-scheme" content="dark">
+<meta name="versao-da-tela" content="2026-11-17-a">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  /* Identidade: fundo escuro, hora em âmbar, verde = "dá para assistir".
+     Toda família de fonte passa pelas duas variáveis abaixo, que sempre
+     terminam numa fonte do sistema (a página não muda de cara se o Google
+     Fonts não carregar). */
   :root{
-    --bg:#0A0D13; --surface:#121724; --chip:#1A2130; --chip-on:#10301F;
-    --border:#222B3C; --border-on:#2FD380;
-    --text:#E8EDF6; --muted:#8C96A8; --faint:#5A6478;
-    --green:#2FD380; --orange:#F7A823; --live:#FF4D5E;
-    --tv:#7AA7FF; --stream:#C792EA; --free:#2FD380;
-    --radius:14px;
+    --fundo:#0A0D13; --faixa:#111826; --linha:#1F2838; --linha2:#2B3549;
+    --texto:#EAEFF7; --texto2:#A8B2C4; --texto3:#8791A5;
+    --hora:#F7A823; --verde:#2FD380; --verde-fundo:#11301F; --verde-texto:#7CF0B5;
+    --vivo:#FF6B79;
+    --corpo:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --placar:'Barlow Condensed','Arial Narrow','Roboto Condensed',system-ui,sans-serif;
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
   html,body{margin:0; padding:0}
-  body{
-    background:var(--bg); color:var(--text);
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    font-size:15px; line-height:1.45;
-    padding-bottom:48px;
-  }
-  .wrap{max-width:560px; margin:0 auto; padding:0 14px}
+  html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
+  body{background:var(--fundo); color:var(--texto); font:400 15px/1.4 var(--corpo); padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+  button{font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer; position:relative}
+  input{font:inherit; -webkit-appearance:none; appearance:none}
+  a{color:inherit; text-decoration:none}
+  [hidden]{display:none !important}
+  :focus-visible{outline:2px solid var(--verde); outline-offset:2px}
+  .miolo{max-width:600px; margin-left:auto; margin-right:auto}
+  .so-leitor{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
 
-  /* ---------- Top bar ---------- */
-  header{
-    position:sticky; top:0; z-index:30;
-    background:rgba(10,13,19,.92); backdrop-filter:blur(12px);
-    border-bottom:1px solid var(--border);
-    padding-top:env(safe-area-inset-top);
-  }
-  .brand{display:flex; align-items:baseline; gap:8px; padding:14px 0 4px}
-  .brand h1{
-    font-family:'Barlow Condensed',sans-serif; font-weight:800;
-    font-size:26px; letter-spacing:.5px; margin:0; text-transform:uppercase;
-  }
-  .brand h1 .dot{color:var(--green)}
-  .brand span{font-size:12px; color:var(--muted)}
-  .daytabs{display:flex; gap:6px; padding:8px 0 12px; overflow-x:auto; scrollbar-width:none}
-  .daytabs::-webkit-scrollbar{display:none}
-  .daytab{
-    flex:0 0 auto; border:1px solid var(--border); background:var(--chip);
-    color:var(--muted); border-radius:999px; padding:7px 16px;
-    font:600 13px 'Inter',sans-serif; cursor:pointer; transition:.15s;
-  }
-  .daytab.on{background:var(--green); border-color:var(--green); color:#06140C}
-  .daytab.pick{position:relative; overflow:hidden}
-  .daytab.pick input{position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer}
-  .daytab small{display:block; font-weight:500; font-size:10px; opacity:.75}
+  /* ---------- topo fixo: marca, dias, filtros rápidos ---------- */
+  .topo{position:sticky; top:0; z-index:20; background:rgba(10,13,19,.94); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+        border-bottom:1px solid var(--linha); padding-top:env(safe-area-inset-top)}
+  .marca{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:6px 4px 0 14px}
+  .marca h1{margin:0; font:800 23px/1 var(--placar); letter-spacing:.4px; text-transform:uppercase; white-space:nowrap}
+  .marca h1 b{color:var(--verde); font-weight:800}
+  .frescor{display:flex; align-items:center; min-width:0; color:var(--texto3); font-size:12.5px}
+  .frescor span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right:2px}
+  .frescor.velho span{color:var(--hora)}
+  .frescor i{font-style:normal}
+  @media (max-width:359px){ .frescor i{display:none} }
+  .icone{flex:0 0 auto; width:44px; height:44px; display:grid; place-items:center; color:var(--texto2); border-radius:12px}
+  .icone.girando svg{animation:gira .8s linear infinite}
+  @keyframes gira{to{transform:rotate(360deg)}}
+  .rolagem{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:4px 14px; scroll-padding:0 14px}
+  .rolagem::-webkit-scrollbar{display:none}
+  .dia{flex:0 0 auto; min-width:60px; height:46px; padding:0 12px; border-radius:12px; border:1px solid var(--linha); color:var(--texto2);
+       display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:600; font-size:13.5px; line-height:1.15}
+  .dia small{font-weight:500; font-size:12px; color:var(--texto3)}
+  .dia.sel{background:var(--verde); border-color:var(--verde); color:#06140C}
+  .dia.sel small{color:#0B3A22}
+  .dia i{width:6px; height:6px; border-radius:50%; background:var(--hora); position:absolute; top:5px; right:6px}
+  .barra{display:flex; align-items:center; padding:6px 14px 10px 0}
+  .barra .rolagem{flex:1 1 auto; padding:3px 18px 3px 14px; margin:-3px 0; scroll-padding:0 30px 0 14px; -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent); mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
+  .rapido{flex:0 0 auto; height:38px; padding:0 14px; border-radius:19px; border:1px solid var(--linha); color:var(--texto2); font-weight:500; font-size:14px;
+          display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
+  .rapido::after{content:''; position:absolute; inset:-4px 0}                 /* alvo de toque de 44 px (parte de dentro da borda) */
+  .rapido.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto); font-weight:600}
+  .rapido.filtros{color:var(--texto); border-color:#33405A}
+  .rapido .n{background:var(--verde); color:#06140C; border-radius:9px; min-width:18px; height:18px; font-size:12px; font-weight:700; display:grid; place-items:center; padding:0 5px}
+  .busca{display:flex; align-items:center; gap:4px; padding:6px 6px 10px 14px}
+  .busca input{flex:1 1 auto; min-width:0; height:44px; border-radius:12px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px}
+  .busca input::placeholder, .campo::placeholder{color:var(--texto3)}
+  .texto{min-height:44px; padding:0 10px; color:var(--verde-texto); font-weight:600; font-size:14px}
+  .fuso{margin-top:10px; margin-bottom:-4px; padding:0 14px; color:var(--texto2); font-size:13px}
 
-  /* ---------- Filtros ---------- */
-  .panel{margin-top:14px}
-  .section{border-bottom:1px dashed var(--border); padding:10px 0}
-  .sec-head{
-    display:flex; align-items:center; gap:8px; cursor:pointer; user-select:none;
-    font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15px;
-    letter-spacing:2px; text-transform:uppercase; color:var(--muted);
-  }
-  .sec-head .tri{color:var(--green); font-size:11px; transition:transform .2s}
-  .section.closed .tri{transform:rotate(-90deg)}
-  .sec-head .count{
-    margin-left:auto; font-family:'Inter'; font-size:11px; font-weight:600;
-    letter-spacing:0; color:#06140C; background:var(--green);
-    border-radius:999px; padding:1px 8px; display:none;
-  }
-  .sec-head .count.show{display:inline-block}
-  .sec-body{padding-top:10px}
-  .section.closed .sec-body{display:none}
-  .chips{display:flex; flex-wrap:wrap; gap:8px}
-  .chip{
-    border:1px solid var(--border); background:var(--chip); color:var(--text);
-    border-radius:999px; padding:8px 15px; font:500 13.5px 'Inter',sans-serif;
-    cursor:pointer; transition:.12s;
-  }
-  .chip:active{transform:scale(.96)}
-  .chip.on{background:var(--chip-on); border-color:var(--border-on); color:var(--green); font-weight:600}
-  .clear-link{
-    background:none; border:none; color:var(--green); font:500 12.5px 'Inter';
-    text-decoration:underline; cursor:pointer; padding:0; margin-bottom:8px;
-  }
-  .seg{display:flex; border:1px solid var(--border); border-radius:999px; overflow:hidden; width:max-content}
-  .seg button{
-    background:var(--chip); border:none; color:var(--muted);
-    font:600 13px 'Inter'; padding:8px 18px; cursor:pointer;
-  }
-  .seg button.on{background:var(--green); color:#06140C}
-  .searchrow{display:flex; gap:10px; margin:14px 0 4px}
-  .searchrow input{
-    flex:1; background:var(--chip); border:1px solid var(--border);
-    border-radius:12px; color:var(--text); font:400 14px 'Inter';
-    padding:11px 14px; outline:none;
-  }
-  .searchrow input:focus{border-color:var(--green)}
-  .searchrow input::placeholder{color:var(--faint)}
-  .actions{display:flex; align-items:center; gap:12px; margin:12px 0 4px}
-  .btn-update{
-    background:var(--green); color:#06140C; border:none; border-radius:999px;
-    font:700 14px 'Inter'; padding:11px 26px; cursor:pointer;
-  }
-  .btn-ghost{
-    background:none; border:1px solid var(--border); color:var(--muted);
-    border-radius:999px; font:600 13px 'Inter'; padding:10px 18px; cursor:pointer;
-  }
+  /* ---------- lista ---------- */
+  main{padding:0 10px}
+  .secao{margin:14px 4px 6px; font:600 13.5px/1.4 var(--corpo); color:var(--texto2); display:flex; align-items:center; gap:8px}
+  .secao .pulso{width:8px; height:8px; border-radius:50%; background:var(--vivo)}
+  .grupo{list-style:none; margin:0; padding:0; background:var(--faixa); border:1px solid var(--linha); border-radius:14px; overflow:hidden}
+  .grupo.recolhido{margin-top:8px}
+  .jogo{display:grid; grid-template-columns:62px minmax(0,1fr); column-gap:6px; padding:11px 12px; border-top:1px solid var(--linha)}
+  .jogo:first-child{border-top:0}
+  .hora{font:700 27px/1 var(--placar); color:var(--hora); letter-spacing:.3px; padding-top:1px; min-width:0}
+  .hora time{display:block}
+  .hora .st{display:block; margin-top:5px; font:600 12px/1.15 var(--corpo); letter-spacing:0; color:var(--texto3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .hora .st.vivo{color:var(--vivo)}
+  .jogo.fim .hora{color:var(--texto3)}
+  .times{font-weight:600; font-size:16px; line-height:1.25; overflow-wrap:anywhere}
+  .times .x{color:var(--texto3); font-weight:400; padding:0 1px}
+  .times .pl{font:700 21px/1 var(--placar); letter-spacing:.3px; font-variant-numeric:tabular-nums}
+  .jogo.fim .pl{color:var(--texto2)}
+  .times .fav{color:var(--hora); margin-right:4px}
+  .linha2{display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; margin-top:5px}
+  .liga{color:var(--texto2); font-size:13px; flex:1 1 0; min-width:42%}        /* a liga cede espaço (quebrando em 2 linhas) antes de empurrar os canais para baixo */
+  .liga span{color:var(--texto3)}
+  .canais{display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; margin-left:auto}
+  .canal{position:relative; min-height:36px; padding:0 12px; border-radius:18px; border:1px solid var(--linha2); color:var(--texto2); font-weight:600; font-size:13px;
+         display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
+  a.canal::after{content:''; position:absolute; inset:-5px 0}                  /* alvo de toque de 44 px */
+  .canal.meu{background:var(--verde-fundo); border-color:transparent; color:var(--verde-texto)}
+  .canal small{font-weight:500; font-size:12px; opacity:.85}
+  .aconfirmar{color:var(--texto3); font-size:13px; white-space:nowrap; align-self:center}
+  .agora{display:flex; align-items:center; gap:10px; margin:12px 4px 2px; color:var(--vivo); font:600 12.5px/1 var(--corpo)}
+  .agora::before,.agora::after{content:''; height:1px; background:var(--vivo); opacity:.55}
+  .agora::before{width:14px} .agora::after{flex:1}
+  .nada{margin:14px 4px 6px; color:var(--texto2); font-size:13.5px}
+  .dobra{width:100%; min-height:48px; margin-top:8px; padding:0 14px; border:1px dashed var(--linha2); border-radius:14px; color:var(--texto2); font-size:13.5px;
+         display:flex; align-items:center; justify-content:space-between; gap:10px; text-align:left}
+  .dobra b{color:var(--texto); font-weight:600}
+  .dobra svg{flex:0 0 auto; color:var(--texto3)}
+  .dobra[aria-expanded="true"] svg{transform:rotate(90deg)}
+  .dica, .vazio{margin-top:14px; padding:14px; border:1px solid var(--linha); border-radius:14px; background:var(--faixa); font-size:14px; color:var(--texto2)}
+  .vazio{border-style:dashed; background:none; text-align:center; padding:28px 18px}
+  .dica b, .vazio b{color:var(--texto); font-weight:600}
+  .vazio b{display:block; margin-bottom:4px; font-size:15px}
+  .dica p, .vazio p{margin:0}
+  .acoes{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+  .vazio .acoes{justify-content:center}
+  .botao{min-height:44px; padding:0 18px; border-radius:22px; background:var(--verde); color:#06140C; font-weight:600; font-size:14px}
+  .botao.fantasma{background:none; border:1px solid var(--linha2); color:var(--texto2)}
 
-  /* ---------- Resultados ---------- */
-  .meta{color:var(--muted); font-size:13px; margin:18px 0 6px}
-  .meta b{color:var(--text)}
-  .timeblock{
-    font-family:'Barlow Condensed'; font-weight:700; font-size:14px;
-    letter-spacing:3px; text-transform:uppercase; color:var(--faint);
-    margin:20px 0 8px; display:flex; align-items:center; gap:10px;
-  }
-  .timeblock::after{content:''; flex:1; height:1px; background:var(--border)}
-  .card{
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:var(--radius); padding:14px; margin-bottom:10px;
-    display:grid; grid-template-columns:74px 1fr; gap:12px;
-    animation:rise .25s ease both;
-  }
-  @keyframes rise{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
-  @media (prefers-reduced-motion:reduce){ .card{animation:none} }
-  .quiet .card{animation:none} /* atualização automática de placar não re-anima a lista */
-  .when{display:flex; flex-direction:column; align-items:flex-start; gap:4px}
-  .time{
-    font-family:'Barlow Condensed'; font-weight:800; font-size:34px;
-    line-height:.9; color:var(--orange); letter-spacing:.5px;
-  }
-  .live-pill{
-    display:inline-flex; align-items:center; gap:5px;
-    font:700 10px 'Inter'; letter-spacing:1px; color:var(--live);
-  }
-  .live-pill i{
-    width:7px; height:7px; border-radius:50%; background:var(--live);
-    animation:pulse 1.2s infinite;
-  }
-  @keyframes pulse{50%{opacity:.25}}
-  .gender-tag{font:600 10px 'Inter'; letter-spacing:1px; color:var(--faint)}
-  .score{font-family:'Barlow Condensed'; font-weight:800; font-size:26px; line-height:1; color:var(--text)}
-  .score span{color:var(--faint); font-size:18px}
-  .score-status{font:700 10px 'Inter'; letter-spacing:1px; color:var(--live)}
-  .score-status.fim{color:var(--faint)}
-  .ev-top{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
-  .sport-tag{
-    font:700 10.5px 'Inter'; letter-spacing:1.5px; text-transform:uppercase;
-    background:var(--chip); border-radius:6px; padding:3px 8px; color:var(--muted);
-  }
-  .matchup{font-weight:700; font-size:15.5px}
-  .league{color:var(--muted); font-size:13px; margin-top:2px}
-  .league em{color:var(--faint); font-style:italic; font-size:12px}
-  .badges{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
-  .badge{
-    font:600 12px 'Inter'; border-radius:999px; padding:5px 12px;
-    border:1px solid var(--border); display:inline-flex; align-items:center; gap:6px;
-    text-decoration:none; cursor:pointer; transition:.12s;
-  }
-  .badge:active{transform:scale(.95)}
-  .badge::after{content:'↗'; font-size:10px; opacity:.5}
-  .verified{color:var(--green); font-size:11px; font-weight:700}
-  .badge i{width:6px; height:6px; border-radius:50%}
-  .badge.tv{color:var(--tv)} .badge.tv i{background:var(--tv)}
-  .badge.stream{color:var(--stream)} .badge.stream i{background:var(--stream)}
-  .badge.free{color:var(--free)} .badge.free i{background:var(--free)}
-  .badge.tbd{color:var(--faint); border-style:dashed}
-  .badge.tbd::after{content:''}
-  .legend{display:flex; gap:14px; margin-top:6px; font-size:11px; color:var(--faint)}
-  .legend span{display:inline-flex; align-items:center; gap:5px}
-  .legend i{width:7px; height:7px; border-radius:50%}
-  .empty{
-    text-align:center; color:var(--muted); padding:40px 20px;
-    border:1px dashed var(--border); border-radius:var(--radius); margin-top:16px;
-  }
-  .empty b{color:var(--text); display:block; margin-bottom:6px}
-  button:focus-visible,.chip:focus-visible,input:focus-visible{outline:2px solid var(--green); outline-offset:2px}
+  /* ---------- folha de filtros ---------- */
+  .veu{position:fixed; inset:0; z-index:40; background:rgba(4,6,10,.62); opacity:0; visibility:hidden; transition:opacity .2s ease, visibility 0s .2s}
+  .folha{position:fixed; left:0; right:0; bottom:0; z-index:41; max-width:600px; margin:0 auto; max-height:86vh; max-height:86dvh; overflow:auto; overscroll-behavior:contain;
+         background:#0F141F; border:1px solid var(--linha); border-bottom:0; border-radius:20px 20px 0 0; padding:8px 16px calc(18px + env(safe-area-inset-bottom));
+         transform:translateY(100%); visibility:hidden; transition:transform .2s ease, visibility 0s .2s}
+  .folha:focus{outline:none}
+  body.filtrando{overflow:hidden}
+  body.filtrando .veu{opacity:1; visibility:visible; transition:opacity .2s ease}
+  body.filtrando .folha{transform:none; visibility:visible; transition:transform .2s ease}
+  .pega{width:38px; height:4px; border-radius:2px; background:#313C52; margin:2px auto 6px}
+  .folha header{display:flex; align-items:center; justify-content:space-between; margin:0 -6px 2px 0}
+  .folha h2{margin:0; font:700 18px/1.2 var(--corpo)}
+  .folha h3{margin:18px 0 4px; font:600 14px/1.3 var(--corpo); color:var(--texto)}
+  .folha p{margin:0 0 10px; color:var(--texto2); font-size:13px}
+  .opcoes{display:flex; flex-wrap:wrap; gap:8px}
+  .op{min-height:40px; padding:0 14px; border-radius:20px; border:1px solid var(--linha2); color:var(--texto2); font-weight:500; font-size:14px; display:inline-flex; align-items:center; gap:7px; text-align:left}
+  .op::after{content:''; position:absolute; inset:-3px 0}                      /* alvo de toque de 44 px */
+  .op.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto); font-weight:600}
+  .op.sel::before{content:'✓'; font-weight:700}
+  .op.mais::before{content:'+'; font-weight:600; color:var(--texto3)}
+  .chave{display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:52px; border-top:1px solid var(--linha); margin-top:16px; padding-top:12px}
+  .chave div{font-weight:600; font-size:14.5px}
+  .chave div small{display:block; font-weight:400; font-size:13px; color:var(--texto2)}
+  .liga-desliga{flex:0 0 auto; width:50px; height:30px; border-radius:15px; background:#3A465E; transition:background .15s}
+  .liga-desliga::before{content:''; position:absolute; inset:-7px 0}           /* alvo de toque de 44 px */
+  .liga-desliga::after{content:''; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; transition:transform .15s}
+  .liga-desliga[aria-checked="true"]{background:var(--verde)}
+  .liga-desliga[aria-checked="true"]::after{transform:translateX(20px)}
+  .campo{width:100%; height:44px; border-radius:12px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px; margin-bottom:10px}
+  .pe-folha{margin:18px -10px 0; border-top:1px solid var(--linha); padding-top:4px}
+  @media (prefers-reduced-motion:no-preference){ .secao .pulso{animation:pulso 1.4s ease-in-out infinite} }
+  @keyframes pulso{50%{opacity:.3}}
+  @media (prefers-reduced-motion:reduce){ .veu,.folha,.liga-desliga,.liga-desliga::after{transition:none !important} .icone.girando svg{animation:none} }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="brand">
-      <h1>Onde<span class="dot">.</span>Assistir</h1>
-      <span>guia de transmissões</span>
+<header class="topo" id="topo">
+  <div class="miolo">
+    <div class="marca">
+      <h1>Onde<b>.</b>Assistir</h1>
+      <div class="frescor" id="frescor">
+        <span id="quando"></span>
+        <button type="button" class="icone" id="abre-busca" data-acao="abrir-busca" aria-label="Buscar nos próximos 7 dias"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.2" stroke="currentColor" stroke-width="1.6"/><path d="m12 12 3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <button type="button" class="icone" id="atualizar" data-acao="atualizar" aria-label="Atualizar agora"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M15 9a6 6 0 1 1-1.9-4.4M15 3v3.2h-3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
     </div>
-    <div class="daytabs" id="daytabs"></div>
+    <div id="navegacao">
+      <nav class="rolagem" id="dias" aria-label="Dia"></nav>
+      <div class="barra">
+        <div class="rolagem" id="rapidos" role="group" aria-label="O que mostrar"></div>
+        <button type="button" class="rapido filtros" id="abre-filtros" data-acao="abrir-filtros" aria-haspopup="dialog">Filtros</button>
+      </div>
+    </div>
+    <form class="busca" id="busca" role="search" hidden>
+      <input type="search" id="q" placeholder="Time, campeonato ou canal" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Buscar nos próximos 7 dias">
+      <button type="button" class="texto" data-acao="fechar-busca">Fechar</button>
+    </form>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="panel">
+<p class="fuso miolo" id="fuso" hidden>Os horários são de Brasília.</p>
+<main class="miolo" id="lista"></main>
 
-    <div class="section" data-sec="sport">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Esportes <span class="count" id="cnt-sport"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('sport')">Limpar</button>
-        <div class="chips" id="chips-sport"></div>
-      </div>
-    </div>
-
-    <div class="section" data-sec="gender">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Gênero</div>
-      <div class="sec-body">
-        <div class="seg" id="seg-gender">
-          <button data-v="" class="on">Todos</button>
-          <button data-v="M">Masculino</button>
-          <button data-v="F">Feminino</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" data-sec="cat">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Categoria</div>
-      <div class="sec-body">
-        <div class="chips">
-          <button class="chip" id="chip-cat-sub" onclick="toggleCat('sub',this)">Sub / base</button>
-          <button class="chip" id="chip-cat-lower" onclick="toggleCat('lower',this)">Divisões inferiores</button>
-        </div>
-        <div style="font-size:11px;color:var(--faint);margin-top:8px">Desmarcados, jogos de base (Sub-17, Sub-20…), times B e divisões de acesso (Série B/C, 2ª divisões) ficam ocultos.</div>
-      </div>
-    </div>
-
-    <div class="section" data-sec="country">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> País / Região <span class="count" id="cnt-country"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('country')">Todos os países</button>
-        <div class="chips" id="chips-country"></div>
-      </div>
-    </div>
-
-    <div class="section" data-sec="league">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Campeonatos / Ligas <span class="count" id="cnt-league"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('league')">Limpar campeonatos</button>
-        <div class="chips" id="chips-league"></div>
-      </div>
-    </div>
-
-    <div class="section" data-sec="team">
-      <div class="sec-head" onclick="toggleSec(this)"><span class="tri">▼</span> Times <span class="count" id="cnt-team"></span></div>
-      <div class="sec-body">
-        <button class="clear-link" onclick="clearFilter('team')">Limpar times</button>
-        <div class="chips" id="chips-team"></div>
-      </div>
-    </div>
-
-    <div class="searchrow">
-      <input id="search" type="search" placeholder="Buscar time, liga ou canal…" autocomplete="off">
-    </div>
-
-    <div class="actions">
-      <button class="btn-update" id="btn-update" onclick="atualizar()">Atualizar</button>
-      <button class="btn-ghost" onclick="clearAll()">Limpar tudo</button>
-    </div>
-
-    <div class="legend">
-      <span><i style="background:var(--tv)"></i> TV</span>
-      <span><i style="background:var(--stream)"></i> Streaming</span>
-      <span><i style="background:var(--free)"></i> Grátis / aberto</span>
-    </div>
-  </div>
-
-  <div class="meta" id="meta"></div>
-  <div id="results"></div>
-</main>
+<div class="veu" id="veu" data-acao="fechar-filtros"></div>
+<section class="folha" id="folha" role="dialog" aria-modal="true" aria-labelledby="folha-titulo" tabindex="-1"></section>
 
 <script>
 /* =========================================================
    DADOS — este arquivo é o TEMPLATE. O robô (atualizar_dados.py) gera o
    index.html a partir dele, trocando o que está entre DB-START e DB-END
-   e preenchendo GENERATED_AT. Com o app aberto, o eventos.json hospedado
-   ao lado é recarregado e tem prioridade sobre os dados embutidos.
+   e preenchendo o carimbo logo abaixo. Com o app aberto, o eventos.json
+   hospedado ao lado é recarregado e tem prioridade sobre os dados embutidos.
    Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?, sel?}
-           (sel=1: jogo de seleções, marcado pelo robô)
+           (date e t em horário de Brasília; sel=1: jogo de seleções)
    Canal:  {n: nome, y: 'tv'|'stream'|'free', u?: link exato}
    ========================================================= */
 /*DB-START*/
@@ -284,32 +203,69 @@ const DB = [];
 /*DB-END*/
 const GENERATED_AT = null; /* preenchido pelo script Python */
 
-/* Carrega o eventos.json hospedado ao lado; se falhar (offline, arquivo
+const el = id => document.getElementById(id);
+/* todo texto que vem dos dados passa por aqui antes de virar HTML */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const semAcento = s => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const nrm = s => semAcento(s).replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').trim();          /* comparação de nomes (placar) */
+const nrmBusca = s => semAcento(s).replace(/[^a-z0-9]+/g,' ').trim();                          /* busca: sem acento e sem pontuação */
+const chaveTime = s => semAcento(s).replace(/[^a-z0-9]/g,'');                                  /* "Atlético-MG" = "Atletico MG" */
+
+/* ---------- relógio: o app inteiro anda em horário de Brasília ----------
+   As datas e horas dos dados são de Brasília; "hoje", "ao vivo" e "agora"
+   são calculados nesse fuso mesmo que o aparelho esteja em outro. */
+const FMT_BRT = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Sao_Paulo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'});
+function relogio(d){
+  d = d || new Date();
+  const p = {}; for(const x of FMT_BRT.formatToParts(d)) p[x.type] = x.value;
+  const h = +p.hour % 24, hhmm = String(h).padStart(2,'0') + ':' + p.minute;      /* há navegador que devolve 24 à meia-noite */
+  const local = String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
+  return { iso: p.year+'-'+p.month+'-'+p.day, min: h*60 + +p.minute, hhmm, fora: local !== hhmm };
+}
+const somaDias = (iso, n) => { const d = new Date(iso+'T12:00:00Z'); d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); };
+const diasEntre = (a, b) => Math.round((Date.parse(b+'T12:00:00Z') - Date.parse(a+'T12:00:00Z')) / 864e5);     /* de a até b */
+const minutos = t => { const [h,m] = t.split(':').map(Number); return h*60+m; };
+const diaMes = iso => +iso.slice(8,10) + '/' + +iso.slice(5,7);
+function nomeDoDia(iso, i, longo){
+  if(i===0) return 'Hoje';
+  if(i===1) return 'Amanhã';
+  const s = new Date(iso+'T12:00:00Z').toLocaleDateString('pt-BR', {weekday: longo ? 'long' : 'short', timeZone:'UTC'}).replace('.','');
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/* ---------- carga dos dados ---------- */
+let DADOS_EM = null;                 /* quando os dados em uso foram gravados */
+(function(){                         /* carimbo embutido pelo robô: 'dd/mm HH:MM', de Brasília */
+  const m = /^(\d\d)\/(\d\d) (\d\d):(\d\d)$/.exec(typeof GENERATED_AT==='string' ? GENERATED_AT : '');
+  if(!m) return;
+  const ano = +relogio().iso.slice(0,4), em = a => Date.UTC(a, +m[2]-1, +m[1], +m[3]+3, +m[4]);
+  DADOS_EM = new Date(em(ano) > Date.now() + 864e5 ? em(ano-1) : em(ano));
+})();
+/* Carrega o eventos.json hospedado ao lado; se falhar (sem rede, arquivo
    local), o app segue com os dados embutidos. */
-let DATA_AT = (typeof GENERATED_AT==='string' && GENERATED_AT) ? GENERATED_AT : '';
 let lastTry = 0;
 async function tryLoadJson(){
   lastTry = Date.now();
   try{
-    const r = await fetch(`eventos.json?t=${Date.now()}`, {cache:'no-store'});
+    const r = await fetch('eventos.json?t=' + Date.now(), {cache:'no-store'});
     if(r.ok){
       const data = await r.json();
       if(Array.isArray(data) && data.length){
         DB.length = 0; DB.push(...data);
-        /* o carimbo "dados de" acompanha o arquivo realmente carregado */
+        /* o carimbo acompanha o arquivo realmente carregado */
         const lm = new Date(r.headers.get('last-modified') || '');
-        if(!isNaN(lm)) DATA_AT = lm.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}) + ' ' +
-                                 lm.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-        prepararDB(); buildAllChips(); render();
+        if(!isNaN(lm)) DADOS_EM = lm;
+        prepararDB(); desenhar();
         return true;
       }
     }
-  }catch(e){ /* offline ou arquivo local — segue com dados embutidos */ }
+  }catch(e){ /* sem rede ou arquivo local — segue com os dados embutidos */ }
   return false;
 }
+
 /* ---------- placares ao vivo ----------
-   Buscados pelo PRÓPRIO navegador na API pública da ESPN, a cada 60s, só
-   para o que já começou no dia aberto. Se a API falhar, o app segue sem placar. */
+   Buscados pelo PRÓPRIO navegador na API pública da ESPN, a cada minuto, só
+   para o que já começou. Se a API falhar, o app segue sem placar. */
 const FEEDS = {   /* liga (nome oficial que o robô grava) -> feed da ESPN */
   'Champions League':'soccer/uefa.champions', 'Copa do Brasil':'soccer/bra.copa_do_brazil',
   'Brasileirão Série A':'soccer/bra.1', 'Brasileirão Série B':'soccer/bra.2',
@@ -325,12 +281,11 @@ const FEEDS_RX = [   /* nomes como o guia escreve, para jogo que não casou com 
 ];
 function feedDe(e){
   if(FEEDS[e.league]) return FEEDS[e.league];
-  if(e.sport!=='Futebol' || e.g==='F' || isSub(e)) return null;
+  if(e.sport!=='Futebol' || e.g==='F' || ehBase(e)) return null;
   for(const [re,f] of FEEDS_RX) if(re.test(e.league)) return f;
   return null;
 }
-let SCORES = [], scoreSig = '';
-const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim();
+let SCORES = [], assinatura = '';
 function simil(a,b){
   a = nrm(a); b = nrm(b);
   if(!a||!b) return 0;
@@ -342,23 +297,22 @@ function simil(a,b){
   if(comum>=1 && comum >= Math.min(pa.length,pb.length)) return .85;
   return 0;
 }
-const isoLocal = d => d.toLocaleDateString('en-CA');                 /* YYYY-MM-DD no fuso do aparelho */
-const isoBRT   = d => d.toLocaleDateString('en-CA',{timeZone:'America/Sao_Paulo'});   /* datas dos dados são de Brasília */
-const minutosDe = t => { const [h,m] = t.split(':').map(Number); return h*60+m; };
-function vespera(iso){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate()-1); return isoLocal(d); }
+const isoBRT = d => relogio(d).iso;
 async function fetchScores(){
   if(document.visibilityState!=='visible') return;
-  const dia = DAYS[state.day]?.iso, agora = new Date(), hoje = isoLocal(agora);
+  const agora = relogio(), ontem = somaDias(agora.iso, -1);
   const pedidos = new Set();                                         /* "feed|YYYYMMDD" */
-  if(dia && dia<=hoje){
-    const minAgora = agora.getHours()*60 + agora.getMinutes();
-    for(const e of DB){
-      if(e.date!==dia || (dia===hoje && minutosDe(e.t) > minAgora+5)) continue;   /* ainda não começou */
+  if(diaSel===0 || buscando){                                        /* outros dias não têm nada em campo */
+    for(const e of LIMPOS){
+      if(e.date!==agora.iso && e.date!==ontem) continue;
+      const desde = desdeInicio(e, agora);
+      if(desde < -5) continue;                                       /* ainda não começou */
+      if(e.date===ontem && desde > duracao(e)+30) continue;          /* de ontem, só o que ainda pode estar em campo */
       const f = feedDe(e); if(!f) continue;
-      pedidos.add(f+'|'+dia.replace(/-/g,''));
+      pedidos.add(f+'|'+e.date.replace(/-/g,''));
       /* NBA/NFL: a ESPN agrupa pelo dia dos EUA; jogo da madrugada de
          Brasília pertence à rodada americana da véspera */
-      if(!f.startsWith('soccer') && e.t<'06:00') pedidos.add(f+'|'+vespera(dia).replace(/-/g,''));
+      if(!f.startsWith('soccer') && e.t<'06:00') pedidos.add(f+'|'+somaDias(e.date,-1).replace(/-/g,''));
     }
   }
   const novo = [];
@@ -384,20 +338,40 @@ async function fetchScores(){
                   dia: isNaN(quando) ? '' : isoBRT(quando) });
     }
   }));
-  /* só redesenha se algo mudou: placar, status, ou um jogo entrou/saiu do "AO VIVO" */
   novo.sort((a,b)=>(a.feed+a.dia+a.hn).localeCompare(b.feed+b.dia+b.hn));
-  const sig = JSON.stringify(novo) + '|' + DB.filter(isLive).map(e=>e.t+e.match).join(';');
   SCORES = novo;
-  if(sig!==scoreSig){ scoreSig = sig; render(true); }
+  redesenharSeMudou();
+}
+/* só redesenha a lista se algo mudou: placar, status, ou um jogo entrou/saiu do "ao vivo" */
+function redesenharSeMudou(){
+  const agora = relogio(), ontem = somaDias(agora.iso, -1);
+  const sig = JSON.stringify(SCORES) + '|' + LIMPOS.filter(e => e.date===agora.iso || e.date===ontem).map(e => fase(e, agora)[0]).join('');
+  if(sig !== assinatura) desenhar();
+  else { const r = el('relogio'); if(r) r.textContent = agora.hhmm; desenharFrescor(agora); }
 }
 function readScore(s){
   if(s==null) return '';
   if(typeof s==='object') return s.displayValue ?? s.value ?? '';
   return String(s);
 }
+/* período do jogo em português curto, para caber embaixo da hora */
+function rotuloAoVivo(s){
+  if(s.feed.startsWith('soccer')){
+    const t = (s.clock && s.clock!=="0'") ? s.clock : s.det;
+    return /^(ht|half)/i.test(t||'') ? 'intervalo' : (t || 'ao vivo');
+  }
+  const d = s.det || s.clock || '';
+  let m;
+  if(/half/i.test(d)) return 'intervalo';
+  if((m = /^(\d+:\d+(?:\.\d)?)\s*-\s*(\d)(?:st|nd|rd|th)/i.exec(d))) return m[2] + 'º ' + m[1];
+  if((m = /^end of (\d)(?:st|nd|rd|th)/i.exec(d))) return 'fim do ' + m[1] + 'º';
+  if((m = /^(\d+:\d+(?:\.\d)?)\s*-\s*(\d?)\s*ot/i.exec(d))) return 'prorr. ' + m[1];
+  return d || 'ao vivo';
+}
 function scoreFor(e){
   /* "espn" = nomes dos times como a ESPN escreve (gravado pelo robô quando o
      jogo do guia casa com a tabela oficial); sem ele, tenta pelo nome do card */
+  if(!SCORES.length) return null;
   const feed = feedDe(e);
   const partes = (e.espn||e.match||'').split(/\s+x\s+/i);
   if(!feed || partes.length!==2) return null;
@@ -406,9 +380,8 @@ function scoreFor(e){
     const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
     const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
     if(!direto && !inverso) continue;
-    const aoVivo = (s.clock && s.clock!=='0\'') ? s.clock : (s.det || 'Ao vivo');
     return { a: direto ? s.hs : s.as, b: direto ? s.as : s.hs,
-             label: s.state==='post' ? 'Encerrado' : aoVivo,
+             label: s.state==='post' ? 'encerrado' : rotuloAoVivo(s),
              fim: s.state==='post' };
   }
   return null;
@@ -444,184 +417,169 @@ function linkFor(nome){
 function linkDoCanal(c){
   return (typeof c.u==='string' && /^https:\/\/www\.youtube\.com\/@[\w.\-]+$/.test(c.u)) ? c.u : linkFor(c.n);
 }
-/* todo texto que vem dos dados passa por aqui antes de virar HTML */
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-const state = { day:0, sport:new Set(), gender:'', country:new Set(), league:new Set(), team:new Set(), catSub:false, catLower:false, q:'' };
-
-/* Abas de dia com data ABSOLUTA (ISO). Um evento só aparece na aba
-   cuja data bate exatamente com a dele — dado antigo nunca vira "hoje".
-   Baseline de 7 dias + seletor livre de data (📅). */
-let customIso = null;
-function makeDays(){
-  const arr = [0,1,2,3,4,5,6].map(i=>{
-    const dt = new Date(); dt.setDate(dt.getDate()+i);
-    const iso = dt.toLocaleDateString('en-CA'); /* YYYY-MM-DD local */
-    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
-    const label = i===0 ? 'Hoje' : i===1 ? 'Amanhã' : w.charAt(0).toUpperCase()+w.slice(1);
-    return { label, sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}), iso };
-  });
-  if(customIso && !arr.some(d=>d.iso===customIso)){
-    const dt = new Date(customIso+'T12:00:00');
-    const w = dt.toLocaleDateString('pt-BR',{weekday:'short'}).replace('.','');
-    arr.push({ label: w.charAt(0).toUpperCase()+w.slice(1),
-               sub: dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}),
-               iso: customIso });
-  }
-  return arr;
-}
-let DAYS = makeDays();
-function pickDate(v){
-  if(!v) return;
-  customIso = v;
-  DAYS = makeDays();
-  state.day = DAYS.findIndex(d=>d.iso===v);
-  buildDayTabs(); buildLeagueChips(); render();
-}
-
-/* ---------- helpers ---------- */
-const uniq = arr => [...new Set(arr)].sort((a,b)=>a.localeCompare(b,'pt'));
-const el = id => document.getElementById(id);
-
-function buildDayTabs(){
-  el('daytabs').innerHTML = DAYS.map((d,i)=>
-    `<button class="daytab ${i===state.day?'on':''}" onclick="setDay(${i})">${d.label}<small>${d.sub}</small></button>`
-  ).join('') + `<label class="daytab pick">📅<small>data</small><input type="date" min="${DAYS[0].iso}" value="${customIso||''}" onchange="pickDate(this.value)"></label>`;
-}
-function setDay(i){ state.day=i; buildDayTabs(); buildLeagueChips(); render(); fetchScores(); }
-
-function buildChips(key, containerId, values){
-  el(containerId).innerHTML = values.map(v=>
-    `<button class="chip ${state[key].has(v)?'on':''}" onclick="toggle('${key}',this)" data-v="${esc(v)}">${esc(v)}</button>`
-  ).join('');
-}
-function toggle(key, btn){
-  const v = btn.dataset.v;
-  state[key].has(v) ? state[key].delete(v) : state[key].add(v);
-  btn.classList.toggle('on');
-  if(key!=='league') buildLeagueChips();
-  updateCounts(); render();
-}
-function clearFilter(key){
-  state[key].clear();
-  buildAllChips(); updateCounts(); render();
-}
-function clearAll(){
-  state.sport.clear(); state.country.clear(); state.league.clear(); state.team.clear();
-  state.catSub = false; state.catLower = false;
-  el('chip-cat-sub').classList.remove('on'); el('chip-cat-lower').classList.remove('on');
-  state.gender=''; state.q=''; el('search').value='';
-  document.querySelectorAll('#seg-gender button').forEach(b=>b.classList.toggle('on', b.dataset.v===''));
-  buildAllChips(); updateCounts(); render();
-}
-function updateCounts(){
-  for(const k of ['sport','country','league','team']){
-    const c = el('cnt-'+k);
-    c.textContent = state[k].size; c.classList.toggle('show', state[k].size>0);
-  }
-}
-function toggleSec(head){ head.parentElement.classList.toggle('closed'); }
-
-/* Esportes sempre visíveis no filtro (ordem fixa) */
-const SPORTS = ['Futebol','Basquete','Futebol Americano'];
-
-/* Ligas: lista FIXA e curada. Cada chip casa com os eventos por padrão
-   (regex), então ruído das fontes nunca vira chip novo. Os padrões cobrem o
-   nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
-   "LaLiga", "UEFA Champions League").
-   "Seleções" não é uma liga: junta todo jogo de seleção (datas FIFA, Nations
-   League, eliminatórias, Euro, Copa América, amistosos entre países), que o
-   robô marca com sel=1. */
-const LEAGUES = [
-  ['Seleções',              e => !!e.sel],
-  ['Brasileirão Série A',   /^brasileir[ãa]o(\s+s[ée]rie a)?$/i],
-  ['Copa do Brasil',        /copa do brasil/i],
-  ['Libertadores',          /libertadores/i],
-  ['Sul-Americana',         /sul.?americana/i],
-  ['Champions League',      /^(?!.*\b(afc|caf|ofc|concacaf)\b).*champions league|liga dos campe/i],
-  ['Premier League',        /premier league|^(campeonato )?ingl[êe]s$/i],
-  ['La Liga',               /la ?liga(?!\s*2)|^(campeonato )?espanhol$/i],
-  ['Alemão (Bundesliga)',   /bundesliga|^(campeonato )?alem[ãa]o$/i],
-  ['NBA',                   /\bnba\b/i],
-  ['NFL',                   /\bnfl\b/i],
+/* ---------- o que cada pessoa assina e acompanha ----------
+   Fica salvo no aparelho. Grátis (TV aberta, YouTube) sempre conta como "meu". */
+const SERVICOS = [
+  {id:'sportv',    nome:'SporTV',          rx:/sportv/i},
+  {id:'premiere',  nome:'Premiere',        rx:/premiere/i},
+  {id:'globoplay', nome:'Globoplay',       rx:/globoplay/i},
+  {id:'espn',      nome:'ESPN',            rx:/\bespn\b/i},
+  {id:'disney',    nome:'Disney+',         rx:/disney/i},
+  {id:'tnt',       nome:'TNT',             rx:/\btnt\b/i},
+  {id:'max',       nome:'HBO Max',         rx:/\bmax\b|hbo/i},
+  {id:'prime',     nome:'Prime Video',     rx:/prime video|amazon/i},
+  {id:'paramount', nome:'Paramount+',      rx:/paramount/i},
+  {id:'apple',     nome:'Apple TV+',       rx:/apple/i},
+  {id:'dazn',      nome:'DAZN',            rx:/dazn/i},
+  {id:'nbalp',     nome:'NBA League Pass', rx:/league pass/i, passe:true},   /* passe da liga: tem todos os jogos */
+  {id:'nflgp',     nome:'NFL Game Pass',   rx:/game pass/i,   passe:true},
 ];
+const RAPIDOS = ['Tudo','Meus times','Futebol','Seleções','NBA','NFL'];
+/* Campeonatos: lista FIXA e curada. Cada opção casa com os eventos por padrão
+   (regex), então ruído das fontes nunca vira opção nova. Os padrões cobrem o
+   nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
+   "LaLiga", "UEFA Champions League"). "Seleções" junta todo jogo de seleção
+   (datas FIFA, Nations League, eliminatórias, Euro, Copa América, amistosos
+   entre países), que o robô marca com sel=1. */
+const LIGAS = [
+  ['Seleções',            e => !!e.sel],
+  ['Brasileirão Série A', /^brasileir[ãa]o(\s+s[ée]rie a)?$/i],
+  ['Copa do Brasil',      /copa do brasil/i],
+  ['Libertadores',        /libertadores/i],
+  ['Sul-Americana',       /sul.?americana/i],
+  ['Champions League',    /^(?!.*\b(afc|caf|ofc|concacaf)\b).*champions league|liga dos campe/i],
+  ['Premier League',      /premier league|^(campeonato )?ingl[êe]s$/i],
+  ['La Liga',             /la ?liga(?!\s*2)|^(campeonato )?espanhol$/i],
+  ['Bundesliga',          /bundesliga|^(campeonato )?alem[ãa]o$/i],
+  ['Italiano',            /^(campeonato )?italiano$|^s[ée]rie a italiana$/i],
+  ['Francês',             /^(campeonato )?franc[êe]s$|^ligue 1$/i],
+  ['NBA',                 /\bnba\b/i],
+  ['NFL',                 /\bnfl\b/i],
+];
+/* Times: o mesmo clube aparece com nomes diferentes conforme a fonte (o guia
+   escreve "PSG", a tabela oficial "Paris Saint-Germain"). Cada linha junta as
+   grafias de um time; o primeiro nome é o que aparece para escolher. */
+const FAMILIAS = [
+  ['Atlético-MG','Atlético Mineiro'], ['Athletico-PR','Athletico Paranaense'], ['Vasco da Gama','Vasco'],
+  ['Red Bull Bragantino','Bragantino','RB Bragantino'], ['Sport','Sport Recife','Sport-PE'], ['América-MG','América Mineiro'],
+  ['Atlético-GO','Atlético Goianiense'],
+  ['PSG','Paris Saint-Germain','Paris SG'], ['Bayern de Munique','Bayern Munich','Bayern München','Bayern'],
+  ['Atlético de Madrid','Atlético Madrid'], ['Inter de Milão','Internazionale','Inter Milan'], ['Milan','AC Milan'],
+  ['Roma','AS Roma'], ['Tottenham','Tottenham Hotspur'], ['Newcastle','Newcastle United'], ['Borussia Dortmund','Dortmund'],
+  ['Bayer Leverkusen','Leverkusen'], ['Olympique de Marselha','Marseille','Olympique de Marseille'], ['Lyon','Olympique Lyonnais'],
+  ['Monaco','AS Monaco'], ['Athletic Bilbao','Athletic Club'], ['Celta de Vigo','Celta Vigo'],
+];
+const POPULARES = ['Brasil','Palmeiras','Flamengo','Corinthians','São Paulo','Santos','Botafogo','Fluminense','Vasco da Gama','Grêmio',
+                   'Internacional','Cruzeiro','Atlético-MG','Real Madrid','Barcelona','Manchester City','Liverpool','PSG','Bayern de Munique'];
+const FAMILIA_DE = {};
+for(const g of FAMILIAS){ const s = new Set(g.map(chaveTime)); for(const k of s) FAMILIA_DE[k] = s; }
+const mesmoTime = (a, b) => { const ka = chaveTime(a), kb = chaveTime(b); return !!ka && (ka===kb || !!(FAMILIA_DE[ka] && FAMILIA_DE[ka].has(kb))); };
+
+const CHAVE = 'oa.estado';
+const PADRAO = { rapido:'Tudo', soMeus:true, base:false, inferiores:false, feminino:true, servicos:[], times:[], ligas:[], dica:true };
+function lerEstado(){
+  let salvo = {};
+  try{ salvo = JSON.parse(localStorage.getItem(CHAVE) || '{}') || {}; }catch(e){ salvo = {}; }
+  const s = JSON.parse(JSON.stringify(PADRAO));
+  for(const k of Object.keys(PADRAO)){
+    const v = salvo[k];
+    if(Array.isArray(PADRAO[k])){ if(Array.isArray(v)) s[k] = v.filter(x => typeof x==='string' && x.trim()).slice(0,40); }
+    else if(typeof v === typeof PADRAO[k]) s[k] = v;
+  }
+  if(!RAPIDOS.includes(s.rapido)) s.rapido = 'Tudo';
+  s.servicos = s.servicos.filter(id => SERVICOS.some(x => x.id===id));
+  s.ligas = s.ligas.filter(n => LIGAS.some(l => l[0]===n));
+  return s;
+}
+function salvar(){ try{ localStorage.setItem(CHAVE, JSON.stringify(estado)); }catch(e){ /* navegação privada: vale só nesta visita */ } }
+let estado = lerEstado();
+
+let HOJE = relogio().iso;            /* dia de Brasília em que o app está */
+let diaSel = 0;                      /* aba aberta: 0 = hoje ... 6 */
+let busca = '', buscando = false;    /* busca aberta procura nos 7 dias */
+let aberto = { fora:false, fim:false };   /* grupos recolhidos do fim da lista */
+
+/* ---------- regras de exibição ---------- */
+const aConfirmar = c => /confirmar/i.test(c.n);
+const gratis = c => c.y === 'free';
+const servicoDe = c => gratis(c) ? null : (SERVICOS.find(s => s.rx.test(c.n)) || null);
+const tenho = c => !aConfirmar(c) && (gratis(c) || (s => !!s && estado.servicos.includes(s.id))(servicoDe(c)));
+/* "não assino" só vale para serviço conhecido: canal que o app não reconhece
+   nunca esconde um jogo */
+const naoAssino = c => !aConfirmar(c) && (s => !!s && !estado.servicos.includes(s.id))(servicoDe(c));
+const semCanal = e => e.ch.every(aConfirmar);
+/* Só recolhe o jogo quando a fonte afirma um canal específico que a pessoa não
+   assina. Com canal ainda a confirmar, ou só com o passe da liga listado (que
+   tem todos os jogos e não diz onde mais passa), não dá para afirmar. */
+const soForaDoMeu = e => e.ch.length > 0 && !e.ch.some(aConfirmar) && e.ch.every(naoAssino)
+                         && e.ch.some(c => !(servicoDe(c) || {}).passe);
 /* Categoria: base e divisões inferiores ocultas por padrão.
    (O robô usa a mesma noção de "base" em categoria(), no atualizar_dados.py.) */
 const RE_SUB   = /sub.?\d{1,2}|\bu-?\d{2}\b|juvenil|j[úu]nior|aspirantes|\bbase\b|\bcopinha\b/i;
 const RE_LOWER = /s[ée]rie [bcd]\b|s[ée]rie a[23]\b|[2-9][ªº°]? ?divis|(segunda|terceira|quarta) divis|\bchampionship\b|league (one|two)\b|2\. ?bundesliga|la ?liga 2|ligue 2|liga 2\b/i;
 const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;   /* times B: "Ceará B x ...", "... x Bayern II" */
-function isSub(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
-function isLower(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
-function toggleCat(k, btn){
-  if(k==='sub') state.catSub = !state.catSub; else state.catLower = !state.catLower;
-  btn.classList.toggle('on'); render();
+function ehBase(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')); }
+function ehInferior(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
+function ladosDe(e){
+  const out = [];
+  for(const txt of [e.match, e.espn]){
+    const p = String(txt||'').split(/\s+x\s+/i);
+    if(p.length===2) out.push(p[0], p[1]);
+  }
+  return out;
 }
-
-
-/* Times: lista FIXA. Casa por padrão contra os nomes no card. */
-const TEAMS = [
-  ['Palmeiras',        /palmeiras/i],
-  ['Flamengo',         /flamengo/i],
-  ['São Paulo',        /s[ãa]o paulo/i],
-  ['Corinthians',      /corinthians/i],
-  ['Santos',           /\bsantos\b/i],
-  ['Botafogo',         /botafogo/i],
-  ['Fluminense',       /fluminense/i],
-  ['Real Madrid',      /real madrid/i],
-  ['Barcelona',        /barcelona/i],
-  ['Bayern',           /bayern/i],
-  ['Manchester City',  /manchester city|man\.? city/i],
-  ['Liverpool',        /liverpool/i],
-  ['Chelsea',          /chelsea/i],
-  ['Arsenal',          /arsenal/i],
-  ['PSG',              /\bpsg\b|paris saint.?germain/i],
-  ['Atlético Madrid',  /atl[ée]tico (de )?madrid/i],
-];
-function teamMatch(e){
-  if(!state.team.size) return true;
-  for(const [lbl,re] of TEAMS)
-    if(state.team.has(lbl) && re.test(e.match)) return true;
+function ehFav(e){
+  if(!estado.times.length) return false;
+  const lados = ladosDe(e);
+  return estado.times.some(t => lados.some(l => mesmoTime(t, l)));
+}
+function ligaOk(e){
+  for(const [nome,regra] of LIGAS)
+    if(estado.ligas.includes(nome) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
   return false;
 }
-function leagueMatch(e){
-  if(!state.league.size) return true;
-  for(const [lbl,regra] of LEAGUES)
-    if(state.league.has(lbl) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
-  return false;
+function passa(e){
+  if(!estado.feminino && e.g==='F') return false;
+  if(!estado.base && ehBase(e)) return false;
+  if(!estado.inferiores && ehInferior(e) && !ehFav(e)) return false;        /* time seu aparece mesmo na Série B */
+  if(estado.ligas.length && !ligaOk(e)) return false;
+  switch(estado.rapido){
+    case 'Futebol':    return e.sport==='Futebol';
+    case 'Seleções':   return !!e.sel;
+    case 'NBA':        return /\bnba\b/i.test(e.league);
+    case 'NFL':        return /\bnfl\b/i.test(e.league);
+    case 'Meus times': return ehFav(e);
+    default:           return true;
+  }
 }
-function buildLeagueChips(){
-  buildChips('league','chips-league', LEAGUES.map(l=>l[0]));
-  buildChips('team','chips-team', TEAMS.map(t=>t[0]));
+/* "Ao vivo" pelo relógio, com a duração típica de cada esporte; quando a ESPN
+   informa o andamento do jogo, vale o que ela diz. */
+const DUR = { 'Futebol':120, 'Basquete':150, 'Futebol Americano':200 };
+const duracao = e => DUR[e.sport] || 120;
+const desdeInicio = (e, agora) => diasEntre(e.date, agora.iso)*1440 + agora.min - minutos(e.t);
+function fase(e, agora){
+  const sc = scoreFor(e);
+  if(sc) return sc.fim ? 'fim' : 'vivo';
+  const d = desdeInicio(e, agora);
+  return d < 0 ? 'depois' : d <= duracao(e) ? 'vivo' : 'fim';
 }
-function buildAllChips(){
-  const extras = uniq(DB.map(e=>e.sport)).filter(s=>!SPORTS.includes(s));
-  buildChips('sport','chips-sport',[...SPORTS, ...extras]);
-  const COUNTRIES = ['Brasil','América do Sul','EUA/Canadá','Inglaterra','Espanha','Alemanha','Itália','Europa (demais)','Mundial'];
-  buildChips('country','chips-country',COUNTRIES);
-  buildLeagueChips();
+function apelido(nome, e){            /* NBA e NFL: só o apelido ("Knicks"), como na TV */
+  if(!/^(NBA|NFL)$/.test(e.league)) return nome;
+  return /Trail Blazers$/.test(nome) ? 'Trail Blazers' : nome.split(' ').pop();
 }
 
-/* ---------- render ---------- */
-function isLive(ev){
-  if(ev.date!==DAYS[0].iso || state.day!==0) return false;
-  const now = new Date();
-  const [h,m] = ev.t.split(':').map(Number);
-  const start = h*60+m, cur = now.getHours()*60+now.getMinutes();
-  return cur>=start && cur<=start+135; /* ~2h15 de duração */
-}
-function block(t){
-  const h = +t.split(':')[0];
-  return h<12 ? 'Manhã' : h<18 ? 'Tarde' : 'Noite';
-}
-/* dedup defensivo: colapsa cards do mesmo jogo (mesma data+hora, nomes
-   sobrepostos), preferindo o que tem canais reais e título mais limpo.
-   Roda uma vez por carga de dados, não a cada render. */
+/* dedup defensivo: descarta registro malformado e colapsa cards do mesmo jogo
+   (mesma data+hora, nomes sobrepostos), preferindo o que tem canais reais e
+   título mais limpo. Roda uma vez por carga de dados, não a cada desenho. */
 let LIMPOS = [];
 function prepararDB(){
-  function chave(e){ return e.date+'|'+e.t; }
+  const validos = DB.filter(e => e && typeof e.date==='string' && /^\d\d:\d\d$/.test(e.t||'') && typeof e.match==='string'
+                                 && typeof e.league==='string' && Array.isArray(e.ch) && e.ch.every(c => c && typeof c.n==='string'));
+  const chave = e => e.date+'|'+e.t;
   const limpos = [];
-  for(const e of DB){
-    const dup = limpos.find(x=> chave(x)===chave(e) && x.sport===e.sport && x.g===e.g && isSub(x)===isSub(e) && (()=>{
+  for(const e of validos){
+    const dup = limpos.find(x=> chave(x)===chave(e) && x.sport===e.sport && x.g===e.g && ehBase(x)===ehBase(e) && (()=>{
       const a=(x.match||'').toLowerCase(), b=(e.match||'').toLowerCase();
       const ta=a.split(/\s+x\s+/), tb=b.split(/\s+x\s+/);
       if(ta.length!==2||tb.length!==2) return a.includes(b)||b.includes(a);
@@ -629,101 +587,289 @@ function prepararDB(){
       return (tem(a,tb[0])&&tem(a,tb[1])) || (tem(b,ta[0])&&tem(b,ta[1]));
     })());
     if(dup){
-      const score = ev => (ev.ch.some(c=>!/confirmar/i.test(c.n))?2:0) - (ev.match.length>40?1:0);
-      if(score(e) > score(dup)) limpos[limpos.indexOf(dup)] = e;
+      const nota = ev => (ev.ch.some(c=>!aConfirmar(c))?2:0) - (ev.match.length>40?1:0);
+      if(nota(e) > nota(dup)) limpos[limpos.indexOf(dup)] = e;
     } else limpos.push(e);
   }
   LIMPOS = limpos;
 }
-/* quiet=true: atualização automática (placar) — redesenha sem re-animar os cards */
-function render(quiet){
-  const q = state.q.trim().toLowerCase();
-  el('results').classList.toggle('quiet', quiet===true);
-  let list = LIMPOS.filter(e=> e.date===DAYS[state.day].iso
-    && (!state.sport.size   || state.sport.has(e.sport))
-    && (!state.gender       || e.g===state.gender)
-    && (!state.country.size || state.country.has(e.country))
-    && leagueMatch(e)
-    && teamMatch(e)
-    && (state.catSub || !isSub(e))
-    && (state.catLower || !isLower(e))
-    && (!q || [e.match,e.league,e.sport,...e.ch.map(c=>c.n)].join(' ').toLowerCase().includes(q))
-  ).sort((a,b)=>a.t.localeCompare(b.t));
 
-  el('meta').innerHTML = `<b>${list.length}</b> evento(s) — ${DAYS[state.day].label}, ${DAYS[state.day].sub}` + (DATA_AT ? ` · dados de ${esc(DATA_AT)}` : '');
+/* ---------- desenho ---------- */
+const SETA = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const porHora = (a,b) => a.t.localeCompare(b.t) || a.match.localeCompare(b.match, 'pt');
+const plural = (n, um, varios) => n + ' ' + (n===1 ? um : varios);
 
-  if(!list.length){
-    const ultimaData = DB.reduce((m,e)=> e.date>m ? e.date : m, '');
-    const semConfirmacao = DAYS[state.day].iso > ultimaData;
-    el('results').innerHTML = semConfirmacao
-      ? `<div class="empty"><b>Programação ainda não confirmada para este dia.</b>As emissoras confirmam canais de futebol ~48h antes; NBA, NFL e as tabelas oficiais entram com até 7 dias. Volte mais perto da data — a atualização é automática.</div>`
-      : `<div class="empty"><b>Nenhum evento com esses filtros.</b>Ajuste os filtros acima ou toque em “Limpar tudo”.</div>`;
-    return;
+function textoLiga(e){
+  let d = (e.detail && e.detail!=='—' && e.detail!=='Tabela oficial') ? String(e.detail) : '';
+  d = d.replace(/^QF\b/i,'Quartas').replace(/-(ida|volta)$/i,' ($1)');
+  let html = !d ? esc(e.league) : d.toLowerCase().startsWith(e.league.toLowerCase()) ? esc(d) : `${esc(e.league)}<span>, ${esc(d)}</span>`;
+  if(e.g==='F' && !/femin/i.test(e.league + ' ' + d)) html += '<span>, feminino</span>';
+  return html;
+}
+function linhaJogo(e, f){
+  const lados = e.match.split(/\s+x\s+/i), dois = lados.length===2;
+  const sc = f==='depois' ? null : scoreFor(e);
+  const st = f==='vivo' ? `<small class="st vivo">${esc(sc ? sc.label : 'ao vivo')}</small>`
+           : (f==='fim' && sc) ? '<small class="st">encerrado</small>' : '';
+  const meio = sc ? `<b class="pl">${esc(sc.a)}</b> <span class="x">x</span> <b class="pl">${esc(sc.b)}</b>` : '<span class="x">x</span>';
+  const canais = e.ch.map((c,i) => [c,i]).sort((x,y) => (tenho(y[0]) - tenho(x[0])) || (x[1]-y[1])).map(x => x[0]);
+  let confirmar = false;
+  const pilulas = canais.map(c => {
+    if(aConfirmar(c)){ if(confirmar) return ''; confirmar = true; return '<span class="aconfirmar">canal a confirmar</span>'; }
+    const yt = /\s*\(YouTube\)$/i.test(c.n), nome = c.n.replace(/\s*\(YouTube\)$/i,'');
+    return `<a class="canal${tenho(c)?' meu':''}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener">${esc(nome)}${yt?'<small>YouTube</small>':''}</a>`;
+  }).join('');
+  return `<li class="jogo${f==='fim'?' fim':''}${f==='vivo'?' vivo':''}">
+    <div class="hora"><time>${esc(e.t)}</time>${st}</div>
+    <div>
+      <div class="times">${ehFav(e)?'<span class="fav" role="img" aria-label="Seu time">★</span>':''}${dois ? `${esc(apelido(lados[0],e))} ${meio} ${esc(apelido(lados[1],e))}` : esc(e.match)}</div>
+      <div class="linha2"><div class="liga">${textoLiga(e)}</div><div class="canais">${pilulas}</div></div>
+    </div>
+  </li>`;
+}
+function bloco(titulo, jogos, faseDe, extra){
+  if(!jogos.length) return '';
+  return `<h2 class="secao">${extra||''}${titulo}</h2><ul class="grupo">${jogos.map(e => linhaJogo(e, faseDe(e))).join('')}</ul>`;
+}
+function dobra(qual, rotulo, jogos, faseDe){
+  if(!jogos.length) return '';
+  return `<button type="button" class="dobra" data-acao="dobra" data-qual="${qual}" aria-expanded="${!!aberto[qual]}"><span>${rotulo}</span>${SETA}</button>`
+       + (aberto[qual] ? `<ul class="grupo recolhido">${jogos.map(e => linhaJogo(e, faseDe(e))).join('')}</ul>` : '');
+}
+function vazio(titulo, texto, botao){
+  return `<div class="vazio"><b>${titulo}</b><p>${texto}</p>${botao ? `<div class="acoes">${botao}</div>` : ''}</div>`;
+}
+function htmlDica(){
+  if(!estado.dica || estado.servicos.length) return '';
+  return `<div class="dica"><p><b>Marque os canais que você assina.</b> Eles passam a aparecer em verde, e os jogos que só passam em outros canais vão para o fim da lista.</p>
+    <div class="acoes"><button type="button" class="botao" data-acao="abrir-filtros">Escolher canais</button><button type="button" class="botao fantasma" data-acao="dispensar-dica">Agora não</button></div></div>`;
+}
+const filtrosAtivos = () => (estado.ligas.length?1:0) + (estado.base?1:0) + (estado.inferiores?1:0) + (estado.feminino?0:1);
+
+function htmlDia(dia, agora){
+  const doDia = LIMPOS.filter(e => e.date===dia && passa(e)).sort(porHora);
+  const ehHoje = dia === agora.iso;
+  const fases = new Map(doDia.map(e => [e, fase(e, agora)])), faseDe = e => fases.get(e) || fase(e, agora);
+  const dobrar = estado.soMeus && estado.servicos.length > 0;
+  const fora = dobrar ? doDia.filter(e => soForaDoMeu(e) && !ehFav(e) && faseDe(e)!=='fim') : [];     /* jogo de time seu nunca é recolhido */
+  const vis = doDia.filter(e => !fora.includes(e));
+  /* começou ontem e ainda está em campo (NBA das 22h30, por exemplo) */
+  const viradas = ehHoje ? LIMPOS.filter(e => e.date===somaDias(dia,-1) && passa(e) && fase(e, agora)==='vivo' && !(dobrar && soForaDoMeu(e) && !ehFav(e))).sort(porHora) : [];
+  if(!doDia.length && !viradas.length){
+    const temNoDia = LIMPOS.some(e => e.date===dia);
+    const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
+    if(!temNoDia) return htmlDica() + (dia > ultima
+      ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
+      : vazio('Nenhum jogo neste dia.', 'Não há jogos listados pelas fontes para esta data.'));
+    return htmlDica() + vazio('Nenhum jogo com esses filtros.', plural(LIMPOS.filter(e => e.date===dia).length, 'jogo fica', 'jogos ficam') + ' de fora neste dia.',
+                              '<button type="button" class="botao" data-acao="limpar">Limpar filtros</button>');
   }
-  let html='', lastBlock='';
-  for(const e of list){
-    const b = block(e.t);
-    if(b!==lastBlock){ html += `<div class="timeblock">${b}</div>`; lastBlock=b; }
-    const live = isLive(e);
-    html += `
-    <div class="card">
-      <div class="when">
-        <div class="time">${esc(e.t)}</div>
-        ${(()=>{ const sc = scoreFor(e);
-          if(sc) return `<div class="score">${esc(sc.a)}<span> x </span>${esc(sc.b)}</div><span class="score-status ${sc.fim?'fim':''}">${esc(sc.label)}</span>`;
-          return live ? '<span class="live-pill"><i></i>AO VIVO</span>' : '';
-        })()}
-        <span class="gender-tag">${e.g==='F'?'FEMININO':'MASCULINO'}</span>
-      </div>
-      <div>
-        <div class="ev-top">
-          <span class="sport-tag">${esc(e.sport)}</span>
-          <span class="matchup">${esc(e.match)}</span>
-        </div>
-        <div class="league">${esc(e.league)}${e.detail && e.detail!=='—' ? ` <em>(${esc(e.detail)})</em>` : ''}${e.v>=2?' <span class="verified" title="Confirmado em 2 fontes">✓✓</span>':''}</div>
-        <div class="badges">
-          ${e.ch.map(c=> /confirmar/i.test(c.n)
-            ? `<span class="badge tbd">${esc(c.n)}</span>`
-            : `<a class="badge ${['tv','stream','free'].includes(c.y)?c.y:'tv'}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener"><i></i>${esc(c.n)}</a>`).join('')}
-        </div>
-      </div>
-    </div>`;
+  const nomesFora = [...new Set(fora.flatMap(e => e.ch.filter(c => !aConfirmar(c)).map(c => c.n)))];
+  const rodape = dobra('fora', `<b>${plural(fora.length,'jogo','jogos')}</b> só em canal que você não assina${nomesFora.length ? ` (${esc(nomesFora.slice(0,2).join(' e '))}${nomesFora.length>2?' e outros':''})` : ''}`, fora, faseDe);
+  let html = htmlDica();
+  if(ehHoje){
+    const vivo = [...viradas, ...vis.filter(e => faseDe(e)==='vivo')], depois = vis.filter(e => faseDe(e)==='depois'), fim = vis.filter(e => faseDe(e)==='fim');
+    html += bloco('Ao vivo', vivo, faseDe, '<i class="pulso" aria-hidden="true"></i>');
+    html += `<div class="agora"><span>agora, <span id="relogio">${agora.hhmm}</span>${agora.fora ? ' em Brasília' : ''}</span></div>`;
+    html += depois.length ? bloco('A seguir', depois, faseDe) : `<p class="nada">${fora.length ? 'O que resta hoje está em canal que você não assina.' : 'Nada mais hoje com esses filtros.'}</p>`;
+    html += rodape;
+    html += dobra('fim', `<b>${plural(fim.length,'jogo','jogos')}</b> de mais cedo hoje`, fim, faseDe);
+  } else {
+    const favs = vis.filter(ehFav);
+    html += bloco('Dos seus times', favs, faseDe);
+    const resto = vis.filter(e => !favs.includes(e));
+    for(const [nome, de, ate] of [['Madrugada',0,360],['Manhã',360,720],['Tarde',720,1080],['Noite',1080,1440]])
+      html += bloco(nome, resto.filter(e => minutos(e.t)>=de && minutos(e.t)<ate), faseDe);
+    html += rodape;
   }
-  el('results').innerHTML = html;
+  return html;
+}
+function htmlBusca(agora, dias){
+  const q = nrmBusca(busca);
+  if(q.length < 2) return '<p class="nada">Digite pelo menos 2 letras: time, campeonato ou canal.</p>';
+  const ondeProcurar = e => nrmBusca([e.match, e.espn||'', e.league, e.detail||'', e.sport].concat(e.ch.map(c => c.n)).join(' '));
+  const achou = LIMPOS.filter(e => dias.includes(e.date) && ondeProcurar(e).includes(q)).sort((a,b) => (a.date+a.t).localeCompare(b.date+b.t) || a.match.localeCompare(b.match,'pt'));
+  if(!achou.length) return vazio('Nada encontrado nos próximos 7 dias.', 'Confira a grafia ou tente só uma parte do nome.');
+  let html = `<p class="nada">${plural(achou.length,'jogo','jogos')} nos próximos 7 dias</p>`;
+  dias.forEach((d,i) => { html += bloco(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, achou.filter(e => e.date===d), e => fase(e, agora)); });
+  return html;
 }
 
-/* ---------- init ---------- */
-el('seg-gender').addEventListener('click', ev=>{
-  const b = ev.target.closest('button'); if(!b) return;
-  state.gender = b.dataset.v;
-  document.querySelectorAll('#seg-gender button').forEach(x=>x.classList.toggle('on', x===b));
-  render();
-});
-el('search').addEventListener('input', ev=>{ state.q = ev.target.value; render(); });
+/* troca o HTML de um trecho sem perder o foco de quem navega pelo teclado */
+function trocar(caixa, html){
+  const a = document.activeElement, dentro = a && caixa.contains(a) && a.dataset && a.dataset.acao;
+  const sel = dentro ? `[data-acao="${a.dataset.acao}"]` + (a.dataset.i ? `[data-i="${a.dataset.i}"]` : '') + (a.dataset.qual ? `[data-qual="${a.dataset.qual}"]` : '')
+                                                         + (a.dataset.valor ? `[data-valor="${CSS.escape(a.dataset.valor)}"]` : '') : '';
+  caixa.innerHTML = html;
+  if(sel){ const n = caixa.querySelector(sel); if(n) n.focus({preventScroll:true}); }
+}
+function desenharFrescor(agora){
+  let txt = '', velho = false;
+  if(DADOS_EM){
+    const r = relogio(DADOS_EM);
+    velho = Date.now() - DADOS_EM > 12*3600*1000;       /* o robô costuma passar a cada 6 a 10 horas */
+    txt = r.iso===agora.iso ? `<i>atualizado às </i>${r.hhmm}` : `<i>atualizado </i>${diaMes(r.iso)} às ${r.hhmm}`;      /* só números do relógio */
+  }
+  if(el('quando').innerHTML !== txt) el('quando').innerHTML = txt;
+  el('frescor').classList.toggle('velho', velho);
+}
+function desenhar(){
+  const agora = relogio();
+  if(agora.iso !== HOJE){ HOJE = agora.iso; diaSel = 0; aberto = {fora:false, fim:false}; }     /* virou o dia em Brasília: "Hoje" volta a ser hoje */
+  const dias = [0,1,2,3,4,5,6].map(i => somaDias(HOJE, i));
+  if(!estado.times.length && estado.rapido==='Meus times') estado.rapido = 'Tudo';
+  el('fuso').hidden = !agora.fora;
+  el('navegacao').hidden = buscando; el('busca').hidden = !buscando;
+  trocar(el('dias'), dias.map((d,i) => {
+    const marca = i!==diaSel && LIMPOS.some(e => e.date===d && ehFav(e) && passa(e) && (i>0 || fase(e, agora)!=='fim'));
+    return `<button type="button" class="dia${i===diaSel?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${i===diaSel}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${marca?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
+  }).join(''));
+  trocar(el('rapidos'), RAPIDOS.filter(r => r!=='Meus times' || estado.times.length).map(r =>
+    `<button type="button" class="rapido${estado.rapido===r?' sel':''}" data-acao="rapido" data-valor="${r}" aria-pressed="${estado.rapido===r}">${r}</button>`).join(''));
+  const n = filtrosAtivos();
+  el('abre-filtros').innerHTML = 'Filtros' + (n ? `<span class="n" aria-label="${plural(n,'filtro ativo','filtros ativos')}">${n}</span>` : '');
+  desenharFrescor(agora);
+  trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlDia(dias[diaSel], agora));
+  const ontem = somaDias(agora.iso, -1);
+  assinatura = JSON.stringify(SCORES) + '|' + LIMPOS.filter(e => e.date===agora.iso || e.date===ontem).map(e => fase(e, agora)[0]).join('');
+}
 
-/* Botão "Atualizar": busca os dados de novo (não só redesenha) */
+/* ---------- folha de filtros ---------- */
+const op = (tipo, valor, rotulo, sel) =>
+  `<button type="button" class="op${sel?' sel':''}" data-acao="op" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-pressed="${!!sel}">${esc(rotulo)}</button>`;
+function nomesDosDados(){
+  const nomes = new Map();
+  for(const e of LIMPOS){
+    if(ehBase(e)) continue;
+    const p = e.match.split(/\s+x\s+/i);
+    if(p.length===2) for(const n of p){ const k = chaveTime(n); if(k && !nomes.has(k)) nomes.set(k, n.trim()); }
+  }
+  return [...nomes.values()].sort((a,b) => a.localeCompare(b,'pt'));
+}
+function htmlTimes(texto){
+  const q = nrmBusca(texto), jaTenho = n => estado.times.some(t => mesmoTime(t, n));
+  const cand = [], poe = n => { if(!jaTenho(n) && !cand.some(c => mesmoTime(c, n))) cand.push(n); };
+  if(q.length < 2) POPULARES.forEach(poe);
+  else {
+    for(const g of FAMILIAS) if(g.some(n => nrmBusca(n).includes(q))) poe(g[0]);
+    for(const n of POPULARES.concat(nomesDosDados())) if(nrmBusca(n).includes(q)) poe(n);
+  }
+  const lista = cand.slice(0, q.length < 2 ? 12 : 8);
+  const livre = texto.trim();
+  const novo = q.length >= 3 && !jaTenho(livre) && !lista.some(c => mesmoTime(c, livre));
+  return estado.times.map(t => `<button type="button" class="op sel" data-acao="tira-time" data-valor="${esc(t)}" aria-pressed="true" aria-label="${esc(t)}, toque para tirar">${esc(t)}</button>`).join('')
+       + lista.map(n => `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(n)}" aria-pressed="false">${esc(n)}</button>`).join('')
+       + (novo ? `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(livre)}" aria-pressed="false">Adicionar “${esc(livre)}”</button>` : '');
+}
+const textoSoMeus = () => estado.servicos.length ? 'Jogos só em canal que você não assina ficam recolhidos no fim da lista.'
+                                                  : 'Começa a valer quando você marcar pelo menos um canal acima.';
+function desenharFolha(){
+  el('folha').innerHTML = `
+    <div class="pega" aria-hidden="true"></div>
+    <header><h2 id="folha-titulo">Filtros</h2><button type="button" class="texto" data-acao="fechar-filtros">Pronto</button></header>
+    <h3>Meus canais</h3>
+    <p>Marque o que você assina. TV aberta e YouTube já contam como seus.</p>
+    <div class="opcoes">${SERVICOS.map(s => op('servico', s.id, s.nome, estado.servicos.includes(s.id))).join('')}</div>
+    <div class="chave"><div id="rot-so-meus">Só o que eu consigo assistir<small id="txt-so-meus">${textoSoMeus()}</small></div>
+      <button type="button" class="liga-desliga" role="switch" aria-checked="${!!estado.soMeus}" aria-labelledby="rot-so-meus" data-acao="so-meus"></button></div>
+    <h3>Meus times</h3>
+    <p>Os jogos deles ganham uma estrela, abrem a lista dos outros dias e marcam a aba do dia com um ponto.</p>
+    <input class="campo" id="busca-time" type="search" placeholder="Buscar time ou seleção" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Buscar time ou seleção">
+    <div class="opcoes" id="op-times">${htmlTimes('')}</div>
+    <h3>Também mostrar</h3>
+    <div class="opcoes">${op('extra','base','Sub-20 e base', estado.base)}${op('extra','inferiores','Séries B, C e 2ªs divisões', estado.inferiores)}${op('extra','feminino','Feminino', estado.feminino)}</div>
+    <h3>Campeonatos</h3>
+    <p>Sem nenhum marcado, aparecem todos.</p>
+    <div class="opcoes">${LIGAS.map(l => op('liga', l[0], l[0], estado.ligas.includes(l[0]))).join('')}</div>
+    <div class="pe-folha"><button type="button" class="texto" data-acao="padrao">Voltar ao padrão</button></div>`;
+}
+function abrirFiltros(){
+  desenharFolha();
+  document.body.classList.add('filtrando');
+  el('topo').inert = true; el('lista').inert = true;
+  el('folha').scrollTop = 0; el('folha').focus({preventScroll:true});
+}
+function fecharFiltros(){
+  if(!document.body.classList.contains('filtrando')) return;
+  document.body.classList.remove('filtrando');
+  el('topo').inert = false; el('lista').inert = false;
+  if(estado.servicos.length) estado.dica = false;
+  salvar(); desenhar(); mostrarEscolhidos();
+  el('abre-filtros').focus({preventScroll:true});
+}
+/* a aba e o filtro rápido escolhidos nunca ficam escondidos na fileira que rola */
+function mostrarEscolhidos(){
+  for(const id of ['dias','rapidos']){ const s = el(id).querySelector('.sel'); if(s) s.scrollIntoView({inline:'nearest', block:'nearest'}); }
+}
+function alternar(lista, valor){ const i = lista.indexOf(valor); if(i<0) lista.push(valor); else lista.splice(i,1); return i<0; }
+function abrirBusca(){ buscando = true; desenhar(); el('q').value = busca; el('q').focus(); fetchScores(); }
+function fecharBusca(){ if(!buscando) return; buscando = false; busca = ''; el('q').value = ''; desenhar(); el('abre-busca').focus({preventScroll:true}); fetchScores(); }
+
+/* Botão de atualizar: busca os dados de novo (não só redesenha) */
 async function atualizar(){
-  const b = el('btn-update'); b.disabled = true; b.textContent = 'Atualizando…';
+  const b = el('atualizar'); if(b.disabled) return;
+  b.disabled = true; b.classList.add('girando'); b.setAttribute('aria-label','Atualizando');
   await tryLoadJson(); await fetchScores();
-  b.disabled = false; b.textContent = 'Atualizar';
+  b.disabled = false; b.classList.remove('girando'); b.setAttribute('aria-label','Atualizar agora');
 }
+
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('[data-acao]'); if(!b) return;
+  const d = b.dataset;
+  switch(d.acao){
+    case 'dia':            diaSel = +d.i; aberto = {fora:false, fim:false}; desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); fetchScores(); break;
+    case 'rapido':         estado.rapido = d.valor; salvar(); desenhar(); mostrarEscolhidos(); break;
+    case 'dobra':          aberto[d.qual] = !aberto[d.qual]; desenhar(); break;
+    case 'abrir-filtros':  abrirFiltros(); break;
+    case 'fechar-filtros': fecharFiltros(); break;
+    case 'abrir-busca':    abrirBusca(); break;
+    case 'fechar-busca':   fecharBusca(); break;
+    case 'atualizar':      atualizar(); break;
+    case 'dispensar-dica': estado.dica = false; salvar(); desenhar(); break;
+    case 'limpar':         estado.rapido = 'Tudo'; estado.ligas = []; estado.base = false; estado.inferiores = false; estado.feminino = true; salvar(); desenhar(); mostrarEscolhidos(); break;
+    case 'padrao':         Object.assign(estado, {rapido:'Tudo', ligas:[], base:false, inferiores:false, feminino:true, soMeus:true}); salvar(); desenharFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
+    case 'so-meus':        estado.soMeus = !estado.soMeus; b.setAttribute('aria-checked', estado.soMeus); salvar(); desenhar(); break;
+    case 'op': {
+      let ligado;
+      if(d.tipo==='servico'){ ligado = alternar(estado.servicos, d.valor); el('txt-so-meus').textContent = textoSoMeus(); }
+      else if(d.tipo==='liga') ligado = alternar(estado.ligas, d.valor);
+      else ligado = estado[d.valor] = !estado[d.valor];
+      b.classList.toggle('sel', ligado); b.setAttribute('aria-pressed', ligado);
+      salvar(); desenhar(); break;
+    }
+    case 'poe-time':
+      if(estado.times.length < 30 && !estado.times.some(t => mesmoTime(t, d.valor))) estado.times.push(d.valor.trim().slice(0,40));
+      el('busca-time').value = ''; el('op-times').innerHTML = htmlTimes(''); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+    case 'tira-time':
+      estado.times = estado.times.filter(t => t !== d.valor);
+      el('op-times').innerHTML = htmlTimes(el('busca-time').value); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+  }
+});
+document.addEventListener('input', ev => {
+  if(ev.target.id==='q'){ busca = ev.target.value; desenhar(); }
+  else if(ev.target.id==='busca-time') el('op-times').innerHTML = htmlTimes(ev.target.value);
+});
+document.addEventListener('keydown', ev => {
+  if(ev.key==='Escape'){ if(document.body.classList.contains('filtrando')) fecharFiltros(); else fecharBusca(); }
+  if(ev.key==='Enter' && ev.target.id==='busca-time'){ const p = el('op-times').querySelector('[data-acao="poe-time"]'); if(p && ev.target.value.trim().length>=2){ ev.preventDefault(); p.click(); } }
+});
+el('busca').addEventListener('submit', ev => { ev.preventDefault(); el('q').blur(); });
+
 /* App instalado na tela de início fica dias em segundo plano: ao voltar (e a
    cada minuto, se aberto), confere se o dia virou e se os dados envelheceram. */
 function sincronizar(){
   if(document.visibilityState!=='visible') return;
-  if(DAYS[0].iso !== isoLocal(new Date())){            /* virou o dia: "Hoje" volta a ser hoje */
-    customIso = null; DAYS = makeDays(); state.day = 0; buildDayTabs(); render();
-  }
-  if(Date.now() - lastTry > 10*60*1000) tryLoadJson();    /* dados com mais de 10 min */
+  if(relogio().iso !== HOJE) desenhar();                   /* virou o dia em Brasília */
+  if(Date.now() - lastTry > 10*60*1000) tryLoadJson();     /* dados com mais de 10 min */
   fetchScores();
 }
 document.addEventListener('visibilitychange', sincronizar);
-window.addEventListener('pageshow', ev=>{ if(ev.persisted) sincronizar(); });
+window.addEventListener('pageshow', ev => { if(ev.persisted) sincronizar(); });
 
-prepararDB(); buildDayTabs(); buildAllChips(); updateCounts(); render();
-tryLoadJson();
+prepararDB(); desenhar(); mostrarEscolhidos();
+tryLoadJson().then(() => { document.body.dataset.pronto = '1'; });
 fetchScores();
-setInterval(sincronizar, 60000); /* placares, status AO VIVO, virada do dia e dados novos */
+setInterval(sincronizar, 60000);   /* placares, "ao vivo", virada do dia e dados novos */
 </script>
 </body>
 </html>
