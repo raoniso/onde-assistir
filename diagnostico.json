@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 16/11 15:41 BRT — janela 2026-11-16 a 2026-11-22",
-   "  ✓ mantosdofutebol: 56 evento(s)",
+   "Coleta 16/11 23:32 BRT — janela 2026-11-16 a 2026-11-22",
+   "  ✓ mantosdofutebol: 38 evento(s)",
    "  ✓ goal (2º guia): 36 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 82 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 178 eventos → eventos.json",
+   "TOTAL: 171 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -36,49 +36,18 @@
      {
       "cabecalho": "Segunda – 16/11",
       "data": "2026-11-16",
-      "jogos": 20
-     }
-    ],
-    "jogos_sem_cabecalho": 0,
-    "jogos_sem_canal": 0,
-    "jogos_sem_competicao": 0,
-    "futsal_descartados": 2,
-    "linhas_emendadas": [],
-    "madrugada_no_dia_seguinte": [],
-    "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": [
-     {
-      "linha": "21h00 – Trinidad e Tobago – CONCACAF Nations League",
-      "seguintes": [
-       "Canais: Youtube.com/@concacaf",
-       "22h00 – Canadá x Guatemala – CONCACAF Nations League (QF-volta)"
-      ]
-     }
-    ]
-   },
-   {
-    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
-    "dias": [
-     {
-      "cabecalho": "Segunda – 16/11",
-      "data": "2026-11-16",
-      "jogos": 20
+      "jogos": 2
      },
      {
       "cabecalho": "Terça – 17/11",
       "data": "2026-11-17",
       "jogos": 23
-     },
-     {
-      "cabecalho": "Quarta – 18/11",
-      "data": "2026-11-18",
-      "jogos": 13
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 0,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -96,7 +65,26 @@
        "Canais: Disney+",
        "16h45 – Irlanda x Kosovo – UEFA Nations League"
       ]
-     },
+     }
+    ]
+   },
+   {
+    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
+    "dias": [
+     {
+      "cabecalho": "Quarta – 18/11",
+      "data": "2026-11-18",
+      "jogos": 13
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "jogos_sem_competicao": 0,
+    "futsal_descartados": 1,
+    "linhas_emendadas": [],
+    "madrugada_no_dia_seguinte": [],
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": [
      {
       "linha": "17h00 – Copa Intercontinental Futsal (Semifinal)",
       "seguintes": [
@@ -116,7 +104,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 396217,
+   "bytes": 396472,
    "tabelas": 4,
    "dias": [
     {
@@ -142,8 +130,19 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 35,
+   "nos_dois": 24,
    "so_no_segundo": [
+    "11-16 12:00 Ilhas Faroé x Moldávia [Liga das Nações C]",
+    "11-16 12:00 Cazaquistão x Eslováquia [Liga das Nações C]",
+    "11-16 14:00 Islândia x Luxemburgo [Liga das Nações C]",
+    "11-16 14:00 Estônia x Bulgária [Liga das Nações C]",
+    "11-16 14:00 Lituânia x Liechtenstein [Liga das Nações D]",
+    "11-16 15:00 Andorra x Azerbaijão [Amistoso Internacional]",
+    "11-16 16:45 Alemanha x Holanda [Liga das Nações A]",
+    "11-16 16:45 Grécia x Sérvia [Liga das Nações A]",
+    "11-16 16:45 Suíça x Escócia [Liga das Nações B]",
+    "11-16 16:45 Macedônia do Norte x Eslovênia [Liga das Nações B]",
+    "11-16 16:45 Gibraltar x Malta [Liga das Nações D]",
     "11-17 16:45 Bósnia e Herzegovina x Romênia [Liga das Nações B]"
    ],
    "horario_diferente": []
