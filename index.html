@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-17-d">
+<meta name="versao-da-tela" content="2026-11-18-a">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -114,6 +114,12 @@
   .etq::after{content:''; position:absolute; inset:-4px 0}                     /* alvo de toque de 44 px */
   .etq b{font-weight:400; font-size:17px; line-height:1; opacity:.85}
   .ligados .texto, .nada .texto{min-height:36px; padding:0 6px}
+  .incluir{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 4px 0}      /* feminino, base e divisões inferiores: fora da lista até ligar */
+  .inc{min-height:32px; padding:0 11px; border-radius:16px; border:1px dashed #3A465E; color:var(--texto2); font-weight:500; font-size:13px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
+  .inc::after{content:''; position:absolute; inset:-7px 0}                     /* alvo de toque de 44 px (parte de dentro da borda) */
+  .inc b{font-weight:700; color:var(--texto)}                                  /* "+4": quantos jogos do dia o botão traz */
+  .inc.sel{border-style:solid; border-color:var(--verde); background:var(--verde-fundo); color:var(--verde-texto); font-weight:600}
+  .inc.sel b{color:inherit}
   .legenda{display:flex; align-items:center; gap:8px; margin:14px 4px 0; color:var(--texto3); font-size:12.5px}
   .legenda .canal{min-height:24px; padding:0 9px; font-size:12px}
   .dica, .vazio{margin-top:14px; padding:14px; border:1px solid var(--linha); border-radius:14px; background:var(--faixa); font-size:14px; color:var(--texto2)}
@@ -3346,7 +3352,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '18/11 08:57'; /* preenchido pelo script Python */
+const GENERATED_AT = '18/11 12:42'; /* preenchido pelo script Python */
 
 const el = id => document.getElementById(id);
 /* todo texto que vem dos dados passa por aqui antes de virar HTML */
@@ -3563,13 +3569,18 @@ function linkDoCanal(c){
   return (typeof c.u==='string' && /^https:\/\/www\.youtube\.com\/@[\w.\-]+$/.test(c.u)) ? c.u : linkFor(c.n);
 }
 
-/* ---------- filtros ----------
-   Regra única: filtro só filtra. Marcou um item, a lista mostra só o que
-   combina com ele; sem nada marcado, aparece tudo o que os dados trazem — não
-   existe categoria escondida por conta própria. Dentro de um grupo os itens
-   somam (Palmeiras OU Flamengo); grupos diferentes se combinam (time E canal).
-   Nada vem marcado sozinho, e o que está ligado aparece escrito no topo da
-   lista.
+/* ---------- o que aparece na lista ----------
+   Três coisas, cada uma com uma regra só:
+   1. "Incluir": por padrão a lista traz o masculino e os times principais.
+      Feminino, base (Sub-20...) e divisões inferiores ficam de fora até a
+      pessoa ligar; os botões ficam na primeira tela, com a contagem do dia.
+   2. "O que mostrar": esportes, campeonatos e times marcados SOMAM (marcou NBA
+      e Futebol, aparecem os dois; um nunca anula o outro). Sem nada marcado,
+      mostra tudo. Os atalhos da primeira tela e a lista da folha são o mesmo
+      controle. Marcar a parte tira o todo, e vice-versa ("Futebol" e
+      "Brasileirão", "NBA" e "Lakers"), para todo toque mudar a lista.
+   3. "Canais": com canal marcado, ficam só os jogos que passam nele.
+   O que está ligado aparece escrito no topo da lista.
    "Meu time" é outra coisa e fica à parte: só marca o calendário. */
 const CANAIS = [
   {id:'gratis',    nome:'Grátis (TV aberta e YouTube)', curto:'Grátis'},
@@ -3588,12 +3599,17 @@ const CANAIS = [
   {id:'nflgp',     nome:'NFL Game Pass',   rx:/game pass/i},
   {id:'outros',    nome:'Outros canais'},                             /* pago que não é nenhum dos de cima */
 ];
-const GENEROS = [['M','Masculino'], ['F','Feminino']];
-const CATEGORIAS = [['principal','Principais'], ['base','Sub-20 e base'], ['inferior','Divisões inferiores']];
-const RAPIDOS = ['Tudo','Futebol','Seleções','NBA','NFL'];
-/* Campeonatos: lista FIXA e curada. Cada opção casa com os eventos por padrão
-   (regex), então ruído das fontes nunca vira opção nova. Os padrões cobrem o
-   nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
+/* o que fica de fora por padrão: [chave, nome na primeira tela, nome na folha] */
+const INCLUIR = [['feminino','Feminino','Feminino'], ['base','Base','Base (Sub-20, Sub-17…)'], ['inferiores','Div. inferiores','Divisões inferiores']];
+const ESPORTES = [
+  ['Futebol', e => e.sport === 'Futebol'],
+  ['NBA',     e => /\bnba\b/i.test(e.league)],
+  ['NFL',     e => /\bnfl\b/i.test(e.league)],
+];
+const RAPIDOS = ['Futebol','Seleções','NBA','NFL'];      /* atalhos da primeira tela, além do "Tudo" */
+/* Campeonatos de futebol: lista FIXA e curada. Cada opção casa com os eventos por
+   padrão (regex), então ruído das fontes nunca vira opção nova. Os padrões cobrem
+   o nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
    "LaLiga", "UEFA Champions League"). "Seleções" junta todo jogo de seleção
    (datas FIFA, Nations League, eliminatórias, Euro, Copa América, amistosos
    entre países), que o robô marca com sel=1. */
@@ -3609,9 +3625,10 @@ const LIGAS = [
   ['Bundesliga',          /bundesliga|^(campeonato )?alem[ãa]o$/i],
   ['Italiano',            /^(campeonato )?italiano$|^s[ée]rie a italiana$/i],
   ['Francês',             /^(campeonato )?franc[êe]s$|^ligue 1$/i],
-  ['NBA',                 /\bnba\b/i],
-  ['NFL',                 /\bnfl\b/i],
 ];
+/* nome do item (esporte ou campeonato) -> regra que diz se o jogo é dele */
+const REGRA = new Map(ESPORTES.concat(LIGAS.map(([n, r]) => [n, typeof r === 'function' ? r : e => e.sport === 'Futebol' && r.test(e.league)])));
+const ehLiga = n => LIGAS.some(l => l[0] === n);
 /* Times: o mesmo clube aparece com nomes diferentes conforme a fonte (o guia
    escreve "PSG", a tabela oficial "Paris Saint-Germain"). Cada linha junta as
    grafias de um time; o primeiro nome é o que aparece para escolher. */
@@ -3632,20 +3649,21 @@ for(const g of FAMILIAS){ const s = new Set(g.map(chaveTime)); for(const k of s)
 const mesmoTime = (a, b) => { const ka = chaveTime(a), kb = chaveTime(b); return !!ka && (ka===kb || !!(FAMILIA_DE[ka] && FAMILIA_DE[ka].has(kb))); };
 
 /* O que fica salvo no aparelho:
-   rapido, ligas, filtroTimes, canais, genero, categoria ... filtros (só filtram)
-   times ................................................. "Meu time": só marca o calendário
-   dica .................................................. se o lembrete do "Meu time" ainda aparece */
-const CHAVE = 'oa.estado.v2';
-const PADRAO = { rapido:'Tudo', ligas:[], filtroTimes:[], canais:[], genero:[], categoria:[], times:[], dica:true };
+   mostrar, filtroTimes ... "o que mostrar": esportes/campeonatos e times marcados (somam)
+   canais ................. só o que passa nesses canais
+   incluir ................ feminino, base e divisões inferiores, que ficam de fora por padrão
+   times .................. "Meu time": só marca o calendário
+   dica ................... se o lembrete do "Meu time" ainda aparece */
+const CHAVE = 'oa.estado.v3';
+const PADRAO = { mostrar:[], filtroTimes:[], canais:[], incluir:[], times:[], dica:true };
 function lerEstado(){
-  let salvo = null;
-  try{ salvo = JSON.parse(localStorage.getItem(CHAVE) || 'null'); }catch(e){ salvo = null; }
-  if(!salvo || typeof salvo!=='object'){
-    /* primeira vez nesta versão: do que a versão anterior guardou, só os times
-       escolhidos continuam valendo, agora como "Meu time". Nenhum filtro é herdado. */
-    let antigo = null;
-    try{ antigo = JSON.parse(localStorage.getItem('oa.estado') || 'null'); }catch(e){ antigo = null; }
-    salvo = (antigo && typeof antigo==='object') ? { times: antigo.times, dica: antigo.dica } : {};
+  const guardado = k => { try{ const v = JSON.parse(localStorage.getItem(k) || 'null'); return v && typeof v==='object' ? v : null; }catch(e){ return null; } };
+  let salvo = guardado(CHAVE);
+  if(!salvo){
+    /* primeira vez nesta versão: das versões anteriores só o "Meu time" continua
+       valendo. Nenhum filtro é herdado (as regras deles mudaram). */
+    const antigo = guardado('oa.estado.v2') || guardado('oa.estado');
+    salvo = antigo ? { times: antigo.times, dica: antigo.dica } : {};
   }
   const s = JSON.parse(JSON.stringify(PADRAO));
   for(const k of Object.keys(PADRAO)){
@@ -3653,11 +3671,9 @@ function lerEstado(){
     if(Array.isArray(PADRAO[k])){ if(Array.isArray(v)) s[k] = [...new Set(v.filter(x => typeof x==='string' && x.trim()))].slice(0,40); }
     else if(typeof v === typeof PADRAO[k]) s[k] = v;
   }
-  if(!RAPIDOS.includes(s.rapido)) s.rapido = 'Tudo';
-  s.ligas = s.ligas.filter(n => LIGAS.some(l => l[0]===n));
+  s.mostrar = s.mostrar.filter(n => REGRA.has(n));
   s.canais = s.canais.filter(id => CANAIS.some(x => x.id===id));
-  s.genero = s.genero.filter(g => GENEROS.some(x => x[0]===g));
-  s.categoria = s.categoria.filter(c => CATEGORIAS.some(x => x[0]===c));
+  s.incluir = s.incluir.filter(k => INCLUIR.some(x => x[0]===k));
   return s;
 }
 function salvar(){ try{ localStorage.setItem(CHAVE, JSON.stringify(estado)); }catch(e){ /* navegação privada: vale só nesta visita */ } }
@@ -3684,7 +3700,6 @@ const RE_LOWER = /s[ée]rie [bcd]\b|s[ée]rie a[23]\b|[2-9][ªº°]? ?divis|(seg
 const RE_RESERVA = /\s(B|II)(\s+x\s|\s*$)/;   /* times B: "Ceará B x ...", "... x Bayern II" */
 function ehBase(e){ return RE_SUB.test(e.match + ' ' + e.league + ' ' + (e.detail||'')) || RE_SUB_LIGA.test(e.league); }
 function ehInferior(e){ return e.sport === 'Futebol' && (RE_LOWER.test(e.league + ' ' + (e.detail||'')) || RE_RESERVA.test(e.match)); }
-const categoriaDe = e => ehBase(e) ? 'base' : ehInferior(e) ? 'inferior' : 'principal';
 function ladosDe(e){
   const out = [];
   for(const txt of [e.match, e.espn]){
@@ -3699,41 +3714,59 @@ function jogaAlgum(e, times){
   return times.some(t => lados.some(l => mesmoTime(t, l)));
 }
 /* "Meu time" é o time principal: jogo de base (Sub-20, Sub-17...) e do feminino não
-   contam, mesmo com o mesmo nome. (O filtro "Times" é outra coisa: vai pelo nome.) */
+   contam, mesmo com o mesmo nome. */
 const ehMeuTime = e => e.g !== 'F' && !ehBase(e) && jogaAlgum(e, estado.times);
-function ligaOk(e){
-  for(const [nome,regra] of LIGAS)
-    if(estado.ligas.includes(nome) && (typeof regra==='function' ? regra(e) : regra.test(e.league))) return true;
-  return false;
+
+/* 1. "Incluir": o que ainda falta ligar para este jogo entrar na lista. Time que a
+   pessoa escolheu pelo nome (no "Meu time" ou nos filtros) não fica de fora por jogar
+   numa divisão inferior: quem escolheu a Ponte Preta quer ver a Série B dela. */
+const inc = k => estado.incluir.includes(k);
+function faltaIncluir(e){
+  const f = [];
+  if(e.g === 'F') f.push('feminino');
+  if(ehBase(e)) f.push('base');
+  else if(ehInferior(e) && !jogaAlgum(e, estado.times) && !jogaAlgum(e, estado.filtroTimes)) f.push('inferiores');
+  return f.filter(k => !inc(k));
 }
-/* passa só o que combina com tudo o que está marcado; sem nada marcado, passa tudo */
-function passa(e){
-  switch(estado.rapido){
-    case 'Futebol':  if(e.sport!=='Futebol') return false; break;
-    case 'Seleções': if(!e.sel) return false; break;
-    case 'NBA':      if(!/\bnba\b/i.test(e.league)) return false; break;
-    case 'NFL':      if(!/\bnfl\b/i.test(e.league)) return false; break;
-  }
-  if(estado.ligas.length && !ligaOk(e)) return false;
-  if(estado.filtroTimes.length && !jogaAlgum(e, estado.filtroTimes)) return false;
-  if(estado.canais.length && !e.ch.some(c => estado.canais.some(id => canalBate(c, id)))) return false;
-  if(estado.genero.length && !estado.genero.includes(e.g==='F' ? 'F' : 'M')) return false;
-  if(estado.categoria.length && !estado.categoria.includes(categoriaDe(e))) return false;
-  return true;
+/* 2. "O que mostrar": o que combina com QUALQUER item marcado; sem nada marcado, tudo */
+const temOQue = () => estado.mostrar.length > 0 || estado.filtroTimes.length > 0;
+const combinaOQue = e => !temOQue() || estado.mostrar.some(n => REGRA.has(n) && REGRA.get(n)(e)) || jogaAlgum(e, estado.filtroTimes);
+/* 3. "Canais": só o que passa em algum dos marcados */
+const combinaCanal = e => !estado.canais.length || e.ch.some(c => estado.canais.some(id => canalBate(c, id)));
+const combina = e => combinaOQue(e) && combinaCanal(e);              /* os filtros, sem contar o "Incluir" */
+const passa = e => combina(e) && faltaIncluir(e).length === 0;        /* o que entra na lista */
+
+/* Itens mais amplos que já contêm todos os jogos de um time: "Futebol" contém o
+   Palmeiras; "NBA", os Lakers; "Seleções", o Brasil. Marcar a parte tira o todo, e
+   marcar o todo tira a parte: todo toque muda a lista e nada fica marcado à toa. */
+function amplosDoTime(nome){
+  const jogos = LIMPOS.filter(e => jogaAlgum(e, [nome]));
+  if(!jogos.length) return (POPULARES.some(p => mesmoTime(p, nome)) || FAMILIA_DE[chaveTime(nome)]) ? ['Futebol'] : [];
+  return ['Futebol','NBA','NFL','Seleções'].filter(n => jogos.every(REGRA.get(n)));
 }
-/* itens marcados na folha de filtros, um por um: [tipo, valor, como aparece] */
-function etiquetas(){
-  return estado.ligas.map(v => ['liga', v, v])
-    .concat(estado.filtroTimes.map(v => ['time', v, v]))
-    .concat(estado.canais.map(v => { const c = CANAIS.find(x => x.id===v) || {}; return ['canal', v, c.curto || c.nome || v]; }))
-    .concat(estado.genero.map(v => ['genero', v, (GENEROS.find(x => x[0]===v) || [])[1] || v]))
-    .concat(estado.categoria.map(v => ['categoria', v, (CATEGORIAS.find(x => x[0]===v) || [])[1] || v]));
+function marcarItem(nome){             /* esporte ou campeonato: liga ou desliga */
+  if(!REGRA.has(nome)) return;
+  if(estado.mostrar.includes(nome)){ estado.mostrar = estado.mostrar.filter(n => n !== nome); return; }
+  if(nome === 'Futebol') estado.mostrar = estado.mostrar.filter(n => !ehLiga(n));
+  if(ehLiga(nome)) estado.mostrar = estado.mostrar.filter(n => n !== 'Futebol');
+  estado.filtroTimes = estado.filtroTimes.filter(t => !amplosDoTime(t).includes(nome));
+  estado.mostrar.push(nome);
 }
-const LISTA_DO_TIPO = { liga:'ligas', time:'filtroTimes', canal:'canais', genero:'genero', categoria:'categoria' };
-const quantosFiltros = () => etiquetas().length + (estado.rapido!=='Tudo' ? 1 : 0);
+function marcarTime(nome){             /* time no "o que mostrar" */
+  nome = String(nome).trim().slice(0,40);
+  if(!nome || estado.filtroTimes.length >= 30 || estado.filtroTimes.some(t => mesmoTime(t, nome))) return;
+  const amplos = amplosDoTime(nome);
+  estado.mostrar = estado.mostrar.filter(n => !amplos.includes(n));
+  estado.filtroTimes.push(nome);
+}
+/* o que está ligado, item por item: [tipo, valor, como aparece] */
+const etiquetasOQue = () => estado.mostrar.map(v => ['item', v, v]).concat(estado.filtroTimes.map(v => ['time', v, v]));
+const etiquetasCanal = () => estado.canais.map(v => { const c = CANAIS.find(x => x.id===v) || {}; return ['canal', v, c.curto || c.nome || v]; });
+const LISTA_DO_TIPO = { item:'mostrar', time:'filtroTimes', canal:'canais' };
+const quantosFiltros = () => estado.mostrar.length + estado.filtroTimes.length + estado.canais.length;
 const temFiltro = () => quantosFiltros() > 0;
 const esseFiltro = () => quantosFiltros()===1 ? 'esse filtro' : 'esses filtros';
-function limparFiltros(){ estado.rapido = 'Tudo'; estado.ligas = []; estado.filtroTimes = []; estado.canais = []; estado.genero = []; estado.categoria = []; }
+function limparFiltros(){ estado.mostrar = []; estado.filtroTimes = []; estado.canais = []; }
 /* "Ao vivo" pelo relógio, com a duração típica de cada esporte; quando a ESPN
    informa o andamento do jogo, vale o que ela diz. */
 const DUR = { 'Futebol':120, 'Basquete':150, 'Futebol Americano':200 };
@@ -3819,12 +3852,23 @@ function htmlDica(){
   return `<div class="dica"><p><b>Tem um time ou uma seleção?</b> Escolha em “Meu time” e os dias em que ele joga ficam marcados com um ponto amarelo no calendário.</p>
     <div class="acoes"><button type="button" class="botao" data-acao="abrir-time">Escolher meu time</button><button type="button" class="botao fantasma" data-acao="dispensar-dica">Agora não</button></div></div>`;
 }
-/* os filtros ligados, escritos no topo da lista: nada fica restrito sem aviso */
+/* O que está ligado, escrito no topo da lista. Os atalhos acesos lá em cima já dizem
+   parte; a faixa aparece quando há algo que eles não mostram, e aí lista tudo. */
 function htmlLigados(){
-  const es = etiquetas();
-  if(!es.length) return '';
-  return `<div class="ligados" role="group" aria-label="Filtros ligados"><span>Filtrando por</span>${es.map(([tipo, valor, nome]) =>
-    `<button type="button" class="etq" data-acao="tira-filtro" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-label="Tirar o filtro ${esc(nome)}">${esc(nome)}<b aria-hidden="true">×</b></button>`).join('')}<button type="button" class="texto" data-acao="limpar">Limpar</button></div>`;
+  const oq = etiquetasOQue(), cs = etiquetasCanal();
+  if(!cs.length && !estado.filtroTimes.length && estado.mostrar.every(n => RAPIDOS.includes(n))) return '';
+  const etq = ([tipo, valor, nome]) => `<button type="button" class="etq" data-acao="tira-filtro" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-label="Tirar ${esc(nome)}">${esc(nome)}<b aria-hidden="true">×</b></button>`;
+  return `<div class="ligados" role="group" aria-label="Filtros ligados"><span>${oq.length ? 'Mostrando só' : 'Mostrando só o que passa em'}</span>${oq.map(etq).join('')}${oq.length && cs.length ? '<span>em</span>' : ''}${cs.map(etq).join('')}<button type="button" class="texto" data-acao="limpar">Limpar</button></div>`;
+}
+/* "Incluir", na primeira tela: o que fica de fora por padrão, com quantos jogos do
+   dia cada botão traria (dos que combinam com os filtros) */
+function htmlIncluir(dia){
+  const n = { feminino:0, base:0, inferiores:0 };
+  for(const e of LIMPOS) if(e.date === dia && combina(e)){ const f = faltaIncluir(e); if(f.length === 1) n[f[0]]++; }
+  return `<div class="incluir" role="group" aria-label="Incluir na lista">${INCLUIR.map(([k, nome]) => {
+    const ligado = inc(k), q = ligado ? 0 : n[k];
+    return `<button type="button" class="inc${ligado?' sel':''}" data-acao="incluir" data-valor="${k}" aria-pressed="${ligado}"><span class="so-leitor">Incluir: </span><b aria-hidden="true">${ligado ? '✓' : '+' + (q || '')}</b>${esc(nome)}${q ? `<span class="so-leitor">, ${plural(q,'jogo','jogos')} neste dia</span>` : ''}</button>`;
+  }).join('')}</div>`;
 }
 /* fim da lista do dia: a legenda do verde, quando há canal grátis na tela */
 const htmlLegenda = temGratis => temGratis ? '<p class="legenda"><span class="canal gratis" aria-hidden="true">Canal</span> em verde passa de graça, na TV aberta ou no YouTube.</p>' : '';
@@ -3836,7 +3880,7 @@ function htmlDia(dia, agora, dias){
   const fases = new Map(doDia.map(e => [e, fase(e, agora)])), faseDe = e => fases.get(e) || fase(e, agora);
   /* começou ontem e ainda está em campo (NBA das 22h30, por exemplo) */
   const viradas = ehHoje ? LIMPOS.filter(e => e.date===somaDias(dia,-1) && passa(e) && fase(e, agora)==='vivo').sort(porHora) : [];
-  let html = htmlDica() + htmlLigados();
+  let html = htmlDica() + htmlLigados() + (noDia.length ? htmlIncluir(dia) : '');
   if(!doDia.length && !viradas.length){
     if(!noDia.length){
       const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
@@ -3844,11 +3888,15 @@ function htmlDia(dia, agora, dias){
         ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
         : vazio('Nenhum jogo neste dia.', 'As fontes não listam jogos para esta data.'));
     }
-    /* há jogos no dia, mas nenhum combina com os filtros: diz em que dias há */
+    /* há jogos no dia, mas nenhum entra na lista: diz por quê, e onde há */
+    const fora = noDia.filter(combina).length;        /* combinam com os filtros, mas são de feminino, base ou divisão inferior */
+    const deFora = fora ? `${plural(fora,'jogo','jogos')} do feminino, de base ou de divisões inferiores ${fora===1 ? 'fica' : 'ficam'} de fora: é só incluir, nos botões acima.` : '';
+    if(!temFiltro()) return html + vazio('Nenhum jogo dos times principais neste dia.', deFora);
     const um = quantosFiltros()===1, comEle = um ? 'Com ele' : 'Com eles';
     const outros = dias.map((d,i) => [d, i, LIMPOS.filter(e => e.date===d && passa(e)).length]).filter(x => x[2] > 0);
-    return html + vazio(`Nenhum jogo neste dia com ${esseFiltro()}.`,
-                        outros.length ? `${comEle}, há jogo em:` : `${comEle}, não há jogo nos próximos 7 dias.`,
+    const semCanal = temOQue() && estado.canais.length && noDia.some(e => combinaOQue(e) && faltaIncluir(e).length===0);
+    return html + vazio(semCanal ? 'Neste dia, nada do que está marcado passa nos canais escolhidos.' : `Nenhum jogo neste dia com ${esseFiltro()}.`,
+                        (deFora ? deFora + ' ' : '') + (outros.length ? `${comEle}, há jogo em:` : `${comEle}, não há jogo nos próximos 7 dias.`),
                         outros.map(([d,i,n]) => `<button type="button" class="botao fantasma" data-acao="dia" data-i="${i}">${nomeDoDia(d,i,true)}, ${diaMes(d)} (${n})</button>`).join('')
                         + `<button type="button" class="botao" data-acao="limpar">${um ? 'Limpar filtro' : 'Limpar filtros'}</button>`);
   }
@@ -3864,8 +3912,8 @@ function htmlDia(dia, agora, dias){
   }
   return html + htmlLegenda(doDia.concat(viradas).some(e => e.ch.some(gratis)));
 }
-/* A busca respeita os filtros, como o resto do app. Se eles deixarem algum
-   resultado de fora, ela avisa e oferece buscar em tudo (só enquanto estiver aberta). */
+/* A busca olha a mesma lista do resto do app (filtros e "Incluir"). Se algum
+   resultado ficar de fora, ela avisa e oferece buscar em tudo (só enquanto estiver aberta). */
 function htmlBusca(agora, dias){
   const q = nrmBusca(busca);
   if(q.length < 2) return '<p class="nada">Digite pelo menos 2 letras: time, campeonato ou canal.</p>';
@@ -3875,10 +3923,10 @@ function htmlBusca(agora, dias){
   const emTudo = '<button type="button" class="texto" data-acao="busca-tudo">Buscar em tudo</button>';
   let html = buscaTudo ? '' : htmlLigados();
   if(!lista.length) return html + (escondidos
-    ? vazio('Nada na lista atual.', plural(escondidos, 'jogo combina', 'jogos combinam') + ' com a busca, mas ' + (escondidos===1 ? 'fica' : 'ficam') + ' de fora por causa dos filtros.',
+    ? vazio('Nada na lista atual.', plural(escondidos, 'jogo combina', 'jogos combinam') + ' com a busca, mas ' + (escondidos===1 ? 'está' : 'estão') + ' fora da lista (filtros, feminino, base ou divisões inferiores).',
             '<button type="button" class="botao" data-acao="busca-tudo">Buscar em tudo</button>')
     : vazio('Nada encontrado nos próximos 7 dias.', 'Confira a grafia ou tente só uma parte do nome.'));
-  html += `<p class="nada">${plural(lista.length,'jogo','jogos')} nos próximos 7 dias${buscaTudo ? ', sem contar os filtros' : ''}${escondidos ? `. ${escondidos===1 ? 'Outro fica' : 'Outros ' + escondidos + ' ficam'} de fora por causa dos filtros. ${emTudo}` : ''}</p>`;
+  html += `<p class="nada">${plural(lista.length,'jogo','jogos')} nos próximos 7 dias${buscaTudo ? ', contando o que está fora da lista' : ''}${escondidos ? `. ${escondidos===1 ? 'Outro está' : 'Outros ' + escondidos + ' estão'} fora da lista. ${emTudo}` : ''}</p>`;
   dias.forEach((d,i) => { html += bloco(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, lista.filter(e => e.date===d), e => fase(e, agora)); });
   return html;
 }
@@ -3914,9 +3962,10 @@ function desenhar(){
     return `<button type="button" class="dia${i===diaSel?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${i===diaSel}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${joga?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
   }).join(''));
   el('abre-time').classList.toggle('tem', estado.times.length > 0);
-  trocar(el('rapidos'), RAPIDOS.map(r =>
-    `<button type="button" class="rapido${estado.rapido===r?' sel':''}" data-acao="rapido" data-valor="${r}" aria-pressed="${estado.rapido===r}">${r}</button>`).join(''));
-  const n = etiquetas().length;
+  /* atalhos: o mesmo "o que mostrar" da folha. "Tudo" aceso = nenhum filtro ligado */
+  const atalho = (r, ligado) => `<button type="button" class="rapido${ligado?' sel':''}" data-acao="rapido" data-valor="${r}" aria-pressed="${ligado}">${r}</button>`;
+  trocar(el('rapidos'), atalho('Tudo', !temFiltro()) + RAPIDOS.map(r => atalho(r, estado.mostrar.includes(r))).join(''));
+  const n = quantosFiltros();
   el('abre-filtros').innerHTML = 'Filtros' + (n ? `<span class="n" aria-label="${plural(n,'filtro ligado','filtros ligados')}">${n}</span>` : '');
   desenharFrescor(agora);
   trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlDia(dias[diaSel], agora, dias));
@@ -3963,19 +4012,31 @@ function desenharFolha(){
     <p>Vale só para o time principal: jogos de base (Sub-20, Sub-17) e do feminino não contam. Isso não filtra a lista.</p>
     ${campoDeTime('times')}`
   : `${topo('Filtros')}
-    <p>Marcou, a lista mostra só o que combina. Sem nada marcado, aparece tudo.</p>
-    <h3>Campeonatos</h3>
-    <div class="opcoes">${LIGAS.map(l => op('liga', l[0], l[0], estado.ligas.includes(l[0]))).join('')}</div>
+    <p>A lista mostra o que estiver marcado: esportes, campeonatos e times se somam. Sem nada marcado, mostra tudo.</p>
+    <h3>Esportes</h3>
+    <div class="opcoes">${ESPORTES.map(x => op('item', x[0], x[0], estado.mostrar.includes(x[0]))).join('')}</div>
+    <h3>Campeonatos de futebol</h3>
+    <div class="opcoes">${LIGAS.map(l => op('item', l[0], l[0], estado.mostrar.includes(l[0]))).join('')}</div>
     <h3>Times</h3>
     ${campoDeTime('filtroTimes')}
     <h3>Canais</h3>
+    <p>Com canal marcado, ficam só os jogos que passam nele.</p>
     <div class="opcoes">${CANAIS.map(c => op('canal', c.id, c.nome, estado.canais.includes(c.id))).join('')}</div>
-    <h3>Gênero</h3>
-    <div class="opcoes">${GENEROS.map(g => op('genero', g[0], g[1], estado.genero.includes(g[0]))).join('')}</div>
-    <h3>Categoria</h3>
-    <p>“Principais” deixa de fora a base e as divisões inferiores.</p>
-    <div class="opcoes">${CATEGORIAS.map(c => op('categoria', c[0], c[1], estado.categoria.includes(c[0]))).join('')}</div>
+    <h3>Incluir na lista</h3>
+    <p>Ficam de fora até você ligar.</p>
+    <div class="opcoes">${INCLUIR.map(x => op('incluir', x[0], x[2], inc(x[0]))).join('')}</div>
     <div class="pe-folha"><button type="button" class="texto" data-acao="limpar-folha">Limpar filtros</button></div>`;
+}
+/* depois de um toque na folha: acerta o que ficou marcado (marcar a parte tira o todo)
+   sem redesenhar a folha inteira, para ela não pular */
+function acertarFolha(){
+  const marcado = { item: v => estado.mostrar.includes(v), canal: v => estado.canais.includes(v), incluir: v => inc(v) };
+  for(const b of el('folha').querySelectorAll('[data-acao="op"]')){
+    const ligado = !!(marcado[b.dataset.tipo] && marcado[b.dataset.tipo](b.dataset.valor));
+    b.classList.toggle('sel', ligado); b.setAttribute('aria-pressed', ligado);
+  }
+  const caixa = el('op-times');
+  if(caixa && caixa.dataset.alvo === 'filtroTimes') caixa.innerHTML = htmlEscolha('filtroTimes', el('busca-time').value);
 }
 function abrirFolha(modo){
   folhaModo = modo;
@@ -3992,7 +4053,7 @@ function fecharFolha(){
   salvar(); desenhar(); mostrarEscolhidos();
   el(folhaModo==='time' ? 'abre-time' : 'abre-filtros').focus({preventScroll:true});
 }
-/* o filtro rápido escolhido nunca fica escondido na fileira que rola */
+/* ao abrir o app e ao fechar a folha, o primeiro atalho aceso fica à vista na fileira que rola */
 function mostrarEscolhidos(){
   const s = el('rapidos').querySelector('.sel'); if(s) s.scrollIntoView({inline:'nearest', block:'nearest'});
 }
@@ -4012,8 +4073,9 @@ document.addEventListener('click', ev => {
   const b = ev.target.closest('[data-acao]'); if(!b) return;
   const d = b.dataset;
   switch(d.acao){
-    case 'dia':            diaSel = +d.i; desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); fetchScores(); break;
-    case 'rapido':         estado.rapido = d.valor; salvar(); desenhar(); window.scrollTo(0,0); mostrarEscolhidos(); break;
+    case 'dia':            diaSel = +d.i; desenhar(); window.scrollTo(0,0); fetchScores(); break;
+    case 'rapido':         if(d.valor === 'Tudo') limparFiltros(); else marcarItem(d.valor); salvar(); desenhar(); window.scrollTo(0,0); if(d.valor === 'Tudo') mostrarEscolhidos(); break;   /* o atalho tocado já está à vista: a fileira não pula */
+    case 'incluir':        alternar(estado.incluir, d.valor); salvar(); desenhar(); break;
     case 'abrir-filtros':  abrirFolha('filtros'); break;
     case 'abrir-time':     abrirFolha('time'); break;
     case 'fechar-folha':   fecharFolha(); break;
@@ -4023,23 +4085,25 @@ document.addEventListener('click', ev => {
     case 'atualizar':      atualizar(); break;
     case 'dispensar-dica': estado.dica = false; salvar(); desenhar(); break;
     case 'limpar':         limparFiltros(); salvar(); desenhar(); mostrarEscolhidos(); break;
-    case 'limpar-folha':   limparFiltros(); salvar(); desenharFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
+    case 'limpar-folha':   limparFiltros(); salvar(); acertarFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
     case 'tira-filtro':    if(LISTA_DO_TIPO[d.tipo]){ estado[LISTA_DO_TIPO[d.tipo]] = estado[LISTA_DO_TIPO[d.tipo]].filter(v => v !== d.valor); salvar(); desenhar(); } break;
     case 'op': {
-      if(!LISTA_DO_TIPO[d.tipo]) break;
-      const ligado = alternar(estado[LISTA_DO_TIPO[d.tipo]], d.valor);
-      b.classList.toggle('sel', ligado); b.setAttribute('aria-pressed', ligado);
-      salvar(); desenhar(); break;
+      if(d.tipo === 'item') marcarItem(d.valor);
+      else if(d.tipo === 'canal') alternar(estado.canais, d.valor);
+      else if(d.tipo === 'incluir') alternar(estado.incluir, d.valor);
+      else break;
+      acertarFolha(); salvar(); desenhar(); break;
     }
     case 'poe-time': {
-      const alvo = el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes', lista = estado[alvo];
-      if(lista.length < 30 && !lista.some(t => mesmoTime(t, d.valor))) lista.push(d.valor.trim().slice(0,40));
-      el('busca-time').value = ''; el('op-times').innerHTML = htmlEscolha(alvo, ''); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+      const alvo = el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes';
+      if(alvo === 'filtroTimes') marcarTime(d.valor);
+      else if(estado.times.length < 30 && !estado.times.some(t => mesmoTime(t, d.valor))) estado.times.push(d.valor.trim().slice(0,40));
+      el('busca-time').value = ''; el('op-times').innerHTML = htmlEscolha(alvo, ''); acertarFolha(); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
     }
     case 'tira-time': {
       const alvo = el('op-times').dataset.alvo==='times' ? 'times' : 'filtroTimes';
       estado[alvo] = estado[alvo].filter(t => t !== d.valor);
-      el('op-times').innerHTML = htmlEscolha(alvo, el('busca-time').value); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
+      el('op-times').innerHTML = htmlEscolha(alvo, el('busca-time').value); acertarFolha(); salvar(); desenhar(); el('busca-time').focus({preventScroll:true}); break;
     }
   }
 });
