@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 18/11 12:42 BRT — janela 2026-11-18 a 2026-11-24",
+   "Coleta 18/11 17:44 BRT — janela 2026-11-18 a 2026-11-24",
    "  ✓ mantosdofutebol: 41 evento(s)",
-   "  ✓ goal (2º guia): 24 evento(s)",
+   "  ✓ goal (2º guia): 66 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
    "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 174 eventos → eventos.json",
+   "TOTAL: 186 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -89,8 +89,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 356281,
-   "tabelas": 4,
+   "bytes": 509853,
+   "tabelas": 5,
    "dias": [
     {
      "titulo": "Jogos de quarta, 18 de novembro de 2026",
@@ -106,6 +106,11 @@
      "titulo": "Jogos de sexta, 20 de novembro de 2026",
      "data": "2026-11-20",
      "jogos": 4
+    },
+    {
+     "titulo": "Jogos de sábado, 21 de novembro de 2026",
+     "data": "2026-11-21",
+     "jogos": 42
     }
    ],
    "linhas_nao_lidas": []
@@ -116,7 +121,23 @@
   },
   "guias": {
    "nos_dois": 24,
-   "so_no_segundo": [],
+   "so_no_segundo": [
+    "11-21 09:30 Manchester City x Fulham [Campeonato Inglês]",
+    "11-21 09:45 Liverpool x Chelsea [Campeonato Inglês Feminino]",
+    "11-21 10:00 Deportivo Alavés x Deportivo A Coruña [Campeonato Espanhol]",
+    "11-21 10:00 Galatasaray x Samsunspor [Campeonato Turco]",
+    "11-21 11:00 Lazio x Lecce [Campeonato Italiano]",
+    "11-21 11:00 Como x Cagliari [Campeonato Italiano]",
+    "11-21 11:00 São Paulo x Santos [Campeonato Paulista Feminino]",
+    "11-21 11:30 Borussia Monchengladbach x Borussia Dortmund [Campeonato Alemão]",
+    "11-21 11:30 Elversberg x Freiburg [Campeonato Alemão]",
+    "11-21 11:30 Eintracht Frankfurt x Hoffenheim [Campeonato Alemão]",
+    "11-21 11:30 Bayer Leverkusen x Paderborn [Campeonato Alemão]",
+    "11-21 11:30 Union Berlin x RB Leipzig [Campeonato Alemão]",
+    "11-21 12:00 Chelsea x Leeds United [Campeonato Inglês]",
+    "11-21 12:00 Bournemouth x Nottingham Forest [Campeonato Inglês]",
+    "11-21 12:00 Aston Villa x Sunderland [Campeonato Inglês]"
+   ],
    "horario_diferente": [
     "2026-11-19 Seattle Sounders x Real Salt Lake: principal 23:55 x segundo 00:00"
    ]
