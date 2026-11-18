@@ -1,9 +1,9 @@
 {
  "fontes": {
   "espn_tabelas_por_liga": {
-   "Champions League": 0,
+   "Champions League": 9,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 18,
+   "Brasileirão Série A": 19,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 1,
@@ -12,20 +12,19 @@
    "Bundesliga": 9,
    "Campeonato Italiano": 10,
    "Campeonato Francês": 9,
-   "Amistoso": 1,
-   "UEFA Nations League": 8,
+   "Amistoso": 0,
+   "UEFA Nations League": 0,
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 17/11 23:58 BRT — janela 2026-11-17 a 2026-11-23",
-   "  ✓ mantosdofutebol: 45 evento(s)",
-   "  ✓ goal (2º guia): 38 evento(s)",
-   "  ↺ mantosdofutebol: a página não listou 2026-11-18 (lido em 17/11 19:22) — vale a última leitura",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
-   "  ✓ ESPN NBA: 51 evento(s)",
+   "Coleta 18/11 08:57 BRT — janela 2026-11-18 a 2026-11-24",
+   "  ✓ mantosdofutebol: 41 evento(s)",
+   "  ✓ goal (2º guia): 24 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
+   "  ✓ ESPN NBA: 52 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 181 eventos → eventos.json",
+   "TOTAL: 174 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -35,15 +34,15 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Terça – 17/11",
-      "data": "2026-11-17",
-      "jogos": 17
+      "cabecalho": "Quarta – 18/11",
+      "data": "2026-11-18",
+      "jogos": 13
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 0,
+    "futsal_descartados": 3,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -90,14 +89,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 412738,
-   "tabelas": 5,
+   "bytes": 356161,
+   "tabelas": 4,
    "dias": [
-    {
-     "titulo": "Jogos de terça, 17 de novembro de 2026",
-     "data": "2026-11-17",
-     "jogos": 14
-    },
     {
      "titulo": "Jogos de quarta, 18 de novembro de 2026",
      "data": "2026-11-18",
@@ -117,25 +111,21 @@
    "linhas_nao_lidas": []
   },
   "memoria": {
-   "mantos": [
-    "2026-11-18 (lido em 17/11 19:22)"
-   ],
+   "mantos": [],
    "goal": []
   },
   "guias": {
-   "nos_dois": 37,
-   "so_no_segundo": [
-    "11-17 07:00 Singapura x Brasil [Amistoso Internacional]"
-   ],
+   "nos_dois": 24,
+   "so_no_segundo": [],
    "horario_diferente": [
     "2026-11-19 Seattle Sounders x Real Salt Lake: principal 23:55 x segundo 00:00"
    ]
   },
   "nba_broadcasts": [
-   "New York Knicks x Toronto Raptors :: (vazio)",
-   "Portland Trail Blazers x Minnesota Timberwolves :: BLAZERVISION | DAZN MIN | BLAZERVISION | DAZN MIN",
-   "Detroit Pistons x San Antonio Spurs :: NBC | NBC",
-   "Utah Jazz x LA Clippers :: CLIPPERVISION | KJZZ-TV | JAZZ+ | CLIPPERVISION | KJZZ-TV | JAZZ+"
+   "Utah Jazz x LA Clippers :: CLIPPERVISION | KJZZ-TV | JAZZ+ | CLIPPERVISION | KJZZ-TV | JAZZ+",
+   "Charlotte Hornets x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | NBC | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | NBC",
+   "Memphis Grizzlies x Cleveland Cavaliers :: DAZN CLE | DAZN MEM | DAZN CLE | DAZN MEM",
+   "Houston Rockets x Indiana Pacers :: DAZN IND | DAZN IND"
   ],
   "espn_faltas": []
  },
