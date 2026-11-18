@@ -18,13 +18,14 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 17/11 19:22 BRT — janela 2026-11-17 a 2026-11-23",
-   "  ✓ mantosdofutebol: 44 evento(s)",
+   "Coleta 17/11 23:58 BRT — janela 2026-11-17 a 2026-11-23",
+   "  ✓ mantosdofutebol: 45 evento(s)",
    "  ✓ goal (2º guia): 38 evento(s)",
+   "  ↺ mantosdofutebol: a página não listou 2026-11-18 (lido em 17/11 19:22) — vale a última leitura",
    "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 172 eventos → eventos.json",
+   "TOTAL: 181 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -52,20 +53,20 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Quarta – 18/11",
-      "data": "2026-11-18",
-      "jogos": 13
-     },
-     {
       "cabecalho": "Quinta – 19/11",
       "data": "2026-11-19",
-      "jogos": 14
+      "jogos": 15
+     },
+     {
+      "cabecalho": "Sexta – 20/11",
+      "data": "2026-11-20",
+      "jogos": 13
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 1,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -89,7 +90,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 412646,
+   "bytes": 412738,
    "tabelas": 5,
    "dias": [
     {
@@ -116,20 +117,19 @@
    "linhas_nao_lidas": []
   },
   "memoria": {
-   "mantos": [],
+   "mantos": [
+    "2026-11-18 (lido em 17/11 19:22)"
+   ],
    "goal": []
   },
   "guias": {
-   "nos_dois": 32,
+   "nos_dois": 37,
    "so_no_segundo": [
-    "11-17 07:00 Singapura x Brasil [Amistoso Internacional]",
-    "11-19 00:00 Seattle Sounders x Real Salt Lake [MLS]",
-    "11-20 14:30 Al Ahli x Al Nassr [Campeonato Saudita]",
-    "11-20 16:30 Bayern de Munique x Colônia [Campeonato Alemão]",
-    "11-20 16:45 Troyes x Le Havre [Campeonato Francês]",
-    "11-20 17:00 Athletic Bilbao x Espanyol [Campeonato Espanhol]"
+    "11-17 07:00 Singapura x Brasil [Amistoso Internacional]"
    ],
-   "horario_diferente": []
+   "horario_diferente": [
+    "2026-11-19 Seattle Sounders x Real Salt Lake: principal 23:55 x segundo 00:00"
+   ]
   },
   "nba_broadcasts": [
    "New York Knicks x Toronto Raptors :: (vazio)",

@@ -905,23 +905,6 @@
  {
   "date": "2026-11-19",
   "t": "00:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "—",
-  "match": "Seattle Sounders x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple TV",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-19",
-  "t": "00:00",
   "sport": "Basquete",
   "g": "M",
   "country": "EUA/Canadá",
@@ -1211,7 +1194,7 @@
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
-  "detail": "—",
+  "detail": "Playoffs",
   "match": "Orlando City x FC Cincinnati",
   "ch": [
    {
@@ -1315,22 +1298,136 @@
   "v": 1
  },
  {
+  "date": "2026-11-19",
+  "t": "23:55",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "MLS",
+  "detail": "Playoffs",
+  "match": "Seattle Sounders x Real Salt Lake",
+  "ch": [
+   {
+    "n": "Apple TV",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Russo",
+  "detail": "—",
+  "match": "Rostov x Krylia Sovetov",
+  "ch": [
+   {
+    "n": "Canalgolbrasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgolbrasil"
+   }
+  ],
+  "v": 1
+ },
+ {
   "date": "2026-11-20",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Mundial",
-  "league": "Campeonato Saudita",
+  "league": "Liga Saudita",
   "detail": "—",
-  "match": "Al Ahli x Al Nassr",
+  "match": "Al-Ahli x Al-Nassr",
   "ch": [
    {
-    "n": "Canal GOAT",
-    "y": "free"
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
    },
    {
     "n": "XSports",
     "y": "free"
+   },
+   {
+    "n": "Bandsports",
+    "y": "tv"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-20",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Alemanha",
+  "league": "Bundesliga Feminina",
+  "detail": "—",
+  "match": "Union Berlin x Bayer Leverkusen",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2.Bundesliga",
+  "detail": "—",
+  "match": "Arminia Bielefeld x Magdeburg",
+  "ch": [
+   {
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   },
+   {
+    "n": "OneFootball (Ppv)",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2.Bundesliga",
+  "detail": "—",
+  "match": "Darmstadt x Heidenheim",
+  "ch": [
+   {
+    "n": "OneFootball (Ppv)",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Norueguês",
+  "detail": "—",
+  "match": "Molde FK x Bodo/Glimt",
+  "ch": [
+   {
+    "n": "Canalgolbrasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgolbrasil"
    }
   ],
   "v": 1
@@ -1341,7 +1438,7 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Alemanha",
-  "league": "Campeonato Alemão",
+  "league": "Bundesliga",
   "detail": "—",
   "match": "Bayern de Munique x Colônia",
   "ch": [
@@ -1350,15 +1447,62 @@
     "y": "free"
    },
    {
-    "n": "CazéTV",
-    "y": "free"
-   },
-   {
     "n": "SporTV",
     "y": "tv"
    },
    {
-    "n": "OneFootball",
+    "n": "OneFootball (Ppv)",
+    "y": "stream"
+   }
+  ],
+  "v": 2
+ },
+ {
+  "date": "2026-11-20",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Cerro x Nacional",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Liverpool-URU x Montevideo Wanderers",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-20",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Uruguaio",
+  "detail": "—",
+  "match": "Racing Montevideo x Central Español",
+  "ch": [
+   {
+    "n": "Disney+",
     "y": "stream"
    }
   ],
@@ -1392,8 +1536,9 @@
   "match": "Troyes x Le Havre",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    }
   ],
   "v": 2,
@@ -1410,16 +1555,34 @@
   "match": "Athletic Bilbao x Espanyol",
   "ch": [
    {
-    "n": "SportyNet",
-    "y": "free"
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
    },
    {
-    "n": "SportyNet (YouTube)",
+    "n": "SportyNet",
     "y": "free"
    }
   ],
   "v": 2,
   "espn": "Athletic Club x Espanyol"
+ },
+ {
+  "date": "2026-11-20",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "EFL League One",
+  "detail": "—",
+  "match": "Barnsley x Sheffield Wednesday",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-20",
