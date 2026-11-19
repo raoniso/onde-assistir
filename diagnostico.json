@@ -18,7 +18,7 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 18/11 17:44 BRT — janela 2026-11-18 a 2026-11-24",
+   "Coleta 18/11 23:40 BRT — janela 2026-11-18 a 2026-11-24",
    "  ✓ mantosdofutebol: 41 evento(s)",
    "  ✓ goal (2º guia): 66 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
@@ -89,7 +89,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 509853,
+   "bytes": 509721,
    "tabelas": 5,
    "dias": [
     {
