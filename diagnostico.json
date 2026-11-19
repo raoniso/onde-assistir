@@ -1,9 +1,9 @@
 {
  "fontes": {
   "espn_tabelas_por_liga": {
-   "Champions League": 9,
+   "Champions League": 18,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 19,
+   "Brasileirão Série A": 14,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 1,
@@ -18,13 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 18/11 23:40 BRT — janela 2026-11-18 a 2026-11-24",
-   "  ✓ mantosdofutebol: 41 evento(s)",
-   "  ✓ goal (2º guia): 66 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
-   "  ✓ ESPN NBA: 52 evento(s)",
-   "  ✓ ESPN NFL: 13 evento(s)",
-   "TOTAL: 186 eventos → eventos.json",
+   "Coleta 19/11 08:54 BRT — janela 2026-11-19 a 2026-11-25",
+   "  ✓ mantosdofutebol: 28 evento(s)",
+   "  ✓ goal (2º guia): 56 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 83 evento(s)",
+   "  ✓ ESPN NBA: 48 evento(s)",
+   "  ✓ ESPN NFL: 14 evento(s)",
+   "TOTAL: 180 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -34,19 +34,34 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Quarta – 18/11",
-      "data": "2026-11-18",
-      "jogos": 13
+      "cabecalho": "Quinta – 19/11",
+      "data": "2026-11-19",
+      "jogos": 15
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 3,
+    "futsal_descartados": 0,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
+    "linhas_de_jogo_nao_lidas": [
+     {
+      "linha": "16h00 – Copa Intercontinental de Futsal (3° lugar)",
+      "seguintes": [
+       "Canais: Youtube.com/@canalgolbrasil",
+       "16h30 – Peñarol x Cerro Largo – Campeonato Uruguaio"
+      ]
+     },
+     {
+      "linha": "19h00 – Copa Intercontinental de Futsal (FINAL)",
+      "seguintes": [
+       "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
+       "19h30 – Vasco da Gama x Internacional – Brasileirão"
+      ]
+     }
+    ]
    },
    {
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
@@ -89,14 +104,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 509721,
-   "tabelas": 5,
+   "bytes": 468190,
+   "tabelas": 4,
    "dias": [
-    {
-     "titulo": "Jogos de quarta, 18 de novembro de 2026",
-     "data": "2026-11-18",
-     "jogos": 10
-    },
     {
      "titulo": "Jogos de quinta, 19 de novembro de 2026",
      "data": "2026-11-19",
@@ -120,7 +130,7 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 24,
+   "nos_dois": 14,
    "so_no_segundo": [
     "11-21 09:30 Manchester City x Fulham [Campeonato Inglês]",
     "11-21 09:45 Liverpool x Chelsea [Campeonato Inglês Feminino]",
@@ -143,10 +153,10 @@
    ]
   },
   "nba_broadcasts": [
-   "Utah Jazz x LA Clippers :: CLIPPERVISION | KJZZ-TV | JAZZ+ | CLIPPERVISION | KJZZ-TV | JAZZ+",
-   "Charlotte Hornets x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | NBC | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | NBC",
-   "Memphis Grizzlies x Cleveland Cavaliers :: DAZN CLE | DAZN MEM | DAZN CLE | DAZN MEM",
-   "Houston Rockets x Indiana Pacers :: DAZN IND | DAZN IND"
+   "Utah Jazz x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+ | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+",
+   "Phoenix Suns x Sacramento Kings :: SUNS LIVE | ARIZONA'S FAMILY 3TV | SUNS LIVE | ARIZONA'S FAMILY 3TV",
+   "Golden State Warriors x Memphis Grizzlies :: DAZN MEM | DAZN MEM",
+   "Portland Trail Blazers x Milwaukee Bucks :: KUNP 16 | BLAZERVISION | MYMI | BUCKS APP | KUNP 16 | BLAZERVISION | MYMI | BUCKS APP"
   ],
   "espn_faltas": []
  },
