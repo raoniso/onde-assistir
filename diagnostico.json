@@ -18,13 +18,14 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 19/11 08:54 BRT — janela 2026-11-19 a 2026-11-25",
-   "  ✓ mantosdofutebol: 28 evento(s)",
-   "  ✓ goal (2º guia): 56 evento(s)",
+   "Coleta 19/11 17:50 BRT — janela 2026-11-19 a 2026-11-25",
+   "  ✓ mantosdofutebol: 95 evento(s)",
+   "  ✓ goal (2º guia): 88 evento(s)",
+   "  ↺ goal (2º guia): a página não listou 2026-11-19 (lido em 19/11 08:54) — vale a última leitura",
    "  ✓ ESPN tabelas (futebol, 7 dias): 83 evento(s)",
    "  ✓ ESPN NBA: 48 evento(s)",
    "  ✓ ESPN NFL: 14 evento(s)",
-   "TOTAL: 180 eventos → eventos.json",
+   "TOTAL: 221 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -67,86 +68,78 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Quinta – 19/11",
-      "data": "2026-11-19",
-      "jogos": 15
-     },
-     {
       "cabecalho": "Sexta – 20/11",
       "data": "2026-11-20",
-      "jogos": 13
+      "jogos": 17
+     },
+     {
+      "cabecalho": "Sábado – 21/11",
+      "data": "2026-11-21",
+      "jogos": 63
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 1,
+    "futsal_descartados": 2,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": [
-     {
-      "linha": "16h00 – Copa Intercontinental de Futsal (3° lugar)",
-      "seguintes": [
-       "Canais: Youtube.com/@canalgolbrasil",
-       "16h30 – Peñarol x Cerro Largo – Campeonato Uruguaio"
-      ]
-     },
-     {
-      "linha": "19h00 – Copa Intercontinental de Futsal (FINAL)",
-      "seguintes": [
-       "Canais: Youtube.com/@canalgolbrasil, Xsports e BandSports",
-       "19h30 – Vasco da Gama x Internacional – Brasileirão"
-      ]
-     }
-    ]
+    "linhas_de_jogo_nao_lidas": []
    }
   ],
   "goal": {
    "http": 200,
-   "bytes": 468190,
-   "tabelas": 4,
+   "bytes": 589411,
+   "tabelas": 5,
    "dias": [
-    {
-     "titulo": "Jogos de quinta, 19 de novembro de 2026",
-     "data": "2026-11-19",
-     "jogos": 10
-    },
     {
      "titulo": "Jogos de sexta, 20 de novembro de 2026",
      "data": "2026-11-20",
-     "jogos": 4
+     "jogos": 5
     },
     {
      "titulo": "Jogos de sábado, 21 de novembro de 2026",
      "data": "2026-11-21",
      "jogos": 42
+    },
+    {
+     "titulo": "Jogos de domingo, 22 de novembro de 2026",
+     "data": "2026-11-22",
+     "jogos": 28
+    },
+    {
+     "titulo": "Jogos de segunda, 23 de novembro de 2026",
+     "data": "2026-11-23",
+     "jogos": 13
     }
    ],
    "linhas_nao_lidas": []
   },
   "memoria": {
    "mantos": [],
-   "goal": []
+   "goal": [
+    "2026-11-19 (lido em 19/11 08:54)"
+   ]
   },
   "guias": {
-   "nos_dois": 14,
+   "nos_dois": 55,
    "so_no_segundo": [
-    "11-21 09:30 Manchester City x Fulham [Campeonato Inglês]",
-    "11-21 09:45 Liverpool x Chelsea [Campeonato Inglês Feminino]",
-    "11-21 10:00 Deportivo Alavés x Deportivo A Coruña [Campeonato Espanhol]",
-    "11-21 10:00 Galatasaray x Samsunspor [Campeonato Turco]",
-    "11-21 11:00 Lazio x Lecce [Campeonato Italiano]",
-    "11-21 11:00 Como x Cagliari [Campeonato Italiano]",
-    "11-21 11:00 São Paulo x Santos [Campeonato Paulista Feminino]",
-    "11-21 11:30 Borussia Monchengladbach x Borussia Dortmund [Campeonato Alemão]",
-    "11-21 11:30 Elversberg x Freiburg [Campeonato Alemão]",
-    "11-21 11:30 Eintracht Frankfurt x Hoffenheim [Campeonato Alemão]",
-    "11-21 11:30 Bayer Leverkusen x Paderborn [Campeonato Alemão]",
-    "11-21 11:30 Union Berlin x RB Leipzig [Campeonato Alemão]",
-    "11-21 12:00 Chelsea x Leeds United [Campeonato Inglês]",
-    "11-21 12:00 Bournemouth x Nottingham Forest [Campeonato Inglês]",
-    "11-21 12:00 Aston Villa x Sunderland [Campeonato Inglês]"
+    "11-21 12:00 Coventry City x Crystal Palace [Campeonato Inglês]",
+    "11-21 22:00 Pumas x Monterrey [Campeonato Mexicano]",
+    "11-22 08:30 Juventus x Veneza [Campeonato Italliano]",
+    "11-22 09:00 Burnley x Blackburn Rovers [Campeonato Inglês (segunda divisão)]",
+    "11-22 10:00 Barcelona x Villarreal [Campeonato Espanhol]",
+    "11-22 10:00 Konyaspor x Besiktas [Campeonato Turco]",
+    "11-22 10:30 Ajax x Ado Den Haag [Campeonato Holandês]",
+    "11-22 10:30 Sparta Rotterdam x AZ Alkmaar [Campeonato Holandês]",
+    "11-22 11:00 Hull City x Brighton [Campeonato Inglês]",
+    "11-22 11:00 Sassuolo x Genoa [Campeonato Italiano]",
+    "11-22 11:00 Bologna x Udinese [Campeonato Italiano]",
+    "11-22 11:00 Paris x Angers [Campeonato Francês]",
+    "11-22 11:00 Corinthians x RB Bragantino [Campeonato Paulista Feminino]",
+    "11-22 11:30 Augsburg x Mainz 05 [Campeonato Alemão]",
+    "11-22 12:15 Racing Santander x Real Sociedad [Campeonato Espanhol]"
    ],
    "horario_diferente": [
     "2026-11-19 Seattle Sounders x Real Salt Lake: principal 23:55 x segundo 00:00"
