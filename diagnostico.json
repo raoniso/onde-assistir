@@ -18,7 +18,7 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 19/11 17:50 BRT — janela 2026-11-19 a 2026-11-25",
+   "Coleta 19/11 23:26 BRT — janela 2026-11-19 a 2026-11-25",
    "  ✓ mantosdofutebol: 95 evento(s)",
    "  ✓ goal (2º guia): 88 evento(s)",
    "  ↺ goal (2º guia): a página não listou 2026-11-19 (lido em 19/11 08:54) — vale a última leitura",
@@ -90,7 +90,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 589411,
+   "bytes": 589627,
    "tabelas": 5,
    "dias": [
     {
