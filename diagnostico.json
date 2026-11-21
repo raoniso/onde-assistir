@@ -17,15 +17,22 @@
    "Eliminatórias Sul-Americanas": 0,
    "Eliminatórias da Euro": 0
   },
+  "tenis": {
+   "ATP": 2,
+   "WTA": 0
+  },
   "log": [
-   "Coleta 21/11 14:37 BRT — janela 2026-11-21 a 2026-11-27",
+   "Coleta 21/11 15:55 BRT — janela 2026-11-21 a 2026-11-27",
    "  ✓ mantosdofutebol: 117 evento(s)",
    "  ✓ goal (2º guia): 104 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 85 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30",
    "  ✓ ESPN NBA: 48 evento(s)",
    "  ✓ ESPN NFL: 17 evento(s)",
-   "TOTAL: 236 eventos → eventos.json",
+   "  ✓ ESPN tênis: 2 evento(s)",
+   "  ✓ placar: 215 jogo(s) com endereço na ESPN, 22 sem",
+   "  ! data: 3 jogo(s) com a data divergente — Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN; Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11; San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN",
+   "TOTAL: 237 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -75,7 +82,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 646166,
+   "bytes": 646088,
    "tabelas": 5,
    "dias": [
     {
@@ -135,9 +142,54 @@
    "Milwaukee Bucks x Philadelphia 76ers :: MYMI | BUCKS APP | MYMI | BUCKS APP",
    "Portland Trail Blazers x New York Knicks :: NBA TV | KUNP 16 | BLAZERVISION | NBA TV | KUNP 16 | BLAZERVISION"
   ],
-  "espn_faltas": []
+  "espn_faltas": [],
+  "placar": {
+   "lista_geral": {
+    "2026-11-20": 86,
+    "2026-11-21": 227,
+    "2026-11-22": 156,
+    "2026-11-23": 43,
+    "2026-11-24": 80,
+    "2026-11-25": 62,
+    "2026-11-26": 56,
+    "2026-11-27": 75,
+    "2026-11-28": 1
+   },
+   "data_divergente": [
+    "Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN",
+    "Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11",
+    "San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN"
+   ],
+   "com": 215,
+   "sem": 22,
+   "da_memoria": 0,
+   "sem_placar": [
+    "21/11 08:00 Eintracht Frankfurt x Hamburgo [Bundesliga Feminina]",
+    "21/11 10:00 Estrela Vermelha x Radnik Surdulika [Campeonato Sérvio]",
+    "21/11 11:00 São Paulo x Santos [Paulistão Feminino]",
+    "21/11 11:00 Sigma x Slavia Praga [Campeonato Checo]",
+    "21/11 12:00 Brasil x Irlanda [Copa do Mundo FIFA Sub-17]",
+    "21/11 14:00 Young Boys x Thun [Liga Suíça]",
+    "21/11 15:30 Paraná Clube x Athletico-PR B [Copa Paraná]",
+    "21/11 16:00 Petrolina x América-PE [Campeonato Pernambucano]",
+    "21/11 17:00 Central x Íbis [Campeonato Pernambucano]",
+    "22/11 11:00 Corinthians x Red Bull Bragantino [Paulistão Feminino]",
+    "22/11 12:00 RB Leipzig x Wolfsburg [Bundesliga Feminina]",
+    "22/11 14:00 Sparta Praga x Slovan Liberec [Campeonato Checo]",
+    "22/11 16:00 Corinthians x Palmeiras [Paulistão Sub-20]",
+    "22/11 16:30 Marcílio Dias x Joinville [Copa Santa Catarina]",
+    "22/11 17:00 Atlético Cajazeirense x Campinense [Copa Paraíba]",
+    "22/11 17:00 Treze x Nacional de Patos [Copa Paraíba]",
+    "22/11 17:00 Esporte de Patos x Serra Branca [Copa Paraíba]",
+    "22/11 17:00 Guarani de Juazeiro x Icasa [Taça Fares Lopes]",
+    "22/11 17:00 Vila Real x Atlético-CE [Taça Fares Lopes]",
+    "22/11 17:00 Tirol x Palmácia [Taça Fares Lopes]",
+    "23/11 15:15 Air Force SC x Al Gharafa [Champions League da Ásia]",
+    "23/11 22:00 St. Louis City x Los Angeles FC [MLS]"
+   ]
+  }
  },
- "build": "2026-11-21-a",
+ "build": "2026-11-21-b",
  "saude": {
   "abertos": {}
  }
