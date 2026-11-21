@@ -3,14 +3,14 @@
   "espn_tabelas_por_liga": {
    "Champions League": 18,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 12,
-   "Brasileirão Série B": 2,
+   "Brasileirão Série A": 13,
+   "Brasileirão Série B": 3,
    "Copa Libertadores": 0,
    "Copa Sul-Americana": 1,
-   "Premier League": 10,
+   "Premier League": 11,
    "La Liga": 10,
    "Bundesliga": 9,
-   "Campeonato Italiano": 10,
+   "Campeonato Italiano": 11,
    "Campeonato Francês": 9,
    "Amistoso": 0,
    "UEFA Nations League": 0,
@@ -18,14 +18,13 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 20/11 23:34 BRT — janela 2026-11-20 a 2026-11-26",
-   "  ✓ mantosdofutebol: 120 evento(s)",
+   "Coleta 21/11 08:27 BRT — janela 2026-11-21 a 2026-11-27",
+   "  ✓ mantosdofutebol: 117 evento(s)",
    "  ✓ goal (2º guia): 104 evento(s)",
-   "  ↺ goal (2º guia): a página não listou 2026-11-20 (lido em 20/11 08:56) — vale a última leitura",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 81 evento(s)",
-   "  ✓ ESPN NBA: 44 evento(s)",
-   "  ✓ ESPN NFL: 16 evento(s)",
-   "TOTAL: 231 eventos → eventos.json",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 85 evento(s)",
+   "  ✓ ESPN NBA: 48 evento(s)",
+   "  ✓ ESPN NFL: 17 evento(s)",
+   "TOTAL: 236 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -35,11 +34,6 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Sexta – 20/11",
-      "data": "2026-11-20",
-      "jogos": 3
-     },
-     {
       "cabecalho": "Sábado – 21/11",
       "data": "2026-11-21",
       "jogos": 63
@@ -48,7 +42,7 @@
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 2,
+    "futsal_descartados": 1,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -80,7 +74,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 646098,
+   "bytes": 646157,
    "tabelas": 5,
    "dias": [
     {
@@ -108,16 +102,11 @@
   },
   "memoria": {
    "mantos": [],
-   "goal": [
-    "2026-11-20 (lido em 20/11 08:56)"
-   ]
+   "goal": []
   },
   "guias": {
-   "nos_dois": 70,
+   "nos_dois": 68,
    "so_no_segundo": [
-    "11-20 14:30 Al Ahli x Al Nassr [Campeonato Saudita]",
-    "11-20 16:30 Bayern de Munique x Colônia [Campeonato Alemão]",
-    "11-20 16:45 Troyes x Le Havre [Campeonato Francês]",
     "11-21 12:00 Coventry City x Crystal Palace [Campeonato Inglês]",
     "11-21 22:00 Pumas x Monterrey [Campeonato Mexicano]",
     "11-23 10:45 Neftchi Fargona x Al Hilal [Champions League da Ásia]",
@@ -129,15 +118,18 @@
     "11-23 16:45 Monza x Fiorentina [Campeonato Italiano]",
     "11-23 17:00 Brentford x Everton [Campeonato Inglês]",
     "11-23 17:00 Levante x Elche [Campeonato Espanhol]",
-    "11-23 19:30 Internacional x Vitória [Campeonato Brasileiro]"
+    "11-23 19:30 Internacional x Vitória [Campeonato Brasileiro]",
+    "11-23 20:00 Botafogo x São Paulo [Campeonato Brasileiro]",
+    "11-23 21:00 Santos x Grêmio [Campeonato Brasileiro]",
+    "11-23 22:00 St. Louis City x Los Angeles FC [MLS]"
    ],
    "horario_diferente": []
   },
   "nba_broadcasts": [
-   "Charlotte Hornets x Atlanta Hawks :: (vazio)",
-   "Orlando Magic x Brooklyn Nets :: DAZN (YES) | DAZN (YES)",
-   "Indiana Pacers x Cleveland Cavaliers :: DAZN CLE | DAZN CLE",
-   "Toronto Raptors x Detroit Pistons :: PRIME VIDEO | PRIME VIDEO"
+   "Houston Rockets x Denver Nuggets :: PRIME VIDEO | ERADM | PRIME VIDEO",
+   "Sacramento Kings x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET +",
+   "Milwaukee Bucks x Philadelphia 76ers :: MYMI | BUCKS APP | MYMI | BUCKS APP",
+   "Portland Trail Blazers x New York Knicks :: NBA TV | KUNP 16 | BLAZERVISION | NBA TV | KUNP 16 | BLAZERVISION"
   ],
   "espn_faltas": []
  },
