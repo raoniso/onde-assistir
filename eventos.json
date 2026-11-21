@@ -1088,28 +1088,6 @@
  },
  {
   "date": "2026-11-21",
-  "t": "16:40",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Nitto ATP Finals",
-  "detail": "Semifinal",
-  "match": "Alexander Zverev x Daniil Medvedev",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "tennis/atp|20261121|187527|c"
- },
- {
-  "date": "2026-11-21",
   "t": "16:45",
   "sport": "Futebol",
   "g": "M",
@@ -1233,6 +1211,28 @@
   "v": 1,
   "pl": "soccer/bel.1|20261121|401878935|c",
   "espn": "KV Mechelen x Club Brugge"
+ },
+ {
+  "date": "2026-11-21",
+  "t": "16:45",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Nitto ATP Finals",
+  "detail": "Semifinal",
+  "match": "Alexander Zverev x Daniil Medvedev",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "tennis/atp|20261121|187527|c"
  },
  {
   "date": "2026-11-21",
@@ -2205,6 +2205,28 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-11-22",
+  "t": "14:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Nitto ATP Finals",
+  "detail": "Final",
+  "match": "Alexander Zverev x Carlos Alcaraz",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "tennis/atp|20261121|187529|c"
  },
  {
   "date": "2026-11-22",

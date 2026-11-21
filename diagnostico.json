@@ -18,21 +18,22 @@
    "Eliminatórias da Euro": 0
   },
   "tenis": {
-   "ATP": 2,
+   "ATP": 3,
    "WTA": 0
   },
   "log": [
-   "Coleta 21/11 16:31 BRT — janela 2026-11-21 a 2026-11-27",
-   "  ✓ mantosdofutebol: 117 evento(s)",
+   "Coleta 21/11 20:17 BRT — janela 2026-11-21 a 2026-11-27",
+   "  ✓ mantosdofutebol: 73 evento(s)",
    "  ✓ goal (2º guia): 104 evento(s)",
+   "  ↺ mantos: 40 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 85 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30",
    "  ✓ ESPN NBA: 48 evento(s)",
    "  ✓ ESPN NFL: 17 evento(s)",
-   "  ✓ ESPN tênis: 2 evento(s)",
-   "  ✓ placar: 215 jogo(s) com endereço na ESPN, 22 sem",
+   "  ✓ ESPN tênis: 3 evento(s)",
+   "  ✓ placar: 216 jogo(s) com endereço na ESPN, 22 sem",
    "  ! data: 3 jogo(s) com a data divergente — Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN; Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11; San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN",
-   "TOTAL: 237 eventos → eventos.json",
+   "TOTAL: 238 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -44,7 +45,7 @@
      {
       "cabecalho": "Sábado – 21/11",
       "data": "2026-11-21",
-      "jogos": 51
+      "jogos": 19
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -60,11 +61,6 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Sábado – 21/11",
-      "data": "2026-11-21",
-      "jogos": 63
-     },
-     {
       "cabecalho": "Domingo – 22/11",
       "data": "2026-11-22",
       "jogos": 54
@@ -73,16 +69,60 @@
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 2,
+    "futsal_descartados": 1,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "11:00 Sigma x Slavia Praga",
+    "11:00 Lazio x Lecce",
+    "11:00 Como 1907 x Cagliari",
+    "11:00 São Paulo x Santos",
+    "11:30 Borussia Mönchengladbach x Borussia Dortmund",
+    "11:30 Union Berlin x RB Leipzig",
+    "11:30 Eintracht Frankfurt x Hoffenheim",
+    "11:30 Elversberg x Freiburg",
+    "11:30 Bayer Leverkusen x Paderborn",
+    "11:30 Rubin Kazan x Zenit",
+    "12:00 Brasil x Irlanda",
+    "12:00 Bournemouth x Nottingham Forest",
+    "12:00 Chelsea x Leeds United",
+    "12:00 Aston Villa x Sunderland",
+    "12:00 Tottenham x Ipswich Town",
+    "12:00 Wolverhampton x Charlton",
+    "12:00 Charleroi x Sint-Truiden",
+    "12:15 Rayo Vallecano x Valencia",
+    "12:30 NEC Nijmegen x PSV",
+    "13:00 Kocaelispor x Fenerbahçe",
+    "13:15 Nice x PSG",
+    "13:45 CSKA Moscow x Akhmat Grozny",
+    "14:00 Parma x Roma",
+    "14:00 Young Boys x Thun",
+    "14:30 Newcastle x Arsenal",
+    "14:30 Schalke 04 x Stuttgart",
+    "14:30 Sevilla x Real Bétis",
+    "14:45 Feyenoord x Excelsior",
+    "15:30 Empoli x Pisa",
+    "15:30 Paraná Clube x Athletico-PR B",
+    "16:00 Petrolina x América-PE",
+    "16:00 NE Revolution x Philadelphia Union",
+    "01:00 Auckland FC x Melbourne Victory",
+    "03:00 Central Coast Marine x Perth Glory",
+    "08:00 Eintracht Frankfurt x Hamburgo",
+    "09:00 Hannover 96 x Greuther Fürth",
+    "09:00 Nürnberg x Eintracht Braunschweig",
+    "09:00 Wolfsburg x Holstein Kiel",
+    "09:30 Manchester City x Fulham",
+    "09:30 Millwall x Queens Park Rangers"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 646166,
+   "bytes": 646225,
    "tabelas": 5,
    "dias": [
     {
@@ -160,7 +200,7 @@
     "Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11",
     "San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN"
    ],
-   "com": 215,
+   "com": 216,
    "sem": 22,
    "da_memoria": 0,
    "sem_placar": [

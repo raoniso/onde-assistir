@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-21-a">
+<meta name="versao-da-tela" content="2026-11-21-b">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -1313,28 +1313,6 @@ const DB = [
  },
  {
   "date": "2026-11-21",
-  "t": "16:40",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Nitto ATP Finals",
-  "detail": "Semifinal",
-  "match": "Alexander Zverev x Daniil Medvedev",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "tennis/atp|20261121|187527|c"
- },
- {
-  "date": "2026-11-21",
   "t": "16:45",
   "sport": "Futebol",
   "g": "M",
@@ -1458,6 +1436,28 @@ const DB = [
   "v": 1,
   "pl": "soccer/bel.1|20261121|401878935|c",
   "espn": "KV Mechelen x Club Brugge"
+ },
+ {
+  "date": "2026-11-21",
+  "t": "16:45",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Nitto ATP Finals",
+  "detail": "Semifinal",
+  "match": "Alexander Zverev x Daniil Medvedev",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "tennis/atp|20261121|187527|c"
  },
  {
   "date": "2026-11-21",
@@ -2430,6 +2430,28 @@ const DB = [
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-11-22",
+  "t": "14:00",
+  "sport": "Tênis",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Nitto ATP Finals",
+  "detail": "Final",
+  "match": "Alexander Zverev x Carlos Alcaraz",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "tennis/atp|20261121|187529|c"
  },
  {
   "date": "2026-11-22",
@@ -5108,7 +5130,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '21/11 16:31'; /* preenchido pelo script Python */
+const GENERATED_AT = '21/11 20:17'; /* preenchido pelo script Python */
 
 const el = id => document.getElementById(id);
 /* todo texto que vem dos dados passa por aqui antes de virar HTML */
@@ -5347,6 +5369,8 @@ async function fetchScores(){
   if(!pedidos.size){ redesenharSeMudou(); return; }
   buscandoPlacar = true;
   let novoFinal = false;
+  const meus = new Set();              /* os feeds trazem a rodada inteira; só o final dos jogos do app fica guardado no aparelho */
+  for(const e of LIMPOS){ const end = enderecoDe(e); if(end) meus.add(end.chave); }
   /* se algum feed demorar, a tela não espera por ele: aos 2,5 s mostra o que já chegou */
   const parcial = setTimeout(redesenharSeMudou, 2500);
   try{
@@ -5369,7 +5393,7 @@ async function fetchScores(){
         r.em = em;
         const k = esporte + '|' + id, d = new Date(quando);
         PLACAR.set(k, r);
-        if(r.fim && !r.sem && !FINAIS[k]){ FINAIS[k] = finalLimpo(r, agora.iso); novoFinal = true; }
+        if(r.fim && !r.sem && meus.has(k) && !FINAIS[k]){ FINAIS[k] = finalLimpo(r, agora.iso); novoFinal = true; }
         if(r.hn) nomes.push({ hn: r.hn, an: r.an, dia: isNaN(d) ? '' : isoBRT(d), r });
       }
       POR_NOME.set(p, nomes);
@@ -5550,7 +5574,9 @@ for(const g of FAMILIAS){ const s = new Set(g.map(chaveTime)); for(const k of s)
 const mesmoTime = (a, b) => { const ka = chaveTime(a), kb = chaveTime(b); return !!ka && (ka===kb || !!(FAMILIA_DE[ka] && FAMILIA_DE[ka].has(kb))); };
 
 /* Blocos da lista. Hoje: ao vivo, a seguir (começa em até 3 horas), mais tarde e
-   mais cedo hoje (o que acabou, com o placar final). Outros dias: por turno. */
+   mais cedo hoje (o que acabou, com o placar final). Em todos, o que está mais perto
+   de agora vem em cima: o próximo jogo primeiro e, no "mais cedo hoje", o que acabou
+   por último. Outros dias: por turno, em ordem de horário. */
 const JANELA_SEGUIR = 180;
 const TURNOS = [['madrugada','Madrugada',0,360], ['manha','Manhã',360,720], ['tarde','Tarde',720,1080], ['noite','Noite',1080,1440]];
 const BLOCOS = ['vivo','seguir','depois','cedo'].concat(TURNOS.map(x => x[0]));
@@ -5856,7 +5882,7 @@ function htmlDia(dia, i, agora, dias, varios){
     html += B('seguir', 'A seguir', futuros.filter(e => blocoDe(e, agora, 'depois')==='seguir'));
     html += B('depois', 'Mais tarde', futuros.filter(e => blocoDe(e, agora, 'depois')==='depois'));
     if(!futuros.length) html += `<p class="nada">Nada mais hoje${temFiltro() ? ' com ' + esseFiltro() : ''}.</p>`;
-    html += B('cedo', 'Mais cedo hoje', doDia.filter(e => faseDe(e)==='fim'));
+    html += B('cedo', 'Mais cedo hoje', doDia.filter(e => faseDe(e)==='fim').reverse());      /* o que acabou por último vem primeiro */
   } else {
     for(const [chave, nome, de, ate] of TURNOS) html += B(chave, nome, doDia.filter(e => minutos(e.t)>=de && minutos(e.t)<ate));
   }
