@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-18-a">
+<meta name="versao-da-tela" content="2026-11-21-a">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -17,14 +17,18 @@
   /* Identidade: fundo escuro, hora em âmbar, verde = "dá para assistir".
      Toda família de fonte passa pelas duas variáveis abaixo, que sempre
      terminam numa fonte do sistema (a página não muda de cara se o Google
-     Fonts não carregar). */
+     Fonts não carregar).
+     Medidas: três tamanhos de texto na lista (times 15,5 · campeonato 12,5 ·
+     canal 12,5) e um de número (hora 25, placar 20). Tudo o que se toca tem
+     canto de 10 px; etiqueta de canal, 8; bloco, 14. */
   :root{
-    --fundo:#0A0D13; --faixa:#111826; --linha:#1F2838; --linha2:#2B3549;
+    --fundo:#0A0D13; --faixa:#111826; --faixa2:#1B2538; --linha:#1F2838; --linha2:#2B3549;
     --texto:#EAEFF7; --texto2:#A8B2C4; --texto3:#8791A5;
     --hora:#F7A823; --verde:#2FD380; --verde-fundo:#11301F; --verde-texto:#7CF0B5;
     --vivo:#FF6B79;
     --corpo:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     --placar:'Barlow Condensed','Arial Narrow','Roboto Condensed',system-ui,sans-serif;
+    --topo:150px;                                  /* altura do topo fixo; o app mede e corrige */
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
   html,body{margin:0; padding:0}
@@ -38,98 +42,111 @@
   .miolo{max-width:600px; margin-left:auto; margin-right:auto}
   .so-leitor{position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
 
-  /* ---------- topo fixo: marca, dias, filtros rápidos ---------- */
+  /* ---------- topo fixo: marca, dias, atalhos ---------- */
   .topo{position:sticky; top:0; z-index:20; background:rgba(10,13,19,.94); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
         border-bottom:1px solid var(--linha); padding-top:env(safe-area-inset-top)}
-  .marca{display:flex; align-items:center; justify-content:space-between; gap:6px; padding:6px 4px 0 14px}
+  .marca{display:flex; align-items:center; justify-content:space-between; gap:6px; padding:4px 4px 0 14px}
   .nome{min-width:0}
-  .marca h1{margin:0; font:800 23px/1 var(--placar); letter-spacing:.4px; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .marca h1{margin:0; font:800 22px/1 var(--placar); letter-spacing:.4px; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .marca h1 b{color:var(--verde); font-weight:800}
   .frescor{margin:2px 0 0; min-height:15px; color:var(--texto3); font-size:12px; line-height:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}      /* de quando são os dados */
   .frescor.velho{color:var(--hora)}
   .botoes{display:flex; flex:0 0 auto}
   @media (max-width:359px){ .marca h1{font-size:20px} }
-  .icone{flex:0 0 auto; width:44px; height:44px; display:grid; place-items:center; color:var(--texto2); border-radius:12px}
+  .icone{flex:0 0 auto; width:44px; height:44px; display:grid; place-items:center; color:var(--texto2); border-radius:10px}
   .icone.girando svg{animation:gira .8s linear infinite}
   @keyframes gira{to{transform:rotate(360deg)}}
-  .rolagem{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:4px 14px}
-  .rolagem::-webkit-scrollbar{display:none}
-  .semana{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:5px; padding:4px 14px}      /* os 7 dias sempre à vista */
-  .dia{min-width:0; height:46px; border-radius:12px; border:1px solid var(--linha); color:var(--texto2);
-       display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:600; font-size:13px; line-height:1.15}
-  .dia small{font-weight:500; font-size:12px; color:var(--texto3)}
-  .dia.sel{background:var(--verde); border-color:var(--verde); color:#06140C}
-  .dia.sel small{color:#0B3A22}
-  .dia i{width:7px; height:7px; border-radius:50%; background:var(--hora); position:absolute; top:4px; right:5px}      /* "Meu time" joga neste dia */
-  .dia.sel i{background:#06140C}
   .icone.tem{color:var(--hora)}
   .icone.tem path{fill:currentColor}
-  .barra{display:flex; align-items:center; padding:6px 14px 10px 0}
-  .barra .rolagem{flex:1 1 auto; padding:3px 18px 3px 14px; margin:-3px 0; scroll-padding:0 30px 0 14px; -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent); mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
-  .rapido{flex:0 0 auto; height:38px; padding:0 14px; border-radius:19px; border:1px solid var(--linha); color:var(--texto2); font-weight:500; font-size:14px;
-          display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
-  .rapido::after{content:''; position:absolute; inset:-4px 0}                 /* alvo de toque de 44 px (parte de dentro da borda) */
-  .rapido.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto); font-weight:600}
-  .rapido.filtros{color:var(--texto); border-color:#33405A}
-  .rapido .n{background:var(--verde); color:#06140C; border-radius:9px; min-width:18px; height:18px; font-size:12px; font-weight:700; display:grid; place-items:center; padding:0 5px}
+  /* dias e atalhos são o mesmo tipo de botão: acende, apaga, e os acesos somam */
+  .semana{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:5px; padding:4px 12px}      /* os 7 dias sempre à vista */
+  .dia{min-width:0; height:44px; border-radius:10px; background:var(--faixa); border:1px solid transparent; color:var(--texto2);
+       display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:600; font-size:13px; line-height:1.15}
+  .dia small{font-weight:500; font-size:12px; color:var(--texto3)}
+  .dia.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto)}
+  .dia.sel small{color:var(--verde-texto)}
+  .dia i{width:7px; height:7px; border-radius:50%; background:var(--hora); position:absolute; top:4px; right:5px}      /* "Meu time" joga neste dia */
+  .barra{display:flex; align-items:center; gap:6px; padding:4px 12px 8px}
+  .rolagem{flex:1 1 auto; min-width:0; display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding:4px 0; margin:-4px 0; scroll-padding:0 26px 0 0}
+  .rolagem::-webkit-scrollbar{display:none}
+  .rolagem.rola{padding-right:20px; -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent); mask-image:linear-gradient(90deg,#000 calc(100% - 22px),transparent)}
+  .rapido{flex:1 0 auto; height:36px; padding:0 9px; border-radius:10px; background:var(--faixa); border:1px solid transparent; color:var(--texto2); font-weight:600; font-size:14px;
+          display:inline-flex; align-items:center; justify-content:center; white-space:nowrap}
+  .rapido::after, .filtros::after{content:''; position:absolute; inset:-5px 0}                 /* alvo de toque de 44 px (parte de dentro da borda) */
+  .rapido.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto)}
+  @media (max-width:380px){ .rapido{padding:0 7px} }
+  @media (max-width:364px){ .rapido{padding:0 6px; font-size:13.5px} }
+  .filtros{flex:0 0 auto; height:36px; min-width:44px; padding:0 11px; border-radius:10px; border:1px solid var(--linha2); color:var(--texto); font-weight:600; font-size:14px;
+           display:inline-flex; align-items:center; justify-content:center; gap:6px}
+  .filtros .rot{display:none}
+  @media (min-width:480px){ .filtros .rot{display:inline} }
+  /* quantos filtros estão ligados: fica por cima do canto do botão, para a largura dele (e a fileira de atalhos) não mudar */
+  .filtros .n{position:absolute; top:-6px; right:-6px; background:var(--verde); color:#06140C; border-radius:9px; min-width:18px; height:18px; font-size:12px; font-weight:700; display:grid; place-items:center; padding:0 5px; box-shadow:0 0 0 2px var(--fundo)}
   .busca{display:flex; align-items:center; gap:4px; padding:6px 6px 10px 14px}
-  .busca input{flex:1 1 auto; min-width:0; height:44px; border-radius:12px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px}
+  .busca input{flex:1 1 auto; min-width:0; height:44px; border-radius:10px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px}
   .busca input::placeholder, .campo::placeholder{color:var(--texto3)}
   .texto{min-height:44px; padding:0 10px; color:var(--verde-texto); font-weight:600; font-size:14px}
-  .fuso{margin-top:10px; margin-bottom:-4px; padding:0 14px; color:var(--texto2); font-size:13px}
+  .fuso{margin-top:10px; margin-bottom:-2px; padding:0 14px; color:var(--texto2); font-size:13px}
 
   /* ---------- lista ---------- */
   main{padding:0 10px}
-  .secao{margin:14px 4px 6px; font:600 13.5px/1.4 var(--corpo); color:var(--texto2); display:flex; align-items:center; gap:8px}
-  .secao .pulso{width:8px; height:8px; border-radius:50%; background:var(--vivo)}
-  .grupo{list-style:none; margin:0; padding:0; background:var(--faixa); border:1px solid var(--linha); border-radius:14px; overflow:hidden}
-  .jogo{display:grid; grid-template-columns:62px minmax(0,1fr); column-gap:6px; padding:11px 12px; border-top:1px solid var(--linha)}
+  .diatit{position:sticky; top:var(--topo); z-index:5; margin:14px -10px -2px; padding:8px 14px 6px; background:rgba(10,13,19,.94); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+          font:700 16px/1.25 var(--corpo); display:flex; align-items:baseline; gap:8px}      /* só com mais de um dia aceso */
+  .diatit span{font-weight:400; font-size:13px; color:var(--texto3)}
+  /* bloco: uma faixa de horário. O cabeçalho é um botão que recolhe e abre. */
+  .bloco{margin-top:10px; background:var(--faixa); border:1px solid var(--linha); border-radius:14px; overflow:hidden}
+  .bloco h2, .bloco h3{margin:0; font:inherit}
+  .cab{width:100%; min-height:44px; padding:0 6px 0 12px; display:flex; align-items:center; gap:8px; text-align:left; font:600 14px/1.2 var(--corpo); color:var(--texto)}
+  .cab.fixo{padding-right:12px}
+  .cab .qt{font-weight:500; font-size:13px; color:var(--texto3)}
+  .cab .seta{margin-left:auto; width:32px; height:32px; padding:8px; color:var(--texto3); transition:transform .15s ease}
+  .bloco.fechado .seta{transform:rotate(-90deg)}
+  .cab .pulso{width:8px; height:8px; border-radius:50%; background:var(--vivo)}
+  .grupo{list-style:none; margin:0; padding:0; border-top:1px solid var(--linha)}
+  .jogo{display:grid; grid-template-columns:60px minmax(0,1fr); column-gap:6px; padding:9px 12px; border-top:1px solid var(--linha)}
   .jogo:first-child{border-top:0}
-  .hora{font:700 27px/1 var(--placar); color:var(--hora); letter-spacing:.3px; padding-top:1px; min-width:0}
+  .hora{font:700 25px/1 var(--placar); color:var(--hora); letter-spacing:.2px; min-width:0}
   .hora time{display:block}
-  .hora .st{display:block; margin-top:5px; font:600 12px/1.15 var(--corpo); letter-spacing:0; color:var(--texto3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .hora .st{display:block; margin-top:4px; font:600 12px/1.15 var(--corpo); letter-spacing:0; color:var(--texto3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .hora .st.vivo{color:var(--vivo)}
   .jogo.fim .hora{color:var(--texto3)}
-  .times{font-weight:600; font-size:16px; line-height:1.25; overflow-wrap:anywhere}
+  .times{margin:0; font-weight:600; font-size:15.5px; line-height:1.3; overflow-wrap:anywhere}
   .times .x{color:var(--texto3); font-weight:400; padding:0 1px}
-  .times .pl{font:700 21px/1 var(--placar); letter-spacing:.3px; font-variant-numeric:tabular-nums}
-  .jogo.fim .pl{color:var(--texto2)}
+  .times .pl{font:700 20px/1 var(--placar); letter-spacing:.3px; font-variant-numeric:tabular-nums}
   .times .fav{color:var(--hora); margin-right:4px}
-  .linha2{display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; margin-top:5px}
-  .liga{color:var(--texto2); font-size:13px; flex:1 1 0; min-width:42%}        /* a liga cede espaço (quebrando em 2 linhas) antes de empurrar os canais para baixo */
+  .liga{margin:2px 0 0; color:var(--texto2); font-size:12.5px; line-height:1.35}
   .liga span{color:var(--texto3)}
-  .canais{display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; margin-left:auto}
-  .canal{position:relative; min-height:36px; padding:0 12px; border-radius:18px; border:1px solid var(--linha2); color:var(--texto2); font-weight:600; font-size:13px;
-         display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
-  a.canal::after{content:''; position:absolute; inset:-5px 0}                  /* alvo de toque de 44 px */
-  .canal.gratis{background:var(--verde-fundo); border-color:transparent; color:var(--verde-texto)}      /* verde = passa de graça */
+  .liga .obs{color:var(--texto); font-weight:600}                              /* parciais do tênis, pênaltis, prorrogação */
+  .canais{display:flex; flex-wrap:wrap; align-items:center; gap:8px 6px; margin-top:6px}
+  .canal{position:relative; height:28px; padding:0 9px; border-radius:8px; background:var(--faixa2); color:var(--texto); font-weight:600; font-size:12.5px;
+         display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
+  a.canal::after{content:''; position:absolute; inset:-8px 0}                  /* alvo de toque de 44 px */
+  .canal.gratis{background:var(--verde-fundo); color:var(--verde-texto)}       /* verde = passa de graça */
   .canal small{font-weight:500; font-size:12px; opacity:.85}
-  .aconfirmar{color:var(--texto3); font-size:13px; white-space:nowrap; align-self:center}
-  .agora{display:flex; align-items:center; gap:10px; margin:12px 4px 2px; color:var(--vivo); font:600 12.5px/1 var(--corpo)}
-  .agora::before,.agora::after{content:''; height:1px; background:var(--vivo); opacity:.55}
-  .agora::before{width:14px} .agora::after{flex:1}
-  .nada{margin:14px 4px 6px; color:var(--texto2); font-size:13.5px}
-  .ligados{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 4px 0; font-size:13px; color:var(--texto2)}
-  .etq{min-height:36px; padding:0 10px 0 12px; border-radius:18px; background:var(--verde-fundo); color:var(--verde-texto); font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:8px}
-  .etq::after{content:''; position:absolute; inset:-4px 0}                     /* alvo de toque de 44 px */
+  .aconfirmar{color:var(--texto3); font-size:12.5px; white-space:nowrap}
+  .nada{margin:12px 4px 0; color:var(--texto2); font-size:13.5px}
+  .ligados{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:10px 2px 0; font-size:13px; color:var(--texto2)}
+  .etq{height:30px; padding:0 8px 0 10px; border-radius:8px; background:var(--verde-fundo); color:var(--verde-texto); font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:7px}
+  .etq::after{content:''; position:absolute; inset:-7px 0}                     /* alvo de toque de 44 px */
   .etq b{font-weight:400; font-size:17px; line-height:1; opacity:.85}
-  .ligados .texto, .nada .texto{min-height:36px; padding:0 6px}
-  .incluir{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 4px 0}      /* feminino, base e divisões inferiores: fora da lista até ligar */
-  .inc{min-height:32px; padding:0 11px; border-radius:16px; border:1px dashed #3A465E; color:var(--texto2); font-weight:500; font-size:13px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
-  .inc::after{content:''; position:absolute; inset:-7px 0}                     /* alvo de toque de 44 px (parte de dentro da borda) */
-  .inc b{font-weight:700; color:var(--texto)}                                  /* "+4": quantos jogos do dia o botão traz */
+  .ligados .texto, .nada .texto{min-height:30px; padding:0 6px}
+  .ligados .texto::after, .nada .texto::after{content:''; position:absolute; inset:-7px 0}
+  .incluir{display:flex; flex-wrap:wrap; align-items:center; gap:8px 6px; margin:10px 2px 0}      /* feminino, base e divisões inferiores: fora da lista até ligar */
+  .inc{height:30px; padding:0 10px; border-radius:8px; border:1px dashed #3A465E; color:var(--texto2); font-weight:500; font-size:13px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
+  .inc::after{content:''; position:absolute; inset:-8px 0}                     /* alvo de toque de 44 px (parte de dentro da borda) */
+  .inc b{font-weight:700; color:var(--texto)}                                  /* "+4": quantos jogos o botão traz */
   .inc.sel{border-style:solid; border-color:var(--verde); background:var(--verde-fundo); color:var(--verde-texto); font-weight:600}
   .inc.sel b{color:inherit}
   .legenda{display:flex; align-items:center; gap:8px; margin:14px 4px 0; color:var(--texto3); font-size:12.5px}
-  .legenda .canal{min-height:24px; padding:0 9px; font-size:12px}
-  .dica, .vazio{margin-top:14px; padding:14px; border:1px solid var(--linha); border-radius:14px; background:var(--faixa); font-size:14px; color:var(--texto2)}
+  .legenda .canal{height:22px; padding:0 8px; font-size:12px}
+  .dica, .vazio{margin-top:12px; padding:14px; border:1px solid var(--linha); border-radius:14px; background:var(--faixa); font-size:14px; color:var(--texto2)}
   .vazio{border-style:dashed; background:none; text-align:center; padding:28px 18px}
   .dica b, .vazio b{color:var(--texto); font-weight:600}
   .vazio b{display:block; margin-bottom:4px; font-size:15px}
   .dica p, .vazio p{margin:0}
   .acoes{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
   .vazio .acoes{justify-content:center}
-  .botao{min-height:44px; padding:0 18px; border-radius:22px; background:var(--verde); color:#06140C; font-weight:600; font-size:14px}
+  .botao{min-height:44px; padding:0 18px; border-radius:10px; background:var(--verde); color:#06140C; font-weight:600; font-size:14px}
   .botao.fantasma{background:none; border:1px solid var(--linha2); color:var(--texto2)}
 
   /* ---------- folha de filtros ---------- */
@@ -147,16 +164,16 @@
   .folha h3{margin:18px 0 4px; font:600 14px/1.3 var(--corpo); color:var(--texto)}
   .folha p{margin:0 0 10px; color:var(--texto2); font-size:13px}
   .opcoes{display:flex; flex-wrap:wrap; gap:8px}
-  .op{min-height:40px; padding:0 14px; border-radius:20px; border:1px solid var(--linha2); color:var(--texto2); font-weight:500; font-size:14px; display:inline-flex; align-items:center; gap:7px; text-align:left}
+  .op{min-height:40px; padding:0 13px; border-radius:10px; border:1px solid var(--linha2); color:var(--texto2); font-weight:500; font-size:14px; display:inline-flex; align-items:center; gap:7px; text-align:left}
   .op::after{content:''; position:absolute; inset:-3px 0}                      /* alvo de toque de 44 px */
   .op.sel{background:var(--verde-fundo); border-color:var(--verde); color:var(--verde-texto); font-weight:600}
   .op.sel::before{content:'✓'; font-weight:700}
   .op.mais::before{content:'+'; font-weight:600; color:var(--texto3)}
-  .campo{width:100%; height:44px; border-radius:12px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px; margin-bottom:10px}
+  .campo{width:100%; height:44px; border-radius:10px; border:1px solid var(--linha2); background:var(--fundo); color:var(--texto); padding:0 14px; font-size:16px; margin-bottom:10px}
   .pe-folha{margin:18px -10px 0; border-top:1px solid var(--linha); padding-top:4px}
-  @media (prefers-reduced-motion:no-preference){ .secao .pulso{animation:pulso 1.4s ease-in-out infinite} }
+  @media (prefers-reduced-motion:no-preference){ .cab .pulso{animation:pulso 1.4s ease-in-out infinite} }
   @keyframes pulso{50%{opacity:.3}}
-  @media (prefers-reduced-motion:reduce){ .veu,.folha{transition:none !important} .icone.girando svg{animation:none} }
+  @media (prefers-reduced-motion:reduce){ .veu,.folha,.cab .seta{transition:none !important} .icone.girando svg{animation:none} }
 </style>
 </head>
 <body>
@@ -175,10 +192,10 @@
       </div>
     </div>
     <div id="navegacao">
-      <nav class="semana" id="dias" aria-label="Dia"></nav>
+      <nav class="semana" id="dias" aria-label="Dias na lista"></nav>
       <div class="barra">
         <div class="rolagem" id="rapidos" role="group" aria-label="O que mostrar"></div>
-        <button type="button" class="rapido filtros" id="abre-filtros" data-acao="abrir-filtros" aria-haspopup="dialog">Filtros</button>
+        <button type="button" class="filtros" id="abre-filtros" data-acao="abrir-filtros" aria-haspopup="dialog" aria-label="Filtros"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 5.5h7M14.5 5.5h1M2.5 12.5h1M8.5 12.5h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="5.5" r="2.2" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="12.5" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg><span class="rot" aria-hidden="true">Filtros</span><span class="n" id="n-filtros" aria-hidden="true" hidden></span></button>
       </div>
     </div>
     <form class="busca" id="busca" role="search" hidden>
@@ -188,7 +205,7 @@
   </div>
 </header>
 
-<p class="fuso miolo" id="fuso" hidden>Os horários são de Brasília.</p>
+<p class="fuso miolo" id="fuso" hidden>Os horários são de Brasília, onde agora são <span id="relogio"></span>.</p>
 <main class="miolo" id="lista"></main>
 
 <div class="veu" id="veu" data-acao="fechar-folha"></div>
@@ -200,8 +217,9 @@
    index.html a partir dele, trocando o que está entre DB-START e DB-END
    e preenchendo o carimbo logo abaixo. Com o app aberto, o eventos.json
    hospedado ao lado é recarregado e tem prioridade sobre os dados embutidos.
-   Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?, sel?}
-           (date e t em horário de Brasília; sel=1: jogo de seleções)
+   Evento: {date, t, sport, g, country, league, detail, match, ch, v, espn?, sel?, pl?}
+           (date e t em horário de Brasília; sel=1: jogo de seleções;
+            pl: endereço do placar na ESPN, "feed|AAAAMMDD|id|lado")
    Canal:  {n: nome, y: 'tv'|'stream'|'free', u?: link exato}
    ========================================================= */
 /*DB-START*/
@@ -218,7 +236,7 @@ const nrmBusca = s => semAcento(s).replace(/[^a-z0-9]+/g,' ').trim();           
 const chaveTime = s => semAcento(s).replace(/[^a-z0-9]/g,'');                                  /* "Atlético-MG" = "Atletico MG" */
 
 /* ---------- relógio: o app inteiro anda em horário de Brasília ----------
-   As datas e horas dos dados são de Brasília; "hoje", "ao vivo" e "agora"
+   As datas e horas dos dados são de Brasília; "hoje", "ao vivo" e "a seguir"
    são calculados nesse fuso mesmo que o aparelho esteja em outro. */
 const FMT_BRT = new Intl.DateTimeFormat('en-CA', {timeZone:'America/Sao_Paulo', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'});
 function relogio(d){
@@ -257,11 +275,13 @@ async function tryLoadJson(){
     if(r.ok){
       const data = await r.json();
       if(Array.isArray(data) && data.length){
+        const antes = retratoDosDados();
         DB.length = 0; DB.push(...data);
         /* o carimbo acompanha o arquivo realmente carregado */
         const lm = new Date(r.headers.get('last-modified') || '');
         if(!isNaN(lm)) DADOS_EM = lm;
         prepararDB(); desenhar();
+        if(retratoDosDados() !== antes) fetchScores();      /* chegou jogo novo ou mudou algum: confere os placares já, sem esperar o próximo minuto */
         return true;
       }
     }
@@ -269,10 +289,26 @@ async function tryLoadJson(){
   return false;
 }
 
-/* ---------- placares ao vivo ----------
-   Buscados pelo PRÓPRIO navegador na API pública da ESPN, a cada minuto, só
-   para o que já começou. Se a API falhar, o app segue sem placar. */
-const FEEDS = {   /* liga (nome oficial que o robô grava) -> feed da ESPN */
+/* ---------- placares: ao vivo e final ----------
+   Buscados pelo PRÓPRIO navegador na API pública da ESPN, a cada minuto, para
+   os jogos de hoje que já começaram e ainda não têm resultado final.
+   O robô grava em cada jogo o endereço do placar:
+       pl = "feed|AAAAMMDD|id do evento|lado"
+   (lado c: o 1º nome do card é o mandante da ESPN; v: é o visitante). O app
+   pede o feed daquele dia e acha o jogo pelo id, sem adivinhar pelo nome.
+   Jogo sem endereço cai na regra antiga (nome dos times, nas ligas do FEEDS).
+   Resultado final fica guardado no aparelho e o jogo não é consultado de novo.
+   Se a API falhar, o app segue sem placar. */
+const RX_PL = /^([a-z]+)\/([a-z0-9._-]+)\|(\d{8})\|([\w-]{1,24})\|([cv])$/;
+const ENDERECOS = new WeakMap();
+function enderecoDe(e){
+  if(ENDERECOS.has(e)) return ENDERECOS.get(e);
+  const m = typeof e.pl === 'string' ? RX_PL.exec(e.pl) : null;
+  const end = m ? { esporte: m[1], pedido: m[1]+'/'+m[2]+'|'+m[3], chave: m[1]+'|'+m[4], vira: m[5]==='v' } : null;
+  ENDERECOS.set(e, end);
+  return end;
+}
+const FEEDS = {   /* liga (nome oficial que o robô grava) -> feed da ESPN; só para jogo sem endereço */
   'Champions League':'soccer/uefa.champions', 'Copa do Brasil':'soccer/bra.copa_do_brazil',
   'Brasileirão Série A':'soccer/bra.1', 'Brasileirão Série B':'soccer/bra.2',
   'Copa Libertadores':'soccer/conmebol.libertadores', 'Copa Sul-Americana':'soccer/conmebol.sudamericana',
@@ -291,7 +327,36 @@ function feedDe(e){
   for(const [re,f] of FEEDS_RX) if(re.test(e.league)) return f;
   return null;
 }
-let SCORES = [], assinatura = '';
+/* Resultado de um jogo, sempre na ordem da ESPN (a = mandante, b = visitante):
+   {st: 'pre'|'in'|'post', label, a, b, fim?, sem?, pen?, sets?, nota?, em}
+   fim: não muda mais · sem: não há placar a mostrar (adiado, cancelado) */
+const PLACAR = new Map();            /* "esporte|id" -> resultado lido nesta visita */
+const POR_NOME = new Map();          /* "feed|dia" -> [{hn, an, dia, r}], para jogo sem endereço */
+const LIDO = new Map();              /* "feed|dia" -> {em, pesado} */
+const CHAVE_FINAIS = 'oa.finais.v1';
+let FINAIS = {};                     /* "esporte|id" -> resultado final (hoje e ontem), guardado no aparelho */
+let assinatura = '', buscandoPlacar = false, placarDeNovo = false;
+const retratoDosDados = () => LIMPOS.map(e => e.date + e.t + e.match + (e.pl || '')).join('|');
+function finalLimpo(r, d){            /* só o que a tela usa, com cada campo conferido */
+  const f = { st:'post', fim:true, d, label:String(r.label).slice(0,20), a:String(r.a ?? '').slice(0,4), b:String(r.b ?? '').slice(0,4), nota: typeof r.nota==='string' ? r.nota.slice(0,30) : '' };
+  if(Array.isArray(r.pen) && r.pen.length===2) f.pen = r.pen.map(inteiro);
+  if(Array.isArray(r.sets)) f.sets = r.sets.filter(Array.isArray).slice(0,5).map(s => [inteiro(s[0]), inteiro(s[1]), s[2]==null ? null : inteiro(s[2]), s[3]==null ? null : inteiro(s[3])]);
+  return f;
+}
+function lerFinais(){
+  const ok = {};
+  try{
+    const v = JSON.parse(localStorage.getItem(CHAVE_FINAIS) || 'null'), limite = somaDias(relogio().iso, -1);
+    if(v && typeof v==='object' && !Array.isArray(v)) for(const [k, r] of Object.entries(v).slice(0,600))
+      if(r && typeof r==='object' && r.st==='post' && r.fim===true && /^\d{4}-\d\d-\d\d$/.test(r.d) && r.d >= limite && typeof r.label==='string') ok[k] = finalLimpo(r, r.d);
+  }catch(e){ /* sem armazenamento: os finais valem só nesta visita */ }
+  return ok;
+}
+function guardarFinais(){
+  const limite = somaDias(relogio().iso, -1);
+  for(const k of Object.keys(FINAIS)) if(!(FINAIS[k].d >= limite)) delete FINAIS[k];
+  try{ localStorage.setItem(CHAVE_FINAIS, JSON.stringify(FINAIS)); }catch(e){ /* navegação privada */ }
+}
 function simil(a,b){
   a = nrm(a); b = nrm(b);
   if(!a||!b) return 0;
@@ -304,93 +369,188 @@ function simil(a,b){
   return 0;
 }
 const isoBRT = d => relogio(d).iso;
-async function fetchScores(){
-  if(document.visibilityState!=='visible') return;
-  const agora = relogio(), ontem = somaDias(agora.iso, -1);
-  const pedidos = new Set();                                         /* "feed|YYYYMMDD" */
-  if(diaSel===0 || buscando){                                        /* outros dias não têm nada em campo */
-    for(const e of LIMPOS){
-      if(e.date!==agora.iso && e.date!==ontem) continue;
-      const desde = desdeInicio(e, agora);
-      if(desde < -5) continue;                                       /* ainda não começou */
-      if(e.date===ontem && desde > duracao(e)+30) continue;          /* de ontem, só o que ainda pode estar em campo */
-      const f = feedDe(e); if(!f) continue;
-      pedidos.add(f+'|'+e.date.replace(/-/g,''));
-      /* NBA/NFL: a ESPN agrupa pelo dia dos EUA; jogo da madrugada de
-         Brasília pertence à rodada americana da véspera */
-      if(!f.startsWith('soccer') && e.t<'06:00') pedidos.add(f+'|'+somaDias(e.date,-1).replace(/-/g,''));
-    }
-  }
-  const novo = [];
-  await Promise.allSettled([...pedidos].map(async p=>{
-    const [f,d] = p.split('|');
-    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${f}/scoreboard?dates=${d}`);
-    if(!r.ok) return;
-    const j = await r.json();
-    for(const ev of (j.events||[])){
-      const st = ev.status?.type?.state;
-      if(st!=='in' && st!=='post') continue;
-      const c = ev.competitions?.[0]; if(!c) continue;
-      const home = (c.competitors||[]).find(x=>x.homeAway==='home') || c.competitors?.[0];
-      const away = (c.competitors||[]).find(x=>x.homeAway==='away') || c.competitors?.[1];
-      if(!home||!away) continue;
-      const quando = new Date(ev.date);
-      novo.push({ feed: f,
-                  hn: home.team?.displayName||home.team?.name||'',
-                  an: away.team?.displayName||away.team?.name||'',
-                  hs: readScore(home.score), as: readScore(away.score), state: st,
-                  clock: ev.status?.displayClock||'',
-                  det: ev.status?.type?.shortDetail || ev.status?.type?.detail || '',
-                  dia: isNaN(quando) ? '' : isoBRT(quando) });
-    }
-  }));
-  novo.sort((a,b)=>(a.feed+a.dia+a.hn).localeCompare(b.feed+b.dia+b.hn));
-  SCORES = novo;
-  redesenharSeMudou();
-}
-/* só redesenha a lista se algo mudou: placar, status, ou um jogo entrou/saiu do "ao vivo" */
-function redesenharSeMudou(){
-  const agora = relogio(), ontem = somaDias(agora.iso, -1);
-  const sig = JSON.stringify(SCORES) + '|' + LIMPOS.filter(e => e.date===agora.iso || e.date===ontem).map(e => fase(e, agora)[0]).join('');
-  if(sig !== assinatura) desenhar();
-  else { const r = el('relogio'); if(r) r.textContent = agora.hhmm; desenharFrescor(agora); }
-}
 function readScore(s){
   if(s==null) return '';
-  if(typeof s==='object') return s.displayValue ?? s.value ?? '';
+  if(typeof s==='object') return String(s.displayValue ?? s.value ?? '');
   return String(s);
 }
-/* período do jogo em português curto, para caber embaixo da hora */
-function rotuloAoVivo(s){
-  if(s.feed.startsWith('soccer')){
-    const t = (s.clock && s.clock!=="0'") ? s.clock : s.det;
-    return /^(ht|half)/i.test(t||'') ? 'intervalo' : (t || 'ao vivo');
-  }
-  const d = s.det || s.clock || '';
+/* período do jogo em português curto, para caber embaixo da hora (NBA e NFL) */
+function rotuloQuarto(d){
   let m;
   if(/half/i.test(d)) return 'intervalo';
   if((m = /^(\d+:\d+(?:\.\d)?)\s*-\s*(\d)(?:st|nd|rd|th)/i.exec(d))) return m[2] + 'º ' + m[1];
   if((m = /^end of (\d)(?:st|nd|rd|th)/i.exec(d))) return 'fim do ' + m[1] + 'º';
-  if((m = /^(\d+:\d+(?:\.\d)?)\s*-\s*(\d?)\s*ot/i.exec(d))) return 'prorr. ' + m[1];
+  if((m = /^(\d+:\d+(?:\.\d)?)\s*-\s*(\d?)\s*ot/i.exec(d))) return 'pr. ' + m[1];
   return d || 'ao vivo';
 }
-function scoreFor(e){
+/* O andamento, pelo que a ESPN diz (nomes conferidos na API em 21/11/2026:
+   STATUS_SCHEDULED, FIRST_HALF, HALFTIME, SECOND_HALF, IN_PROGRESS, FULL_TIME,
+   FINAL, FINAL_AET, FINAL_PEN, FINAL_OT, POSTPONED, CANCELED, SUSPENDED).
+   Jogo adiado ou cancelado vem como "post" com 0 a 0: não é resultado.
+   Os rótulos são curtos porque ficam embaixo da hora, numa coluna de 60 px. */
+function leStatus(s, esporte){
+  const t = (s && s.type) || {}, nome = String(t.name || ''), estado = (t.state==='in' || t.state==='post') ? t.state : 'pre';
+  const det = String(t.shortDetail || t.detail || ''), clock = String((s && s.displayClock) || '');
+  if(/POSTPONED/.test(nome)) return { st:'post', label:'adiado', sem:true, fim:true };
+  if(/CANCEL/.test(nome)) return { st:'post', label:'cancelado', sem:true, fim:true };
+  if(/SUSPEND|ABANDON/.test(nome)) return { st:'post', label:'suspenso' };
+  if(/DELAY/.test(nome)) return estado==='in' ? { st:'in', label:'parado' } : estado==='post' ? { st:'post', label:'suspenso' } : { st:'pre', label:'atrasado', sem:true };
+  if(/WALKOVER/.test(nome)) return { st:'post', label:'W.O.', sem:true, fim:true };
+  if(estado==='post') return { st:'post', label:'fim', fim: t.completed !== false, nota: /AET|OT\b|EXTRA/.test(nome + ' ' + det) ? 'na prorrogação' : '' };
+  if(estado==='pre') return { st:'pre', label:'' };
+  if(esporte==='tennis'){ const n = +(s && s.period) || 0; return { st:'in', label: n ? n + 'º set' : 'ao vivo' }; }
+  if(esporte==='soccer'){
+    if(/HALFTIME/.test(nome) || /^(ht|half)/i.test(det)) return { st:'in', label:'intervalo' };
+    if(/SHOOTOUT|PENALT/.test(nome)) return { st:'in', label:'pênaltis' };
+    return { st:'in', label: (clock && clock!=="0'") ? clock : (det || 'ao vivo') };
+  }
+  return { st:'in', label: rotuloQuarto(det || clock) };
+}
+const inteiro = v => { const n = Math.round(+v); return n >= 0 && n < 1000 ? n : 0; };
+function leJogo(ev, esporte){                        /* futebol, NBA, NFL: um evento = um jogo */
+  const cs = (ev && ev.competitions && ev.competitions[0] && ev.competitions[0].competitors) || [];
+  const home = cs.find(x => x && x.homeAway==='home') || cs[0], away = cs.find(x => x && x.homeAway==='away') || cs[1];
+  if(!home || !away || home===away) return null;
+  const r = leStatus(ev.status, esporte);
+  r.a = readScore(home.score); r.b = readScore(away.score);
+  if(r.st==='post' && !r.sem && home.shootoutScore != null && away.shootoutScore != null) r.pen = [inteiro(home.shootoutScore), inteiro(away.shootoutScore)];
+  r.hn = (home.team && (home.team.displayName || home.team.name)) || ''; r.an = (away.team && (away.team.displayName || away.team.name)) || '';
+  return r;
+}
+function leTenis(c){                                 /* tênis: o jogo é uma "competition" dentro do torneio */
+  const cs = [...((c && c.competitors) || [])].sort((x, y) => (x.order || 9) - (y.order || 9));      /* mesma ordem do card */
+  if(cs.length !== 2) return null;
+  const r = leStatus(c.status, 'tennis'), la = cs[0].linescores || [], lb = cs[1].linescores || [];
+  r.a = String(la.filter(s => s && s.winner===true).length); r.b = String(lb.filter(s => s && s.winner===true).length);      /* sets vencidos */
+  r.sets = [];
+  for(let i = 0; i < Math.max(la.length, lb.length) && i < 5; i++){
+    const x = la[i] || {}, y = lb[i] || {};
+    r.sets.push([inteiro(x.value), inteiro(y.value), x.tiebreak == null ? null : inteiro(x.tiebreak), y.tiebreak == null ? null : inteiro(y.tiebreak)]);
+  }
+  return r;
+}
+/* O que pedir agora: "feed|dia" dos jogos de hoje que estão na lista, já começaram e
+   ainda não têm resultado final (aberto o app à noite, os jogos da manhã são consultados
+   uma vez e o final fica guardado). Jogo que já devia ter acabado há mais de 5 horas e
+   segue sem final na ESPN é conferido só de 15 em 15 minutos. */
+function pedidosDePlacar(agora){
+  const pedidos = new Set();
+  if(!diasSel.includes(0) && !buscando) return pedidos;              /* outros dias não têm nada em campo */
+  const ontem = somaDias(agora.iso, -1), t = Date.now();
+  const quer = (p, raro) => { const l = LIDO.get(p); if(!l || t - l.em >= (raro ? 900000 : l.pesado ? 170000 : 0)) pedidos.add(p); };      /* resposta muito grande: de 3 em 3 minutos */
+  for(const e of LIMPOS){
+    if(e.date!==agora.iso && e.date!==ontem) continue;
+    const desde = desdeInicio(e, agora);
+    if(desde < -5) continue;                                         /* ainda não começou */
+    if(!buscando && !passa(e)) continue;                             /* fora da lista (filtros, "Incluir"): não gasta consulta */
+    const end = enderecoDe(e), r = end ? (PLACAR.get(end.chave) || FINAIS[end.chave]) : porNome(e);
+    if(r && r.fim) continue;                                         /* já tem o resultado final */
+    const passou = desde > duracao(e) + 300;
+    /* de ontem, só o que ainda pode estar em campo (a lista não mostra o resto) */
+    if(e.date===ontem && (passou || (desde > duracao(e) + 30 && !(r && r.st==='in')))) continue;
+    if(end){ quer(end.pedido, passou); continue; }
+    const f = feedDe(e); if(!f) continue;
+    quer(f+'|'+e.date.replace(/-/g,''), passou);
+    /* NBA/NFL: a ESPN agrupa pelo dia dos EUA; jogo da madrugada de
+       Brasília pertence à rodada americana da véspera */
+    if(!f.startsWith('soccer') && e.t<'06:00') quer(f+'|'+somaDias(e.date,-1).replace(/-/g,''), passou);
+  }
+  return pedidos;
+}
+async function fetchScores(){
+  if(document.visibilityState!=='visible') return;
+  if(buscandoPlacar){ placarDeNovo = true; return; }                 /* pedido no meio de uma rodada: roda outra quando esta acabar */
+  const agora = relogio(), pedidos = pedidosDePlacar(agora);
+  if(!pedidos.size){ redesenharSeMudou(); return; }
+  buscandoPlacar = true;
+  let novoFinal = false;
+  /* se algum feed demorar, a tela não espera por ele: aos 2,5 s mostra o que já chegou */
+  const parcial = setTimeout(redesenharSeMudou, 2500);
+  try{
+    await Promise.allSettled([...pedidos].map(async p => {
+      const [feed, dia] = p.split('|'), esporte = feed.split('/')[0];
+      /* prazo de 20 s: um pedido pendurado (rede ruim) não pode travar as consultas dos minutos seguintes */
+      const corte = new AbortController(), prazo = setTimeout(() => corte.abort(), 20000);
+      let txt;
+      try{
+        const resp = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${feed}/scoreboard?dates=${dia}` + (feed.endsWith('/all') ? '&limit=500' : ''), { signal: corte.signal });
+        if(!resp.ok) return;
+        txt = await resp.text();
+      } finally { clearTimeout(prazo); }
+      const j = JSON.parse(txt), em = Date.now(), jogos = [];
+      if(esporte==='tennis'){
+        for(const tor of (j.events || [])) for(const g of (tor.groupings || [])) for(const c of (g.competitions || [])){ const r = leTenis(c); if(r && c.id != null) jogos.push([String(c.id), r, c.date]); }
+      } else for(const ev of (j.events || [])){ const r = leJogo(ev, esporte); if(r && ev.id != null) jogos.push([String(ev.id), r, ev.date]); }
+      const nomes = [];
+      for(const [id, r, quando] of jogos){
+        r.em = em;
+        const k = esporte + '|' + id, d = new Date(quando);
+        PLACAR.set(k, r);
+        if(r.fim && !r.sem && !FINAIS[k]){ FINAIS[k] = finalLimpo(r, agora.iso); novoFinal = true; }
+        if(r.hn) nomes.push({ hn: r.hn, an: r.an, dia: isNaN(d) ? '' : isoBRT(d), r });
+      }
+      POR_NOME.set(p, nomes);
+      LIDO.set(p, { em, pesado: txt.length > 400000 });
+    }));
+  } finally { clearTimeout(parcial); buscandoPlacar = false; }
+  if(novoFinal) guardarFinais();
+  redesenharSeMudou();
+  if(placarDeNovo){ placarDeNovo = false; fetchScores(); }
+}
+const VIRADOS = new WeakMap();
+function virado(r){                  /* o mesmo resultado, com os lados trocados */
+  if(!VIRADOS.has(r)) VIRADOS.set(r, Object.assign({}, r, { a: r.b, b: r.a, pen: r.pen && [r.pen[1], r.pen[0]], sets: r.sets && r.sets.map(s => [s[1], s[0], s[3], s[2]]) }));
+  return VIRADOS.get(r);
+}
+function porNome(e){
   /* "espn" = nomes dos times como a ESPN escreve (gravado pelo robô quando o
      jogo do guia casa com a tabela oficial); sem ele, tenta pelo nome do card */
-  if(!SCORES.length) return null;
-  const feed = feedDe(e);
-  const partes = (e.espn||e.match||'').split(/\s+x\s+/i);
+  if(!POR_NOME.size) return null;
+  const feed = feedDe(e), partes = (e.espn||e.match||'').split(/\s+x\s+/i);
   if(!feed || partes.length!==2) return null;
-  for(const s of SCORES){
-    if(s.feed!==feed || (s.dia && s.dia!==e.date)) continue;   /* mesmo campeonato, mesmo dia */
-    const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
-    const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
-    if(!direto && !inverso) continue;
-    return { a: direto ? s.hs : s.as, b: direto ? s.as : s.hs,
-             label: s.state==='post' ? 'encerrado' : rotuloAoVivo(s),
-             fim: s.state==='post' };
+  for(const [p, lista] of POR_NOME){
+    if(!p.startsWith(feed + '|')) continue;
+    for(const s of lista){
+      if(s.dia && s.dia!==e.date) continue;                          /* mesmo campeonato, mesmo dia */
+      const direto  = simil(partes[0],s.hn)>=.8 && simil(partes[1],s.an)>=.8;
+      const inverso = simil(partes[0],s.an)>=.8 && simil(partes[1],s.hn)>=.8;
+      if(direto || inverso) return direto ? s.r : virado(s.r);
+    }
   }
   return null;
+}
+/* o resultado do jogo, já na ordem do card; null = sem informação da ESPN */
+function resultadoDe(e){
+  const end = enderecoDe(e);
+  const r = end ? (PLACAR.get(end.chave) || FINAIS[end.chave]) : porNome(e);
+  if(!r) return null;
+  if(!r.fim && !(Date.now() - r.em < 600000)) return null;           /* leitura de mais de 10 minutos de um jogo em aberto: não vale mais */
+  return (end && end.vira) ? virado(r) : r;
+}
+/* parciais do tênis: games de cada set; o tie-break de 10 pontos que vale como set (a ESPN manda
+   1-0 com os pontos do tie-break ao lado) aparece pelos pontos, entre colchetes: "6-7 7-6 [10-8]" */
+const textoSets = r => r.sets.map(s => (s[0] <= 1 && s[1] <= 1 && s[2] != null && s[3] != null) ? `[${s[2]}-${s[3]}]` : `${s[0]}-${s[1]}`).join(' ');
+function obsDoPlacar(r){             /* o que vai escrito depois do campeonato: parciais, pênaltis, prorrogação */
+  if(!r || r.sem || r.st==='pre') return '';
+  if(r.sets && r.sets.length) return textoSets(r);
+  if(r.pen) return `${r.pen[0]}-${r.pen[1]} nos pênaltis`;
+  return r.nota || '';
+}
+/* só redesenha a lista se algo mudou: placar, andamento, ou um jogo mudou de bloco */
+function assinar(agora){
+  const ontem = somaDias(agora.iso, -1);
+  let s = agora.iso;
+  for(const e of LIMPOS){
+    if(e.date!==agora.iso && e.date!==ontem) continue;
+    const r = resultadoDe(e);
+    s += '|' + blocoDe(e, agora).slice(0,2) + (r ? r.st + r.a + '-' + r.b + r.label + obsDoPlacar(r) : '');
+  }
+  return s;
+}
+function redesenharSeMudou(){
+  const agora = relogio();
+  if(agora.iso !== HOJE || assinar(agora) !== assinatura) desenhar();
+  else { if(agora.fora) el('relogio').textContent = agora.hhmm; desenharFrescor(agora); }
 }
 
 /* ---------- links dos canais ----------
@@ -425,16 +585,18 @@ function linkDoCanal(c){
 }
 
 /* ---------- o que aparece na lista ----------
-   Três coisas, cada uma com uma regra só:
-   1. "Incluir": por padrão a lista traz o masculino e os times principais.
-      Feminino, base (Sub-20...) e divisões inferiores ficam de fora até a
-      pessoa ligar; os botões ficam na primeira tela, com a contagem do dia.
-   2. "O que mostrar": esportes, campeonatos e times marcados SOMAM (marcou NBA
+   Quatro coisas, cada uma com uma regra só:
+   1. "Dias": os dias acesos no calendário entram na lista, um depois do outro.
+      O padrão é só hoje; a escolha não fica guardada.
+   2. "Incluir": por padrão a lista traz o masculino e os times principais.
+      Feminino, base (Sub-20...) e divisões inferiores do futebol ficam de fora
+      até a pessoa ligar; os botões ficam na primeira tela, com a contagem.
+   3. "O que mostrar": esportes, campeonatos e times marcados SOMAM (marcou NBA
       e Futebol, aparecem os dois; um nunca anula o outro). Sem nada marcado,
       mostra tudo. Os atalhos da primeira tela e a lista da folha são o mesmo
       controle. Marcar a parte tira o todo, e vice-versa ("Futebol" e
       "Brasileirão", "NBA" e "Lakers"), para todo toque mudar a lista.
-   3. "Canais": com canal marcado, ficam só os jogos que passam nele.
+   4. "Canais": com canal marcado, ficam só os jogos que passam nele.
    O que está ligado aparece escrito no topo da lista.
    "Meu time" é outra coisa e fica à parte: só marca o calendário. */
 const CANAIS = [
@@ -455,19 +617,20 @@ const CANAIS = [
   {id:'outros',    nome:'Outros canais'},                             /* pago que não é nenhum dos de cima */
 ];
 /* o que fica de fora por padrão: [chave, nome na primeira tela, nome na folha] */
-const INCLUIR = [['feminino','Feminino','Feminino'], ['base','Base','Base (Sub-20, Sub-17…)'], ['inferiores','Div. inferiores','Divisões inferiores']];
+const INCLUIR = [['feminino','Feminino','Futebol feminino'], ['base','Base','Base (Sub-20, Sub-17…)'], ['inferiores','Div. inferiores','Divisões inferiores']];
 const ESPORTES = [
   ['Futebol', e => e.sport === 'Futebol'],
-  ['NBA',     e => /\bnba\b/i.test(e.league)],
   ['NFL',     e => /\bnfl\b/i.test(e.league)],
+  ['NBA',     e => /\bnba\b/i.test(e.league)],
+  ['Tênis',   e => e.sport === 'Tênis'],
 ];
-const RAPIDOS = ['Futebol','Seleções','NBA','NFL'];      /* atalhos da primeira tela, além do "Tudo" */
+const RAPIDOS = ESPORTES.map(x => x[0]);                 /* atalhos da primeira tela, depois do "Tudo": os esportes, nesta ordem */
 /* Campeonatos de futebol: lista FIXA e curada. Cada opção casa com os eventos por
    padrão (regex), então ruído das fontes nunca vira opção nova. Os padrões cobrem
    o nome oficial (tabela da ESPN) e o jeito que o guia escreve ("Brasileirão",
    "LaLiga", "UEFA Champions League"). "Seleções" junta todo jogo de seleção
    (datas FIFA, Nations League, eliminatórias, Euro, Copa América, amistosos
-   entre países), que o robô marca com sel=1. */
+   entre países), que o robô marca com sel=1; fica só aqui, na folha. */
 const LIGAS = [
   ['Seleções',            e => !!e.sel],
   ['Brasileirão Série A', /^brasileir[ãa]o(\s+s[ée]rie a)?$/i],
@@ -503,14 +666,21 @@ const FAMILIA_DE = {};
 for(const g of FAMILIAS){ const s = new Set(g.map(chaveTime)); for(const k of s) FAMILIA_DE[k] = s; }
 const mesmoTime = (a, b) => { const ka = chaveTime(a), kb = chaveTime(b); return !!ka && (ka===kb || !!(FAMILIA_DE[ka] && FAMILIA_DE[ka].has(kb))); };
 
+/* Blocos da lista. Hoje: ao vivo, a seguir (começa em até 3 horas), mais tarde e
+   mais cedo hoje (o que acabou, com o placar final). Outros dias: por turno. */
+const JANELA_SEGUIR = 180;
+const TURNOS = [['madrugada','Madrugada',0,360], ['manha','Manhã',360,720], ['tarde','Tarde',720,1080], ['noite','Noite',1080,1440]];
+const BLOCOS = ['vivo','seguir','depois','cedo'].concat(TURNOS.map(x => x[0]));
+
 /* O que fica salvo no aparelho:
    mostrar, filtroTimes ... "o que mostrar": esportes/campeonatos e times marcados (somam)
    canais ................. só o que passa nesses canais
    incluir ................ feminino, base e divisões inferiores, que ficam de fora por padrão
    times .................. "Meu time": só marca o calendário
+   recolhidos ............. blocos da lista que a pessoa recolheu
    dica ................... se o lembrete do "Meu time" ainda aparece */
 const CHAVE = 'oa.estado.v3';
-const PADRAO = { mostrar:[], filtroTimes:[], canais:[], incluir:[], times:[], dica:true };
+const PADRAO = { mostrar:[], filtroTimes:[], canais:[], incluir:[], times:[], recolhidos:[], dica:true };
 function lerEstado(){
   const guardado = k => { try{ const v = JSON.parse(localStorage.getItem(k) || 'null'); return v && typeof v==='object' ? v : null; }catch(e){ return null; } };
   let salvo = guardado(CHAVE);
@@ -529,13 +699,14 @@ function lerEstado(){
   s.mostrar = s.mostrar.filter(n => REGRA.has(n));
   s.canais = s.canais.filter(id => CANAIS.some(x => x.id===id));
   s.incluir = s.incluir.filter(k => INCLUIR.some(x => x[0]===k));
+  s.recolhidos = s.recolhidos.filter(k => BLOCOS.includes(k));
   return s;
 }
 function salvar(){ try{ localStorage.setItem(CHAVE, JSON.stringify(estado)); }catch(e){ /* navegação privada: vale só nesta visita */ } }
 let estado = lerEstado();
 
 let HOJE = relogio().iso;            /* dia de Brasília em que o app está */
-let diaSel = 0;                      /* aba aberta: 0 = hoje ... 6 */
+let diasSel = [0];                   /* dias acesos no calendário: 0 = hoje ... 6 (sempre pelo menos um) */
 let busca = '', buscando = false;    /* busca aberta procura nos 7 dias */
 let buscaTudo = false;               /* busca sem contar os filtros (vale só enquanto a busca está aberta) */
 let folhaModo = 'filtros';           /* o que a folha de baixo mostra: 'filtros' ou 'time' */
@@ -559,7 +730,7 @@ function ladosDe(e){
   const out = [];
   for(const txt of [e.match, e.espn]){
     const p = String(txt||'').split(/\s+x\s+/i);
-    if(p.length===2) out.push(p[0], p[1]);
+    if(p.length===2) for(const lado of p){ out.push(lado); if(e.sport==='Tênis' && lado.includes('/')) out.push(...lado.split(/\s*\/\s*/)); }      /* duplas: cada tenista também conta */
   }
   return out;
 }
@@ -568,25 +739,26 @@ function jogaAlgum(e, times){
   const lados = ladosDe(e);
   return times.some(t => lados.some(l => mesmoTime(t, l)));
 }
-/* "Meu time" é o time principal: jogo de base (Sub-20, Sub-17...) e do feminino não
-   contam, mesmo com o mesmo nome. */
-const ehMeuTime = e => e.g !== 'F' && !ehBase(e) && jogaAlgum(e, estado.times);
+/* "Meu time" é o time principal: no futebol, jogo de base (Sub-20, Sub-17...) e do
+   feminino não contam, mesmo com o mesmo nome. */
+const ehMeuTime = e => !(e.sport === 'Futebol' && (e.g === 'F' || ehBase(e))) && jogaAlgum(e, estado.times);
 
-/* 1. "Incluir": o que ainda falta ligar para este jogo entrar na lista. Time que a
-   pessoa escolheu pelo nome (no "Meu time" ou nos filtros) não fica de fora por jogar
-   numa divisão inferior: quem escolheu a Ponte Preta quer ver a Série B dela. */
+/* 2. "Incluir": o que ainda falta ligar para este jogo entrar na lista. Vale para o
+   futebol (no tênis, o circuito feminino entra direto). Time que a pessoa escolheu
+   pelo nome (no "Meu time" ou nos filtros) não fica de fora por jogar numa divisão
+   inferior: quem escolheu a Ponte Preta quer ver a Série B dela. */
 const inc = k => estado.incluir.includes(k);
 function faltaIncluir(e){
   const f = [];
-  if(e.g === 'F') f.push('feminino');
+  if(e.g === 'F' && e.sport !== 'Tênis') f.push('feminino');
   if(ehBase(e)) f.push('base');
   else if(ehInferior(e) && !jogaAlgum(e, estado.times) && !jogaAlgum(e, estado.filtroTimes)) f.push('inferiores');
   return f.filter(k => !inc(k));
 }
-/* 2. "O que mostrar": o que combina com QUALQUER item marcado; sem nada marcado, tudo */
+/* 3. "O que mostrar": o que combina com QUALQUER item marcado; sem nada marcado, tudo */
 const temOQue = () => estado.mostrar.length > 0 || estado.filtroTimes.length > 0;
 const combinaOQue = e => !temOQue() || estado.mostrar.some(n => REGRA.has(n) && REGRA.get(n)(e)) || jogaAlgum(e, estado.filtroTimes);
-/* 3. "Canais": só o que passa em algum dos marcados */
+/* 4. "Canais": só o que passa em algum dos marcados */
 const combinaCanal = e => !estado.canais.length || e.ch.some(c => estado.canais.some(id => canalBate(c, id)));
 const combina = e => combinaOQue(e) && combinaCanal(e);              /* os filtros, sem contar o "Incluir" */
 const passa = e => combina(e) && faltaIncluir(e).length === 0;        /* o que entra na lista */
@@ -597,7 +769,7 @@ const passa = e => combina(e) && faltaIncluir(e).length === 0;        /* o que e
 function amplosDoTime(nome){
   const jogos = LIMPOS.filter(e => jogaAlgum(e, [nome]));
   if(!jogos.length) return (POPULARES.some(p => mesmoTime(p, nome)) || FAMILIA_DE[chaveTime(nome)]) ? ['Futebol'] : [];
-  return ['Futebol','NBA','NFL','Seleções'].filter(n => jogos.every(REGRA.get(n)));
+  return RAPIDOS.concat('Seleções').filter(n => jogos.every(REGRA.get(n)));
 }
 function marcarItem(nome){             /* esporte ou campeonato: liga ou desliga */
   if(!REGRA.has(nome)) return;
@@ -622,16 +794,27 @@ const quantosFiltros = () => estado.mostrar.length + estado.filtroTimes.length +
 const temFiltro = () => quantosFiltros() > 0;
 const esseFiltro = () => quantosFiltros()===1 ? 'esse filtro' : 'esses filtros';
 function limparFiltros(){ estado.mostrar = []; estado.filtroTimes = []; estado.canais = []; }
-/* "Ao vivo" pelo relógio, com a duração típica de cada esporte; quando a ESPN
-   informa o andamento do jogo, vale o que ela diz. */
-const DUR = { 'Futebol':120, 'Basquete':150, 'Futebol Americano':200 };
+/* Andamento do jogo. Quando a ESPN informa, vale o que ela diz; sem informação,
+   vale o relógio, com a duração típica de cada esporte. */
+const DUR = { 'Futebol':120, 'Basquete':150, 'Futebol Americano':200, 'Tênis':150 };
 const duracao = e => DUR[e.sport] || 120;
 const desdeInicio = (e, agora) => diasEntre(e.date, agora.iso)*1440 + agora.min - minutos(e.t);
 function fase(e, agora){
-  const sc = scoreFor(e);
-  if(sc) return sc.fim ? 'fim' : 'vivo';
-  const d = desdeInicio(e, agora);
+  const r = resultadoDe(e), d = desdeInicio(e, agora);
+  if(r){
+    if(r.st==='post') return (r.sem && d < 0) ? 'depois' : 'fim';     /* adiado antes da hora continua no horário dele, com o aviso */
+    if(r.st==='in') return 'vivo';
+    /* passou da hora e a ESPN diz que ainda não começou. No tênis o horário é uma
+       estimativa (o jogo espera o anterior acabar): fica em "a seguir". Nos outros, só
+       quando a ESPN anuncia o atraso; "não começou" sozinho não basta (há liga que ela
+       não acompanha ao vivo), e aí vale o relógio. */
+    if(d >= 0 && (e.sport==='Tênis' ? d <= 360 : (r.sem && d <= 180))) return 'depois';
+  }
   return d < 0 ? 'depois' : d <= duracao(e) ? 'vivo' : 'fim';
+}
+function blocoDe(e, agora, f){        /* em que bloco de hoje o jogo fica */
+  f = f || fase(e, agora);
+  return f==='vivo' ? 'vivo' : f==='fim' ? 'cedo' : desdeInicio(e, agora) >= -JANELA_SEGUIR ? 'seguir' : 'depois';
 }
 function apelido(nome, e){            /* NBA e NFL: só o apelido ("Knicks"), como na TV */
   if(!/^(NBA|NFL)$/.test(e.league)) return nome;
@@ -667,6 +850,7 @@ function prepararDB(){
 const porHora = (a,b) => a.t.localeCompare(b.t) || a.match.localeCompare(b.match, 'pt');
 const porDiaHora = (a,b) => (a.date+a.t).localeCompare(b.date+b.t) || a.match.localeCompare(b.match, 'pt');
 const plural = (n, um, varios) => n + ' ' + (n===1 ? um : varios);
+const SETA = '<svg class="seta" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 function textoLiga(e){
   let d = (e.detail && e.detail!=='—' && e.detail!=='Tabela oficial') ? String(e.detail) : '';
@@ -675,29 +859,47 @@ function textoLiga(e){
   if(e.g==='F' && !/femin/i.test(e.league + ' ' + d)) html += '<span>, feminino</span>';
   return html;
 }
-function linhaJogo(e, f){
+/* Uma linha da lista: hora | times (com o placar, se houver) / campeonato / canais.
+   f = andamento do jogo: 'depois', 'vivo' ou 'fim'. */
+function linhaJogo(e, f, agora){
   const lados = e.match.split(/\s+x\s+/i), dois = lados.length===2;
-  const sc = f==='depois' ? null : scoreFor(e);
-  const st = f==='vivo' ? `<small class="st vivo">${esc(sc ? sc.label : 'ao vivo')}</small>`
-           : (f==='fim' && sc) ? '<small class="st">encerrado</small>' : '';
-  const meio = sc ? `<b class="pl">${esc(sc.a)}</b> <span class="x">x</span> <b class="pl">${esc(sc.b)}</b>` : '<span class="x">x</span>';
-  let confirmar = false;
-  const pilulas = e.ch.map(c => {
-    if(aConfirmar(c)){ if(confirmar) return ''; confirmar = true; return '<span class="aconfirmar">canal a confirmar</span>'; }
-    const yt = /\s*\(YouTube\)$/i.test(c.n), nome = c.n.replace(/\s*\(YouTube\)$/i,'');
-    return `<a class="canal${gratis(c)?' gratis':''}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener">${esc(nome)}${yt?'<small>YouTube</small>':''}</a>`;
-  }).join('');
+  const r = resultadoDe(e);
+  const comPlacar = !!r && !r.sem && r.st!=='pre' && f!=='depois';
+  let st = '';
+  if(f==='vivo') st = `<small class="st vivo">${esc(r && r.st==='in' ? r.label : 'ao vivo')}</small>`;
+  else if(r && r.st==='post' && (f==='fim' || r.sem)) st = `<small class="st">${esc(r.label)}</small>`;
+  else if(f==='depois' && r && (r.sem || desdeInicio(e, agora) >= 0)) st = `<small class="st">${r.sem ? esc(r.label) : 'em breve'}</small>`;
+  const meio = comPlacar ? `<b class="pl">${esc(r.a)}</b> <span class="x">x</span> <b class="pl">${esc(r.b)}</b>` : '<span class="x">x</span>';
+  const obs = comPlacar ? obsDoPlacar(r) : '';
+  /* canais: saem da linha quando a ESPN confirma que o jogo acabou (ou não vai acontecer) e,
+     sem notícia da ESPN, 1 hora depois do fim previsto (folga para prorrogação e pênaltis) */
+  let canais = '';
+  if(!(r && r.st==='post' && (f==='fim' || r.sem)) && !(f==='fim' && desdeInicio(e, agora) > duracao(e) + 60)){
+    let confirmar = false;
+    canais = `<div class="canais">${e.ch.map(c => {
+      if(aConfirmar(c)){ if(confirmar) return ''; confirmar = true; return '<span class="aconfirmar">canal a confirmar</span>'; }
+      const yt = /\s*\(YouTube\)$/i.test(c.n), nome = c.n.replace(/\s*\(YouTube\)$/i,'');
+      return `<a class="canal${gratis(c)?' gratis':''}" href="${esc(linkDoCanal(c))}" target="_blank" rel="noopener">${esc(nome)}${yt?'<small>YouTube</small>':''}</a>`;
+    }).join('')}</div>`;
+  }
   return `<li class="jogo${f==='fim'?' fim':''}${f==='vivo'?' vivo':''}">
     <div class="hora"><time>${esc(e.t)}</time>${st}</div>
     <div>
-      <div class="times">${ehMeuTime(e)?'<span class="fav" role="img" aria-label="Seu time">★</span>':''}${dois ? `${esc(apelido(lados[0],e))} ${meio} ${esc(apelido(lados[1],e))}` : esc(e.match)}</div>
-      <div class="linha2"><div class="liga">${textoLiga(e)}</div><div class="canais">${pilulas}</div></div>
+      <p class="times">${ehMeuTime(e)?'<span class="fav" role="img" aria-label="Seu time">★</span>':''}${dois ? `${esc(apelido(lados[0],e))} ${meio} ${esc(apelido(lados[1],e))}` : esc(e.match)}</p>
+      <p class="liga">${textoLiga(e)}${obs ? ` <span class="obs">· ${esc(obs)}</span>` : ''}</p>
+      ${canais}
     </div>
   </li>`;
 }
-function bloco(titulo, jogos, faseDe, extra){
+/* bloco que recolhe e abre; o que a pessoa recolheu fica guardado no aparelho */
+function bloco(H, chave, titulo, jogos, faseDe, agora, dia, i, extra){
   if(!jogos.length) return '';
-  return `<h2 class="secao">${extra||''}${titulo}</h2><ul class="grupo">${jogos.map(e => linhaJogo(e, faseDe(e))).join('')}</ul>`;
+  const fechado = estado.recolhidos.includes(chave), id = `b-${dia}-${chave}`;
+  return `<section class="bloco${fechado?' fechado':''}"><${H}><button type="button" class="cab" data-acao="bloco" data-valor="${chave}" data-i="${i}" aria-expanded="${!fechado}" aria-controls="${id}">${extra||''}<span>${titulo}</span><span class="qt">${jogos.length}<span class="so-leitor"> ${jogos.length===1?'jogo':'jogos'}</span></span>${SETA}</button></${H}><ul class="grupo" id="${id}"${fechado?' hidden':''}>${fechado ? '' : jogos.map(e => linhaJogo(e, faseDe(e), agora)).join('')}</ul></section>`;
+}
+function blocoFixo(titulo, jogos, faseDe, agora){       /* na busca: um bloco por dia, sempre aberto */
+  if(!jogos.length) return '';
+  return `<section class="bloco"><h2><span class="cab fixo"><span>${titulo}</span><span class="qt">${jogos.length}<span class="so-leitor"> ${jogos.length===1?'jogo':'jogos'}</span></span></span></h2><ul class="grupo">${jogos.map(e => linhaJogo(e, faseDe(e), agora)).join('')}</ul></section>`;
 }
 function vazio(titulo, texto, botoes){
   return `<div class="vazio"><b>${titulo}</b>${texto ? `<p>${texto}</p>` : ''}${botoes ? `<div class="acoes">${botoes}</div>` : ''}</div>`;
@@ -715,57 +917,79 @@ function htmlLigados(){
   const etq = ([tipo, valor, nome]) => `<button type="button" class="etq" data-acao="tira-filtro" data-tipo="${tipo}" data-valor="${esc(valor)}" aria-label="Tirar ${esc(nome)}">${esc(nome)}<b aria-hidden="true">×</b></button>`;
   return `<div class="ligados" role="group" aria-label="Filtros ligados"><span>${oq.length ? 'Mostrando só' : 'Mostrando só o que passa em'}</span>${oq.map(etq).join('')}${oq.length && cs.length ? '<span>em</span>' : ''}${cs.map(etq).join('')}<button type="button" class="texto" data-acao="limpar">Limpar</button></div>`;
 }
-/* "Incluir", na primeira tela: o que fica de fora por padrão, com quantos jogos do
-   dia cada botão traria (dos que combinam com os filtros) */
-function htmlIncluir(dia){
+/* "Incluir", na primeira tela: o que fica de fora por padrão, com quantos jogos dos
+   dias acesos cada botão traria (dos que combinam com os filtros) */
+function htmlIncluir(datas){
+  if(!LIMPOS.some(e => datas.includes(e.date))) return '';
   const n = { feminino:0, base:0, inferiores:0 };
-  for(const e of LIMPOS) if(e.date === dia && combina(e)){ const f = faltaIncluir(e); if(f.length === 1) n[f[0]]++; }
+  for(const e of LIMPOS) if(datas.includes(e.date) && combina(e)){ const f = faltaIncluir(e); if(f.length === 1) n[f[0]]++; }
+  const onde = datas.length > 1 ? 'nestes dias' : 'neste dia';
   return `<div class="incluir" role="group" aria-label="Incluir na lista">${INCLUIR.map(([k, nome]) => {
     const ligado = inc(k), q = ligado ? 0 : n[k];
-    return `<button type="button" class="inc${ligado?' sel':''}" data-acao="incluir" data-valor="${k}" aria-pressed="${ligado}"><span class="so-leitor">Incluir: </span><b aria-hidden="true">${ligado ? '✓' : '+' + (q || '')}</b>${esc(nome)}${q ? `<span class="so-leitor">, ${plural(q,'jogo','jogos')} neste dia</span>` : ''}</button>`;
+    return `<button type="button" class="inc${ligado?' sel':''}" data-acao="incluir" data-valor="${k}" aria-pressed="${ligado}"><span class="so-leitor">Incluir: </span><b aria-hidden="true">${ligado ? '✓' : '+' + (q || '')}</b>${esc(nome)}${q ? `<span class="so-leitor">, ${plural(q,'jogo','jogos')} ${onde}</span>` : ''}</button>`;
   }).join('')}</div>`;
 }
-/* fim da lista do dia: a legenda do verde, quando há canal grátis na tela */
+/* fim da lista: a legenda do verde, quando há canal grátis na tela */
 const htmlLegenda = temGratis => temGratis ? '<p class="legenda"><span class="canal gratis" aria-hidden="true">Canal</span> em verde passa de graça, na TV aberta ou no YouTube.</p>' : '';
 
-function htmlDia(dia, agora, dias){
+/* dia sem nada na lista: diz por quê, e onde há. Com mais de um dia aceso, só uma linha. */
+function semJogos(dia, noDia, dias, varios){
+  const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
+  const fora = noDia.filter(combina).length;          /* combinam com os filtros, mas são de feminino, base ou divisão inferior */
+  if(varios){
+    return `<p class="nada">${!noDia.length ? (dia > ultima ? 'A programação deste dia ainda não saiu.' : 'Nenhum jogo neste dia.')
+      : temFiltro() ? `Nenhum jogo neste dia com ${esseFiltro()}.` : 'Nenhum jogo dos times principais neste dia.'}</p>`;
+  }
+  if(!noDia.length){
+    return dia > ultima
+      ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
+      : vazio('Nenhum jogo neste dia.', 'As fontes não listam jogos para esta data.');
+  }
+  const deFora = fora ? `${plural(fora,'jogo','jogos')} do feminino, de base ou de divisões inferiores ${fora===1 ? 'fica' : 'ficam'} de fora: é só incluir, nos botões acima.` : '';
+  if(!temFiltro()) return vazio('Nenhum jogo dos times principais neste dia.', deFora);
+  const um = quantosFiltros()===1, comEle = um ? 'Com ele' : 'Com eles';
+  const outros = dias.map((d,i) => [d, i, LIMPOS.filter(e => e.date===d && passa(e)).length]).filter(x => x[2] > 0);
+  const semCanal = temOQue() && estado.canais.length && noDia.some(e => combinaOQue(e) && faltaIncluir(e).length===0);
+  return vazio(semCanal ? 'Neste dia, nada do que está marcado passa nos canais escolhidos.' : `Nenhum jogo neste dia com ${esseFiltro()}.`,
+               (deFora ? deFora + ' ' : '') + (outros.length ? `${comEle}, há jogo em:` : `${comEle}, não há jogo nos próximos 7 dias.`),
+               outros.map(([d,i,n]) => `<button type="button" class="botao fantasma" data-acao="ir-dia" data-i="${i}">${nomeDoDia(d,i,true)}, ${diaMes(d)} (${n})</button>`).join('')
+               + `<button type="button" class="botao" data-acao="limpar">${um ? 'Limpar filtro' : 'Limpar filtros'}</button>`);
+}
+/* um dia da lista -> {html, n: jogos na lista, gratis: há canal grátis} */
+function htmlDia(dia, i, agora, dias, varios){
   const noDia = LIMPOS.filter(e => e.date===dia);
   const doDia = noDia.filter(passa).sort(porHora);
   const ehHoje = dia === agora.iso;
   const fases = new Map(doDia.map(e => [e, fase(e, agora)])), faseDe = e => fases.get(e) || fase(e, agora);
   /* começou ontem e ainda está em campo (NBA das 22h30, por exemplo) */
   const viradas = ehHoje ? LIMPOS.filter(e => e.date===somaDias(dia,-1) && passa(e) && fase(e, agora)==='vivo').sort(porHora) : [];
-  let html = htmlDica() + htmlLigados() + (noDia.length ? htmlIncluir(dia) : '');
-  if(!doDia.length && !viradas.length){
-    if(!noDia.length){
-      const ultima = LIMPOS.reduce((m,e) => e.date>m ? e.date : m, '');
-      return html + (dia > ultima
-        ? vazio('A programação deste dia ainda não saiu.', 'Os canais de futebol costumam ser confirmados uns 2 dias antes. NBA, NFL e as tabelas oficiais entram com até 7 dias.')
-        : vazio('Nenhum jogo neste dia.', 'As fontes não listam jogos para esta data.'));
-    }
-    /* há jogos no dia, mas nenhum entra na lista: diz por quê, e onde há */
-    const fora = noDia.filter(combina).length;        /* combinam com os filtros, mas são de feminino, base ou divisão inferior */
-    const deFora = fora ? `${plural(fora,'jogo','jogos')} do feminino, de base ou de divisões inferiores ${fora===1 ? 'fica' : 'ficam'} de fora: é só incluir, nos botões acima.` : '';
-    if(!temFiltro()) return html + vazio('Nenhum jogo dos times principais neste dia.', deFora);
-    const um = quantosFiltros()===1, comEle = um ? 'Com ele' : 'Com eles';
-    const outros = dias.map((d,i) => [d, i, LIMPOS.filter(e => e.date===d && passa(e)).length]).filter(x => x[2] > 0);
-    const semCanal = temOQue() && estado.canais.length && noDia.some(e => combinaOQue(e) && faltaIncluir(e).length===0);
-    return html + vazio(semCanal ? 'Neste dia, nada do que está marcado passa nos canais escolhidos.' : `Nenhum jogo neste dia com ${esseFiltro()}.`,
-                        (deFora ? deFora + ' ' : '') + (outros.length ? `${comEle}, há jogo em:` : `${comEle}, não há jogo nos próximos 7 dias.`),
-                        outros.map(([d,i,n]) => `<button type="button" class="botao fantasma" data-acao="dia" data-i="${i}">${nomeDoDia(d,i,true)}, ${diaMes(d)} (${n})</button>`).join('')
-                        + `<button type="button" class="botao" data-acao="limpar">${um ? 'Limpar filtro' : 'Limpar filtros'}</button>`);
-  }
+  const n = doDia.length + viradas.length;
+  if(!n) return { html: semJogos(dia, noDia, dias, varios), n: 0, gratis: false };
+  const B = (chave, titulo, jogos, extra) => bloco(varios ? 'h3' : 'h2', chave, titulo, jogos, faseDe, agora, dia, i, extra);
+  let html = '';
   if(ehHoje){
-    const vivo = [...viradas, ...doDia.filter(e => faseDe(e)==='vivo')], depois = doDia.filter(e => faseDe(e)==='depois'), fim = doDia.filter(e => faseDe(e)==='fim');
-    html += bloco('Ao vivo', vivo, faseDe, '<i class="pulso" aria-hidden="true"></i>');
-    html += `<div class="agora"><span>agora, <span id="relogio">${agora.hhmm}</span>${agora.fora ? ' em Brasília' : ''}</span></div>`;
-    html += depois.length ? bloco('A seguir', depois, faseDe) : `<p class="nada">Nada mais hoje${temFiltro() ? ' com ' + esseFiltro() : ''}.</p>`;
-    html += bloco('Mais cedo hoje', fim, faseDe);
+    const futuros = doDia.filter(e => faseDe(e)==='depois');
+    html += B('vivo', 'Ao vivo', [...viradas, ...doDia.filter(e => faseDe(e)==='vivo')], '<i class="pulso" aria-hidden="true"></i>');
+    html += B('seguir', 'A seguir', futuros.filter(e => blocoDe(e, agora, 'depois')==='seguir'));
+    html += B('depois', 'Mais tarde', futuros.filter(e => blocoDe(e, agora, 'depois')==='depois'));
+    if(!futuros.length) html += `<p class="nada">Nada mais hoje${temFiltro() ? ' com ' + esseFiltro() : ''}.</p>`;
+    html += B('cedo', 'Mais cedo hoje', doDia.filter(e => faseDe(e)==='fim'));
   } else {
-    for(const [nome, de, ate] of [['Madrugada',0,360],['Manhã',360,720],['Tarde',720,1080],['Noite',1080,1440]])
-      html += bloco(nome, doDia.filter(e => minutos(e.t)>=de && minutos(e.t)<ate), faseDe);
+    for(const [chave, nome, de, ate] of TURNOS) html += B(chave, nome, doDia.filter(e => minutos(e.t)>=de && minutos(e.t)<ate));
   }
-  return html + htmlLegenda(doDia.concat(viradas).some(e => e.ch.some(gratis)));
+  return { html, n, gratis: doDia.concat(viradas).some(e => e.ch.some(gratis)) };
+}
+/* a lista: os dias acesos no calendário, um depois do outro */
+function htmlLista(agora, dias){
+  const varios = diasSel.length > 1;
+  let html = htmlDica() + htmlLigados() + htmlIncluir(diasSel.map(i => dias[i])), temGratis = false;
+  for(const i of diasSel){
+    const d = htmlDia(dias[i], i, agora, dias, varios);
+    if(varios) html += `<h2 class="diatit" id="dia-${dias[i]}">${nomeDoDia(dias[i], i, true)}, ${diaMes(dias[i])}${d.n ? ` <span>${plural(d.n,'jogo','jogos')}</span>` : ''}</h2>`;
+    html += d.html;
+    temGratis = temGratis || d.gratis;
+  }
+  return html + htmlLegenda(temGratis);
 }
 /* A busca olha a mesma lista do resto do app (filtros e "Incluir"). Se algum
    resultado ficar de fora, ela avisa e oferece buscar em tudo (só enquanto estiver aberta). */
@@ -782,7 +1006,7 @@ function htmlBusca(agora, dias){
             '<button type="button" class="botao" data-acao="busca-tudo">Buscar em tudo</button>')
     : vazio('Nada encontrado nos próximos 7 dias.', 'Confira a grafia ou tente só uma parte do nome.'));
   html += `<p class="nada">${plural(lista.length,'jogo','jogos')} nos próximos 7 dias${buscaTudo ? ', contando o que está fora da lista' : ''}${escondidos ? `. ${escondidos===1 ? 'Outro está' : 'Outros ' + escondidos + ' estão'} fora da lista. ${emTudo}` : ''}</p>`;
-  dias.forEach((d,i) => { html += bloco(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, lista.filter(e => e.date===d), e => fase(e, agora)); });
+  dias.forEach((d,i) => { html += blocoFixo(`${nomeDoDia(d,i,true)}, ${diaMes(d)}`, lista.filter(e => e.date===d), e => fase(e, agora), agora); });
   return html;
 }
 
@@ -804,28 +1028,35 @@ function desenharFrescor(agora){
   if(el('quando').textContent !== txt) el('quando').textContent = txt;
   el('frescor').classList.toggle('velho', velho);
 }
+/* a altura do topo fixo (para o título do dia grudar logo abaixo) e se a fileira de atalhos rola */
+function medir(){
+  document.documentElement.style.setProperty('--topo', el('topo').offsetHeight + 'px');
+  const r = el('rapidos'); r.classList.remove('rola'); r.classList.toggle('rola', r.scrollWidth > r.clientWidth + 1);      /* mede sem a folga que a própria classe põe */
+}
 function desenhar(){
   const agora = relogio();
-  if(agora.iso !== HOJE){ HOJE = agora.iso; diaSel = 0; }     /* virou o dia em Brasília: "Hoje" volta a ser hoje */
+  if(agora.iso !== HOJE){ HOJE = agora.iso; diasSel = [0]; }     /* virou o dia em Brasília: a lista volta a ser a de hoje */
   const dias = [0,1,2,3,4,5,6].map(i => somaDias(HOJE, i));
-  el('fuso').hidden = !agora.fora;
+  el('fuso').hidden = !agora.fora; el('relogio').textContent = agora.hhmm;
   el('navegacao').hidden = buscando; el('busca').hidden = !buscando;
-  /* calendário: ponto amarelo no dia em que o "Meu time" joga. Vale a mesma lista
-     da tela: dia com ponto tem jogo com estrela, e vice-versa. */
+  /* calendário: cada dia acende e apaga; os acesos entram na lista. Ponto amarelo no
+     dia em que o "Meu time" joga. Vale a mesma lista da tela: dia com ponto tem jogo
+     com estrela, e vice-versa. */
   trocar(el('dias'), dias.map((d,i) => {
-    const joga = LIMPOS.some(e => e.date===d && ehMeuTime(e) && passa(e));
-    return `<button type="button" class="dia${i===diaSel?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${i===diaSel}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${joga?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
+    const joga = LIMPOS.some(e => e.date===d && ehMeuTime(e) && passa(e)), aceso = diasSel.includes(i);
+    return `<button type="button" class="dia${aceso?' sel':''}" data-acao="dia" data-i="${i}" aria-pressed="${aceso}">${nomeDoDia(d,i)}<small>${diaMes(d)}</small>${joga?'<i aria-hidden="true"></i><span class="so-leitor">, seu time joga</span>':''}</button>`;
   }).join(''));
   el('abre-time').classList.toggle('tem', estado.times.length > 0);
   /* atalhos: o mesmo "o que mostrar" da folha. "Tudo" aceso = nenhum filtro ligado */
   const atalho = (r, ligado) => `<button type="button" class="rapido${ligado?' sel':''}" data-acao="rapido" data-valor="${r}" aria-pressed="${ligado}">${r}</button>`;
   trocar(el('rapidos'), atalho('Tudo', !temFiltro()) + RAPIDOS.map(r => atalho(r, estado.mostrar.includes(r))).join(''));
   const n = quantosFiltros();
-  el('abre-filtros').innerHTML = 'Filtros' + (n ? `<span class="n" aria-label="${plural(n,'filtro ligado','filtros ligados')}">${n}</span>` : '');
+  el('abre-filtros').setAttribute('aria-label', 'Filtros' + (n ? ', ' + plural(n,'ligado','ligados') : ''));
+  el('n-filtros').hidden = !n; el('n-filtros').textContent = n || '';
   desenharFrescor(agora);
-  trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlDia(dias[diaSel], agora, dias));
-  const ontem = somaDias(agora.iso, -1);
-  assinatura = JSON.stringify(SCORES) + '|' + LIMPOS.filter(e => e.date===agora.iso || e.date===ontem).map(e => fase(e, agora)[0]).join('');
+  trocar(el('lista'), buscando ? htmlBusca(agora, dias) : htmlLista(agora, dias));
+  assinatura = assinar(agora);
+  medir();
 }
 
 /* ---------- folha de baixo: "Filtros" ou "Meu time" ---------- */
@@ -857,14 +1088,14 @@ function htmlEscolha(alvo, texto){
        + lista.map(n => `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(n)}" aria-pressed="false">${esc(n)}</button>`).join('')
        + (novo ? `<button type="button" class="op mais" data-acao="poe-time" data-valor="${esc(livre)}" aria-pressed="false">Adicionar “${esc(livre)}”</button>` : '');
 }
-const campoDeTime = alvo => `<input class="campo" id="busca-time" type="search" placeholder="Buscar time ou seleção" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Buscar time ou seleção">
+const campoDeTime = alvo => `<input class="campo" id="busca-time" type="search" placeholder="Buscar time, seleção ou tenista" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Buscar time, seleção ou tenista">
     <div class="opcoes" id="op-times" data-alvo="${alvo}">${htmlEscolha(alvo, '')}</div>`;
 function desenharFolha(){
   const topo = titulo => `<div class="pega" aria-hidden="true"></div>
     <header><h2 id="folha-titulo">${titulo}</h2><button type="button" class="texto" data-acao="fechar-folha">Pronto</button></header>`;
   el('folha').innerHTML = folhaModo==='time' ? `${topo('Meu time')}
     <p>Escolha seu time e sua seleção, quantos quiser. O dia em que eles jogam ganha um ponto amarelo no calendário, e o jogo, uma estrela.</p>
-    <p>Vale só para o time principal: jogos de base (Sub-20, Sub-17) e do feminino não contam. Isso não filtra a lista.</p>
+    <p>No futebol vale só para o time principal: jogos de base (Sub-20, Sub-17) e do feminino não contam. Isso não filtra a lista.</p>
     ${campoDeTime('times')}`
   : `${topo('Filtros')}
     <p>A lista mostra o que estiver marcado: esportes, campeonatos e times se somam. Sem nada marcado, mostra tudo.</p>
@@ -878,7 +1109,7 @@ function desenharFolha(){
     <p>Com canal marcado, ficam só os jogos que passam nele.</p>
     <div class="opcoes">${CANAIS.map(c => op('canal', c.id, c.nome, estado.canais.includes(c.id))).join('')}</div>
     <h3>Incluir na lista</h3>
-    <p>Ficam de fora até você ligar.</p>
+    <p>No futebol, ficam de fora até você ligar.</p>
     <div class="opcoes">${INCLUIR.map(x => op('incluir', x[0], x[2], inc(x[0]))).join('')}</div>
     <div class="pe-folha"><button type="button" class="texto" data-acao="limpar-folha">Limpar filtros</button></div>`;
 }
@@ -905,16 +1136,32 @@ function fecharFolha(){
   document.body.classList.remove('filtrando');
   el('topo').inert = false; el('lista').inert = false;
   if(estado.times.length) estado.dica = false;
-  salvar(); desenhar(); mostrarEscolhidos();
+  salvar(); desenhar(); mostrarEscolhidos(); fetchScores();
   el(folhaModo==='time' ? 'abre-time' : 'abre-filtros').focus({preventScroll:true});
 }
-/* ao abrir o app e ao fechar a folha, o primeiro atalho aceso fica à vista na fileira que rola */
+/* ao abrir o app e ao fechar a folha, o primeiro atalho aceso fica à vista na fileira (quando ela rola) */
 function mostrarEscolhidos(){
   const s = el('rapidos').querySelector('.sel'); if(s) s.scrollIntoView({inline:'nearest', block:'nearest'});
 }
 function alternar(lista, valor){ const i = lista.indexOf(valor); if(i<0) lista.push(valor); else lista.splice(i,1); return i<0; }
 function abrirBusca(){ buscando = true; buscaTudo = false; desenhar(); el('q').value = busca; el('q').focus(); fetchScores(); }
 function fecharBusca(){ if(!buscando) return; buscando = false; buscaTudo = false; busca = ''; el('q').value = ''; desenhar(); el('abre-busca').focus({preventScroll:true}); fetchScores(); }
+/* Calendário: tocar num dia apagado acende (ele entra na lista, e a tela vai até ele);
+   tocar num aceso apaga, a não ser que seja o único. */
+function tocarDia(i){
+  if(!(i >= 0 && i <= 6)) return;
+  if(diasSel.includes(i)){
+    if(diasSel.length === 1) return;
+    diasSel = diasSel.filter(x => x !== i);
+    desenhar(); window.scrollTo(0,0);
+  } else {
+    diasSel = diasSel.concat(i).sort((a,b) => a - b);
+    desenhar();
+    const t = el('dia-' + somaDias(HOJE, i));
+    window.scrollTo(0, t && diasSel[0] !== i ? Math.max(0, t.getBoundingClientRect().top + window.scrollY - el('topo').offsetHeight) : 0);
+  }
+  fetchScores();
+}
 
 /* Botão de atualizar: busca os dados de novo (não só redesenha) */
 async function atualizar(){
@@ -928,9 +1175,11 @@ document.addEventListener('click', ev => {
   const b = ev.target.closest('[data-acao]'); if(!b) return;
   const d = b.dataset;
   switch(d.acao){
-    case 'dia':            diaSel = +d.i; desenhar(); window.scrollTo(0,0); fetchScores(); break;
-    case 'rapido':         if(d.valor === 'Tudo') limparFiltros(); else marcarItem(d.valor); salvar(); desenhar(); window.scrollTo(0,0); if(d.valor === 'Tudo') mostrarEscolhidos(); break;   /* o atalho tocado já está à vista: a fileira não pula */
-    case 'incluir':        alternar(estado.incluir, d.valor); salvar(); desenhar(); break;
+    case 'dia':            tocarDia(+d.i); break;
+    case 'ir-dia':         diasSel = [+d.i >= 0 && +d.i <= 6 ? +d.i : 0]; desenhar(); window.scrollTo(0,0); fetchScores(); break;      /* "há jogo em: ..." troca de dia */
+    case 'bloco':          if(BLOCOS.includes(d.valor)){ alternar(estado.recolhidos, d.valor); salvar(); desenhar(); } break;
+    case 'rapido':         if(d.valor === 'Tudo') limparFiltros(); else marcarItem(d.valor); salvar(); desenhar(); window.scrollTo(0,0); if(d.valor === 'Tudo') mostrarEscolhidos(); fetchScores(); break;   /* o atalho tocado já está à vista: a fileira não pula */
+    case 'incluir':        alternar(estado.incluir, d.valor); salvar(); desenhar(); fetchScores(); break;
     case 'abrir-filtros':  abrirFolha('filtros'); break;
     case 'abrir-time':     abrirFolha('time'); break;
     case 'fechar-folha':   fecharFolha(); break;
@@ -939,9 +1188,9 @@ document.addEventListener('click', ev => {
     case 'busca-tudo':     buscaTudo = true; desenhar(); break;
     case 'atualizar':      atualizar(); break;
     case 'dispensar-dica': estado.dica = false; salvar(); desenhar(); break;
-    case 'limpar':         limparFiltros(); salvar(); desenhar(); mostrarEscolhidos(); break;
+    case 'limpar':         limparFiltros(); salvar(); desenhar(); mostrarEscolhidos(); fetchScores(); break;
     case 'limpar-folha':   limparFiltros(); salvar(); acertarFolha(); desenhar(); el('folha').focus({preventScroll:true}); break;
-    case 'tira-filtro':    if(LISTA_DO_TIPO[d.tipo]){ estado[LISTA_DO_TIPO[d.tipo]] = estado[LISTA_DO_TIPO[d.tipo]].filter(v => v !== d.valor); salvar(); desenhar(); } break;
+    case 'tira-filtro':    if(LISTA_DO_TIPO[d.tipo]){ estado[LISTA_DO_TIPO[d.tipo]] = estado[LISTA_DO_TIPO[d.tipo]].filter(v => v !== d.valor); salvar(); desenhar(); fetchScores(); } break;
     case 'op': {
       if(d.tipo === 'item') marcarItem(d.valor);
       else if(d.tipo === 'canal') alternar(estado.canais, d.valor);
@@ -971,6 +1220,7 @@ document.addEventListener('keydown', ev => {
   if(ev.key==='Enter' && ev.target.id==='busca-time'){ const p = el('op-times').querySelector('[data-acao="poe-time"]'); if(p && ev.target.value.trim().length>=2){ ev.preventDefault(); p.click(); } }
 });
 el('busca').addEventListener('submit', ev => { ev.preventDefault(); el('q').blur(); });
+window.addEventListener('resize', medir);
 
 /* App instalado na tela de início fica dias em segundo plano: ao voltar (e a
    cada minuto, se aberto), confere se o dia virou e se os dados envelheceram. */
@@ -983,10 +1233,11 @@ function sincronizar(){
 document.addEventListener('visibilitychange', sincronizar);
 window.addEventListener('pageshow', ev => { if(ev.persisted) sincronizar(); });
 
+FINAIS = lerFinais();
 prepararDB(); desenhar(); mostrarEscolhidos();
 tryLoadJson().then(() => { document.body.dataset.pronto = '1'; });
 fetchScores();
-setInterval(sincronizar, 60000);   /* placares, "ao vivo", virada do dia e dados novos */
+setInterval(sincronizar, 60000);   /* placares, andamento, virada do dia e dados novos */
 </script>
 </body>
 </html>
