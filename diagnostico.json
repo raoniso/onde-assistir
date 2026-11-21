@@ -18,10 +18,11 @@
    "Eliminatórias da Euro": 0
   },
   "log": [
-   "Coleta 21/11 08:27 BRT — janela 2026-11-21 a 2026-11-27",
+   "Coleta 21/11 14:37 BRT — janela 2026-11-21 a 2026-11-27",
    "  ✓ mantosdofutebol: 117 evento(s)",
    "  ✓ goal (2º guia): 104 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 85 evento(s)",
+   "  ! horário: as fontes discordam em 1 jogo(s) — 21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30",
    "  ✓ ESPN NBA: 48 evento(s)",
    "  ✓ ESPN NFL: 17 evento(s)",
    "TOTAL: 236 eventos → eventos.json",
@@ -36,7 +37,7 @@
      {
       "cabecalho": "Sábado – 21/11",
       "data": "2026-11-21",
-      "jogos": 63
+      "jogos": 51
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -74,7 +75,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 646157,
+   "bytes": 646166,
    "tabelas": 5,
    "dias": [
     {
@@ -125,6 +126,9 @@
    ],
    "horario_diferente": []
   },
+  "horario_divergente": [
+   "21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30"
+  ],
   "nba_broadcasts": [
    "Houston Rockets x Denver Nuggets :: PRIME VIDEO | ERADM | PRIME VIDEO",
    "Sacramento Kings x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET +",
@@ -133,7 +137,7 @@
   ],
   "espn_faltas": []
  },
- "build": "2026-11-17-b",
+ "build": "2026-11-21-a",
  "saude": {
   "abertos": {}
  }

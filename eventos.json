@@ -1166,24 +1166,6 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Bahia x Coritiba",
-  "ch": [
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Bahia x Coritiba"
- },
- {
-  "date": "2026-11-21",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
   "league": "Campeonato Pernambucano",
   "detail": "Turno Forró-Quadrangular Final",
   "match": "Central x Íbis",
@@ -1195,6 +1177,24 @@
    }
   ],
   "v": 1
+ },
+ {
+  "date": "2026-11-21",
+  "t": "17:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "—",
+  "match": "Bahia x Coritiba",
+  "ch": [
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Bahia x Coritiba"
  },
  {
   "date": "2026-11-21",
