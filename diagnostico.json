@@ -22,7 +22,7 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 21/11 20:17 BRT — janela 2026-11-21 a 2026-11-27",
+   "Coleta 21/11 20:25 BRT — janela 2026-11-21 a 2026-11-27",
    "  ✓ mantosdofutebol: 73 evento(s)",
    "  ✓ goal (2º guia): 104 evento(s)",
    "  ↺ mantos: 40 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
@@ -122,7 +122,7 @@
   },
   "goal": {
    "http": 200,
-   "bytes": 646225,
+   "bytes": 646067,
    "tabelas": 5,
    "dias": [
     {

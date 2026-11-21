@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0A0D13">
 <meta name="color-scheme" content="dark">
-<meta name="versao-da-tela" content="2026-11-21-b">
+<meta name="versao-da-tela" content="2026-11-21-c">
 <title>Onde Assistir — Guia de Transmissões</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -5130,7 +5130,7 @@ const DB = [
  }
 ];
 /*DB-END*/
-const GENERATED_AT = '21/11 20:17'; /* preenchido pelo script Python */
+const GENERATED_AT = '21/11 20:25'; /* preenchido pelo script Python */
 
 const el = id => document.getElementById(id);
 /* todo texto que vem dos dados passa por aqui antes de virar HTML */
@@ -5757,6 +5757,7 @@ function prepararDB(){
 
 /* ---------- desenho ---------- */
 const porHora = (a,b) => a.t.localeCompare(b.t) || a.match.localeCompare(b.match, 'pt');
+const porHoraRecente = (a,b) => b.t.localeCompare(a.t) || a.match.localeCompare(b.match, 'pt');      /* do mais tarde para o mais cedo; no mesmo horário, por nome */
 const porDiaHora = (a,b) => (a.date+a.t).localeCompare(b.date+b.t) || a.match.localeCompare(b.match, 'pt');
 const plural = (n, um, varios) => n + ' ' + (n===1 ? um : varios);
 const SETA = '<svg class="seta" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -5882,7 +5883,7 @@ function htmlDia(dia, i, agora, dias, varios){
     html += B('seguir', 'A seguir', futuros.filter(e => blocoDe(e, agora, 'depois')==='seguir'));
     html += B('depois', 'Mais tarde', futuros.filter(e => blocoDe(e, agora, 'depois')==='depois'));
     if(!futuros.length) html += `<p class="nada">Nada mais hoje${temFiltro() ? ' com ' + esseFiltro() : ''}.</p>`;
-    html += B('cedo', 'Mais cedo hoje', doDia.filter(e => faseDe(e)==='fim').reverse());      /* o que acabou por último vem primeiro */
+    html += B('cedo', 'Mais cedo hoje', doDia.filter(e => faseDe(e)==='fim').sort(porHoraRecente));      /* o que acabou por último vem primeiro */
   } else {
     for(const [chave, nome, de, ate] of TURNOS) html += B(chave, nome, doDia.filter(e => minutos(e.t)>=de && minutos(e.t)<ate));
   }
