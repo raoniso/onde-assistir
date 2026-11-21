@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-21-a (horário: quando as fontes discordam, vale o de duas; a tabela oficial desempata)
+# build: 2026-11-21-b (placar de todos os jogos pelo endereço da ESPN; tênis; jogo encerrado do dia fica na lista; data conferida com a ESPN)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
 Roda sozinho no GitHub Actions (.github/workflows/atualizar.yml). Nenhuma
 curadoria manual. Escopo: Futebol (BR + Europa, incl. Libertadores,
-Sul-Americana, Champions e Copa do Brasil), NBA e NFL.
+Sul-Americana, Champions e Copa do Brasil), NBA, NFL e tênis.
 
 FONTES (cada uma protegida por try/except — uma falhar não derruba o resto):
   FUTEBOL .... Dois guias de TV, unidos (juntar_guias):
@@ -28,6 +28,30 @@ FONTES (cada uma protegida por try/except — uma falhar não derruba o resto):
   FUT. AMER. . ESPN (NFL). Canais pela janela de horário dos contratos
                2026/27: qui=SporTV, seg=ESPN, dom noite=SporTV, dom tarde=TV
                a confirmar; NFL Game Pass (DAZN) em todos.
+
+  TÊNIS ...... ESPN (ATP e WTA): jogos, horários e fase. Entram as quartas de
+               final em diante (Grand Slam: oitavas em diante), a fase de grupos
+               dos Finals e TODO jogo com brasileiro; jogo sem horário definido
+               ou sem os dois nomes não entra. A ESPN não informa emissora do
+               Brasil: o canal vem do contrato de cada circuito (canais_tenis).
+
+PLACAR: o app busca o placar na ESPN pelo endereço que o robô grava em cada
+jogo, no campo "pl" = "feed|AAAAMMDD|id do evento|c ou v" (c: o primeiro time
+do card é o mandante da ESPN; v: é o visitante). NBA, NFL, tênis e as tabelas
+oficiais já vêm da ESPN com o id. Os outros jogos de futebol são procurados na
+lista geral do dia (soccer/all, ~230 jogos num sábado): vale o jogo com os dois
+times e o horário batendo, na mesma categoria (feminino não casa com
+masculino). O que a ESPN não acompanha (estaduais, alguns campeonatos) fica sem
+"pl" e o app mostra só "ao vivo" pelo relógio.
+
+ENCERRADOS: os guias tiram da página o jogo que acabou. Jogo de HOJE que já
+começou e saiu da página continua na lista (com_memoria), para o app mostrar o
+placar final em "Mais cedo hoje".
+
+DATA: se a ESPN não tem o jogo no dia em que a fonte o listou, mas tem no dia ao
+lado (mesmos times, mesmo horário), a fonte errou a data: sai a cópia, ou o jogo
+vai para a data da ESPN (acerta_datas). Se os dois guias concordam no dia, valem
+os guias. Fica tudo registrado no diagnóstico (data_divergente, data_em_duvida).
 
 MEMÓRIA: de madrugada a página "hoje" do guia ainda mostra ontem e a de
 "amanhã" já pulou para depois de amanhã — o dia de hoje some por algumas horas.
@@ -77,7 +101,8 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-BUILD = "2026-11-21-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
+BUILD = "2026-11-21-b"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
+MEMORIA_DESDE = "2026-11-21-a"   # a memória gravada desta versão em diante tem o mesmo formato e continua valendo
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 DIAG = {"fontes": {}, "amostras": {}}
 DIAS_LIDOS = {"mantos": set(), "goal": set()}     # dias (ISO) que cada guia listou nesta coleta
@@ -362,13 +387,15 @@ class EnderecoMorto(Exception):
 ESPN_TENTATIVAS, ESPN_ESPERA = 3, 2      # tentativas por consulta; segundos de espera entre elas (x1, x2)
 ESPN_SUSPEITA_H = 12                     # resposta vazia para um dia que tinha jogos há menos de 12 h: não vale
 ESPN_CORTE = 4                           # consultas seguidas sem resposta até desistir da ESPN nesta coleta
-ESPN = {"memoria": {}, "agora": None, "faltas": [], "sem_resposta": set(), "seguidas": 0, "cortada": False}     # o main() zera a cada coleta
+ESPN = {"memoria": {}, "agora": None, "faltas": [], "sem_resposta": set(), "seguidas": 0, "cortada": False, "cortou": False}     # o main() zera a cada coleta
 
 def espn_json(path, data, extra=""):
+    return espn_pega(f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}{extra}")
+
+def espn_pega(url):
     # ESPN parada: depois de 4 consultas seguidas sem resposta, não insiste nas outras
     # (cada uma poderia levar minutos, e a coleta tem de terminar para publicar o resto)
     if ESPN["cortada"]: raise RuntimeError("ESPN sem resposta nesta coleta")
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={data:%Y%m%d}{extra}"
     erro = None
     for tentativa in range(1, ESPN_TENTATIVAS + 1):
         try:
@@ -388,10 +415,18 @@ def espn_json(path, data, extra=""):
                 erro = e
         if tentativa < ESPN_TENTATIVAS: time.sleep(ESPN_ESPERA * tentativa)
     ESPN["seguidas"] += 1
-    if ESPN["seguidas"] >= ESPN_CORTE: ESPN["cortada"] = True
+    if ESPN["seguidas"] >= ESPN_CORTE: ESPN["cortada"] = ESPN["cortou"] = True
     raise erro
 
-def le_espn(chave, path, dias, converte, extra=""):
+def espn_outra_fonte():
+    """Disjuntor meio aberto. O corte (4 consultas seguidas sem resposta) existe para a coleta não
+    ficar minutos esperando uma ESPN parada. Mas em 17/11/2026 só as consultas da NFL falhavam: por
+    isso cada fonte seguinte (NBA, NFL, tênis, lista geral) ainda tenta UMA consulta; se também
+    falhar, o corte volta na hora."""
+    if ESPN["cortada"]:
+        ESPN["cortada"], ESPN["seguidas"] = False, ESPN_CORTE - 1
+
+def le_espn(chave, path, dias, converte, extra="", vazio_vale=False):
     """Lê o scoreboard de `path` dia a dia e devolve os jogos já convertidos
     (`converte(evento cru)` devolve um evento do app, ou None para descartar).
     A ESPN às vezes falha numa consulta, ou responde uma lista vazia por engano;
@@ -406,7 +441,8 @@ def le_espn(chave, path, dias, converte, extra=""):
     O que veio da memória fica anotado em ESPN["faltas"]: vai para o log, para o
     diagnóstico e, se durar, para o alarme. Só levanta erro quando nenhum dia
     respondeu e não há memória nenhuma (endereço morto, ou ESPN fora do ar na
-    primeira coleta)."""
+    primeira coleta). `vazio_vale`: lista vazia é resposta normal (tênis: torneio que
+    acabou ou semana sem torneio), então nunca é tratada como suspeita."""
     copia = lambda x: json.loads(json.dumps(x))
     respostas, mortos = {}, []
     for data in dias:
@@ -438,8 +474,14 @@ def le_espn(chave, path, dias, converte, extra=""):
         g = guardado_de(dia)
         if dia in respostas:
             crus = respostas[dia]
-            if crus or not (g and g["jogos"]) or idade_h(g) > ESPN_SUSPEITA_H:
-                jogos = [j for j in map(converte_sem_quebrar, crus) if j]
+            if crus or vazio_vale or not (g and g["jogos"]) or idade_h(g) > ESPN_SUSPEITA_H:
+                jogos = []
+                for cru in crus:                     # um evento da ESPN pode virar vários jogos (um torneio de tênis)
+                    r = converte_sem_quebrar(cru)
+                    for j in (r if isinstance(r, list) else [r]):
+                        if isinstance(j, dict):
+                            j["_q"] = dia.replace("-", "")      # dia consultado: é com ele que o app pede o placar
+                            jogos.append(j)
                 nova[dia] = {"lido_em": agora.strftime("%d/%m %H:%M"), "em": agora.isoformat(timespec="minutes"), "jogos": copia(jogos)}
                 saida += jogos
                 continue
@@ -459,6 +501,14 @@ def le_espn(chave, path, dias, converte, extra=""):
     if not respostas and not saida:
         raise RuntimeError(f"ESPN {path}: nenhuma das {len(dias)} consultas respondeu")
     return saida
+
+RX_ID_ESPN = re.compile(r"^[\w-]{1,24}$")
+def com_placar(jogos, feed, lado="c"):
+    """Troca as anotações da ESPN (_id, _q) pelo endereço do placar: "feed|dia consultado|id|lado"."""
+    for e in jogos:
+        i, q = str(e.pop("_id", "") or ""), str(e.pop("_q", "") or "")
+        if RX_ID_ESPN.match(i) and re.fullmatch(r"\d{8}", q): e["pl"] = f"{feed}|{q}|{i}|{lado}"
+    return jogos
 
 # A ESPN agrupa os jogos pelo dia dos EUA. Jogo que começa depois da
 # meia-noite de Brasília (00h00–02h) pertence à rodada americana da VÉSPERA,
@@ -502,10 +552,13 @@ def fonte_nba():
                 f"{times[1]} x {times[0]} :: {broadcasts_espn(comp) or '(vazio)'}")
         notas = comp.get("notes", [])
         detalhe = (notas[0].get("headline") if notas else "") or "—"   # só o que a ESPN destaca (NBA Cup, jogo internacional)
-        return evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
+        jogo = evento(dt.date(), dt.strftime("%H:%M"), "Basquete", "NBA",
                       f"{times[1]} x {times[0]}", canais_nba(comp),
                       detail=detalhe, country="EUA/Canadá")
-    return dedup(le_espn("NBA", "basketball/nba", DIAS_EUA, converte))
+        jogo["_id"] = ev.get("id")
+        return jogo
+    espn_outra_fonte()
+    return dedup(com_placar(le_espn("NBA", "basketball/nba", DIAS_EUA, converte), "basketball/nba", "v"))       # no card, o visitante vem primeiro
 
 # Direitos NFL no Brasil 2026/27 (contratos públicos, por janela de horário):
 # quinta = SporTV; segunda à noite = ESPN; domingo à noite = SporTV;
@@ -532,11 +585,294 @@ def fonte_nfl():
         if len(times) < 2: return None
         notas = comp.get("notes", [])
         detalhe = (notas[0].get("headline") if notas else "") or "—"   # só o que a ESPN destaca (NBA Cup, jogo internacional)
-        return evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
+        jogo = evento(dt.date(), dt.strftime("%H:%M"), "Futebol Americano", "NFL",
                       f"{times[1]} x {times[0]}", canais_nfl(dt),
                       detail=detalhe, country="EUA/Canadá")
-    return dedup(le_espn("NFL", "football/nfl", DIAS_EUA, converte))
+        jogo["_id"] = ev.get("id")
+        return jogo
+    espn_outra_fonte()
+    return dedup(com_placar(le_espn("NFL", "football/nfl", DIAS_EUA, converte), "football/nfl", "v"))
 
+
+# =================================================================
+# TÊNIS — ESPN (ATP e WTA). Um evento da ESPN é um torneio inteiro; os jogos
+# vêm dentro, por chave (simples, duplas), com fase, horário e país de cada um.
+# =================================================================
+# Canal no Brasil: por contrato de cada circuito, não por jogo (a ESPN não
+# informa emissora daqui). Conferido em 21/11/2026:
+#   - temporada da ATP (Masters 1000, 500, 250, ATP Finals, Next Gen) e os quatro
+#     Grand Slams: ESPN, com tudo no Disney+ (Meio & Mensagem, 1/7 e 27/10/2026);
+#   - WTA fora dos Grand Slams: ESPN até o fim de 2026 e CazéTV a partir de 2027
+#     (Meio & Mensagem, 1/7/2026). Só que a ESPN lista junto os WTA 125, que não
+#     entram nesses contratos, e não diz o nível do torneio: fica "a confirmar";
+#   - Copa Davis (CazéTV) não existe nesta fonte.
+def canais_tenis(circuito, grand_slam):
+    if circuito == "ATP" or grand_slam:
+        return [{"n": "ESPN", "y": "tv"}, {"n": "Disney+", "y": "stream"}]
+    return [{"n": "Transmissão a confirmar", "y": "tv"}]
+
+TENIS = [("tennis/atp", "ATP", "M"), ("tennis/wta", "WTA", "F")]
+FASE_FINAL = {"final", "finals", "semifinal", "semifinals", "quarterfinal", "quarterfinals", "group stage", "round robin"}
+FASE_FINAL_SLAM = {"round of 16", "round 4", "4th round", "fourth round"}
+RODADA_PT = {"final": "Final", "finals": "Final", "semifinal": "Semifinal", "semifinals": "Semifinal",
+             "quarterfinal": "Quartas de final", "quarterfinals": "Quartas de final", "round of 16": "Oitavas de final",
+             "group stage": "Fase de grupos", "round robin": "Fase de grupos", "3rd place": "Disputa do 3º lugar"}
+def rodada_pt(rodada):
+    chave = " ".join(rodada.lower().split())
+    if chave in RODADA_PT: return RODADA_PT[chave]
+    m = re.fullmatch(r"round (\d)", chave) or re.fullmatch(r"(\d)(?:st|nd|rd|th) round", chave)
+    if m: return f"{m.group(1)}ª rodada"
+    m = re.fullmatch(r"round of (\d+)", chave)
+    if m: return f"Rodada de {m.group(1)}"
+    if chave.startswith("qualif"): return "Qualificatório"
+    return rodada.strip()
+
+def jogo_de_tenis(comp, torneio, grand_slam, duplas, circuito, sexo):
+    """Um jogo do torneio -> evento do app, ou None se não entra (ver regra no cabeçalho)."""
+    if comp.get("timeValid") is False: return None                      # a ESPN ainda não tem o horário
+    dt = datetime.fromisoformat(comp["date"].replace("Z", "+00:00")).astimezone(BRT)
+    if dt.date() not in JANELA: return None
+    lados = sorted(comp.get("competitors") or [], key=lambda c: c.get("order") or 9)
+    if len(lados) != 2: return None
+    nomes, brasil = [], False
+    for c in lados:
+        if duplas:
+            r = c.get("roster") or {}
+            nome, atletas = r.get("shortDisplayName") or r.get("displayName") or "", r.get("athletes") or []
+        else:
+            a = c.get("athlete") or {}
+            nome, atletas = a.get("displayName") or "", [a]
+        nome = " ".join(nome.split())
+        if not nome or "TBD" in re.split(r"\s*/\s*", nome.upper()): return None       # adversário ainda não definido
+        brasil = brasil or any(((a.get("flag") or {}).get("alt") or "").strip().lower() == "brazil" for a in atletas)
+        nomes.append(nome)
+    rodada = ((comp.get("round") or {}).get("displayName") or "").strip()
+    chave = " ".join(rodada.lower().split())
+    fase_final = chave in FASE_FINAL or (grand_slam and chave in FASE_FINAL_SLAM)
+    entra = brasil or (fase_final and not duplas and (circuito == "ATP" or grand_slam))
+    if not entra: return None
+    detalhe = ", ".join(x for x in (rodada_pt(rodada), "duplas" if duplas else "") if x) or "—"
+    jogo = evento(dt.date(), dt.strftime("%H:%M"), "Tênis", torneio, f"{nomes[0]} x {nomes[1]}",
+                  canais_tenis(circuito, grand_slam), detail=detalhe, g=sexo, country="Mundial")
+    jogo["_id"] = comp.get("id")
+    return jogo
+
+def fonte_tenis():
+    evs, por_circuito = [], {}
+    for path, circuito, sexo in TENIS:
+        def converte(ev, circuito=circuito, sexo=sexo):
+            torneio = " ".join((ev.get("name") or "Tênis").split())
+            saida = []
+            for chave in ev.get("groupings") or []:
+                duplas = "doubles" in ((chave.get("grouping") or {}).get("slug") or "")
+                for comp in chave.get("competitions") or []:
+                    try: jogo = jogo_de_tenis(comp, torneio, bool(ev.get("major")), duplas, circuito, sexo)
+                    except Exception: jogo = None                       # um jogo malformado não derruba o torneio
+                    if jogo: saida.append(jogo)
+            return saida
+        espn_outra_fonte()
+        try:
+            jogos = le_espn("Tênis " + circuito, path, JANELA, converte, vazio_vale=True)
+        except Exception as e:
+            por_circuito[circuito] = f"ERRO ({type(e).__name__})"
+            continue
+        vistos, unicos = set(), []                   # cada consulta devolve o torneio inteiro: o mesmo jogo vem em vários dias
+        for j in jogos:
+            if j.get("_id") in vistos: continue
+            vistos.add(j.get("_id")); unicos.append(j)
+        evs += com_placar(unicos, path)
+        por_circuito[circuito] = len(unicos)
+    DIAG["fontes"]["tenis"] = por_circuito
+    if por_circuito and all(str(v).startswith("ERRO") for v in por_circuito.values()):
+        raise RuntimeError("ESPN tênis: nenhum circuito respondeu")
+    return dedup(evs)
+
+# =================================================================
+# PLACAR — o mesmo jogo na lista geral da ESPN (soccer/all), para o app pedir
+# o placar pelo id do evento em vez de adivinhar pelo nome.
+# =================================================================
+URL_LIGAS_ESPN = "https://site.api.espn.com/apis/site/v2/leagues/dropdown?sport=soccer&limit=1000"
+RX_LIGA_FEM = re.compile(r"\.w\.|\.w$|nwsl|\.wchampions|\.weuro|\.wwc|\.wworld|\.womens|femenina|_reina", re.I)
+RX_LIGA_FEM_NOME = re.compile(r"women|femin|femen|frauen|vrouwen|\bliga f\b|\breina\b|f[ée]minine", re.I)
+RX_LIGA_BASE = re.compile(r"u(17|19|20|21|23)\b|under.?\d\d|youth|ncaa", re.I)
+
+def categoria_da_liga(slug, nome):
+    if RX_LIGA_FEM.search(slug) or RX_LIGA_FEM_NOME.search(nome): return "F"
+    if RX_LIGA_BASE.search(slug + " " + nome): return "base"
+    return "principal"
+
+def ligas_espn():
+    """id da liga -> (slug, nome) de todas as ligas de futebol da ESPN."""
+    return {str(l["id"]): (str(l["slug"]), str(l.get("name") or "")) for l in espn_pega(URL_LIGAS_ESPN).get("leagues") or []
+            if l.get("id") and re.fullmatch(r"[a-z0-9._-]+", str(l.get("slug") or ""))}
+
+def lista_geral_espn():
+    """Todos os jogos de futebol que a ESPN acompanha na janela, por dia de Brasília:
+    {dia: [{"t", "match", "id", "q" (dia consultado), "slug", "cat", "ok" (horário firme)}]}, e os dias
+    consultados (datas) que não responderam."""
+    espn_outra_fonte()
+    ligas = ligas_espn()
+    por_dia, faltas = {}, []
+    for data in DIAS_EUA:
+        try: crus = espn_json("soccer/all", data, "&limit=500").get("events") or []
+        except Exception: faltas.append(data); continue
+        for ev in crus:
+            try:
+                dt = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(BRT)
+                cs = ev["competitions"][0]["competitors"]
+                home = next((c for c in cs if c.get("homeAway") == "home"), cs[0])
+                away = next((c for c in cs if c.get("homeAway") == "away"), cs[-1])
+                lid = re.search(r"~l:(\d+)", ev.get("uid") or "")
+                slug, nome = ligas.get(lid.group(1), ("", "")) if lid else ("", "")
+                por_dia.setdefault(dt.date().isoformat(), []).append({
+                    "t": dt.strftime("%H:%M"), "id": str(ev["id"]), "q": f"{data:%Y%m%d}", "slug": slug, "cat": categoria_da_liga(slug, nome),
+                    "ok": ev["competitions"][0].get("timeValid") is not False,
+                    "match": " ".join(home["team"]["displayName"].split()) + " x " + " ".join(away["team"]["displayName"].split())})
+            except Exception: continue
+    return por_dia, faltas
+
+# palavras que não distinguem um time de outro ("City", "United", "Atlético"...)
+GENERICAS = set("""club clube city united real sporting athletic atletico deportivo deportes football futebol futbol team esporte sport racing
+union inter nacional national central olimpia america independiente universidad santos town county rovers wanderers""".split())
+def palavras(nome): return {w for w in norm(nome).split() if len(w) >= 4 and w not in GENERICAS}
+
+def casar_placar(e, candidatos):
+    """O MESMO jogo de `e` em `candidatos` (lista geral da ESPN, mesmo dia), ou None. Só na mesma
+    categoria (feminino não casa com masculino) e com o horário a até 1 hora. 1º: os dois times casam;
+    2º: mesmo horário, um time casa e o outro tem uma palavra em comum ("NE Revolution" e "New England
+    Revolution"). Havendo dúvida entre dois candidatos, não casa: melhor sem placar do que placar errado."""
+    cat = categoria(e)
+    if cat == "B": cat = "principal"
+    longe = lambda c: abs(minutos(c["t"]) - minutos(e["t"]))
+    perto = [c for c in candidatos if c["cat"] == cat and longe(c) <= 60]
+    nomes = [e["match"]] + ([e["espn"]] if e.get("espn") else [])
+    achados = sorted((c for c in perto if any(mesmo_jogo(c["match"], n) for n in nomes)), key=longe)
+    if achados:
+        return achados[0] if len(achados) == 1 or longe(achados[0]) < longe(achados[1]) else None
+    p = times_de(e["match"])
+    if not p: return None
+    def meio(c):
+        q = times_de(c["match"])
+        if not q or longe(c) > 5: return False
+        return any((casa_time(a, x) and palavras(b) & palavras(y)) or (casa_time(b, y) and palavras(a) & palavras(x))
+                   for (a, b), (x, y) in ((p, q), (p, q[::-1])))
+    meios = [c for c in perto if meio(c)]
+    return meios[0] if len(meios) == 1 else None
+
+def casar_no_dia_ao_lado(e, candidatos, sentido):
+    """O mesmo jogo de `e` na lista da ESPN do dia anterior (sentido -1) ou seguinte (+1), ou None. Só
+    vale com os dois times casando, na mesma categoria, com horário firme na ESPN e coerente com o da
+    fonte: o mesmo horário no outro dia (até 30 min: a fonte pôs o jogo na página do dia errado) ou a até
+    1 hora atravessando a meia-noite (23h30 de um dia e 00h15 do seguinte). Dois candidatos = não casa."""
+    cat = categoria(e)
+    if cat == "B": cat = "principal"
+    nomes = [e["match"]] + ([e["espn"]] if e.get("espn") else [])
+    de = minutos(e["t"])
+    def coerente(c):
+        para = minutos(c["t"])
+        if abs(de - para) <= 30: return True
+        return 0 <= (para + 1440 - de if sentido > 0 else de + 1440 - para) <= 60
+    achados = [c for c in candidatos if c["cat"] == cat and c.get("ok", True) and coerente(c) and any(mesmo_jogo(c["match"], n) for n in nomes)]
+    return achados[0] if len(achados) == 1 else None
+
+def junta_canais(fica, sai):
+    """`sai` é o mesmo jogo de `fica`, listado com a data errada: o que ele tem de melhor passa para o que fica."""
+    sem_canal = lambda e: all("confirmar" in c["n"].lower() for c in e["ch"])
+    if sem_canal(fica) and not sem_canal(sai): fica["ch"] = sai["ch"]
+    elif not sem_canal(sai):
+        tenho = {norm(c["n"]) for c in fica["ch"]}
+        fica["ch"] += [c for c in sai["ch"] if norm(c["n"]) not in tenho and "confirmar" not in c["n"].lower()]
+    if (fica.get("detail") or "—") in ("—", "Tabela oficial") and (sai.get("detail") or "—") not in ("—", "Tabela oficial"): fica["detail"] = sai["detail"]
+
+RX_PL_FUTEBOL = re.compile(r"^soccer/[a-z0-9._-]+\|\d{8}\|[\w-]{1,24}\|[cv]$")
+def data_guardada(g, dia):
+    """A correção de data guardada na coleta anterior, se estiver inteira e for mesmo de um dia ao lado."""
+    try:
+        return (isinstance(g, dict) and abs((datetime.fromisoformat(g["date"]).date() - dia).days) == 1 and bool(re.fullmatch(r"\d\d:\d\d", g["t"]))
+                and bool(RX_PL_FUTEBOL.match(g["pl"])) and isinstance(g["espn"], str))
+    except Exception: return False
+
+def acerta_datas(eventos, por_dia, guardadas=None, incompletos=frozenset()):
+    """Jogo de futebol que a ESPN não tem no dia em que a fonte o listou, mas tem no dia ao lado: a fonte
+    errou a data. Casos reais de 21/11/2026, os dois na página de domingo do guia principal: Pumas x
+    Monterrey (o 2º guia e a ESPN diziam sábado, e o app mostrou o jogo nos dois dias) e Carabobo x
+    Portuguesa (ESPN e calendário oficial da liga: sábado). Se o mesmo jogo já está na lista no dia certo,
+    sai a cópia; se não está, o jogo vai para a data e o horário da ESPN (a tabela oficial desempata, como
+    no horário). Se os DOIS guias listam o jogo no mesmo dia, valem os guias (duas fontes contra uma) e
+    fica só o registro. `guardadas`: correções da coleta anterior, que valem enquanto a ESPN não responder
+    sobre o dia (`incompletos`: dias sem resposta; None = todos).
+    Devolve (mudanças, dúvidas, correções para guardar)."""
+    dm = lambda iso: f"{iso[8:]}/{iso[5:7]}"
+    chave = lambda e: f'{e["date"]}|{norm(e["match"])}|{categoria(e)}'
+    guardadas = guardadas if isinstance(guardadas, dict) else {}
+    por_id = {e["pl"].split("|")[2]: e for e in eventos if e["sport"] == "Futebol" and e.get("pl")}
+    mudancas, duvidas, novas = [], [], {}
+    for e in list(eventos):
+        if e["sport"] != "Futebol" or e.get("pl"): continue
+        k, dia, alvo = chave(e), datetime.fromisoformat(e["date"]).date(), None
+        for sentido in (-1, 1):
+            vizinho = (dia + timedelta(days=sentido)).isoformat()
+            try: c = casar_no_dia_ao_lado(e, por_dia.get(vizinho, []), sentido)
+            except Exception: c = None
+            if c:
+                alvo = {"date": vizinho, "t": c["t"], "espn": c["match"],
+                        "pl": f'soccer/{c["slug"] or "all"}|{c["q"]}|{c["id"]}|' + ("v" if invertido(e["match"], c["match"]) else "c")}
+                break
+        if not alvo:
+            g = guardadas.get(k)
+            if data_guardada(g, dia) and (incompletos is None or g["date"] in incompletos): alvo = {x: g[x] for x in ("date", "t", "espn", "pl")}
+        if not alvo: continue
+        if {"guia", "guia2"} <= set(e.get("_t") or {}):
+            duvidas.append(f'{e["match"]}: os dois guias listam em {dm(e["date"])}; a ESPN, em {dm(alvo["date"])} → valem os guias')
+            continue
+        novas[k] = alvo
+        certo = por_id.get(alvo["pl"].split("|")[2])
+        if certo is not None:
+            junta_canais(certo, e)
+            eventos.remove(e)
+            mudancas.append(f'{e["match"]}: listado em {dm(e["date"])} e em {dm(certo["date"])}; a ESPN confirma {dm(certo["date"])} → sai o de {dm(e["date"])}')
+        else:
+            antes = f'{dm(e["date"])} {e["t"]}'
+            e["date"], e["t"], e["pl"] = alvo["date"], alvo["t"], alvo["pl"]
+            if not e.get("espn"): e["espn"] = alvo["espn"]
+            por_id[alvo["pl"].split("|")[2]] = e
+            mudancas.append(f'{e["match"]}: a fonte lista em {antes}; a ESPN, em {dm(e["date"])} {e["t"]} → vale a ESPN')
+    return mudancas, duvidas, novas
+
+def enderecos_de_placar(eventos, memoria):
+    """Grava "pl" nos jogos de futebol que ainda não têm (os que não vieram das tabelas) e acerta a data
+    dos que a ESPN tem no dia ao lado (acerta_datas). Se a lista geral da ESPN falhar, valem o endereço e
+    a correção de data guardados na coleta anterior para o mesmo jogo."""
+    chave = lambda e: f'{e["date"]}|{norm(e["match"])}|{categoria(e)}'
+    guardados = memoria.get("pl") if isinstance(memoria.get("pl"), dict) else {}
+    info = DIAG["amostras"]["placar"] = {}
+    try:
+        por_dia, faltas = lista_geral_espn()
+        info["lista_geral"] = {d: len(v) for d, v in sorted(por_dia.items())}
+        if faltas: info["dias_sem_resposta"] = [f"{d:%d/%m}" for d in faltas]
+        # o dia consultado é o dos EUA: cobre a noite desse dia e a madrugada do seguinte em Brasília
+        incompletos = {(d + timedelta(days=i)).isoformat() for d in faltas for i in (0, 1)}
+    except Exception as ex:
+        por_dia, incompletos = {}, None
+        info["erro"] = f"{type(ex).__name__}: {ex}"[:160]
+    falta = lambda dia: incompletos is None or dia in incompletos
+    da_memoria = 0
+    for e in eventos:
+        if e["sport"] != "Futebol" or e.get("pl"): continue
+        try: c = casar_placar(e, por_dia.get(e["date"], []))
+        except Exception: c = None
+        if c:
+            e["pl"] = f'soccer/{c["slug"] or "all"}|{c["q"]}|{c["id"]}|' + ("v" if invertido(e["match"], c["match"]) else "c")
+            if not e.get("espn"): e["espn"] = c["match"]
+        elif falta(e["date"]) and isinstance(guardados.get(chave(e)), str) and RX_PL_FUTEBOL.match(guardados[chave(e)]):
+            e["pl"] = guardados[chave(e)]; da_memoria += 1
+    info["data_divergente"], duvidas, memoria["datas"] = acerta_datas(eventos, por_dia, memoria.get("datas"), incompletos)
+    if duvidas: info["data_em_duvida"] = duvidas[:30]
+    memoria["pl"] = {chave(e): e["pl"] for e in eventos if e["sport"] == "Futebol" and e.get("pl")}
+    sem = [e for e in eventos if not e.get("pl")]
+    info.update({"com": len(eventos) - len(sem), "sem": len(sem), "da_memoria": da_memoria,
+                 "sem_placar": [f'{e["date"][8:]}/{e["date"][5:7]} {e["t"]} {e["match"]} [{e["league"]}]' for e in sem][:60]})
+    return info
 
 # =================================================================
 LIGAS_FIXTURES = [
@@ -589,9 +925,10 @@ def fonte_fixtures():
                           detail=detalhe, country=pais, v=1)
             if selecoes: jogo["sel"] = 1
             if comp.get("timeValid") is False: jogo["_tv"] = 0      # a ESPN ainda não tem o horário: não vale como fonte de horário
+            jogo["_id"] = ev.get("id")
             return jogo
         try:
-            jogos = le_espn(liga, slug, JANELA, converte, extra)
+            jogos = com_placar(le_espn(liga, slug, JANELA, converte, extra), slug)
         except Exception as e:
             por_liga[liga] = f"ERRO ({type(e).__name__})"   # slug inválido ou ESPN fora do ar
             continue
@@ -639,6 +976,12 @@ def mesmo_jogo(m1, m2):
     return (casa_time(p1[0], p2[0]) and casa_time(p1[1], p2[1])) or \
            (casa_time(p1[0], p2[1]) and casa_time(p1[1], p2[0]))
 
+def invertido(meu, da_espn):
+    """O primeiro time do card é o SEGUNDO da ESPN? (o placar da ESPN vem mandante x visitante)"""
+    p, q = times_de(meu), times_de(da_espn)
+    if not p or not q: return False
+    return not (casa_time(p[0], q[0]) or casa_time(p[1], q[1])) and (casa_time(p[0], q[1]) or casa_time(p[1], q[0]))
+
 def um_time_em_comum(m1, m2):
     p1, p2 = times_de(m1), times_de(m2)
     return bool(p1 and p2) and any(casa_time(a, b) for a in p1 for b in p2)
@@ -679,6 +1022,7 @@ def complementar_fixtures(base, fixtures):
             base.append(fx)
             continue
         achou["espn"] = fx["match"]
+        if fx.get("pl"): achou["pl"] = fx["pl"][:-1] + ("v" if invertido(achou["match"], fx["match"]) else "c")
         if fx.get("_tv", 1): achou.setdefault("_t", {})["espn"] = fx["t"]      # o horário da tabela entra na conta (acerta_horarios)
         if fx.get("sel"): achou["sel"] = 1
         confere = abs(minutos(achou["t"]) - minutos(fx["t"])) <= 30
@@ -841,11 +1185,16 @@ def avaliar_saude(anterior, problemas, agora):
 # =================================================================
 MEMORIA = "memoria_guias.json"
 
+def minuto_de_agora():
+    n = datetime.now(BRT); return n.hour * 60 + n.minute
+
 def com_memoria(nome, lidos, memoria, agora):
     """Junta o que o guia `nome` listou agora com a memória dos dias que ele
     deixou de listar. `lidos` = jogos desta coleta; DIAS_LIDOS[nome] = dias cujo
     título a página trouxe. Regra, para cada dia da janela:
-      - a página trouxe o título do dia -> vale a leitura de agora (substitui a memória);
+      - a página trouxe o título do dia -> vale a leitura de agora (substitui a memória).
+        Só no dia de HOJE há um acréscimo: jogo que já começou e saiu da página continua
+        (os guias tiram o que acabou; o app precisa dele para mostrar o placar final);
       - não trouxe -> vale a última leitura daquele dia, mais algum jogo que tenha
         caído nele agora (o da madrugada, listado no fim do dia anterior).
     Atualiza `memoria[nome]` e devolve (jogos, dias que vieram da memória)."""
@@ -854,7 +1203,16 @@ def com_memoria(nome, lidos, memoria, agora):
     for e in lidos: por_dia.setdefault(e["date"], []).append(e)
     for dia in (d.isoformat() for d in JANELA):
         if dia in DIAS_LIDOS[nome]:
-            nova[dia] = {"lido_em": agora, "jogos": copia(por_dia.get(dia, []))}
+            de_agora, ficam = copia(por_dia.get(dia, [])), []
+            if dia == HOJE.isoformat():
+                minuto = minuto_de_agora()
+                for e in (antiga.get(dia) or {}).get("jogos") or []:
+                    try:
+                        if minutos(e["t"]) <= minuto and not any(categoria(x) == categoria(e) and mesmo_jogo(x["match"], e["match"]) for x in de_agora):
+                            ficam.append(copia(e))
+                    except Exception: pass                    # registro estragado na memória: não fica
+            if ficam: DIAG["amostras"].setdefault("encerrados_mantidos", {})[nome] = [f'{e["t"]} {e["match"]}' for e in ficam][:40]
+            nova[dia] = {"lido_em": agora, "jogos": de_agora + ficam}
             continue
         guardado = antiga.get(dia) or {}
         de_agora = copia(por_dia.get(dia, []))
@@ -991,12 +1349,12 @@ def main():
         saude_anterior = {}
     try:        # última leitura de cada dia dos guias — só vale a gravada por esta mesma versão
         memoria = json.loads(Path(MEMORIA).read_text(encoding="utf-8"))
-        assert isinstance(memoria, dict) and memoria.get("build") == BUILD
+        assert isinstance(memoria, dict) and MEMORIA_DESDE <= str(memoria.get("build") or "") <= BUILD
     except Exception:
         memoria = {}
     memoria["build"] = DIAG["build"] = BUILD
     for dias in DIAS_LIDOS.values(): dias.clear()
-    ESPN.update(memoria=memoria, agora=agora_dt, faltas=[], sem_resposta=set(), seguidas=0, cortada=False)
+    ESPN.update(memoria=memoria, agora=agora_dt, faltas=[], sem_resposta=set(), seguidas=0, cortada=False, cortou=False)
     agora_txt = agora_dt.strftime("%d/%m %H:%M")
 
     def le_guia(rotulo, nome, fn):
@@ -1018,6 +1376,8 @@ def main():
     Path(MEMORIA).write_text(json.dumps(memoria, ensure_ascii=False, indent=1), encoding="utf-8")
     for nome, dias in (("mantosdofutebol", mem1), ("goal (2º guia)", mem2)):
         if dias: log.append(f"  ↺ {nome}: a página não listou {', '.join(dias)} — vale a última leitura")
+    for nome, jogos in (DIAG["amostras"].get("encerrados_mantidos") or {}).items():
+        log.append(f"  ↺ {nome}: {len(jogos)} jogo(s) de hoje já saíram da página e seguem na lista (encerrados)")
     DIAG["amostras"]["memoria"] = {"mantos": mem1, "goal": mem2}
     for e in guia: e["_t"] = {"guia": e["t"]}              # o horário que cada fonte deu (ver acerta_horarios)
     for e in segundo: e["_t"] = {"guia2": e["t"]}
@@ -1032,10 +1392,11 @@ def main():
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN NFL", fonte_nfl, log)
+    eventos += roda("ESPN tênis", fonte_tenis, log)
     # memória de novo, agora com a leitura da ESPN; e o que a ESPN deixou de responder nesta coleta
     Path(MEMORIA).write_text(json.dumps(memoria, ensure_ascii=False, indent=1), encoding="utf-8")
     ESPN["faltas"].sort(key=lambda f: "com 0 jogo(s)" in f)          # primeiro as que envolvem jogos
-    if ESPN["cortada"]: log.append("  ✗ ESPN parou de responder: as consultas seguintes desta coleta não foram feitas")
+    if ESPN["cortou"]: log.append("  ✗ ESPN parou de responder numa das fontes: as consultas seguintes dela nesta coleta não foram feitas")
     for falta in ESPN["faltas"][:12]: log.append(f"  ↺ ESPN {falta}")
     if len(ESPN["faltas"]) > 12: log.append(f'  ↺ ESPN: mais {len(ESPN["faltas"]) - 12} consulta(s) na mesma situação')
     DIAG["amostras"]["espn_faltas"] = ESPN["faltas"][:60]
@@ -1055,8 +1416,23 @@ def main():
         e["ch"] = list(unicos.values())
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
         if eh_selecao(e): e["sel"] = 1            # filtro "Seleções" do app
-        for k in [k for k in e if k.startswith("_")]: del e[k]      # anotações internas nunca vão para o app
     eventos.sort(key=lambda e: (e["date"], e["t"]))
+    try:        # endereço do placar de cada jogo; se falhar, os jogos saem do mesmo jeito, só sem "pl"
+        placar = enderecos_de_placar(eventos, memoria)
+        log.append(f'  ✓ placar: {placar["com"]} jogo(s) com endereço na ESPN, {placar["sem"]} sem'
+                   + (f' — lista geral sem resposta em {", ".join(placar["dias_sem_resposta"])}' if placar.get("dias_sem_resposta") else "")
+                   + (f' — lista geral indisponível ({placar["erro"]})' if placar.get("erro") else ""))
+        if placar.get("data_divergente"):
+            log.append(f'  ! data: {len(placar["data_divergente"])} jogo(s) com a data divergente — ' + "; ".join(placar["data_divergente"][:3]))
+        if placar.get("data_em_duvida"):
+            log.append(f'  ! data: {len(placar["data_em_duvida"])} jogo(s) em que os dois guias e a ESPN discordam do dia — ' + "; ".join(placar["data_em_duvida"][:3]))
+    except Exception as e:
+        log.append(f"  ✗ placar: endereços não gravados ({type(e).__name__}: {e})")
+    eventos[:] = [e for e in eventos if JANELA[0].isoformat() <= e["date"] <= JANELA[-1].isoformat()]       # a correção de data pode ter tirado um jogo da janela
+    eventos.sort(key=lambda e: (e["date"], e["t"]))
+    for e in eventos:
+        for k in [k for k in e if k.startswith("_")]: del e[k]      # anotações internas nunca vão para o app
+    Path(MEMORIA).write_text(json.dumps(memoria, ensure_ascii=False, indent=1), encoding="utf-8")
 
     Path("eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1), encoding="utf-8")
     log.append(f"TOTAL: {len(eventos)} eventos → eventos.json")
