@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# build: 2026-11-17-b (ESPN com nova tentativa e memória por dia; canal entre parênteses; "Juniors" não é base)
+# build: 2026-11-21-a (horário: quando as fontes discordam, vale o de duas; a tabela oficial desempata)
 """
 ONDE.ASSISTIR — Pipeline de dados v5 (auditoria de nov/2026)
 ============================================================
@@ -47,6 +47,14 @@ dados embutidos), memoria_guias.json (última leitura de cada dia dos guias) e
 diagnostico.json (log das fontes + amostras brutas — é por ele que se depura,
 sem precisar do log do Actions).
 
+HORÁRIO: cada fonte que lista um jogo dá o seu horário (guia principal, 2º
+guia, tabela oficial da ESPN). Quase sempre são iguais. Quando não são, vale o
+horário em que DUAS fontes concordam; sem maioria, vale a tabela oficial, depois
+o guia principal (acerta_horarios). Toda divergência vai para o diagnóstico. Em
+21/11/2026 o guia principal trouxe Bahia x Coritiba às 17h00; o 2º guia e a
+tabela diziam 17h30 (o certo) e o app mostrou 17h00, porque o guia principal
+mandava sempre que a diferença fosse de até 30 minutos.
+
 ALARME: se o guia principal ficar 2 horas sem jogos (ou a ESPN inteira fora),
 a ESPN ficar 6 horas falhando em alguma consulta, ou o segundo guia ficar um
 dia sem jogos, o robô publica o que tem e depois
@@ -69,7 +77,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-BUILD = "2026-11-17-b"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
+BUILD = "2026-11-21-a"       # igual à 2ª linha deste arquivo; carimba o diagnóstico e a memória
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; OndeAssistir/3.0)"}
 DIAG = {"fontes": {}, "amostras": {}}
 DIAS_LIDOS = {"mantos": set(), "goal": set()}     # dias (ISO) que cada guia listou nesta coleta
@@ -580,6 +588,7 @@ def fonte_fixtures():
                           f"{hn} x {an}", [{"n": "Transmissão a confirmar", "y": "tv"}],
                           detail=detalhe, country=pais, v=1)
             if selecoes: jogo["sel"] = 1
+            if comp.get("timeValid") is False: jogo["_tv"] = 0      # a ESPN ainda não tem o horário: não vale como fonte de horário
             return jogo
         try:
             jogos = le_espn(liga, slug, JANELA, converte, extra)
@@ -666,9 +675,11 @@ def complementar_fixtures(base, fixtures):
     for fx in fixtures:
         achou = casar_fontes(fx, base)
         if achou is None:
+            if fx.get("_tv", 1): fx["_t"] = {"espn": fx["t"]}
             base.append(fx)
             continue
         achou["espn"] = fx["match"]
+        if fx.get("_tv", 1): achou.setdefault("_t", {})["espn"] = fx["t"]      # o horário da tabela entra na conta (acerta_horarios)
         if fx.get("sel"): achou["sel"] = 1
         confere = abs(minutos(achou["t"]) - minutos(fx["t"])) <= 30
         if confere:
@@ -684,6 +695,36 @@ def complementar_fixtures(base, fixtures):
     if divergencias:
         DIAG["amostras"]["horario_guia_x_espn"] = divergencias
     return base
+
+# =================================================================
+# Horário: o que vale quando as fontes discordam
+# =================================================================
+ORDEM_HORARIO = ("espn", "guia", "guia2")           # sem maioria: tabela oficial, guia principal, 2º guia
+NOME_FONTE = {"guia": "guia", "guia2": "2º guia", "espn": "tabela"}
+
+def acerta_horarios(eventos):
+    """Cada jogo traz em "_t" o horário que cada fonte deu ({"guia": "17:00",
+    "guia2": "17:30", "espn": "17:30"}). Vale o horário com mais fontes; no
+    empate, o da tabela oficial, depois o do guia principal. O selo v=2 passa a
+    dizer exatamente isso: duas fontes deram ESTE horário. Devolve a lista das
+    divergências (texto), que vai para o log e para o diagnóstico; "_t" e "_tv"
+    saem do evento."""
+    divergencias = []
+    for e in eventos:
+        ts = e.pop("_t", None)
+        e.pop("_tv", None)
+        if not isinstance(ts, dict) or not ts: continue
+        votos = {}
+        for t in ts.values(): votos[t] = votos.get(t, 0) + 1
+        maior = max(votos.values())
+        empatados = [t for t, n in votos.items() if n == maior]
+        escolhido = empatados[0] if len(empatados) == 1 else next(ts[f] for f in ORDEM_HORARIO if ts.get(f) in empatados)
+        if len(votos) > 1:
+            divergencias.append(f'{e["date"][8:]}/{e["date"][5:7]} {e["match"]}: '
+                                + ", ".join(f"{NOME_FONTE[f]} {ts[f]}" for f in ("guia", "guia2", "espn") if f in ts) + f" → vale {escolhido}")
+        e["t"] = escolhido
+        e["v"] = 2 if votos[escolhido] >= 2 else 1
+    return divergencias
 
 # =================================================================
 # Seleções (filtro "Seleções" do app: datas FIFA, Euro, Copa América...)
@@ -905,6 +946,7 @@ def juntar_guias(principal, segundo):
         if achou is None:
             extras.append(ev)
             continue
+        achou.setdefault("_t", {}).update(ev.get("_t") or {})       # o horário do 2º guia entra na conta (acerta_horarios)
         if abs(minutos(achou["t"]) - minutos(ev["t"])) <= 30:
             achou["v"] = 2
         elif len(divergencias) < 5:
@@ -977,10 +1019,16 @@ def main():
     for nome, dias in (("mantosdofutebol", mem1), ("goal (2º guia)", mem2)):
         if dias: log.append(f"  ↺ {nome}: a página não listou {', '.join(dias)} — vale a última leitura")
     DIAG["amostras"]["memoria"] = {"mantos": mem1, "goal": mem2}
+    for e in guia: e["_t"] = {"guia": e["t"]}              # o horário que cada fonte deu (ver acerta_horarios)
+    for e in segundo: e["_t"] = {"guia2": e["t"]}
     eventos = juntar_guias(guia, segundo)
 
     fixtures = roda("ESPN tabelas (futebol, 7 dias)", fonte_fixtures, log)
     eventos = complementar_fixtures(eventos, fixtures)
+    divergentes = acerta_horarios(eventos)
+    DIAG["amostras"]["horario_divergente"] = divergentes[:30]
+    if divergentes:
+        log.append(f"  ! horário: as fontes discordam em {len(divergentes)} jogo(s) — " + "; ".join(divergentes[:4]))
 
     eventos += roda("ESPN NBA", fonte_nba, log)
     eventos += roda("ESPN NFL", fonte_nfl, log)
@@ -1007,6 +1055,7 @@ def main():
         e["ch"] = list(unicos.values())
         if not e["ch"]: e["ch"] = [{"n": "Transmissão a confirmar", "y": "tv"}]
         if eh_selecao(e): e["sel"] = 1            # filtro "Seleções" do app
+        for k in [k for k in e if k.startswith("_")]: del e[k]      # anotações internas nunca vão para o app
     eventos.sort(key=lambda e: (e["date"], e["t"]))
 
     Path("eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1), encoding="utf-8")
