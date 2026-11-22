@@ -22,9 +22,10 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 22/11 05:14 BRT — janela 2026-11-22 a 2026-11-28",
-   "  ✓ mantosdofutebol: 95 evento(s)",
+   "Coleta 22/11 13:27 BRT — janela 2026-11-22 a 2026-11-28",
+   "  ✓ mantosdofutebol: 85 evento(s)",
    "  ✓ goal (2º guia): 62 evento(s)",
+   "  ↺ mantos: 10 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 46 evento(s)",
@@ -44,7 +45,7 @@
      {
       "cabecalho": "Domingo – 22/11",
       "data": "2026-11-22",
-      "jogos": 54
+      "jogos": 44
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -80,9 +81,23 @@
     "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "01:00 Melbourne Victory x Perth Glory",
+    "08:00 Dynamo Moscow x Krasnodar",
+    "08:30 Juventus x Venezia",
+    "09:00 Burnley x Blackburn Rovers",
+    "09:30 Energie Cottbus x Hertha Berlin",
+    "09:30 Kaiserslautern x Dynamo Dresden",
+    "09:30 Karlsruher x Osnabrück",
+    "10:00 Barcelona x Villarreal",
+    "10:00 Konyaspor x Besiktas",
+    "10:00 Sirius x Djurgarden"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 492287,
+   "bytes": 492284,
    "tabelas": 4,
    "dias": [
     {
@@ -141,7 +156,7 @@
     "2026-11-24": 80,
     "2026-11-25": 62,
     "2026-11-26": 56,
-    "2026-11-27": 77,
+    "2026-11-27": 78,
     "2026-11-28": 234,
     "2026-11-29": 4
    },
