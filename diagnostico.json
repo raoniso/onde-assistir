@@ -3,14 +3,14 @@
   "espn_tabelas_por_liga": {
    "Champions League": 18,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 13,
-   "Brasileirão Série B": 3,
-   "Copa Libertadores": 0,
-   "Copa Sul-Americana": 1,
-   "Premier League": 11,
+   "Brasileirão Série A": 11,
+   "Brasileirão Série B": 5,
+   "Copa Libertadores": 1,
+   "Copa Sul-Americana": 0,
+   "Premier League": 7,
    "La Liga": 10,
-   "Bundesliga": 9,
-   "Campeonato Italiano": 11,
+   "Bundesliga": 8,
+   "Campeonato Italiano": 10,
    "Campeonato Francês": 9,
    "Amistoso": 0,
    "UEFA Nations League": 0,
@@ -18,22 +18,21 @@
    "Eliminatórias da Euro": 0
   },
   "tenis": {
-   "ATP": 3,
+   "ATP": 1,
    "WTA": 0
   },
   "log": [
-   "Coleta 21/11 21:29 BRT — janela 2026-11-21 a 2026-11-27",
-   "  ✓ mantosdofutebol: 73 evento(s)",
-   "  ✓ goal (2º guia): 104 evento(s)",
-   "  ↺ mantos: 40 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 85 evento(s)",
-   "  ! horário: as fontes discordam em 1 jogo(s) — 21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30",
-   "  ✓ ESPN NBA: 48 evento(s)",
+   "Coleta 22/11 05:14 BRT — janela 2026-11-22 a 2026-11-28",
+   "  ✓ mantosdofutebol: 95 evento(s)",
+   "  ✓ goal (2º guia): 62 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 79 evento(s)",
+   "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
+   "  ✓ ESPN NBA: 46 evento(s)",
    "  ✓ ESPN NFL: 17 evento(s)",
-   "  ✓ ESPN tênis: 3 evento(s)",
-   "  ✓ placar: 216 jogo(s) com endereço na ESPN, 22 sem",
-   "  ! data: 3 jogo(s) com a data divergente — Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN; Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11; San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN",
-   "TOTAL: 238 eventos → eventos.json",
+   "  ✓ ESPN tênis: 1 evento(s)",
+   "  ✓ placar: 183 jogo(s) com endereço na ESPN, 26 sem",
+   "  ! data: 3 jogo(s) com a data divergente — Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN; Pumas UNAM x Monterrey: a fonte lista em 22/11 22:00; a ESPN, em 21/11 22:00 → vale a ESPN; SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
+   "TOTAL: 207 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -41,24 +40,6 @@
   "mantos": [
    {
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
-    "dias": [
-     {
-      "cabecalho": "Sábado – 21/11",
-      "data": "2026-11-21",
-      "jogos": 19
-     }
-    ],
-    "jogos_sem_cabecalho": 0,
-    "jogos_sem_canal": 0,
-    "jogos_sem_competicao": 0,
-    "futsal_descartados": 1,
-    "linhas_emendadas": [],
-    "madrugada_no_dia_seguinte": [],
-    "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
-   },
-   {
-    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
       "cabecalho": "Domingo – 22/11",
@@ -74,62 +55,36 @@
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
+   },
+   {
+    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
+    "dias": [
+     {
+      "cabecalho": "Segunda – 23/11",
+      "data": "2026-11-23",
+      "jogos": 16
+     },
+     {
+      "cabecalho": "Terça – 24/11",
+      "data": "2026-11-24",
+      "jogos": 25
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "jogos_sem_competicao": 0,
+    "futsal_descartados": 2,
+    "linhas_emendadas": [],
+    "madrugada_no_dia_seguinte": [],
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": []
    }
   ],
-  "encerrados_mantidos": {
-   "mantos": [
-    "11:00 Sigma x Slavia Praga",
-    "11:00 Lazio x Lecce",
-    "11:00 Como 1907 x Cagliari",
-    "11:00 São Paulo x Santos",
-    "11:30 Borussia Mönchengladbach x Borussia Dortmund",
-    "11:30 Union Berlin x RB Leipzig",
-    "11:30 Eintracht Frankfurt x Hoffenheim",
-    "11:30 Elversberg x Freiburg",
-    "11:30 Bayer Leverkusen x Paderborn",
-    "11:30 Rubin Kazan x Zenit",
-    "12:00 Brasil x Irlanda",
-    "12:00 Bournemouth x Nottingham Forest",
-    "12:00 Chelsea x Leeds United",
-    "12:00 Aston Villa x Sunderland",
-    "12:00 Tottenham x Ipswich Town",
-    "12:00 Wolverhampton x Charlton",
-    "12:00 Charleroi x Sint-Truiden",
-    "12:15 Rayo Vallecano x Valencia",
-    "12:30 NEC Nijmegen x PSV",
-    "13:00 Kocaelispor x Fenerbahçe",
-    "13:15 Nice x PSG",
-    "13:45 CSKA Moscow x Akhmat Grozny",
-    "14:00 Parma x Roma",
-    "14:00 Young Boys x Thun",
-    "14:30 Newcastle x Arsenal",
-    "14:30 Schalke 04 x Stuttgart",
-    "14:30 Sevilla x Real Bétis",
-    "14:45 Feyenoord x Excelsior",
-    "15:30 Empoli x Pisa",
-    "15:30 Paraná Clube x Athletico-PR B",
-    "16:00 Petrolina x América-PE",
-    "16:00 NE Revolution x Philadelphia Union",
-    "01:00 Auckland FC x Melbourne Victory",
-    "03:00 Central Coast Marine x Perth Glory",
-    "08:00 Eintracht Frankfurt x Hamburgo",
-    "09:00 Hannover 96 x Greuther Fürth",
-    "09:00 Nürnberg x Eintracht Braunschweig",
-    "09:00 Wolfsburg x Holstein Kiel",
-    "09:30 Manchester City x Fulham",
-    "09:30 Millwall x Queens Park Rangers"
-   ]
-  },
   "goal": {
    "http": 200,
-   "bytes": 645934,
-   "tabelas": 5,
+   "bytes": 492287,
+   "tabelas": 4,
    "dias": [
-    {
-     "titulo": "Jogos de sábado, 21 de novembro de 2026",
-     "data": "2026-11-21",
-     "jogos": 42
-    },
     {
      "titulo": "Jogos de domingo, 22 de novembro de 2026",
      "data": "2026-11-22",
@@ -153,66 +108,52 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 68,
+   "nos_dois": 54,
    "so_no_segundo": [
-    "11-21 12:00 Coventry City x Crystal Palace [Campeonato Inglês]",
-    "11-21 22:00 Pumas x Monterrey [Campeonato Mexicano]",
-    "11-23 10:45 Neftchi Fargona x Al Hilal [Champions League da Ásia]",
     "11-23 13:00 Al Ain x Esteghlal [Champions League da Ásia]",
-    "11-23 13:00 Al Shamal x Al Ahli [Champions League da Ásia]",
     "11-23 13:00 Tractor x Al Wasl [Champions League da Ásia]",
-    "11-23 15:15 Al Ittihad x Pakhtakor Tashkent [Champions League da Ásia]",
     "11-23 15:15 Air Force SC x Al Gharafa [Champions League da Ásia]",
-    "11-23 16:45 Monza x Fiorentina [Campeonato Italiano]",
-    "11-23 17:00 Brentford x Everton [Campeonato Inglês]",
-    "11-23 17:00 Levante x Elche [Campeonato Espanhol]",
-    "11-23 19:30 Internacional x Vitória [Campeonato Brasileiro]",
-    "11-23 20:00 Botafogo x São Paulo [Campeonato Brasileiro]",
-    "11-23 21:00 Santos x Grêmio [Campeonato Brasileiro]",
-    "11-23 22:00 St. Louis City x Los Angeles FC [MLS]"
+    "11-24 04:45 Newcastle Jets x Kashiwa Reysol [Champions League da Ásia]",
+    "11-24 07:00 Daejeon Citizen x Beijing Guoan [Champions League da Ásia]",
+    "11-24 07:00 Kyoto Sanga x Pohang Steelers [Champions League da Ásia]",
+    "11-24 09:15 Cong An Ha Noi x Vissel Kobe [Champions League da Ásia]",
+    "11-24 09:15 Ratchaburi x Johor Darul [Champions League da Ásia]"
    ],
-   "horario_diferente": []
+   "horario_diferente": [
+    "2026-11-24 SJ Earthquakes x Houston Dynamo: principal 23:55 x segundo 00:00"
+   ]
   },
   "horario_divergente": [
-   "21/11 Bahia x Coritiba: guia 17:00, 2º guia 17:30, tabela 17:30 → vale 17:30"
+   "24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55"
   ],
   "nba_broadcasts": [
-   "Houston Rockets x Denver Nuggets :: PRIME VIDEO | ERADM | PRIME VIDEO",
-   "Sacramento Kings x Los Angeles Lakers :: SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET +",
-   "Milwaukee Bucks x Philadelphia 76ers :: MYMI | BUCKS APP | MYMI | BUCKS APP",
-   "Portland Trail Blazers x New York Knicks :: NBA TV | KUNP 16 | BLAZERVISION | NBA TV | KUNP 16 | BLAZERVISION"
+   "Boston Celtics x Sacramento Kings :: NBA TV | NBA TV",
+   "Detroit Pistons x Atlanta Hawks :: (vazio)",
+   "Oklahoma City Thunder x Miami Heat :: KSBI | THUNDER APP | KSBI | THUNDER APP",
+   "Orlando Magic x Washington Wizards :: MNMT | MNMT"
   ],
   "espn_faltas": [],
   "placar": {
    "lista_geral": {
-    "2026-11-20": 86,
-    "2026-11-21": 227,
-    "2026-11-22": 156,
+    "2026-11-21": 223,
+    "2026-11-22": 157,
     "2026-11-23": 43,
     "2026-11-24": 80,
     "2026-11-25": 62,
     "2026-11-26": 56,
-    "2026-11-27": 75,
-    "2026-11-28": 1
+    "2026-11-27": 77,
+    "2026-11-28": 234,
+    "2026-11-29": 4
    },
    "data_divergente": [
     "Carabobo x Portuguesa-VEN: a fonte lista em 22/11 18:30; a ESPN, em 21/11 18:30 → vale a ESPN",
-    "Pumas UNAM x Monterrey: listado em 22/11 e em 21/11; a ESPN confirma 21/11 → sai o de 22/11",
-    "San Jose Earthquakes x Houston Dynamo: a fonte lista em 24/11 00:00; a ESPN, em 25/11 00:00 → vale a ESPN"
+    "Pumas UNAM x Monterrey: a fonte lista em 22/11 22:00; a ESPN, em 21/11 22:00 → vale a ESPN",
+    "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN"
    ],
-   "com": 216,
-   "sem": 22,
+   "com": 183,
+   "sem": 26,
    "da_memoria": 0,
    "sem_placar": [
-    "21/11 08:00 Eintracht Frankfurt x Hamburgo [Bundesliga Feminina]",
-    "21/11 10:00 Estrela Vermelha x Radnik Surdulika [Campeonato Sérvio]",
-    "21/11 11:00 São Paulo x Santos [Paulistão Feminino]",
-    "21/11 11:00 Sigma x Slavia Praga [Campeonato Checo]",
-    "21/11 12:00 Brasil x Irlanda [Copa do Mundo FIFA Sub-17]",
-    "21/11 14:00 Young Boys x Thun [Liga Suíça]",
-    "21/11 15:30 Paraná Clube x Athletico-PR B [Copa Paraná]",
-    "21/11 16:00 Petrolina x América-PE [Campeonato Pernambucano]",
-    "21/11 17:00 Central x Íbis [Campeonato Pernambucano]",
     "22/11 11:00 Corinthians x Red Bull Bragantino [Paulistão Feminino]",
     "22/11 12:00 RB Leipzig x Wolfsburg [Bundesliga Feminina]",
     "22/11 14:00 Sparta Praga x Slovan Liberec [Campeonato Checo]",
@@ -224,8 +165,21 @@
     "22/11 17:00 Guarani de Juazeiro x Icasa [Taça Fares Lopes]",
     "22/11 17:00 Vila Real x Atlético-CE [Taça Fares Lopes]",
     "22/11 17:00 Tirol x Palmácia [Taça Fares Lopes]",
+    "23/11 13:00 Al Shamal x Al-Ahli Saudi [AFC Champions League]",
+    "23/11 14:00 Bayern de Munique x Hoffenheim [Bundesliga Feminina]",
+    "23/11 15:00 Brondby x Midtjlland [Campeonato Dinamarquês]",
+    "23/11 15:00 Al Ahly x Pyramids [Campeonato Egípcio]",
     "23/11 15:15 Air Force SC x Al Gharafa [Champions League da Ásia]",
-    "23/11 22:00 St. Louis City x Los Angeles FC [MLS]"
+    "23/11 22:00 St. Louis City x Los Angeles FC [MLS]",
+    "24/11 11:00 São Paulo x Criciúma [Copinha Feminina]",
+    "24/11 12:00 Brasil x Tanzânia [Copa do Mundo Sub-17]",
+    "24/11 13:00 Shabab Al Ahli x Al-Quadisiya [AFC Champions League]",
+    "24/11 15:00 Fluminense x Vitória [Copinha Feminina]",
+    "24/11 16:00 Centro Olímpico-SP x Grêmio [Copinha Feminina]",
+    "24/11 19:00 Flamengo x Vasco da Gama [Copinha Feminina]",
+    "24/11 20:00 Ferroviária x Aliança-GO [Copinha Feminina]",
+    "24/11 21:30 Palmeiras x Tarumã-AM [Copinha Feminina]",
+    "24/11 21:30 São Paulo x Atlético-MG [Copa do Brasil Sub-20]"
    ]
   }
  },
