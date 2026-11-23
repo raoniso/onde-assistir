@@ -4,7 +4,7 @@
    "Champions League": 18,
    "Copa do Brasil": 0,
    "Brasileirão Série A": 14,
-   "Brasileirão Série B": 3,
+   "Brasileirão Série B": 2,
    "Copa Libertadores": 1,
    "Copa Sul-Americana": 0,
    "Premier League": 11,
@@ -22,17 +22,17 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 23/11 00:49 BRT — janela 2026-11-23 a 2026-11-29",
+   "Coleta 23/11 11:59 BRT — janela 2026-11-23 a 2026-11-29",
    "  ✓ mantosdofutebol: 64 evento(s)",
-   "  ✓ goal (2º guia): 34 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 84 evento(s)",
+   "  ✓ goal (2º guia): 50 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 83 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 48 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 170 jogo(s) com endereço na ESPN, 24 sem",
+   "  ✓ placar: 172 jogo(s) com endereço na ESPN, 24 sem",
    "  ! data: 1 jogo(s) com a data divergente — SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
-   "TOTAL: 194 eventos → eventos.json",
+   "TOTAL: 196 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -82,18 +82,23 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 385713,
-   "tabelas": 3,
+   "bytes": 450403,
+   "tabelas": 4,
    "dias": [
     {
      "titulo": "Jogos de segunda, 23 de novembro de 2026",
      "data": "2026-11-23",
-     "jogos": 13
+     "jogos": 14
     },
     {
      "titulo": "Jogos de terça, 24 de novembro de 2026",
      "data": "2026-11-24",
      "jogos": 21
+    },
+    {
+     "titulo": "Jogos de quarta, 25 de novembro de 2026",
+     "data": "2026-11-25",
+     "jogos": 15
     }
    ],
    "linhas_nao_lidas": []
@@ -103,7 +108,7 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 26,
+   "nos_dois": 39,
    "so_no_segundo": [
     "11-23 13:00 Al Ain x Esteghlal [Champions League da Ásia]",
     "11-23 13:00 Tractor x Al Wasl [Champions League da Ásia]",
@@ -112,7 +117,10 @@
     "11-24 07:00 Daejeon Citizen x Beijing Guoan [Champions League da Ásia]",
     "11-24 07:00 Kyoto Sanga x Pohang Steelers [Champions League da Ásia]",
     "11-24 09:15 Cong An Ha Noi x Vissel Kobe [Champions League da Ásia]",
-    "11-24 09:15 Ratchaburi x Johor Darul [Champions League da Ásia]"
+    "11-24 09:15 Ratchaburi x Johor Darul [Champions League da Ásia]",
+    "11-25 07:00 Gamba Osaka x Port [Champions League da Ásia]",
+    "11-25 07:00 Kashima Antlers x Jeonbuk Hyundai [Champions League da Ásia]",
+    "11-25 15:00 Sporting Huelva x Badalona [Copa de la Reina]"
    ],
    "horario_diferente": [
     "2026-11-24 SJ Earthquakes x Houston Dynamo: principal 23:55 x segundo 00:00"
@@ -135,14 +143,14 @@
     "2026-11-24": 80,
     "2026-11-25": 62,
     "2026-11-26": 56,
-    "2026-11-27": 78,
+    "2026-11-27": 79,
     "2026-11-28": 234,
     "2026-11-29": 140
    },
    "data_divergente": [
     "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN"
    ],
-   "com": 170,
+   "com": 172,
    "sem": 24,
    "da_memoria": 0,
    "sem_placar": [
