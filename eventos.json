@@ -1,1542 +1,5 @@
 [
  {
-  "date": "2026-11-22",
-  "t": "00:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Boston Celtics x Sacramento Kings",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261121|401910028|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "01:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "A-League Feminina",
-  "detail": "—",
-  "match": "Melbourne Victory x Perth Glory",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/aus.w.1|20261121|401913226|c",
-  "espn": "Melbourne Victory x Perth Glory"
- },
- {
-  "date": "2026-11-22",
-  "t": "08:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Russo",
-  "detail": "—",
-  "match": "Dynamo Moscow x Krasnodar",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/rus.1|20261122|401879807|c",
-  "espn": "Dinamo Moscow x Krasnodar"
- },
- {
-  "date": "2026-11-22",
-  "t": "08:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Juventus x Venezia",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Juventus x Venezia",
-  "pl": "soccer/ita.1|20261122|401875008|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "09:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Championship",
-  "detail": "—",
-  "match": "Burnley x Blackburn Rovers",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/eng.2|20261122|401880159|c",
-  "espn": "Burnley x Blackburn Rovers"
- },
- {
-  "date": "2026-11-22",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2.Bundesliga",
-  "detail": "—",
-  "match": "Energie Cottbus x Hertha Berlin",
-  "ch": [
-   {
-    "n": "Romario T Voficial (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@RomarioTVoficial"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ger.2|20261122|401885048|c",
-  "espn": "Energie Cottbus x Hertha Berlin"
- },
- {
-  "date": "2026-11-22",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2.Bundesliga",
-  "detail": "—",
-  "match": "Kaiserslautern x Dynamo Dresden",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ger.2|20261122|401885052|c",
-  "espn": "Kaiserslautern x Dynamo Dresden"
- },
- {
-  "date": "2026-11-22",
-  "t": "09:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2.Bundesliga",
-  "detail": "—",
-  "match": "Karlsruher x Osnabrück",
-  "ch": [
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ger.2|20261122|401885050|c",
-  "espn": "Karlsruher SC x VfL Osnabruck"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "—",
-  "match": "Barcelona x Villarreal",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Barcelona x Villarreal",
-  "pl": "soccer/esp.1|20261122|401882804|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Turco",
-  "detail": "—",
-  "match": "Konyaspor x Besiktas",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/tur.1|20261122|401888246|c",
-  "espn": "Konyaspor x Besiktas"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Sueco",
-  "detail": "—",
-  "match": "Sirius x Djurgarden",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/swe.1|20261122|401842885|c",
-  "espn": "IK Sirius x Djurgården"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Eredivisie",
-  "detail": "—",
-  "match": "Ajax x Ado Den Haag",
-  "ch": [
-   {
-    "n": "ESPN 3",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/ned.1|20261122|401875547|c",
-  "espn": "Ajax Amsterdam x ADO Den Haag"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Eredivisie",
-  "detail": "—",
-  "match": "Sparta Rotterdam x AZ Alkmaar",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/ned.1|20261122|401875540|c",
-  "espn": "Sparta Rotterdam x AZ Alkmaar"
- },
- {
-  "date": "2026-11-22",
-  "t": "10:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Russo",
-  "detail": "—",
-  "match": "Dynamo Makhachkala x Spartak Moscow",
-  "ch": [
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/rus.1|20261122|401879806|c",
-  "espn": "Dynamo Makhachkala x Spartak Moscow"
- },
- {
-  "date": "2026-11-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "—",
-  "match": "Hull City x Brighton",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Hull City x Brighton & Hove Albion",
-  "pl": "soccer/eng.1|20261122|401879234|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Sassuolo x Genoa",
-  "ch": [
-   {
-    "n": "ESPN Brasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@espnbrasil"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Sassuolo x Genoa",
-  "pl": "soccer/ita.1|20261122|401874960|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Bologna x Udinese",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Bologna x Udinese",
-  "pl": "soccer/ita.1|20261122|401875047|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Paulistão Feminino",
-  "detail": "QF-volta",
-  "match": "Corinthians x Red Bull Bragantino",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-11-22",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "—",
-  "match": "Paris FC x Angers",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 2,
-  "espn": "Paris FC x Angers",
-  "pl": "soccer/fra.1|20261122|401876397|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "11:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "—",
-  "match": "Augsburg x Mainz 05",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "FC Augsburg x Mainz",
-  "pl": "soccer/ger.1|20261122|401884733|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "12:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Alemanha",
-  "league": "Bundesliga Feminina",
-  "detail": "—",
-  "match": "RB Leipzig x Wolfsburg",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "12:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "—",
-  "match": "Racing Santander x Real Sociedad",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Racing Santander x Real Sociedad",
-  "pl": "soccer/esp.1|20261122|401882800|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "12:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Grego",
-  "detail": "—",
-  "match": "Panathinaikos x OFI",
-  "ch": [
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@SportyNetBrasil"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/gre.1|20261122|401896726|c",
-  "espn": "Panathinaikos x OFI Crete"
- },
- {
-  "date": "2026-11-22",
-  "t": "13:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Turco",
-  "detail": "—",
-  "match": "Trabzonspor x Eyupspor",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/tur.1|20261122|401888249|c",
-  "espn": "Trabzonspor x Eyupspor"
- },
- {
-  "date": "2026-11-22",
-  "t": "13:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "—",
-  "match": "Lorient x Rennes",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Lorient x Stade Rennais",
-  "pl": "soccer/fra.1|20261122|401876401|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "—",
-  "match": "Liverpool x Manchester United",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Liverpool x Manchester United",
-  "pl": "soccer/eng.1|20261122|401878755|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "13:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "—",
-  "match": "Werder Bremen x Hamburgo",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "SportyNet",
-    "y": "free"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Werder Bremen x Hamburg SV",
-  "pl": "soccer/ger.1|20261122|401884730|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Milan x Frosinone",
-  "ch": [
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@SportyNetBrasil"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "AC Milan x Frosinone",
-  "pl": "soccer/ita.1|20261122|401874989|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Checo",
-  "detail": "—",
-  "match": "Sparta Praga x Slovan Liberec",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "14:15",
-  "sport": "Tênis",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Nitto ATP Finals",
-  "detail": "Final",
-  "match": "Alexander Zverev x Carlos Alcaraz",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "tennis/atp|20261122|187529|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "—",
-  "match": "Osasuna x Málaga",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Osasuna x Málaga",
-  "pl": "soccer/esp.1|20261122|401882801|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Belga",
-  "detail": "—",
-  "match": "Anderlecht x OH Leuven",
-  "ch": [
-   {
-    "n": "DAZN",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/bel.1|20261122|401878941|c",
-  "espn": "Anderlecht x OH Leuven"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Miami Dolphins x Buffalo Bills",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873070|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New Orleans Saints x Chicago Bears",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873071|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tennessee Titans x Dallas Cowboys",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873073|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Tampa Bay Buccaneers x Detroit Lions",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873072|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Arizona Cardinals x Kansas City Chiefs",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873067|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Pittsburgh Steelers x Philadelphia Eagles",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873076|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "15:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Baltimore Ravens x Carolina Panthers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873068|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Athletico-PR x Remo",
-  "ch": [
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Athletico-PR x Remo",
-  "pl": "soccer/bra.1|20261122|401841318|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Playoff Acesso-ida",
-  "match": "Criciúma x Fortaleza",
-  "ch": [
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@SportyNetBrasil"
-   },
-   {
-    "n": "RedeTV",
-    "y": "free"
-   },
-   {
-    "n": "SportyNet",
-    "y": "free"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Criciúma x Fortaleza",
-  "pl": "soccer/bra.2|20261122|401912682|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Paulistão Sub-20",
-  "detail": "FINAL-ida",
-  "match": "Corinthians x Palmeiras",
-  "ch": [
-   {
-    "n": "TNT Sports BR (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@TNTSportsBR"
-   },
-   {
-    "n": "Ulisses Costa TV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@UlissesCostaTV"
-   },
-   {
-    "n": "Energia97 (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@energia97"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Santa Catarina",
-  "detail": "FINAL-ida",
-  "match": "Marcílio Dias x Joinville",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Atalanta x Inter de Milão",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Atalanta x Internazionale",
-  "pl": "soccer/ita.1|20261122|401875001|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "—",
-  "match": "Olympique de Marseille x Le Mans",
-  "ch": [
-   {
-    "n": "CNN Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CNNEsportes"
-   }
-  ],
-  "v": 2,
-  "espn": "Marseille x Le Mans",
-  "pl": "soccer/fra.1|20261122|401876400|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "—",
-  "match": "Getafe x Atlético de Madrid",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Getafe x Atlético Madrid",
-  "pl": "soccer/esp.1|20261122|401882803|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Peruano",
-  "detail": "—",
-  "match": "Sport Huancayo x Universitario",
-  "ch": [
-   {
-    "n": "Canalgolbrasil (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgolbrasil"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/per.1|20261122|401886136|c",
-  "espn": "Sport Huancayo x Universitario"
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Paraíba",
-  "detail": "—",
-  "match": "Atlético Cajazeirense x Campinense",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Paraíba",
-  "detail": "—",
-  "match": "Treze x Nacional de Patos",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Copa Paraíba",
-  "detail": "—",
-  "match": "Esporte de Patos x Serra Branca",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Taça Fares Lopes",
-  "detail": "—",
-  "match": "Guarani de Juazeiro x Icasa",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Taça Fares Lopes",
-  "detail": "—",
-  "match": "Vila Real x Atlético-CE",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Taça Fares Lopes",
-  "detail": "—",
-  "match": "Tirol x Palmácia",
-  "ch": [
-   {
-    "n": "Metrópoles Esportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@MetropolesEsportes"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-22",
-  "t": "17:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Detroit Pistons x Atlanta Hawks",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910029|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "—",
-  "match": "Nashville x FC Cincinnati",
-  "ch": [
-   {
-    "n": "Apple TV",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/usa.1|20261122|401933731|c",
-  "espn": "Nashville SC x FC Cincinnati"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Venezuelano",
-  "detail": "—",
-  "match": "Metropolitanos x La Guaira",
-  "ch": [
-   {
-    "n": "Ligafutve (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@ligafutve"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ven.1|20261122|401930990|c",
-  "espn": "Metropolitanos x Deportivo La Guaira"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:05",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "New York Jets x Los Angeles Chargers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873074|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Las Vegas Raiders x Denver Broncos",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873075|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:25",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Jacksonville Jaguars x New York Giants",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   },
-   {
-    "n": "TV a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873069|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Fluminense x Mirassol",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "Record",
-    "y": "free"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Fluminense x Mirassol",
-  "pl": "soccer/bra.1|20261122|401841324|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "18:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Playoff Acesso-ida",
-  "match": "Atlético-GO x Vila Nova",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Atlético Goianiense x Vila Nova",
-  "pl": "soccer/bra.2|20261122|401912708|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "19:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Argentino",
-  "detail": "—",
-  "match": "River Plate x Lanús",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/arg.1|20261122|401933761|c",
-  "espn": "River Plate x Lanús"
- },
- {
-  "date": "2026-11-22",
-  "t": "19:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Red Bull Bragantino x Vasco da Gama",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Red Bull Bragantino x Vasco da Gama",
-  "pl": "soccer/bra.1|20261122|401841321|c"
- },
- {
-  "date": "2026-11-22",
-  "t": "20:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Oklahoma City Thunder x Miami Heat",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910030|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "—",
-  "match": "Chicago Fire x Charlotte FC",
-  "ch": [
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@SportyNetBrasil"
-   },
-   {
-    "n": "Mls",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/usa.1|20261122|401933730|c",
-  "espn": "Chicago Fire FC x Charlotte FC"
- },
- {
-  "date": "2026-11-22",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Orlando Magic x Washington Wizards",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910031|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Denver Nuggets x Chicago Bulls",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910032|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Dallas Mavericks x Utah Jazz",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910033|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "22:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Indiana Pacers x New York Knicks",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910034|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "22:20",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "NFL Mexico City Game",
-  "match": "Minnesota Vikings x San Francisco 49ers",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Globoplay",
-    "y": "stream"
-   },
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261122|401873077|v"
- },
- {
-  "date": "2026-11-22",
-  "t": "22:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "—",
-  "match": "Vancouver Whitecaps x Real Salt Lake",
-  "ch": [
-   {
-    "n": "Apple TV",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/usa.1|20261122|401933729|c",
-  "espn": "Vancouver Whitecaps x Real Salt Lake"
- },
- {
-  "date": "2026-11-22",
-  "t": "22:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Boston Celtics x Golden State Warriors",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261122|401910035|v"
- },
- {
   "date": "2026-11-23",
   "t": "10:45",
   "sport": "Futebol",
@@ -2786,20 +1249,100 @@
  },
  {
   "date": "2026-11-25",
+  "t": "09:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "AFC Champions League 2",
+  "detail": "—",
+  "match": "Persib x FC Seoul",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/afc.cup|20261125|401912753|c",
+  "espn": "Persib Bandung x FC Seoul"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "10:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA Sub-17",
+  "detail": "—",
+  "match": "Uruguai x França",
+  "ch": [
+   {
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Copinha Feminina",
+  "detail": "—",
+  "match": "Red Bull Bragantino x Atlético-MG",
+  "ch": [
+   {
+    "n": "Paulistao (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@paulistao"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "12:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Copa do Mundo FIFA Sub-17",
+  "detail": "—",
+  "match": "Dinamarca x Argentina",
+  "ch": [
+   {
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-25",
   "t": "14:45",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Sabah FK x Barcelona",
+  "detail": "—",
+  "match": "Sabah x Barcelona",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "TNT",
     "y": "tv"
+   },
+   {
+    "n": "HBO Max",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Sabah FK x Barcelona",
   "pl": "soccer/uefa.champions|20261125|401915378|c"
  },
  {
@@ -2809,34 +1352,119 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Slavia Prague x Villarreal",
+  "detail": "—",
+  "match": "Slavia Praga x Villarreal",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Space",
     "y": "tv"
+   },
+   {
+    "n": "HBO Max",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Slavia Prague x Villarreal",
   "pl": "soccer/uefa.champions|20261125|401915293|c"
  },
  {
   "date": "2026-11-25",
-  "t": "17:00",
+  "t": "15:00",
   "sport": "Futebol",
   "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Atlético Madrid x Viking FK",
+  "country": "Mundial",
+  "league": "Copa da Rainha",
+  "detail": "—",
+  "match": "Sporting Huelva x Levante Badalona",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN 2",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Serie B Italiana",
+  "detail": "—",
+  "match": "Pisa x Modena",
+  "ch": [
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
+   },
+   {
+    "n": "SportyNet",
+    "y": "free"
    }
   ],
   "v": 1,
-  "pl": "soccer/uefa.champions|20261125|401915291|c"
+  "pl": "soccer/ita.2|20261125|401899531|c",
+  "espn": "Pisa x Modena"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Campeonato Pernambucano",
+  "detail": "Turno Forró-Quadrangular Final",
+  "match": "América-PE x Central",
+  "ch": [
+   {
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Campeonato Pernambucano",
+  "detail": "Turno Forró-Quadrangular Final",
+  "match": "Petrolina x Íbis",
+  "ch": [
+   {
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Uruguaio 2° Divisão",
+  "detail": "—",
+  "match": "Oriental x Atenas",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-25",
@@ -2845,69 +1473,20 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Club Brugge x Liverpool",
+  "detail": "—",
+  "match": "PSG x Roma",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "TNT",
     "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/uefa.champions|20261125|401915292|c"
- },
- {
-  "date": "2026-11-25",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Internazionale x VfB Stuttgart",
-  "ch": [
+   },
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "HBO Max",
+    "y": "stream"
    }
   ],
-  "v": 1,
-  "pl": "soccer/uefa.champions|20261125|401915376|c"
- },
- {
-  "date": "2026-11-25",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Lille x Bayern Munich",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/uefa.champions|20261125|401915377|c"
- },
- {
-  "date": "2026-11-25",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Paris Saint-Germain x AS Roma",
-  "ch": [
-   {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
+  "v": 2,
+  "espn": "Paris Saint-Germain x AS Roma",
   "pl": "soccer/uefa.champions|20261125|401915374|c"
  },
  {
@@ -2917,15 +1496,82 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Shakhtar Donetsk x Fenerbahce",
+  "detail": "—",
+  "match": "Lille x Bayern de Munique",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "TNT Sports BR (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TNTSportsBR"
+   },
+   {
+    "n": "Space",
     "y": "tv"
+   },
+   {
+    "n": "HBO Max",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Lille x Bayern Munich",
+  "pl": "soccer/uefa.champions|20261125|401915377|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "—",
+  "match": "Sporting x Manchester United",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Sporting CP x Manchester United",
+  "pl": "soccer/uefa.champions|20261125|401915373|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "—",
+  "match": "Inter de Milão x Stuttgart",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Internazionale x VfB Stuttgart",
+  "pl": "soccer/uefa.champions|20261125|401915376|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "—",
+  "match": "Shakhtar Donetsk x Fenerbahçe",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Shakhtar Donetsk x Fenerbahce",
   "pl": "soccer/uefa.champions|20261125|401915375|c"
  },
  {
@@ -2935,16 +1581,77 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Champions League",
-  "detail": "Tabela oficial",
-  "match": "Sporting CP x Manchester United",
+  "detail": "—",
+  "match": "Club Brugge x Liverpool",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "HBO Max",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Club Brugge x Liverpool",
+  "pl": "soccer/uefa.champions|20261125|401915292|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League",
+  "detail": "—",
+  "match": "Atlético de Madrid x Viking",
+  "ch": [
+   {
+    "n": "HBO Max",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Atlético Madrid x Viking FK",
+  "pl": "soccer/uefa.champions|20261125|401915291|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Championship",
+  "detail": "—",
+  "match": "Stoke City x Millwall",
+  "ch": [
+   {
+    "n": "ESPN 4",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/uefa.champions|20261125|401915373|c"
+  "pl": "soccer/eng.2|20261125|401880138|c",
+  "espn": "Stoke City x Millwall"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "18:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Copinha Feminina",
+  "detail": "—",
+  "match": "Santos x Sport Recife",
+  "ch": [
+   {
+    "n": "Paulistao (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@paulistao"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-25",
@@ -2979,16 +1686,62 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Atlético-MG x Corinthians",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Atlético-MG x Corinthians",
+  "pl": "soccer/bra.1|20261125|401841319|c"
+ },
+ {
+  "date": "2026-11-25",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Brasil",
+  "league": "Copinha Feminina",
+  "detail": "—",
+  "match": "Botafogo x Internacional",
+  "ch": [
+   {
+    "n": "Tv Brasil",
+    "y": "free"
+   },
+   {
+    "n": "Paulistao (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@paulistao"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-25",
+  "t": "21:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino",
+  "detail": "OF",
+  "match": "Boca Juniors x Independiente Rivadavia",
+  "ch": [
+   {
+    "n": "ESPN 4",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/bra.1|20261125|401841319|c"
+  "pl": "soccer/arg.1|20261125|401933757|c",
+  "espn": "Boca Juniors x Independiente Rivadavia"
  },
  {
   "date": "2026-11-25",
@@ -4135,5 +2888,877 @@
   ],
   "v": 1,
   "pl": "basketball/nba|20261128|401910050|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "08:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Udinese x Fiorentina",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.1|20261129|401875031|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Everton x Liverpool",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401879229|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "10:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Valencia x Osasuna",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/esp.1|20261129|401882787|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Sassuolo x Napoli",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.1|20261129|401874992|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "AJ Auxerre x Marseille",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/fra.1|20261129|401876393|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:05",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Brighton & Hove Albion x Newcastle United",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401879231|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:05",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Crystal Palace x Hull City",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401879230|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:05",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Fulham x AFC Bournemouth",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401879228|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:05",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Sunderland x Tottenham Hotspur",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401879224|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "SC Freiburg x RB Leipzig",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.1|20261129|401884724|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "12:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Deportivo x Barcelona",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/esp.1|20261129|401882794|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "13:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Toulouse x Stade Rennais",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/fra.1|20261129|401876386|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Premier League",
+  "detail": "Tabela oficial",
+  "match": "Arsenal x Manchester City",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.1|20261129|401878753|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "13:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "TSG Hoffenheim x FC Augsburg",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.1|20261129|401884725|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "AS Roma x Monza",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.1|20261129|401874769|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Celta Vigo x Villarreal",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/esp.1|20261129|401882795|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "New Orleans Saints x Cincinnati Bengals",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873087|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "New York Giants x Indianapolis Colts",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873088|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "New York Jets x Miami Dolphins",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873089|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Atlanta Falcons x Minnesota Vikings",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873084|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Tennessee Titans x Jacksonville Jaguars",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873090|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Baltimore Ravens x Houston Texans",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873085|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "Borussia Dortmund x Bayer Leverkusen",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.1|20261129|401884727|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Coritiba x Flamengo",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841333|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Vitória x Santos",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841332|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Como x Juventus",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.1|20261129|401874994|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Lyon x AS Monaco",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/fra.1|20261129|401876389|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Real Sociedad x Sevilla",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/esp.1|20261129|401882788|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "17:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Miami Heat x Cleveland Cavaliers",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910054|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Los Angeles Lakers x Memphis Grizzlies",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910051|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Boston Celtics x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910052|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:05",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "New England Patriots x Los Angeles Chargers",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873093|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:25",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Washington Commanders x Arizona Cardinals",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873092|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:25",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Seattle Seahawks x San Francisco 49ers",
+  "ch": [
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   },
+   {
+    "n": "TV a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873091|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Corinthians x Grêmio",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841334|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Internacional x Red Bull Bragantino",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841331|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "18:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Mirassol x Athletico-PR",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841330|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "19:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Phoenix Suns x Utah Jazz",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910053|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "19:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "Tabela oficial",
+  "match": "Atlético-MG x Vasco da Gama",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bra.1|20261129|401841328|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Orlando Magic x Detroit Pistons",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910055|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Atlanta Hawks x New York Knicks",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910056|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Denver Nuggets x Toronto Raptors",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910057|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "New Orleans Pelicans x Portland Trail Blazers",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910058|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "22:20",
+  "sport": "Futebol Americano",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NFL",
+  "detail": "—",
+  "match": "Las Vegas Raiders x Cleveland Browns",
+  "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
+   {
+    "n": "Globoplay",
+    "y": "stream"
+   },
+   {
+    "n": "NFL Game Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "football/nfl|20261129|401873086|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "22:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "LA Clippers x Golden State Warriors",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910059|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "23:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Minnesota Timberwolves x Sacramento Kings",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261129|401910060|v"
  }
 ]
