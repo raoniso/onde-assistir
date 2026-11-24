@@ -3,14 +3,14 @@
   "espn_tabelas_por_liga": {
    "Champions League": 18,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 14,
+   "Brasileirão Série A": 11,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 1,
    "Copa Sul-Americana": 0,
-   "Premier League": 11,
+   "Premier League": 10,
    "La Liga": 10,
    "Bundesliga": 9,
-   "Campeonato Italiano": 9,
+   "Campeonato Italiano": 10,
    "Campeonato Francês": 9,
    "Amistoso": 0,
    "UEFA Nations League": 0,
@@ -22,18 +22,17 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 23/11 23:23 BRT — janela 2026-11-23 a 2026-11-29",
+   "Coleta 24/11 10:58 BRT — janela 2026-11-24 a 2026-11-30",
    "  ✓ mantosdofutebol: 53 evento(s)",
-   "  ✓ goal (2º guia): 50 evento(s)",
-   "  ↺ mantos: 11 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 83 evento(s)",
+   "  ✓ goal (2º guia): 36 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 80 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
-   "  ✓ ESPN NBA: 48 evento(s)",
+   "  ✓ ESPN NBA: 46 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 172 jogo(s) com endereço na ESPN, 24 sem",
+   "  ✓ placar: 160 jogo(s) com endereço na ESPN, 18 sem",
    "  ! data: 1 jogo(s) com a data divergente — SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
-   "TOTAL: 196 eventos → eventos.json",
+   "TOTAL: 178 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -81,31 +80,11 @@
     "linhas_de_jogo_nao_lidas": []
    }
   ],
-  "encerrados_mantidos": {
-   "mantos": [
-    "10:45 Neftchi x Al-Hilal",
-    "13:00 Al Shamal x Al-Ahli Saudi",
-    "14:00 Bayern de Munique x Hoffenheim",
-    "15:00 Brondby x Midtjlland",
-    "15:00 Al Ahly x Pyramids",
-    "15:15 Al-Ittihad x Pakhtakor",
-    "16:30 Juventud x Defensor Sporting",
-    "16:45 Monza x Fiorentina",
-    "17:00 Levante x Elche",
-    "17:00 Brentford x Everton",
-    "17:00 Gimnasia La Plata x Newell’s Old Boys"
-   ]
-  },
   "goal": {
    "http": 200,
-   "bytes": 450145,
-   "tabelas": 4,
+   "bytes": 392659,
+   "tabelas": 3,
    "dias": [
-    {
-     "titulo": "Jogos de segunda, 23 de novembro de 2026",
-     "data": "2026-11-23",
-     "jogos": 14
-    },
     {
      "titulo": "Jogos de terça, 24 de novembro de 2026",
      "data": "2026-11-24",
@@ -124,11 +103,8 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 39,
+   "nos_dois": 28,
    "so_no_segundo": [
-    "11-23 13:00 Al Ain x Esteghlal [Champions League da Ásia]",
-    "11-23 13:00 Tractor x Al Wasl [Champions League da Ásia]",
-    "11-23 15:15 Air Force SC x Al Gharafa [Champions League da Ásia]",
     "11-24 04:45 Newcastle Jets x Kashiwa Reysol [Champions League da Ásia]",
     "11-24 07:00 Daejeon Citizen x Beijing Guoan [Champions League da Ásia]",
     "11-24 07:00 Kyoto Sanga x Pohang Steelers [Champions League da Ásia]",
@@ -146,36 +122,30 @@
    "24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55"
   ],
   "nba_broadcasts": [
-   "Memphis Grizzlies x Charlotte Hornets :: DAZN MEM | DAZN MEM",
-   "Portland Trail Blazers x Philadelphia 76ers :: BLAZERVISION | BLAZERVISION",
-   "Oklahoma City Thunder x Indiana Pacers :: KSBI | THUNDER APP | DAZN IND | KSBI | DAZN IND | THUNDER APP",
-   "Milwaukee Bucks x Toronto Raptors :: MYMI | BUCKS APP | MYMI | BUCKS APP"
+   "Utah Jazz x Los Angeles Lakers :: NBA TV | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+ | NBA TV | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+",
+   "San Antonio Spurs x Sacramento Kings :: DAZN SAS | DAZN SAS",
+   "Detroit Pistons x Orlando Magic :: (vazio)",
+   "Boston Celtics x Washington Wizards :: NBC | NBC"
   ],
   "espn_faltas": [],
   "placar": {
    "lista_geral": {
-    "2026-11-22": 154,
     "2026-11-23": 43,
     "2026-11-24": 80,
-    "2026-11-25": 63,
-    "2026-11-26": 57,
-    "2026-11-27": 79,
-    "2026-11-28": 236,
-    "2026-11-29": 141
+    "2026-11-25": 59,
+    "2026-11-26": 59,
+    "2026-11-27": 84,
+    "2026-11-28": 239,
+    "2026-11-29": 146,
+    "2026-11-30": 28
    },
    "data_divergente": [
     "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN"
    ],
-   "com": 172,
-   "sem": 24,
+   "com": 160,
+   "sem": 18,
    "da_memoria": 0,
    "sem_placar": [
-    "23/11 13:00 Al Shamal x Al-Ahli Saudi [AFC Champions League]",
-    "23/11 14:00 Bayern de Munique x Hoffenheim [Bundesliga Feminina]",
-    "23/11 15:00 Brondby x Midtjlland [Campeonato Dinamarquês]",
-    "23/11 15:00 Al Ahly x Pyramids [Campeonato Egípcio]",
-    "23/11 15:15 Air Force SC x Al Gharafa [Champions League da Ásia]",
-    "23/11 22:00 St. Louis City x Los Angeles FC [MLS]",
     "24/11 11:00 São Paulo x Criciúma [Copinha Feminina]",
     "24/11 12:00 Brasil x Tanzânia [Copa do Mundo Sub-17]",
     "24/11 13:00 Shabab Al Ahli x Al-Quadisiya [AFC Champions League]",
