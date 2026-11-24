@@ -22,17 +22,19 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 24/11 10:58 BRT — janela 2026-11-24 a 2026-11-30",
-   "  ✓ mantosdofutebol: 53 evento(s)",
-   "  ✓ goal (2º guia): 36 evento(s)",
+   "Coleta 24/11 20:32 BRT — janela 2026-11-24 a 2026-11-30",
+   "  ✓ mantosdofutebol: 38 evento(s)",
+   "  ✓ goal (2º guia): 62 evento(s)",
+   "  ↺ goal (2º guia): a página não listou 2026-11-24 (lido em 24/11 10:58) — vale a última leitura",
+   "  ↺ mantos: 10 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 80 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 46 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 160 jogo(s) com endereço na ESPN, 18 sem",
-   "  ! data: 1 jogo(s) com a data divergente — SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
-   "TOTAL: 178 eventos → eventos.json",
+   "  ✓ placar: 196 jogo(s) com endereço na ESPN, 21 sem",
+   "  ! data: 2 jogo(s) com a data divergente — SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN; Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
+   "TOTAL: 217 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -42,32 +44,9 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Segunda – 23/11",
-      "data": "2026-11-23",
-      "jogos": 5
-     }
-    ],
-    "jogos_sem_cabecalho": 0,
-    "jogos_sem_canal": 0,
-    "jogos_sem_competicao": 0,
-    "futsal_descartados": 0,
-    "linhas_emendadas": [],
-    "madrugada_no_dia_seguinte": [],
-    "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
-   },
-   {
-    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
-    "dias": [
-     {
       "cabecalho": "Terça – 24/11",
       "data": "2026-11-24",
-      "jogos": 25
-     },
-     {
-      "cabecalho": "Quarta – 25/11",
-      "data": "2026-11-25",
-      "jogos": 23
+      "jogos": 15
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -78,29 +57,68 @@
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
+   },
+   {
+    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
+    "dias": [
+     {
+      "cabecalho": "Quarta – 25/11",
+      "data": "2026-11-25",
+      "jogos": 23
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "jogos_sem_competicao": 0,
+    "futsal_descartados": 0,
+    "linhas_emendadas": [],
+    "madrugada_no_dia_seguinte": [],
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "09:15 Shanghai Port x Buriram United",
+    "11:00 São Paulo x Criciúma",
+    "12:00 Brasil x Tanzânia",
+    "13:00 Shabab Al Ahli x Al-Quadisiya",
+    "14:45 Galatasaray x Aston Villa",
+    "14:45 Bodo/Glimt x LASK Linz",
+    "15:00 Fluminense x Vitória",
+    "15:15 Al-Nassr x Al Sadd",
+    "16:00 Centro Olímpico-SP x Grêmio",
+    "16:45 Crawley Town x Barnet"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 392659,
-   "tabelas": 3,
+   "bytes": 489158,
+   "tabelas": 4,
    "dias": [
-    {
-     "titulo": "Jogos de terça, 24 de novembro de 2026",
-     "data": "2026-11-24",
-     "jogos": 21
-    },
     {
      "titulo": "Jogos de quarta, 25 de novembro de 2026",
      "data": "2026-11-25",
      "jogos": 15
+    },
+    {
+     "titulo": "Jogos de quinta, 26 de novembro de 2026",
+     "data": "2026-11-26",
+     "jogos": 33
+    },
+    {
+     "titulo": "Jogos de sexta, 27 de novembro de 2026",
+     "data": "2026-11-27",
+     "jogos": 14
     }
    ],
    "linhas_nao_lidas": []
   },
   "memoria": {
    "mantos": [],
-   "goal": []
+   "goal": [
+    "2026-11-24 (lido em 24/11 10:58)"
+   ]
   },
   "guias": {
    "nos_dois": 28,
@@ -112,7 +130,14 @@
     "11-24 09:15 Ratchaburi x Johor Darul [Champions League da Ásia]",
     "11-25 07:00 Gamba Osaka x Port [Champions League da Ásia]",
     "11-25 07:00 Kashima Antlers x Jeonbuk Hyundai [Champions League da Ásia]",
-    "11-25 15:00 Sporting Huelva x Badalona [Copa de la Reina]"
+    "11-25 15:00 Sporting Huelva x Badalona [Copa de la Reina]",
+    "11-26 12:30 Kairat Almaty x Mjallby [Conference League]",
+    "11-26 14:30 Al Faisaly x Al Diriyah [Campeonato Saudita]",
+    "11-26 14:45 Viktoria Plzen x Benfica [Europa League]",
+    "11-26 14:45 Dinamo Zagreb x Bayer Leverkusen [Europa League]",
+    "11-26 14:45 Olympiacos x Milan [Europa League]",
+    "11-26 14:45 Olympique de Marseille x Levski Sofia [Europa League]",
+    "11-26 14:45 Celta de Vigo x Bournemouth [Europa League]"
    ],
    "horario_diferente": [
     "2026-11-24 SJ Earthquakes x Houston Dynamo: principal 23:55 x segundo 00:00"
@@ -131,19 +156,20 @@
   "placar": {
    "lista_geral": {
     "2026-11-23": 43,
-    "2026-11-24": 80,
-    "2026-11-25": 59,
+    "2026-11-24": 79,
+    "2026-11-25": 60,
     "2026-11-26": 59,
-    "2026-11-27": 84,
-    "2026-11-28": 239,
+    "2026-11-27": 85,
+    "2026-11-28": 240,
     "2026-11-29": 146,
     "2026-11-30": 28
    },
    "data_divergente": [
-    "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN"
+    "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
+    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN"
    ],
-   "com": 160,
-   "sem": 18,
+   "com": 196,
+   "sem": 21,
    "da_memoria": 0,
    "sem_placar": [
     "24/11 11:00 São Paulo x Criciúma [Copinha Feminina]",
@@ -163,7 +189,10 @@
     "25/11 16:00 Petrolina x Íbis [Campeonato Pernambucano]",
     "25/11 16:30 Oriental x Atenas [Uruguaio 2° Divisão]",
     "25/11 18:00 Santos x Sport Recife [Copinha Feminina]",
-    "25/11 21:00 Botafogo x Internacional [Copinha Feminina]"
+    "25/11 21:00 Botafogo x Internacional [Copinha Feminina]",
+    "26/11 14:45 Hearts x Monaco [Conference League]",
+    "26/11 17:00 NEC Nijmegen x Rennes [Europa League]",
+    "27/11 17:15 Marítimo x Nacional da Madeira [Campeonato Português]"
    ]
   }
  },
