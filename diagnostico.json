@@ -22,9 +22,10 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 23/11 11:59 BRT — janela 2026-11-23 a 2026-11-29",
-   "  ✓ mantosdofutebol: 64 evento(s)",
+   "Coleta 23/11 23:23 BRT — janela 2026-11-23 a 2026-11-29",
+   "  ✓ mantosdofutebol: 53 evento(s)",
    "  ✓ goal (2º guia): 50 evento(s)",
+   "  ↺ mantos: 11 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 83 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 48 evento(s)",
@@ -44,13 +45,13 @@
      {
       "cabecalho": "Segunda – 23/11",
       "data": "2026-11-23",
-      "jogos": 16
+      "jogos": 5
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 1,
+    "futsal_descartados": 0,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -80,9 +81,24 @@
     "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "10:45 Neftchi x Al-Hilal",
+    "13:00 Al Shamal x Al-Ahli Saudi",
+    "14:00 Bayern de Munique x Hoffenheim",
+    "15:00 Brondby x Midtjlland",
+    "15:00 Al Ahly x Pyramids",
+    "15:15 Al-Ittihad x Pakhtakor",
+    "16:30 Juventud x Defensor Sporting",
+    "16:45 Monza x Fiorentina",
+    "17:00 Levante x Elche",
+    "17:00 Brentford x Everton",
+    "17:00 Gimnasia La Plata x Newell’s Old Boys"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 450403,
+   "bytes": 450145,
    "tabelas": 4,
    "dias": [
     {
@@ -141,11 +157,11 @@
     "2026-11-22": 154,
     "2026-11-23": 43,
     "2026-11-24": 80,
-    "2026-11-25": 62,
-    "2026-11-26": 56,
+    "2026-11-25": 63,
+    "2026-11-26": 57,
     "2026-11-27": 79,
-    "2026-11-28": 234,
-    "2026-11-29": 140
+    "2026-11-28": 236,
+    "2026-11-29": 141
    },
    "data_divergente": [
     "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN"
