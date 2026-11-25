@@ -1,13 +1,13 @@
 {
  "fontes": {
   "espn_tabelas_por_liga": {
-   "Champions League": 18,
+   "Champions League": 9,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 11,
+   "Brasileirão Série A": 10,
    "Brasileirão Série B": 2,
    "Copa Libertadores": 1,
    "Copa Sul-Americana": 0,
-   "Premier League": 10,
+   "Premier League": 11,
    "La Liga": 10,
    "Bundesliga": 9,
    "Campeonato Italiano": 10,
@@ -22,19 +22,16 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 24/11 20:32 BRT — janela 2026-11-24 a 2026-11-30",
-   "  ✓ mantosdofutebol: 38 evento(s)",
+   "Coleta 25/11 05:53 BRT — janela 2026-11-25 a 2026-12-01",
+   "  ✓ mantosdofutebol: 65 evento(s)",
    "  ✓ goal (2º guia): 62 evento(s)",
-   "  ↺ goal (2º guia): a página não listou 2026-11-24 (lido em 24/11 10:58) — vale a última leitura",
-   "  ↺ mantos: 10 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 80 evento(s)",
-   "  ! horário: as fontes discordam em 1 jogo(s) — 24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55",
-   "  ✓ ESPN NBA: 46 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
+   "  ✓ ESPN NBA: 49 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 196 jogo(s) com endereço na ESPN, 21 sem",
-   "  ! data: 2 jogo(s) com a data divergente — SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN; Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
-   "TOTAL: 217 eventos → eventos.json",
+   "  ✓ placar: 180 jogo(s) com endereço na ESPN, 16 sem",
+   "  ! data: 1 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
+   "TOTAL: 196 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -65,6 +62,11 @@
       "cabecalho": "Quarta – 25/11",
       "data": "2026-11-25",
       "jogos": 23
+     },
+     {
+      "cabecalho": "Quinta – 26/11",
+      "data": "2026-11-26",
+      "jogos": 27
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -77,23 +79,9 @@
     "linhas_de_jogo_nao_lidas": []
    }
   ],
-  "encerrados_mantidos": {
-   "mantos": [
-    "09:15 Shanghai Port x Buriram United",
-    "11:00 São Paulo x Criciúma",
-    "12:00 Brasil x Tanzânia",
-    "13:00 Shabab Al Ahli x Al-Quadisiya",
-    "14:45 Galatasaray x Aston Villa",
-    "14:45 Bodo/Glimt x LASK Linz",
-    "15:00 Fluminense x Vitória",
-    "15:15 Al-Nassr x Al Sadd",
-    "16:00 Centro Olímpico-SP x Grêmio",
-    "16:45 Crawley Town x Barnet"
-   ]
-  },
   "goal": {
    "http": 200,
-   "bytes": 489158,
+   "bytes": 489312,
    "tabelas": 4,
    "dias": [
     {
@@ -116,71 +104,55 @@
   },
   "memoria": {
    "mantos": [],
-   "goal": [
-    "2026-11-24 (lido em 24/11 10:58)"
-   ]
+   "goal": []
   },
   "guias": {
-   "nos_dois": 28,
+   "nos_dois": 34,
    "so_no_segundo": [
-    "11-24 04:45 Newcastle Jets x Kashiwa Reysol [Champions League da Ásia]",
-    "11-24 07:00 Daejeon Citizen x Beijing Guoan [Champions League da Ásia]",
-    "11-24 07:00 Kyoto Sanga x Pohang Steelers [Champions League da Ásia]",
-    "11-24 09:15 Cong An Ha Noi x Vissel Kobe [Champions League da Ásia]",
-    "11-24 09:15 Ratchaburi x Johor Darul [Champions League da Ásia]",
     "11-25 07:00 Gamba Osaka x Port [Champions League da Ásia]",
     "11-25 07:00 Kashima Antlers x Jeonbuk Hyundai [Champions League da Ásia]",
     "11-25 15:00 Sporting Huelva x Badalona [Copa de la Reina]",
     "11-26 12:30 Kairat Almaty x Mjallby [Conference League]",
-    "11-26 14:30 Al Faisaly x Al Diriyah [Campeonato Saudita]",
-    "11-26 14:45 Viktoria Plzen x Benfica [Europa League]",
-    "11-26 14:45 Dinamo Zagreb x Bayer Leverkusen [Europa League]",
-    "11-26 14:45 Olympiacos x Milan [Europa League]",
-    "11-26 14:45 Olympique de Marseille x Levski Sofia [Europa League]",
-    "11-26 14:45 Celta de Vigo x Bournemouth [Europa League]"
+    "11-26 14:45 RB Salzburg x Ararat Armenia [Europa League]",
+    "11-26 14:45 Union Saint-Gilloise x Lech Poznan [Europa League]",
+    "11-26 14:45 Brann x AGF [Conference League]",
+    "11-26 14:45 Egnatia x Lincoln Red Imps [Conference League]",
+    "11-26 14:45 Kauno Zalgiris x Riga [Conference League]",
+    "11-26 17:00 Hoffenheim x Sturm Graz [Europa League]",
+    "11-26 17:00 Ferencváros x Celje [Europa League]",
+    "11-26 17:00 Crete x Anderlecht [Europa League]",
+    "11-26 17:00 Sparta Praga x AZ Alkmaar [Europa League]",
+    "11-26 17:00 Sunderland x Jagiellonia [Europa League]",
+    "11-27 11:20 Al Qadsiah x Al Fayha [Campeonato Saudita]"
    ],
-   "horario_diferente": [
-    "2026-11-24 SJ Earthquakes x Houston Dynamo: principal 23:55 x segundo 00:00"
-   ]
+   "horario_diferente": []
   },
-  "horario_divergente": [
-   "24/11 SJ Earthquakes x Houston Dynamo: guia 23:55, 2º guia 00:00 → vale 23:55"
-  ],
+  "horario_divergente": [],
   "nba_broadcasts": [
-   "Utah Jazz x Los Angeles Lakers :: NBA TV | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+ | NBA TV | SPECTRUM SPORTS NET | SPECTRUM SPORTS NET + | KJZZ-TV | JAZZ+",
-   "San Antonio Spurs x Sacramento Kings :: DAZN SAS | DAZN SAS",
-   "Detroit Pistons x Orlando Magic :: (vazio)",
-   "Boston Celtics x Washington Wizards :: NBC | NBC"
+   "Dallas Mavericks x Denver Nuggets :: NBC | KFAA-TV | MAVSTV | NBC | KFAA-TV | MAVSTV",
+   "Miami Heat x Philadelphia 76ers :: ESPN | ESPN",
+   "Chicago Bulls x Charlotte Hornets :: (vazio)",
+   "Cleveland Cavaliers x New York Knicks :: DAZN CLE | DAZN CLE"
   ],
   "espn_faltas": [],
   "placar": {
    "lista_geral": {
-    "2026-11-23": 43,
     "2026-11-24": 79,
     "2026-11-25": 60,
     "2026-11-26": 59,
-    "2026-11-27": 85,
-    "2026-11-28": 240,
-    "2026-11-29": 146,
-    "2026-11-30": 28
+    "2026-11-27": 86,
+    "2026-11-28": 237,
+    "2026-11-29": 148,
+    "2026-11-30": 29,
+    "2026-12-01": 79
    },
    "data_divergente": [
-    "SJ Earthquakes x Houston Dynamo: a fonte lista em 24/11 23:55; a ESPN, em 25/11 00:00 → vale a ESPN",
     "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN"
    ],
-   "com": 196,
-   "sem": 21,
+   "com": 180,
+   "sem": 16,
    "da_memoria": 0,
    "sem_placar": [
-    "24/11 11:00 São Paulo x Criciúma [Copinha Feminina]",
-    "24/11 12:00 Brasil x Tanzânia [Copa do Mundo Sub-17]",
-    "24/11 13:00 Shabab Al Ahli x Al-Quadisiya [AFC Champions League]",
-    "24/11 15:00 Fluminense x Vitória [Copinha Feminina]",
-    "24/11 16:00 Centro Olímpico-SP x Grêmio [Copinha Feminina]",
-    "24/11 19:00 Flamengo x Vasco da Gama [Copinha Feminina]",
-    "24/11 20:00 Ferroviária x Aliança-GO [Copinha Feminina]",
-    "24/11 21:30 Palmeiras x Tarumã-AM [Copinha Feminina]",
-    "24/11 21:30 São Paulo x Atlético-MG [Copa do Brasil Sub-20]",
     "25/11 10:30 Uruguai x França [Copa do Mundo FIFA Sub-17]",
     "25/11 11:00 Red Bull Bragantino x Atlético-MG [Copinha Feminina]",
     "25/11 12:30 Dinamarca x Argentina [Copa do Mundo FIFA Sub-17]",
@@ -190,8 +162,12 @@
     "25/11 16:30 Oriental x Atenas [Uruguaio 2° Divisão]",
     "25/11 18:00 Santos x Sport Recife [Copinha Feminina]",
     "25/11 21:00 Botafogo x Internacional [Copinha Feminina]",
-    "26/11 14:45 Hearts x Monaco [Conference League]",
-    "26/11 17:00 NEC Nijmegen x Rennes [Europa League]",
+    "26/11 12:00 Marrocos x Espanha [Copa do Mundo FIFA Sub-17]",
+    "26/11 14:45 Hearts x Monaco [UEFA Conference League]",
+    "26/11 17:00 NEC Nijmegen x Rennes [UEFA Europa League]",
+    "26/11 19:00 Tirol x Guarani de Juazeiro [Taça Fares Lopes]",
+    "26/11 20:00 Palmeiras x Operário Ferroviário [Copa do Brasil Sub-20]",
+    "26/11 20:00 Treze x Nacional de Patos [Copa Paraíba]",
     "27/11 17:15 Marítimo x Nacional da Madeira [Campeonato Português]"
    ]
   }
