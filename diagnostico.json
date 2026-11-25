@@ -22,16 +22,16 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 25/11 05:53 BRT — janela 2026-11-25 a 2026-12-01",
-   "  ✓ mantosdofutebol: 65 evento(s)",
-   "  ✓ goal (2º guia): 62 evento(s)",
+   "Coleta 25/11 16:27 BRT — janela 2026-11-25 a 2026-12-01",
+   "  ✓ mantosdofutebol: 50 evento(s)",
+   "  ✓ goal (2º guia): 102 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
    "  ✓ ESPN NBA: 49 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 180 jogo(s) com endereço na ESPN, 16 sem",
-   "  ! data: 1 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
-   "TOTAL: 196 eventos → eventos.json",
+   "  ✓ placar: 195 jogo(s) com endereço na ESPN, 19 sem",
+   "  ! data: 2 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
+   "TOTAL: 214 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -41,15 +41,15 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Terça – 24/11",
-      "data": "2026-11-24",
-      "jogos": 15
+      "cabecalho": "Quarta – 25/11",
+      "data": "2026-11-25",
+      "jogos": 23
      }
     ],
     "jogos_sem_cabecalho": 0,
     "jogos_sem_canal": 0,
     "jogos_sem_competicao": 0,
-    "futsal_descartados": 1,
+    "futsal_descartados": 0,
     "linhas_emendadas": [],
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
@@ -81,8 +81,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 489312,
-   "tabelas": 4,
+   "bytes": 638229,
+   "tabelas": 5,
    "dias": [
     {
      "titulo": "Jogos de quarta, 25 de novembro de 2026",
@@ -98,6 +98,11 @@
      "titulo": "Jogos de sexta, 27 de novembro de 2026",
      "data": "2026-11-27",
      "jogos": 14
+    },
+    {
+     "titulo": "Jogos de sábado, 28 de novembro de 2026",
+     "data": "2026-11-28",
+     "jogos": 40
     }
    ],
    "linhas_nao_lidas": []
@@ -140,17 +145,18 @@
     "2026-11-24": 79,
     "2026-11-25": 60,
     "2026-11-26": 59,
-    "2026-11-27": 86,
+    "2026-11-27": 87,
     "2026-11-28": 237,
-    "2026-11-29": 148,
+    "2026-11-29": 150,
     "2026-11-30": 29,
     "2026-12-01": 79
    },
    "data_divergente": [
-    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN"
+    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
+    "Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN"
    ],
-   "com": 180,
-   "sem": 16,
+   "com": 195,
+   "sem": 19,
    "da_memoria": 0,
    "sem_placar": [
     "25/11 10:30 Uruguai x França [Copa do Mundo FIFA Sub-17]",
@@ -168,7 +174,10 @@
     "26/11 19:00 Tirol x Guarani de Juazeiro [Taça Fares Lopes]",
     "26/11 20:00 Palmeiras x Operário Ferroviário [Copa do Brasil Sub-20]",
     "26/11 20:00 Treze x Nacional de Patos [Copa Paraíba]",
-    "27/11 17:15 Marítimo x Nacional da Madeira [Campeonato Português]"
+    "27/11 17:15 Marítimo x Nacional da Madeira [Campeonato Português]",
+    "28/11 11:30 Hamburgo x Bayern de Munique [Campeonato Alemão]",
+    "28/11 14:00 Espanha x Chile [Amistoso Feminino]",
+    "28/11 22:30 Los Angeles FC x St. Louis City [MLS]"
    ]
   }
  },
