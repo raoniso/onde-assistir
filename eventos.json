@@ -281,7 +281,7 @@
   ],
   "v": 2,
   "pl": "soccer/uefa.europa.conf|20261126|401915814|c",
-  "espn": "Brighton & Hove Albion x CSU Craiova"
+  "espn": "Brighton & Hove Albion x Universitatea Craiova"
  },
  {
   "date": "2026-11-26",
@@ -2632,20 +2632,47 @@
  },
  {
   "date": "2026-11-29",
+  "t": "01:55",
+  "sport": "Futebol",
+  "g": "F",
+  "country": "Mundial",
+  "league": "Amistoso Feminino",
+  "detail": "—",
+  "match": "Brasil x Japão",
+  "ch": [
+   {
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "sel": 1
+ },
+ {
+  "date": "2026-11-29",
   "t": "08:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Udinese x Fiorentina",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Udinese x Fiorentina",
   "pl": "soccer/ita.1|20261129|401875031|c"
  },
  {
@@ -2655,15 +2682,20 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Everton x Liverpool",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Everton x Liverpool",
   "pl": "soccer/eng.1|20261129|401879229|c"
  },
  {
@@ -2673,16 +2705,40 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Valencia x Osasuna",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 2,
+  "espn": "Valencia x Osasuna",
+  "pl": "soccer/esp.1|20261129|401882787|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "10:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Holandês",
+  "detail": "—",
+  "match": "Feyenoord x Ajax",
+  "ch": [
+   {
+    "n": "ESPN 2",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/esp.1|20261129|401882787|c"
+  "pl": "soccer/ned.1|20261129|401875535|c",
+  "espn": "Feyenoord Rotterdam x Ajax Amsterdam"
  },
  {
   "date": "2026-11-29",
@@ -2691,15 +2747,20 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Sassuolo x Napoli",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "SportyNet",
+    "y": "free"
+   },
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Sassuolo x Napoli",
   "pl": "soccer/ita.1|20261129|401874992|c"
  },
  {
@@ -2709,15 +2770,16 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "AJ Auxerre x Marseille",
+  "detail": "—",
+  "match": "Auxerre x Olympique de Marseille",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Cnn Esportes (YouTube)",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "AJ Auxerre x Marseille",
   "pl": "soccer/fra.1|20261129|401876393|c"
  },
  {
@@ -2727,15 +2789,20 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Brighton & Hove Albion x Newcastle United",
+  "detail": "—",
+  "match": "Brighton x Newcastle United",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "ESPN Brasil (YouTube)",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Brighton & Hove Albion x Newcastle United",
   "pl": "soccer/eng.1|20261129|401879231|c"
  },
  {
@@ -2745,15 +2812,16 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Crystal Palace x Hull City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Crystal Palace x Hull City",
   "pl": "soccer/eng.1|20261129|401879230|c"
  },
  {
@@ -2763,15 +2831,20 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Fulham x AFC Bournemouth",
+  "detail": "—",
+  "match": "Fulham x Bournemouth",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN 4",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Fulham x AFC Bournemouth",
   "pl": "soccer/eng.1|20261129|401879228|c"
  },
  {
@@ -2781,15 +2854,20 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
-  "match": "Sunderland x Tottenham Hotspur",
+  "detail": "—",
+  "match": "Sunderland x Tottenham",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Sunderland x Tottenham Hotspur",
   "pl": "soccer/eng.1|20261129|401879224|c"
  },
  {
@@ -2799,15 +2877,28 @@
   "g": "M",
   "country": "Alemanha",
   "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "SC Freiburg x RB Leipzig",
+  "detail": "—",
+  "match": "Freiburg x RB Leipzig",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "Canal GOAT",
+    "y": "free"
+   },
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "OneFootball",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "SC Freiburg x RB Leipzig",
   "pl": "soccer/ger.1|20261129|401884724|c"
  },
  {
@@ -2817,15 +2908,16 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Deportivo x Barcelona",
+  "detail": "—",
+  "match": "Deportivo A Coruña x Barcelona",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Deportivo x Barcelona",
   "pl": "soccer/esp.1|20261129|401882794|c"
  },
  {
@@ -2835,15 +2927,16 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Toulouse x Stade Rennais",
+  "detail": "—",
+  "match": "Toulouse x Rennes",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Toulouse x Stade Rennais",
   "pl": "soccer/fra.1|20261129|401876386|c"
  },
  {
@@ -2853,15 +2946,20 @@
   "g": "M",
   "country": "Inglaterra",
   "league": "Premier League",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Arsenal x Manchester City",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Arsenal x Manchester City",
   "pl": "soccer/eng.1|20261129|401878753|c"
  },
  {
@@ -2871,15 +2969,24 @@
   "g": "M",
   "country": "Alemanha",
   "league": "Bundesliga",
-  "detail": "Tabela oficial",
-  "match": "TSG Hoffenheim x FC Augsburg",
+  "detail": "—",
+  "match": "Hoffenheim x Augsburg",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Canal GOAT",
+    "y": "free"
+   },
+   {
+    "n": "Jovem Pan Esportes (YouTube)",
+    "y": "free"
+   },
+   {
+    "n": "OneFootball",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "TSG Hoffenheim x FC Augsburg",
   "pl": "soccer/ger.1|20261129|401884725|c"
  },
  {
@@ -2889,15 +2996,20 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "AS Roma x Monza",
+  "detail": "—",
+  "match": "Roma x Monza",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "SportyNet",
+    "y": "free"
+   },
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "AS Roma x Monza",
   "pl": "soccer/ita.1|20261129|401874769|c"
  },
  {
@@ -2907,15 +3019,16 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
-  "match": "Celta Vigo x Villarreal",
+  "detail": "—",
+  "match": "Celta de Vigo x Villarreal",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Celta Vigo x Villarreal",
   "pl": "soccer/esp.1|20261129|401882795|c"
  },
  {
@@ -3057,15 +3170,20 @@
   "g": "M",
   "country": "Alemanha",
   "league": "Bundesliga",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Borussia Dortmund x Bayer Leverkusen",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "OneFootball",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Borussia Dortmund x Bayer Leverkusen",
   "pl": "soccer/ger.1|20261129|401884727|c"
  },
  {
@@ -3075,15 +3193,20 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Coritiba x Flamengo",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Coritiba x Flamengo",
   "pl": "soccer/bra.1|20261129|401841333|c"
  },
  {
@@ -3093,15 +3216,24 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Vitória x Santos",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Globo",
+    "y": "free"
+   },
+   {
+    "n": "GE TV",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Vitória x Santos",
   "pl": "soccer/bra.1|20261129|401841332|c"
  },
  {
@@ -3111,15 +3243,20 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Como x Juventus",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN 3",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Como x Juventus",
   "pl": "soccer/ita.1|20261129|401874994|c"
  },
  {
@@ -3129,15 +3266,20 @@
   "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
-  "detail": "Tabela oficial",
-  "match": "Lyon x AS Monaco",
+  "detail": "—",
+  "match": "Lyon x Monaco",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Lyon x AS Monaco",
   "pl": "soccer/fra.1|20261129|401876389|c"
  },
  {
@@ -3147,16 +3289,40 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Real Sociedad x Sevilla",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "SportyNet",
+    "y": "free"
+   },
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free"
+   }
+  ],
+  "v": 2,
+  "espn": "Real Sociedad x Sevilla",
+  "pl": "soccer/esp.1|20261129|401882788|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "17:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "—",
+  "match": "Porto x Sporting",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/esp.1|20261129|401882788|c"
+  "pl": "soccer/por.1|20261129|401885387|c",
+  "espn": "FC Porto x Sporting CP"
  },
  {
   "date": "2026-11-29",
@@ -3285,16 +3451,17 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Corinthians x Grêmio",
+  "detail": "—",
+  "match": "Mirassol x Athletico-PR",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Premiere",
+    "y": "stream"
    }
   ],
-  "v": 1,
-  "pl": "soccer/bra.1|20261129|401841334|c"
+  "v": 2,
+  "espn": "Mirassol x Athletico-PR",
+  "pl": "soccer/bra.1|20261129|401841330|c"
  },
  {
   "date": "2026-11-29",
@@ -3303,15 +3470,16 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Internacional x Red Bull Bragantino",
+  "detail": "—",
+  "match": "Internacional x RB Bragantino",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Premiere",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Internacional x Red Bull Bragantino",
   "pl": "soccer/bra.1|20261129|401841331|c"
  },
  {
@@ -3321,16 +3489,17 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Mirassol x Athletico-PR",
+  "detail": "—",
+  "match": "Corinthians x Grêmio",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Prime Video",
+    "y": "stream"
    }
   ],
-  "v": 1,
-  "pl": "soccer/bra.1|20261129|401841330|c"
+  "v": 2,
+  "espn": "Corinthians x Grêmio",
+  "pl": "soccer/bra.1|20261129|401841334|c"
  },
  {
   "date": "2026-11-29",
@@ -3357,16 +3526,44 @@
   "g": "M",
   "country": "Brasil",
   "league": "Brasileirão Série A",
-  "detail": "Tabela oficial",
-  "match": "Atlético-MG x Vasco da Gama",
+  "detail": "—",
+  "match": "Atlético-MG x Vasco",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Atlético-MG x Vasco da Gama",
+  "pl": "soccer/bra.1|20261129|401841328|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino",
+  "detail": "—",
+  "match": "Boca Juniors x Gimnasia de la Plata",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/bra.1|20261129|401841328|c"
+  "pl": "soccer/arg.1|20261129|401936657|c",
+  "espn": "Boca Juniors x Gimnasia La Plata"
  },
  {
   "date": "2026-11-29",

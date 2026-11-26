@@ -22,17 +22,18 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 26/11 09:53 BRT — janela 2026-11-26 a 2026-12-02",
-   "  ✓ mantosdofutebol: 54 evento(s)",
-   "  ✓ goal (2º guia): 87 evento(s)",
+   "Coleta 26/11 19:27 BRT — janela 2026-11-26 a 2026-12-02",
+   "  ✓ mantosdofutebol: 41 evento(s)",
+   "  ✓ goal (2º guia): 117 evento(s)",
+   "  ↺ mantos: 13 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 81 evento(s)",
    "  ! horário: as fontes discordam em 1 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 51 evento(s)",
    "  ✓ ESPN NFL: 15 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 204 jogo(s) com endereço na ESPN, 18 sem",
+   "  ✓ placar: 207 jogo(s) com endereço na ESPN, 19 sem",
    "  ! data: 2 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
-   "TOTAL: 222 eventos → eventos.json",
+   "TOTAL: 226 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -44,7 +45,7 @@
      {
       "cabecalho": "Quinta – 26/11",
       "data": "2026-11-26",
-      "jogos": 27
+      "jogos": 14
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -75,10 +76,27 @@
     "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "12:00 Marrocos x Espanha",
+    "14:30 Al-Faisaly x Al-Diriyah",
+    "14:45 Olympiacos x Milan",
+    "14:45 Celta de Vigo x Bournemouth",
+    "14:45 Viktoria Plzen x Benfica",
+    "14:45 Dinamo Zagreb x Bayer Leverkusen",
+    "14:45 Besiktas x Hapoel Beer Sheva",
+    "14:45 Olympique de Marseille x Levski Sofia",
+    "14:45 Hearts x Monaco",
+    "14:45 Iberia x Getafe",
+    "14:45 Brighton x Universitatea Craiova",
+    "14:45 Ajax x Thun",
+    "14:45 Jablonec x Lugano"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 577141,
-   "tabelas": 4,
+   "bytes": 690576,
+   "tabelas": 5,
    "dias": [
     {
      "titulo": "Jogos de quinta, 26 de novembro de 2026",
@@ -94,6 +112,11 @@
      "titulo": "Jogos de sábado, 28 de novembro de 2026",
      "data": "2026-11-28",
      "jogos": 40
+    },
+    {
+     "titulo": "Jogos de domingo, 29 de novembro de 2026",
+     "data": "2026-11-29",
+     "jogos": 30
     }
    ],
    "linhas_nao_lidas": []
@@ -139,20 +162,20 @@
    "lista_geral": {
     "2026-11-25": 59,
     "2026-11-26": 59,
-    "2026-11-27": 88,
-    "2026-11-28": 239,
-    "2026-11-29": 148,
+    "2026-11-27": 89,
+    "2026-11-28": 240,
+    "2026-11-29": 150,
     "2026-11-30": 29,
-    "2026-12-01": 80,
-    "2026-12-02": 69,
+    "2026-12-01": 83,
+    "2026-12-02": 71,
     "2026-12-03": 1
    },
    "data_divergente": [
     "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN",
     "Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN"
    ],
-   "com": 204,
-   "sem": 18,
+   "com": 207,
+   "sem": 19,
    "da_memoria": 0,
    "sem_placar": [
     "26/11 12:00 Marrocos x Espanha [Copa do Mundo FIFA Sub-17]",
@@ -172,7 +195,8 @@
     "27/11 21:00 Tarumã-AM x Flamengo [Copinha Feminina]",
     "28/11 11:30 Hamburgo x Bayern de Munique [Campeonato Alemão]",
     "28/11 14:00 Espanha x Chile [Amistoso Feminino]",
-    "28/11 22:30 Los Angeles FC x St. Louis City [MLS]"
+    "28/11 22:30 Los Angeles FC x St. Louis City [MLS]",
+    "29/11 01:55 Brasil x Japão [Amistoso Feminino]"
    ]
   }
  },
