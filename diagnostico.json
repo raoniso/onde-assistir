@@ -22,16 +22,18 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 25/11 16:27 BRT — janela 2026-11-25 a 2026-12-01",
-   "  ✓ mantosdofutebol: 50 evento(s)",
+   "Coleta 25/11 23:55 BRT — janela 2026-11-25 a 2026-12-01",
+   "  ✓ mantosdofutebol: 57 evento(s)",
    "  ✓ goal (2º guia): 102 evento(s)",
+   "  ↺ mantos: 20 jogo(s) de hoje já saíram da página e seguem na lista (encerrados)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 71 evento(s)",
+   "  ! horário: as fontes discordam em 1 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55",
    "  ✓ ESPN NBA: 49 evento(s)",
    "  ✓ ESPN NFL: 16 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 195 jogo(s) com endereço na ESPN, 19 sem",
-   "  ! data: 2 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
-   "TOTAL: 214 eventos → eventos.json",
+   "  ✓ placar: 200 jogo(s) com endereço na ESPN, 27 sem",
+   "  ! data: 2 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
+   "TOTAL: 227 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -43,25 +45,7 @@
      {
       "cabecalho": "Quarta – 25/11",
       "data": "2026-11-25",
-      "jogos": 23
-     }
-    ],
-    "jogos_sem_cabecalho": 0,
-    "jogos_sem_canal": 0,
-    "jogos_sem_competicao": 0,
-    "futsal_descartados": 0,
-    "linhas_emendadas": [],
-    "madrugada_no_dia_seguinte": [],
-    "linhas_com_data_ignoradas": [],
-    "linhas_de_jogo_nao_lidas": []
-   },
-   {
-    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
-    "dias": [
-     {
-      "cabecalho": "Quarta – 25/11",
-      "data": "2026-11-25",
-      "jogos": 23
+      "jogos": 3
      },
      {
       "cabecalho": "Quinta – 26/11",
@@ -77,11 +61,53 @@
     "madrugada_no_dia_seguinte": [],
     "linhas_com_data_ignoradas": [],
     "linhas_de_jogo_nao_lidas": []
+   },
+   {
+    "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
+    "dias": [
+     {
+      "cabecalho": "Sexta – 27/11",
+      "data": "2026-11-27",
+      "jogos": 27
+     }
+    ],
+    "jogos_sem_cabecalho": 0,
+    "jogos_sem_canal": 0,
+    "jogos_sem_competicao": 0,
+    "futsal_descartados": 0,
+    "linhas_emendadas": [],
+    "madrugada_no_dia_seguinte": [],
+    "linhas_com_data_ignoradas": [],
+    "linhas_de_jogo_nao_lidas": []
    }
   ],
+  "encerrados_mantidos": {
+   "mantos": [
+    "09:15 Persib x FC Seoul",
+    "11:00 Red Bull Bragantino x Atlético-MG",
+    "10:30 Uruguai x França",
+    "12:30 Dinamarca x Argentina",
+    "14:45 Sabah x Barcelona",
+    "14:45 Slavia Praga x Villarreal",
+    "15:00 Sporting Huelva x Levante Badalona",
+    "16:00 Pisa x Modena",
+    "16:00 América-PE x Central",
+    "16:00 Petrolina x Íbis",
+    "16:30 Oriental x Atenas",
+    "17:00 PSG x Roma",
+    "17:00 Lille x Bayern de Munique",
+    "17:00 Sporting x Manchester United",
+    "17:00 Inter de Milão x Stuttgart",
+    "17:00 Shakhtar Donetsk x Fenerbahçe",
+    "17:00 Club Brugge x Liverpool",
+    "17:00 Atlético de Madrid x Viking",
+    "17:00 Stoke City x Millwall",
+    "18:00 Santos x Sport Recife"
+   ]
+  },
   "goal": {
    "http": 200,
-   "bytes": 638229,
+   "bytes": 637865,
    "tabelas": 5,
    "dias": [
     {
@@ -112,7 +138,7 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 34,
+   "nos_dois": 48,
    "so_no_segundo": [
     "11-25 07:00 Gamba Osaka x Port [Champions League da Ásia]",
     "11-25 07:00 Kashima Antlers x Jeonbuk Hyundai [Champions League da Ásia]",
@@ -128,11 +154,15 @@
     "11-26 17:00 Crete x Anderlecht [Europa League]",
     "11-26 17:00 Sparta Praga x AZ Alkmaar [Europa League]",
     "11-26 17:00 Sunderland x Jagiellonia [Europa League]",
-    "11-27 11:20 Al Qadsiah x Al Fayha [Campeonato Saudita]"
+    "11-28 09:15 Al Hazem x Al Nassr [Campeonato Saudita]"
    ],
-   "horario_diferente": []
+   "horario_diferente": [
+    "2026-11-27 Real Salt Lake x Vancouver Whitecaps: principal 23:55 x segundo 00:00"
+   ]
   },
-  "horario_divergente": [],
+  "horario_divergente": [
+   "27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55"
+  ],
   "nba_broadcasts": [
    "Dallas Mavericks x Denver Nuggets :: NBC | KFAA-TV | MAVSTV | NBC | KFAA-TV | MAVSTV",
    "Miami Heat x Philadelphia 76ers :: ESPN | ESPN",
@@ -152,11 +182,11 @@
     "2026-12-01": 79
    },
    "data_divergente": [
-    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 00:00; a ESPN, em 28/11 00:00 → vale a ESPN",
+    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN",
     "Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN"
    ],
-   "com": 195,
-   "sem": 19,
+   "com": 200,
+   "sem": 27,
    "da_memoria": 0,
    "sem_placar": [
     "25/11 10:30 Uruguai x França [Copa do Mundo FIFA Sub-17]",
@@ -174,7 +204,15 @@
     "26/11 19:00 Tirol x Guarani de Juazeiro [Taça Fares Lopes]",
     "26/11 20:00 Palmeiras x Operário Ferroviário [Copa do Brasil Sub-20]",
     "26/11 20:00 Treze x Nacional de Patos [Copa Paraíba]",
-    "27/11 17:15 Marítimo x Nacional da Madeira [Campeonato Português]",
+    "27/11 11:00 Costa Rica x Brasil [Copa do Mundo FIFA Sub-17]",
+    "27/11 11:00 Criciúma x Fluminense [Copinha Feminina]",
+    "27/11 14:30 Bochum x Darmstadr [2.Bundesliga]",
+    "27/11 15:00 São Paulo x Vitória [Copinha Feminina]",
+    "27/11 16:00 Aliança-GO x Centro Olímpico-SP [Copinha Feminina]",
+    "27/11 17:15 Marítimo x Nacional da Madeira [Liga Portugal]",
+    "27/11 18:00 Palmeiras x Vasco da Gama [Copinha Feminina]",
+    "27/11 20:00 Ferroviária x Grêmio [Copinha Feminina]",
+    "27/11 21:00 Tarumã-AM x Flamengo [Copinha Feminina]",
     "28/11 11:30 Hamburgo x Bayern de Munique [Campeonato Alemão]",
     "28/11 14:00 Espanha x Chile [Amistoso Feminino]",
     "28/11 22:30 Los Angeles FC x St. Louis City [MLS]"
