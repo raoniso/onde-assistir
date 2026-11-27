@@ -2367,30 +2367,6 @@
   "t": "13:15",
   "sport": "Futebol",
   "g": "M",
-  "country": "Itália",
-  "league": "Serie B Italiana",
-  "detail": "—",
-  "match": "Sampdoria x Cremonese",
-  "ch": [
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@SportyNetBrasil"
-   },
-   {
-    "n": "SportyNet",
-    "y": "free"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ita.2|20261129|401899521|c",
-  "espn": "Sampdoria x Cremonese"
- },
- {
-  "date": "2026-11-29",
-  "t": "13:15",
-  "sport": "Futebol",
-  "g": "M",
   "country": "Europa (demais)",
   "league": "Campeonato Francês",
   "detail": "—",
@@ -2642,6 +2618,10 @@
    {
     "n": "SporTV",
     "y": "tv"
+   },
+   {
+    "n": "CazéTV",
+    "y": "free"
    },
    {
     "n": "OneFootball",
@@ -3187,21 +3167,123 @@
  },
  {
   "date": "2026-11-30",
+  "t": "07:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Pohang Steelers x Xangai Port",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-30",
+  "t": "09:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Johor Darul x Daejeon Citizen",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-30",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Turco",
+  "detail": "—",
+  "match": "Goztepe x Trabzonspor",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/tur.1|20261130|401888239|c",
+  "espn": "Goztepe x Trabzonspor"
+ },
+ {
+  "date": "2026-11-30",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Copa da Alemanha",
+  "detail": "oitavas de final",
+  "match": "Holstein Kiel x Colônia",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-30",
   "t": "14:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Lecce x Atalanta",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "ESPN Brasil (YouTube)",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Lecce x Atalanta",
+  "pl": "soccer/ita.1|20261130|401875095|c"
+ },
+ {
+  "date": "2026-11-30",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Turco",
+  "detail": "—",
+  "match": "Besiktas x Galatasaray",
+  "ch": [
+   {
+    "n": "ESPN 4",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/ita.1|20261130|401875095|c"
+  "pl": "soccer/tur.1|20261130|401888237|c",
+  "espn": "Besiktas x Galatasaray"
  },
  {
   "date": "2026-11-30",
@@ -3210,16 +3292,42 @@
   "g": "M",
   "country": "Itália",
   "league": "Campeonato Italiano",
-  "detail": "Tabela oficial",
-  "match": "Cagliari x AC Milan",
+  "detail": "—",
+  "match": "Cagliari x Milan",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "CazéTV",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
+  "espn": "Cagliari x AC Milan",
   "pl": "soccer/ita.1|20261130|401875019|c"
+ },
+ {
+  "date": "2026-11-30",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Copa da Alemanha",
+  "detail": "oitavas de final",
+  "match": "Bayern de Munique x Hertha Berlim",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-30",
@@ -3228,16 +3336,84 @@
   "g": "M",
   "country": "Espanha",
   "league": "La Liga",
-  "detail": "Tabela oficial",
+  "detail": "—",
   "match": "Espanyol x Getafe",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
+    "n": "CazéTV",
+    "y": "free"
+   }
+  ],
+  "v": 2,
+  "espn": "Espanyol x Getafe",
+  "pl": "soccer/esp.1|20261130|401882792|c"
+ },
+ {
+  "date": "2026-11-30",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Copa Itália",
+  "detail": "oitavas de final",
+  "match": "Inter de Milão x Genoa",
+  "ch": [
+   {
+    "n": "SportyNet",
+    "y": "free"
+   },
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-30",
+  "t": "17:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "—",
+  "match": "Benfica x Famalicão",
+  "ch": [
+   {
+    "n": "ESPN",
     "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,
-  "pl": "soccer/esp.1|20261130|401882792|c"
+  "pl": "soccer/por.1|20261130|401885386|c",
+  "espn": "Benfica x FC Famalicao"
+ },
+ {
+  "date": "2026-11-30",
+  "t": "17:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Português",
+  "detail": "—",
+  "match": "Casa Pia x Braga",
+  "ch": [
+   {
+    "n": "ESPN Brasil (YouTube)",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/por.1|20261130|401885391|c",
+  "espn": "Casa Pia x Braga"
  },
  {
   "date": "2026-11-30",
@@ -3393,6 +3569,124 @@
  },
  {
   "date": "2026-12-01",
+  "t": "07:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Kashiwa Reysol x Cong An Ha Noi",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/afc.champions|20261201|401912594|c",
+  "espn": "Kashiwa Reysol x Cong An Ha Noi"
+ },
+ {
+  "date": "2026-12-01",
+  "t": "07:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Vissel Kobe x Newcastle Jets",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/afc.champions|20261201|401912595|c",
+  "espn": "Vissel Kobe x Newcastle Jets"
+ },
+ {
+  "date": "2026-12-01",
+  "t": "09:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Beijing Guoan x Ratchaburi",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/afc.champions|20261201|401912593|c",
+  "espn": "Beijing Guoan x Ratchaburi FC"
+ },
+ {
+  "date": "2026-12-01",
+  "t": "09:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Champions League da Ásia",
+  "detail": "—",
+  "match": "Buriram United x Kyoto Sanga",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/afc.champions|20261201|401912581|c",
+  "espn": "Buriram United x Kyoto Sanga"
+ },
+ {
+  "date": "2026-12-01",
+  "t": "14:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Copa da Alemanha",
+  "detail": "oitavas de final",
+  "match": "Stuttgart x Dynamo Dresden",
+  "ch": [
+   {
+    "n": "ESPN 4",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.dfb_pokal|20261201|401932937|c",
+  "espn": "VfB Stuttgart x Dynamo Dresden"
+ },
+ {
+  "date": "2026-12-01",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Copa da Alemanha",
+  "detail": "oitavas de final",
+  "match": "Borussia Monchengladbach x Darmstadt",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.dfb_pokal|20261201|401932915|c",
+  "espn": "Borussia Mönchengladbach x SV Darmstadt 98"
+ },
+ {
+  "date": "2026-12-01",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
@@ -3402,8 +3696,8 @@
   "match": "Coventry City x Ipswich Town",
   "ch": [
    {
-    "n": "Transmissão a confirmar",
-    "y": "tv"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 1,

@@ -22,17 +22,17 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 27/11 02:10 BRT — janela 2026-11-27 a 2026-12-03",
-   "  ✓ mantosdofutebol: 93 evento(s)",
-   "  ✓ goal (2º guia): 84 evento(s)",
+   "Coleta 27/11 12:21 BRT — janela 2026-11-27 a 2026-12-03",
+   "  ✓ mantosdofutebol: 78 evento(s)",
+   "  ✓ goal (2º guia): 103 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 81 evento(s)",
    "  ! horário: as fontes discordam em 2 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55; 28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00",
    "  ✓ ESPN NBA: 54 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 188 jogo(s) com endereço na ESPN, 18 sem",
-   "  ! data: 4 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN; Sampdoria x Cremonese: a fonte lista em 28/11 13:15; a ESPN, em 29/11 13:15 → vale a ESPN",
-   "TOTAL: 206 eventos → eventos.json",
+   "  ✓ placar: 197 jogo(s) com endereço na ESPN, 23 sem",
+   "  ! data: 10 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN; AEK x PAOK: a fonte lista em 28/11 16:00; a ESPN, em 29/11 16:00 → vale a ESPN",
+   "TOTAL: 220 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -42,9 +42,9 @@
     "url": "https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/",
     "dias": [
      {
-      "cabecalho": "Quinta – 26/11",
-      "data": "2026-11-26",
-      "jogos": 14
+      "cabecalho": "Sexta – 27/11",
+      "data": "2026-11-27",
+      "jogos": 27
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -60,14 +60,9 @@
     "url": "https://mantosdofutebol.com.br/jogos-de-amanha-tv/",
     "dias": [
      {
-      "cabecalho": "Sexta – 27/11",
-      "data": "2026-11-27",
-      "jogos": 27
-     },
-     {
       "cabecalho": "Sábado – 28/11",
       "data": "2026-11-28",
-      "jogos": 52
+      "jogos": 51
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -82,8 +77,8 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 569273,
-   "tabelas": 4,
+   "bytes": 653451,
+   "tabelas": 6,
    "dias": [
     {
      "titulo": "Jogos de sexta, 27 de novembro de 2026",
@@ -99,6 +94,11 @@
      "titulo": "Jogos de domingo, 29 de novembro de 2026",
      "data": "2026-11-29",
      "jogos": 30
+    },
+    {
+     "titulo": "Jogos de segunda, 30 de novembro de 2026",
+     "data": "2026-11-30",
+     "jogos": 19
     }
    ],
    "linhas_nao_lidas": []
@@ -145,22 +145,28 @@
    "lista_geral": {
     "2026-11-26": 58,
     "2026-11-27": 89,
-    "2026-11-28": 239,
+    "2026-11-28": 240,
     "2026-11-29": 152,
     "2026-11-30": 29,
-    "2026-12-01": 83,
-    "2026-12-02": 71,
-    "2026-12-03": 24,
+    "2026-12-01": 85,
+    "2026-12-02": 72,
+    "2026-12-03": 25,
     "2026-12-04": 1
    },
    "data_divergente": [
     "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN",
     "Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
-    "Sampdoria x Cremonese: a fonte lista em 28/11 13:15; a ESPN, em 29/11 13:15 → vale a ESPN",
-    "AEK x PAOK: a fonte lista em 28/11 16:00; a ESPN, em 29/11 16:00 → vale a ESPN"
+    "AEK x PAOK: a fonte lista em 28/11 16:00; a ESPN, em 29/11 16:00 → vale a ESPN",
+    "Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
+    "Vissel Kobe x Newcastle Jets: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
+    "Beijing Guoan x Ratchaburi: a fonte lista em 30/11 09:15; a ESPN, em 01/12 09:15 → vale a ESPN",
+    "Buriram United x Kyoto Sanga: a fonte lista em 30/11 09:15; a ESPN, em 01/12 09:15 → vale a ESPN",
+    "Stuttgart x Dynamo Dresden: a fonte lista em 30/11 14:00; a ESPN, em 01/12 14:00 → vale a ESPN",
+    "Borussia Monchengladbach x Darmstadt: a fonte lista em 30/11 16:45; a ESPN, em 01/12 16:45 → vale a ESPN",
+    "Coventry City x Ipswich Town: listado em 30/11 e em 01/12; a ESPN confirma 01/12 → sai o de 30/11"
    ],
-   "com": 188,
-   "sem": 18,
+   "com": 197,
+   "sem": 23,
    "da_memoria": 0,
    "sem_placar": [
     "27/11 11:00 Costa Rica x Brasil [Copa do Mundo FIFA Sub-17]",
@@ -180,7 +186,12 @@
     "28/11 15:00 Sport Recife x Botafogo [Copinha Feminina]",
     "28/11 22:30 Los Angeles FC x St. Louis City [MLS]",
     "28/11 23:00 Wellington Phoenix x Adelaide United [A-League]",
-    "29/11 01:55 Brasil x Japão [Amistoso Feminino]"
+    "29/11 01:55 Brasil x Japão [Amistoso Feminino]",
+    "30/11 07:00 Pohang Steelers x Xangai Port [Champions League da Ásia]",
+    "30/11 09:15 Johor Darul x Daejeon Citizen [Champions League da Ásia]",
+    "30/11 14:00 Holstein Kiel x Colônia [Copa da Alemanha]",
+    "30/11 16:45 Bayern de Munique x Hertha Berlim [Copa da Alemanha]",
+    "30/11 17:00 Inter de Milão x Genoa [Copa Itália]"
    ]
   }
  },
