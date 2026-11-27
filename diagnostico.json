@@ -22,17 +22,17 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 27/11 12:21 BRT — janela 2026-11-27 a 2026-12-03",
-   "  ✓ mantosdofutebol: 78 evento(s)",
+   "Coleta 27/11 20:37 BRT — janela 2026-11-27 a 2026-12-03",
+   "  ✓ mantosdofutebol: 128 evento(s)",
    "  ✓ goal (2º guia): 103 evento(s)",
    "  ✓ ESPN tabelas (futebol, 7 dias): 81 evento(s)",
-   "  ! horário: as fontes discordam em 2 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55; 28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00",
+   "  ! horário: as fontes discordam em 3 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55; 28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00; 29/11 Boca Juniors x Gimnasia La Plata: guia 20:30, 2º guia 20:00 → vale 20:30",
    "  ✓ ESPN NBA: 54 evento(s)",
    "  ✓ ESPN NFL: 13 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 197 jogo(s) com endereço na ESPN, 23 sem",
-   "  ! data: 10 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN; AEK x PAOK: a fonte lista em 28/11 16:00; a ESPN, em 29/11 16:00 → vale a ESPN",
-   "TOTAL: 220 eventos → eventos.json",
+   "  ✓ placar: 209 jogo(s) com endereço na ESPN, 30 sem",
+   "  ! data: 9 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: listado em 28/11 e em 29/11; a ESPN confirma 29/11 → sai o de 28/11; Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
+   "TOTAL: 239 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -62,6 +62,11 @@
      {
       "cabecalho": "Sábado – 28/11",
       "data": "2026-11-28",
+      "jogos": 50
+     },
+     {
+      "cabecalho": "Domingo – 29/11",
+      "data": "2026-11-29",
       "jogos": 51
      }
     ],
@@ -77,7 +82,7 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 653451,
+   "bytes": 653516,
    "tabelas": 6,
    "dias": [
     {
@@ -108,23 +113,23 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 50,
+   "nos_dois": 80,
    "so_no_segundo": [
     "11-28 12:30 Arouca x Rio Ave [Campeonato Português]",
     "11-28 12:30 Moreirense x Santa Clara [Campeonato Português]",
     "11-28 15:00 Académico de Viseu x Alverca [Campeonato Português]",
     "11-28 00:30 Portland Timbers x Dallas [MLS]",
-    "11-29 01:55 Brasil x Japão [Amistoso Feminino]",
-    "11-29 08:30 Udinese x Fiorentina [Campeonato Italiano]",
-    "11-29 09:00 Everton x Liverpool [Campeonato Inglês]",
-    "11-29 10:00 Valencia x Osasuna [Campeonato Espanhol]",
-    "11-29 10:30 Feyenoord x Ajax [Campeonato Holandês]",
-    "11-29 11:00 Sassuolo x Napoli [Campeonato Italiano]",
-    "11-29 11:00 Auxerre x Olympique de Marseille [Campeonato Francês]",
-    "11-29 11:05 Brighton x Newcastle United [Campeonato Inglês]",
-    "11-29 11:05 Crystal Palace x Hull City [Campeonato Inglês]",
-    "11-29 11:05 Fulham x Bournemouth [Campeonato Inglês]",
-    "11-29 11:05 Sunderland x Tottenham [Campeonato Inglês]"
+    "11-30 13:00 Goztepe x Trabzonspor [Campeonato Turco]",
+    "11-30 14:30 Lecce x Atalanta [Campeonato Italiano]",
+    "11-30 15:00 Besiktas x Galatasaray [Campeonato Turco]",
+    "11-30 16:45 Cagliari x Milan [Campeonato Italiano]",
+    "11-30 17:00 Espanyol x Getafe [Campeonato Espanyol]",
+    "11-30 17:15 Benfica x Famalicão [Campeonato Português]",
+    "11-30 17:15 Casa Pia x Braga [Campeonato Português]",
+    "11-30 07:00 Kashiwa Reysol x Cong An Ha Noi [Champions League da Ásia]",
+    "11-30 07:00 Pohang Steelers x Xangai Port [Champions League da Ásia]",
+    "11-30 07:00 Vissel Kobe x Newcastle Jets [Champions League da Ásia]",
+    "11-30 09:15 Beijing Guoan x Ratchaburi [Champions League da Ásia]"
    ],
    "horario_diferente": [
     "2026-11-27 Real Salt Lake x Vancouver Whitecaps: principal 23:55 x segundo 00:00"
@@ -132,7 +137,8 @@
   },
   "horario_divergente": [
    "27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55",
-   "28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00"
+   "28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00",
+   "29/11 Boca Juniors x Gimnasia La Plata: guia 20:30, 2º guia 20:00 → vale 20:30"
   ],
   "nba_broadcasts": [
    "Miami Heat x New York Knicks :: PRIME VIDEO | PRIME VIDEO",
@@ -155,8 +161,7 @@
    },
    "data_divergente": [
     "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN",
-    "Portland Timbers x Dallas: a fonte lista em 28/11 00:30; a ESPN, em 29/11 00:30 → vale a ESPN",
-    "AEK x PAOK: a fonte lista em 28/11 16:00; a ESPN, em 29/11 16:00 → vale a ESPN",
+    "Portland Timbers x Dallas: listado em 28/11 e em 29/11; a ESPN confirma 29/11 → sai o de 28/11",
     "Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
     "Vissel Kobe x Newcastle Jets: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
     "Beijing Guoan x Ratchaburi: a fonte lista em 30/11 09:15; a ESPN, em 01/12 09:15 → vale a ESPN",
@@ -165,8 +170,8 @@
     "Borussia Monchengladbach x Darmstadt: a fonte lista em 30/11 16:45; a ESPN, em 01/12 16:45 → vale a ESPN",
     "Coventry City x Ipswich Town: listado em 30/11 e em 01/12; a ESPN confirma 01/12 → sai o de 30/11"
    ],
-   "com": 197,
-   "sem": 23,
+   "com": 209,
+   "sem": 30,
    "da_memoria": 0,
    "sem_placar": [
     "27/11 11:00 Costa Rica x Brasil [Copa do Mundo FIFA Sub-17]",
@@ -186,7 +191,14 @@
     "28/11 15:00 Sport Recife x Botafogo [Copinha Feminina]",
     "28/11 22:30 Los Angeles FC x St. Louis City [MLS]",
     "28/11 23:00 Wellington Phoenix x Adelaide United [A-League]",
-    "29/11 01:55 Brasil x Japão [Amistoso Feminino]",
+    "29/11 01:55 Japão x Brasil [Amistoso Feminino]",
+    "29/11 12:00 Copenhague x Midtjylland [Campeonato Dinamarquês]",
+    "29/11 13:00 Fenerbahçe x Erzurumspor [Campeonato Turco]",
+    "29/11 15:00 Joinville x Marcílio Dias [Copa Santa Catarina]",
+    "29/11 16:00 Central x Petrolina [Campeonato Pernambucano]",
+    "29/11 16:00 Íbis x América-PE [Campeonato Pernambucano]",
+    "29/11 17:00 Serra Branca x Treze [Copa Paraíba]",
+    "29/11 17:00 Icasa x Ceará B [Taça Fares Lopes]",
     "30/11 07:00 Pohang Steelers x Xangai Port [Champions League da Ásia]",
     "30/11 09:15 Johor Darul x Daejeon Citizen [Champions League da Ásia]",
     "30/11 14:00 Holstein Kiel x Colônia [Copa da Alemanha]",

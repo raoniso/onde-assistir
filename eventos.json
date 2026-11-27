@@ -1134,6 +1134,11 @@
   "match": "Paderborn x Schalke 04",
   "ch": [
    {
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   },
+   {
     "n": "OneFootball",
     "y": "stream"
    }
@@ -2055,13 +2060,37 @@
  },
  {
   "date": "2026-11-29",
+  "t": "00:10",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Mundial",
+  "league": "Liga MX",
+  "detail": "—",
+  "match": "Club América x Monterrey",
+  "ch": [
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
+   },
+   {
+    "n": "SportyNet",
+    "y": "free"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/mex.1|20261128|401931996|c",
+  "espn": "América x Monterrey"
+ },
+ {
+  "date": "2026-11-29",
   "t": "00:30",
   "sport": "Futebol",
   "g": "M",
   "country": "EUA/Canadá",
   "league": "MLS",
-  "detail": "—",
-  "match": "Portland Timbers x Dallas",
+  "detail": "OF-volta",
+  "match": "Portland Timbers x FC Dallas",
   "ch": [
    {
     "n": "Apple TV",
@@ -2080,14 +2109,15 @@
   "country": "Mundial",
   "league": "Amistoso Feminino",
   "detail": "—",
-  "match": "Brasil x Japão",
+  "match": "Japão x Brasil",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
    },
    {
-    "n": "GE TV",
+    "n": "Globo",
     "y": "free"
    },
    {
@@ -2095,7 +2125,7 @@
     "y": "tv"
    }
   ],
-  "v": 1,
+  "v": 2,
   "sel": 1
  },
  {
@@ -2142,6 +2172,110 @@
  },
  {
   "date": "2026-11-29",
+  "t": "09:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Inglaterra",
+  "league": "Championship",
+  "detail": "—",
+  "match": "Swansea City x Cardiff City",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/eng.2|20261129|401880128|c",
+  "espn": "Swansea City x Cardiff City"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "09:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Russo",
+  "detail": "—",
+  "match": "Rostov x Krasnodar",
+  "ch": [
+   {
+    "n": "XSports",
+    "y": "free"
+   },
+   {
+    "n": "Bandsports",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/rus.1|20261129|401879798|c",
+  "espn": "Rostov x Krasnodar"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "09:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2.Bundesliga",
+  "detail": "—",
+  "match": "Eintracht Brausnchweig x Wolfsburg",
+  "ch": [
+   {
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
+   },
+   {
+    "n": "OneFootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.2|20261129|401885041|c",
+  "espn": "TSV Eintracht Braunschweig x VfL Wolfsburg"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "09:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2.Bundesliga",
+  "detail": "—",
+  "match": "Greuther Fürth x Arminia Bielefeld",
+  "ch": [
+   {
+    "n": "OneFootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.2|20261129|401885040|c",
+  "espn": "SpVgg Greuther Fürth x Arminia Bielefeld"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "09:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "2.Bundesliga",
+  "detail": "—",
+  "match": "Magdeburg x Energie Cottbus",
+  "ch": [
+   {
+    "n": "OneFootball",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.2|20261129|401885042|c",
+  "espn": "1. FC Magdeburg x Energie Cottbus"
+ },
+ {
+  "date": "2026-11-29",
   "t": "10:00",
   "sport": "Futebol",
   "g": "M",
@@ -2151,8 +2285,9 @@
   "match": "Valencia x Osasuna",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    }
   ],
   "v": 2,
@@ -2165,7 +2300,7 @@
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "Campeonato Holandês",
+  "league": "Eredivisie",
   "detail": "—",
   "match": "Feyenoord x Ajax",
   "ch": [
@@ -2178,32 +2313,9 @@
     "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
   "pl": "soccer/ned.1|20261129|401875535|c",
   "espn": "Feyenoord Rotterdam x Ajax Amsterdam"
- },
- {
-  "date": "2026-11-29",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Sassuolo x Napoli",
-  "ch": [
-   {
-    "n": "SportyNet",
-    "y": "free"
-   },
-   {
-    "n": "SportyNet (YouTube)",
-    "y": "free"
-   }
-  ],
-  "v": 2,
-  "espn": "Sassuolo x Napoli",
-  "pl": "soccer/ita.1|20261129|401874992|c"
  },
  {
   "date": "2026-11-29",
@@ -2216,13 +2328,42 @@
   "match": "Auxerre x Olympique de Marseille",
   "ch": [
    {
-    "n": "Cnn Esportes (YouTube)",
-    "y": "free"
+    "n": "CNN Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CNNEsportes"
    }
   ],
   "v": 2,
   "espn": "AJ Auxerre x Marseille",
   "pl": "soccer/fra.1|20261129|401876393|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "11:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "—",
+  "match": "Sassuolo x Napoli",
+  "ch": [
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
+   },
+   {
+    "n": "SportyNet",
+    "y": "free"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Sassuolo x Napoli",
+  "pl": "soccer/ita.1|20261129|401874992|c"
  },
  {
   "date": "2026-11-29",
@@ -2232,11 +2373,12 @@
   "country": "Inglaterra",
   "league": "Premier League",
   "detail": "—",
-  "match": "Brighton x Newcastle United",
+  "match": "Brighton x Newcastle",
   "ch": [
    {
     "n": "ESPN Brasil (YouTube)",
-    "y": "free"
+    "y": "free",
+    "u": "https://www.youtube.com/@espnbrasil"
    },
    {
     "n": "Disney+",
@@ -2255,16 +2397,20 @@
   "country": "Inglaterra",
   "league": "Premier League",
   "detail": "—",
-  "match": "Crystal Palace x Hull City",
+  "match": "Sunderland x Tottenham",
   "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Crystal Palace x Hull City",
-  "pl": "soccer/eng.1|20261129|401879230|c"
+  "espn": "Sunderland x Tottenham Hotspur",
+  "pl": "soccer/eng.1|20261129|401879224|c"
  },
  {
   "date": "2026-11-29",
@@ -2297,20 +2443,16 @@
   "country": "Inglaterra",
   "league": "Premier League",
   "detail": "—",
-  "match": "Sunderland x Tottenham",
+  "match": "Crystal Palace x Hull City",
   "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
    {
     "n": "Disney+",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Sunderland x Tottenham Hotspur",
-  "pl": "soccer/eng.1|20261129|401879224|c"
+  "espn": "Crystal Palace x Hull City",
+  "pl": "soccer/eng.1|20261129|401879230|c"
  },
  {
   "date": "2026-11-29",
@@ -2323,12 +2465,14 @@
   "match": "Freiburg x RB Leipzig",
   "ch": [
    {
-    "n": "Canal GOAT",
-    "y": "free"
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
    },
    {
-    "n": "XSports",
-    "y": "free"
+    "n": "Romario T Voficial (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@RomarioTVoficial"
    },
    {
     "n": "SporTV",
@@ -2345,6 +2489,62 @@
  },
  {
   "date": "2026-11-29",
+  "t": "11:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Russo",
+  "detail": "—",
+  "match": "Krylya Sovetov x Dynamo Moscow",
+  "ch": [
+   {
+    "n": "Bandsports",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/rus.1|20261129|401879799|c",
+  "espn": "Krylia Sovetov x Dinamo Moscow"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Belga",
+  "detail": "—",
+  "match": "Antwerp x Anderlecht",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bel.1|20261129|401878928|c",
+  "espn": "Antwerp x Anderlecht"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "12:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Dinamarquês",
+  "detail": "—",
+  "match": "Copenhague x Midtjylland",
+  "ch": [
+   {
+    "n": "Canalgolbrasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgolbrasil"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-29",
   "t": "12:15",
   "sport": "Futebol",
   "g": "M",
@@ -2354,13 +2554,31 @@
   "match": "Deportivo A Coruña x Barcelona",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    }
   ],
   "v": 2,
   "espn": "Deportivo x Barcelona",
   "pl": "soccer/esp.1|20261129|401882794|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "13:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Turco",
+  "detail": "—",
+  "match": "Fenerbahçe x Erzurumspor",
+  "ch": [
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-29",
@@ -2373,13 +2591,38 @@
   "match": "Toulouse x Rennes",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    }
   ],
   "v": 2,
   "espn": "Toulouse x Stade Rennais",
   "pl": "soccer/fra.1|20261129|401876386|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "13:15",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Serie B Italiana",
+  "detail": "—",
+  "match": "Sampdoria x Cremonese",
+  "ch": [
+   {
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
+   },
+   {
+    "n": "SportyNet",
+    "y": "free"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.2|20261129|401899521|c",
+  "espn": "Sampdoria x Cremonese"
  },
  {
   "date": "2026-11-29",
@@ -2415,12 +2658,14 @@
   "match": "Hoffenheim x Augsburg",
   "ch": [
    {
-    "n": "Canal GOAT",
-    "y": "free"
+    "n": "Canal GOAT (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgoatbr"
    },
    {
-    "n": "Jovem Pan Esportes (YouTube)",
-    "y": "free"
+    "n": "Jovempanesportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@jovempanesportes"
    },
    {
     "n": "OneFootball",
@@ -2442,12 +2687,17 @@
   "match": "Roma x Monza",
   "ch": [
    {
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
+   },
+   {
     "n": "SportyNet",
     "y": "free"
    },
    {
-    "n": "SportyNet (YouTube)",
-    "y": "free"
+    "n": "Disney+",
+    "y": "stream"
    }
   ],
   "v": 2,
@@ -2465,13 +2715,51 @@
   "match": "Celta de Vigo x Villarreal",
   "ch": [
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    }
   ],
   "v": 2,
   "espn": "Celta Vigo x Villarreal",
   "pl": "soccer/esp.1|20261129|401882795|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "14:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Belga",
+  "detail": "—",
+  "match": "Standard Liége x Club Brugge",
+  "ch": [
+   {
+    "n": "DAZN",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/bel.1|20261129|401878927|c",
+  "espn": "Standard Liege x Club Brugge"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "15:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Santa Catarina",
+  "detail": "FINAL-volta",
+  "match": "Joinville x Marcílio Dias",
+  "ch": [
+   {
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-29",
@@ -2616,12 +2904,13 @@
   "match": "Borussia Dortmund x Bayer Leverkusen",
   "ch": [
    {
-    "n": "SporTV",
-    "y": "tv"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    },
    {
-    "n": "CazéTV",
-    "y": "free"
+    "n": "SporTV",
+    "y": "tv"
    },
    {
     "n": "OneFootball",
@@ -2631,6 +2920,93 @@
   "v": 2,
   "espn": "Borussia Dortmund x Bayer Leverkusen",
   "pl": "soccer/ger.1|20261129|401884727|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "—",
+  "match": "Vitória x Santos",
+  "ch": [
+   {
+    "n": "GE TV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@getv"
+   },
+   {
+    "n": "Globo (Ba, Sp E Parte Da Rede)",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Vitória x Santos",
+  "pl": "soccer/bra.1|20261129|401841332|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Brasileirão Série A",
+  "detail": "—",
+  "match": "Coritiba x Flamengo",
+  "ch": [
+   {
+    "n": "Globo (Pr, Rj E Parte Da Rede)",
+    "y": "free"
+   },
+   {
+    "n": "Premiere",
+    "y": "stream"
+   }
+  ],
+  "v": 2,
+  "espn": "Coritiba x Flamengo",
+  "pl": "soccer/bra.1|20261129|401841333|c"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Campeonato Pernambucano",
+  "detail": "Turno Forró-Quadrangular Final",
+  "match": "Central x Petrolina",
+  "ch": [
+   {
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-29",
+  "t": "16:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Campeonato Pernambucano",
+  "detail": "Turno Forró-Quadrangular Final",
+  "match": "Íbis x América-PE",
+  "ch": [
+   {
+    "n": "TVFPFPE (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@TVFPFPE"
+   }
+  ],
+  "v": 1
  },
  {
   "date": "2026-11-29",
@@ -2654,53 +3030,27 @@
  },
  {
   "date": "2026-11-29",
-  "t": "16:00",
+  "t": "16:45",
   "sport": "Futebol",
   "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
   "detail": "—",
-  "match": "Coritiba x Flamengo",
+  "match": "Lyon x Monaco",
   "ch": [
    {
-    "n": "Globo",
-    "y": "free"
+    "n": "CazéTV (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@CazeTV"
    },
    {
-    "n": "Premiere",
-    "y": "stream"
+    "n": "XSports",
+    "y": "free"
    }
   ],
   "v": 2,
-  "espn": "Coritiba x Flamengo",
-  "pl": "soccer/bra.1|20261129|401841333|c"
- },
- {
-  "date": "2026-11-29",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Vitória x Santos",
-  "ch": [
-   {
-    "n": "Globo",
-    "y": "free"
-   },
-   {
-    "n": "GE TV",
-    "y": "free"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Vitória x Santos",
-  "pl": "soccer/bra.1|20261129|401841332|c"
+  "espn": "Lyon x AS Monaco",
+  "pl": "soccer/fra.1|20261129|401876389|c"
  },
  {
   "date": "2026-11-29",
@@ -2710,7 +3060,7 @@
   "country": "Itália",
   "league": "Campeonato Italiano",
   "detail": "—",
-  "match": "Como x Juventus",
+  "match": "Como 1907 x Juventus",
   "ch": [
    {
     "n": "ESPN 3",
@@ -2727,29 +3077,6 @@
  },
  {
   "date": "2026-11-29",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "—",
-  "match": "Lyon x Monaco",
-  "ch": [
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "CazéTV",
-    "y": "free"
-   }
-  ],
-  "v": 2,
-  "espn": "Lyon x AS Monaco",
-  "pl": "soccer/fra.1|20261129|401876389|c"
- },
- {
-  "date": "2026-11-29",
   "t": "17:00",
   "sport": "Futebol",
   "g": "M",
@@ -2759,11 +3086,12 @@
   "match": "Real Sociedad x Sevilla",
   "ch": [
    {
-    "n": "SportyNet",
-    "y": "free"
+    "n": "SportyNet (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@SportyNetBrasil"
    },
    {
-    "n": "SportyNet (YouTube)",
+    "n": "SportyNet",
     "y": "free"
    }
   ],
@@ -2773,11 +3101,67 @@
  },
  {
   "date": "2026-11-29",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Copa Paraíba",
+  "detail": "FINAL-ida",
+  "match": "Serra Branca x Treze",
+  "ch": [
+   {
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-29",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Brasil",
+  "league": "Taça Fares Lopes",
+  "detail": "Semifinal",
+  "match": "Icasa x Ceará B",
+  "ch": [
+   {
+    "n": "Metrópoles Esportes (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@MetropolesEsportes"
+   }
+  ],
+  "v": 1
+ },
+ {
+  "date": "2026-11-29",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Peruano",
+  "detail": "Semifinal-ida",
+  "match": "Sport Huancayo x Universitário",
+  "ch": [
+   {
+    "n": "Canalgolbrasil (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@canalgolbrasil"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/per.1|20261129|401936435|c",
+  "espn": "Sport Huancayo x Universitario"
+ },
+ {
+  "date": "2026-11-29",
   "t": "17:30",
   "sport": "Futebol",
   "g": "M",
   "country": "Europa (demais)",
-  "league": "Campeonato Português",
+  "league": "Liga Portugal",
   "detail": "—",
   "match": "Porto x Sporting",
   "ch": [
@@ -2786,7 +3170,7 @@
     "y": "stream"
    }
   ],
-  "v": 1,
+  "v": 2,
   "pl": "soccer/por.1|20261129|401885387|c",
   "espn": "FC Porto x Sporting CP"
  },
@@ -2918,16 +3302,16 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "—",
-  "match": "Mirassol x Athletico-PR",
+  "match": "Corinthians x Grêmio",
   "ch": [
    {
-    "n": "Premiere",
+    "n": "Prime Video",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Mirassol x Athletico-PR",
-  "pl": "soccer/bra.1|20261129|401841330|c"
+  "espn": "Corinthians x Grêmio",
+  "pl": "soccer/bra.1|20261129|401841334|c"
  },
  {
   "date": "2026-11-29",
@@ -2937,8 +3321,12 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "—",
-  "match": "Internacional x RB Bragantino",
+  "match": "Internacional x Red Bull Bragantino",
   "ch": [
+   {
+    "n": "SporTV",
+    "y": "tv"
+   },
    {
     "n": "Premiere",
     "y": "stream"
@@ -2956,16 +3344,16 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "—",
-  "match": "Corinthians x Grêmio",
+  "match": "Mirassol x Athletico-PR",
   "ch": [
    {
-    "n": "Prime Video",
+    "n": "Premiere",
     "y": "stream"
    }
   ],
   "v": 2,
-  "espn": "Corinthians x Grêmio",
-  "pl": "soccer/bra.1|20261129|401841334|c"
+  "espn": "Mirassol x Athletico-PR",
+  "pl": "soccer/bra.1|20261129|401841330|c"
  },
  {
   "date": "2026-11-29",
@@ -2993,12 +3381,8 @@
   "country": "Brasil",
   "league": "Brasileirão Série A",
   "detail": "—",
-  "match": "Atlético-MG x Vasco",
+  "match": "Atlético-MG x Vasco da Gama",
   "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
    {
     "n": "Premiere",
     "y": "stream"
@@ -3010,26 +3394,23 @@
  },
  {
   "date": "2026-11-29",
-  "t": "20:00",
+  "t": "19:30",
   "sport": "Futebol",
   "g": "M",
   "country": "América do Sul",
-  "league": "Campeonato Argentino",
+  "league": "Campeonato Venezuelano",
   "detail": "—",
-  "match": "Boca Juniors x Gimnasia de la Plata",
+  "match": "Deportivo Táchira x Carabobo",
   "ch": [
    {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
+    "n": "Ligafutve (YouTube)",
+    "y": "free",
+    "u": "https://www.youtube.com/@ligafutve"
    }
   ],
   "v": 1,
-  "pl": "soccer/arg.1|20261129|401936657|c",
-  "espn": "Boca Juniors x Gimnasia La Plata"
+  "pl": "soccer/ven.1|20261129|401934195|c",
+  "espn": "Deportivo Táchira x Carabobo"
  },
  {
   "date": "2026-11-29",
@@ -3102,6 +3483,29 @@
   ],
   "v": 1,
   "pl": "basketball/nba|20261129|401910058|v"
+ },
+ {
+  "date": "2026-11-29",
+  "t": "20:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "América do Sul",
+  "league": "Campeonato Argentino",
+  "detail": "QF",
+  "match": "Boca Juniors x Gimnasia La Plata",
+  "ch": [
+   {
+    "n": "ESPN",
+    "y": "tv"
+   },
+   {
+    "n": "Disney+",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/arg.1|20261129|401936657|c",
+  "espn": "Boca Juniors x Gimnasia La Plata"
  },
  {
   "date": "2026-11-29",
