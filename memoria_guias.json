@@ -1,500 +1,8 @@
 {
  "build": "2026-11-21-b",
  "mantos": {
-  "2026-11-26": {
-   "lido_em": "26/11 19:27",
-   "jogos": [
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Juventus x Omonia",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Crystal Palace x Real Sociedad",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Lyon x Lillestrom",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "NEC Nijmegen x Rennes",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Torreense x Celtic",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "CSKA Sofia x Trabzonspor",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Borac x Atalanta",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Braga x Kups",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Freiburg x Twente",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Inglaterra",
-     "league": "EFL League One",
-     "detail": "—",
-     "match": "Doncaster Rovers x Huddersfield Town",
-     "ch": [
-      {
-       "n": "Disney+",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "19:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Brasil",
-     "league": "Taça Fares Lopes",
-     "detail": "—",
-     "match": "Tirol x Guarani de Juazeiro",
-     "ch": [
-      {
-       "n": "Metrópoles Esportes (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@MetropolesEsportes"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "20:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Brasil",
-     "league": "Brasileirão",
-     "detail": "—",
-     "match": "São Paulo x Remo",
-     "ch": [
-      {
-       "n": "Premiere",
-       "y": "stream"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "20:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Brasil",
-     "league": "Copa do Brasil Sub-20",
-     "detail": "Semifinal-volta",
-     "match": "Palmeiras x Operário Ferroviário",
-     "ch": [
-      {
-       "n": "SporTV",
-       "y": "tv"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "20:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Brasil",
-     "league": "Copa Paraíba",
-     "detail": "—",
-     "match": "Treze x Nacional de Patos",
-     "ch": [
-      {
-       "n": "Metrópoles Esportes (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@MetropolesEsportes"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "12:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Copa do Mundo FIFA Sub-17",
-     "detail": "—",
-     "match": "Marrocos x Espanha",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:30",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Mundial",
-     "league": "Liga Saudita",
-     "detail": "—",
-     "match": "Al-Faisaly x Al-Diriyah",
-     "ch": [
-      {
-       "n": "Canal GOAT (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@canalgoatbr"
-      },
-      {
-       "n": "Bandsports",
-       "y": "tv"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Olympiacos x Milan",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Celta de Vigo x Bournemouth",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Viktoria Plzen x Benfica",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Dinamo Zagreb x Bayer Leverkusen",
-     "ch": [
-      {
-       "n": "CNN Esportes (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CNNEsportes"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Besiktas x Hapoel Beer Sheva",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Europa League",
-     "detail": "—",
-     "match": "Olympique de Marseille x Levski Sofia",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Hearts x Monaco",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Iberia x Getafe",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Brighton x Universitatea Craiova",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Ajax x Thun",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "UEFA Conference League",
-     "detail": "—",
-     "match": "Jablonec x Lugano",
-     "ch": [
-      {
-       "n": "CazéTV (YouTube)",
-       "y": "free",
-       "u": "https://www.youtube.com/@CazeTV"
-      }
-     ],
-     "v": 1
-    }
-   ]
-  },
   "2026-11-27": {
-   "lido_em": "26/11 19:27",
+   "lido_em": "27/11 02:10",
    "jogos": [
     {
      "date": "2026-11-27",
@@ -1038,577 +546,1057 @@
      "v": 1
     }
    ]
-  }
- },
- "goal": {
-  "2026-11-26": {
-   "lido_em": "26/11 19:27",
+  },
+  "2026-11-28": {
+   "lido_em": "27/11 02:10",
    "jogos": [
     {
-     "date": "2026-11-26",
-     "t": "12:30",
+     "date": "2026-11-28",
+     "t": "03:00",
      "sport": "Futebol",
      "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
+     "country": "Mundial",
+     "league": "J.League",
      "detail": "—",
-     "match": "Kairat Almaty x Mjallby",
+     "match": "Kashima Antlers x Fagiano Okayama",
      "ch": [
       {
-       "n": "CazéTV",
+       "n": "Canal Zico10 (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CanalZico10"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "05:40",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "A-League",
+     "detail": "—",
+     "match": "Central Coast Mariners x Auckland FC",
+     "ch": [
+      {
+       "n": "Canalgolbrasil (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgolbrasil"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "09:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "2.Bundesliga",
+     "detail": "—",
+     "match": "Dynamo Dresden x St. Pauli",
+     "ch": [
+      {
+       "n": "Jovempanesportes (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@jovempanesportes"
+      },
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "09:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "2.Bundesliga",
+     "detail": "—",
+     "match": "Hertha Berlin x Karlsruher",
+     "ch": [
+      {
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "09:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "2.Bundesliga",
+     "detail": "—",
+     "match": "Holstein Kiel x Kaiserslautern",
+     "ch": [
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "09:15",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga Saudita",
+     "detail": "—",
+     "match": "Al-Hazem x Al-Nassr",
+     "ch": [
+      {
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "XSports",
+       "y": "free"
+      },
+      {
+       "n": "Bandsports",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "09:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Inglaterra",
+     "league": "Championship",
+     "detail": "—",
+     "match": "Preston North End x Norwich City",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "10:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Espanha",
+     "league": "LaLiga",
+     "detail": "—",
+     "match": "Real Bétis x Rayo Vallecano",
+     "ch": [
+      {
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
+      },
+      {
+       "n": "SportyNet",
        "y": "free"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
+     "date": "2026-11-28",
+     "t": "10:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "Campeonato Russo",
+     "detail": "—",
+     "match": "CSKA x Zenit",
+     "ch": [
+      {
+       "n": "Canalgolbrasil (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgolbrasil"
+      },
+      {
+       "n": "XSports",
+       "y": "free"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Serie A",
+     "detail": "—",
+     "match": "Frosinone x Parma",
+     "ch": [
+      {
+       "n": "ESPN 2",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Brasil",
+     "league": "Copinha Feminina",
+     "detail": "—",
+     "match": "Ação-MT x Red Bull Bragantino",
+     "ch": [
+      {
+       "n": "Paulistao (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@paulistao"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:20",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Liga Saudita",
+     "detail": "—",
+     "match": "Al-Ettifaq x Al-Hilal",
+     "ch": [
+      {
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "SporTV",
+       "y": "tv"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "Bundesliga",
+     "detail": "—",
+     "match": "Hamburgo x Bayern de Munique",
+     "ch": [
+      {
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
+      },
+      {
+       "n": "SportyNet",
+       "y": "free"
+      },
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "Bundesliga",
+     "detail": "—",
+     "match": "Colônia x Elversberg",
+     "ch": [
+      {
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "Bundesliga",
+     "detail": "—",
+     "match": "Paderborn x Schalke 04",
+     "ch": [
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "11:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "Bundesliga",
+     "detail": "—",
+     "match": "Mainz 05 x Union Berlin",
+     "ch": [
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "12:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Inglaterra",
+     "league": "Premier League",
+     "detail": "—",
+     "match": "Leeds United x Coventry City",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "12:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Inglaterra",
+     "league": "Premier League",
+     "detail": "—",
+     "match": "Manchester United x Brentford",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "12:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Inglaterra",
+     "league": "Championship",
+     "detail": "—",
+     "match": "West Bromwich x Bristol City",
+     "ch": [
+      {
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "12:15",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Espanha",
+     "league": "LaLiga",
+     "detail": "—",
+     "match": "Málaga x Athletic Bilbao",
+     "ch": [
+      {
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "13:15",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "Ligue 1",
+     "detail": "—",
+     "match": "Angers x RC Lens",
+     "ch": [
+      {
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "13:15",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Itália",
+     "league": "Serie B Italiana",
+     "detail": "—",
+     "match": "Sampdoria x Cremonese",
+     "ch": [
+      {
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
+      },
+      {
+       "n": "SportyNet",
+       "y": "free"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Mundial",
+     "league": "Amistoso Feminino",
+     "detail": "—",
+     "match": "Espanha x Chile",
+     "ch": [
+      {
+       "n": "ESPN 3",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "Serie A",
+     "detail": "—",
+     "match": "Torino x Lazio",
+     "ch": [
+      {
+       "n": "ESPN 2",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Europa (demais)",
+     "league": "Liga Suíça",
+     "detail": "—",
+     "match": "Grasshopper x Basel",
+     "ch": [
+      {
+       "n": "Canalgolbrasil (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgolbrasil"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Inglaterra",
+     "league": "Premier League",
+     "detail": "—",
+     "match": "Ipswich Town x Aston Villa",
+     "ch": [
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Espanha",
+     "league": "LaLiga",
+     "detail": "—",
+     "match": "Elche x Atlético de Madrid",
+     "ch": [
+      {
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "14:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "Bundesliga",
+     "detail": "—",
+     "match": "Sttutgart x Eintracht Frankfurt",
+     "ch": [
+      {
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
+      },
+      {
+       "n": "XSports",
+       "y": "free"
+      },
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
      "t": "14:30",
      "sport": "Futebol",
      "g": "M",
      "country": "Mundial",
-     "league": "Campeonato Saudita",
+     "league": "Liga Saudita",
      "detail": "—",
-     "match": "Al Faisaly x Al Diriyah",
+     "match": "Al-Ahli x Al-Taawoun",
      "ch": [
       {
-       "n": "Canal GOAT",
+       "n": "Canal GOAT (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgoatbr"
+      },
+      {
+       "n": "Band",
        "y": "free"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
+     "date": "2026-11-28",
+     "t": "14:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "EUA/Canadá",
+     "league": "MLS",
+     "detail": "OF-volta",
+     "match": "Charlotte FC x Chicago Fire",
+     "ch": [
+      {
+       "n": "Apple TV",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
      "t": "14:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Eredivisie",
      "detail": "—",
-     "match": "Viktoria Plzen x Benfica",
+     "match": "PSV x Go Ahead Eagles",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "Disney+",
+       "y": "stream"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "15:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Mundial",
+     "league": "CONCACAF Championship Feminina",
+     "detail": "—",
+     "match": "Canadá x Panamá",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "15:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Brasil",
+     "league": "Copinha Feminina",
+     "detail": "—",
+     "match": "Corinthians x Atlético-MG",
+     "ch": [
+      {
+       "n": "Tv Brasil",
+       "y": "free"
+      },
+      {
+       "n": "Paulistao (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@paulistao"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "15:00",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Brasil",
+     "league": "Copinha Feminina",
+     "detail": "—",
+     "match": "Sport Recife x Botafogo",
+     "ch": [
+      {
+       "n": "Paulistao (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@paulistao"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "16:00",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Campeonato Grego",
      "detail": "—",
-     "match": "Dinamo Zagreb x Bayer Leverkusen",
+     "match": "AEK x PAOK",
      "ch": [
       {
-       "n": "Cnn Esportes (YouTube)",
-       "y": "free"
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "16:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "EUA/Canadá",
+     "league": "MLS",
+     "detail": "OF-volta",
+     "match": "Houston Dynamo x SJ Earthquakes",
+     "ch": [
+      {
+       "n": "Apple TV",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "16:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Alemanha",
+     "league": "2.Bundesliga",
+     "detail": "—",
+     "match": "Osnabrück x Hannover 96",
+     "ch": [
+      {
+       "n": "OneFootball",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Ligue 1",
      "detail": "—",
-     "match": "Olympiacos x Milan",
+     "match": "PSG x Lorient",
      "ch": [
       {
-       "n": "CazéTV",
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
+      },
+      {
+       "n": "XSports",
        "y": "free"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Ligue 1",
      "detail": "—",
-     "match": "Olympique de Marseille x Levski Sofia",
+     "match": "Nice x Troyes",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Ligue 1",
      "detail": "—",
-     "match": "Celta de Vigo x Bournemouth",
+     "match": "Le Mans x Lille",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Ligue 1",
      "detail": "—",
-     "match": "Besiktas x Hapoel Beer Sheva",
+     "match": "Le Havre x Strasbourg",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "16:45",
      "sport": "Futebol",
      "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
+     "country": "Mundial",
+     "league": "Serie A",
      "detail": "—",
-     "match": "RB Salzburg x Ararat Armenia",
+     "match": "Inter de Milão x Genoa",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "ESPN 4",
+       "y": "tv"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "17:00",
      "sport": "Futebol",
      "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Union Saint-Gilloise x Lech Poznan",
+     "country": "América do Sul",
+     "league": "CONMEBOL Libertadores",
+     "detail": "FINAL",
+     "match": "Palmeiras x Estudiantes",
      "ch": [
       {
-       "n": "CazéTV",
+       "n": "GE TV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@getv"
+      },
+      {
+       "n": "Globo",
        "y": "free"
+      },
+      {
+       "n": "ESPN",
+       "y": "tv"
+      },
+      {
+       "n": "Paramount+",
+       "y": "stream"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
+     "date": "2026-11-28",
+     "t": "17:00",
      "sport": "Futebol",
      "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
+     "country": "Espanha",
+     "league": "LaLiga",
      "detail": "—",
-     "match": "Ajax x Thun",
+     "match": "Real Madrid x Alavés",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "CazéTV (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@CazeTV"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Brann x AGF",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Brighton x Universitatea Craiova",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Egnatia x Lincoln Red Imps",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Kauno Zalgiris x Riga",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Iberia Tbilisi x Getafe",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Jablonec x Lugano",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "14:45",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Hearts x Monaco",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
+     "date": "2026-11-28",
      "t": "17:00",
      "sport": "Futebol",
      "g": "M",
      "country": "Europa (demais)",
-     "league": "Europa League",
+     "league": "Liga Portugal",
      "detail": "—",
-     "match": "Hoffenheim x Sturm Graz",
+     "match": "Vitória de Guimarães x Estrela Amadora",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "Disney+",
+       "y": "stream"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "17:00",
+     "date": "2026-11-28",
+     "t": "18:30",
+     "sport": "Futebol",
+     "g": "F",
+     "country": "Mundial",
+     "league": "CONCACAF Championship Feminina",
+     "detail": "—",
+     "match": "México x Haiti",
+     "ch": [
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "18:30",
      "sport": "Futebol",
      "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Crystal Palace x Real Sociedad",
+     "country": "EUA/Canadá",
+     "league": "MLS",
+     "detail": "OF-volta",
+     "match": "Philadelphia Union x NE Revolution",
      "ch": [
       {
-       "n": "CazéTV",
-       "y": "free"
+       "n": "Apple TV",
+       "y": "stream"
       }
      ],
      "v": 1
     },
     {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Ferencváros x Celje",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Crete x Anderlecht",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Sparta Praga x AZ Alkmaar",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Sunderland x Jagiellonia",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Juventus x Omonia Nicosia",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "NEC Nijmegen x Rennes",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Lyon x Lillestrom",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Europa League",
-     "detail": "—",
-     "match": "Torreense x Celtic",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Borac Banja Luka x Atalanta",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "CSKA Sofia x Trabzonspor",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Braga x KuPS",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
-     "t": "17:00",
-     "sport": "Futebol",
-     "g": "M",
-     "country": "Europa (demais)",
-     "league": "Conference League",
-     "detail": "—",
-     "match": "Freiburg x Twente",
-     "ch": [
-      {
-       "n": "CazéTV",
-       "y": "free"
-      }
-     ],
-     "v": 1
-    },
-    {
-     "date": "2026-11-26",
+     "date": "2026-11-28",
      "t": "20:00",
      "sport": "Futebol",
      "g": "M",
      "country": "Brasil",
-     "league": "Campeonato Brasileiro",
-     "detail": "—",
-     "match": "São Paulo x Remo",
+     "league": "Brasileirão Série B",
+     "detail": "Playoff Acesso-volta",
+     "match": "Fortaleza x Criciúma",
      "ch": [
+      {
+       "n": "SportyNet (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@SportyNetBrasil"
+      },
+      {
+       "n": "RedeTV",
+       "y": "free"
+      },
+      {
+       "n": "SportyNet",
+       "y": "free"
+      },
+      {
+       "n": "Disney+",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "20:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "EUA/Canadá",
+     "league": "MLS",
+     "detail": "OF-volta",
+     "match": "FC Cincinatti x Nashville SC",
+     "ch": [
+      {
+       "n": "Apple TV",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "21:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Brasil",
+     "league": "Brasileirão",
+     "detail": "—",
+     "match": "Botafogo x Bahia",
+     "ch": [
+      {
+       "n": "SporTV",
+       "y": "tv"
+      },
       {
        "n": "Premiere",
        "y": "stream"
       }
      ],
      "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "22:30",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "EUA/Canadá",
+     "league": "MLS",
+     "detail": "OF-volta",
+     "match": "Los Angeles FC x St. Louis City",
+     "ch": [
+      {
+       "n": "Apple TV",
+       "y": "stream"
+      }
+     ],
+     "v": 1
+    },
+    {
+     "date": "2026-11-28",
+     "t": "23:00",
+     "sport": "Futebol",
+     "g": "M",
+     "country": "Mundial",
+     "league": "A-League",
+     "detail": "—",
+     "match": "Wellington Phoenix x Adelaide United",
+     "ch": [
+      {
+       "n": "Canalgolbrasil (YouTube)",
+       "y": "free",
+       "u": "https://www.youtube.com/@canalgolbrasil"
+      }
+     ],
+     "v": 1
     }
    ]
-  },
+  }
+ },
+ "goal": {
   "2026-11-27": {
-   "lido_em": "26/11 19:27",
+   "lido_em": "27/11 02:10",
    "jogos": [
     {
      "date": "2026-11-27",
@@ -1895,7 +1883,7 @@
    ]
   },
   "2026-11-28": {
-   "lido_em": "26/11 19:27",
+   "lido_em": "27/11 02:10",
    "jogos": [
     {
      "date": "2026-11-28",
@@ -2684,7 +2672,7 @@
    ]
   },
   "2026-11-29": {
-   "lido_em": "26/11 19:27",
+   "lido_em": "27/11 02:10",
    "jogos": [
     {
      "date": "2026-11-29",
@@ -3297,108 +3285,83 @@
  },
  "espn": {
   "Champions League": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Copa do Brasil": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Brasileirão Série A": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": [
-     {
-      "date": "2026-11-26",
-      "t": "20:00",
-      "sport": "Futebol",
-      "g": "M",
-      "country": "Brasil",
-      "league": "Brasileirão Série A",
-      "detail": "Tabela oficial",
-      "match": "São Paulo x Remo",
-      "ch": [
-       {
-        "n": "Transmissão a confirmar",
-        "y": "tv"
-       }
-      ],
-      "v": 1,
-      "_id": "401841329",
-      "_q": "20261126"
-     }
-    ]
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -3422,8 +3385,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -3447,8 +3410,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -3567,18 +3530,18 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-02",
@@ -3771,17 +3734,17 @@
       "_q": "20261202"
      }
     ]
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
    }
   },
   "Brasileirão Série B": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -3805,8 +3768,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -3830,40 +3793,40 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Copa Libertadores": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -3887,72 +3850,72 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Copa Sul-Americana": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Premier League": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -3976,8 +3939,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -4039,8 +4002,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -4159,13 +4122,13 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-01",
@@ -4189,8 +4152,8 @@
     ]
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-02",
@@ -4345,17 +4308,37 @@
       "_q": "20261202"
      }
     ]
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": [
+     {
+      "date": "2026-12-03",
+      "t": "17:00",
+      "sport": "Futebol",
+      "g": "M",
+      "country": "Inglaterra",
+      "league": "Premier League",
+      "detail": "Tabela oficial",
+      "match": "Tottenham Hotspur x Fulham",
+      "ch": [
+       {
+        "n": "Transmissão a confirmar",
+        "y": "tv"
+       }
+      ],
+      "v": 1,
+      "_id": "401878749",
+      "_q": "20261203"
+     }
+    ]
    }
   },
   "La Liga": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -4379,8 +4362,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -4461,8 +4444,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -4543,8 +4526,8 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-30",
@@ -4568,13 +4551,13 @@
     ]
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-02",
@@ -4615,17 +4598,17 @@
       "_q": "20261202"
      }
     ]
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
    }
   },
   "Bundesliga": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -4649,8 +4632,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -4750,8 +4733,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -4813,30 +4796,30 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Campeonato Italiano": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -4860,8 +4843,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -4923,8 +4906,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -5005,8 +4988,8 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-30",
@@ -5049,25 +5032,25 @@
     ]
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Campeonato Francês": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -5091,8 +5074,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -5192,8 +5175,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -5255,230 +5238,183 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Amistoso": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "UEFA Nations League": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Eliminatórias Sul-Americanas": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Eliminatórias da Euro": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "NBA": {
-   "2026-11-25": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": [
-     {
-      "date": "2026-11-26",
-      "t": "00:00",
-      "sport": "Basquete",
-      "g": "M",
-      "country": "EUA/Canadá",
-      "league": "NBA",
-      "detail": "NBA Cup - Group Play",
-      "match": "Sacramento Kings x Golden State Warriors",
-      "ch": [
-       {
-        "n": "NBA League Pass",
-        "y": "stream"
-       }
-      ],
-      "v": 1,
-      "_id": "401909324",
-      "_q": "20261125"
-     },
-     {
-      "date": "2026-11-26",
-      "t": "00:00",
-      "sport": "Basquete",
-      "g": "M",
-      "country": "EUA/Canadá",
-      "league": "NBA",
-      "detail": "NBA Cup - Group Play",
-      "match": "San Antonio Spurs x Portland Trail Blazers",
-      "ch": [
-       {
-        "n": "ESPN",
-        "y": "tv"
-       },
-       {
-        "n": "Disney+",
-        "y": "stream"
-       },
-       {
-        "n": "NBA League Pass",
-        "y": "stream"
-       }
-      ],
-      "v": 1,
-      "_id": "401909325",
-      "_q": "20261125"
-     }
-    ]
-   },
    "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -5700,8 +5636,8 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-28",
@@ -5801,8 +5737,8 @@
     ]
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -5997,8 +5933,8 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-30",
@@ -6136,8 +6072,8 @@
     ]
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-01",
@@ -6294,8 +6230,8 @@
     ]
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-12-02",
@@ -6448,106 +6384,120 @@
       "v": 1,
       "_id": "401910083",
       "_q": "20261202"
+     },
+     {
+      "date": "2026-12-03",
+      "t": "00:30",
+      "sport": "Basquete",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NBA",
+      "detail": "—",
+      "match": "Minnesota Timberwolves x LA Clippers",
+      "ch": [
+       {
+        "n": "NBA League Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401910084",
+      "_q": "20261202"
+     }
+    ]
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": [
+     {
+      "date": "2026-12-03",
+      "t": "21:00",
+      "sport": "Basquete",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NBA",
+      "detail": "—",
+      "match": "Indiana Pacers x Atlanta Hawks",
+      "ch": [
+       {
+        "n": "NBA League Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401910085",
+      "_q": "20261203"
+     },
+     {
+      "date": "2026-12-03",
+      "t": "21:30",
+      "sport": "Basquete",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NBA",
+      "detail": "—",
+      "match": "Washington Wizards x Miami Heat",
+      "ch": [
+       {
+        "n": "NBA League Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401910086",
+      "_q": "20261203"
+     },
+     {
+      "date": "2026-12-03",
+      "t": "22:00",
+      "sport": "Basquete",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NBA",
+      "detail": "—",
+      "match": "Cleveland Cavaliers x Chicago Bulls",
+      "ch": [
+       {
+        "n": "NBA League Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401910087",
+      "_q": "20261203"
+     },
+     {
+      "date": "2026-12-03",
+      "t": "22:00",
+      "sport": "Basquete",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NBA",
+      "detail": "—",
+      "match": "Toronto Raptors x San Antonio Spurs",
+      "ch": [
+       {
+        "n": "NBA League Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401910088",
+      "_q": "20261203"
      }
     ]
    }
   },
   "NFL": {
-   "2026-11-25": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+   "2026-11-26": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": [
-     {
-      "date": "2026-11-26",
-      "t": "18:30",
-      "sport": "Futebol Americano",
-      "g": "M",
-      "country": "EUA/Canadá",
-      "league": "NFL",
-      "detail": "—",
-      "match": "Philadelphia Eagles x Dallas Cowboys",
-      "ch": [
-       {
-        "n": "SporTV",
-        "y": "tv"
-       },
-       {
-        "n": "Globoplay",
-        "y": "stream"
-       },
-       {
-        "n": "NFL Game Pass",
-        "y": "stream"
-       }
-      ],
-      "v": 1,
-      "_id": "401873080",
-      "_q": "20261126"
-     },
-     {
-      "date": "2026-11-26",
-      "t": "15:00",
-      "sport": "Futebol Americano",
-      "g": "M",
-      "country": "EUA/Canadá",
-      "league": "NFL",
-      "detail": "—",
-      "match": "Chicago Bears x Detroit Lions",
-      "ch": [
-       {
-        "n": "SporTV",
-        "y": "tv"
-       },
-       {
-        "n": "Globoplay",
-        "y": "stream"
-       },
-       {
-        "n": "NFL Game Pass",
-        "y": "stream"
-       }
-      ],
-      "v": 1,
-      "_id": "401873081",
-      "_q": "20261126"
-     },
-     {
-      "date": "2026-11-26",
-      "t": "22:20",
-      "sport": "Futebol Americano",
-      "g": "M",
-      "country": "EUA/Canadá",
-      "league": "NFL",
-      "detail": "—",
-      "match": "Kansas City Chiefs x Buffalo Bills",
-      "ch": [
-       {
-        "n": "SporTV",
-        "y": "tv"
-       },
-       {
-        "n": "Globoplay",
-        "y": "stream"
-       },
-       {
-        "n": "NFL Game Pass",
-        "y": "stream"
-       }
-      ],
-      "v": 1,
-      "_id": "401873082",
-      "_q": "20261126"
-     }
-    ]
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-27",
@@ -6571,13 +6521,13 @@
     ]
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-29",
@@ -6816,8 +6766,8 @@
     ]
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": [
      {
       "date": "2026-11-30",
@@ -6849,87 +6799,120 @@
     ]
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": [
+     {
+      "date": "2026-12-03",
+      "t": "22:15",
+      "sport": "Futebol Americano",
+      "g": "M",
+      "country": "EUA/Canadá",
+      "league": "NFL",
+      "detail": "—",
+      "match": "Kansas City Chiefs x Los Angeles Rams",
+      "ch": [
+       {
+        "n": "SporTV",
+        "y": "tv"
+       },
+       {
+        "n": "Globoplay",
+        "y": "stream"
+       },
+       {
+        "n": "NFL Game Pass",
+        "y": "stream"
+       }
+      ],
+      "v": 1,
+      "_id": "401873096",
+      "_q": "20261203"
+     }
+    ]
    }
   },
   "Tênis ATP": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   },
   "Tênis WTA": {
-   "2026-11-26": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
-    "jogos": []
-   },
    "2026-11-27": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-28": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-29": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-11-30": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-01": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    },
    "2026-12-02": {
-    "lido_em": "26/11 19:27",
-    "em": "2026-11-26T19:27-03:00",
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
+    "jogos": []
+   },
+   "2026-12-03": {
+    "lido_em": "27/11 02:10",
+    "em": "2026-11-27T02:10-03:00",
     "jogos": []
    }
   }
@@ -6946,41 +6929,21 @@
    "t": "00:30",
    "espn": "Portland Timbers x FC Dallas",
    "pl": "soccer/usa.1|20261128|401933721|c"
+  },
+  "2026-11-28|sampdoria x cremonese|principal": {
+   "date": "2026-11-29",
+   "t": "13:15",
+   "espn": "Sampdoria x Cremonese",
+   "pl": "soccer/ita.2|20261129|401899521|c"
+  },
+  "2026-11-28|aek x paok|principal": {
+   "date": "2026-11-29",
+   "t": "16:00",
+   "espn": "AEK Athens x PAOK",
+   "pl": "soccer/gre.1|20261129|401896721|c"
   }
  },
  "pl": {
-  "2026-11-26|kairat almaty x mjallby|principal": "soccer/uefa.europa.conf|20261126|401915816|c",
-  "2026-11-26|alfaisaly x aldiriyah|principal": "soccer/ksa.1|20261126|401900871|c",
-  "2026-11-26|olympiacos x milan|principal": "soccer/uefa.europa|20261126|401915521|c",
-  "2026-11-26|celta de vigo x bournemouth|principal": "soccer/uefa.europa|20261126|401915519|c",
-  "2026-11-26|viktoria plzen x benfica|principal": "soccer/uefa.europa|20261126|401915518|c",
-  "2026-11-26|dinamo zagreb x bayer leverkusen|principal": "soccer/uefa.europa|20261126|401915517|c",
-  "2026-11-26|besiktas x hapoel beer sheva|principal": "soccer/uefa.europa|20261126|401915506|c",
-  "2026-11-26|olympique de marseille x levski sofia|principal": "soccer/uefa.europa|20261126|401915507|c",
-  "2026-11-26|iberia x getafe|principal": "soccer/uefa.europa.conf|20261126|401915813|c",
-  "2026-11-26|brighton x universitatea craiova|principal": "soccer/uefa.europa.conf|20261126|401915814|c",
-  "2026-11-26|ajax x thun|principal": "soccer/uefa.europa.conf|20261126|401915815|c",
-  "2026-11-26|jablonec x lugano|principal": "soccer/uefa.europa.conf|20261126|401915812|c",
-  "2026-11-26|rb salzburg x ararat armenia|principal": "soccer/uefa.europa|20261126|401915520|c",
-  "2026-11-26|union saintgilloise x lech poznan|principal": "soccer/uefa.europa|20261126|401915508|c",
-  "2026-11-26|brann x agf|principal": "soccer/uefa.europa.conf|20261126|401915808|c",
-  "2026-11-26|egnatia x lincoln red imps|principal": "soccer/uefa.europa.conf|20261126|401915810|c",
-  "2026-11-26|kauno zalgiris x riga|principal": "soccer/uefa.europa.conf|20261126|401915739|c",
-  "2026-11-26|juventus x omonia|principal": "soccer/uefa.europa|20261126|401915502|c",
-  "2026-11-26|crystal palace x real sociedad|principal": "soccer/uefa.europa|20261126|401915504|c",
-  "2026-11-26|lyon x lillestrom|principal": "soccer/uefa.europa|20261126|401915501|c",
-  "2026-11-26|torreense x celtic|principal": "soccer/uefa.europa|20261126|401915512|c",
-  "2026-11-26|cska sofia x trabzonspor|principal": "soccer/uefa.europa.conf|20261126|401915803|c",
-  "2026-11-26|borac x atalanta|principal": "soccer/uefa.europa.conf|20261126|401915806|c",
-  "2026-11-26|braga x kups|principal": "soccer/uefa.europa.conf|20261126|401915802|c",
-  "2026-11-26|freiburg x twente|principal": "soccer/uefa.europa.conf|20261126|401915801|c",
-  "2026-11-26|doncaster rovers x huddersfield town|principal": "soccer/eng.3|20261126|401880728|c",
-  "2026-11-26|hoffenheim x sturm graz|principal": "soccer/uefa.europa|20261126|401915515|c",
-  "2026-11-26|ferencvaros x celje|principal": "soccer/uefa.europa|20261126|401915516|c",
-  "2026-11-26|crete x anderlecht|principal": "soccer/uefa.europa|20261126|401915503|c",
-  "2026-11-26|sparta praga x az alkmaar|principal": "soccer/uefa.europa|20261126|401915514|c",
-  "2026-11-26|sunderland x jagiellonia|principal": "soccer/uefa.europa|20261126|401915513|c",
-  "2026-11-26|sao paulo x remo|principal": "soccer/bra.1|20261126|401841329|c",
   "2026-11-27|alqadsiah x alfayha|principal": "soccer/ksa.1|20261127|401900870|c",
   "2026-11-27|alanyaspor x konyaspor|principal": "soccer/tur.1|20261127|401888241|c",
   "2026-11-27|alittihad x neom|principal": "soccer/ksa.1|20261127|401900873|c",
@@ -7000,42 +6963,53 @@
   "2026-11-27|columbus crew x inter miami|principal": "soccer/usa.1|20261127|401933727|c",
   "2026-11-28|real salt lake x vancouver whitecaps|principal": "soccer/usa.1|20261127|401933725|c",
   "2026-11-29|portland timbers x dallas|principal": "soccer/usa.1|20261128|401933721|c",
-  "2026-11-28|al hazem x al nassr|principal": "soccer/ksa.1|20261128|401900442|c",
+  "2026-11-28|kashima antlers x fagiano okayama|principal": "soccer/jpn.1|20261128|401877542|c",
+  "2026-11-28|central coast mariners x auckland fc|principal": "soccer/aus.1|20261128|401892132|c",
+  "2026-11-28|dynamo dresden x st pauli|principal": "soccer/ger.2|20261128|401885044|c",
+  "2026-11-28|hertha berlin x karlsruher|principal": "soccer/ger.2|20261128|401885046|c",
+  "2026-11-28|holstein kiel x kaiserslautern|principal": "soccer/ger.2|20261128|401885043|c",
+  "2026-11-28|alhazem x alnassr|principal": "soccer/ksa.1|20261128|401900442|c",
   "2026-11-28|preston north end x norwich city|principal": "soccer/eng.2|20261128|401880131|c",
   "2026-11-28|real betis x rayo vallecano|principal": "soccer/esp.1|20261128|401882796|c",
+  "2026-11-28|cska x zenit|principal": "soccer/rus.1|20261128|401879794|c",
   "2026-11-28|frosinone x parma|principal": "soccer/ita.1|20261128|401875081|c",
-  "2026-11-28|al ettifaq x al hilal|principal": "soccer/ksa.1|20261128|401900875|c",
+  "2026-11-28|alettifaq x alhilal|principal": "soccer/ksa.1|20261128|401900875|c",
   "2026-11-28|colonia x elversberg|principal": "soccer/ger.1|20261128|401884721|c",
-  "2026-11-28|mainz x union berlin|principal": "soccer/ger.1|20261128|401884723|c",
   "2026-11-28|paderborn x schalke 04|principal": "soccer/ger.1|20261128|401884719|c",
+  "2026-11-28|mainz 05 x union berlin|principal": "soccer/ger.1|20261128|401884723|c",
   "2026-11-28|hamburg sv x bayern munich|principal": "soccer/ger.1|20261128|401884722|c",
-  "2026-11-28|manchester united x brentford|principal": "soccer/eng.1|20261128|401879226|c",
   "2026-11-28|leeds united x coventry city|principal": "soccer/eng.1|20261128|401879227|c",
+  "2026-11-28|manchester united x brentford|principal": "soccer/eng.1|20261128|401879226|c",
   "2026-11-28|west bromwich x bristol city|principal": "soccer/eng.2|20261128|401880127|c",
   "2026-11-28|malaga x athletic bilbao|principal": "soccer/esp.1|20261128|401882790|c",
   "2026-11-28|arouca x rio ave|principal": "soccer/por.1|20261128|401885392|c",
   "2026-11-28|moreirense x santa clara|principal": "soccer/por.1|20261128|401885388|c",
-  "2026-11-28|angers x lens|principal": "soccer/fra.1|20261128|401876394|c",
+  "2026-11-28|angers x rc lens|principal": "soccer/fra.1|20261128|401876394|c",
+  "2026-11-29|sampdoria x cremonese|principal": "soccer/ita.2|20261129|401899521|c",
   "2026-11-28|torino x lazio|principal": "soccer/ita.1|20261128|401874826|c",
   "2026-11-28|ipswich town x aston villa|principal": "soccer/eng.1|20261128|401878752|c",
   "2026-11-28|elche x atletico de madrid|principal": "soccer/esp.1|20261128|401882793|c",
-  "2026-11-28|stuttgart x eintracht frankfurt|principal": "soccer/ger.1|20261128|401884726|c",
-  "2026-11-28|charlotte x chicago fire|principal": "soccer/usa.1|20261128|401933737|c",
-  "2026-11-28|al ahli x al taawoun|principal": "soccer/ksa.1|20261128|401900876|c",
+  "2026-11-28|sttutgart x eintracht frankfurt|principal": "soccer/ger.1|20261128|401884726|c",
+  "2026-11-28|alahli x altaawoun|principal": "soccer/ksa.1|20261128|401900876|c",
+  "2026-11-28|charlotte fc x chicago fire|principal": "soccer/usa.1|20261128|401933737|c",
   "2026-11-28|psv x go ahead eagles|principal": "soccer/ned.1|20261128|401875531|c",
+  "2026-11-28|canada x panama|F": "soccer/concacaf.womens.championship|20261128|401870041|c",
   "2026-11-28|academico de viseu x alverca|principal": "soccer/por.1|20261128|401885393|c",
-  "2026-11-28|houston dynamo x san jose earthquakes|principal": "soccer/usa.1|20261128|401933724|c",
-  "2026-11-28|inter de milao x genoa|principal": "soccer/ita.1|20261128|401874977|c",
+  "2026-11-29|aek x paok|principal": "soccer/gre.1|20261129|401896721|c",
+  "2026-11-28|houston dynamo x sj earthquakes|principal": "soccer/usa.1|20261128|401933724|c",
+  "2026-11-28|osnabruck x hannover 96|principal": "soccer/ger.2|20261128|401885039|c",
   "2026-11-28|psg x lorient|principal": "soccer/fra.1|20261128|401876387|c",
-  "2026-11-28|le havre x strasbourg|principal": "soccer/fra.1|20261128|401876391|c",
-  "2026-11-28|le mans x lille|principal": "soccer/fra.1|20261128|401876390|c",
   "2026-11-28|nice x troyes|principal": "soccer/fra.1|20261128|401876388|c",
-  "2026-11-28|palmeiras x estudiantesarg|principal": "soccer/conmebol.libertadores|20261128|401912519|c",
-  "2026-11-28|real madrid x deportivo alaves|principal": "soccer/esp.1|20261128|401882789|c",
+  "2026-11-28|le mans x lille|principal": "soccer/fra.1|20261128|401876390|c",
+  "2026-11-28|le havre x strasbourg|principal": "soccer/fra.1|20261128|401876391|c",
+  "2026-11-28|inter de milao x genoa|principal": "soccer/ita.1|20261128|401874977|c",
+  "2026-11-28|palmeiras x estudiantes|principal": "soccer/conmebol.libertadores|20261128|401912519|c",
+  "2026-11-28|real madrid x alaves|principal": "soccer/esp.1|20261128|401882789|c",
   "2026-11-28|vitoria de guimaraes x estrela amadora|principal": "soccer/por.1|20261128|401885385|c",
-  "2026-11-28|philadelphia union x new england revolution|principal": "soccer/usa.1|20261128|401933723|c",
+  "2026-11-28|philadelphia union x ne revolution|principal": "soccer/usa.1|20261128|401933723|c",
+  "2026-11-28|mexico x haiti|F": "soccer/concacaf.womens.championship|20261128|401870042|c",
   "2026-11-28|fortaleza x criciuma|principal": "soccer/bra.2|20261128|401912709|c",
-  "2026-11-28|cincinnati x nashville|principal": "soccer/usa.1|20261128|401933722|c",
+  "2026-11-28|fc cincinatti x nashville sc|principal": "soccer/usa.1|20261128|401933722|c",
   "2026-11-28|botafogo x bahia|principal": "soccer/bra.1|20261128|401841336|c",
   "2026-11-29|udinese x fiorentina|principal": "soccer/ita.1|20261129|401875031|c",
   "2026-11-29|everton x liverpool|principal": "soccer/eng.1|20261129|401879229|c",
@@ -7089,6 +7063,7 @@
   "2026-12-02|red bull bragantino x fluminense|principal": "soccer/bra.1|20261202|401841344|c",
   "2026-12-02|remo x corinthians|principal": "soccer/bra.1|20261202|401841345|c",
   "2026-12-02|santos x botafogo|principal": "soccer/bra.1|20261202|401841346|c",
-  "2026-12-02|vasco da gama x vitoria|principal": "soccer/bra.1|20261202|401841342|c"
+  "2026-12-02|vasco da gama x vitoria|principal": "soccer/bra.1|20261202|401841342|c",
+  "2026-12-03|tottenham hotspur x fulham|principal": "soccer/eng.1|20261203|401878749|c"
  }
 }
