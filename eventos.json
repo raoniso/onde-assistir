@@ -1,808 +1,5 @@
 [
  {
-  "date": "2026-11-27",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Copa do Mundo FIFA Sub-17",
-  "detail": "—",
-  "match": "Costa Rica x Brasil",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "SporTV",
-    "y": "tv"
-   }
-  ],
-  "v": 1,
-  "sel": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "11:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "Criciúma x Fluminense",
-  "ch": [
-   {
-    "n": "Paulistao (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@paulistao"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "11:20",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Liga Saudita",
-  "detail": "—",
-  "match": "Al-Qadsiah x AL-Fayha",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/ksa.1|20261127|401900870|c",
-  "espn": "Al Qadsiah x Al Fayha"
- },
- {
-  "date": "2026-11-27",
-  "t": "14:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Turco",
-  "detail": "—",
-  "match": "Alanyaspor x Konyaspor",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/tur.1|20261127|401888241|c",
-  "espn": "Alanyaspor x Konyaspor"
- },
- {
-  "date": "2026-11-27",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Mundial",
-  "league": "Liga Saudita",
-  "detail": "—",
-  "match": "Al-Ittihad x Neom",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "Bandsports",
-    "y": "tv"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/ksa.1|20261127|401900873|c",
-  "espn": "Al Ittihad x Neom SC"
- },
- {
-  "date": "2026-11-27",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2.Bundesliga",
-  "detail": "—",
-  "match": "Bochum x Darmstadr",
-  "ch": [
-   {
-    "n": "Jovempanesportes (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@jovempanesportes"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "14:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "2.Bundesliga",
-  "detail": "—",
-  "match": "Heidenheim x Nürnberg",
-  "ch": [
-   {
-    "n": "Romario T Voficial (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@RomarioTVoficial"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ger.2|20261127|401885047|c",
-  "espn": "1. FC Heidenheim 1846 x 1. FC Nürnberg"
- },
- {
-  "date": "2026-11-27",
-  "t": "15:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "São Paulo x Vitória",
-  "ch": [
-   {
-    "n": "Paulistao (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@paulistao"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "Aliança-GO x Centro Olímpico-SP",
-  "ch": [
-   {
-    "n": "Paulistao (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@paulistao"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "2° Divisão Holandesa",
-  "detail": "—",
-  "match": "Ajax Jong x Héracles Almelo",
-  "ch": [
-   {
-    "n": "LINKALVIVERDE (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@LINKALVIVERDE"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ned.2|20261127|401875833|c",
-  "espn": "Jong Ajax x Heracles Almelo"
- },
- {
-  "date": "2026-11-27",
-  "t": "16:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "2° Divisão Holandesa",
-  "detail": "—",
-  "match": "VVV Venlo x RKC Waalwijk",
-  "ch": [
-   {
-    "n": "LINKALVIVERDE (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@LINKALVIVERDE"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/ned.2|20261127|401876061|c",
-  "espn": "VVV-Venlo x RKC Waalwijk"
- },
- {
-  "date": "2026-11-27",
-  "t": "16:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Alemanha",
-  "league": "Bundesliga",
-  "detail": "—",
-  "match": "Werder Bremen x Borussia Mönchengladbach",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "SportyNet",
-    "y": "free"
-   },
-   {
-    "n": "OneFootball",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Werder Bremen x Borussia Mönchengladbach",
-  "pl": "soccer/ger.1|20261127|401884720|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Campeonato Francês",
-  "detail": "—",
-  "match": "Brest x Paris FC",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   }
-  ],
-  "v": 2,
-  "espn": "Brest x Paris FC",
-  "pl": "soccer/fra.1|20261127|401876392|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "16:45",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Itália",
-  "league": "Campeonato Italiano",
-  "detail": "—",
-  "match": "Venezia x Bologna",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Venezia x Bologna",
-  "pl": "soccer/ita.1|20261127|401875004|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Premier League",
-  "detail": "—",
-  "match": "Nottingham Forest x Chelsea",
-  "ch": [
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Nottingham Forest x Chelsea",
-  "pl": "soccer/eng.1|20261127|401879225|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Inglaterra",
-  "league": "Championship",
-  "detail": "—",
-  "match": "Southampton x Middlesbrough",
-  "ch": [
-   {
-    "n": "ESPN 4",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/eng.2|20261127|401880129|c",
-  "espn": "Southampton x Middlesbrough"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Espanha",
-  "league": "La Liga",
-  "detail": "—",
-  "match": "Levante x Racing Santander",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 2,
-  "espn": "Levante x Racing Santander",
-  "pl": "soccer/esp.1|20261127|401882791|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Mundial",
-  "league": "Amistoso Feminino",
-  "detail": "—",
-  "match": "França x Venezuela",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "sel": 1,
-  "pl": "soccer/fifa.friendly.w|20261127|401930496|c",
-  "espn": "France x Venezuela"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:00",
-  "sport": "Futebol Americano",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NFL",
-  "detail": "—",
-  "match": "Denver Broncos x Pittsburgh Steelers",
-  "ch": [
-   {
-    "n": "NFL Game Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "football/nfl|20261127|401873083|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "17:15",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Europa (demais)",
-  "league": "Liga Portugal",
-  "detail": "—",
-  "match": "Marítimo x Nacional da Madeira",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2
- },
- {
-  "date": "2026-11-27",
-  "t": "18:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "Palmeiras x Vasco da Gama",
-  "ch": [
-   {
-    "n": "CazéTV (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@CazeTV"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série A",
-  "detail": "—",
-  "match": "Fluminense x Cruzeiro",
-  "ch": [
-   {
-    "n": "SporTV",
-    "y": "tv"
-   },
-   {
-    "n": "Premiere",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Fluminense x Cruzeiro",
-  "pl": "soccer/bra.1|20261127|401841337|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "Brasil",
-  "league": "Brasileirão Série B",
-  "detail": "Playoffs Acesso-volta",
-  "match": "Vila Nova x Atlético-GO",
-  "ch": [
-   {
-    "n": "Canal GOAT (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@canalgoatbr"
-   },
-   {
-    "n": "XSports",
-    "y": "free"
-   },
-   {
-    "n": "ESPN",
-    "y": "tv"
-   },
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "espn": "Vila Nova x Atlético Goianiense",
-  "pl": "soccer/bra.2|20261127|401912683|c"
- },
- {
-  "date": "2026-11-27",
-  "t": "20:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "Ferroviária x Grêmio",
-  "ch": [
-   {
-    "n": "Paulistao (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@paulistao"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "20:30",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "América do Sul",
-  "league": "Campeonato Uruguaio",
-  "detail": "—",
-  "match": "Racing Montevideo x Liverpool-URU",
-  "ch": [
-   {
-    "n": "Disney+",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/uru.1|20261127|401936333|v",
-  "espn": "Liverpool x Racing (Montevideo)"
- },
- {
-  "date": "2026-11-27",
-  "t": "21:00",
-  "sport": "Futebol",
-  "g": "F",
-  "country": "Brasil",
-  "league": "Copinha Feminina",
-  "detail": "—",
-  "match": "Tarumã-AM x Flamengo",
-  "ch": [
-   {
-    "n": "Tv Brasil",
-    "y": "free"
-   },
-   {
-    "n": "Paulistao (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@paulistao"
-   }
-  ],
-  "v": 1
- },
- {
-  "date": "2026-11-27",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Miami Heat x New York Knicks",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909326|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "21:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Milwaukee Bucks x Detroit Pistons",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909327|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "21:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Philadelphia 76ers x Indiana Pacers",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909328|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "21:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Brooklyn Nets x Toronto Raptors",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909329|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "22:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "OF-volta",
-  "match": "Columbus Crew x Inter Miami",
-  "ch": [
-   {
-    "n": "Apple TV",
-    "y": "stream"
-   }
-  ],
-  "v": 2,
-  "pl": "soccer/usa.1|20261127|401933727|c",
-  "espn": "Columbus Crew x Inter Miami CF"
- },
- {
-  "date": "2026-11-27",
-  "t": "22:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Atlanta Hawks x Boston Celtics",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909330|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "22:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Memphis Grizzlies x Minnesota Timberwolves",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909331|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "23:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Dallas Mavericks x Phoenix Suns",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909332|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "23:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Los Angeles Lakers x San Antonio Spurs",
-  "ch": [
-   {
-    "n": "Prime Video",
-    "y": "stream"
-   },
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909333|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "23:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Denver Nuggets x Utah Jazz",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909334|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "23:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "New Orleans Pelicans x LA Clippers",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909335|v"
- },
- {
-  "date": "2026-11-27",
-  "t": "23:30",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "NBA Cup - Group Play",
-  "match": "Golden State Warriors x Portland Trail Blazers",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261127|401909336|v"
- },
- {
-  "date": "2026-11-28",
-  "t": "00:00",
-  "sport": "Futebol",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "MLS",
-  "detail": "OF-volta",
-  "match": "Real Salt Lake x Vancouver Whitecaps",
-  "ch": [
-   {
-    "n": "TNT Sports BR (YouTube)",
-    "y": "free",
-    "u": "https://www.youtube.com/@TNTSportsBR"
-   },
-   {
-    "n": "Apple TV",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "soccer/usa.1|20261127|401933725|c",
-  "espn": "Real Salt Lake x Vancouver Whitecaps"
- },
- {
   "date": "2026-11-28",
   "t": "03:00",
   "sport": "Futebol",
@@ -4739,6 +3936,42 @@
  },
  {
   "date": "2026-12-02",
+  "t": "22:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Indiana Pacers x Atlanta Hawks",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261202|401910085|v"
+ },
+ {
+  "date": "2026-12-02",
+  "t": "22:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Toronto Raptors x San Antonio Spurs",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261202|401910088|v"
+ },
+ {
+  "date": "2026-12-02",
   "t": "23:00",
   "sport": "Basquete",
   "g": "M",
@@ -4793,24 +4026,6 @@
  },
  {
   "date": "2026-12-03",
-  "t": "21:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Indiana Pacers x Atlanta Hawks",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261203|401910085|v"
- },
- {
-  "date": "2026-12-03",
   "t": "21:30",
   "sport": "Basquete",
   "g": "M",
@@ -4847,24 +4062,6 @@
  },
  {
   "date": "2026-12-03",
-  "t": "22:00",
-  "sport": "Basquete",
-  "g": "M",
-  "country": "EUA/Canadá",
-  "league": "NBA",
-  "detail": "—",
-  "match": "Toronto Raptors x San Antonio Spurs",
-  "ch": [
-   {
-    "n": "NBA League Pass",
-    "y": "stream"
-   }
-  ],
-  "v": 1,
-  "pl": "basketball/nba|20261203|401910088|v"
- },
- {
-  "date": "2026-12-03",
   "t": "22:15",
   "sport": "Futebol Americano",
   "g": "M",
@@ -4888,5 +4085,139 @@
   ],
   "v": 1,
   "pl": "football/nfl|20261203|401873096|v"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "00:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "—",
+  "match": "Utah Jazz x Portland Trail Blazers",
+  "ch": [
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261203|401910089|v"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "16:30",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Alemanha",
+  "league": "Bundesliga",
+  "detail": "Tabela oficial",
+  "match": "Bayern Munich x SC Paderborn 07",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ger.1|20261204|401884718|c"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Itália",
+  "league": "Campeonato Italiano",
+  "detail": "Tabela oficial",
+  "match": "Bologna x AS Roma",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/ita.1|20261204|401874984|c"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "16:45",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Europa (demais)",
+  "league": "Campeonato Francês",
+  "detail": "Tabela oficial",
+  "match": "Toulouse x Paris Saint-Germain",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/fra.1|20261204|401876378|c"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "17:00",
+  "sport": "Futebol",
+  "g": "M",
+  "country": "Espanha",
+  "league": "La Liga",
+  "detail": "Tabela oficial",
+  "match": "Alavés x Espanyol",
+  "ch": [
+   {
+    "n": "Transmissão a confirmar",
+    "y": "tv"
+   }
+  ],
+  "v": 1,
+  "pl": "soccer/esp.1|20261204|401882786|c"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "21:00",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "NBA Cup - Quarterfinals",
+  "match": "Philadelphia 76ers x Atlanta Hawks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261204|401909450|v"
+ },
+ {
+  "date": "2026-12-04",
+  "t": "23:30",
+  "sport": "Basquete",
+  "g": "M",
+  "country": "EUA/Canadá",
+  "league": "NBA",
+  "detail": "NBA Cup - Quarterfinals",
+  "match": "San Antonio Spurs x Dallas Mavericks",
+  "ch": [
+   {
+    "n": "Prime Video",
+    "y": "stream"
+   },
+   {
+    "n": "NBA League Pass",
+    "y": "stream"
+   }
+  ],
+  "v": 1,
+  "pl": "basketball/nba|20261204|401909451|v"
  }
 ]

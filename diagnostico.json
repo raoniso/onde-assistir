@@ -3,11 +3,11 @@
   "espn_tabelas_por_liga": {
    "Champions League": 0,
    "Copa do Brasil": 0,
-   "Brasileirão Série A": 18,
-   "Brasileirão Série B": 2,
+   "Brasileirão Série A": 17,
+   "Brasileirão Série B": 1,
    "Copa Libertadores": 1,
    "Copa Sul-Americana": 0,
-   "Premier League": 20,
+   "Premier League": 19,
    "La Liga": 12,
    "Bundesliga": 9,
    "Campeonato Italiano": 10,
@@ -22,17 +22,17 @@
    "WTA": 0
   },
   "log": [
-   "Coleta 27/11 20:37 BRT — janela 2026-11-27 a 2026-12-03",
-   "  ✓ mantosdofutebol: 128 evento(s)",
-   "  ✓ goal (2º guia): 103 evento(s)",
-   "  ✓ ESPN tabelas (futebol, 7 dias): 81 evento(s)",
-   "  ! horário: as fontes discordam em 3 jogo(s) — 27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55; 28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00; 29/11 Boca Juniors x Gimnasia La Plata: guia 20:30, 2º guia 20:00 → vale 20:30",
-   "  ✓ ESPN NBA: 54 evento(s)",
-   "  ✓ ESPN NFL: 13 evento(s)",
+   "Coleta 28/11 05:08 BRT — janela 2026-11-28 a 2026-12-04",
+   "  ✓ mantosdofutebol: 120 evento(s)",
+   "  ✓ goal (2º guia): 89 evento(s)",
+   "  ✓ ESPN tabelas (futebol, 7 dias): 78 evento(s)",
+   "  ! horário: as fontes discordam em 2 jogo(s) — 28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00; 29/11 Boca Juniors x Gimnasia La Plata: guia 20:30, 2º guia 20:00 → vale 20:30",
+   "  ✓ ESPN NBA: 46 evento(s)",
+   "  ✓ ESPN NFL: 12 evento(s)",
    "  ✓ ESPN tênis: 0 evento(s)",
-   "  ✓ placar: 209 jogo(s) com endereço na ESPN, 30 sem",
-   "  ! data: 9 jogo(s) com a data divergente — Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN; Portland Timbers x Dallas: listado em 28/11 e em 29/11; a ESPN confirma 29/11 → sai o de 28/11; Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
-   "TOTAL: 239 eventos → eventos.json",
+   "  ✓ placar: 186 jogo(s) com endereço na ESPN, 21 sem",
+   "  ! data: 8 jogo(s) com a data divergente — Portland Timbers x Dallas: listado em 28/11 e em 29/11; a ESPN confirma 29/11 → sai o de 28/11; Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN; Vissel Kobe x Newcastle Jets: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
+   "TOTAL: 207 eventos → eventos.json",
    "index.html gerado a partir de onde-assistir.html."
   ]
  },
@@ -44,7 +44,7 @@
      {
       "cabecalho": "Sexta – 27/11",
       "data": "2026-11-27",
-      "jogos": 27
+      "jogos": 19
      }
     ],
     "jogos_sem_cabecalho": 0,
@@ -82,14 +82,9 @@
   ],
   "goal": {
    "http": 200,
-   "bytes": 653516,
-   "tabelas": 6,
+   "bytes": 595313,
+   "tabelas": 5,
    "dias": [
-    {
-     "titulo": "Jogos de sexta, 27 de novembro de 2026",
-     "data": "2026-11-27",
-     "jogos": 14
-    },
     {
      "titulo": "Jogos de sábado, 28 de novembro de 2026",
      "data": "2026-11-28",
@@ -113,7 +108,7 @@
    "goal": []
   },
   "guias": {
-   "nos_dois": 80,
+   "nos_dois": 66,
    "so_no_segundo": [
     "11-28 12:30 Arouca x Rio Ave [Campeonato Português]",
     "11-28 12:30 Moreirense x Santa Clara [Campeonato Português]",
@@ -131,36 +126,32 @@
     "11-30 07:00 Vissel Kobe x Newcastle Jets [Champions League da Ásia]",
     "11-30 09:15 Beijing Guoan x Ratchaburi [Champions League da Ásia]"
    ],
-   "horario_diferente": [
-    "2026-11-27 Real Salt Lake x Vancouver Whitecaps: principal 23:55 x segundo 00:00"
-   ]
+   "horario_diferente": []
   },
   "horario_divergente": [
-   "27/11 Real Salt Lake x Vancouver Whitecaps: guia 23:55, 2º guia 00:00 → vale 23:55",
    "28/11 Vitória de Guimarães x Estrela Amadora: guia 17:00, 2º guia 17:30 → vale 17:00",
    "29/11 Boca Juniors x Gimnasia La Plata: guia 20:30, 2º guia 20:00 → vale 20:30"
   ],
   "nba_broadcasts": [
-   "Miami Heat x New York Knicks :: PRIME VIDEO | PRIME VIDEO",
-   "Milwaukee Bucks x Detroit Pistons :: MYMI | BUCKS APP | MYMI | BUCKS APP",
-   "Philadelphia 76ers x Indiana Pacers :: (vazio)",
-   "Brooklyn Nets x Toronto Raptors :: DAZN (YES) | DAZN (YES)"
+   "Orlando Magic x Washington Wizards :: MNMT2 | MNMT2",
+   "Brooklyn Nets x Charlotte Hornets :: DAZN (YES) | DAZN (YES)",
+   "Indiana Pacers x Chicago Bulls :: DAZN IND | DAZN IND",
+   "Oklahoma City Thunder x Milwaukee Bucks :: MYMI | BUCKS APP | THUNDER APP | MYMI | BUCKS APP | THUNDER APP"
   ],
   "espn_faltas": [],
   "placar": {
    "lista_geral": {
-    "2026-11-26": 58,
-    "2026-11-27": 89,
+    "2026-11-27": 88,
     "2026-11-28": 240,
     "2026-11-29": 152,
     "2026-11-30": 29,
     "2026-12-01": 85,
     "2026-12-02": 72,
     "2026-12-03": 25,
-    "2026-12-04": 1
+    "2026-12-04": 53,
+    "2026-12-05": 1
    },
    "data_divergente": [
-    "Real Salt Lake x Vancouver Whitecaps: a fonte lista em 27/11 23:55; a ESPN, em 28/11 00:00 → vale a ESPN",
     "Portland Timbers x Dallas: listado em 28/11 e em 29/11; a ESPN confirma 29/11 → sai o de 28/11",
     "Kashiwa Reysol x Cong An Ha Noi: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
     "Vissel Kobe x Newcastle Jets: a fonte lista em 30/11 07:00; a ESPN, em 01/12 07:00 → vale a ESPN",
@@ -170,19 +161,10 @@
     "Borussia Monchengladbach x Darmstadt: a fonte lista em 30/11 16:45; a ESPN, em 01/12 16:45 → vale a ESPN",
     "Coventry City x Ipswich Town: listado em 30/11 e em 01/12; a ESPN confirma 01/12 → sai o de 30/11"
    ],
-   "com": 209,
-   "sem": 30,
+   "com": 186,
+   "sem": 21,
    "da_memoria": 0,
    "sem_placar": [
-    "27/11 11:00 Costa Rica x Brasil [Copa do Mundo FIFA Sub-17]",
-    "27/11 11:00 Criciúma x Fluminense [Copinha Feminina]",
-    "27/11 14:30 Bochum x Darmstadr [2.Bundesliga]",
-    "27/11 15:00 São Paulo x Vitória [Copinha Feminina]",
-    "27/11 16:00 Aliança-GO x Centro Olímpico-SP [Copinha Feminina]",
-    "27/11 17:15 Marítimo x Nacional da Madeira [Liga Portugal]",
-    "27/11 18:00 Palmeiras x Vasco da Gama [Copinha Feminina]",
-    "27/11 20:00 Ferroviária x Grêmio [Copinha Feminina]",
-    "27/11 21:00 Tarumã-AM x Flamengo [Copinha Feminina]",
     "28/11 11:00 Ação-MT x Red Bull Bragantino [Copinha Feminina]",
     "28/11 11:30 Hamburgo x Bayern de Munique [Bundesliga]",
     "28/11 14:00 Espanha x Chile [Amistoso Feminino]",
